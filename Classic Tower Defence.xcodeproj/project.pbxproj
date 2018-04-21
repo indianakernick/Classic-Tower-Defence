@@ -26,6 +26,7 @@
 		453884EB208B1477003EB260 /* spawner timing system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884E9208B1477003EB260 /* spawner timing system.cpp */; };
 		453884EE208B1607003EB260 /* spawner system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884EC208B1607003EB260 /* spawner system.cpp */; };
 		453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884F3208B2534003EB260 /* unit walk anim system.cpp */; };
+		453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884F8208B28CC003EB260 /* tower firing anim system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +91,10 @@
 		453884F2208B245A003EB260 /* unit walk anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit walk anim component.hpp"; sourceTree = "<group>"; };
 		453884F3208B2534003EB260 /* unit walk anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit walk anim system.cpp"; sourceTree = "<group>"; };
 		453884F4208B2534003EB260 /* unit walk anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit walk anim system.hpp"; sourceTree = "<group>"; };
+		453884F6208B2785003EB260 /* tower firing anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower firing anim component.hpp"; sourceTree = "<group>"; };
+		453884F7208B2883003EB260 /* tower sprites component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sprites component.hpp"; sourceTree = "<group>"; };
+		453884F8208B28CC003EB260 /* tower firing anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower firing anim system.cpp"; sourceTree = "<group>"; };
+		453884F9208B28CC003EB260 /* tower firing anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower firing anim system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +191,6 @@
 				453884E4208B1204003EB260 /* Base */,
 				453884E7208B1393003EB260 /* Spawner */,
 				453884F1208B2371003EB260 /* sprite depth component.hpp */,
-				453884F2208B245A003EB260 /* unit walk anim component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -215,6 +219,7 @@
 		453884C2208ACFEC003EB260 /* Units */ = {
 			isa = PBXGroup;
 			children = (
+				453884F2208B245A003EB260 /* unit walk anim component.hpp */,
 				453884BB208ACB87003EB260 /* unit stats component.hpp */,
 				453884C1208ACFCA003EB260 /* unit dir component.hpp */,
 				453884C5208AD10F003EB260 /* unit exit distance component.hpp */,
@@ -230,6 +235,8 @@
 				453884BF208ACE9D003EB260 /* tower stats component.hpp */,
 				453884C6208AD145003EB260 /* tower timing component.hpp */,
 				453884C7208AD289003EB260 /* tower target component.hpp */,
+				453884F6208B2785003EB260 /* tower firing anim component.hpp */,
+				453884F7208B2883003EB260 /* tower sprites component.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -265,6 +272,8 @@
 				453884D9208B0765003EB260 /* tower shoot system.hpp */,
 				453884E0208B10F9003EB260 /* tower timing system.cpp */,
 				453884E1208B10F9003EB260 /* tower timing system.hpp */,
+				453884F8208B28CC003EB260 /* tower firing anim system.cpp */,
+				453884F9208B28CC003EB260 /* tower firing anim system.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -407,6 +416,7 @@
 				453884D7208B0283003EB260 /* tower aim system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
+				453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,

@@ -12,9 +12,10 @@
 #include "tower stats component.hpp"
 #include "tower timing component.hpp"
 #include "tower target component.hpp"
+#include "tower firing anim component.hpp"
 
 void towerShootSystem(ECS::Registry &registry) {
-  auto view = registry.view<TowerStats, TowerTiming, TowerTarget>();
+  auto view = registry.view<TowerStats, TowerTiming, TowerTarget, TowerFiringAnim>();
   
   for (const ECS::EntityID entity : view) {
     const TowerStats towerStats = view.get<TowerStats>(entity);
@@ -30,5 +31,9 @@ void towerShootSystem(ECS::Registry &registry) {
     
     registry.get<UnitStats>(target).health -= towerStats.damage;
     timeSinceLastShot = 0;
+    
+    TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);
+    anim.firing = true;
+    anim.frame = 0;
   }
 }
