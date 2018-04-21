@@ -47,7 +47,11 @@
 		453884BD208ACC23003EB260 /* map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = map.hpp; sourceTree = "<group>"; };
 		453884BE208ACD6A003EB260 /* wave.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = wave.hpp; sourceTree = "<group>"; };
 		453884BF208ACE9D003EB260 /* tower stats component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower stats component.hpp"; sourceTree = "<group>"; };
-		453884C0208ACF12003EB260 /* unit pos component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit pos component.hpp"; sourceTree = "<group>"; };
+		453884C0208ACF12003EB260 /* position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position component.hpp"; sourceTree = "<group>"; };
+		453884C1208ACFCA003EB260 /* unit dir component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit dir component.hpp"; sourceTree = "<group>"; };
+		453884C4208AD0D7003EB260 /* unit path component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit path component.hpp"; sourceTree = "<group>"; };
+		453884C5208AD10F003EB260 /* unit exit distance component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit exit distance component.hpp"; sourceTree = "<group>"; };
+		453884C6208AD145003EB260 /* tower timing component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower timing component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,9 +141,9 @@
 		453884B9208ACB54003EB260 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				453884BB208ACB87003EB260 /* unit stats component.hpp */,
-				453884BF208ACE9D003EB260 /* tower stats component.hpp */,
-				453884C0208ACF12003EB260 /* unit pos component.hpp */,
+				453884C0208ACF12003EB260 /* position component.hpp */,
+				453884C3208ACFFA003EB260 /* Towers */,
+				453884C2208ACFEC003EB260 /* Units */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -158,6 +162,26 @@
 				453884BE208ACD6A003EB260 /* wave.hpp */,
 			);
 			name = "Data Structures";
+			sourceTree = "<group>";
+		};
+		453884C2208ACFEC003EB260 /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				453884BB208ACB87003EB260 /* unit stats component.hpp */,
+				453884C1208ACFCA003EB260 /* unit dir component.hpp */,
+				453884C4208AD0D7003EB260 /* unit path component.hpp */,
+				453884C5208AD10F003EB260 /* unit exit distance component.hpp */,
+			);
+			name = Units;
+			sourceTree = "<group>";
+		};
+		453884C3208ACFFA003EB260 /* Towers */ = {
+			isa = PBXGroup;
+			children = (
+				453884BF208ACE9D003EB260 /* tower stats component.hpp */,
+				453884C6208AD145003EB260 /* tower timing component.hpp */,
+			);
+			name = Towers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
