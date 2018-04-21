@@ -6,9 +6,13 @@
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#include <iostream>
+#include "Game/app.hpp"
+#include <Simpleton/SDL/mainloop.hpp>
+#include <Simpleton/Utils/profiler.hpp>
 
-int main(int, char **) {
-  std::cout << "Hello world\n";
+int main() {
+  App app;
+  SDL::runMainloop(&app);
+  PROFILER_INFO(stdout);
   return 0;
 }

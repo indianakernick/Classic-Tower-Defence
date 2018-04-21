@@ -14,7 +14,8 @@
 		453884A9208ABADB003EB260 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884A8208ABADB003EB260 /* CoreVideo.framework */; };
 		453884AB208ABAE3003EB260 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884AA208ABAE3003EB260 /* Cocoa.framework */; };
 		453884AD208ABB1F003EB260 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884AC208ABB1F003EB260 /* SDL2.framework */; };
-		453884B0208ABB46003EB260 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 453884AF208ABB46003EB260 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		453884B1208ABD09003EB260 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 453884AC208ABB1F003EB260 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		453884B8208ABF79003EB260 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884B6208ABF79003EB260 /* app.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				453884B0208ABB46003EB260 /* SDL2.framework in CopyFiles */,
+				453884B1208ABD09003EB260 /* SDL2.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +41,8 @@
 		453884A8208ABADB003EB260 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		453884AA208ABAE3003EB260 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		453884AC208ABB1F003EB260 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
-		453884AF208ABB46003EB260 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		453884B6208ABF79003EB260 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
+		453884B7208ABF79003EB260 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,6 @@
 		45388487208AB717003EB260 = {
 			isa = PBXGroup;
 			children = (
-				453884AF208ABB46003EB260 /* SDL2.framework */,
 				45388492208AB717003EB260 /* Classic Tower Defence */,
 				45388491208AB717003EB260 /* Products */,
 				453884A3208ABACA003EB260 /* Frameworks */,
@@ -80,6 +81,8 @@
 		45388492208AB717003EB260 /* Classic Tower Defence */ = {
 			isa = PBXGroup;
 			children = (
+				453884B2208ABD2A003EB260 /* Resources */,
+				453884B3208ABD31003EB260 /* Game */,
 				45388495208AB717003EB260 /* Assets.xcassets */,
 				4538849A208AB718003EB260 /* Info.plist */,
 				453884A1208AB815003EB260 /* main.cpp */,
@@ -99,6 +102,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		453884B2208ABD2A003EB260 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				453884B4208ABE66003EB260 /* Levels */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		453884B3208ABD31003EB260 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				453884B6208ABF79003EB260 /* app.cpp */,
+				453884B7208ABF79003EB260 /* app.hpp */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		453884B4208ABE66003EB260 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +137,7 @@
 				4538848C208AB717003EB260 /* Sources */,
 				4538848D208AB717003EB260 /* Frameworks */,
 				4538848E208AB717003EB260 /* Resources */,
+				453884B5208ABE9F003EB260 /* Compile Levels */,
 			);
 			buildRules = (
 			);
@@ -170,12 +198,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		453884B5208ABE9F003EB260 /* Compile Levels */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Levels/",
+			);
+			name = "Compile Levels";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/level 0.json",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"              # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4538848C208AB717003EB260 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
+				453884B8208ABF79003EB260 /* app.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +348,11 @@
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					ENABLE_PROFILER,
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.1.0/include,
@@ -336,6 +389,7 @@
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_PROFILER;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.1.0/include,
