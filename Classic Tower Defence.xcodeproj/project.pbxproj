@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45388494208AB717003EB260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45388493208AB717003EB260 /* AppDelegate.swift */; };
 		45388496208AB717003EB260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45388495208AB717003EB260 /* Assets.xcassets */; };
-		45388499208AB718003EB260 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45388497208AB718003EB260 /* MainMenu.xib */; };
+		453884A2208AB815003EB260 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884A1208AB815003EB260 /* main.cpp */; };
+		453884A5208ABACA003EB260 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884A4208ABACA003EB260 /* OpenGL.framework */; };
+		453884A7208ABAD3003EB260 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884A6208ABAD3003EB260 /* IOKit.framework */; };
+		453884A9208ABADB003EB260 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884A8208ABADB003EB260 /* CoreVideo.framework */; };
+		453884AB208ABAE3003EB260 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884AA208ABAE3003EB260 /* Cocoa.framework */; };
+		453884AD208ABB1F003EB260 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884AC208ABB1F003EB260 /* SDL2.framework */; };
+		453884B0208ABB46003EB260 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 453884AF208ABB46003EB260 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		453884AE208ABB24003EB260 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				453884B0208ABB46003EB260 /* SDL2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		45388490208AB717003EB260 /* Classic Tower Defence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Tower Defence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45388493208AB717003EB260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45388495208AB717003EB260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		45388498208AB718003EB260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4538849A208AB718003EB260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4538849B208AB718003EB260 /* Classic_Tower_Defence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Classic_Tower_Defence.entitlements; sourceTree = "<group>"; };
+		453884A1208AB815003EB260 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		453884A4208ABACA003EB260 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		453884A6208ABAD3003EB260 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		453884A8208ABADB003EB260 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		453884AA208ABAE3003EB260 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		453884AC208ABB1F003EB260 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		453884AF208ABB46003EB260 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +48,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453884AD208ABB1F003EB260 /* SDL2.framework in Frameworks */,
+				453884AB208ABAE3003EB260 /* Cocoa.framework in Frameworks */,
+				453884A9208ABADB003EB260 /* CoreVideo.framework in Frameworks */,
+				453884A7208ABAD3003EB260 /* IOKit.framework in Frameworks */,
+				453884A5208ABACA003EB260 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +62,10 @@
 		45388487208AB717003EB260 = {
 			isa = PBXGroup;
 			children = (
+				453884AF208ABB46003EB260 /* SDL2.framework */,
 				45388492208AB717003EB260 /* Classic Tower Defence */,
 				45388491208AB717003EB260 /* Products */,
+				453884A3208ABACA003EB260 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,13 +80,23 @@
 		45388492208AB717003EB260 /* Classic Tower Defence */ = {
 			isa = PBXGroup;
 			children = (
-				45388493208AB717003EB260 /* AppDelegate.swift */,
 				45388495208AB717003EB260 /* Assets.xcassets */,
-				45388497208AB718003EB260 /* MainMenu.xib */,
 				4538849A208AB718003EB260 /* Info.plist */,
-				4538849B208AB718003EB260 /* Classic_Tower_Defence.entitlements */,
+				453884A1208AB815003EB260 /* main.cpp */,
 			);
 			path = "Classic Tower Defence";
+			sourceTree = "<group>";
+		};
+		453884A3208ABACA003EB260 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				453884AC208ABB1F003EB260 /* SDL2.framework */,
+				453884AA208ABAE3003EB260 /* Cocoa.framework */,
+				453884A8208ABADB003EB260 /* CoreVideo.framework */,
+				453884A6208ABAD3003EB260 /* IOKit.framework */,
+				453884A4208ABACA003EB260 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,6 +106,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4538849E208AB718003EB260 /* Build configuration list for PBXNativeTarget "Classic Tower Defence" */;
 			buildPhases = (
+				453884AE208ABB24003EB260 /* CopyFiles */,
 				4538848C208AB717003EB260 /* Sources */,
 				4538848D208AB717003EB260 /* Frameworks */,
 				4538848E208AB717003EB260 /* Resources */,
@@ -93,6 +133,11 @@
 					4538848F208AB717003EB260 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -120,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
-				45388499208AB718003EB260 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,22 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45388494208AB717003EB260 /* AppDelegate.swift in Sources */,
+				453884A2208AB815003EB260 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		45388497208AB718003EB260 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45388498208AB718003EB260 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4538849C208AB718003EB260 /* Debug */ = {
@@ -259,12 +292,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Classic Tower Defence/Classic_Tower_Defence.entitlements";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QY44MADGVC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/nlohmann_json/3.1.0/include,
+				);
 				INFOPLIST_FILE = "Classic Tower Defence/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wall",
+					"-Wextra",
+					"-Weffc++",
+					"-Wpedantic",
+					"-Wno-documentation",
+					"-fvisibility=default",
+				);
+				OTHER_LDFLAGS = /usr/local/Cellar/glew/2.1.0/lib/libGLEW.a;
 				PRODUCT_BUNDLE_IDENTIFIER = "Indi-Kernick.Classic-Tower-Defence";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -275,12 +327,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Classic Tower Defence/Classic_Tower_Defence.entitlements";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QY44MADGVC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/nlohmann_json/3.1.0/include,
+				);
 				INFOPLIST_FILE = "Classic Tower Defence/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wall",
+					"-Wextra",
+					"-Weffc++",
+					"-Wpedantic",
+					"-Wno-documentation",
+					"-fvisibility=default",
+				);
+				OTHER_LDFLAGS = /usr/local/Cellar/glew/2.1.0/lib/libGLEW.a;
 				PRODUCT_BUNDLE_IDENTIFIER = "Indi-Kernick.Classic-Tower-Defence";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
