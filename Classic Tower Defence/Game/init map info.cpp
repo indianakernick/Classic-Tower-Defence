@@ -58,4 +58,7 @@ void initMapInfo(MapInfo &info, const Map &map) {
   if (!findPath(info, map, Math::Dir::NONE, info.entry)) {
     throw std::runtime_error("Could not find path from entry to exit");
   }
+  
+  info.pathDist = info.path.size() - 1;
+  info.entryDir = Math::FromVec<unsigned>::conv(info.path[1] - info.path[0]);
 }

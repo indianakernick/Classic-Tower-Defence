@@ -21,12 +21,11 @@ namespace {
     *static_cast<UnitStatsBase *>(&unitStats) = stats;
     unitStats.proto = &stats;
     
-    const UnitDir dir {map.entryDir};
-    const UnitPath path {0};
-    const UnitExitDistance dist {map.pathDist};
-    const Position pos {map.entry};
-    
-    registry.create(unitStats, dir, path, dist, pos);
+    const ECS::EntityID id = registry.create();
+    registry.assign<UnitDir>(id, map.entryDir);
+    registry.assign<UnitPath>(id, size_t(0));
+    registry.assign<UnitExitDistance>(id, map.pathDist);
+    registry.assign<Position>(id, map.entry);
   }
 }
 
