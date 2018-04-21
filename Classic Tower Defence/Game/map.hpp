@@ -19,13 +19,6 @@ enum class TileType : uint8_t {
   PLATFORM
 };
 
-struct Map {
-  using Grid = Utils::Grid<TileType>;
-  using Pos = Grid::Pos;
-  
-  Grid grid;
-  std::vector<Pos> entries;
-  std::vector<Pos> exits;
-};
+using Map = Utils::Grid<TileType>;
 
 #endif

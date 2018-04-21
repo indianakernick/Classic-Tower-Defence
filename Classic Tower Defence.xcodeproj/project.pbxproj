@@ -16,6 +16,7 @@
 		453884AD208ABB1F003EB260 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453884AC208ABB1F003EB260 /* SDL2.framework */; };
 		453884B1208ABD09003EB260 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 453884AC208ABB1F003EB260 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		453884B8208ABF79003EB260 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884B6208ABF79003EB260 /* app.cpp */; };
+		453884CC208AD499003EB260 /* init map info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884CA208AD499003EB260 /* init map info.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,10 @@
 		453884C4208AD0D7003EB260 /* unit path component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit path component.hpp"; sourceTree = "<group>"; };
 		453884C5208AD10F003EB260 /* unit exit distance component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit exit distance component.hpp"; sourceTree = "<group>"; };
 		453884C6208AD145003EB260 /* tower timing component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower timing component.hpp"; sourceTree = "<group>"; };
+		453884C7208AD289003EB260 /* tower target component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower target component.hpp"; sourceTree = "<group>"; };
+		453884C8208AD3A1003EB260 /* map info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map info.hpp"; sourceTree = "<group>"; };
+		453884CA208AD499003EB260 /* init map info.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "init map info.cpp"; sourceTree = "<group>"; };
+		453884CB208AD499003EB260 /* init map info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "init map info.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +127,8 @@
 		453884B3208ABD31003EB260 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				453884BC208ACC08003EB260 /* Data Structures */,
+				453884BC208ACC08003EB260 /* Game Data */,
+				453884C9208AD457003EB260 /* Game Data Systems */,
 				453884BA208ACB5D003EB260 /* Systems */,
 				453884B9208ACB54003EB260 /* Components */,
 				453884B6208ABF79003EB260 /* app.cpp */,
@@ -155,13 +161,14 @@
 			name = Systems;
 			sourceTree = "<group>";
 		};
-		453884BC208ACC08003EB260 /* Data Structures */ = {
+		453884BC208ACC08003EB260 /* Game Data */ = {
 			isa = PBXGroup;
 			children = (
 				453884BD208ACC23003EB260 /* map.hpp */,
 				453884BE208ACD6A003EB260 /* wave.hpp */,
+				453884C8208AD3A1003EB260 /* map info.hpp */,
 			);
-			name = "Data Structures";
+			name = "Game Data";
 			sourceTree = "<group>";
 		};
 		453884C2208ACFEC003EB260 /* Units */ = {
@@ -180,8 +187,18 @@
 			children = (
 				453884BF208ACE9D003EB260 /* tower stats component.hpp */,
 				453884C6208AD145003EB260 /* tower timing component.hpp */,
+				453884C7208AD289003EB260 /* tower target component.hpp */,
 			);
 			name = Towers;
+			sourceTree = "<group>";
+		};
+		453884C9208AD457003EB260 /* Game Data Systems */ = {
+			isa = PBXGroup;
+			children = (
+				453884CA208AD499003EB260 /* init map info.cpp */,
+				453884CB208AD499003EB260 /* init map info.hpp */,
+			);
+			name = "Game Data Systems";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +299,7 @@
 			files = (
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
+				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
