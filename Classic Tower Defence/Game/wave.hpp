@@ -11,11 +11,13 @@
 
 #include <vector>
 #include "unit stats component.hpp"
+#include "unit sprite component.hpp"
 
 struct Wave {
   struct Group {
     size_t quantity;
     UnitStatsBase stats;
+    UnitSprite sprite;
   };
   
   std::vector<Group> groups;

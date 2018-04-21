@@ -17,13 +17,14 @@
 #include "unit exit distance component.hpp"
 
 namespace {
-  void spawn(ECS::Registry &registry, const UnitStatsBase &stats, const MapInfo &map) {
+  void spawn(ECS::Registry &registry, const Wave::Group &group, const MapInfo &map) {
     UnitStats unitStats;
-    *static_cast<UnitStatsBase *>(&unitStats) = stats;
-    unitStats.proto = &stats;
+    *static_cast<UnitStatsBase *>(&unitStats) = group.stats;
+    unitStats.proto = &group.stats;
     
     const ECS::EntityID id = registry.create();
     registry.assign<UnitStats>(id, unitStats);
+    registry.assign<UnitSprite>(id, group.sprite);
     registry.assign<UnitDir>(id, map.entryDir);
     registry.assign<UnitPath>(id, size_t(0));
     registry.assign<UnitExitDistance>(id, map.pathDist);
@@ -45,7 +46,7 @@ void spawnerSystem(ECS::Registry &registry, const Wave &wave, const MapInfo &map
     }
     timing.timeSinceLastSpawn = 0.0f;
     
-    spawn(registry, wave.groups[state.currentGroup].stats, map);
+    spawn(registry, wave.groups[state.currentGroup], map);
     --state.numUnitsLeft;
     if (state.numUnitsLeft == 0) {
       if (state.currentGroup == wave.groups.size() - 1) {
