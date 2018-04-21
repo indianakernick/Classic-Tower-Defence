@@ -13,6 +13,7 @@
 #include "unit path component.hpp"
 #include "spawner state component.hpp"
 #include "spawner timing component.hpp"
+#include "unit walk anim component.hpp"
 #include "unit exit distance component.hpp"
 
 namespace {
@@ -22,10 +23,12 @@ namespace {
     unitStats.proto = &stats;
     
     const ECS::EntityID id = registry.create();
+    registry.assign<UnitStats>(id, unitStats);
     registry.assign<UnitDir>(id, map.entryDir);
     registry.assign<UnitPath>(id, size_t(0));
     registry.assign<UnitExitDistance>(id, map.pathDist);
     registry.assign<Position>(id, map.entry);
+    registry.assign<UnitWalkAnim>(id, uint32_t(0));
   }
 }
 
