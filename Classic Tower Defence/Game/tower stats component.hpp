@@ -9,12 +9,10 @@
 #ifndef tower_stats_component_hpp
 #define tower_stats_component_hpp
 
-#include <cstdint>
-
 struct TowerStats {
-  uint32_t range;
-  uint32_t damage;
-  uint32_t rof;
+  float range;
+  float damage;
+  float rof;
 };
 
 #endif

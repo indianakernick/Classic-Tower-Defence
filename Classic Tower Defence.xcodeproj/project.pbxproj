@@ -19,6 +19,7 @@
 		453884CC208AD499003EB260 /* init map info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884CA208AD499003EB260 /* init map info.cpp */; };
 		453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884CD208AE83A003EB260 /* unit motion system.cpp */; };
 		453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D2208AFE1C003EB260 /* base damage system.cpp */; };
+		453884D7208B0283003EB260 /* tower aim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D5208B0283003EB260 /* tower aim system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,8 @@
 		453884D1208AF9BD003EB260 /* unit path component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit path component.hpp"; sourceTree = "<group>"; };
 		453884D2208AFE1C003EB260 /* base damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "base damage system.cpp"; sourceTree = "<group>"; };
 		453884D3208AFE1C003EB260 /* base damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "base damage system.hpp"; sourceTree = "<group>"; };
+		453884D5208B0283003EB260 /* tower aim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower aim system.cpp"; sourceTree = "<group>"; };
+		453884D6208B0283003EB260 /* tower aim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower aim system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				453884CE208AE83A003EB260 /* unit motion system.hpp */,
 				453884D2208AFE1C003EB260 /* base damage system.cpp */,
 				453884D3208AFE1C003EB260 /* base damage system.hpp */,
+				453884D5208B0283003EB260 /* tower aim system.cpp */,
+				453884D6208B0283003EB260 /* tower aim system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453884D7208B0283003EB260 /* tower aim system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
