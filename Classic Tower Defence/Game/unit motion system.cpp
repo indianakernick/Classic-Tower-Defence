@@ -19,32 +19,9 @@ namespace {
   float orthoDist(const glm::vec2 a, const glm::vec2 b) {
     return std::abs(a.x - b.x) + std::abs(a.y - b.y);
   }
-  
-  glm::vec2 roundInDir(const glm::vec2 vec, const Math::Dir dir) {
-    constexpr Math::Dir PLUS_X = Math::Dir::RIGHT;
-    constexpr Math::Dir PLUS_Y = Math::Dir::UP;
-    
-    switch (dir) {
-      case PLUS_X:
-        return {std::ceil(vec.x), vec.y};
-      case PLUS_Y:
-        return {vec.x, std::ceil(vec.y)};
-      case Math::opposite(PLUS_X):
-        return {std::floor(vec.x), vec.y};
-      case Math::opposite(PLUS_Y):
-        return {vec.x, std::floor(vec.y)};
-      case Math::Dir::NONE:
-        return vec;
-      
-      default:
-        assert(false);
-    }
-  }
 }
 
 void unitMotionSystem(ECS::Registry &registry, const MapInfo &map, const float delta) {
-  using FromVec =  Math::FromVec<float>;
-
   auto view = registry.view<Position, UnitDir, UnitPath, UnitStats, UnitExitDistance>();
   for (const ECS::EntityID entity : view) {
     float moveDist = view.get<UnitStats>(entity).moveSpeed * delta;

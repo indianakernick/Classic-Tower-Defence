@@ -12,7 +12,7 @@
 #include <cstdint>
 
 struct BaseHealth {
-  uint32_t health;
+  int32_t health;
 };
 
 #endif
