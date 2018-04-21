@@ -9,9 +9,11 @@
 #ifndef unit_path_component_hpp
 #define unit_path_component_hpp
 
+#include <cstddef>
+
 struct UnitPath {
-  size_t entry;
-  size_t exit;
+  // index of position in MapInfo::path
+  size_t index;
 };
 
 #endif

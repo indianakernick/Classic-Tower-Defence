@@ -9,11 +9,9 @@
 #ifndef unit_stats_component_hpp
 #define unit_stats_component_hpp
 
-#include <cstdint>
-
 struct UnitStatsBase {
-  uint32_t health;
-  uint32_t moveSpeed;
+  float health;
+  float moveSpeed;
 };
 
 struct UnitStats : UnitStatsBase {

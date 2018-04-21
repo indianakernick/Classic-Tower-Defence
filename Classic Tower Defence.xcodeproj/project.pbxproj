@@ -17,6 +17,7 @@
 		453884B1208ABD09003EB260 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 453884AC208ABB1F003EB260 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		453884B8208ABF79003EB260 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884B6208ABF79003EB260 /* app.cpp */; };
 		453884CC208AD499003EB260 /* init map info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884CA208AD499003EB260 /* init map info.cpp */; };
+		453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884CD208AE83A003EB260 /* unit motion system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,13 +51,16 @@
 		453884BF208ACE9D003EB260 /* tower stats component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower stats component.hpp"; sourceTree = "<group>"; };
 		453884C0208ACF12003EB260 /* position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position component.hpp"; sourceTree = "<group>"; };
 		453884C1208ACFCA003EB260 /* unit dir component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit dir component.hpp"; sourceTree = "<group>"; };
-		453884C4208AD0D7003EB260 /* unit path component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit path component.hpp"; sourceTree = "<group>"; };
 		453884C5208AD10F003EB260 /* unit exit distance component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit exit distance component.hpp"; sourceTree = "<group>"; };
 		453884C6208AD145003EB260 /* tower timing component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower timing component.hpp"; sourceTree = "<group>"; };
 		453884C7208AD289003EB260 /* tower target component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower target component.hpp"; sourceTree = "<group>"; };
 		453884C8208AD3A1003EB260 /* map info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map info.hpp"; sourceTree = "<group>"; };
 		453884CA208AD499003EB260 /* init map info.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "init map info.cpp"; sourceTree = "<group>"; };
 		453884CB208AD499003EB260 /* init map info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "init map info.hpp"; sourceTree = "<group>"; };
+		453884CD208AE83A003EB260 /* unit motion system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit motion system.cpp"; sourceTree = "<group>"; };
+		453884CE208AE83A003EB260 /* unit motion system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit motion system.hpp"; sourceTree = "<group>"; };
+		453884D0208AE8DA003EB260 /* base health component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "base health component.hpp"; sourceTree = "<group>"; };
+		453884D1208AF9BD003EB260 /* unit path component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit path component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				453884C0208ACF12003EB260 /* position component.hpp */,
 				453884C3208ACFFA003EB260 /* Towers */,
 				453884C2208ACFEC003EB260 /* Units */,
+				453884D0208AE8DA003EB260 /* base health component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -157,6 +162,8 @@
 		453884BA208ACB5D003EB260 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
+				453884CD208AE83A003EB260 /* unit motion system.cpp */,
+				453884CE208AE83A003EB260 /* unit motion system.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -176,8 +183,8 @@
 			children = (
 				453884BB208ACB87003EB260 /* unit stats component.hpp */,
 				453884C1208ACFCA003EB260 /* unit dir component.hpp */,
-				453884C4208AD0D7003EB260 /* unit path component.hpp */,
 				453884C5208AD10F003EB260 /* unit exit distance component.hpp */,
+				453884D1208AF9BD003EB260 /* unit path component.hpp */,
 			);
 			name = Units;
 			sourceTree = "<group>";
@@ -299,6 +306,7 @@
 			files = (
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
+				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
