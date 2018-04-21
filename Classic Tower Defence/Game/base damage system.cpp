@@ -12,6 +12,8 @@
 #include "base health component.hpp"
 
 void baseDamageSystem(ECS::Registry &registry, const MapInfo &map) {
+  // assumes there is one base
+  
   const size_t exitIndex = map.path.size() - 1;
   const auto view = registry.view<UnitPath>();
   uint32_t damage = 0;

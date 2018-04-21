@@ -11,8 +11,9 @@
 #include <Simpleton/Math/dir.hpp>
 
 namespace {
-  // Finds any path between points if one exists. Handles dead ends. Does not
-  // find the shortest path. Returns true if a path was found.
+  // Finds any path between points if one exists. Handles dead ends. Gets stuck
+  // in some loops but not others. Does not find the shortest path.
+  // Returns true if a path was found.
 
   bool findPath(MapInfo &info, const Map &map, const Math::Dir prevDir, const Map::Pos pos) {
     info.path.push_back(pos);

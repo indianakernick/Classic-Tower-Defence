@@ -10,12 +10,15 @@
 #define map_info_hpp
 
 #include "map.hpp"
+#include <Simpleton/Math/dir.hpp>
 
 struct MapInfo {
   using Pos = Map::Pos;
 
   Pos entry;
   Pos exit;
+  Math::Dir entryDir;
+  float pathDist;
   std::vector<Pos> path;
 };
 

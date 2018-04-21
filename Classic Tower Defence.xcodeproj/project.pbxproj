@@ -23,6 +23,8 @@
 		453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D8208B0765003EB260 /* tower shoot system.cpp */; };
 		453884DF208B0D66003EB260 /* unit death system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884DD208B0D66003EB260 /* unit death system.cpp */; };
 		453884E2208B10F9003EB260 /* tower timing system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884E0208B10F9003EB260 /* tower timing system.cpp */; };
+		453884EB208B1477003EB260 /* spawner timing system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884E9208B1477003EB260 /* spawner timing system.cpp */; };
+		453884EE208B1607003EB260 /* spawner system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884EC208B1607003EB260 /* spawner system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +78,12 @@
 		453884DE208B0D66003EB260 /* unit death system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death system.hpp"; sourceTree = "<group>"; };
 		453884E0208B10F9003EB260 /* tower timing system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower timing system.cpp"; sourceTree = "<group>"; };
 		453884E1208B10F9003EB260 /* tower timing system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower timing system.hpp"; sourceTree = "<group>"; };
+		453884E5208B132A003EB260 /* spawner timing component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "spawner timing component.hpp"; sourceTree = "<group>"; };
+		453884E6208B138C003EB260 /* spawner state component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "spawner state component.hpp"; sourceTree = "<group>"; };
+		453884E9208B1477003EB260 /* spawner timing system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "spawner timing system.cpp"; sourceTree = "<group>"; };
+		453884EA208B1477003EB260 /* spawner timing system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "spawner timing system.hpp"; sourceTree = "<group>"; };
+		453884EC208B1607003EB260 /* spawner system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "spawner system.cpp"; sourceTree = "<group>"; };
+		453884ED208B1607003EB260 /* spawner system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "spawner system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +177,8 @@
 				453884C0208ACF12003EB260 /* position component.hpp */,
 				453884C3208ACFFA003EB260 /* Towers */,
 				453884C2208ACFEC003EB260 /* Units */,
-				453884D0208AE8DA003EB260 /* base health component.hpp */,
+				453884E4208B1204003EB260 /* Base */,
+				453884E7208B1393003EB260 /* Spawner */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -177,10 +186,10 @@
 		453884BA208ACB5D003EB260 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
-				453884DB208B0D45003EB260 /* Units */,
-				453884D2208AFE1C003EB260 /* base damage system.cpp */,
-				453884D3208AFE1C003EB260 /* base damage system.hpp */,
 				453884DC208B0D50003EB260 /* Towers */,
+				453884DB208B0D45003EB260 /* Units */,
+				453884E3208B11FA003EB260 /* Base */,
+				453884E8208B1456003EB260 /* Spawner */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -247,6 +256,43 @@
 				453884E1208B10F9003EB260 /* tower timing system.hpp */,
 			);
 			name = Towers;
+			sourceTree = "<group>";
+		};
+		453884E3208B11FA003EB260 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				453884D2208AFE1C003EB260 /* base damage system.cpp */,
+				453884D3208AFE1C003EB260 /* base damage system.hpp */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		453884E4208B1204003EB260 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				453884D0208AE8DA003EB260 /* base health component.hpp */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		453884E7208B1393003EB260 /* Spawner */ = {
+			isa = PBXGroup;
+			children = (
+				453884E5208B132A003EB260 /* spawner timing component.hpp */,
+				453884E6208B138C003EB260 /* spawner state component.hpp */,
+			);
+			name = Spawner;
+			sourceTree = "<group>";
+		};
+		453884E8208B1456003EB260 /* Spawner */ = {
+			isa = PBXGroup;
+			children = (
+				453884E9208B1477003EB260 /* spawner timing system.cpp */,
+				453884EA208B1477003EB260 /* spawner timing system.hpp */,
+				453884EC208B1607003EB260 /* spawner system.cpp */,
+				453884ED208B1607003EB260 /* spawner system.hpp */,
+			);
+			name = Spawner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453884E2208B10F9003EB260 /* tower timing system.cpp in Sources */,
+				453884EE208B1607003EB260 /* spawner system.cpp in Sources */,
 				453884D7208B0283003EB260 /* tower aim system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
@@ -354,6 +401,7 @@
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
+				453884EB208B1477003EB260 /* spawner timing system.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
