@@ -21,6 +21,7 @@
 		453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D2208AFE1C003EB260 /* base damage system.cpp */; };
 		453884D7208B0283003EB260 /* tower aim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D5208B0283003EB260 /* tower aim system.cpp */; };
 		453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D8208B0765003EB260 /* tower shoot system.cpp */; };
+		453884DF208B0D66003EB260 /* unit death system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884DD208B0D66003EB260 /* unit death system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +71,8 @@
 		453884D6208B0283003EB260 /* tower aim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower aim system.hpp"; sourceTree = "<group>"; };
 		453884D8208B0765003EB260 /* tower shoot system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower shoot system.cpp"; sourceTree = "<group>"; };
 		453884D9208B0765003EB260 /* tower shoot system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower shoot system.hpp"; sourceTree = "<group>"; };
+		453884DD208B0D66003EB260 /* unit death system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death system.cpp"; sourceTree = "<group>"; };
+		453884DE208B0D66003EB260 /* unit death system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,14 +174,10 @@
 		453884BA208ACB5D003EB260 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
-				453884CD208AE83A003EB260 /* unit motion system.cpp */,
-				453884CE208AE83A003EB260 /* unit motion system.hpp */,
+				453884DB208B0D45003EB260 /* Units */,
 				453884D2208AFE1C003EB260 /* base damage system.cpp */,
 				453884D3208AFE1C003EB260 /* base damage system.hpp */,
-				453884D5208B0283003EB260 /* tower aim system.cpp */,
-				453884D6208B0283003EB260 /* tower aim system.hpp */,
-				453884D8208B0765003EB260 /* tower shoot system.cpp */,
-				453884D9208B0765003EB260 /* tower shoot system.hpp */,
+				453884DC208B0D50003EB260 /* Towers */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -221,6 +220,28 @@
 				453884CB208AD499003EB260 /* init map info.hpp */,
 			);
 			name = "Game Data Systems";
+			sourceTree = "<group>";
+		};
+		453884DB208B0D45003EB260 /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				453884CD208AE83A003EB260 /* unit motion system.cpp */,
+				453884CE208AE83A003EB260 /* unit motion system.hpp */,
+				453884DD208B0D66003EB260 /* unit death system.cpp */,
+				453884DE208B0D66003EB260 /* unit death system.hpp */,
+			);
+			name = Units;
+			sourceTree = "<group>";
+		};
+		453884DC208B0D50003EB260 /* Towers */ = {
+			isa = PBXGroup;
+			children = (
+				453884D5208B0283003EB260 /* tower aim system.cpp */,
+				453884D6208B0283003EB260 /* tower aim system.hpp */,
+				453884D8208B0765003EB260 /* tower shoot system.cpp */,
+				453884D9208B0765003EB260 /* tower shoot system.hpp */,
+			);
+			name = Towers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453884D7208B0283003EB260 /* tower aim system.cpp in Sources */,
+				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
