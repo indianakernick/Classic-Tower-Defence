@@ -22,6 +22,7 @@
 		453884D7208B0283003EB260 /* tower aim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D5208B0283003EB260 /* tower aim system.cpp */; };
 		453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D8208B0765003EB260 /* tower shoot system.cpp */; };
 		453884DF208B0D66003EB260 /* unit death system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884DD208B0D66003EB260 /* unit death system.cpp */; };
+		453884E2208B10F9003EB260 /* tower timing system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884E0208B10F9003EB260 /* tower timing system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,8 @@
 		453884D9208B0765003EB260 /* tower shoot system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower shoot system.hpp"; sourceTree = "<group>"; };
 		453884DD208B0D66003EB260 /* unit death system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death system.cpp"; sourceTree = "<group>"; };
 		453884DE208B0D66003EB260 /* unit death system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death system.hpp"; sourceTree = "<group>"; };
+		453884E0208B10F9003EB260 /* tower timing system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower timing system.cpp"; sourceTree = "<group>"; };
+		453884E1208B10F9003EB260 /* tower timing system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower timing system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +243,8 @@
 				453884D6208B0283003EB260 /* tower aim system.hpp */,
 				453884D8208B0765003EB260 /* tower shoot system.cpp */,
 				453884D9208B0765003EB260 /* tower shoot system.hpp */,
+				453884E0208B10F9003EB260 /* tower timing system.cpp */,
+				453884E1208B10F9003EB260 /* tower timing system.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453884E2208B10F9003EB260 /* tower timing system.cpp in Sources */,
 				453884D7208B0283003EB260 /* tower aim system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
