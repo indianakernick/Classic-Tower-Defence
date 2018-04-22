@@ -30,6 +30,8 @@
 		453884FF208C15B5003EB260 /* create tower system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884FD208C15B5003EB260 /* create tower system.cpp */; };
 		45388503208C18B8003EB260 /* upgrade tower system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388501208C18B8003EB260 /* upgrade tower system.cpp */; };
 		4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538850A208C2C56003EB260 /* unit rendering system.cpp */; };
+		45388526208C5858003EB260 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45388524208C5858003EB260 /* sprites.atlas */; };
+		45388527208C5858003EB260 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 45388525208C5858003EB260 /* sprites.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,6 +108,28 @@
 		45388502208C18B8003EB260 /* upgrade tower system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "upgrade tower system.hpp"; sourceTree = "<group>"; };
 		4538850A208C2C56003EB260 /* unit rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit rendering system.cpp"; sourceTree = "<group>"; };
 		4538850B208C2C56003EB260 /* unit rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit rendering system.hpp"; sourceTree = "<group>"; };
+		45388514208C583F003EB260 /* placeholder unit 3 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 3 0.png"; sourceTree = "<group>"; };
+		45388515208C5840003EB260 /* placeholder unit 2 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 2 3.png"; sourceTree = "<group>"; };
+		45388516208C5840003EB260 /* placeholder unit 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 1 2.png"; sourceTree = "<group>"; };
+		45388517208C5840003EB260 /* placeholder unit 3 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 3 1.png"; sourceTree = "<group>"; };
+		45388518208C5840003EB260 /* placeholder unit 0 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 0 2.png"; sourceTree = "<group>"; };
+		45388519208C5841003EB260 /* placeholder unit 3 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 3 2.png"; sourceTree = "<group>"; };
+		4538851A208C5841003EB260 /* placeholder unit 2 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 2 0.png"; sourceTree = "<group>"; };
+		4538851B208C5841003EB260 /* placeholder unit 1 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 1 0.png"; sourceTree = "<group>"; };
+		4538851C208C5841003EB260 /* placeholder unit 1 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 1 3.png"; sourceTree = "<group>"; };
+		4538851D208C5841003EB260 /* placeholder unit 3 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 3 3.png"; sourceTree = "<group>"; };
+		4538851E208C5841003EB260 /* placeholder unit 2 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 2 1.png"; sourceTree = "<group>"; };
+		4538851F208C5841003EB260 /* placeholder unit 0 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 0 1.png"; sourceTree = "<group>"; };
+		45388520208C5842003EB260 /* placeholder unit 1 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 1 1.png"; sourceTree = "<group>"; };
+		45388521208C5842003EB260 /* placeholder unit 0 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 0 3.png"; sourceTree = "<group>"; };
+		45388522208C5842003EB260 /* placeholder unit 0 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 0 0.png"; sourceTree = "<group>"; };
+		45388523208C5842003EB260 /* placeholder unit 2 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 2 2.png"; sourceTree = "<group>"; };
+		45388524208C5858003EB260 /* sprites.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprites.atlas; sourceTree = "<group>"; };
+		45388525208C5858003EB260 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
+		45388528208C5CE4003EB260 /* placeholder map 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 2.png"; sourceTree = "<group>"; };
+		45388529208C5CE4003EB260 /* placeholder map 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 3.png"; sourceTree = "<group>"; };
+		4538852A208C5CE5003EB260 /* placeholder map 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 0.png"; sourceTree = "<group>"; };
+		4538852B208C5CE5003EB260 /* placeholder map 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +192,8 @@
 		453884B2208ABD2A003EB260 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				45388513208C5723003EB260 /* Sprites */,
+				45388512208C5716003EB260 /* Spritesheets */,
 				453884B4208ABE66003EB260 /* Levels */,
 			);
 			path = Resources;
@@ -358,6 +384,42 @@
 			name = Rendering;
 			sourceTree = "<group>";
 		};
+		45388512208C5716003EB260 /* Spritesheets */ = {
+			isa = PBXGroup;
+			children = (
+				45388524208C5858003EB260 /* sprites.atlas */,
+				45388525208C5858003EB260 /* sprites.png */,
+			);
+			path = Spritesheets;
+			sourceTree = "<group>";
+		};
+		45388513208C5723003EB260 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				4538852A208C5CE5003EB260 /* placeholder map 0.png */,
+				4538852B208C5CE5003EB260 /* placeholder map 1.png */,
+				45388528208C5CE4003EB260 /* placeholder map 2.png */,
+				45388529208C5CE4003EB260 /* placeholder map 3.png */,
+				45388522208C5842003EB260 /* placeholder unit 0 0.png */,
+				4538851F208C5841003EB260 /* placeholder unit 0 1.png */,
+				45388518208C5840003EB260 /* placeholder unit 0 2.png */,
+				45388521208C5842003EB260 /* placeholder unit 0 3.png */,
+				4538851B208C5841003EB260 /* placeholder unit 1 0.png */,
+				45388520208C5842003EB260 /* placeholder unit 1 1.png */,
+				45388516208C5840003EB260 /* placeholder unit 1 2.png */,
+				4538851C208C5841003EB260 /* placeholder unit 1 3.png */,
+				4538851A208C5841003EB260 /* placeholder unit 2 0.png */,
+				4538851E208C5841003EB260 /* placeholder unit 2 1.png */,
+				45388523208C5842003EB260 /* placeholder unit 2 2.png */,
+				45388515208C5840003EB260 /* placeholder unit 2 3.png */,
+				45388514208C583F003EB260 /* placeholder unit 3 0.png */,
+				45388517208C5840003EB260 /* placeholder unit 3 1.png */,
+				45388519208C5841003EB260 /* placeholder unit 3 2.png */,
+				4538851D208C5841003EB260 /* placeholder unit 3 3.png */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +430,7 @@
 				453884AE208ABB24003EB260 /* CopyFiles */,
 				4538848C208AB717003EB260 /* Sources */,
 				4538848D208AB717003EB260 /* Frameworks */,
+				45388511208C570A003EB260 /* Pack Sprites */,
 				4538848E208AB717003EB260 /* Resources */,
 				453884B5208ABE9F003EB260 /* Compile Levels */,
 			);
@@ -424,6 +487,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45388526208C5858003EB260 /* sprites.atlas in Resources */,
+				45388527208C5858003EB260 /* sprites.png in Resources */,
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +511,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"              # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
+		};
+		45388511208C570A003EB260 /* Pack Sprites */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Sprites/",
+			);
+			name = "Pack Sprites";
+			outputPaths = (
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/sprites.atlas",
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/sprites.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\npack in=../Sprites out=sprites 1> /dev/null";
 		};
 /* End PBXShellScriptBuildPhase section */
 

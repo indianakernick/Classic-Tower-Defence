@@ -23,6 +23,7 @@ void unitRenderingSystem(
     const UnitSprite &sprite = view.get<UnitSprite>(entity);
     Unpack::SpriteID id = sprite.sprite;
     id += Math::toNum(view.get<UnitDir>(entity).dir, sprite.frames);
+    id += view.get<UnitWalkAnim>(entity).frame;
     const Unpack::Rect rect = sheet.getSprite(id);
     
     writer.quad();
