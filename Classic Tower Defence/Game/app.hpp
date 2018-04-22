@@ -12,6 +12,15 @@
 #include <Simpleton/SDL/library.hpp>
 #include <Simpleton/OpenGL/context.hpp>
 
+#include "wave.hpp"
+#include "map info.hpp"
+#include <Simpleton/Unpack/sheet.hpp>
+#include <Simpleton/ECS/registry.hpp>
+#include <Simpleton/Camera 2D/camera.hpp>
+#include <Simpleton/Graphics 2D/renderer.hpp>
+#include <Simpleton/Camera 2D/zoom to fit.hpp>
+#include <Simpleton/Graphics 2D/quad writer.hpp>
+
 class App {
 public:
   App() = default;
@@ -25,6 +34,16 @@ private:
   SDL::Library windowLibrary;
   SDL::Window window;
   GL::Context renderingContext;
+  
+  G2D::Renderer renderer;
+  Cam2D::Camera camera;
+  Cam2D::ZoomToFit zoomToFit;
+  ECS::Registry reg;
+  Map map;
+  MapInfo mapInfo;
+  Wave wave;
+  G2D::QuadWriter writer;
+  Unpack::Spritesheet sheet;
 
   bool input();
   void update(float);
