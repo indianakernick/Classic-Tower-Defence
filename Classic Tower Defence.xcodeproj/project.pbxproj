@@ -27,6 +27,8 @@
 		453884EE208B1607003EB260 /* spawner system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884EC208B1607003EB260 /* spawner system.cpp */; };
 		453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884F3208B2534003EB260 /* unit walk anim system.cpp */; };
 		453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884F8208B28CC003EB260 /* tower firing anim system.cpp */; };
+		453884FF208C15B5003EB260 /* create tower system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884FD208C15B5003EB260 /* create tower system.cpp */; };
+		45388503208C18B8003EB260 /* upgrade tower system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388501208C18B8003EB260 /* upgrade tower system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,6 +97,12 @@
 		453884F7208B2883003EB260 /* tower sprites component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sprites component.hpp"; sourceTree = "<group>"; };
 		453884F8208B28CC003EB260 /* tower firing anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower firing anim system.cpp"; sourceTree = "<group>"; };
 		453884F9208B28CC003EB260 /* tower firing anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower firing anim system.hpp"; sourceTree = "<group>"; };
+		453884FB208B2A07003EB260 /* towers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = towers.hpp; sourceTree = "<group>"; };
+		453884FD208C15B5003EB260 /* create tower system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create tower system.cpp"; sourceTree = "<group>"; };
+		453884FE208C15B5003EB260 /* create tower system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create tower system.hpp"; sourceTree = "<group>"; };
+		45388500208C16D3003EB260 /* tower upgrades component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower upgrades component.hpp"; sourceTree = "<group>"; };
+		45388501208C18B8003EB260 /* upgrade tower system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "upgrade tower system.cpp"; sourceTree = "<group>"; };
+		45388502208C18B8003EB260 /* upgrade tower system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "upgrade tower system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +206,7 @@
 		453884BA208ACB5D003EB260 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
+				453884FC208C1544003EB260 /* Editor */,
 				453884DC208B0D50003EB260 /* Towers */,
 				453884DB208B0D45003EB260 /* Units */,
 				453884E3208B11FA003EB260 /* Base */,
@@ -212,6 +221,7 @@
 				453884BD208ACC23003EB260 /* map.hpp */,
 				453884BE208ACD6A003EB260 /* wave.hpp */,
 				453884C8208AD3A1003EB260 /* map info.hpp */,
+				453884FB208B2A07003EB260 /* towers.hpp */,
 			);
 			name = "Game Data";
 			sourceTree = "<group>";
@@ -237,6 +247,7 @@
 				453884C7208AD289003EB260 /* tower target component.hpp */,
 				453884F6208B2785003EB260 /* tower firing anim component.hpp */,
 				453884F7208B2883003EB260 /* tower sprites component.hpp */,
+				45388500208C16D3003EB260 /* tower upgrades component.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -313,6 +324,17 @@
 				453884ED208B1607003EB260 /* spawner system.hpp */,
 			);
 			name = Spawner;
+			sourceTree = "<group>";
+		};
+		453884FC208C1544003EB260 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				453884FD208C15B5003EB260 /* create tower system.cpp */,
+				453884FE208C15B5003EB260 /* create tower system.hpp */,
+				45388501208C18B8003EB260 /* upgrade tower system.cpp */,
+				45388502208C18B8003EB260 /* upgrade tower system.hpp */,
+			);
+			name = Editor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,10 +441,12 @@
 				453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
+				453884FF208C15B5003EB260 /* create tower system.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
+				45388503208C18B8003EB260 /* upgrade tower system.cpp in Sources */,
 				453884EB208B1477003EB260 /* spawner timing system.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

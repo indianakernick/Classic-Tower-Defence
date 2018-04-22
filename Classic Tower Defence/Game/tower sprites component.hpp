@@ -11,10 +11,14 @@
 
 #include <Simpleton/Unpack/types.hpp>
 
-struct TowerSprites {
+struct TowerSpritesBase {
   Unpack::SpriteID gun;
   Unpack::SpriteID firingFrames;
   Unpack::SpriteID base;
+};
+
+struct TowerSprites {
+  const TowerSpritesBase *proto;
 };
 
 #endif

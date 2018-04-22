@@ -9,10 +9,14 @@
 #ifndef tower_stats_component_hpp
 #define tower_stats_component_hpp
 
-struct TowerStats {
+struct TowerStatsBase {
   float range;
   float damage;
   float rof;
+};
+
+struct TowerStats {
+  const TowerStatsBase *proto;
 };
 
 #endif
