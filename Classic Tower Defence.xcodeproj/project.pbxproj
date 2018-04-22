@@ -32,6 +32,7 @@
 		4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538850A208C2C56003EB260 /* unit rendering system.cpp */; };
 		45388526208C5858003EB260 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45388524208C5858003EB260 /* sprites.atlas */; };
 		45388527208C5858003EB260 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 45388525208C5858003EB260 /* sprites.png */; };
+		4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538852C208C5DC7003EB260 /* map rendering system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -130,6 +131,9 @@
 		45388529208C5CE4003EB260 /* placeholder map 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 3.png"; sourceTree = "<group>"; };
 		4538852A208C5CE5003EB260 /* placeholder map 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 0.png"; sourceTree = "<group>"; };
 		4538852B208C5CE5003EB260 /* placeholder map 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 1.png"; sourceTree = "<group>"; };
+		4538852C208C5DC7003EB260 /* map rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "map rendering system.cpp"; sourceTree = "<group>"; };
+		4538852D208C5DC7003EB260 /* map rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map rendering system.hpp"; sourceTree = "<group>"; };
+		4538852F208C5F32003EB260 /* map sprites.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map sprites.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,7 @@
 				453884BE208ACD6A003EB260 /* wave.hpp */,
 				453884C8208AD3A1003EB260 /* map info.hpp */,
 				453884FB208B2A07003EB260 /* towers.hpp */,
+				4538852F208C5F32003EB260 /* map sprites.hpp */,
 			);
 			name = "Game Data";
 			sourceTree = "<group>";
@@ -380,6 +385,8 @@
 			children = (
 				4538850A208C2C56003EB260 /* unit rendering system.cpp */,
 				4538850B208C2C56003EB260 /* unit rendering system.hpp */,
+				4538852C208C5DC7003EB260 /* map rendering system.cpp */,
+				4538852D208C5DC7003EB260 /* map rendering system.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -547,6 +554,7 @@
 				453884FF208C15B5003EB260 /* create tower system.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
+				4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
 				4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */,
