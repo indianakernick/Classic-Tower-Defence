@@ -10,11 +10,11 @@
 
 #include "unit stats component.hpp"
 
-void unitDeathSystem(ECS::Registry &registry) {
-  auto view = registry.view<UnitStats>();
+void unitDeathSystem(ECS::Registry &reg) {
+  auto view = reg.view<UnitStats>();
   for (const ECS::EntityID entity : view) {
     if (view.get(entity).health <= 0.0f) {
-      registry.destroy(entity);
+      reg.destroy(entity);
     }
   }
 }

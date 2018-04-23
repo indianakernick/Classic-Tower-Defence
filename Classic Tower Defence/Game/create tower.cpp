@@ -1,12 +1,12 @@
 //
-//  create tower system.cpp
+//  create tower.cpp
 //  Classic Tower Defence
 //
 //  Created by Indi Kernick on 22/4/18.
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#include "create tower system.hpp"
+#include "create tower.hpp"
 
 #include "position component.hpp"
 #include "tower timing component.hpp"

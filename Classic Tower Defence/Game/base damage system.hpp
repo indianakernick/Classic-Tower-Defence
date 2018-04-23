@@ -9,7 +9,6 @@
 #ifndef base_damage_system_hpp
 #define base_damage_system_hpp
 
-#include "map info.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
 void baseDamageSystem(ECS::Registry &);

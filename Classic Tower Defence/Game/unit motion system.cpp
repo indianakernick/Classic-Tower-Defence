@@ -9,7 +9,7 @@
 #include "unit motion system.hpp"
 
 #include <glm/glm.hpp>
-#include "map info.hpp"
+#include "map info component.hpp"
 #include "position component.hpp"
 #include "unit dir component.hpp"
 #include "unit path component.hpp"

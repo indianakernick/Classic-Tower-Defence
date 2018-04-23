@@ -10,8 +10,8 @@
 
 #include "tower timing component.hpp"
 
-void towerTimingSystem(ECS::Registry &registry, const float delta) {
-  auto view = registry.view<TowerTiming>();
+void towerTimingSystem(ECS::Registry &reg, const float delta) {
+  auto view = reg.view<TowerTiming>();
   for (const ECS::EntityID entity : view) {
     view.get(entity).timeSinceLastShot += delta;
   }

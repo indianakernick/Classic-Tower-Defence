@@ -9,11 +9,11 @@
 #include "game logic.hpp"
 
 #include <string>
-#include "map sprites.hpp"
-#include "map info.hpp"
+#include "map sprites component.hpp"
+#include "map info component.hpp"
 #include "init map info.hpp"
 #include "create spawner.hpp"
-#include "create tower system.hpp"
+#include "create tower.hpp"
 #include "create base.hpp"
 #include "unit motion system.hpp"
 #include "unit death system.hpp"
@@ -23,7 +23,6 @@
 #include "tower aim system.hpp"
 #include "tower shoot system.hpp"
 #include "tower timing system.hpp"
-#include "create tower system.hpp"
 
 TileType tileChar(const char c) {
   switch (c) {
@@ -68,9 +67,9 @@ void GameLogic::init(ECS::Registry &reg) {
   const ECS::EntityID mapID = reg.create();
   Map &map = reg.attach<Map>(mapID, glm::ivec2(16, 10), TileType::PLATFORM);
   setMap(map, testMap);
-  MapInfo &mapInfo = reg.attach<MapInfo>(mapID);
-  initMapInfo(mapInfo, map);
+  reg.attach<MapInfo>(mapID);
   reg.attach<MapSprites>(mapID, Unpack::SpriteID(0));
+  initMapInfo(reg);
   
   Wave::Group group;
   group.quantity = 10000;

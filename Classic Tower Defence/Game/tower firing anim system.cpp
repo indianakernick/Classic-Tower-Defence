@@ -11,8 +11,8 @@
 #include "tower sprites component.hpp"
 #include "tower firing anim component.hpp"
 
-void towerFiringAnimSystem(ECS::Registry &registry) {
-  auto view = registry.view<TowerSprites, TowerFiringAnim>();
+void towerFiringAnimSystem(ECS::Registry &reg) {
+  auto view = reg.view<TowerSprites, TowerFiringAnim>();
   for (const ECS::EntityID entity : view) {
     TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);
     if (!anim.firing) {

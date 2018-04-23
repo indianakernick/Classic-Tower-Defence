@@ -11,8 +11,8 @@
 #include "unit sprite component.hpp"
 #include "unit walk anim component.hpp"
 
-void unitWalkAnimSystem(ECS::Registry &registry) {
-  auto view = registry.view<UnitSprite, UnitWalkAnim>();
+void unitWalkAnimSystem(ECS::Registry &reg) {
+  auto view = reg.view<UnitSprite, UnitWalkAnim>();
   for (const ECS::EntityID entity : view) {
     const uint32_t frames = view.get<UnitSprite>(entity).frames;
     uint32_t &frame = view.get<UnitWalkAnim>(entity).frame;

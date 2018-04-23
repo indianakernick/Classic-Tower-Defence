@@ -9,8 +9,8 @@
 #ifndef init_map_info_hpp
 #define init_map_info_hpp
 
-#include "map info.hpp"
+#include <Simpleton/ECS/registry.hpp>
 
-void initMapInfo(MapInfo &, const Map &);
+void initMapInfo(ECS::Registry &);
 
 #endif

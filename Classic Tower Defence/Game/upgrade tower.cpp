@@ -1,12 +1,12 @@
 //
-//  upgrade tower system.cpp
+//  upgrade tower.cpp
 //  Classic Tower Defence
 //
 //  Created by Indi Kernick on 22/4/18.
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#include "upgrade tower system.hpp"
+#include "upgrade tower.hpp"
 
 #include "towers.hpp"
 #include "tower upgrades component.hpp"

@@ -14,9 +14,9 @@
 #include "tower target component.hpp"
 #include "unit exit distance component.hpp"
 
-void towerAimSystem(ECS::Registry &registry) {
-  auto towers = registry.view<Position, TowerStats, TowerTarget>();
-  auto units = registry.view<Position, UnitExitDistance>();
+void towerAimSystem(ECS::Registry &reg) {
+  auto towers = reg.view<Position, TowerStats, TowerTarget>();
+  auto units = reg.view<Position, UnitExitDistance>();
   
   for (const ECS::EntityID tower : towers) {
     const glm::vec2 towerPos = towers.get<Position>(tower).pos;

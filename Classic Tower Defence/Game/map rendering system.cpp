@@ -8,8 +8,8 @@
 
 #include "map rendering system.hpp"
 
-#include "map.hpp"
-#include "map sprites.hpp"
+#include "map component.hpp"
+#include "map sprites component.hpp"
 
 void mapRenderingSystem(
   ECS::Registry &reg,

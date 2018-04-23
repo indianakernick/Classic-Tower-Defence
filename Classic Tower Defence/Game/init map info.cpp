@@ -8,6 +8,7 @@
 
 #include "init map info.hpp"
 
+#include "map info component.hpp"
 #include <Simpleton/Math/dir.hpp>
 
 namespace {
@@ -46,7 +47,9 @@ namespace {
   }
 }
 
-void initMapInfo(MapInfo &info, const Map &map) {
+void initMapInfo(ECS::Registry &reg) {
+  MapInfo &info = reg.get<MapInfo>();
+  const Map &map = reg.get<Map>();
   for (size_t i = 0; i != map.scalarSize(); ++i) {
     if (map[i] == TileType::ENTRY) {
       info.entry = map.toPos(i);
