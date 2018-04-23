@@ -23,6 +23,7 @@ void towerFiringAnimSystem(ECS::Registry &registry) {
     ++anim.frame;
     if (anim.frame == frames) {
       anim.frame = 0;
+      anim.firing = false;
     }
   }
 }

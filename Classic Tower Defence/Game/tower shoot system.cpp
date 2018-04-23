@@ -33,7 +33,7 @@ void towerShootSystem(ECS::Registry &registry) {
     timeSinceLastShot = 0;
     
     TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);
-    anim.firing = true;
     anim.frame = 0;
+    anim.firing = true;
   }
 }
