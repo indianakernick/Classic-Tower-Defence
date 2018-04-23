@@ -109,22 +109,6 @@
 		45388502208C18B8003EB260 /* upgrade tower system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "upgrade tower system.hpp"; sourceTree = "<group>"; };
 		4538850A208C2C56003EB260 /* unit rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit rendering system.cpp"; sourceTree = "<group>"; };
 		4538850B208C2C56003EB260 /* unit rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit rendering system.hpp"; sourceTree = "<group>"; };
-		45388514208C583F003EB260 /* placeholder unit 3 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 3 0.png"; sourceTree = "<group>"; };
-		45388515208C5840003EB260 /* placeholder unit 2 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 2 3.png"; sourceTree = "<group>"; };
-		45388516208C5840003EB260 /* placeholder unit 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 1 2.png"; sourceTree = "<group>"; };
-		45388517208C5840003EB260 /* placeholder unit 3 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 3 1.png"; sourceTree = "<group>"; };
-		45388518208C5840003EB260 /* placeholder unit 0 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 0 2.png"; sourceTree = "<group>"; };
-		45388519208C5841003EB260 /* placeholder unit 3 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 3 2.png"; sourceTree = "<group>"; };
-		4538851A208C5841003EB260 /* placeholder unit 2 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 2 0.png"; sourceTree = "<group>"; };
-		4538851B208C5841003EB260 /* placeholder unit 1 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 1 0.png"; sourceTree = "<group>"; };
-		4538851C208C5841003EB260 /* placeholder unit 1 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 1 3.png"; sourceTree = "<group>"; };
-		4538851D208C5841003EB260 /* placeholder unit 3 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 3 3.png"; sourceTree = "<group>"; };
-		4538851E208C5841003EB260 /* placeholder unit 2 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 2 1.png"; sourceTree = "<group>"; };
-		4538851F208C5841003EB260 /* placeholder unit 0 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 0 1.png"; sourceTree = "<group>"; };
-		45388520208C5842003EB260 /* placeholder unit 1 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 1 1.png"; sourceTree = "<group>"; };
-		45388521208C5842003EB260 /* placeholder unit 0 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 0 3.png"; sourceTree = "<group>"; };
-		45388522208C5842003EB260 /* placeholder unit 0 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 0 0.png"; sourceTree = "<group>"; };
-		45388523208C5842003EB260 /* placeholder unit 2 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder unit 2 2.png"; sourceTree = "<group>"; };
 		45388524208C5858003EB260 /* sprites.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprites.atlas; sourceTree = "<group>"; };
 		45388525208C5858003EB260 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
 		45388528208C5CE4003EB260 /* placeholder map 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 2.png"; sourceTree = "<group>"; };
@@ -134,6 +118,41 @@
 		4538852C208C5DC7003EB260 /* map rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "map rendering system.cpp"; sourceTree = "<group>"; };
 		4538852D208C5DC7003EB260 /* map rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map rendering system.hpp"; sourceTree = "<group>"; };
 		4538852F208C5F32003EB260 /* map sprites.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map sprites.hpp"; sourceTree = "<group>"; };
+		45388531208D7345003EB260 /* robot.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = robot.anim; sourceTree = "<group>"; };
+		45388532208D7346003EB260 /* placeholder map.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "placeholder map.anim"; sourceTree = "<group>"; };
+		45388533208D7356003EB260 /* ui plan.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ui plan.anim"; sourceTree = "<group>"; };
+		45388534208D73A4003EB260 /* robot 0 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 3.png"; sourceTree = "<group>"; };
+		45388535208D73A5003EB260 /* robot 0 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 0.png"; sourceTree = "<group>"; };
+		45388536208D73A5003EB260 /* robot 2 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 2 7.png"; sourceTree = "<group>"; };
+		45388537208D73A5003EB260 /* robot 1 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 0.png"; sourceTree = "<group>"; };
+		45388538208D73A5003EB260 /* robot 2 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 2 4.png"; sourceTree = "<group>"; };
+		45388539208D73A5003EB260 /* robot 2 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 2 5.png"; sourceTree = "<group>"; };
+		4538853A208D73A5003EB260 /* robot 1 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 7.png"; sourceTree = "<group>"; };
+		4538853B208D73A5003EB260 /* robot 3 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 3 5.png"; sourceTree = "<group>"; };
+		4538853C208D73A5003EB260 /* robot 2 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 2 0.png"; sourceTree = "<group>"; };
+		4538853D208D73A5003EB260 /* robot 0 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 4.png"; sourceTree = "<group>"; };
+		4538853E208D73A6003EB260 /* robot 3 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 3 1.png"; sourceTree = "<group>"; };
+		4538853F208D73A6003EB260 /* robot 2 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 2 2.png"; sourceTree = "<group>"; };
+		45388540208D73A6003EB260 /* robot 3 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 3 6.png"; sourceTree = "<group>"; };
+		45388541208D73A6003EB260 /* robot 3 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 3 7.png"; sourceTree = "<group>"; };
+		45388542208D73A6003EB260 /* robot 1 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 1.png"; sourceTree = "<group>"; };
+		45388543208D73A6003EB260 /* robot 3 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 3 2.png"; sourceTree = "<group>"; };
+		45388544208D73A6003EB260 /* robot 3 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 3 4.png"; sourceTree = "<group>"; };
+		45388545208D73A7003EB260 /* robot 3 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 3 3.png"; sourceTree = "<group>"; };
+		45388546208D73A7003EB260 /* robot 0 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 7.png"; sourceTree = "<group>"; };
+		45388547208D73A7003EB260 /* robot 0 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 6.png"; sourceTree = "<group>"; };
+		45388548208D73A7003EB260 /* robot 2 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 2 3.png"; sourceTree = "<group>"; };
+		45388549208D73A7003EB260 /* robot 0 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 5.png"; sourceTree = "<group>"; };
+		4538854A208D73A7003EB260 /* robot 1 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 4.png"; sourceTree = "<group>"; };
+		4538854B208D73A8003EB260 /* robot 2 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 2 1.png"; sourceTree = "<group>"; };
+		4538854C208D73A8003EB260 /* robot 1 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 3.png"; sourceTree = "<group>"; };
+		4538854D208D73A8003EB260 /* robot 3 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 3 0.png"; sourceTree = "<group>"; };
+		4538854E208D73A8003EB260 /* robot 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 2.png"; sourceTree = "<group>"; };
+		4538854F208D73A8003EB260 /* robot 2 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 2 6.png"; sourceTree = "<group>"; };
+		45388550208D73A9003EB260 /* robot 0 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 2.png"; sourceTree = "<group>"; };
+		45388551208D73A9003EB260 /* robot 1 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 5.png"; sourceTree = "<group>"; };
+		45388552208D73A9003EB260 /* robot 0 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 1.png"; sourceTree = "<group>"; };
+		45388553208D73A9003EB260 /* robot 1 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 6.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +215,7 @@
 		453884B2208ABD2A003EB260 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				45388530208D7324003EB260 /* Animations */,
 				45388513208C5723003EB260 /* Sprites */,
 				45388512208C5716003EB260 /* Spritesheets */,
 				453884B4208ABE66003EB260 /* Levels */,
@@ -407,24 +427,50 @@
 				4538852B208C5CE5003EB260 /* placeholder map 1.png */,
 				45388528208C5CE4003EB260 /* placeholder map 2.png */,
 				45388529208C5CE4003EB260 /* placeholder map 3.png */,
-				45388522208C5842003EB260 /* placeholder unit 0 0.png */,
-				4538851F208C5841003EB260 /* placeholder unit 0 1.png */,
-				45388518208C5840003EB260 /* placeholder unit 0 2.png */,
-				45388521208C5842003EB260 /* placeholder unit 0 3.png */,
-				4538851B208C5841003EB260 /* placeholder unit 1 0.png */,
-				45388520208C5842003EB260 /* placeholder unit 1 1.png */,
-				45388516208C5840003EB260 /* placeholder unit 1 2.png */,
-				4538851C208C5841003EB260 /* placeholder unit 1 3.png */,
-				4538851A208C5841003EB260 /* placeholder unit 2 0.png */,
-				4538851E208C5841003EB260 /* placeholder unit 2 1.png */,
-				45388523208C5842003EB260 /* placeholder unit 2 2.png */,
-				45388515208C5840003EB260 /* placeholder unit 2 3.png */,
-				45388514208C583F003EB260 /* placeholder unit 3 0.png */,
-				45388517208C5840003EB260 /* placeholder unit 3 1.png */,
-				45388519208C5841003EB260 /* placeholder unit 3 2.png */,
-				4538851D208C5841003EB260 /* placeholder unit 3 3.png */,
+				45388535208D73A5003EB260 /* robot 0 0.png */,
+				45388552208D73A9003EB260 /* robot 0 1.png */,
+				45388550208D73A9003EB260 /* robot 0 2.png */,
+				45388534208D73A4003EB260 /* robot 0 3.png */,
+				4538853D208D73A5003EB260 /* robot 0 4.png */,
+				45388549208D73A7003EB260 /* robot 0 5.png */,
+				45388547208D73A7003EB260 /* robot 0 6.png */,
+				45388546208D73A7003EB260 /* robot 0 7.png */,
+				45388537208D73A5003EB260 /* robot 1 0.png */,
+				45388542208D73A6003EB260 /* robot 1 1.png */,
+				4538854E208D73A8003EB260 /* robot 1 2.png */,
+				4538854C208D73A8003EB260 /* robot 1 3.png */,
+				4538854A208D73A7003EB260 /* robot 1 4.png */,
+				45388551208D73A9003EB260 /* robot 1 5.png */,
+				45388553208D73A9003EB260 /* robot 1 6.png */,
+				4538853A208D73A5003EB260 /* robot 1 7.png */,
+				4538853C208D73A5003EB260 /* robot 2 0.png */,
+				4538854B208D73A8003EB260 /* robot 2 1.png */,
+				4538853F208D73A6003EB260 /* robot 2 2.png */,
+				45388548208D73A7003EB260 /* robot 2 3.png */,
+				45388538208D73A5003EB260 /* robot 2 4.png */,
+				45388539208D73A5003EB260 /* robot 2 5.png */,
+				4538854F208D73A8003EB260 /* robot 2 6.png */,
+				45388536208D73A5003EB260 /* robot 2 7.png */,
+				4538854D208D73A8003EB260 /* robot 3 0.png */,
+				4538853E208D73A6003EB260 /* robot 3 1.png */,
+				45388543208D73A6003EB260 /* robot 3 2.png */,
+				45388545208D73A7003EB260 /* robot 3 3.png */,
+				45388544208D73A6003EB260 /* robot 3 4.png */,
+				4538853B208D73A5003EB260 /* robot 3 5.png */,
+				45388540208D73A6003EB260 /* robot 3 6.png */,
+				45388541208D73A6003EB260 /* robot 3 7.png */,
 			);
 			path = Sprites;
+			sourceTree = "<group>";
+		};
+		45388530208D7324003EB260 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				45388533208D7356003EB260 /* ui plan.anim */,
+				45388532208D7346003EB260 /* placeholder map.anim */,
+				45388531208D7345003EB260 /* robot.anim */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

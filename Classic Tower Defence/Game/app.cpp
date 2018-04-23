@@ -34,6 +34,45 @@ bool App::mainloop(const uint64_t deltaNano) {
   return ok;
 }
 
+TileType tileChar(const char c) {
+  switch (c) {
+    case 's':
+      return TileType::ENTRY;
+    case 'b':
+      return TileType::EXIT;
+    case ' ':
+      return TileType::PATH;
+    case '=':
+      return TileType::PLATFORM;
+    default:
+      assert(false);
+  }
+}
+
+void setMap(Map &map, const std::string &str) {
+  assert(str.size() == map.scalarSize());
+  
+  auto tileSize = map.tileSize();
+  for (size_t i = 0; i != str.size(); ++i) {
+    const Map::Pos pos = {i % tileSize.x, tileSize.y - i / tileSize.x - 1};
+    const char c = str[i];
+    map[pos] = tileChar(c);
+  }
+}
+
+const char *testMap =
+  "s              ="
+  "============== ="
+  "=        ===== ="
+  "= ====== ===== ="
+  "= ====== ===== ="
+  "= ====== ===== ="
+  "= ====== ===== ="
+  "= ======       ="
+  "= =============="
+  "=              b"
+;
+
 void App::init() {
   PROFILE(App::init);
 
@@ -52,21 +91,17 @@ void App::init() {
   SDL_PumpEvents();
   
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
-  zoomToFit.setSize({40.0f, 22.5f});
-  camera.setPos({-8.0f, 0.0f});
+  zoomToFit.setSize({20.0f, 11.25f});
+  camera.setPos({-4.0f, 0.0f});
   
-  map.resize({32, 21}, TileType::PLATFORM);
-  map[{0, 10}] = TileType::ENTRY;
-  for (int i = 0; i != 30; ++i) {
-    map[{1 + i, 10}] = TileType::PATH;
-  }
-  map[{31, 10}] = TileType::EXIT;
+  map.resize({16, 10}, TileType::PLATFORM);
+  setMap(map, testMap);
   
   initMapInfo(mapInfo, map);
   Wave::Group group;
   group.quantity = 10000;
   group.stats = {100.0f, 2.0f};
-  group.sprite = {4, 4};
+  group.sprite = {4, 8};
   wave.groups.push_back(group);
   
   GL::TexParams2D texParams;
