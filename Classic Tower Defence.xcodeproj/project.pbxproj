@@ -123,7 +123,6 @@
 		4538852D208C5DC7003EB260 /* map rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map rendering system.hpp"; sourceTree = "<group>"; };
 		4538852F208C5F32003EB260 /* map sprites component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map sprites component.hpp"; sourceTree = "<group>"; };
 		45388531208D7345003EB260 /* robot.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = robot.anim; sourceTree = "<group>"; };
-		45388532208D7346003EB260 /* placeholder map.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "placeholder map.anim"; sourceTree = "<group>"; };
 		45388533208D7356003EB260 /* ui plan.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ui plan.anim"; sourceTree = "<group>"; };
 		45388534208D73A4003EB260 /* robot 0 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 3.png"; sourceTree = "<group>"; };
 		45388535208D73A5003EB260 /* robot 0 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 0.png"; sourceTree = "<group>"; };
@@ -173,6 +172,8 @@
 		45388568208D9C72003EB260 /* create spawner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create spawner.hpp"; sourceTree = "<group>"; };
 		4538856A208DA038003EB260 /* create base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create base.cpp"; sourceTree = "<group>"; };
 		4538856B208DA038003EB260 /* create base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create base.hpp"; sourceTree = "<group>"; };
+		45388570208DB3C2003EB260 /* tower.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = tower.anim; sourceTree = "<group>"; };
+		45388572208DC45B003EB260 /* placeholder map.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "placeholder map.anim"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,9 +480,10 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				45388572208DC45B003EB260 /* placeholder map.anim */,
 				45388533208D7356003EB260 /* ui plan.anim */,
-				45388532208D7346003EB260 /* placeholder map.anim */,
 				45388531208D7345003EB260 /* robot.anim */,
+				45388570208DB3C2003EB260 /* tower.anim */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
