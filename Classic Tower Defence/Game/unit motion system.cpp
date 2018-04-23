@@ -9,6 +9,7 @@
 #include "unit motion system.hpp"
 
 #include <glm/glm.hpp>
+#include "map info.hpp"
 #include "position component.hpp"
 #include "unit dir component.hpp"
 #include "unit path component.hpp"
@@ -21,8 +22,9 @@ namespace {
   }
 }
 
-void unitMotionSystem(ECS::Registry &registry, const MapInfo &map, const float delta) {
-  auto view = registry.view<Position, UnitDir, UnitPath, UnitStats, UnitExitDistance>();
+void unitMotionSystem(ECS::Registry &reg, const float delta) {
+  const MapInfo &map = reg.get<MapInfo>();
+  auto view = reg.view<Position, UnitDir, UnitPath, UnitStats, UnitExitDistance>();
   for (const ECS::EntityID entity : view) {
     float moveDist = view.get<UnitStats>(entity).moveSpeed * delta;
     view.get<UnitExitDistance>(entity).dist -= moveDist;

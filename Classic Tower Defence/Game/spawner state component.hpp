@@ -10,9 +10,15 @@
 #define spawner_state_component_hpp
 
 struct SpawnerState {
+  enum State {
+    STARTING,
+    SPAWNING,
+    FINISHED
+  };
+
   size_t currentGroup;
   size_t numUnitsLeft;
-  bool doneSpawning;
+  State state;
 };
 
 #endif

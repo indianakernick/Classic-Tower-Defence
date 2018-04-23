@@ -10,9 +10,8 @@
 #define spawner_system_hpp
 
 #include "wave.hpp"
-#include "map info.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
-void spawnerSystem(ECS::Registry &, const Wave &, const MapInfo &);
+void spawnerSystem(ECS::Registry &, const Wave &);
 
 #endif

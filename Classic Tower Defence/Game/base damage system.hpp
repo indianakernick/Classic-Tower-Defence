@@ -12,6 +12,6 @@
 #include "map info.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
-void baseDamageSystem(ECS::Registry &, const MapInfo &);
+void baseDamageSystem(ECS::Registry &);
 
 #endif

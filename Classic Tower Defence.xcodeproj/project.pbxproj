@@ -34,6 +34,10 @@
 		45388527208C5858003EB260 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 45388525208C5858003EB260 /* sprites.png */; };
 		4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538852C208C5DC7003EB260 /* map rendering system.cpp */; };
 		4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538855A208D7742003EB260 /* tower rendering system.cpp */; };
+		45388563208D8F50003EB260 /* game view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388561208D8F50003EB260 /* game view.cpp */; };
+		45388566208D99EF003EB260 /* game logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388564208D99EF003EB260 /* game logic.cpp */; };
+		45388569208D9C72003EB260 /* create spawner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388567208D9C72003EB260 /* create spawner.cpp */; };
+		4538856C208DA038003EB260 /* create base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538856A208DA038003EB260 /* create base.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,6 +166,14 @@
 		45388559208D76E9003EB260 /* tower gun 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 0.png"; sourceTree = "<group>"; };
 		4538855A208D7742003EB260 /* tower rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower rendering system.cpp"; sourceTree = "<group>"; };
 		4538855B208D7742003EB260 /* tower rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower rendering system.hpp"; sourceTree = "<group>"; };
+		45388561208D8F50003EB260 /* game view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game view.cpp"; sourceTree = "<group>"; };
+		45388562208D8F50003EB260 /* game view.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game view.hpp"; sourceTree = "<group>"; };
+		45388564208D99EF003EB260 /* game logic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game logic.cpp"; sourceTree = "<group>"; };
+		45388565208D99EF003EB260 /* game logic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game logic.hpp"; sourceTree = "<group>"; };
+		45388567208D9C72003EB260 /* create spawner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create spawner.cpp"; sourceTree = "<group>"; };
+		45388568208D9C72003EB260 /* create spawner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create spawner.hpp"; sourceTree = "<group>"; };
+		4538856A208DA038003EB260 /* create base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create base.cpp"; sourceTree = "<group>"; };
+		4538856B208DA038003EB260 /* create base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create base.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +247,7 @@
 		453884B3208ABD31003EB260 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				4538855D208D8F36003EB260 /* Management */,
 				453884BC208ACC08003EB260 /* Game Data */,
 				453884C9208AD457003EB260 /* Game Data Systems */,
 				453884BA208ACB5D003EB260 /* Systems */,
@@ -397,6 +410,10 @@
 				453884FE208C15B5003EB260 /* create tower system.hpp */,
 				45388501208C18B8003EB260 /* upgrade tower system.cpp */,
 				45388502208C18B8003EB260 /* upgrade tower system.hpp */,
+				45388567208D9C72003EB260 /* create spawner.cpp */,
+				45388568208D9C72003EB260 /* create spawner.hpp */,
+				4538856A208DA038003EB260 /* create base.cpp */,
+				4538856B208DA038003EB260 /* create base.hpp */,
 			);
 			name = Editor;
 			sourceTree = "<group>";
@@ -488,6 +505,17 @@
 				45388531208D7345003EB260 /* robot.anim */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		4538855D208D8F36003EB260 /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				45388561208D8F50003EB260 /* game view.cpp */,
+				45388562208D8F50003EB260 /* game view.hpp */,
+				45388564208D99EF003EB260 /* game logic.cpp */,
+				45388565208D99EF003EB260 /* game logic.hpp */,
+			);
+			name = Management;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -612,12 +640,16 @@
 				4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
+				45388569208D9C72003EB260 /* create spawner.cpp in Sources */,
 				453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
 				453884FF208C15B5003EB260 /* create tower system.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,
+				45388566208D99EF003EB260 /* game logic.cpp in Sources */,
+				45388563208D8F50003EB260 /* game view.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
+				4538856C208DA038003EB260 /* create base.cpp in Sources */,
 				4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,

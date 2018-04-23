@@ -11,21 +11,18 @@
 #include "unit path component.hpp"
 #include "base health component.hpp"
 
-void baseDamageSystem(ECS::Registry &registry, const MapInfo &map) {
-  // assumes there is one base
+void baseDamageSystem(ECS::Registry &reg) {
+  const MapInfo &map = reg.get<MapInfo>();
   
   const size_t exitIndex = map.path.size() - 1;
-  const auto view = registry.view<UnitPath>();
+  const auto view = reg.view<UnitPath>();
   uint32_t damage = 0;
   for (const ECS::EntityID entity : view) {
     if (view.get(entity).index == exitIndex) {
-      registry.destroy(entity);
+      reg.destroy(entity);
       ++damage;
     }
   }
   
-  auto baseView = registry.view<BaseHealth>();
-  for (const ECS::EntityID entity : baseView) {
-    baseView.get(entity).health -= damage;
-  }
+  reg.get<BaseHealth>().health -= damage;
 }

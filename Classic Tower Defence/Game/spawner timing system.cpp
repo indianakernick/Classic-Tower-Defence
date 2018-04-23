@@ -10,9 +10,6 @@
 
 #include "spawner timing component.hpp"
 
-void spawnerTimingSystem(ECS::Registry &registry, const float delta) {
-  auto view = registry.view<SpawnerTiming>();
-  for (const ECS::EntityID entity : view) {
-    view.get(entity).timeSinceLastSpawn += delta;
-  }
+void spawnerTimingSystem(ECS::Registry &reg, const float delta) {
+  reg.get<SpawnerTiming>().timeSinceLastSpawn += delta;
 }

@@ -8,12 +8,17 @@
 
 #include "map rendering system.hpp"
 
+#include "map.hpp"
+#include "map sprites.hpp"
+
 void mapRenderingSystem(
-  const Map &map,
+  ECS::Registry &reg,
   G2D::QuadWriter &writer,
-  const Unpack::Spritesheet &sheet,
-  const MapSprites sprites
+  const Unpack::Spritesheet &sheet
 ) {
+  const Map &map = reg.get<Map>();
+  const MapSprites &sprites = reg.get<MapSprites>();
+
   const size_t numTiles = map.scalarSize();
   for (size_t t = 0; t != numTiles; ++t) {
     Unpack::SpriteID id = sprites.sprite;
