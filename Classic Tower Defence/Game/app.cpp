@@ -22,6 +22,12 @@
 #include "spawner timing system.hpp"
 #include "unit rendering system.hpp"
 #include "base damage system.hpp"
+#include "tower aim system.hpp"
+#include "tower shoot system.hpp"
+#include "tower timing system.hpp"
+#include "tower firing anim system.hpp"
+#include "create tower system.hpp"
+#include "tower rendering system.hpp"
 
 bool App::mainloop(const uint64_t deltaNano) {
   PROFILE(App::mainloop);
@@ -119,6 +125,17 @@ void App::init() {
   state.currentGroup = 0;
   state.doneSpawning = false;
   state.numUnitsLeft = group.quantity;
+  
+  tower.stats.range = 10;
+  tower.stats.damage = 20;
+  tower.stats.rof = 1;
+  tower.sprites.gun = 37;
+  tower.sprites.firingFrames = 5;
+  tower.sprites.base = 36;
+  tower.upgrades.first = nullptr;
+  tower.upgrades.second = nullptr;
+  
+  createTower(reg, tower, {4, 4});
 }
 
 void App::quit() {
@@ -147,8 +164,12 @@ bool App::input() {
 void App::update(const float delta) {
   PROFILE(App::update);
   
+  towerTimingSystem(reg, delta);
   spawnerTimingSystem(reg, delta);
   spawnerSystem(reg, wave, mapInfo);
+  
+  towerAimSystem(reg);
+  towerShootSystem(reg);
   
   unitMotionSystem(reg, mapInfo, delta);
   unitDeathSystem(reg);
@@ -165,12 +186,14 @@ void App::render(const float delta) {
   camera.update({aspect, delta}, zoomToFit);
   
   unitWalkAnimSystem(reg);
+  towerFiringAnimSystem(reg);
   
   const MapSprites sprites {0};
   writer.clear();
   writer.section({camera.transform.toPixels()});
   mapRenderingSystem(map, writer, sheet, sprites);
   unitRenderingSystem(reg, writer, sheet);
+  towerRenderingSystem(reg, writer, sheet);
   
   writer.render(renderer);
   

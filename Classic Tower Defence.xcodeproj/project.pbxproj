@@ -33,6 +33,7 @@
 		45388526208C5858003EB260 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 45388524208C5858003EB260 /* sprites.atlas */; };
 		45388527208C5858003EB260 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 45388525208C5858003EB260 /* sprites.png */; };
 		4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538852C208C5DC7003EB260 /* map rendering system.cpp */; };
+		4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538855A208D7742003EB260 /* tower rendering system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -153,6 +154,14 @@
 		45388551208D73A9003EB260 /* robot 1 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 5.png"; sourceTree = "<group>"; };
 		45388552208D73A9003EB260 /* robot 0 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 1.png"; sourceTree = "<group>"; };
 		45388553208D73A9003EB260 /* robot 1 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 6.png"; sourceTree = "<group>"; };
+		45388554208D76D7003EB260 /* tower base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower base.png"; sourceTree = "<group>"; };
+		45388555208D76E8003EB260 /* tower gun 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 2.png"; sourceTree = "<group>"; };
+		45388556208D76E8003EB260 /* tower gun 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 4.png"; sourceTree = "<group>"; };
+		45388557208D76E8003EB260 /* tower gun 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 3.png"; sourceTree = "<group>"; };
+		45388558208D76E8003EB260 /* tower gun 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 1.png"; sourceTree = "<group>"; };
+		45388559208D76E9003EB260 /* tower gun 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 0.png"; sourceTree = "<group>"; };
+		4538855A208D7742003EB260 /* tower rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower rendering system.cpp"; sourceTree = "<group>"; };
+		4538855B208D7742003EB260 /* tower rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower rendering system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,6 +416,8 @@
 				4538850B208C2C56003EB260 /* unit rendering system.hpp */,
 				4538852C208C5DC7003EB260 /* map rendering system.cpp */,
 				4538852D208C5DC7003EB260 /* map rendering system.hpp */,
+				4538855A208D7742003EB260 /* tower rendering system.cpp */,
+				4538855B208D7742003EB260 /* tower rendering system.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -423,6 +434,12 @@
 		45388513208C5723003EB260 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				45388559208D76E9003EB260 /* tower gun 0.png */,
+				45388558208D76E8003EB260 /* tower gun 1.png */,
+				45388555208D76E8003EB260 /* tower gun 2.png */,
+				45388557208D76E8003EB260 /* tower gun 3.png */,
+				45388556208D76E8003EB260 /* tower gun 4.png */,
+				45388554208D76D7003EB260 /* tower base.png */,
 				4538852A208C5CE5003EB260 /* placeholder map 0.png */,
 				4538852B208C5CE5003EB260 /* placeholder map 1.png */,
 				45388528208C5CE4003EB260 /* placeholder map 2.png */,
@@ -592,6 +609,7 @@
 				453884E2208B10F9003EB260 /* tower timing system.cpp in Sources */,
 				453884EE208B1607003EB260 /* spawner system.cpp in Sources */,
 				453884D7208B0283003EB260 /* tower aim system.cpp in Sources */,
+				4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
 				453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */,

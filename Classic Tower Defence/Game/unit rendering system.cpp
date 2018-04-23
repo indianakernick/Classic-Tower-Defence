@@ -24,10 +24,10 @@ void unitRenderingSystem(
     Unpack::SpriteID id = sprite.sprite;
     id += Math::toNum(view.get<UnitDir>(entity).dir, sprite.frames);
     id += view.get<UnitWalkAnim>(entity).frame;
-    const Unpack::Rect rect = sheet.getSprite(id);
     
     writer.quad();
-    writer.tilePos(0.5f, view.get<Position>(entity).pos);
-    writer.tileTex(rect.min, rect.max);
+    writer.depth(0.5f);
+    writer.tilePos(view.get<Position>(entity).pos);
+    writer.tileTex(sheet.getSprite(id));
   }
 }

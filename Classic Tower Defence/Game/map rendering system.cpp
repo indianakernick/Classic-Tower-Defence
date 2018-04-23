@@ -21,7 +21,8 @@ void mapRenderingSystem(
     const Unpack::Rect rect = sheet.getSprite(id);
     
     writer.quad();
-    writer.tilePos(0.99f, map.toPos(t));
+    writer.depth(0.99f);
+    writer.tilePos(map.toPos(t));
     writer.tileTex(rect.min, rect.max);
   }
 }

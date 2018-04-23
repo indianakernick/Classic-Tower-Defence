@@ -10,8 +10,9 @@
 #define create_tower_system_hpp
 
 #include "towers.hpp"
+#include <glm/vec2.hpp>
 #include <Simpleton/ECS/registry.hpp>
 
-ECS::EntityID createTower(ECS::Registry &, const Towers &, size_t);
+ECS::EntityID createTower(ECS::Registry &, const TowerProto &, glm::ivec2);
 
 #endif

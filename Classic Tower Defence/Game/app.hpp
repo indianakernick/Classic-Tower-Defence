@@ -14,6 +14,7 @@
 
 #include "wave.hpp"
 #include "map info.hpp"
+#include "towers.hpp"
 #include <Simpleton/Unpack/sheet.hpp>
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
@@ -44,6 +45,7 @@ private:
   Wave wave;
   G2D::QuadWriter writer;
   Unpack::Spritesheet sheet;
+  TowerProto tower;
 
   bool input();
   void update(float);
