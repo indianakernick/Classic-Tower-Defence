@@ -28,7 +28,7 @@ void App::init() {
     PROFILE(Open Window);
     windowLibrary = SDL::makeLibrary(SDL_INIT_EVENTS);
     window = SDL::makeWindow("Classic Tower Defence", 1280, 720);
-    renderingContext.initLimitFPS(window.get(), 15);
+    renderingContext.initLimitFPS(window.get(), 20);
 
     renderingContext.preRender();
     renderingContext.postRender();

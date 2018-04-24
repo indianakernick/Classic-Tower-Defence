@@ -23,8 +23,7 @@ namespace {
       if (dir == Math::opposite(prevDir)) {
         continue;
       }
-      using ToVec = Math::ToVec<Map::Pos::value_type, Math::Dir::RIGHT, Math::Dir::UP>;
-      const Map::Pos newPos = pos + ToVec::conv(dir);
+      const Map::Pos newPos = pos + Math::ToVec<Map::Pos::value_type>::conv(dir);
       
       if (map.outOfRange(newPos)) {
         continue;

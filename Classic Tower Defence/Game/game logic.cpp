@@ -9,9 +9,11 @@
 #include "game logic.hpp"
 
 #include <string>
+#include "create map.hpp"
+#include "load map.hpp"
+#include "init map info.hpp"
 #include "map sprites component.hpp"
 #include "map info component.hpp"
-#include "init map info.hpp"
 #include "create spawner.hpp"
 #include "create tower.hpp"
 #include "create base.hpp"
@@ -24,53 +26,14 @@
 #include "tower shoot system.hpp"
 #include "tower timing system.hpp"
 
+// these should be in the level loader
 #include <Simpleton/SDL/paths.hpp>
-
-TileType tileChar(const char c) {
-  switch (c) {
-    case 's':
-      return TileType::ENTRY;
-    case 'b':
-      return TileType::EXIT;
-    case ' ':
-      return TileType::PATH;
-    case '=':
-      return TileType::PLATFORM;
-    default:
-      assert(false);
-  }
-}
-
-void setMap(Map &map, const std::string &str) {
-  assert(str.size() == map.scalarSize());
-  
-  auto tileSize = map.tileSize();
-  for (size_t i = 0; i != str.size(); ++i) {
-    const Map::Pos pos = {i % tileSize.x, tileSize.y - i / tileSize.x - 1};
-    const char c = str[i];
-    map[pos] = tileChar(c);
-  }
-}
-
-const char *testMap =
-  "s              ="
-  "============== ="
-  "=        ===== ="
-  "= ====== ===== ="
-  "= ====== ===== ="
-  "= ====== ===== ="
-  "= ====== ===== ="
-  "= ======       ="
-  "= =============="
-  "=              b"
-;
+#include <fstream>
 
 void GameLogic::init(ECS::Registry &reg) {
-  const ECS::EntityID mapID = reg.create();
-  Map &map = reg.attach<Map>(mapID, glm::ivec2(16, 10), TileType::PLATFORM);
-  setMap(map, testMap);
-  reg.attach<MapInfo>(mapID);
-  reg.attach<MapSprites>(mapID, Unpack::SpriteID(0));
+  createMap(reg);
+  std::ifstream file(SDL::getResDir() + "map 0.txt");
+  loadMap(reg, file);
   initMapInfo(reg);
   
   Wave::Group group;

@@ -44,6 +44,9 @@
 		45388584208EBFDB003EB260 /* sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388582208EBFDB003EB260 /* sound system.cpp */; };
 		4538858A208EC34B003EB260 /* load sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388588208EC34B003EB260 /* load sounds.cpp */; };
 		4538858D208EC736003EB260 /* tower sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538858B208EC736003EB260 /* tower sound system.cpp */; };
+		45388592208ECC3C003EB260 /* map 0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 45388591208ECC3C003EB260 /* map 0.txt */; };
+		45388595208ECCA1003EB260 /* load map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388593208ECCA1003EB260 /* load map.cpp */; };
+		45388598208EE402003EB260 /* create map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388596208EE402003EB260 /* create map.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -191,6 +194,11 @@
 		45388589208EC34B003EB260 /* load sounds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load sounds.hpp"; sourceTree = "<group>"; };
 		4538858B208EC736003EB260 /* tower sound system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower sound system.cpp"; sourceTree = "<group>"; };
 		4538858C208EC736003EB260 /* tower sound system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sound system.hpp"; sourceTree = "<group>"; };
+		45388591208ECC3C003EB260 /* map 0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 0.txt"; sourceTree = "<group>"; };
+		45388593208ECCA1003EB260 /* load map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load map.cpp"; sourceTree = "<group>"; };
+		45388594208ECCA1003EB260 /* load map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load map.hpp"; sourceTree = "<group>"; };
+		45388596208EE402003EB260 /* create map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create map.cpp"; sourceTree = "<group>"; };
+		45388597208EE402003EB260 /* create map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create map.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +263,7 @@
 		453884B2208ABD2A003EB260 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				45388590208ECBD0003EB260 /* Maps */,
 				4538857E208DF799003EB260 /* Sounds */,
 				45388530208D7324003EB260 /* Animations */,
 				45388513208C5723003EB260 /* Sprites */,
@@ -293,7 +302,7 @@
 				453884C2208ACFEC003EB260 /* Units */,
 				453884E4208B1204003EB260 /* Base */,
 				453884E7208B1393003EB260 /* Spawner */,
-				45388581208EBED9003EB260 /* sound component.hpp */,
+				4538858F208ECA22003EB260 /* Sound */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -308,10 +317,7 @@
 				453884DB208B0D45003EB260 /* Units */,
 				453884E3208B11FA003EB260 /* Base */,
 				453884E8208B1456003EB260 /* Spawner */,
-				45388582208EBFDB003EB260 /* sound system.cpp */,
-				45388583208EBFDB003EB260 /* sound system.hpp */,
-				45388588208EC34B003EB260 /* load sounds.cpp */,
-				45388589208EC34B003EB260 /* load sounds.hpp */,
+				4538858E208EC91F003EB260 /* Sound */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -530,6 +536,10 @@
 		4538856D208DAFBB003EB260 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				45388596208EE402003EB260 /* create map.cpp */,
+				45388597208EE402003EB260 /* create map.hpp */,
+				45388593208ECCA1003EB260 /* load map.cpp */,
+				45388594208ECCA1003EB260 /* load map.hpp */,
 				453884CA208AD499003EB260 /* init map info.cpp */,
 				453884CB208AD499003EB260 /* init map info.hpp */,
 			);
@@ -560,6 +570,33 @@
 				4538857F208DF7AA003EB260 /* blaster.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		4538858E208EC91F003EB260 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				45388582208EBFDB003EB260 /* sound system.cpp */,
+				45388583208EBFDB003EB260 /* sound system.hpp */,
+				45388588208EC34B003EB260 /* load sounds.cpp */,
+				45388589208EC34B003EB260 /* load sounds.hpp */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		4538858F208ECA22003EB260 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				45388581208EBED9003EB260 /* sound component.hpp */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		45388590208ECBD0003EB260 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				45388591208ECC3C003EB260 /* map 0.txt */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,6 +666,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
 				45388527208C5858003EB260 /* sprites.png in Resources */,
@@ -690,10 +728,12 @@
 				453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
+				45388598208EE402003EB260 /* create map.cpp in Sources */,
 				453884FF208C15B5003EB260 /* create tower.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,
 				4538858A208EC34B003EB260 /* load sounds.cpp in Sources */,
 				45388566208D99EF003EB260 /* game logic.cpp in Sources */,
+				45388595208ECCA1003EB260 /* load map.cpp in Sources */,
 				45388563208D8F50003EB260 /* game view.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				4538856C208DA038003EB260 /* create base.cpp in Sources */,
