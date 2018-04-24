@@ -8,14 +8,15 @@
 
 #include "tower shoot system.hpp"
 
+#include "sound component.hpp"
 #include "unit stats component.hpp"
 #include "tower stats component.hpp"
 #include "tower timing component.hpp"
 #include "tower target component.hpp"
 #include "tower firing anim component.hpp"
 
-void towerShootSystem(ECS::Registry &reg, Mix_Chunk *blaster) {
-  auto view = reg.view<TowerStats, TowerTiming, TowerTarget, TowerFiringAnim>();
+void towerShootSystem(ECS::Registry &reg) {
+  auto view = reg.view<Sound, TowerStats, TowerTiming, TowerTarget, TowerFiringAnim>();
   
   for (const ECS::EntityID entity : view) {
     const TowerStatsBase &towerStats = *view.get<TowerStats>(entity).proto;
@@ -36,6 +37,6 @@ void towerShootSystem(ECS::Registry &reg, Mix_Chunk *blaster) {
     anim.frame = 0;
     anim.firing = true;
     
-    Mix_PlayChannel(-1, blaster, 0);
+    view.get<Sound>(entity).play = true;
   }
 }

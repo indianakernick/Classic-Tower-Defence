@@ -72,6 +72,7 @@ void App::update(const float delta) {
   PROFILE(App::update);
   
   logic.update(reg, delta);
+  view.playSounds(reg);
 }
 
 void App::render(const float delta) {

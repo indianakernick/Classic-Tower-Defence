@@ -95,8 +95,6 @@ void GameLogic::init(ECS::Registry &reg) {
   createTower(reg, tower, {6, 5});
   createTower(reg, tower, {11, 4});
   createTower(reg, tower, {11, 7});
-  
-  blaster = Mix_LoadWAV((SDL::getResDir() + "blaster.wav").c_str());
 }
 
 bool GameLogic::input(const SDL_Event &) {
@@ -109,7 +107,7 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   spawnerSystem(reg, wave);
   
   towerAimSystem(reg);
-  towerShootSystem(reg, blaster);
+  towerShootSystem(reg);
   
   unitMotionSystem(reg, delta);
   unitDeathSystem(reg);

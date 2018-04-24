@@ -26,7 +26,6 @@ public:
 private:
   Wave wave;
   TowerProto tower;
-  Mix_Chunk *blaster = nullptr;
 };
 
 #endif

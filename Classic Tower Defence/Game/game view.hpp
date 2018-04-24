@@ -9,6 +9,7 @@
 #ifndef game_view_hpp
 #define game_view_hpp
 
+#include "sounds.hpp"
 #include <Simpleton/Unpack/sheet.hpp>
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
@@ -21,6 +22,7 @@ public:
   GameView() = default;
 
   void init(G2D::Renderer &);
+  void playSounds(ECS::Registry &);
   void updateCam(float, float);
   void render(ECS::Registry &, G2D::QuadWriter &);
 
@@ -29,6 +31,7 @@ private:
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoomToFit;
   G2D::TextureID tex;
+  Sounds sounds;
 };
 
 #endif

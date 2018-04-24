@@ -12,6 +12,6 @@
 #include <SDL2/SDL_mixer.h>
 #include <Simpleton/ECS/registry.hpp>
 
-void towerShootSystem(ECS::Registry &, Mix_Chunk *);
+void towerShootSystem(ECS::Registry &);
 
 #endif

@@ -41,6 +41,8 @@
 		4538857C208DF511003EB260 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4538857B208DF510003EB260 /* SDL2_mixer.framework */; };
 		4538857D208DF51A003EB260 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4538857B208DF510003EB260 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45388580208DF7AA003EB260 /* blaster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4538857F208DF7AA003EB260 /* blaster.wav */; };
+		45388584208EBFDB003EB260 /* sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388582208EBFDB003EB260 /* sound system.cpp */; };
+		4538858A208EC34B003EB260 /* load sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388588208EC34B003EB260 /* load sounds.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -180,6 +182,12 @@
 		45388572208DC45B003EB260 /* placeholder map.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "placeholder map.anim"; sourceTree = "<group>"; };
 		4538857B208DF510003EB260 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		4538857F208DF7AA003EB260 /* blaster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blaster.wav; sourceTree = "<group>"; };
+		45388581208EBED9003EB260 /* sound component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sound component.hpp"; sourceTree = "<group>"; };
+		45388582208EBFDB003EB260 /* sound system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sound system.cpp"; sourceTree = "<group>"; };
+		45388583208EBFDB003EB260 /* sound system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sound system.hpp"; sourceTree = "<group>"; };
+		45388585208EC036003EB260 /* sounds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sounds.hpp; sourceTree = "<group>"; };
+		45388588208EC34B003EB260 /* load sounds.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load sounds.cpp"; sourceTree = "<group>"; };
+		45388589208EC34B003EB260 /* load sounds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load sounds.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +290,7 @@
 				453884C2208ACFEC003EB260 /* Units */,
 				453884E4208B1204003EB260 /* Base */,
 				453884E7208B1393003EB260 /* Spawner */,
+				45388581208EBED9003EB260 /* sound component.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -296,6 +305,10 @@
 				453884DB208B0D45003EB260 /* Units */,
 				453884E3208B11FA003EB260 /* Base */,
 				453884E8208B1456003EB260 /* Spawner */,
+				45388582208EBFDB003EB260 /* sound system.cpp */,
+				45388583208EBFDB003EB260 /* sound system.hpp */,
+				45388588208EC34B003EB260 /* load sounds.cpp */,
+				45388589208EC34B003EB260 /* load sounds.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -305,6 +318,7 @@
 			children = (
 				453884BE208ACD6A003EB260 /* wave.hpp */,
 				453884FB208B2A07003EB260 /* towers.hpp */,
+				45388585208EC036003EB260 /* sounds.hpp */,
 			);
 			name = "Game Data";
 			sourceTree = "<group>";
@@ -672,12 +686,14 @@
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
 				453884FF208C15B5003EB260 /* create tower.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,
+				4538858A208EC34B003EB260 /* load sounds.cpp in Sources */,
 				45388566208D99EF003EB260 /* game logic.cpp in Sources */,
 				45388563208D8F50003EB260 /* game view.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				4538856C208DA038003EB260 /* create base.cpp in Sources */,
 				4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
+				45388584208EBFDB003EB260 /* sound system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
 				4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */,
 				45388503208C18B8003EB260 /* upgrade tower.cpp in Sources */,

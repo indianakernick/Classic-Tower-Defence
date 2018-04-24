@@ -8,6 +8,8 @@
 
 #include "game view.hpp"
 
+#include "load sounds.hpp"
+#include "sound system.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include "map rendering system.hpp"
 #include "unit rendering system.hpp"
@@ -26,6 +28,12 @@ void GameView::init(G2D::Renderer &renderer) {
   tex = renderer.addTexture(SDL::getResDir() + "sprites.png", texParams);
   
   sheet = Unpack::makeSpritesheet(SDL::getResDir() + "sprites.atlas");
+  
+  sounds = loadSounds();
+}
+
+void GameView::playSounds(ECS::Registry &reg) {
+  soundSystem(reg, sounds);
 }
 
 void GameView::updateCam(const float aspect, const float delta) {
