@@ -9,8 +9,9 @@
 #ifndef tower_shoot_system_hpp
 #define tower_shoot_system_hpp
 
+#include <SDL2/SDL_mixer.h>
 #include <Simpleton/ECS/registry.hpp>
 
-void towerShootSystem(ECS::Registry &);
+void towerShootSystem(ECS::Registry &, Mix_Chunk *);
 
 #endif

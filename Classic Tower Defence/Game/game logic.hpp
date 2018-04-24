@@ -11,6 +11,7 @@
 
 #include "wave.hpp"
 #include "towers.hpp"
+#include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_events.h>
 #include <Simpleton/ECS/registry.hpp>
 
@@ -25,6 +26,7 @@ public:
 private:
   Wave wave;
   TowerProto tower;
+  Mix_Chunk *blaster = nullptr;
 };
 
 #endif

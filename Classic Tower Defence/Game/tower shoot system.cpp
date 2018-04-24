@@ -14,7 +14,7 @@
 #include "tower target component.hpp"
 #include "tower firing anim component.hpp"
 
-void towerShootSystem(ECS::Registry &reg) {
+void towerShootSystem(ECS::Registry &reg, Mix_Chunk *blaster) {
   auto view = reg.view<TowerStats, TowerTiming, TowerTarget, TowerFiringAnim>();
   
   for (const ECS::EntityID entity : view) {
@@ -35,5 +35,7 @@ void towerShootSystem(ECS::Registry &reg) {
     TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);
     anim.frame = 0;
     anim.firing = true;
+    
+    Mix_PlayChannel(-1, blaster, 0);
   }
 }

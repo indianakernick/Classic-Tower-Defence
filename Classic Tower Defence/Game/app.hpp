@@ -14,6 +14,7 @@
 #include <Simpleton/SDL/library.hpp>
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/OpenGL/context.hpp>
+#include <Simpleton/SDL/audio library.hpp>
 #include <Simpleton/Graphics 2D/renderer.hpp>
 #include <Simpleton/Graphics 2D/quad writer.hpp>
 
@@ -28,6 +29,7 @@ public:
 
 private:
   SDL::Library windowLibrary;
+  SDL::AudioLibrary audioLib;
   SDL::Window window;
   GL::Context renderingContext;
   G2D::Renderer renderer;

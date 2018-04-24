@@ -36,6 +36,8 @@ void App::init() {
     renderer.init();
   }
   
+  audioLib = SDL::makeAudioLibrary({});
+  
   SDL_PumpEvents();
   
   logic.init(reg);
@@ -45,6 +47,7 @@ void App::init() {
 void App::quit() {
   PROFILE(App::quit);
 
+  audioLib.reset();
   renderer.quit();
   renderingContext.quit();
   window.reset();

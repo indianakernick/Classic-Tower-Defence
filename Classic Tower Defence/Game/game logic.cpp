@@ -24,6 +24,8 @@
 #include "tower shoot system.hpp"
 #include "tower timing system.hpp"
 
+#include <Simpleton/SDL/paths.hpp>
+
 TileType tileChar(const char c) {
   switch (c) {
     case 's':
@@ -89,7 +91,12 @@ void GameLogic::init(ECS::Registry &reg) {
   tower.upgrades.first = nullptr;
   tower.upgrades.second = nullptr;
   
-  createTower(reg, tower, {4, 4});
+  //createTower(reg, tower, {3, 5});
+  createTower(reg, tower, {6, 5});
+  createTower(reg, tower, {11, 4});
+  createTower(reg, tower, {11, 7});
+  
+  blaster = Mix_LoadWAV((SDL::getResDir() + "blaster.wav").c_str());
 }
 
 bool GameLogic::input(const SDL_Event &) {
@@ -102,7 +109,7 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   spawnerSystem(reg, wave);
   
   towerAimSystem(reg);
-  towerShootSystem(reg);
+  towerShootSystem(reg, blaster);
   
   unitMotionSystem(reg, delta);
   unitDeathSystem(reg);
