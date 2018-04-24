@@ -10,6 +10,7 @@
 
 #include "load sounds.hpp"
 #include "sound system.hpp"
+#include "tower sound system.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include "map rendering system.hpp"
 #include "unit rendering system.hpp"
@@ -33,6 +34,7 @@ void GameView::init(G2D::Renderer &renderer) {
 }
 
 void GameView::playSounds(ECS::Registry &reg) {
+  towerSoundSystem(reg);
   soundSystem(reg, sounds);
 }
 

@@ -43,6 +43,7 @@
 		45388580208DF7AA003EB260 /* blaster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4538857F208DF7AA003EB260 /* blaster.wav */; };
 		45388584208EBFDB003EB260 /* sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388582208EBFDB003EB260 /* sound system.cpp */; };
 		4538858A208EC34B003EB260 /* load sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388588208EC34B003EB260 /* load sounds.cpp */; };
+		4538858D208EC736003EB260 /* tower sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538858B208EC736003EB260 /* tower sound system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -188,6 +189,8 @@
 		45388585208EC036003EB260 /* sounds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sounds.hpp; sourceTree = "<group>"; };
 		45388588208EC34B003EB260 /* load sounds.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load sounds.cpp"; sourceTree = "<group>"; };
 		45388589208EC34B003EB260 /* load sounds.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load sounds.hpp"; sourceTree = "<group>"; };
+		4538858B208EC736003EB260 /* tower sound system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower sound system.cpp"; sourceTree = "<group>"; };
+		4538858C208EC736003EB260 /* tower sound system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sound system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +376,8 @@
 				453884E1208B10F9003EB260 /* tower timing system.hpp */,
 				453884F8208B28CC003EB260 /* tower firing anim system.cpp */,
 				453884F9208B28CC003EB260 /* tower firing anim system.hpp */,
+				4538858B208EC736003EB260 /* tower sound system.cpp */,
+				4538858C208EC736003EB260 /* tower sound system.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
 				45388569208D9C72003EB260 /* create spawner.cpp in Sources */,
+				4538858D208EC736003EB260 /* tower sound system.cpp in Sources */,
 				453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
