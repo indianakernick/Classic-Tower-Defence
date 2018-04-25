@@ -9,6 +9,8 @@
 #ifndef tower_stats_component_hpp
 #define tower_stats_component_hpp
 
+#include <Simpleton/Data/json.hpp>
+
 struct TowerStatsBase {
   float range;
   float damage;
@@ -18,5 +20,11 @@ struct TowerStatsBase {
 struct TowerStats {
   const TowerStatsBase *proto;
 };
+
+inline void from_json(const json &j, TowerStatsBase &stats) {
+  DATA_GET(stats, range);
+  DATA_GET(stats, damage);
+  DATA_GET(stats, rof);
+}
 
 #endif

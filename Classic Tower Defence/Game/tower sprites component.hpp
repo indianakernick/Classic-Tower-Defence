@@ -9,6 +9,7 @@
 #ifndef tower_sprites_component_hpp
 #define tower_sprites_component_hpp
 
+#include <Simpleton/Data/json.hpp>
 #include <Simpleton/Unpack/types.hpp>
 
 struct TowerSpritesBase {
@@ -20,5 +21,11 @@ struct TowerSpritesBase {
 struct TowerSprites {
   const TowerSpritesBase *proto;
 };
+
+inline void from_json(const json &j, TowerSpritesBase &sprites) {
+  DATA_GET(sprites, gun);
+  DATA_GET(sprites, firingFrames);
+  DATA_GET(sprites, base);
+}
 
 #endif

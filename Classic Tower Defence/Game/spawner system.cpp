@@ -18,7 +18,7 @@
 #include "unit exit distance component.hpp"
 
 namespace {
-  void spawn(ECS::Registry &reg, const Wave::Group &group) {
+  void spawn(ECS::Registry &reg, const WaveGroup &group) {
     UnitStats unitStats;
     *static_cast<UnitStatsBase *>(&unitStats) = group.stats;
     unitStats.proto = &group.stats;
@@ -46,18 +46,18 @@ void spawnerSystem(ECS::Registry &reg, const Wave &wave) {
     return;
   }
   if (state.state == SpawnerState::STARTING) {
-    state.numUnitsLeft = wave.groups.front().quantity;
+    state.numUnitsLeft = wave.front().quantity;
   }
   timing.timeSinceLastSpawn = 0.0f;
   
-  spawn(reg, wave.groups[state.currentGroup]);
+  spawn(reg, wave[state.currentGroup]);
   --state.numUnitsLeft;
   if (state.numUnitsLeft == 0) {
-    if (state.currentGroup == wave.groups.size() - 1) {
+    if (state.currentGroup == wave.size() - 1) {
       state.state = SpawnerState::FINISHED;
     } else {
       ++state.currentGroup;
-      state.numUnitsLeft = wave.groups[state.currentGroup].quantity;
+      state.numUnitsLeft = wave[state.currentGroup].quantity;
       assert(state.numUnitsLeft != 0);
     }
   }

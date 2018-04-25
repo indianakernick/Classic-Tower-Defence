@@ -36,11 +36,11 @@ void GameLogic::init(ECS::Registry &reg) {
   loadMap(reg, file);
   initMapInfo(reg);
   
-  Wave::Group group;
+  WaveGroup group;
   group.quantity = 10000;
   group.stats = {100.0f, 2.0f};
   group.sprite = {4, 8};
-  wave.groups.push_back(group);
+  wave.push_back(group);
   
   createSpawner(reg, 1.5f);
   createBase(reg, 1000);
