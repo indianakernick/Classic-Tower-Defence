@@ -171,12 +171,12 @@
 		45388551208D73A9003EB260 /* robot 1 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 5.png"; sourceTree = "<group>"; };
 		45388552208D73A9003EB260 /* robot 0 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 0 1.png"; sourceTree = "<group>"; };
 		45388553208D73A9003EB260 /* robot 1 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "robot 1 6.png"; sourceTree = "<group>"; };
-		45388554208D76D7003EB260 /* tower base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower base.png"; sourceTree = "<group>"; };
-		45388555208D76E8003EB260 /* tower gun 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 2.png"; sourceTree = "<group>"; };
-		45388556208D76E8003EB260 /* tower gun 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 4.png"; sourceTree = "<group>"; };
-		45388557208D76E8003EB260 /* tower gun 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 3.png"; sourceTree = "<group>"; };
-		45388558208D76E8003EB260 /* tower gun 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 1.png"; sourceTree = "<group>"; };
-		45388559208D76E9003EB260 /* tower gun 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower gun 0.png"; sourceTree = "<group>"; };
+		45388554208D76D7003EB260 /* blaster base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blaster base.png"; sourceTree = "<group>"; };
+		45388555208D76E8003EB260 /* blaster 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blaster 2.png"; sourceTree = "<group>"; };
+		45388556208D76E8003EB260 /* blaster 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blaster 4.png"; sourceTree = "<group>"; };
+		45388557208D76E8003EB260 /* blaster 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blaster 3.png"; sourceTree = "<group>"; };
+		45388558208D76E8003EB260 /* blaster 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blaster 1.png"; sourceTree = "<group>"; };
+		45388559208D76E9003EB260 /* blaster 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blaster 0.png"; sourceTree = "<group>"; };
 		4538855A208D7742003EB260 /* tower rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower rendering system.cpp"; sourceTree = "<group>"; };
 		4538855B208D7742003EB260 /* tower rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower rendering system.hpp"; sourceTree = "<group>"; };
 		45388561208D8F50003EB260 /* game view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game view.cpp"; sourceTree = "<group>"; };
@@ -211,23 +211,23 @@
 		453B15202090508800BFA00D /* unit damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit damage system.hpp"; sourceTree = "<group>"; };
 		453B15222090522F00BFA00D /* unit regen system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit regen system.cpp"; sourceTree = "<group>"; };
 		453B15232090522F00BFA00D /* unit regen system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit regen system.hpp"; sourceTree = "<group>"; };
-		453B152520905AEF00BFA00D /* cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = cannon.anim; sourceTree = "<group>"; };
-		453B152620905B0100BFA00D /* cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon base.png"; sourceTree = "<group>"; };
 		453B153020905DF300BFA00D /* sounds.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = sounds.jsonnet; sourceTree = "<group>"; };
 		453B153220906E3200BFA00D /* cannon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cannon.wav; sourceTree = "<group>"; };
 		453B15342090700500BFA00D /* load towers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load towers.cpp"; sourceTree = "<group>"; };
 		453B15352090700500BFA00D /* load towers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load towers.hpp"; sourceTree = "<group>"; };
 		453B15372090760900BFA00D /* towers.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = towers.jsonnet; sourceTree = "<group>"; };
-		453B154220907C4900BFA00D /* cannon gun 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 7.png"; sourceTree = "<group>"; };
-		453B154320907C4A00BFA00D /* cannon gun 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 0.png"; sourceTree = "<group>"; };
-		453B154420907C4A00BFA00D /* cannon gun 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 3.png"; sourceTree = "<group>"; };
-		453B154520907C4A00BFA00D /* cannon gun 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 2.png"; sourceTree = "<group>"; };
-		453B154620907C4B00BFA00D /* cannon gun 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 4.png"; sourceTree = "<group>"; };
-		453B154720907C4B00BFA00D /* cannon gun 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 1.png"; sourceTree = "<group>"; };
-		453B154820907C4B00BFA00D /* cannon gun 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 6.png"; sourceTree = "<group>"; };
-		453B154920907C4C00BFA00D /* cannon gun 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 5.png"; sourceTree = "<group>"; };
-		453B154A20907C4C00BFA00D /* cannon gun 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 8.png"; sourceTree = "<group>"; };
+		453B154220907C4900BFA00D /* cannon 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 7.png"; sourceTree = "<group>"; };
+		453B154320907C4A00BFA00D /* cannon 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 0.png"; sourceTree = "<group>"; };
+		453B154420907C4A00BFA00D /* cannon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 3.png"; sourceTree = "<group>"; };
+		453B154520907C4A00BFA00D /* cannon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 2.png"; sourceTree = "<group>"; };
+		453B154620907C4B00BFA00D /* cannon 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 4.png"; sourceTree = "<group>"; };
+		453B154720907C4B00BFA00D /* cannon 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 1.png"; sourceTree = "<group>"; };
+		453B154820907C4B00BFA00D /* cannon 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 6.png"; sourceTree = "<group>"; };
+		453B154920907C4C00BFA00D /* cannon 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 5.png"; sourceTree = "<group>"; };
+		453B154A20907C4C00BFA00D /* cannon 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 8.png"; sourceTree = "<group>"; };
 		453B154B20907CDD00BFA00D /* getsound.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = getsound.libsonnet; sourceTree = "<group>"; };
+		453B15502090818900BFA00D /* cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon base.png"; sourceTree = "<group>"; };
+		453B1551209081D700BFA00D /* cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = cannon.anim; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -489,22 +489,22 @@
 		45388513208C5723003EB260 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
-				453B154320907C4A00BFA00D /* cannon gun 0.png */,
-				453B154720907C4B00BFA00D /* cannon gun 1.png */,
-				453B154520907C4A00BFA00D /* cannon gun 2.png */,
-				453B154420907C4A00BFA00D /* cannon gun 3.png */,
-				453B154620907C4B00BFA00D /* cannon gun 4.png */,
-				453B154920907C4C00BFA00D /* cannon gun 5.png */,
-				453B154820907C4B00BFA00D /* cannon gun 6.png */,
-				453B154220907C4900BFA00D /* cannon gun 7.png */,
-				453B154A20907C4C00BFA00D /* cannon gun 8.png */,
-				453B152620905B0100BFA00D /* cannon base.png */,
-				45388559208D76E9003EB260 /* tower gun 0.png */,
-				45388558208D76E8003EB260 /* tower gun 1.png */,
-				45388555208D76E8003EB260 /* tower gun 2.png */,
-				45388557208D76E8003EB260 /* tower gun 3.png */,
-				45388556208D76E8003EB260 /* tower gun 4.png */,
-				45388554208D76D7003EB260 /* tower base.png */,
+				45388559208D76E9003EB260 /* blaster 0.png */,
+				45388558208D76E8003EB260 /* blaster 1.png */,
+				45388555208D76E8003EB260 /* blaster 2.png */,
+				45388557208D76E8003EB260 /* blaster 3.png */,
+				45388556208D76E8003EB260 /* blaster 4.png */,
+				45388554208D76D7003EB260 /* blaster base.png */,
+				453B154320907C4A00BFA00D /* cannon 0.png */,
+				453B154720907C4B00BFA00D /* cannon 1.png */,
+				453B154520907C4A00BFA00D /* cannon 2.png */,
+				453B154420907C4A00BFA00D /* cannon 3.png */,
+				453B154620907C4B00BFA00D /* cannon 4.png */,
+				453B154920907C4C00BFA00D /* cannon 5.png */,
+				453B154820907C4B00BFA00D /* cannon 6.png */,
+				453B154220907C4900BFA00D /* cannon 7.png */,
+				453B154A20907C4C00BFA00D /* cannon 8.png */,
+				453B15502090818900BFA00D /* cannon base.png */,
 				4538852A208C5CE5003EB260 /* map 0.png */,
 				4538852B208C5CE5003EB260 /* map 1.png */,
 				45388528208C5CE4003EB260 /* map 2.png */,
@@ -552,7 +552,7 @@
 				45388533208D7356003EB260 /* ui plan.anim */,
 				45388531208D7345003EB260 /* robot.anim */,
 				45388570208DB3C2003EB260 /* tower.anim */,
-				453B152520905AEF00BFA00D /* cannon.anim */,
+				453B1551209081D700BFA00D /* cannon.anim */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
