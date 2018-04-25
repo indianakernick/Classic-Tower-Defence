@@ -50,6 +50,8 @@
 		453B15212090508800BFA00D /* unit damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B151F2090508800BFA00D /* unit damage system.cpp */; };
 		453B15242090522F00BFA00D /* unit regen system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15222090522F00BFA00D /* unit regen system.cpp */; };
 		453B153320906E3200BFA00D /* cannon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B153220906E3200BFA00D /* cannon.wav */; };
+		453B15362090700500BFA00D /* load towers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15342090700500BFA00D /* load towers.cpp */; };
+		453B15382090760900BFA00D /* towers.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 453B15372090760900BFA00D /* towers.jsonnet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,7 +119,7 @@
 		453884F7208B2883003EB260 /* tower sprites component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sprites component.hpp"; sourceTree = "<group>"; };
 		453884F8208B28CC003EB260 /* tower firing anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower firing anim system.cpp"; sourceTree = "<group>"; };
 		453884F9208B28CC003EB260 /* tower firing anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower firing anim system.hpp"; sourceTree = "<group>"; };
-		453884FB208B2A07003EB260 /* towers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = towers.hpp; sourceTree = "<group>"; };
+		453884FB208B2A07003EB260 /* towers component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "towers component.hpp"; sourceTree = "<group>"; };
 		453884FD208C15B5003EB260 /* create tower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create tower.cpp"; sourceTree = "<group>"; };
 		453884FE208C15B5003EB260 /* create tower.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create tower.hpp"; sourceTree = "<group>"; };
 		45388500208C16D3003EB260 /* tower upgrades component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower upgrades component.hpp"; sourceTree = "<group>"; };
@@ -221,6 +223,9 @@
 		453B152F20905B1900BFA00D /* cannon gun 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 8.png"; sourceTree = "<group>"; };
 		453B153020905DF300BFA00D /* sounds.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = sounds.jsonnet; sourceTree = "<group>"; };
 		453B153220906E3200BFA00D /* cannon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cannon.wav; sourceTree = "<group>"; };
+		453B15342090700500BFA00D /* load towers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load towers.cpp"; sourceTree = "<group>"; };
+		453B15352090700500BFA00D /* load towers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load towers.hpp"; sourceTree = "<group>"; };
+		453B15372090760900BFA00D /* towers.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = towers.jsonnet; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,7 +296,6 @@
 				45388530208D7324003EB260 /* Animations */,
 				45388513208C5723003EB260 /* Sprites */,
 				45388512208C5716003EB260 /* Spritesheets */,
-				453884B4208ABE66003EB260 /* Levels */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -307,13 +311,6 @@
 				453884B7208ABF79003EB260 /* app.hpp */,
 			);
 			path = Game;
-			sourceTree = "<group>";
-		};
-		453884B4208ABE66003EB260 /* Levels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Levels;
 			sourceTree = "<group>";
 		};
 		453884B9208ACB54003EB260 /* Components */ = {
@@ -348,7 +345,6 @@
 		453884BC208ACC08003EB260 /* Game Data */ = {
 			isa = PBXGroup;
 			children = (
-				453884FB208B2A07003EB260 /* towers.hpp */,
 				45388585208EC036003EB260 /* sounds.hpp */,
 			);
 			name = "Game Data";
@@ -579,6 +575,8 @@
 				453B151C2090461E00BFA00D /* load level.hpp */,
 				453884CA208AD499003EB260 /* init map info.cpp */,
 				453884CB208AD499003EB260 /* init map info.hpp */,
+				453B15342090700500BFA00D /* load towers.cpp */,
+				453B15352090700500BFA00D /* load towers.hpp */,
 			);
 			name = Level;
 			sourceTree = "<group>";
@@ -590,6 +588,7 @@
 				453884C8208AD3A1003EB260 /* map info component.hpp */,
 				4538852F208C5F32003EB260 /* map sprites component.hpp */,
 				453B151E2090495400BFA00D /* waves component.hpp */,
+				453884FB208B2A07003EB260 /* towers component.hpp */,
 			);
 			name = Level;
 			sourceTree = "<group>";
@@ -605,7 +604,6 @@
 		4538857E208DF799003EB260 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				453B153020905DF300BFA00D /* sounds.jsonnet */,
 				4538857F208DF7AA003EB260 /* blaster.wav */,
 				453B153220906E3200BFA00D /* cannon.wav */,
 			);
@@ -642,6 +640,8 @@
 		453B150F20903A9D00BFA00D /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				453B15372090760900BFA00D /* towers.jsonnet */,
+				453B153020905DF300BFA00D /* sounds.jsonnet */,
 				453B151520903F5100BFA00D /* level 0.jsonnet */,
 				453B151A2090453D00BFA00D /* getsprite.libsonnet */,
 			);
@@ -717,6 +717,7 @@
 			files = (
 				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
+				453B15382090760900BFA00D /* towers.jsonnet in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
 				453B153320906E3200BFA00D /* cannon.wav in Resources */,
 				45388527208C5858003EB260 /* sprites.png in Resources */,
@@ -734,7 +735,6 @@
 			);
 			inputPaths = (
 				"$(PROJECT_DIR)/$(PROJECT)/Resources/Levels/",
-				"$(PROJECT_DIR)/$(PROJECT)/Resources/Sounds/sounds.jsonnet",
 			);
 			name = "Compile Levels";
 			outputPaths = (
@@ -742,7 +742,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\ncompile() {\n  if [ $# -eq 1 ]\n  then\n    finalName=\"$1\"\n  else\n    finalName=\"$2\"\n  fi\n  echo \"Compiling $finalName\"\n  time jsonnet \"$PROJECT_RES/$1.jsonnet\" |         # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$finalName.json\"         # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$finalName.json\" ]]; then\n    exit 1\n  fi\n}\n\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  compile \"$name\"\ndone\n\ncompile \"../Sounds/sounds\" \"sounds\"";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\ncompile() {\n  if [ $# -eq 1 ]\n  then\n    finalName=\"$1\"\n  else\n    finalName=\"$2\"\n  fi\n  echo \"Compiling $finalName\"\n  time jsonnet \"$PROJECT_RES/$1.jsonnet\" |         # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$finalName.json\"         # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$finalName.json\" ]]; then\n    exit 1\n  fi\n}\n\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  compile \"$name\"\ndone\n\ncompile \"sounds\"\ncompile \"towers\"";
 		};
 		45388511208C570A003EB260 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -772,6 +772,7 @@
 				453884EE208B1607003EB260 /* spawner system.cpp in Sources */,
 				453B15242090522F00BFA00D /* unit regen system.cpp in Sources */,
 				453884D7208B0283003EB260 /* tower aim system.cpp in Sources */,
+				453B15362090700500BFA00D /* load towers.cpp in Sources */,
 				4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,

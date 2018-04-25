@@ -8,6 +8,7 @@
 
 #include "create tower.hpp"
 
+#include "towers component.hpp"
 #include "sound component.hpp"
 #include "position component.hpp"
 #include "tower timing component.hpp"
@@ -16,9 +17,12 @@
 
 ECS::EntityID createTower(
   ECS::Registry &reg,
-  const TowerProto &tower,
+  const size_t index,
   const glm::ivec2 pos
 ) {
+  const Towers &towers = reg.get<Towers>();
+  const TowerProto &tower = towers.at(index);
+  
   const ECS::EntityID entity = reg.create();
   reg.assign<Position>(entity, pos);
   reg.assign<TowerStats>(entity, &tower.stats);
