@@ -15,7 +15,7 @@ local getSprite = (import "getsprite.libsonnet");
     },
     upgrades: {},
     sound: {
-      id: 0
+      id: 1
     }
   }
 ]

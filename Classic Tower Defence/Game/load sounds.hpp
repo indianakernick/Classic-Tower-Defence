@@ -12,6 +12,5 @@
 #include "sounds.hpp"
 
 Sounds loadSounds();
-void destroySounds(Sounds &);
 
 #endif
