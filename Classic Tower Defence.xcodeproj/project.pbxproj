@@ -188,8 +188,8 @@
 		45388568208D9C72003EB260 /* create spawner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create spawner.hpp"; sourceTree = "<group>"; };
 		4538856A208DA038003EB260 /* create base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create base.cpp"; sourceTree = "<group>"; };
 		4538856B208DA038003EB260 /* create base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create base.hpp"; sourceTree = "<group>"; };
-		45388570208DB3C2003EB260 /* tower.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = tower.anim; sourceTree = "<group>"; };
-		45388572208DC45B003EB260 /* placeholder map.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "placeholder map.anim"; sourceTree = "<group>"; };
+		45388570208DB3C2003EB260 /* blaster.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = blaster.anim; sourceTree = "<group>"; };
+		45388572208DC45B003EB260 /* map.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = map.anim; sourceTree = "<group>"; };
 		4538857B208DF510003EB260 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		4538857F208DF7AA003EB260 /* blaster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blaster.wav; sourceTree = "<group>"; };
 		45388581208EBED9003EB260 /* sound component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sound component.hpp"; sourceTree = "<group>"; };
@@ -265,6 +265,8 @@
 		453B15742090C58D00BFA00D /* armour 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 4.png"; sourceTree = "<group>"; };
 		453B15752090C58D00BFA00D /* armour 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 6.png"; sourceTree = "<group>"; };
 		453B15762090C58E00BFA00D /* armour 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 1.png"; sourceTree = "<group>"; };
+		453B15772090C7B200BFA00D /* health.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = health.anim; sourceTree = "<group>"; };
+		453B15782090C7B200BFA00D /* armour.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = armour.anim; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -621,11 +623,13 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				45388572208DC45B003EB260 /* placeholder map.anim */,
-				45388533208D7356003EB260 /* ui plan.anim */,
-				45388531208D7345003EB260 /* robot.anim */,
-				45388570208DB3C2003EB260 /* tower.anim */,
+				453B15782090C7B200BFA00D /* armour.anim */,
+				45388570208DB3C2003EB260 /* blaster.anim */,
 				453B1551209081D700BFA00D /* cannon.anim */,
+				453B15772090C7B200BFA00D /* health.anim */,
+				45388572208DC45B003EB260 /* map.anim */,
+				45388531208D7345003EB260 /* robot.anim */,
+				45388533208D7356003EB260 /* ui plan.anim */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
