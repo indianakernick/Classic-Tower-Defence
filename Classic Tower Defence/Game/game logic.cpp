@@ -36,9 +36,9 @@ void GameLogic::init(ECS::Registry &reg) {
   tower.stats.damage = 20;
   tower.stats.rof = 1;
   tower.stats.armourPiercing = 0;
-  tower.sprites.gun = 37;
-  tower.sprites.firingFrames = 5;
-  tower.sprites.base = 36;
+  tower.sprites.gun = 1;
+  tower.sprites.firingFrames = 9;
+  tower.sprites.base = 0;
   tower.upgrades.first = nullptr;
   tower.upgrades.second = nullptr;
   

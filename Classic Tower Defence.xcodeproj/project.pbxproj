@@ -126,10 +126,10 @@
 		4538850B208C2C56003EB260 /* unit rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit rendering system.hpp"; sourceTree = "<group>"; };
 		45388524208C5858003EB260 /* sprites.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sprites.atlas; sourceTree = "<group>"; };
 		45388525208C5858003EB260 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
-		45388528208C5CE4003EB260 /* placeholder map 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 2.png"; sourceTree = "<group>"; };
-		45388529208C5CE4003EB260 /* placeholder map 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 3.png"; sourceTree = "<group>"; };
-		4538852A208C5CE5003EB260 /* placeholder map 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 0.png"; sourceTree = "<group>"; };
-		4538852B208C5CE5003EB260 /* placeholder map 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder map 1.png"; sourceTree = "<group>"; };
+		45388528208C5CE4003EB260 /* map 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map 2.png"; sourceTree = "<group>"; };
+		45388529208C5CE4003EB260 /* map 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map 3.png"; sourceTree = "<group>"; };
+		4538852A208C5CE5003EB260 /* map 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map 0.png"; sourceTree = "<group>"; };
+		4538852B208C5CE5003EB260 /* map 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map 1.png"; sourceTree = "<group>"; };
 		4538852C208C5DC7003EB260 /* map rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "map rendering system.cpp"; sourceTree = "<group>"; };
 		4538852D208C5DC7003EB260 /* map rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map rendering system.hpp"; sourceTree = "<group>"; };
 		4538852F208C5F32003EB260 /* map sprites component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map sprites component.hpp"; sourceTree = "<group>"; };
@@ -207,6 +207,17 @@
 		453B15202090508800BFA00D /* unit damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit damage system.hpp"; sourceTree = "<group>"; };
 		453B15222090522F00BFA00D /* unit regen system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit regen system.cpp"; sourceTree = "<group>"; };
 		453B15232090522F00BFA00D /* unit regen system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit regen system.hpp"; sourceTree = "<group>"; };
+		453B152520905AEF00BFA00D /* cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = cannon.anim; sourceTree = "<group>"; };
+		453B152620905B0100BFA00D /* cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon base.png"; sourceTree = "<group>"; };
+		453B152720905B1700BFA00D /* cannon gun 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 7.png"; sourceTree = "<group>"; };
+		453B152820905B1700BFA00D /* cannon gun 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 0.png"; sourceTree = "<group>"; };
+		453B152920905B1700BFA00D /* cannon gun 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 3.png"; sourceTree = "<group>"; };
+		453B152A20905B1800BFA00D /* cannon gun 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 2.png"; sourceTree = "<group>"; };
+		453B152B20905B1800BFA00D /* cannon gun 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 4.png"; sourceTree = "<group>"; };
+		453B152C20905B1800BFA00D /* cannon gun 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 1.png"; sourceTree = "<group>"; };
+		453B152D20905B1800BFA00D /* cannon gun 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 6.png"; sourceTree = "<group>"; };
+		453B152E20905B1900BFA00D /* cannon gun 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 5.png"; sourceTree = "<group>"; };
+		453B152F20905B1900BFA00D /* cannon gun 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 8.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,16 +488,26 @@
 		45388513208C5723003EB260 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				453B152820905B1700BFA00D /* cannon gun 0.png */,
+				453B152C20905B1800BFA00D /* cannon gun 1.png */,
+				453B152A20905B1800BFA00D /* cannon gun 2.png */,
+				453B152920905B1700BFA00D /* cannon gun 3.png */,
+				453B152B20905B1800BFA00D /* cannon gun 4.png */,
+				453B152E20905B1900BFA00D /* cannon gun 5.png */,
+				453B152D20905B1800BFA00D /* cannon gun 6.png */,
+				453B152720905B1700BFA00D /* cannon gun 7.png */,
+				453B152F20905B1900BFA00D /* cannon gun 8.png */,
+				453B152620905B0100BFA00D /* cannon base.png */,
 				45388559208D76E9003EB260 /* tower gun 0.png */,
 				45388558208D76E8003EB260 /* tower gun 1.png */,
 				45388555208D76E8003EB260 /* tower gun 2.png */,
 				45388557208D76E8003EB260 /* tower gun 3.png */,
 				45388556208D76E8003EB260 /* tower gun 4.png */,
 				45388554208D76D7003EB260 /* tower base.png */,
-				4538852A208C5CE5003EB260 /* placeholder map 0.png */,
-				4538852B208C5CE5003EB260 /* placeholder map 1.png */,
-				45388528208C5CE4003EB260 /* placeholder map 2.png */,
-				45388529208C5CE4003EB260 /* placeholder map 3.png */,
+				4538852A208C5CE5003EB260 /* map 0.png */,
+				4538852B208C5CE5003EB260 /* map 1.png */,
+				45388528208C5CE4003EB260 /* map 2.png */,
+				45388529208C5CE4003EB260 /* map 3.png */,
 				45388535208D73A5003EB260 /* robot 0 0.png */,
 				45388552208D73A9003EB260 /* robot 0 1.png */,
 				45388550208D73A9003EB260 /* robot 0 2.png */,
@@ -530,6 +551,7 @@
 				45388533208D7356003EB260 /* ui plan.anim */,
 				45388531208D7345003EB260 /* robot.anim */,
 				45388570208DB3C2003EB260 /* tower.anim */,
+				453B152520905AEF00BFA00D /* cannon.anim */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
