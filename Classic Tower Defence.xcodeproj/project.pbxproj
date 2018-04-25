@@ -52,6 +52,7 @@
 		453B153320906E3200BFA00D /* cannon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B153220906E3200BFA00D /* cannon.wav */; };
 		453B15362090700500BFA00D /* load towers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15342090700500BFA00D /* load towers.cpp */; };
 		453B15382090760900BFA00D /* towers.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 453B15372090760900BFA00D /* towers.jsonnet */; };
+		453B154C20907CDD00BFA00D /* getsound.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 453B154B20907CDD00BFA00D /* getsound.libsonnet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -226,6 +227,7 @@
 		453B154820907C4B00BFA00D /* cannon gun 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 6.png"; sourceTree = "<group>"; };
 		453B154920907C4C00BFA00D /* cannon gun 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 5.png"; sourceTree = "<group>"; };
 		453B154A20907C4C00BFA00D /* cannon gun 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 8.png"; sourceTree = "<group>"; };
+		453B154B20907CDD00BFA00D /* getsound.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = getsound.libsonnet; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -640,10 +642,11 @@
 		453B150F20903A9D00BFA00D /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				453B151A2090453D00BFA00D /* getsprite.libsonnet */,
+				453B154B20907CDD00BFA00D /* getsound.libsonnet */,
 				453B15372090760900BFA00D /* towers.jsonnet */,
 				453B153020905DF300BFA00D /* sounds.jsonnet */,
 				453B151520903F5100BFA00D /* level 0.jsonnet */,
-				453B151A2090453D00BFA00D /* getsprite.libsonnet */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -722,6 +725,7 @@
 				453B153320906E3200BFA00D /* cannon.wav in Resources */,
 				45388527208C5858003EB260 /* sprites.png in Resources */,
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
+				453B154C20907CDD00BFA00D /* getsound.libsonnet in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

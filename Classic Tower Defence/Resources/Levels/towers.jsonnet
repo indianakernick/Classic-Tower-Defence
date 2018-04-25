@@ -1,4 +1,5 @@
-local getSprite = (import "getsprite.libsonnet");
+local getSprite = import "getsprite.libsonnet";
+local getSound = import "getsound.libsonnet";
 
 [
   {
@@ -15,7 +16,7 @@ local getSprite = (import "getsprite.libsonnet");
     },
     upgrades: {},
     sound: {
-      id: 1
+      id: getSound("cannon")
     }
   }
 ]
