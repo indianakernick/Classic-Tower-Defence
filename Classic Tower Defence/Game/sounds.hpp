@@ -10,8 +10,8 @@
 #define sounds_hpp
 
 #include <vector>
-#include <SDL2/SDL_mixer.h>
+#include <Simpleton/SDL/chunk.hpp>
 
-using Sounds = std::vector<Mix_Chunk *>;
+using Sounds = std::vector<SDL::Chunk>;
 
 #endif

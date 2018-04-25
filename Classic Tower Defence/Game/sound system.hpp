@@ -12,6 +12,6 @@
 #include "sounds.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
-void soundSystem(ECS::Registry &, const Sounds &);
+void soundSystem(ECS::Registry &, Sounds &);
 
 #endif

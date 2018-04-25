@@ -10,13 +10,13 @@
 
 #include "sound component.hpp"
 
-void soundSystem(ECS::Registry &reg, const Sounds &sounds) {
+void soundSystem(ECS::Registry &reg, Sounds &sounds) {
   auto view = reg.view<Sound>();
   for (const ECS::EntityID entity : view) {
     Sound &sound = view.get(entity);
     if (sound.play) {
       sound.play = false;
-      Mix_PlayChannel(-1, sounds.at(sound.id), 0);
+      sounds.at(sound.id).play();
     }
   }
 }
