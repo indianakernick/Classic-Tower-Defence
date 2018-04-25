@@ -47,6 +47,8 @@
 		45388592208ECC3C003EB260 /* map 0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 45388591208ECC3C003EB260 /* map 0.txt */; };
 		45388595208ECCA1003EB260 /* load map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388593208ECCA1003EB260 /* load map.cpp */; };
 		45388598208EE402003EB260 /* create map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388596208EE402003EB260 /* create map.cpp */; };
+		453B150E209038F800BFA00D /* load waves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B150C209038F800BFA00D /* load waves.cpp */; };
+		453B151120903AC400BFA00D /* waves 0.json in Resources */ = {isa = PBXBuildFile; fileRef = 453B151020903AC400BFA00D /* waves 0.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -199,6 +201,9 @@
 		45388594208ECCA1003EB260 /* load map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load map.hpp"; sourceTree = "<group>"; };
 		45388596208EE402003EB260 /* create map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create map.cpp"; sourceTree = "<group>"; };
 		45388597208EE402003EB260 /* create map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create map.hpp"; sourceTree = "<group>"; };
+		453B150C209038F800BFA00D /* load waves.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load waves.cpp"; sourceTree = "<group>"; };
+		453B150D209038F800BFA00D /* load waves.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load waves.hpp"; sourceTree = "<group>"; };
+		453B151020903AC400BFA00D /* waves 0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "waves 0.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +268,7 @@
 		453884B2208ABD2A003EB260 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				453B150F20903A9D00BFA00D /* Waves */,
 				45388590208ECBD0003EB260 /* Maps */,
 				4538857E208DF799003EB260 /* Sounds */,
 				45388530208D7324003EB260 /* Animations */,
@@ -328,6 +334,8 @@
 				453884BE208ACD6A003EB260 /* waves.hpp */,
 				453884FB208B2A07003EB260 /* towers.hpp */,
 				45388585208EC036003EB260 /* sounds.hpp */,
+				453B150C209038F800BFA00D /* load waves.cpp */,
+				453B150D209038F800BFA00D /* load waves.hpp */,
 			);
 			name = "Game Data";
 			sourceTree = "<group>";
@@ -599,6 +607,14 @@
 			path = Maps;
 			sourceTree = "<group>";
 		};
+		453B150F20903A9D00BFA00D /* Waves */ = {
+			isa = PBXGroup;
+			children = (
+				453B151020903AC400BFA00D /* waves 0.json */,
+			);
+			path = Waves;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -666,6 +682,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453B151120903AC400BFA00D /* waves 0.json in Resources */,
 				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
@@ -734,6 +751,7 @@
 				4538858A208EC34B003EB260 /* load sounds.cpp in Sources */,
 				45388566208D99EF003EB260 /* game logic.cpp in Sources */,
 				45388595208ECCA1003EB260 /* load map.cpp in Sources */,
+				453B150E209038F800BFA00D /* load waves.cpp in Sources */,
 				45388563208D8F50003EB260 /* game view.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				4538856C208DA038003EB260 /* create base.cpp in Sources */,

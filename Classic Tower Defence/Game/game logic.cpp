@@ -10,8 +10,6 @@
 
 #include <string>
 #include "create map.hpp"
-#include "load map.hpp"
-#include "init map info.hpp"
 #include "map sprites component.hpp"
 #include "map info component.hpp"
 #include "create spawner.hpp"
@@ -29,6 +27,9 @@
 // these should be in the level loader
 #include <Simpleton/SDL/paths.hpp>
 #include <fstream>
+#include "load waves.hpp"
+#include "load map.hpp"
+#include "init map info.hpp"
 
 void GameLogic::init(ECS::Registry &reg) {
   createMap(reg);
@@ -36,11 +37,9 @@ void GameLogic::init(ECS::Registry &reg) {
   loadMap(reg, file);
   initMapInfo(reg);
   
-  Wave wave;
-  wave.quantity = 10000;
-  wave.stats = {100.0f, 2.0f};
-  wave.sprite = {4, 8};
-  waves.push_back(wave);
+  file.close();
+  file.open(SDL::getResDir() + "waves 0.json");
+  loadWaves(waves, file);
   
   createSpawner(reg, 1.5f);
   createBase(reg, 1000);
