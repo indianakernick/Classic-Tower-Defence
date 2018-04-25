@@ -9,9 +9,9 @@
 #include "load level.hpp"
 
 #include <fstream>
-#include "waves.hpp"
 #include "init map info.hpp"
 #include "map component.hpp"
+#include "waves component.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
 #include "map sprites component.hpp"

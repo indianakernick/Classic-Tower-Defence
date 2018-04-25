@@ -13,6 +13,10 @@
 
 struct UnitStatsBase {
   float health;
+  float armour;
+  float healthRegen;
+  float armourRegen;
+  float dodge;
   float moveSpeed;
 };
 
@@ -22,6 +26,10 @@ struct UnitStats : UnitStatsBase {
 
 inline void from_json(const json &j, UnitStatsBase &comp) {
   DATA_GET(comp, health);
+  DATA_GET(comp, armour);
+  DATA_GET(comp, healthRegen);
+  DATA_GET(comp, armourRegen);
+  DATA_GET(comp, dodge);
   DATA_GET(comp, moveSpeed);
 }
 

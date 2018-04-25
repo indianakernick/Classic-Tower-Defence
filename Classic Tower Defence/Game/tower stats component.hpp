@@ -15,6 +15,7 @@ struct TowerStatsBase {
   float range;
   float damage;
   float rof;
+  float armourPiercing;
 };
 
 struct TowerStats {
@@ -25,6 +26,7 @@ inline void from_json(const json &j, TowerStatsBase &stats) {
   DATA_GET(stats, range);
   DATA_GET(stats, damage);
   DATA_GET(stats, rof);
+  DATA_GET(stats, armourPiercing);
 }
 
 #endif

@@ -24,6 +24,7 @@
 #include "tower aim system.hpp"
 #include "tower shoot system.hpp"
 #include "tower timing system.hpp"
+#include "unit regen system.hpp"
 
 void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
@@ -34,6 +35,7 @@ void GameLogic::init(ECS::Registry &reg) {
   tower.stats.range = 10;
   tower.stats.damage = 20;
   tower.stats.rof = 1;
+  tower.stats.armourPiercing = 0;
   tower.sprites.gun = 37;
   tower.sprites.firingFrames = 5;
   tower.sprites.base = 36;
@@ -54,6 +56,8 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   towerTimingSystem(reg, delta);
   spawnerTimingSystem(reg, delta);
   spawnerSystem(reg);
+  
+  unitRegenSystem(reg, delta);
   
   towerAimSystem(reg);
   towerShootSystem(reg);

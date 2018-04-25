@@ -8,7 +8,7 @@
 
 #include "tower shoot system.hpp"
 
-#include "unit stats component.hpp"
+#include "unit damage system.hpp"
 #include "tower stats component.hpp"
 #include "tower timing component.hpp"
 #include "tower target component.hpp"
@@ -29,7 +29,8 @@ void towerShootSystem(ECS::Registry &reg) {
       continue;
     }
     
-    reg.get<UnitStats>(target).health -= towerStats.damage;
+    unitDamageSystem(reg, target, towerStats.damage, towerStats.armourPiercing);
+    
     timeSinceLastShot = 0;
     
     TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);

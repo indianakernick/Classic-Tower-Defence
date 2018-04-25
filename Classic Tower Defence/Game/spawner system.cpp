@@ -8,7 +8,7 @@
 
 #include "spawner system.hpp"
 
-#include "waves.hpp"
+#include "waves component.hpp"
 #include "map info component.hpp"
 #include "unit dir component.hpp"
 #include "position component.hpp"

@@ -9,7 +9,6 @@
 #ifndef game_logic_hpp
 #define game_logic_hpp
 
-#include "waves.hpp"
 #include "towers.hpp"
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_events.h>
