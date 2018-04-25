@@ -16,7 +16,6 @@ struct SpawnerState {
     FINISHED
   };
 
-  size_t currentGroup;
   size_t numUnitsLeft;
   State state;
 };

@@ -77,7 +77,7 @@
 		453884B7208ABF79003EB260 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		453884BB208ACB87003EB260 /* unit stats component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit stats component.hpp"; sourceTree = "<group>"; };
 		453884BD208ACC23003EB260 /* map component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map component.hpp"; sourceTree = "<group>"; };
-		453884BE208ACD6A003EB260 /* wave.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = wave.hpp; sourceTree = "<group>"; };
+		453884BE208ACD6A003EB260 /* waves.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = waves.hpp; sourceTree = "<group>"; };
 		453884BF208ACE9D003EB260 /* tower stats component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower stats component.hpp"; sourceTree = "<group>"; };
 		453884C0208ACF12003EB260 /* position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position component.hpp"; sourceTree = "<group>"; };
 		453884C1208ACFCA003EB260 /* unit dir component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit dir component.hpp"; sourceTree = "<group>"; };
@@ -325,7 +325,7 @@
 		453884BC208ACC08003EB260 /* Game Data */ = {
 			isa = PBXGroup;
 			children = (
-				453884BE208ACD6A003EB260 /* wave.hpp */,
+				453884BE208ACD6A003EB260 /* waves.hpp */,
 				453884FB208B2A07003EB260 /* towers.hpp */,
 				45388585208EC036003EB260 /* sounds.hpp */,
 			);

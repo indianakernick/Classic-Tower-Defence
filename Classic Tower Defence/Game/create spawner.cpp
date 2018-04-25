@@ -19,7 +19,6 @@ void createSpawner(ECS::Registry &reg, const float timeBetween) {
   timing.timeSinceLastSpawn = 0.0f;
   
   auto &state = reg.attach<SpawnerState>(id);
-  state.currentGroup = 0;
   state.numUnitsLeft = 0;
   state.state = SpawnerState::STARTING;
 }

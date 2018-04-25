@@ -36,11 +36,11 @@ void GameLogic::init(ECS::Registry &reg) {
   loadMap(reg, file);
   initMapInfo(reg);
   
-  WaveGroup group;
-  group.quantity = 10000;
-  group.stats = {100.0f, 2.0f};
-  group.sprite = {4, 8};
-  wave.push_back(group);
+  Wave wave;
+  wave.quantity = 10000;
+  wave.stats = {100.0f, 2.0f};
+  wave.sprite = {4, 8};
+  waves.push_back(wave);
   
   createSpawner(reg, 1.5f);
   createBase(reg, 1000);
@@ -67,7 +67,7 @@ bool GameLogic::input(const SDL_Event &) {
 void GameLogic::update(ECS::Registry &reg, const float delta) {
   towerTimingSystem(reg, delta);
   spawnerTimingSystem(reg, delta);
-  spawnerSystem(reg, wave);
+  spawnerSystem(reg, waves[0]);
   
   towerAimSystem(reg);
   towerShootSystem(reg);

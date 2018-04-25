@@ -18,15 +18,15 @@
 #include "unit exit distance component.hpp"
 
 namespace {
-  void spawn(ECS::Registry &reg, const WaveGroup &group) {
+  void spawnUnit(ECS::Registry &reg, const Wave &wave) {
     UnitStats unitStats;
-    *static_cast<UnitStatsBase *>(&unitStats) = group.stats;
-    unitStats.proto = &group.stats;
+    *static_cast<UnitStatsBase *>(&unitStats) = wave.stats;
+    unitStats.proto = &wave.stats;
     
     const MapInfo &map = reg.get<MapInfo>();
     const ECS::EntityID id = reg.create();
     reg.assign<UnitStats>(id, unitStats);
-    reg.assign<UnitSprite>(id, group.sprite);
+    reg.assign<UnitSprite>(id, wave.sprite);
     reg.assign<UnitDir>(id, map.entryDir);
     reg.assign<UnitPath>(id, size_t(0));
     reg.assign<UnitExitDistance>(id, map.pathDist);
@@ -46,19 +46,14 @@ void spawnerSystem(ECS::Registry &reg, const Wave &wave) {
     return;
   }
   if (state.state == SpawnerState::STARTING) {
-    state.numUnitsLeft = wave.front().quantity;
+    state.numUnitsLeft = wave.quantity;
   }
   timing.timeSinceLastSpawn = 0.0f;
   
-  spawn(reg, wave[state.currentGroup]);
-  --state.numUnitsLeft;
   if (state.numUnitsLeft == 0) {
-    if (state.currentGroup == wave.size() - 1) {
-      state.state = SpawnerState::FINISHED;
-    } else {
-      ++state.currentGroup;
-      state.numUnitsLeft = wave[state.currentGroup].quantity;
-      assert(state.numUnitsLeft != 0);
-    }
+    state.state = SpawnerState::FINISHED;
+  } else {
+    spawnUnit(reg, wave);
+    --state.numUnitsLeft;
   }
 }
