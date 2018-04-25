@@ -53,6 +53,7 @@
 		453B15362090700500BFA00D /* load towers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15342090700500BFA00D /* load towers.cpp */; };
 		453B15382090760900BFA00D /* towers.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 453B15372090760900BFA00D /* towers.jsonnet */; };
 		453B154C20907CDD00BFA00D /* getsound.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 453B154B20907CDD00BFA00D /* getsound.libsonnet */; };
+		453B15542090C12400BFA00D /* unit health rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15522090C12400BFA00D /* unit health rendering system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -228,6 +229,42 @@
 		453B154B20907CDD00BFA00D /* getsound.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = getsound.libsonnet; sourceTree = "<group>"; };
 		453B15502090818900BFA00D /* cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon base.png"; sourceTree = "<group>"; };
 		453B1551209081D700BFA00D /* cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = cannon.anim; sourceTree = "<group>"; };
+		453B15522090C12400BFA00D /* unit health rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit health rendering system.cpp"; sourceTree = "<group>"; };
+		453B15532090C12400BFA00D /* unit health rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit health rendering system.hpp"; sourceTree = "<group>"; };
+		453B15552090C57000BFA00D /* health 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 4.png"; sourceTree = "<group>"; };
+		453B15562090C57000BFA00D /* health 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 6.png"; sourceTree = "<group>"; };
+		453B15572090C57000BFA00D /* health 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 8.png"; sourceTree = "<group>"; };
+		453B15582090C57100BFA00D /* health 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 3.png"; sourceTree = "<group>"; };
+		453B15592090C57100BFA00D /* health 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 2.png"; sourceTree = "<group>"; };
+		453B155A2090C57100BFA00D /* health 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 7.png"; sourceTree = "<group>"; };
+		453B155B2090C57100BFA00D /* health 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 0.png"; sourceTree = "<group>"; };
+		453B155C2090C57200BFA00D /* health 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 10.png"; sourceTree = "<group>"; };
+		453B155D2090C57200BFA00D /* health 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 14.png"; sourceTree = "<group>"; };
+		453B155E2090C57300BFA00D /* health 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 15.png"; sourceTree = "<group>"; };
+		453B155F2090C57300BFA00D /* health 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 16.png"; sourceTree = "<group>"; };
+		453B15602090C57300BFA00D /* health 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 1.png"; sourceTree = "<group>"; };
+		453B15612090C57400BFA00D /* health 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 11.png"; sourceTree = "<group>"; };
+		453B15622090C57400BFA00D /* health 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 12.png"; sourceTree = "<group>"; };
+		453B15632090C57500BFA00D /* health 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 5.png"; sourceTree = "<group>"; };
+		453B15642090C57500BFA00D /* health 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 13.png"; sourceTree = "<group>"; };
+		453B15652090C57500BFA00D /* health 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 9.png"; sourceTree = "<group>"; };
+		453B15662090C58800BFA00D /* armour 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 15.png"; sourceTree = "<group>"; };
+		453B15672090C58800BFA00D /* armour 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 11.png"; sourceTree = "<group>"; };
+		453B15682090C58800BFA00D /* armour 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 8.png"; sourceTree = "<group>"; };
+		453B15692090C58900BFA00D /* armour 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 16.png"; sourceTree = "<group>"; };
+		453B156A2090C58900BFA00D /* armour 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 7.png"; sourceTree = "<group>"; };
+		453B156B2090C58A00BFA00D /* armour 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 0.png"; sourceTree = "<group>"; };
+		453B156C2090C58A00BFA00D /* armour 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 10.png"; sourceTree = "<group>"; };
+		453B156D2090C58B00BFA00D /* armour 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 3.png"; sourceTree = "<group>"; };
+		453B156E2090C58B00BFA00D /* armour 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 13.png"; sourceTree = "<group>"; };
+		453B156F2090C58C00BFA00D /* armour 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 9.png"; sourceTree = "<group>"; };
+		453B15702090C58C00BFA00D /* armour 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 2.png"; sourceTree = "<group>"; };
+		453B15712090C58C00BFA00D /* armour 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 12.png"; sourceTree = "<group>"; };
+		453B15722090C58D00BFA00D /* armour 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 14.png"; sourceTree = "<group>"; };
+		453B15732090C58D00BFA00D /* armour 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 5.png"; sourceTree = "<group>"; };
+		453B15742090C58D00BFA00D /* armour 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 4.png"; sourceTree = "<group>"; };
+		453B15752090C58D00BFA00D /* armour 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 6.png"; sourceTree = "<group>"; };
+		453B15762090C58E00BFA00D /* armour 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,6 +510,8 @@
 				4538852D208C5DC7003EB260 /* map rendering system.hpp */,
 				4538855A208D7742003EB260 /* tower rendering system.cpp */,
 				4538855B208D7742003EB260 /* tower rendering system.hpp */,
+				453B15522090C12400BFA00D /* unit health rendering system.cpp */,
+				453B15532090C12400BFA00D /* unit health rendering system.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -489,6 +528,23 @@
 		45388513208C5723003EB260 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				453B156B2090C58A00BFA00D /* armour 0.png */,
+				453B15762090C58E00BFA00D /* armour 1.png */,
+				453B15702090C58C00BFA00D /* armour 2.png */,
+				453B156D2090C58B00BFA00D /* armour 3.png */,
+				453B15742090C58D00BFA00D /* armour 4.png */,
+				453B15732090C58D00BFA00D /* armour 5.png */,
+				453B15752090C58D00BFA00D /* armour 6.png */,
+				453B156A2090C58900BFA00D /* armour 7.png */,
+				453B15682090C58800BFA00D /* armour 8.png */,
+				453B156F2090C58C00BFA00D /* armour 9.png */,
+				453B156C2090C58A00BFA00D /* armour 10.png */,
+				453B15672090C58800BFA00D /* armour 11.png */,
+				453B15712090C58C00BFA00D /* armour 12.png */,
+				453B156E2090C58B00BFA00D /* armour 13.png */,
+				453B15722090C58D00BFA00D /* armour 14.png */,
+				453B15662090C58800BFA00D /* armour 15.png */,
+				453B15692090C58900BFA00D /* armour 16.png */,
 				45388559208D76E9003EB260 /* blaster 0.png */,
 				45388558208D76E8003EB260 /* blaster 1.png */,
 				45388555208D76E8003EB260 /* blaster 2.png */,
@@ -505,6 +561,23 @@
 				453B154220907C4900BFA00D /* cannon 7.png */,
 				453B154A20907C4C00BFA00D /* cannon 8.png */,
 				453B15502090818900BFA00D /* cannon base.png */,
+				453B155B2090C57100BFA00D /* health 0.png */,
+				453B15602090C57300BFA00D /* health 1.png */,
+				453B15592090C57100BFA00D /* health 2.png */,
+				453B15582090C57100BFA00D /* health 3.png */,
+				453B15552090C57000BFA00D /* health 4.png */,
+				453B15632090C57500BFA00D /* health 5.png */,
+				453B15562090C57000BFA00D /* health 6.png */,
+				453B155A2090C57100BFA00D /* health 7.png */,
+				453B15572090C57000BFA00D /* health 8.png */,
+				453B15652090C57500BFA00D /* health 9.png */,
+				453B155C2090C57200BFA00D /* health 10.png */,
+				453B15612090C57400BFA00D /* health 11.png */,
+				453B15622090C57400BFA00D /* health 12.png */,
+				453B15642090C57500BFA00D /* health 13.png */,
+				453B155D2090C57200BFA00D /* health 14.png */,
+				453B155E2090C57300BFA00D /* health 15.png */,
+				453B155F2090C57300BFA00D /* health 16.png */,
 				4538852A208C5CE5003EB260 /* map 0.png */,
 				4538852B208C5CE5003EB260 /* map 1.png */,
 				45388528208C5CE4003EB260 /* map 2.png */,
@@ -738,7 +811,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(PROJECT_DIR)/$(PROJECT)/Resources/Levels/",
 			);
 			name = "Compile Levels";
 			outputPaths = (
@@ -797,6 +869,7 @@
 				4538856C208DA038003EB260 /* create base.cpp in Sources */,
 				4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
+				453B15542090C12400BFA00D /* unit health rendering system.cpp in Sources */,
 				45388584208EBFDB003EB260 /* sound system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
 				4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */,

@@ -24,9 +24,9 @@ local towerSprites(sprite) = {
   {
     stats: {
       range: 4,
-      damage: 30,
+      damage: 40,
       rof: 1/2,
-      armourPiercing: 0
+      armourPiercing: 0.6
     },
     sprites: towerSprites("cannon"),
     upgrades: {},

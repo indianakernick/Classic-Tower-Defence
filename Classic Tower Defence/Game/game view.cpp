@@ -17,6 +17,7 @@
 #include "unit walk anim system.hpp"
 #include "tower rendering system.hpp"
 #include "tower firing anim system.hpp"
+#include "unit health rendering system.hpp"
 
 void GameView::init(G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
@@ -50,4 +51,5 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   mapRenderingSystem(reg, writer, sheet);
   unitRenderingSystem(reg, writer, sheet);
   towerRenderingSystem(reg, writer, sheet);
+  unitHealthRenderingSystem(reg, writer, sheet);
 }
