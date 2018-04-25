@@ -12,6 +12,6 @@
 
 Sounds loadSounds() {
   Sounds sounds;
-  sounds.push_back(SDL::loadWAV((SDL::getResDir() + "blaster.wav").c_str()));
+  sounds.push_back(SDL::loadWAV((SDL::getResDir() + "cannon.wav").c_str()));
   return sounds;
 }

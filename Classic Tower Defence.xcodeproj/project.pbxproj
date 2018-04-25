@@ -49,6 +49,7 @@
 		453B151D2090461E00BFA00D /* load level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B151B2090461E00BFA00D /* load level.cpp */; };
 		453B15212090508800BFA00D /* unit damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B151F2090508800BFA00D /* unit damage system.cpp */; };
 		453B15242090522F00BFA00D /* unit regen system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15222090522F00BFA00D /* unit regen system.cpp */; };
+		453B153320906E3200BFA00D /* cannon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B153220906E3200BFA00D /* cannon.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -218,6 +219,8 @@
 		453B152D20905B1800BFA00D /* cannon gun 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 6.png"; sourceTree = "<group>"; };
 		453B152E20905B1900BFA00D /* cannon gun 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 5.png"; sourceTree = "<group>"; };
 		453B152F20905B1900BFA00D /* cannon gun 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon gun 8.png"; sourceTree = "<group>"; };
+		453B153020905DF300BFA00D /* sounds.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = sounds.jsonnet; sourceTree = "<group>"; };
+		453B153220906E3200BFA00D /* cannon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cannon.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -602,7 +605,9 @@
 		4538857E208DF799003EB260 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				453B153020905DF300BFA00D /* sounds.jsonnet */,
 				4538857F208DF7AA003EB260 /* blaster.wav */,
+				453B153220906E3200BFA00D /* cannon.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -713,6 +718,7 @@
 				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
+				453B153320906E3200BFA00D /* cannon.wav in Resources */,
 				45388527208C5858003EB260 /* sprites.png in Resources */,
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
 			);
@@ -728,6 +734,7 @@
 			);
 			inputPaths = (
 				"$(PROJECT_DIR)/$(PROJECT)/Resources/Levels/",
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Sounds/sounds.jsonnet",
 			);
 			name = "Compile Levels";
 			outputPaths = (
@@ -735,7 +742,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  echo \"Compiling $name\"\n  time jsonnet \"$PROJECT_RES/$name.jsonnet\" |      # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$name.json\"              # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$name.json\" ]]; then\n    exit 1\n  fi\ndone\n";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\ncompile() {\n  if [ $# -eq 1 ]\n  then\n    finalName=\"$1\"\n  else\n    finalName=\"$2\"\n  fi\n  echo \"Compiling $finalName\"\n  time jsonnet \"$PROJECT_RES/$1.jsonnet\" |         # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$finalName.json\"         # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$finalName.json\" ]]; then\n    exit 1\n  fi\n}\n\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  compile \"$name\"\ndone\n\ncompile \"../Sounds/sounds\" \"sounds\"";
 		};
 		45388511208C570A003EB260 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;

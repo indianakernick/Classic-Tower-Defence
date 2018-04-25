@@ -27,6 +27,6 @@ ECS::EntityID createTower(
   reg.assign<TowerTiming>(entity, 0.0f);
   reg.assign<TowerTarget>(entity, 0.0f, ECS::NULL_ENTITY);
   reg.assign<TowerFiringAnim>(entity, uint32_t(0), false);
-  reg.assign<Sound>(entity, uint32_t(0), false);
+  reg.assign<Sound>(entity, tower.sound);
   return entity;
 }

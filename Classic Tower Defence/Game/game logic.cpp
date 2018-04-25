@@ -41,6 +41,7 @@ void GameLogic::init(ECS::Registry &reg) {
   tower.sprites.base = 0;
   tower.upgrades.first = nullptr;
   tower.upgrades.second = nullptr;
+  tower.sound.id = 0;
   
   //createTower(reg, tower, {3, 5});
   createTower(reg, tower, {6, 5});
