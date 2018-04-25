@@ -24,7 +24,6 @@ public:
   void update(ECS::Registry &, float);
   
 private:
-  Waves waves;
   TowerProto tower;
 };
 

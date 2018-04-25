@@ -16,6 +16,7 @@ struct SpawnerState {
     FINISHED
   };
 
+  size_t currentWave;
   size_t numUnitsLeft;
   State state;
 };

@@ -9,7 +9,8 @@
 #include "game logic.hpp"
 
 #include <string>
-#include "create map.hpp"
+#include "create level.hpp"
+#include "load level.hpp"
 #include "map sprites component.hpp"
 #include "map info component.hpp"
 #include "create spawner.hpp"
@@ -24,23 +25,9 @@
 #include "tower shoot system.hpp"
 #include "tower timing system.hpp"
 
-// these should be in the level loader
-#include <Simpleton/SDL/paths.hpp>
-#include <fstream>
-#include "load waves.hpp"
-#include "load map.hpp"
-#include "init map info.hpp"
-
 void GameLogic::init(ECS::Registry &reg) {
-  createMap(reg);
-  std::ifstream file(SDL::getResDir() + "map 0.txt");
-  loadMap(reg, file);
-  initMapInfo(reg);
-  
-  file.close();
-  file.open(SDL::getResDir() + "waves 0.json");
-  loadWaves(waves, file);
-  
+  createLevel(reg);
+  loadLevel(reg, 0);
   createSpawner(reg, 1.5f);
   createBase(reg, 1000);
   
@@ -66,7 +53,7 @@ bool GameLogic::input(const SDL_Event &) {
 void GameLogic::update(ECS::Registry &reg, const float delta) {
   towerTimingSystem(reg, delta);
   spawnerTimingSystem(reg, delta);
-  spawnerSystem(reg, waves[0]);
+  spawnerSystem(reg);
   
   towerAimSystem(reg);
   towerShootSystem(reg);

@@ -45,10 +45,8 @@
 		4538858A208EC34B003EB260 /* load sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388588208EC34B003EB260 /* load sounds.cpp */; };
 		4538858D208EC736003EB260 /* tower sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538858B208EC736003EB260 /* tower sound system.cpp */; };
 		45388592208ECC3C003EB260 /* map 0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 45388591208ECC3C003EB260 /* map 0.txt */; };
-		45388595208ECCA1003EB260 /* load map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388593208ECCA1003EB260 /* load map.cpp */; };
-		45388598208EE402003EB260 /* create map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388596208EE402003EB260 /* create map.cpp */; };
-		453B150E209038F800BFA00D /* load waves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B150C209038F800BFA00D /* load waves.cpp */; };
-		453B151120903AC400BFA00D /* waves 0.json in Resources */ = {isa = PBXBuildFile; fileRef = 453B151020903AC400BFA00D /* waves 0.json */; };
+		45388598208EE402003EB260 /* create level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388596208EE402003EB260 /* create level.cpp */; };
+		453B151D2090461E00BFA00D /* load level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B151B2090461E00BFA00D /* load level.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -197,13 +195,13 @@
 		4538858B208EC736003EB260 /* tower sound system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower sound system.cpp"; sourceTree = "<group>"; };
 		4538858C208EC736003EB260 /* tower sound system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sound system.hpp"; sourceTree = "<group>"; };
 		45388591208ECC3C003EB260 /* map 0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 0.txt"; sourceTree = "<group>"; };
-		45388593208ECCA1003EB260 /* load map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load map.cpp"; sourceTree = "<group>"; };
-		45388594208ECCA1003EB260 /* load map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load map.hpp"; sourceTree = "<group>"; };
-		45388596208EE402003EB260 /* create map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create map.cpp"; sourceTree = "<group>"; };
-		45388597208EE402003EB260 /* create map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create map.hpp"; sourceTree = "<group>"; };
-		453B150C209038F800BFA00D /* load waves.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load waves.cpp"; sourceTree = "<group>"; };
-		453B150D209038F800BFA00D /* load waves.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load waves.hpp"; sourceTree = "<group>"; };
-		453B151020903AC400BFA00D /* waves 0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "waves 0.json"; sourceTree = "<group>"; };
+		45388596208EE402003EB260 /* create level.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create level.cpp"; sourceTree = "<group>"; };
+		45388597208EE402003EB260 /* create level.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create level.hpp"; sourceTree = "<group>"; };
+		453B151520903F5100BFA00D /* level 0.jsonnet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "level 0.jsonnet"; path = "Classic Tower Defence/Resources/Levels/level 0.jsonnet"; sourceTree = SOURCE_ROOT; };
+		453B151A2090453D00BFA00D /* getsprite.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = getsprite.libsonnet; sourceTree = "<group>"; };
+		453B151B2090461E00BFA00D /* load level.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load level.cpp"; sourceTree = "<group>"; };
+		453B151C2090461E00BFA00D /* load level.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load level.hpp"; sourceTree = "<group>"; };
+		453B151E2090495400BFA00D /* waves component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "waves component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,7 +266,7 @@
 		453884B2208ABD2A003EB260 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				453B150F20903A9D00BFA00D /* Waves */,
+				453B150F20903A9D00BFA00D /* Levels */,
 				45388590208ECBD0003EB260 /* Maps */,
 				4538857E208DF799003EB260 /* Sounds */,
 				45388530208D7324003EB260 /* Animations */,
@@ -303,7 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				4538856F208DB03E003EB260 /* Common */,
-				4538856E208DB004003EB260 /* Map */,
+				4538856E208DB004003EB260 /* Level */,
 				453884C3208ACFFA003EB260 /* Towers */,
 				453884C2208ACFEC003EB260 /* Units */,
 				453884E4208B1204003EB260 /* Base */,
@@ -316,7 +314,7 @@
 		453884BA208ACB5D003EB260 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
-				4538856D208DAFBB003EB260 /* Map */,
+				4538856D208DAFBB003EB260 /* Level */,
 				45388509208C2C3F003EB260 /* Rendering */,
 				453884FC208C1544003EB260 /* Editor */,
 				453884DC208B0D50003EB260 /* Towers */,
@@ -334,8 +332,6 @@
 				453884BE208ACD6A003EB260 /* waves.hpp */,
 				453884FB208B2A07003EB260 /* towers.hpp */,
 				45388585208EC036003EB260 /* sounds.hpp */,
-				453B150C209038F800BFA00D /* load waves.cpp */,
-				453B150D209038F800BFA00D /* load waves.hpp */,
 			);
 			name = "Game Data";
 			sourceTree = "<group>";
@@ -541,27 +537,28 @@
 			name = Management;
 			sourceTree = "<group>";
 		};
-		4538856D208DAFBB003EB260 /* Map */ = {
+		4538856D208DAFBB003EB260 /* Level */ = {
 			isa = PBXGroup;
 			children = (
-				45388596208EE402003EB260 /* create map.cpp */,
-				45388597208EE402003EB260 /* create map.hpp */,
-				45388593208ECCA1003EB260 /* load map.cpp */,
-				45388594208ECCA1003EB260 /* load map.hpp */,
+				45388596208EE402003EB260 /* create level.cpp */,
+				45388597208EE402003EB260 /* create level.hpp */,
+				453B151B2090461E00BFA00D /* load level.cpp */,
+				453B151C2090461E00BFA00D /* load level.hpp */,
 				453884CA208AD499003EB260 /* init map info.cpp */,
 				453884CB208AD499003EB260 /* init map info.hpp */,
 			);
-			name = Map;
+			name = Level;
 			sourceTree = "<group>";
 		};
-		4538856E208DB004003EB260 /* Map */ = {
+		4538856E208DB004003EB260 /* Level */ = {
 			isa = PBXGroup;
 			children = (
 				453884BD208ACC23003EB260 /* map component.hpp */,
 				453884C8208AD3A1003EB260 /* map info component.hpp */,
 				4538852F208C5F32003EB260 /* map sprites component.hpp */,
+				453B151E2090495400BFA00D /* waves component.hpp */,
 			);
-			name = Map;
+			name = Level;
 			sourceTree = "<group>";
 		};
 		4538856F208DB03E003EB260 /* Common */ = {
@@ -607,12 +604,13 @@
 			path = Maps;
 			sourceTree = "<group>";
 		};
-		453B150F20903A9D00BFA00D /* Waves */ = {
+		453B150F20903A9D00BFA00D /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				453B151020903AC400BFA00D /* waves 0.json */,
+				453B151520903F5100BFA00D /* level 0.jsonnet */,
+				453B151A2090453D00BFA00D /* getsprite.libsonnet */,
 			);
-			path = Waves;
+			path = Levels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -682,7 +680,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				453B151120903AC400BFA00D /* waves 0.json in Resources */,
 				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
@@ -745,13 +742,12 @@
 				453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
-				45388598208EE402003EB260 /* create map.cpp in Sources */,
+				45388598208EE402003EB260 /* create level.cpp in Sources */,
 				453884FF208C15B5003EB260 /* create tower.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,
 				4538858A208EC34B003EB260 /* load sounds.cpp in Sources */,
 				45388566208D99EF003EB260 /* game logic.cpp in Sources */,
-				45388595208ECCA1003EB260 /* load map.cpp in Sources */,
-				453B150E209038F800BFA00D /* load waves.cpp in Sources */,
+				453B151D2090461E00BFA00D /* load level.cpp in Sources */,
 				45388563208D8F50003EB260 /* game view.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				4538856C208DA038003EB260 /* create base.cpp in Sources */,

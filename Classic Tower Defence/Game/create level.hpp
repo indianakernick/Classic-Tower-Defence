@@ -1,16 +1,16 @@
 //
-//  create map.hpp
+//  create level.hpp
 //  Classic Tower Defence
 //
 //  Created by Indi Kernick on 24/4/18.
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#ifndef create_map_hpp
-#define create_map_hpp
+#ifndef create_level_hpp
+#define create_level_hpp
 
 #include <Simpleton/ECS/registry.hpp>
 
-void createMap(ECS::Registry &);
+void createLevel(ECS::Registry &);
 
 #endif

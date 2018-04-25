@@ -8,6 +8,7 @@
 
 #include "spawner system.hpp"
 
+#include "waves.hpp"
 #include "map info component.hpp"
 #include "unit dir component.hpp"
 #include "position component.hpp"
@@ -35,7 +36,7 @@ namespace {
   }
 }
 
-void spawnerSystem(ECS::Registry &reg, const Wave &wave) {
+void spawnerSystem(ECS::Registry &reg) {
   auto &timing = reg.get<SpawnerTiming>();
   auto &state = reg.get<SpawnerState>();
   
@@ -45,8 +46,10 @@ void spawnerSystem(ECS::Registry &reg, const Wave &wave) {
   if (timing.timeSinceLastSpawn < timing.minTimeBetweenSpawns) {
     return;
   }
+  const Wave &wave = reg.get<Waves>()[state.currentWave];
   if (state.state == SpawnerState::STARTING) {
     state.numUnitsLeft = wave.quantity;
+    state.state = SpawnerState::SPAWNING;
   }
   timing.timeSinceLastSpawn = 0.0f;
   

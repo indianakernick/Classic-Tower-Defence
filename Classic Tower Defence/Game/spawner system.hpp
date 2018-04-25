@@ -9,9 +9,8 @@
 #ifndef spawner_system_hpp
 #define spawner_system_hpp
 
-#include "waves.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
-void spawnerSystem(ECS::Registry &, const Wave &);
+void spawnerSystem(ECS::Registry &);
 
 #endif
