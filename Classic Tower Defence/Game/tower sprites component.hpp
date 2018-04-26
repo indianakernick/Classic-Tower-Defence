@@ -16,6 +16,7 @@ struct TowerSpritesBase {
   Unpack::SpriteID gun;
   Unpack::SpriteID firingFrames;
   Unpack::SpriteID base;
+  Unpack::SpriteID projectile;
 };
 
 struct TowerSprites {
@@ -26,6 +27,7 @@ inline void from_json(const json &j, TowerSpritesBase &sprites) {
   DATA_GET(sprites, gun);
   DATA_GET(sprites, firingFrames);
   DATA_GET(sprites, base);
+  DATA_GET(sprites, projectile);
 }
 
 #endif

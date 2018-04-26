@@ -51,8 +51,6 @@
 		453B15242090522F00BFA00D /* unit regen system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15222090522F00BFA00D /* unit regen system.cpp */; };
 		453B153320906E3200BFA00D /* cannon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B153220906E3200BFA00D /* cannon.wav */; };
 		453B15362090700500BFA00D /* load towers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15342090700500BFA00D /* load towers.cpp */; };
-		453B15382090760900BFA00D /* towers.jsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 453B15372090760900BFA00D /* towers.jsonnet */; };
-		453B154C20907CDD00BFA00D /* getsound.libsonnet in Resources */ = {isa = PBXBuildFile; fileRef = 453B154B20907CDD00BFA00D /* getsound.libsonnet */; };
 		453B15542090C12400BFA00D /* unit health rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15522090C12400BFA00D /* unit health rendering system.cpp */; };
 /* End PBXBuildFile section */
 
@@ -267,6 +265,8 @@
 		453B15762090C58E00BFA00D /* armour 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "armour 1.png"; sourceTree = "<group>"; };
 		453B15772090C7B200BFA00D /* health.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = health.anim; sourceTree = "<group>"; };
 		453B15782090C7B200BFA00D /* armour.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = armour.anim; sourceTree = "<group>"; };
+		453B157920916DF500BFA00D /* blaster projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blaster projectile.png"; sourceTree = "<group>"; };
+		453B157A2091781300BFA00D /* cannon projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon projectile.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -553,6 +553,7 @@
 				45388557208D76E8003EB260 /* blaster 3.png */,
 				45388556208D76E8003EB260 /* blaster 4.png */,
 				45388554208D76D7003EB260 /* blaster base.png */,
+				453B157920916DF500BFA00D /* blaster projectile.png */,
 				453B154320907C4A00BFA00D /* cannon 0.png */,
 				453B154720907C4B00BFA00D /* cannon 1.png */,
 				453B154520907C4A00BFA00D /* cannon 2.png */,
@@ -563,6 +564,7 @@
 				453B154220907C4900BFA00D /* cannon 7.png */,
 				453B154A20907C4C00BFA00D /* cannon 8.png */,
 				453B15502090818900BFA00D /* cannon base.png */,
+				453B157A2091781300BFA00D /* cannon projectile.png */,
 				453B155B2090C57100BFA00D /* health 0.png */,
 				453B15602090C57300BFA00D /* health 1.png */,
 				453B15592090C57100BFA00D /* health 2.png */,
@@ -797,12 +799,10 @@
 			files = (
 				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
-				453B15382090760900BFA00D /* towers.jsonnet in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
 				453B153320906E3200BFA00D /* cannon.wav in Resources */,
 				45388527208C5858003EB260 /* sprites.png in Resources */,
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
-				453B154C20907CDD00BFA00D /* getsound.libsonnet in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,7 +818,6 @@
 			);
 			name = "Compile Levels";
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/level 0.json",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;

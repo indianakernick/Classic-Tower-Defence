@@ -4,7 +4,8 @@ local getSound = import "getsound.libsonnet";
 local towerSprites(sprite) = {
   gun: getSprite(sprite + " 0"),
   base: getSprite(sprite + " base"),
-  firingFrames: $.base - $.gun
+  firingFrames: $.base - $.gun,
+  projectile: getSprite(sprite + " projectile")
 };
 
 [

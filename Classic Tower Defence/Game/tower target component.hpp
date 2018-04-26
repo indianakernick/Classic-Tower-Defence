@@ -9,10 +9,12 @@
 #ifndef tower_target_component_hpp
 #define tower_target_component_hpp
 
+#include <glm/vec2.hpp>
 #include <Simpleton/ECS/registry.hpp>
 
 struct TowerTarget {
-  float gunAngle;
+  glm::vec2 vec;
+  float angle;
   ECS::EntityID id;
 };
 

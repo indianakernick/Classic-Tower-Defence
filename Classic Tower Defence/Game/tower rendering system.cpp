@@ -21,18 +21,27 @@ void towerRenderingSystem(
   const auto view = reg.view<Position, TowerTarget, TowerFiringAnim, TowerSprites>();
   for (const ECS::EntityID entity : view) {
     const TowerSpritesBase sprites = *view.get<TowerSprites>(entity).proto;
-    const Unpack::SpriteID base = sprites.base;
-    const Unpack::SpriteID gun = sprites.gun + view.get<TowerFiringAnim>(entity).frame;
+    const Unpack::SpriteID frame = view.get<TowerFiringAnim>(entity).frame;
+    const Unpack::SpriteID gun = sprites.gun + frame;
     const glm::vec2 pos = view.get<Position>(entity).pos;
+    const TowerTarget target = view.get<TowerTarget>(entity);
     
     writer.quad();
     writer.depth(0.5f);
     writer.tilePos(pos);
-    writer.tileTex(sheet.getSprite(base));
+    writer.tileTex(sheet.getSprite(sprites.base));
     
     writer.quad();
     writer.depth(0.4f);
-    writer.rotTilePos(view.get<TowerTarget>(entity).gunAngle, pos);
+    writer.rotTilePos(target.angle, pos);
     writer.tileTex(sheet.getSprite(gun));
+    
+    if (frame != 0) {
+      const float progress = static_cast<float>(frame) / sprites.firingFrames;
+      writer.quad();
+      writer.depth(0.45f);
+      writer.rotTilePos(target.angle, pos + target.vec * progress);
+      writer.tileTex(sheet.getSprite(sprites.projectile));
+    }
   }
 }

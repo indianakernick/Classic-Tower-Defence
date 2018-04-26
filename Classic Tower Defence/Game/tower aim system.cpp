@@ -43,8 +43,8 @@ void towerAimSystem(ECS::Registry &reg) {
     TowerTarget &target = towers.get<TowerTarget>(tower);
     target.id = targetUnit;
     if (targetUnit != ECS::NULL_ENTITY) {
-      const glm::vec2 gunDir = targetPos - towerPos;
-      target.gunAngle = std::atan2(gunDir.y, gunDir.x);
+      target.vec = targetPos - towerPos;
+      target.angle = std::atan2(target.vec.y, target.vec.x);
     }
   }
 }

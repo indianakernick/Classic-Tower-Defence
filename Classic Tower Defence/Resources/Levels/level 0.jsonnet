@@ -8,7 +8,7 @@ local getSprite = import "getsprite.libsonnet";
       quantity: 10,
       stats: {
         health: 100,
-        armour: 0,
+        armour: 50,
         healthRegen: 0,
         armourRegen: 0,
         dodge: 0,
