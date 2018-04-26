@@ -52,6 +52,15 @@
 		453B153320906E3200BFA00D /* cannon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B153220906E3200BFA00D /* cannon.wav */; };
 		453B15362090700500BFA00D /* load towers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15342090700500BFA00D /* load towers.cpp */; };
 		453B15542090C12400BFA00D /* unit health rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15522090C12400BFA00D /* unit health rendering system.cpp */; };
+		453B158620917FF700BFA00D /* upgrade failed.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B158420917FF700BFA00D /* upgrade failed.wav */; };
+		453B158720917FF700BFA00D /* upgrade.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B158520917FF700BFA00D /* upgrade.wav */; };
+		453B15892091800500BFA00D /* fire ball shooting.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B15882091800500BFA00D /* fire ball shooting.wav */; };
+		453B158B2091801600BFA00D /* blaster 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B158A2091801600BFA00D /* blaster 1.wav */; };
+		453B158E2091851200BFA00D /* robot destroyed.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B158C2091851100BFA00D /* robot destroyed.wav */; };
+		453B158F2091851200BFA00D /* exploding projectile.wav in Resources */ = {isa = PBXBuildFile; fileRef = 453B158D2091851100BFA00D /* exploding projectile.wav */; };
+		453B159A2091922E00BFA00D /* unit death anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15982091922E00BFA00D /* unit death anim system.cpp */; };
+		453B15A020919CB100BFA00D /* unit death sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B159E20919CB100BFA00D /* unit death sound system.cpp */; };
+		453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15A52091A09100BFA00D /* unit death rendering system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -267,6 +276,25 @@
 		453B158120917D9E00BFA00D /* cannon 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 1.png"; sourceTree = "<group>"; };
 		453B158220917D9F00BFA00D /* cannon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 2.png"; sourceTree = "<group>"; };
 		453B158320917DA000BFA00D /* cannon 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon 4.png"; sourceTree = "<group>"; };
+		453B158420917FF700BFA00D /* upgrade failed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "upgrade failed.wav"; sourceTree = "<group>"; };
+		453B158520917FF700BFA00D /* upgrade.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = upgrade.wav; sourceTree = "<group>"; };
+		453B15882091800500BFA00D /* fire ball shooting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fire ball shooting.wav"; sourceTree = "<group>"; };
+		453B158A2091801600BFA00D /* blaster 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "blaster 1.wav"; sourceTree = "<group>"; };
+		453B158C2091851100BFA00D /* robot destroyed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "robot destroyed.wav"; sourceTree = "<group>"; };
+		453B158D2091851100BFA00D /* exploding projectile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "exploding projectile.wav"; sourceTree = "<group>"; };
+		453B15972091912C00BFA00D /* unit death anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death anim component.hpp"; sourceTree = "<group>"; };
+		453B15982091922E00BFA00D /* unit death anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death anim system.cpp"; sourceTree = "<group>"; };
+		453B15992091922E00BFA00D /* unit death anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death anim system.hpp"; sourceTree = "<group>"; };
+		453B159C2091978800BFA00D /* sound queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sound queue.hpp"; sourceTree = "<group>"; };
+		453B159E20919CB100BFA00D /* unit death sound system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death sound system.cpp"; sourceTree = "<group>"; };
+		453B159F20919CB100BFA00D /* unit death sound system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death sound system.hpp"; sourceTree = "<group>"; };
+		453B15A12091A01E00BFA00D /* explosion 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion 2.png"; sourceTree = "<group>"; };
+		453B15A22091A01E00BFA00D /* explosion 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion 3.png"; sourceTree = "<group>"; };
+		453B15A32091A01F00BFA00D /* explosion 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion 0.png"; sourceTree = "<group>"; };
+		453B15A42091A01F00BFA00D /* explosion 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion 1.png"; sourceTree = "<group>"; };
+		453B15A52091A09100BFA00D /* unit death rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death rendering system.cpp"; sourceTree = "<group>"; };
+		453B15A62091A09100BFA00D /* unit death rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death rendering system.hpp"; sourceTree = "<group>"; };
+		453B15A82091A31A00BFA00D /* explosion.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.anim; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				45388585208EC036003EB260 /* sounds.hpp */,
+				453B159C2091978800BFA00D /* sound queue.hpp */,
 			);
 			name = "Game Data";
 			sourceTree = "<group>";
@@ -400,6 +429,7 @@
 				453884C5208AD10F003EB260 /* unit exit distance component.hpp */,
 				453884D1208AF9BD003EB260 /* unit path component.hpp */,
 				453884EF208B2325003EB260 /* unit sprite component.hpp */,
+				453B15972091912C00BFA00D /* unit death anim component.hpp */,
 			);
 			name = Units;
 			sourceTree = "<group>";
@@ -430,6 +460,10 @@
 				453B15202090508800BFA00D /* unit damage system.hpp */,
 				453B15222090522F00BFA00D /* unit regen system.cpp */,
 				453B15232090522F00BFA00D /* unit regen system.hpp */,
+				453B15982091922E00BFA00D /* unit death anim system.cpp */,
+				453B15992091922E00BFA00D /* unit death anim system.hpp */,
+				453B159E20919CB100BFA00D /* unit death sound system.cpp */,
+				453B159F20919CB100BFA00D /* unit death sound system.hpp */,
 			);
 			name = Units;
 			sourceTree = "<group>";
@@ -514,6 +548,8 @@
 				4538855B208D7742003EB260 /* tower rendering system.hpp */,
 				453B15522090C12400BFA00D /* unit health rendering system.cpp */,
 				453B15532090C12400BFA00D /* unit health rendering system.hpp */,
+				453B15A52091A09100BFA00D /* unit death rendering system.cpp */,
+				453B15A62091A09100BFA00D /* unit death rendering system.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -530,6 +566,10 @@
 		45388513208C5723003EB260 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				453B15A32091A01F00BFA00D /* explosion 0.png */,
+				453B15A42091A01F00BFA00D /* explosion 1.png */,
+				453B15A12091A01E00BFA00D /* explosion 2.png */,
+				453B15A22091A01E00BFA00D /* explosion 3.png */,
 				453B156B2090C58A00BFA00D /* armour 0.png */,
 				453B15762090C58E00BFA00D /* armour 1.png */,
 				453B15702090C58C00BFA00D /* armour 2.png */,
@@ -625,6 +665,7 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				453B15A82091A31A00BFA00D /* explosion.anim */,
 				453B15782090C7B200BFA00D /* armour.anim */,
 				45388570208DB3C2003EB260 /* blaster.anim */,
 				453B1551209081D700BFA00D /* cannon.anim */,
@@ -685,8 +726,14 @@
 		4538857E208DF799003EB260 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				453B158D2091851100BFA00D /* exploding projectile.wav */,
+				453B158C2091851100BFA00D /* robot destroyed.wav */,
 				4538857F208DF7AA003EB260 /* blaster.wav */,
+				453B158A2091801600BFA00D /* blaster 1.wav */,
 				453B153220906E3200BFA00D /* cannon.wav */,
+				453B158420917FF700BFA00D /* upgrade failed.wav */,
+				453B158520917FF700BFA00D /* upgrade.wav */,
+				453B15882091800500BFA00D /* fire ball shooting.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -723,8 +770,8 @@
 			children = (
 				453B151A2090453D00BFA00D /* getsprite.libsonnet */,
 				453B154B20907CDD00BFA00D /* getsound.libsonnet */,
-				453B15372090760900BFA00D /* towers.jsonnet */,
 				453B153020905DF300BFA00D /* sounds.jsonnet */,
+				453B15372090760900BFA00D /* towers.jsonnet */,
 				453B151520903F5100BFA00D /* level 0.jsonnet */,
 			);
 			path = Levels;
@@ -799,10 +846,16 @@
 			files = (
 				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
+				453B158E2091851200BFA00D /* robot destroyed.wav in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
+				453B158620917FF700BFA00D /* upgrade failed.wav in Resources */,
 				453B153320906E3200BFA00D /* cannon.wav in Resources */,
 				45388527208C5858003EB260 /* sprites.png in Resources */,
+				453B158F2091851200BFA00D /* exploding projectile.wav in Resources */,
+				453B15892091800500BFA00D /* fire ball shooting.wav in Resources */,
+				453B158B2091801600BFA00D /* blaster 1.wav in Resources */,
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
+				453B158720917FF700BFA00D /* upgrade.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +907,7 @@
 				453B15362090700500BFA00D /* load towers.cpp in Sources */,
 				4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
+				453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
 				45388569208D9C72003EB260 /* create spawner.cpp in Sources */,
 				453B15212090508800BFA00D /* unit damage system.cpp in Sources */,
@@ -864,6 +918,7 @@
 				45388598208EE402003EB260 /* create level.cpp in Sources */,
 				453884FF208C15B5003EB260 /* create tower.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,
+				453B15A020919CB100BFA00D /* unit death sound system.cpp in Sources */,
 				4538858A208EC34B003EB260 /* load sounds.cpp in Sources */,
 				45388566208D99EF003EB260 /* game logic.cpp in Sources */,
 				453B151D2090461E00BFA00D /* load level.cpp in Sources */,
@@ -874,6 +929,7 @@
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
 				453B15542090C12400BFA00D /* unit health rendering system.cpp in Sources */,
 				45388584208EBFDB003EB260 /* sound system.cpp in Sources */,
+				453B159A2091922E00BFA00D /* unit death anim system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
 				4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */,
 				45388503208C18B8003EB260 /* upgrade tower.cpp in Sources */,

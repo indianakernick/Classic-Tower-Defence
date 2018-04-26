@@ -9,8 +9,9 @@
 #ifndef tower_sound_system_hpp
 #define tower_sound_system_hpp
 
+#include "sound queue.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
-void towerSoundSystem(ECS::Registry &);
+void towerSoundSystem(ECS::Registry &, SoundQueue &);
 
 #endif

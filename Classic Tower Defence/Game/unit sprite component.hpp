@@ -15,11 +15,15 @@
 struct UnitSprite {
   Unpack::SpriteID sprite;
   Unpack::SpriteID frames;
+  Unpack::SpriteID death;
+  Unpack::SpriteID deathFrames;
 };
 
 inline void from_json(const json &j, UnitSprite &comp) {
   DATA_GET(comp, sprite);
   DATA_GET(comp, frames);
+  DATA_GET(comp, death);
+  DATA_GET(comp, deathFrames);
 }
 
 #endif

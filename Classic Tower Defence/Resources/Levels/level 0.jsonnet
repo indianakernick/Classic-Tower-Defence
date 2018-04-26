@@ -1,4 +1,5 @@
 local getSprite = import "getsprite.libsonnet";
+local getSound = import "getsound.libsonnet";
 
 {
   map: 0,
@@ -16,7 +17,12 @@ local getSprite = import "getsprite.libsonnet";
       },
       sprite: {
         sprite: getSprite("robot 0 0"),
-        frames: getSprite("robot 1 0") - getSprite("robot 0 0")
+        frames: getSprite("robot 1 0") - getSprite("robot 0 0"),
+        death: getSprite("explosion 0"),
+        deathFrames: 4
+      },
+      sound: {
+        id: getSound("robot destroyed")
       }
     }
   ]

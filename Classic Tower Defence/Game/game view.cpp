@@ -15,8 +15,11 @@
 #include "map rendering system.hpp"
 #include "unit rendering system.hpp"
 #include "unit walk anim system.hpp"
+#include "unit death anim system.hpp"
 #include "tower rendering system.hpp"
+#include "unit death sound system.hpp"
 #include "tower firing anim system.hpp"
+#include "unit death rendering system.hpp"
 #include "unit health rendering system.hpp"
 
 void GameView::init(G2D::Renderer &renderer) {
@@ -35,8 +38,9 @@ void GameView::init(G2D::Renderer &renderer) {
 }
 
 void GameView::playSounds(ECS::Registry &reg) {
-  towerSoundSystem(reg);
-  soundSystem(reg, sounds);
+  towerSoundSystem(reg, soundQueue);
+  unitDeathSoundSystem(reg, soundQueue);
+  soundSystem(soundQueue, sounds);
 }
 
 void GameView::updateCam(const float aspect, const float delta) {
@@ -45,11 +49,13 @@ void GameView::updateCam(const float aspect, const float delta) {
 
 void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   unitWalkAnimSystem(reg);
+  unitDeathAnimSystem(reg);
   towerFiringAnimSystem(reg);
   
   writer.section({camera.transform.toPixels()});
   mapRenderingSystem(reg, writer, sheet);
   unitRenderingSystem(reg, writer, sheet);
   towerRenderingSystem(reg, writer, sheet);
+  unitDeathRenderingSystem(reg, writer, sheet);
   unitHealthRenderingSystem(reg, writer, sheet);
 }

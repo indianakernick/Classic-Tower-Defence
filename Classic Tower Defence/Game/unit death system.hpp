@@ -9,6 +9,7 @@
 #ifndef unit_death_system_hpp
 #define unit_death_system_hpp
 
+#include "sound queue.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
 void unitDeathSystem(ECS::Registry &);

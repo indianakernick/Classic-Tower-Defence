@@ -8,15 +8,9 @@
 
 #include "sound system.hpp"
 
-#include "sound component.hpp"
-
-void soundSystem(ECS::Registry &reg, Sounds &sounds) {
-  auto view = reg.view<Sound>();
-  for (const ECS::EntityID entity : view) {
-    Sound &sound = view.get(entity);
-    if (sound.play) {
-      sound.play = false;
-      sounds.at(sound.id).play();
-    }
+void soundSystem(SoundQueue &queue, Sounds &sounds) {
+  while (!queue.empty()) {
+    sounds.at(queue.front()).play();
+    queue.pop();
   }
 }

@@ -10,8 +10,8 @@
 #define sound_system_hpp
 
 #include "sounds.hpp"
-#include <Simpleton/ECS/registry.hpp>
+#include "sound queue.hpp"
 
-void soundSystem(ECS::Registry &, Sounds &);
+void soundSystem(SoundQueue &, Sounds &);
 
 #endif

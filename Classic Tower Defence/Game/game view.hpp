@@ -10,6 +10,7 @@
 #define game_view_hpp
 
 #include "sounds.hpp"
+#include "sound queue.hpp"
 #include <Simpleton/Unpack/sheet.hpp>
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
@@ -32,6 +33,7 @@ private:
   Cam2D::ZoomToFit zoomToFit;
   G2D::TextureID tex;
   Sounds sounds;
+  SoundQueue soundQueue;
 };
 
 #endif

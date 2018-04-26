@@ -33,6 +33,7 @@ namespace {
     reg.assign<UnitExitDistance>(id, map.pathDist);
     reg.assign<Position>(id, map.entry);
     reg.assign<UnitWalkAnim>(id, uint32_t(0));
+    reg.assign<Sound>(id, wave.sound);
   }
 }
 
