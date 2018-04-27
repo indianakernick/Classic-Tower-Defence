@@ -63,6 +63,7 @@
 		453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15A52091A09100BFA00D /* unit death rendering system.cpp */; };
 		45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7F72092AA190081CDE1 /* unit effect system.cpp */; };
 		45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */; };
+		45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -302,6 +303,9 @@
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
 		45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "slow effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7FC2092AC350081CDE1 /* slow effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect system.hpp"; sourceTree = "<group>"; };
+		45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "poison effect system.cpp"; sourceTree = "<group>"; };
+		45DBB7FF2092B03A0081CDE1 /* poison effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect system.hpp"; sourceTree = "<group>"; };
+		45DBB8012092B0500081CDE1 /* poison effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect component.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -790,6 +794,7 @@
 			isa = PBXGroup;
 			children = (
 				45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */,
+				45DBB8012092B0500081CDE1 /* poison effect component.hpp */,
 			);
 			name = Effects;
 			sourceTree = "<group>";
@@ -801,6 +806,8 @@
 				45DBB7F82092AA190081CDE1 /* unit effect system.hpp */,
 				45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */,
 				45DBB7FC2092AC350081CDE1 /* slow effect system.hpp */,
+				45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */,
+				45DBB7FF2092B03A0081CDE1 /* poison effect system.hpp */,
 			);
 			name = Effects;
 			sourceTree = "<group>";
@@ -955,6 +962,7 @@
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */,
 				4538856C208DA038003EB260 /* create base.cpp in Sources */,
+				45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */,
 				4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
 				453B15542090C12400BFA00D /* unit health rendering system.cpp in Sources */,

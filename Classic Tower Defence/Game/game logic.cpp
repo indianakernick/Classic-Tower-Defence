@@ -28,6 +28,7 @@
 #include "unit regen system.hpp"
 #include "unit effect system.hpp"
 #include "slow effect system.hpp"
+#include "poison effect system.hpp"
 
 void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
@@ -52,6 +53,7 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   
   unitEffectSystem(reg);
   slowEffectSystem(reg, delta);
+  poisonEffectSystem(reg, delta);
   
   unitRegenSystem(reg, delta);
   
