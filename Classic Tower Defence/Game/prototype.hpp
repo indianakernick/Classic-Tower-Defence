@@ -16,22 +16,25 @@ template <typename Registry>
 class Prototype {
 public:
   template <typename Comp, typename ...Args>
-  void assign(Args... args) {
-    comps.emplace_back([args...] (Registry &reg, uint32_t id) {
-      reg.template assign<Comp>(id, args...);
-    });
+  void assign(Args &&... args) {
+    factories.emplace_back(
+      [Comp comp = Comp{std::forward<Args>(args)...}]
+      (Registry &reg, entity_type entity) {
+        reg.template assign<Comp>(entity, comp);
+      }
+    );
   }
   
-  uint32_t create(Registry &reg) {
+  uint32_t operator()(Registry &reg) {
     uint32_t id = reg.create();
-    for (auto &comp : comps) {
-      comp(reg, id);
+    for (auto &factory : factories) {
+      factory(reg, id);
     }
     return id;
   }
   
 private:
-  std::vector<std::function<void (Registry &, uint32_t)>> comps;
+  std::vector<std::function<void (Registry &, uint32_t)>> factories;
 };
 
 #endif

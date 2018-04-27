@@ -307,6 +307,7 @@
 		45DBB7FF2092B03A0081CDE1 /* poison effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect system.hpp"; sourceTree = "<group>"; };
 		45DBB8012092B0500081CDE1 /* poison effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect component.hpp"; sourceTree = "<group>"; };
 		45DBB8022092EC710081CDE1 /* prototype.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = prototype.hpp; sourceTree = "<group>"; };
+		45DBB805209303660081CDE1 /* component list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component list.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +398,7 @@
 		453884B9208ACB54003EB260 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				45DBB805209303660081CDE1 /* component list.hpp */,
 				45DBB7F52092A9CA0081CDE1 /* Effects */,
 				4538856F208DB03E003EB260 /* Common */,
 				4538856E208DB004003EB260 /* Level */,
@@ -827,6 +829,7 @@
 				45388511208C570A003EB260 /* Pack Sprites */,
 				4538848E208AB717003EB260 /* Resources */,
 				453884B5208ABE9F003EB260 /* Compile Levels */,
+				452B93A3209346DE00B33561 /* Update Component List */,
 			);
 			buildRules = (
 			);
@@ -899,6 +902,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		452B93A3209346DE00B33561 /* Update Component List */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$PROJECT_DIR/$PROJECT/Game,
+			);
+			name = "Update Component List";
+			outputPaths = (
+				"$PROJECT_DIR/$PROJECT/Game/component list.hpp",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "src=\"$PROJECT_DIR/$PROJECT/Game\"\nout=\"$src/component list.hpp\"\n\ncat <<EOF > \"$out\"\n//\n//  component list.hpp\n//  Classic Tower Defence\n//\n//  Created by Indi Kernick on 27/4/18.\n//  Copyright © 2018 Indi Kernick. All rights reserved.\n//\n\n#ifndef component_list_hpp\n#define component_list_hpp\n\n#include <Simpleton/Utils/type list.hpp>\n\nEOF\n\n# put the names of all the component files into a temp.txt file\nfind \"$src\" -name \"* component.hpp\" -exec basename {} \\; > \"temp.txt\"\n# write the #includes\n< \"temp.txt\" xargs -I {} echo '#include \"{}\"' >> \"$out\"\n# start the list\necho -e \"\\nusing CompList = Utils::TypeList<\" >> \"$out\"\n# remove \" component.hpp\"\ngsed -ri \"s/ component.hpp//\" \"temp.txt\"\n# convert to camel case\ngsed -ri \"s~(^| )(.)~\\U\\2~g\" \"temp.txt\"\n# write type names\n< \"temp.txt\" xargs -I {} echo \"  {},\" >> \"$out\"\n# remove last comma\ngsed -i '$ s/.$//' \"$out\"\n# end list\necho \">;\" >> \"$out\"\n\n# cleanup\nrm \"temp.txt\"";
+		};
 		453884B5208ABE9F003EB260 /* Compile Levels */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
