@@ -61,6 +61,8 @@
 		453B159A2091922E00BFA00D /* unit death anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15982091922E00BFA00D /* unit death anim system.cpp */; };
 		453B15A020919CB100BFA00D /* unit death sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B159E20919CB100BFA00D /* unit death sound system.cpp */; };
 		453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15A52091A09100BFA00D /* unit death rendering system.cpp */; };
+		45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7F72092AA190081CDE1 /* unit effect system.cpp */; };
+		45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -295,6 +297,11 @@
 		453B15A52091A09100BFA00D /* unit death rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death rendering system.cpp"; sourceTree = "<group>"; };
 		453B15A62091A09100BFA00D /* unit death rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death rendering system.hpp"; sourceTree = "<group>"; };
 		453B15A82091A31A00BFA00D /* explosion.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.anim; sourceTree = "<group>"; };
+		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
+		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
+		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
+		45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "slow effect system.cpp"; sourceTree = "<group>"; };
+		45DBB7FC2092AC350081CDE1 /* slow effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +392,7 @@
 		453884B9208ACB54003EB260 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				45DBB7F52092A9CA0081CDE1 /* Effects */,
 				4538856F208DB03E003EB260 /* Common */,
 				4538856E208DB004003EB260 /* Level */,
 				453884C3208ACFFA003EB260 /* Towers */,
@@ -399,6 +407,7 @@
 		453884BA208ACB5D003EB260 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
+				45DBB7F62092A9D40081CDE1 /* Effects */,
 				4538856D208DAFBB003EB260 /* Level */,
 				45388509208C2C3F003EB260 /* Rendering */,
 				453884FC208C1544003EB260 /* Editor */,
@@ -777,6 +786,25 @@
 			path = Levels;
 			sourceTree = "<group>";
 		};
+		45DBB7F52092A9CA0081CDE1 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		45DBB7F62092A9D40081CDE1 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				45DBB7F72092AA190081CDE1 /* unit effect system.cpp */,
+				45DBB7F82092AA190081CDE1 /* unit effect system.hpp */,
+				45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */,
+				45DBB7FC2092AC350081CDE1 /* slow effect system.hpp */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -910,6 +938,7 @@
 				453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */,
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
 				45388569208D9C72003EB260 /* create spawner.cpp in Sources */,
+				45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */,
 				453B15212090508800BFA00D /* unit damage system.cpp in Sources */,
 				4538858D208EC736003EB260 /* tower sound system.cpp in Sources */,
 				453884FA208B28CC003EB260 /* tower firing anim system.cpp in Sources */,
@@ -924,6 +953,7 @@
 				453B151D2090461E00BFA00D /* load level.cpp in Sources */,
 				45388563208D8F50003EB260 /* game view.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
+				45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */,
 				4538856C208DA038003EB260 /* create base.cpp in Sources */,
 				4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,

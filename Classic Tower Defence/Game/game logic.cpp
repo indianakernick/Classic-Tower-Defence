@@ -26,6 +26,8 @@
 #include "tower shoot system.hpp"
 #include "tower timing system.hpp"
 #include "unit regen system.hpp"
+#include "unit effect system.hpp"
+#include "slow effect system.hpp"
 
 void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
@@ -47,6 +49,9 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   towerTimingSystem(reg, delta);
   spawnerTimingSystem(reg, delta);
   spawnerSystem(reg);
+  
+  unitEffectSystem(reg);
+  slowEffectSystem(reg, delta);
   
   unitRegenSystem(reg, delta);
   
