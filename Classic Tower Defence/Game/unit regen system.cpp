@@ -14,7 +14,11 @@ void unitRegenSystem(ECS::Registry &reg, const float delta) {
   auto view = reg.view<UnitStats>();
   for (const ECS::EntityID entity : view) {
     UnitStats &stats = view.get(entity);
-    stats.health += stats.healthRegen * delta;
-    stats.armour += stats.armourRegen * delta;
+    stats.health = std::min(
+      stats.proto->health, stats.health + stats.healthRegen * delta
+    );
+    stats.armour = std::min(
+      stats.proto->armour, stats.armour + stats.armourRegen * delta
+    );
   }
 }
