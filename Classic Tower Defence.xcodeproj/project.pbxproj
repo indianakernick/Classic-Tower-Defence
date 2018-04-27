@@ -306,6 +306,7 @@
 		45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "poison effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7FF2092B03A0081CDE1 /* poison effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect system.hpp"; sourceTree = "<group>"; };
 		45DBB8012092B0500081CDE1 /* poison effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect component.hpp"; sourceTree = "<group>"; };
+		45DBB8022092EC710081CDE1 /* prototype.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = prototype.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,6 +430,7 @@
 			children = (
 				45388585208EC036003EB260 /* sounds.hpp */,
 				453B159C2091978800BFA00D /* sound queue.hpp */,
+				45DBB8022092EC710081CDE1 /* prototype.hpp */,
 			);
 			name = "Game Data";
 			sourceTree = "<group>";
