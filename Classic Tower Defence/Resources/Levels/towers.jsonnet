@@ -10,28 +10,28 @@ local towerSprites(sprite) = {
 
 [
   {
-    stats: {
+    TowerStats: {
       range: 6,
       damage: 10,
       rof: 3,
       armourPiercing: 0.1
     },
-    sprites: towerSprites("blaster"),
+    TowerSprites: towerSprites("blaster"),
     upgrades: {},
-    sound: {
+    Sound: {
       id: getSound("blaster")
     }
   },
   {
-    stats: {
+    TowerStats: {
       range: 4,
       damage: 40,
       rof: 1/2,
       armourPiercing: 0.6
     },
-    sprites: towerSprites("cannon"),
+    TowerSprites: towerSprites("cannon"),
     upgrades: {},
-    sound: {
+    Sound: {
       id: getSound("cannon")
     }
   }

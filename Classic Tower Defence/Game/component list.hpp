@@ -64,3 +64,5 @@ using CompList = Utils::TypeList<
   PoisonEffect,
   Sound
 >;
+
+#endif

@@ -9,10 +9,7 @@
 #include "load towers.hpp"
 
 #include <fstream>
-#include "tower stats component.hpp"
-#include "tower sprites component.hpp"
-#include "tower upgrades component.hpp"
-#include "sound component.hpp"
+#include "component list.hpp"
 #include "towers component.hpp"
 #include <Simpleton/SDL/paths.hpp>
 
@@ -28,38 +25,61 @@ namespace {
       return nullptr;
     }
   }
+  
+  template <typename Comp>
+  constexpr auto hasFromjson(int) -> decltype(from_json(json{}, std::declval<Comp &>()), bool()) {
+    return true;
+  }
+  
+  template <typename Comp>
+  constexpr bool hasFromjson(long) {
+    return false;
+  }
+  
+  template <typename Proto>
+  bool readComponent(Proto &proto, const std::string_view name, const json &component) {
+    bool read = false;
+    Utils::forEach<CompList>([&proto, name, &component, &read] (auto t) {
+      using Comp = UTILS_TYPE(t);
+      if constexpr (hasFromjson<Comp>(0)) {
+        if (Utils::typeName<Comp>() == name) {
+          proto.template assign<Comp>(component.get<Comp>());
+          read = true;
+        }
+      }
+    });
+    return read;
+  }
+  
+  template <typename Proto>
+  size_t readEntity(Proto &proto, const json &entity) {
+    const json::object_t &object = entity.get_ref<const json::object_t &>();
+    size_t unreadCount = 0;
+    for (auto pair : object) {
+      unreadCount += !readComponent(proto, pair.first, pair.second);
+    }
+    return unreadCount;
+  }
 }
 
 void loadTowers(ECS::Registry &reg) {
   std::fstream file(SDL::getResDir() + "towers.json");
-  json node;
-  file >> node;
+  json towersNode;
+  file >> towersNode;
   
   const ECS::EntityID entity = reg.create();
   Towers &towers = reg.attach<Towers>(entity);
   
-  for (const json &j : node) {
+  for (const json &towerNode : towersNode) {
     TowerProto tower;
-    
-    TowerStats stats;
-    Data::get(stats, j, "stats");
-    tower.assign<TowerStats>(stats);
-    
-    TowerSprites sprites;
-    Data::get(sprites, j, "sprites");
-    tower.assign<TowerSprites>(sprites);
-    
-    Sound sound;
-    Data::get(sound, j, "sound");
-    tower.assign<Sound>(sound);
-    
+    assert(readEntity(tower, towerNode) == 1);
     towers.emplace_back(std::move(tower));
   }
   
   for (size_t i = 0; i != towers.size(); ++i) {
     // upgrades on the json object are indicies onto the array of towers
     // upgrades on the game object are pointers onto the array of towers
-    const json &j = node[i].at("upgrades");
+    const json &j = towersNode[i].at("upgrades");
     TowerUpgrades &upgrades = towers[i].assign<TowerUpgrades>();
     upgrades.self = &towers[i];
     upgrades.first = getUpgrade(j, towers, "first");
