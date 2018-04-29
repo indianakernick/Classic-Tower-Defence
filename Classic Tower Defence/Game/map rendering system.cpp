@@ -14,16 +14,16 @@
 void mapRenderingSystem(
   ECS::Registry &reg,
   G2D::QuadWriter &writer,
-  const Unpack::Spritesheet &sheet
+  const Sprite::Sheet &sheet
 ) {
   const Map &map = reg.get<Map>();
   const MapSprites &sprites = reg.get<MapSprites>();
 
   const size_t numTiles = map.scalarSize();
   for (size_t t = 0; t != numTiles; ++t) {
-    Unpack::SpriteID id = sprites.sprite;
-    id += static_cast<Unpack::SpriteID>(map[t]);
-    const Unpack::Rect rect = sheet.getSprite(id);
+    Sprite::ID id = sprites.sprite;
+    id += static_cast<Sprite::ID>(map[t]);
+    const Sprite::Rect rect = sheet.getSprite(id);
     
     writer.quad();
     writer.depth(0.99f);

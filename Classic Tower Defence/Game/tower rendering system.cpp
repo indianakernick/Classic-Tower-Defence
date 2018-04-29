@@ -16,13 +16,13 @@
 void towerRenderingSystem(
   ECS::Registry &reg,
   G2D::QuadWriter &writer,
-  const Unpack::Spritesheet &sheet
+  const Sprite::Sheet &sheet
 ) {
   const auto view = reg.view<Position, TowerTarget, TowerFiringAnim, TowerSprites>();
   for (const ECS::EntityID entity : view) {
     const TowerSpritesBase sprites = *view.get<TowerSprites>(entity).proto;
-    const Unpack::SpriteID frame = view.get<TowerFiringAnim>(entity).frame;
-    const Unpack::SpriteID gun = sprites.gun + frame;
+    const Sprite::ID frame = view.get<TowerFiringAnim>(entity).frame;
+    const Sprite::ID gun = sprites.gun + frame;
     const glm::vec2 pos = view.get<Position>(entity).pos;
     const TowerTarget target = view.get<TowerTarget>(entity);
     

@@ -9,10 +9,10 @@
 #ifndef map_sprites_component_hpp
 #define map_sprites_component_hpp
 
-#include <Simpleton/Unpack/types.hpp>
+#include <Simpleton/Sprite/types.hpp>
 
 struct MapSprites {
-  Unpack::SpriteID sprite;
+  Sprite::ID sprite;
 };
 
 #endif

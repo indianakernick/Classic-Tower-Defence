@@ -15,11 +15,11 @@
 void unitDeathRenderingSystem(
   ECS::Registry &reg,
   G2D::QuadWriter &writer,
-  const Unpack::Spritesheet &sheet
+  const Sprite::Sheet &sheet
 ) {
   auto view = reg.view<Position, UnitSprite, UnitDeathAnim>();
   for (const ECS::EntityID entity : view) {
-    Unpack::SpriteID sprite = view.get<UnitSprite>(entity).death;
+    Sprite::ID sprite = view.get<UnitSprite>(entity).death;
     sprite += view.get<UnitDeathAnim>(entity).frame;
   
     writer.quad();

@@ -11,7 +11,7 @@
 
 #include "sounds.hpp"
 #include "sound queue.hpp"
-#include <Simpleton/Unpack/sheet.hpp>
+#include <Simpleton/Sprite/sheet.hpp>
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
 #include <Simpleton/Graphics 2D/renderer.hpp>
@@ -28,7 +28,7 @@ public:
   void render(ECS::Registry &, G2D::QuadWriter &);
 
 private:
-  Unpack::Spritesheet sheet;
+  Sprite::Sheet sheet;
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoomToFit;
   G2D::TextureID tex;

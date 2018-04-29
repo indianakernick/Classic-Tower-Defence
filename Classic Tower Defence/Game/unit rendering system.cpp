@@ -16,12 +16,12 @@
 void unitRenderingSystem(
   ECS::Registry &reg,
   G2D::QuadWriter &writer,
-  const Unpack::Spritesheet &sheet
+  const Sprite::Sheet &sheet
 ) {
   const auto view = reg.view<Position, UnitDir, UnitSprite, UnitWalkAnim>();
   for (const ECS::EntityID entity : view) {
     const UnitSprite &sprite = view.get<UnitSprite>(entity);
-    Unpack::SpriteID id = sprite.sprite;
+    Sprite::ID id = sprite.sprite;
     id += Math::toNum(view.get<UnitDir>(entity).dir, sprite.frames);
     id += view.get<UnitWalkAnim>(entity).frame;
     

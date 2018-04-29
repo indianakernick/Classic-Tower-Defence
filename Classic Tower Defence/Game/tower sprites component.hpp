@@ -10,13 +10,13 @@
 #define tower_sprites_component_hpp
 
 #include <Simpleton/Data/json.hpp>
-#include <Simpleton/Unpack/types.hpp>
+#include <Simpleton/Sprite/types.hpp>
 
 struct TowerSpritesBase {
-  Unpack::SpriteID gun;
-  Unpack::SpriteID firingFrames;
-  Unpack::SpriteID base;
-  Unpack::SpriteID projectile;
+  Sprite::ID gun;
+  Sprite::ID firingFrames;
+  Sprite::ID base;
+  Sprite::ID projectile;
 };
 
 struct TowerSprites {

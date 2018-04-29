@@ -32,7 +32,7 @@ void GameView::init(G2D::Renderer &renderer) {
   texParams.setFilter(GL_NEAREST);
   tex = renderer.addTexture(SDL::getResDir() + "sprites.png", texParams);
   
-  sheet = Unpack::makeSpritesheet(SDL::getResDir() + "sprites.atlas");
+  sheet = Sprite::makeSheet(SDL::getResDir() + "sprites.atlas");
   
   sounds = loadSounds();
 }

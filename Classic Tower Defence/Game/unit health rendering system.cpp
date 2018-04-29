@@ -14,10 +14,10 @@
 void unitHealthRenderingSystem(
   ECS::Registry &reg,
   G2D::QuadWriter &writer,
-  const Unpack::Spritesheet &sheet
+  const Sprite::Sheet &sheet
 ) {
-  const Unpack::SpriteID healthID = sheet.getIDfromName("health 0");
-  const Unpack::SpriteID armourID = sheet.getIDfromName("armour 0");
+  const Sprite::ID healthID = sheet.getIDfromName("health 0");
+  const Sprite::ID armourID = sheet.getIDfromName("armour 0");
   const auto view = reg.view<Position, UnitStats>();
   for (const ECS::EntityID entity : view) {
     const UnitStats &stats = view.get<UnitStats>(entity);

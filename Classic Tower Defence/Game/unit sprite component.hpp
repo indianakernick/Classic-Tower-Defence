@@ -10,13 +10,13 @@
 #define unit_sprite_component_hpp
 
 #include <Simpleton/Data/json.hpp>
-#include <Simpleton/Unpack/types.hpp>
+#include <Simpleton/Sprite/types.hpp>
 
 struct UnitSprite {
-  Unpack::SpriteID sprite;
-  Unpack::SpriteID frames;
-  Unpack::SpriteID death;
-  Unpack::SpriteID deathFrames;
+  Sprite::ID sprite;
+  Sprite::ID frames;
+  Sprite::ID death;
+  Sprite::ID deathFrames;
 };
 
 inline void from_json(const json &j, UnitSprite &comp) {
