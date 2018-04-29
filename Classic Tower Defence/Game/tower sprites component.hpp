@@ -12,18 +12,14 @@
 #include <Simpleton/Data/json.hpp>
 #include <Simpleton/Sprite/types.hpp>
 
-struct TowerSpritesBase {
+struct TowerSprites {
   Sprite::ID gun;
   Sprite::ID firingFrames;
   Sprite::ID base;
   Sprite::ID projectile;
 };
 
-struct TowerSprites {
-  const TowerSpritesBase *proto;
-};
-
-inline void from_json(const json &j, TowerSpritesBase &sprites) {
+inline void from_json(const json &j, TowerSprites &sprites) {
   DATA_GET(sprites, gun);
   DATA_GET(sprites, firingFrames);
   DATA_GET(sprites, base);

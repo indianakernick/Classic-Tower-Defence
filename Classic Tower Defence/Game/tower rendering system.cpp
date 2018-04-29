@@ -20,7 +20,7 @@ void towerRenderingSystem(
 ) {
   const auto view = reg.view<Position, TowerTarget, TowerFiringAnim, TowerSprites>();
   for (const ECS::EntityID entity : view) {
-    const TowerSpritesBase sprites = *view.get<TowerSprites>(entity).proto;
+    const TowerSprites sprites = view.get<TowerSprites>(entity);
     const Sprite::ID frame = view.get<TowerFiringAnim>(entity).frame;
     const Sprite::ID gun = sprites.gun + frame;
     const glm::vec2 pos = view.get<Position>(entity).pos;

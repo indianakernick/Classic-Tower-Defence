@@ -9,15 +9,12 @@
 #ifndef tower_upgrades_component_hpp
 #define tower_upgrades_component_hpp
 
-struct TowerProto;
-
-struct TowerUpgradesBase {
-  TowerProto *first;
-  TowerProto *second;
-};
+#include "towers component.hpp"
 
 struct TowerUpgrades {
-  const TowerUpgradesBase *proto;
+  TowerProto *self;
+  TowerProto *first;
+  TowerProto *second;
 };
 
 #endif

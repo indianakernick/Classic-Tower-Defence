@@ -18,7 +18,7 @@ void towerShootSystem(ECS::Registry &reg) {
   auto view = reg.view<TowerStats, TowerTiming, TowerTarget, TowerFiringAnim>();
   
   for (const ECS::EntityID entity : view) {
-    const TowerStatsBase &towerStats = *view.get<TowerStats>(entity).proto;
+    const TowerStats &towerStats = view.get<TowerStats>(entity);
     float &timeSinceLastShot = view.get<TowerTiming>(entity).timeSinceLastShot;
     if (timeSinceLastShot < 1.0f / towerStats.rof) {
       continue;

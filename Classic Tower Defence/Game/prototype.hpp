@@ -29,15 +29,19 @@ private:
   class Component : public ComponentBase {
   public:
     void assign(registry_t &registry, const entity_t entity) const override {
-      registry.template assign<Comp>(entity, comp);
+      registry.template accommodate<Comp>(entity, comp);
     }
     
     Comp comp;
   };
 
 public:
+  Prototype() = default;
+  Prototype(Prototype &&) = default;
+  Prototype &operator=(Prototype &&) = default;
+
   void operator()(registry_t &reg, const entity_t entity) const {
-    for (std::unique_ptr<ComponentBase> &component : comps) {
+    for (const std::unique_ptr<ComponentBase> &component : comps) {
       if (component) {
         component->assign(reg, entity);
       }
@@ -55,7 +59,7 @@ public:
   }
 
   template <typename Comp, typename ...Args>
-  void assign(Args &&... args) {
+  Comp &assign(Args &&... args) {
     assert(!has<Comp>());
     auto component = std::make_unique<Component<Comp>>();
     component->comp = Comp {std::forward<Args>(args)...};
@@ -63,7 +67,9 @@ public:
     while (comps.size() <= index) {
       comps.emplace_back();
     }
+    Comp &comp = component->comp;
     comps[index] = std::move(component);
+    return comp;
   }
   
   template <typename Comp>

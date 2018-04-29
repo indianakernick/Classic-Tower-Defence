@@ -9,6 +9,10 @@
 #include "load towers.hpp"
 
 #include <fstream>
+#include "tower stats component.hpp"
+#include "tower sprites component.hpp"
+#include "tower upgrades component.hpp"
+#include "sound component.hpp"
 #include "towers component.hpp"
 #include <Simpleton/SDL/paths.hpp>
 
@@ -36,17 +40,28 @@ void loadTowers(ECS::Registry &reg) {
   
   for (const json &j : node) {
     TowerProto tower;
-    DATA_GET(tower, stats);
-    DATA_GET(tower, sprites);
-    DATA_GET(tower, sound);
-    towers.push_back(tower);
+    
+    TowerStats stats;
+    Data::get(stats, j, "stats");
+    tower.assign<TowerStats>(stats);
+    
+    TowerSprites sprites;
+    Data::get(sprites, j, "sprites");
+    tower.assign<TowerSprites>(sprites);
+    
+    Sound sound;
+    Data::get(sound, j, "sound");
+    tower.assign<Sound>(sound);
+    
+    towers.emplace_back(std::move(tower));
   }
   
   for (size_t i = 0; i != towers.size(); ++i) {
     // upgrades on the json object are indicies onto the array of towers
     // upgrades on the game object are pointers onto the array of towers
     const json &j = node[i].at("upgrades");
-    TowerUpgradesBase &upgrades = towers[i].upgrades;
+    TowerUpgrades &upgrades = towers[i].assign<TowerUpgrades>();
+    upgrades.self = &towers[i];
     upgrades.first = getUpgrade(j, towers, "first");
     upgrades.second = getUpgrade(j, towers, "second");
   }

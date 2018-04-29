@@ -23,14 +23,10 @@ ECS::EntityID createTower(
   const Towers &towers = reg.get<Towers>();
   const TowerProto &tower = towers.at(index);
   
-  const ECS::EntityID entity = reg.create();
+  const ECS::EntityID entity = tower(reg);
   reg.assign<Position>(entity, pos);
-  reg.assign<TowerStats>(entity, &tower.stats);
-  reg.assign<TowerSprites>(entity, &tower.sprites);
-  reg.assign<TowerUpgrades>(entity, &tower.upgrades);
   reg.assign<TowerTiming>(entity, 0.0f);
   reg.assign<TowerTarget>(entity, glm::vec2(0.0f), 0.0f, ECS::NULL_ENTITY);
   reg.assign<TowerFiringAnim>(entity, uint32_t(0), false);
-  reg.assign<Sound>(entity, tower.sound);
   return entity;
 }

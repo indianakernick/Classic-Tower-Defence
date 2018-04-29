@@ -9,19 +9,10 @@
 #ifndef towers_hpp
 #define towers_hpp
 
-#include <vector>
-#include "sound component.hpp"
-#include "tower stats component.hpp"
-#include "tower sprites component.hpp"
-#include "tower upgrades component.hpp"
+#include "prototype.hpp"
+#include <Simpleton/ECS/registry.hpp>
 
-struct TowerProto {
-  Sound sound;
-  TowerStatsBase stats;
-  TowerSpritesBase sprites;
-  TowerUpgradesBase upgrades;
-};
-
+using TowerProto = Prototype<ECS::EntityID, struct Tower>;
 using Towers = std::vector<TowerProto>;
 
 #endif

@@ -18,7 +18,7 @@ void towerFiringAnimSystem(ECS::Registry &reg) {
     if (!anim.firing) {
       continue;
     }
-    const Sprite::ID frames = view.get<TowerSprites>(entity).proto->firingFrames;
+    const Sprite::ID frames = view.get<TowerSprites>(entity).firingFrames;
     
     ++anim.frame;
     if (anim.frame == frames) {
