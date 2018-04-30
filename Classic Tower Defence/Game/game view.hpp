@@ -28,10 +28,14 @@ public:
 
 private:
   Sprite::Sheet sheet;
+  G2D::TextureID tex;
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoomToFit;
-  G2D::TextureID tex;
   SoundQueue sounds;
+  
+  // might put this in a separate class
+  Sprite::Sheet radiusSheet;
+  G2D::TextureID radiusTex;
 };
 
 #endif

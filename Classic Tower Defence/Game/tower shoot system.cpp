@@ -8,13 +8,16 @@
 
 #include "tower shoot system.hpp"
 
+#include "tower shoot component.hpp"
 #include "tower timing component.hpp"
 #include "tower target component.hpp"
 #include "tower firing anim component.hpp"
 #include "common tower stats component.hpp"
 
 void towerShootSystem(ECS::Registry &reg) {
-  auto view = reg.view<CommonTowerStats, TowerTiming, TowerTarget, TowerFiringAnim>();
+  auto view = reg.view<
+    TowerShoot, CommonTowerStats, TowerTiming, TowerTarget, TowerFiringAnim
+  >();
   
   for (const ECS::EntityID entity : view) {
     const CommonTowerStats &towerStats = view.get<CommonTowerStats>(entity);
@@ -29,6 +32,8 @@ void towerShootSystem(ECS::Registry &reg) {
     }
     
     timeSinceLastShot = 0;
+    
+    view.get<TowerShoot>(entity).shoot = true;
     
     TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);
     anim.frame = 0;

@@ -62,10 +62,25 @@
 		4563D58720969A8800DB2510 /* turret tower shoot system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58520969A8800DB2510 /* turret tower shoot system.cpp */; };
 		4563D58A20969AA100DB2510 /* splash tower shoot system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58820969AA100DB2510 /* splash tower shoot system.cpp */; };
 		4563D5B52096E16700DB2510 /* sound queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D5B42096E16700DB2510 /* sound queue.cpp */; };
+		4563D5B92097034F00DB2510 /* generate radius.js in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5B82097034F00DB2510 /* generate radius.js */; };
+		4563D600209710CE00DB2510 /* radius.png in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5FE209710CE00DB2510 /* radius.png */; };
+		4563D601209710CE00DB2510 /* radius.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5FF209710CE00DB2510 /* radius.atlas */; };
 		45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7F72092AA190081CDE1 /* unit effect system.cpp */; };
 		45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */; };
 		45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		4563D5FD2097102C00DB2510 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		453884AE208ABB24003EB260 /* CopyFiles */ = {
@@ -343,6 +358,43 @@
 		4563D5B32096D4AD00DB2510 /* iceball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = iceball.anim; sourceTree = "<group>"; };
 		4563D5B42096E16700DB2510 /* sound queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sound queue.cpp"; sourceTree = "<group>"; };
 		4563D5B62096EBA600DB2510 /* sound id.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sound id.hpp"; sourceTree = "<group>"; };
+		4563D5B72096F4E200DB2510 /* tower shoot component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower shoot component.hpp"; sourceTree = "<group>"; };
+		4563D5B82097034F00DB2510 /* generate radius.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "generate radius.js"; sourceTree = "<group>"; };
+		4563D5BA20970E8800DB2510 /* radius.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = radius.anim; sourceTree = "<group>"; };
+		4563D5DC20970F8100DB2510 /* radius 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 15.png"; sourceTree = "<group>"; };
+		4563D5DD20970F8100DB2510 /* radius 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 10.png"; sourceTree = "<group>"; };
+		4563D5DE20970F8100DB2510 /* radius 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 19.png"; sourceTree = "<group>"; };
+		4563D5DF20970F8200DB2510 /* radius 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 16.png"; sourceTree = "<group>"; };
+		4563D5E020970F8200DB2510 /* radius 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 1.png"; sourceTree = "<group>"; };
+		4563D5E120970F8200DB2510 /* radius 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 6.png"; sourceTree = "<group>"; };
+		4563D5E220970F8300DB2510 /* radius 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 8.png"; sourceTree = "<group>"; };
+		4563D5E320970F8300DB2510 /* radius 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 4.png"; sourceTree = "<group>"; };
+		4563D5E420970F8300DB2510 /* radius 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 22.png"; sourceTree = "<group>"; };
+		4563D5E520970F8300DB2510 /* radius 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 29.png"; sourceTree = "<group>"; };
+		4563D5E620970F8300DB2510 /* radius 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 0.png"; sourceTree = "<group>"; };
+		4563D5E720970F8300DB2510 /* radius 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 7.png"; sourceTree = "<group>"; };
+		4563D5E820970F8400DB2510 /* radius 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 23.png"; sourceTree = "<group>"; };
+		4563D5E920970F8400DB2510 /* radius 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 11.png"; sourceTree = "<group>"; };
+		4563D5EA20970F8400DB2510 /* radius 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 26.png"; sourceTree = "<group>"; };
+		4563D5EB20970F8500DB2510 /* radius 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 5.png"; sourceTree = "<group>"; };
+		4563D5EC20970F8500DB2510 /* radius 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 27.png"; sourceTree = "<group>"; };
+		4563D5ED20970F8500DB2510 /* radius 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 3.png"; sourceTree = "<group>"; };
+		4563D5EE20970F8600DB2510 /* radius 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 30.png"; sourceTree = "<group>"; };
+		4563D5EF20970F8600DB2510 /* radius 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 17.png"; sourceTree = "<group>"; };
+		4563D5F020970F8600DB2510 /* radius 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 13.png"; sourceTree = "<group>"; };
+		4563D5F120970F8700DB2510 /* radius 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 28.png"; sourceTree = "<group>"; };
+		4563D5F220970F8700DB2510 /* radius 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 31.png"; sourceTree = "<group>"; };
+		4563D5F320970F8700DB2510 /* radius 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 2.png"; sourceTree = "<group>"; };
+		4563D5F420970F8800DB2510 /* radius 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 21.png"; sourceTree = "<group>"; };
+		4563D5F520970F8800DB2510 /* radius 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 24.png"; sourceTree = "<group>"; };
+		4563D5F620970F8900DB2510 /* radius 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 12.png"; sourceTree = "<group>"; };
+		4563D5F720970F8900DB2510 /* radius 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 14.png"; sourceTree = "<group>"; };
+		4563D5F820970F8900DB2510 /* radius 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 20.png"; sourceTree = "<group>"; };
+		4563D5F920970F8A00DB2510 /* radius 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 25.png"; sourceTree = "<group>"; };
+		4563D5FA20970F8A00DB2510 /* radius 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 9.png"; sourceTree = "<group>"; };
+		4563D5FB20970F8A00DB2510 /* radius 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 18.png"; sourceTree = "<group>"; };
+		4563D5FE209710CE00DB2510 /* radius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radius.png; sourceTree = "<group>"; };
+		4563D5FF209710CE00DB2510 /* radius.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = radius.atlas; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -421,6 +473,7 @@
 				45388590208ECBD0003EB260 /* Maps */,
 				4538857E208DF799003EB260 /* Sounds */,
 				45388530208D7324003EB260 /* Animations */,
+				4563D5DB20970F5800DB2510 /* Radius */,
 				45388513208C5723003EB260 /* Sprites */,
 				45388512208C5716003EB260 /* Spritesheets */,
 			);
@@ -508,6 +561,7 @@
 				4563D583209696E500DB2510 /* turret tower component.hpp */,
 				4563D5842096974400DB2510 /* splash tower component.hpp */,
 				4563D58B2096A16800DB2510 /* tower effect component.hpp */,
+				4563D5B72096F4E200DB2510 /* tower shoot component.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -626,6 +680,8 @@
 		45388512208C5716003EB260 /* Spritesheets */ = {
 			isa = PBXGroup;
 			children = (
+				4563D5FF209710CE00DB2510 /* radius.atlas */,
+				4563D5FE209710CE00DB2510 /* radius.png */,
 				45388524208C5858003EB260 /* sprites.atlas */,
 				45388525208C5858003EB260 /* sprites.png */,
 			);
@@ -770,6 +826,7 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				4563D5BA20970E8800DB2510 /* radius.anim */,
 				4563D5B32096D4AD00DB2510 /* iceball.anim */,
 				4563D5AB2096CF7D00DB2510 /* snowball.anim */,
 				4563D5982096BCAC00DB2510 /* explosive cannon.anim */,
@@ -782,6 +839,7 @@
 				45388572208DC45B003EB260 /* map.anim */,
 				45388531208D7345003EB260 /* robot.anim */,
 				45388533208D7356003EB260 /* ui plan.anim */,
+				4563D5B82097034F00DB2510 /* generate radius.js */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -875,6 +933,45 @@
 			path = Levels;
 			sourceTree = "<group>";
 		};
+		4563D5DB20970F5800DB2510 /* Radius */ = {
+			isa = PBXGroup;
+			children = (
+				4563D5E620970F8300DB2510 /* radius 0.png */,
+				4563D5E020970F8200DB2510 /* radius 1.png */,
+				4563D5F320970F8700DB2510 /* radius 2.png */,
+				4563D5ED20970F8500DB2510 /* radius 3.png */,
+				4563D5E320970F8300DB2510 /* radius 4.png */,
+				4563D5EB20970F8500DB2510 /* radius 5.png */,
+				4563D5E120970F8200DB2510 /* radius 6.png */,
+				4563D5E720970F8300DB2510 /* radius 7.png */,
+				4563D5E220970F8300DB2510 /* radius 8.png */,
+				4563D5FA20970F8A00DB2510 /* radius 9.png */,
+				4563D5DD20970F8100DB2510 /* radius 10.png */,
+				4563D5E920970F8400DB2510 /* radius 11.png */,
+				4563D5F620970F8900DB2510 /* radius 12.png */,
+				4563D5F020970F8600DB2510 /* radius 13.png */,
+				4563D5F720970F8900DB2510 /* radius 14.png */,
+				4563D5DC20970F8100DB2510 /* radius 15.png */,
+				4563D5DF20970F8200DB2510 /* radius 16.png */,
+				4563D5EF20970F8600DB2510 /* radius 17.png */,
+				4563D5FB20970F8A00DB2510 /* radius 18.png */,
+				4563D5DE20970F8100DB2510 /* radius 19.png */,
+				4563D5F820970F8900DB2510 /* radius 20.png */,
+				4563D5F420970F8800DB2510 /* radius 21.png */,
+				4563D5E420970F8300DB2510 /* radius 22.png */,
+				4563D5E820970F8400DB2510 /* radius 23.png */,
+				4563D5F520970F8800DB2510 /* radius 24.png */,
+				4563D5F920970F8A00DB2510 /* radius 25.png */,
+				4563D5EA20970F8400DB2510 /* radius 26.png */,
+				4563D5EC20970F8500DB2510 /* radius 27.png */,
+				4563D5F120970F8700DB2510 /* radius 28.png */,
+				4563D5E520970F8300DB2510 /* radius 29.png */,
+				4563D5EE20970F8600DB2510 /* radius 30.png */,
+				4563D5F220970F8700DB2510 /* radius 31.png */,
+			);
+			path = Radius;
+			sourceTree = "<group>";
+		};
 		45DBB7F52092A9CA0081CDE1 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
@@ -908,11 +1005,13 @@
 				4538848C208AB717003EB260 /* Sources */,
 				4538848D208AB717003EB260 /* Frameworks */,
 				45388511208C570A003EB260 /* Pack Sprites */,
+				4563D5FC20970FA200DB2510 /* Pack Radius */,
 				4538848E208AB717003EB260 /* Resources */,
 				453884B5208ABE9F003EB260 /* Compile Levels */,
 				452B93A3209346DE00B33561 /* Update Component List */,
 			);
 			buildRules = (
+				4563D5FD2097102C00DB2510 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -966,17 +1065,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
+				4563D601209710CE00DB2510 /* radius.atlas in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
 				453B158E2091851200BFA00D /* robot destroyed.wav in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
 				453B158620917FF700BFA00D /* upgrade failed.wav in Resources */,
 				453B153320906E3200BFA00D /* cannon.wav in Resources */,
+				4563D5B92097034F00DB2510 /* generate radius.js in Resources */,
 				45388527208C5858003EB260 /* sprites.png in Resources */,
 				453B158F2091851200BFA00D /* exploding projectile.wav in Resources */,
 				453B15892091800500BFA00D /* fire ball shooting.wav in Resources */,
 				453B158B2091801600BFA00D /* blaster 1.wav in Resources */,
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
 				453B158720917FF700BFA00D /* upgrade.wav in Resources */,
+				4563D600209710CE00DB2510 /* radius.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1028,7 +1130,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\n\npack in=../Sprites out=sprites 1> /dev/null";
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\npack in=../Sprites out=sprites 1> /dev/null";
+		};
+		4563D5FC20970FA200DB2510 /* Pack Radius */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Radius",
+			);
+			name = "Pack Radius";
+			outputPaths = (
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/radius.atlas",
+				"$(PROJECT_DIR)/$(PROJECT)/Resources/Spritesheets/radius.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\npack in=../Radius out=radius 1> /dev/null";
 		};
 /* End PBXShellScriptBuildPhase section */
 

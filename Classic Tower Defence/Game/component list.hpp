@@ -17,6 +17,7 @@
 #include "unit exit distance component.hpp"
 #include "tower firing anim component.hpp"
 #include "tower effect component.hpp"
+#include "tower shoot component.hpp"
 #include "unit path component.hpp"
 #include "spawner timing component.hpp"
 #include "base health component.hpp"
@@ -42,6 +43,7 @@ using CompList = Utils::TypeList<
   UnitExitDistance,
   TowerFiringAnim,
   TowerEffect,
+  TowerShoot,
   UnitPath,
   SpawnerTiming,
   BaseHealth,
