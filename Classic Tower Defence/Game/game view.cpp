@@ -8,8 +8,6 @@
 
 #include "game view.hpp"
 
-#include "load sounds.hpp"
-#include "sound system.hpp"
 #include "tower sound system.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include "map rendering system.hpp"
@@ -34,13 +32,13 @@ void GameView::init(G2D::Renderer &renderer) {
   
   sheet = Sprite::makeSheet(SDL::getResDir() + "sprites.atlas");
   
-  sounds = loadSounds();
+  sounds.load();
 }
 
 void GameView::playSounds(ECS::Registry &reg) {
-  towerSoundSystem(reg, soundQueue);
-  unitDeathSoundSystem(reg, soundQueue);
-  soundSystem(soundQueue, sounds);
+  towerSoundSystem(reg, sounds);
+  unitDeathSoundSystem(reg, sounds);
+  sounds.play(DupSound::PLAY_LATER);
 }
 
 void GameView::updateCam(const float aspect, const float delta) {

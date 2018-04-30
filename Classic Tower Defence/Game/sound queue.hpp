@@ -9,10 +9,28 @@
 #ifndef sound_queue_hpp
 #define sound_queue_hpp
 
-#include <queue>
-#include "sounds.hpp"
+#include <vector>
+#include "sound id.hpp"
+#include <Simpleton/SDL/chunk.hpp>
 
-using SoundID = uint32_t;
-using SoundQueue = std::queue<SoundID>;
+class SoundQueue {
+public:
+  SoundQueue() = default;
+  SoundQueue(SoundQueue &&) = default;
+  SoundQueue &operator=(SoundQueue &&) = default;
+  
+  void load(const char * = "sounds.json");
+  void push(SoundID);
+  void clear();
+  void play(DupSound = DupSound::PLAY);
+  
+private:
+  std::vector<SDL::Chunk> sounds;
+  std::vector<SoundID> ids;
+  
+  void cullRow();
+  void playSounds();
+  std::vector<SoundID> collectDups();
+};
 
 #endif

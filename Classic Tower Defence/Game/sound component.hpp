@@ -13,12 +13,10 @@
 
 struct Sound {
   uint32_t id;
-  bool play;
 };
 
 inline void from_json(const json &j, Sound &comp) {
   DATA_GET(comp, id);
-  comp.play = false;
 }
 
 #endif
