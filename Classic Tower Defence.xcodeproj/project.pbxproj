@@ -65,6 +65,7 @@
 		4563D5B92097034F00DB2510 /* generate radius.js in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5B82097034F00DB2510 /* generate radius.js */; };
 		4563D600209710CE00DB2510 /* radius.png in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5FE209710CE00DB2510 /* radius.png */; };
 		4563D601209710CE00DB2510 /* radius.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5FF209710CE00DB2510 /* radius.atlas */; };
+		4563D604209712B100DB2510 /* tower range rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D602209712B100DB2510 /* tower range rendering system.cpp */; };
 		45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7F72092AA190081CDE1 /* unit effect system.cpp */; };
 		45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */; };
 		45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */; };
@@ -395,6 +396,8 @@
 		4563D5FB20970F8A00DB2510 /* radius 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radius 18.png"; sourceTree = "<group>"; };
 		4563D5FE209710CE00DB2510 /* radius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radius.png; sourceTree = "<group>"; };
 		4563D5FF209710CE00DB2510 /* radius.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = radius.atlas; sourceTree = "<group>"; };
+		4563D602209712B100DB2510 /* tower range rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower range rendering system.cpp"; sourceTree = "<group>"; };
+		4563D603209712B100DB2510 /* tower range rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower range rendering system.hpp"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -673,6 +676,8 @@
 				453B15532090C12400BFA00D /* unit health rendering system.hpp */,
 				453B15A52091A09100BFA00D /* unit death rendering system.cpp */,
 				453B15A62091A09100BFA00D /* unit death rendering system.hpp */,
+				4563D602209712B100DB2510 /* tower range rendering system.cpp */,
+				4563D603209712B100DB2510 /* tower range rendering system.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -1156,6 +1161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4563D604209712B100DB2510 /* tower range rendering system.cpp in Sources */,
 				453884E2208B10F9003EB260 /* tower timing system.cpp in Sources */,
 				453884EE208B1607003EB260 /* spawner system.cpp in Sources */,
 				453B15242090522F00BFA00D /* unit regen system.cpp in Sources */,

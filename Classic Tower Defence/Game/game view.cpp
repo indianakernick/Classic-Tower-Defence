@@ -19,6 +19,7 @@
 #include "tower firing anim system.hpp"
 #include "unit death rendering system.hpp"
 #include "unit health rendering system.hpp"
+#include "tower range rendering system.hpp"
 
 void GameView::init(G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
@@ -52,10 +53,12 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   unitDeathAnimSystem(reg);
   towerFiringAnimSystem(reg);
   
-  writer.section({camera.transform.toPixels()});
+  writer.section({camera.transform.toPixels(), tex});
   mapRenderingSystem(reg, writer, sheet);
   unitRenderingSystem(reg, writer, sheet);
   towerRenderingSystem(reg, writer, sheet);
   unitDeathRenderingSystem(reg, writer, sheet);
   unitHealthRenderingSystem(reg, writer, sheet);
+  
+  writer.section({camera.transform.toPixels(), radiusTex});
 }

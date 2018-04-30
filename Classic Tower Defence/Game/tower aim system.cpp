@@ -20,7 +20,7 @@ void towerAimSystem(ECS::Registry &reg) {
   
   for (const ECS::EntityID tower : towers) {
     const glm::vec2 towerPos = towers.get<Position>(tower).pos;
-    const float range = towers.get<CommonTowerStats>(tower).range;
+    const float range = towers.get<CommonTowerStats>(tower).range + 0.5f;
     
     float targetExitDist = std::numeric_limits<float>::max();
     glm::vec2 targetPos;
