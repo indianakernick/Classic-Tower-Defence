@@ -331,6 +331,14 @@
 		4563D5A12096BCC000DB2510 /* explosive cannon 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 8.png"; sourceTree = "<group>"; };
 		4563D5A22096BCCD00DB2510 /* explosive cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon base.png"; sourceTree = "<group>"; };
 		4563D5A32096BCCD00DB2510 /* explosive cannon projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon projectile.png"; sourceTree = "<group>"; };
+		4563D5A42096CF3A00DB2510 /* snowball 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 1.png"; sourceTree = "<group>"; };
+		4563D5A52096CF3A00DB2510 /* snowball 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 4.png"; sourceTree = "<group>"; };
+		4563D5A62096CF3B00DB2510 /* snowball 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 3.png"; sourceTree = "<group>"; };
+		4563D5A72096CF3B00DB2510 /* snowball 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 0.png"; sourceTree = "<group>"; };
+		4563D5A82096CF3B00DB2510 /* snowball 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 2.png"; sourceTree = "<group>"; };
+		4563D5A92096CF6B00DB2510 /* snowball projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball projectile.png"; sourceTree = "<group>"; };
+		4563D5AA2096CF6B00DB2510 /* snowball base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball base.png"; sourceTree = "<group>"; };
+		4563D5AB2096CF7D00DB2510 /* snowball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowball.anim; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -737,6 +745,13 @@
 				4538853B208D73A5003EB260 /* robot 3 5.png */,
 				45388540208D73A6003EB260 /* robot 3 6.png */,
 				45388541208D73A6003EB260 /* robot 3 7.png */,
+				4563D5A72096CF3B00DB2510 /* snowball 0.png */,
+				4563D5A42096CF3A00DB2510 /* snowball 1.png */,
+				4563D5A82096CF3B00DB2510 /* snowball 2.png */,
+				4563D5A62096CF3B00DB2510 /* snowball 3.png */,
+				4563D5A52096CF3A00DB2510 /* snowball 4.png */,
+				4563D5AA2096CF6B00DB2510 /* snowball base.png */,
+				4563D5A92096CF6B00DB2510 /* snowball projectile.png */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -744,6 +759,7 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				4563D5AB2096CF7D00DB2510 /* snowball.anim */,
 				4563D5982096BCAC00DB2510 /* explosive cannon.anim */,
 				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
 				453B15A82091A31A00BFA00D /* explosion.anim */,
