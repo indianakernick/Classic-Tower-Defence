@@ -319,6 +319,18 @@
 		4563D5952096BAC500DB2510 /* poison cannon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 2.png"; sourceTree = "<group>"; };
 		4563D5962096BAD700DB2510 /* poison cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon base.png"; sourceTree = "<group>"; };
 		4563D5972096BAD700DB2510 /* poison cannon projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon projectile.png"; sourceTree = "<group>"; };
+		4563D5982096BCAC00DB2510 /* explosive cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "explosive cannon.anim"; sourceTree = "<group>"; };
+		4563D5992096BCBF00DB2510 /* explosive cannon 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 7.png"; sourceTree = "<group>"; };
+		4563D59A2096BCBF00DB2510 /* explosive cannon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 3.png"; sourceTree = "<group>"; };
+		4563D59B2096BCBF00DB2510 /* explosive cannon 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 5.png"; sourceTree = "<group>"; };
+		4563D59C2096BCBF00DB2510 /* explosive cannon 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 1.png"; sourceTree = "<group>"; };
+		4563D59D2096BCBF00DB2510 /* explosive cannon 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 4.png"; sourceTree = "<group>"; };
+		4563D59E2096BCBF00DB2510 /* explosive cannon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 2.png"; sourceTree = "<group>"; };
+		4563D59F2096BCBF00DB2510 /* explosive cannon 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 0.png"; sourceTree = "<group>"; };
+		4563D5A02096BCC000DB2510 /* explosive cannon 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 6.png"; sourceTree = "<group>"; };
+		4563D5A12096BCC000DB2510 /* explosive cannon 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 8.png"; sourceTree = "<group>"; };
+		4563D5A22096BCCD00DB2510 /* explosive cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon base.png"; sourceTree = "<group>"; };
+		4563D5A32096BCCD00DB2510 /* explosive cannon projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon projectile.png"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -650,6 +662,17 @@
 				453B15A42091A01F00BFA00D /* explosion 1.png */,
 				453B15A12091A01E00BFA00D /* explosion 2.png */,
 				453B15A22091A01E00BFA00D /* explosion 3.png */,
+				4563D59F2096BCBF00DB2510 /* explosive cannon 0.png */,
+				4563D59C2096BCBF00DB2510 /* explosive cannon 1.png */,
+				4563D59E2096BCBF00DB2510 /* explosive cannon 2.png */,
+				4563D59A2096BCBF00DB2510 /* explosive cannon 3.png */,
+				4563D59D2096BCBF00DB2510 /* explosive cannon 4.png */,
+				4563D59B2096BCBF00DB2510 /* explosive cannon 5.png */,
+				4563D5A02096BCC000DB2510 /* explosive cannon 6.png */,
+				4563D5992096BCBF00DB2510 /* explosive cannon 7.png */,
+				4563D5A12096BCC000DB2510 /* explosive cannon 8.png */,
+				4563D5A22096BCCD00DB2510 /* explosive cannon base.png */,
+				4563D5A32096BCCD00DB2510 /* explosive cannon projectile.png */,
 				453B155B2090C57100BFA00D /* health 0.png */,
 				453B15602090C57300BFA00D /* health 1.png */,
 				453B15592090C57100BFA00D /* health 2.png */,
@@ -721,6 +744,7 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				4563D5982096BCAC00DB2510 /* explosive cannon.anim */,
 				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
 				453B15A82091A31A00BFA00D /* explosion.anim */,
 				453B15782090C7B200BFA00D /* armour.anim */,

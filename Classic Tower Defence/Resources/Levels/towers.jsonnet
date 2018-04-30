@@ -39,7 +39,7 @@ local towerSprites(sprite) = {
         duration: 5
       }
     },
-    TowerSprites: towerSprites("poison cannon"),
+    TowerSprites: towerSprites("explosive cannon"),
     upgrades: {},
     Sound: {
       id: getSound("cannon")
