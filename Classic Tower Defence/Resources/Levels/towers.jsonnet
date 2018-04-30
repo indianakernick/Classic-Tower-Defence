@@ -67,4 +67,26 @@ local towerSprites(sprite) = {
       id: getSound("cannon")
     }
   },
+  {
+    CommonTowerStats: {
+      range: 4,
+      damage: 5,
+      rof: 1/4,
+      armourPiercing: 0.4
+    },
+    SplashTower: {
+      aoe: 3
+    },
+    TowerEffect: {
+      SlowEffect: {
+        speedFactor: 0,
+        duration: 2
+      }
+    },
+    TowerSprites: towerSprites("iceball"),
+    upgrades: {},
+    Sound: {
+      id: getSound("cannon")
+    }
+  },
 ]

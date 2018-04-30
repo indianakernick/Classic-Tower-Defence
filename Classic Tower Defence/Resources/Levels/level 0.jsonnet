@@ -6,13 +6,13 @@ local getSound = import "getsound.libsonnet";
   sprite: getSprite("map 0"),
   waves: [
     {
-      quantity: 10,
+      quantity: 20,
       stats: {
-        health: 100,
-        armour: 50,
-        healthRegen: 0,
+        health: 200,
+        armour: 100,
+        healthRegen: 0.1,
         armourRegen: 0,
-        dodge: 0,
+        dodge: 0.2,
         moveSpeed: 2
       },
       sprite: {

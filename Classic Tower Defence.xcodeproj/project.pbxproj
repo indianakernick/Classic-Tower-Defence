@@ -339,6 +339,14 @@
 		4563D5A92096CF6B00DB2510 /* snowball projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball projectile.png"; sourceTree = "<group>"; };
 		4563D5AA2096CF6B00DB2510 /* snowball base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball base.png"; sourceTree = "<group>"; };
 		4563D5AB2096CF7D00DB2510 /* snowball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowball.anim; sourceTree = "<group>"; };
+		4563D5AC2096D49000DB2510 /* iceball 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 0.png"; sourceTree = "<group>"; };
+		4563D5AD2096D49000DB2510 /* iceball 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 3.png"; sourceTree = "<group>"; };
+		4563D5AE2096D49100DB2510 /* iceball 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 1.png"; sourceTree = "<group>"; };
+		4563D5AF2096D49100DB2510 /* iceball 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 4.png"; sourceTree = "<group>"; };
+		4563D5B02096D49100DB2510 /* iceball 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 2.png"; sourceTree = "<group>"; };
+		4563D5B12096D49B00DB2510 /* iceball base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball base.png"; sourceTree = "<group>"; };
+		4563D5B22096D49C00DB2510 /* iceball projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball projectile.png"; sourceTree = "<group>"; };
+		4563D5B32096D4AD00DB2510 /* iceball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = iceball.anim; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -698,6 +706,13 @@
 				453B155D2090C57200BFA00D /* health 14.png */,
 				453B155E2090C57300BFA00D /* health 15.png */,
 				453B155F2090C57300BFA00D /* health 16.png */,
+				4563D5AC2096D49000DB2510 /* iceball 0.png */,
+				4563D5AE2096D49100DB2510 /* iceball 1.png */,
+				4563D5B02096D49100DB2510 /* iceball 2.png */,
+				4563D5AD2096D49000DB2510 /* iceball 3.png */,
+				4563D5AF2096D49100DB2510 /* iceball 4.png */,
+				4563D5B12096D49B00DB2510 /* iceball base.png */,
+				4563D5B22096D49C00DB2510 /* iceball projectile.png */,
 				4538852A208C5CE5003EB260 /* map 0.png */,
 				4538852B208C5CE5003EB260 /* map 1.png */,
 				45388528208C5CE4003EB260 /* map 2.png */,
@@ -759,6 +774,7 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				4563D5B32096D4AD00DB2510 /* iceball.anim */,
 				4563D5AB2096CF7D00DB2510 /* snowball.anim */,
 				4563D5982096BCAC00DB2510 /* explosive cannon.anim */,
 				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
