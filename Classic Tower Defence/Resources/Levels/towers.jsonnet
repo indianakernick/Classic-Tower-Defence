@@ -26,7 +26,7 @@ local towerSprites(sprite) = {
   {
     CommonTowerStats: {
       range: 4,
-      damage: 40,
+      damage: 50,
       rof: 1/2,
       armourPiercing: 0.6
     },
@@ -35,7 +35,7 @@ local towerSprites(sprite) = {
     },
     TowerEffect: {
       PoisonEffect: {
-        damageFactor: 0.2,
+        damageFactor: 0.0,
         duration: 5
       }
     },
