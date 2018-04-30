@@ -306,6 +306,7 @@
 		4563D58620969A8800DB2510 /* turret tower shoot system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower shoot system.hpp"; sourceTree = "<group>"; };
 		4563D58820969AA100DB2510 /* splash tower shoot system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "splash tower shoot system.cpp"; sourceTree = "<group>"; };
 		4563D58920969AA100DB2510 /* splash tower shoot system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower shoot system.hpp"; sourceTree = "<group>"; };
+		4563D58B2096A16800DB2510 /* tower effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower effect component.hpp"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -470,6 +471,7 @@
 				45388500208C16D3003EB260 /* tower upgrades component.hpp */,
 				4563D583209696E500DB2510 /* turret tower component.hpp */,
 				4563D5842096974400DB2510 /* splash tower component.hpp */,
+				4563D58B2096A16800DB2510 /* tower effect component.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";

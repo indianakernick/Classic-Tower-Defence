@@ -10,17 +10,17 @@
 
 #include <glm/glm.hpp>
 #include "position component.hpp"
-#include "tower stats component.hpp"
 #include "tower target component.hpp"
+#include "common tower stats component.hpp"
 #include "unit exit distance component.hpp"
 
 void towerAimSystem(ECS::Registry &reg) {
-  auto towers = reg.view<Position, TowerStats, TowerTarget>();
+  auto towers = reg.view<Position, CommonTowerStats, TowerTarget>();
   auto units = reg.view<Position, UnitExitDistance>();
   
   for (const ECS::EntityID tower : towers) {
     const glm::vec2 towerPos = towers.get<Position>(tower).pos;
-    const float range = towers.get<TowerStats>(tower).range;
+    const float range = towers.get<CommonTowerStats>(tower).range;
     
     float targetExitDist = std::numeric_limits<float>::max();
     glm::vec2 targetPos;

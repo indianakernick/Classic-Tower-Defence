@@ -24,6 +24,8 @@
 #include "base damage system.hpp"
 #include "tower aim system.hpp"
 #include "tower shoot system.hpp"
+#include "turret tower shoot system.hpp"
+#include "splash tower shoot system.hpp"
 #include "tower timing system.hpp"
 #include "unit regen system.hpp"
 #include "unit effect system.hpp"
@@ -37,8 +39,8 @@ void GameLogic::init(ECS::Registry &reg) {
   createSpawner(reg, 1.5f);
   createBase(reg, 1000);
   
-  createTower(reg, 0, {6, 5});
-  createTower(reg, 0, {11, 4});
+  //createTower(reg, 0, {6, 5});
+  //createTower(reg, 0, {11, 4});
   createTower(reg, 1, {11, 7});
 }
 
@@ -59,6 +61,8 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   
   towerAimSystem(reg);
   towerShootSystem(reg);
+  turretTowerShootSystem(reg);
+  splashTowerShootSystem(reg);
   
   unitMotionSystem(reg, delta);
   unitDeathSystem(reg);

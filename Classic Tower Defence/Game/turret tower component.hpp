@@ -11,12 +11,8 @@
 
 #include <Simpleton/Data/json.hpp>
 
-struct TurretTower {
-  float range;
-};
+struct TurretTower {};
 
-inline void from_json(const json &j, TurretTower &comp) {
-  DATA_GET(comp, range);
-}
+inline void from_json(const json &, TurretTower &) {}
 
 #endif

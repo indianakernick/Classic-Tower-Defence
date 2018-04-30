@@ -12,12 +12,14 @@
 #include <Simpleton/Data/json.hpp>
 
 struct CommonTowerStats {
+  float range;
   float damage;
   float rof;
   float armourPiercing;
 };
 
 inline void from_json(const json &j, CommonTowerStats &stats) {
+  DATA_GET(stats, range);
   DATA_GET(stats, damage);
   DATA_GET(stats, rof);
   DATA_GET(stats, armourPiercing);

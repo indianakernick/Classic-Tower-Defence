@@ -12,12 +12,10 @@
 #include <Simpleton/Data/json.hpp>
 
 struct SplashTower {
-  float range;
   float aoe;
 };
 
 inline void from_json(const json &j, SplashTower &comp) {
-  DATA_GET(comp, range);
   DATA_GET(comp, aoe);
 }
 

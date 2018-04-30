@@ -16,7 +16,7 @@ void poisonEffectSystem(ECS::Registry &reg, const float delta) {
   for (const ECS::EntityID entity : view) {
     PoisonEffect &effect = view.get<PoisonEffect>(entity);
     UnitStats &stats = view.get<UnitStats>(entity);
-    stats.health -= effect.damageFactor * stats.proto->health;
+    stats.health -= effect.damageFactor * stats.proto->health * delta;
     
     effect.duration -= delta;
     if (effect.duration < 0.0f) {

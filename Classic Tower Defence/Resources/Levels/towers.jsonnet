@@ -10,12 +10,13 @@ local towerSprites(sprite) = {
 
 [
   {
-    TowerStats: {
+    CommonTowerStats: {
       range: 6,
       damage: 10,
       rof: 3,
       armourPiercing: 0.1
     },
+    TurretTower: {},
     TowerSprites: towerSprites("blaster"),
     upgrades: {},
     Sound: {
@@ -23,11 +24,20 @@ local towerSprites(sprite) = {
     }
   },
   {
-    TowerStats: {
+    CommonTowerStats: {
       range: 4,
       damage: 40,
       rof: 1/2,
       armourPiercing: 0.6
+    },
+    SplashTower: {
+      aoe: 10
+    },
+    TowerEffect: {
+      PoisonEffect: {
+        damageFactor: 0.2,
+        duration: 5
+      }
     },
     TowerSprites: towerSprites("cannon"),
     upgrades: {},
