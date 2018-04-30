@@ -9,10 +9,11 @@
 #ifndef sound_component_hpp
 #define sound_component_hpp
 
+#include "sound id.hpp"
 #include <Simpleton/Data/json.hpp>
 
 struct Sound {
-  uint32_t id;
+  SoundID id;
 };
 
 inline void from_json(const json &j, Sound &comp) {

@@ -55,11 +55,10 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   spawnerTimingSystem(reg, delta);
   spawnerSystem(reg);
   
+  unitRegenSystem(reg, delta);
   unitEffectSystem(reg);
   slowEffectSystem(reg, delta);
   poisonEffectSystem(reg, delta);
-  
-  unitRegenSystem(reg, delta);
   
   towerAimSystem(reg);
   towerShootSystem(reg);
