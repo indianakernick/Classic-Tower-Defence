@@ -307,6 +307,18 @@
 		4563D58820969AA100DB2510 /* splash tower shoot system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "splash tower shoot system.cpp"; sourceTree = "<group>"; };
 		4563D58920969AA100DB2510 /* splash tower shoot system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower shoot system.hpp"; sourceTree = "<group>"; };
 		4563D58B2096A16800DB2510 /* tower effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower effect component.hpp"; sourceTree = "<group>"; };
+		4563D58C2096BAAA00DB2510 /* poison cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poison cannon.anim"; sourceTree = "<group>"; };
+		4563D58D2096BAC400DB2510 /* poison cannon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 3.png"; sourceTree = "<group>"; };
+		4563D58E2096BAC400DB2510 /* poison cannon 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 4.png"; sourceTree = "<group>"; };
+		4563D58F2096BAC400DB2510 /* poison cannon 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 5.png"; sourceTree = "<group>"; };
+		4563D5902096BAC400DB2510 /* poison cannon 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 7.png"; sourceTree = "<group>"; };
+		4563D5912096BAC500DB2510 /* poison cannon 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 8.png"; sourceTree = "<group>"; };
+		4563D5922096BAC500DB2510 /* poison cannon 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 0.png"; sourceTree = "<group>"; };
+		4563D5932096BAC500DB2510 /* poison cannon 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 1.png"; sourceTree = "<group>"; };
+		4563D5942096BAC500DB2510 /* poison cannon 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 6.png"; sourceTree = "<group>"; };
+		4563D5952096BAC500DB2510 /* poison cannon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 2.png"; sourceTree = "<group>"; };
+		4563D5962096BAD700DB2510 /* poison cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon base.png"; sourceTree = "<group>"; };
+		4563D5972096BAD700DB2510 /* poison cannon projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon projectile.png"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -599,10 +611,6 @@
 		45388513208C5723003EB260 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
-				453B15A32091A01F00BFA00D /* explosion 0.png */,
-				453B15A42091A01F00BFA00D /* explosion 1.png */,
-				453B15A12091A01E00BFA00D /* explosion 2.png */,
-				453B15A22091A01E00BFA00D /* explosion 3.png */,
 				453B156B2090C58A00BFA00D /* armour 0.png */,
 				453B15762090C58E00BFA00D /* armour 1.png */,
 				453B15702090C58C00BFA00D /* armour 2.png */,
@@ -638,6 +646,10 @@
 				453B157E20917D9C00BFA00D /* cannon 8.png */,
 				453B15502090818900BFA00D /* cannon base.png */,
 				453B157A2091781300BFA00D /* cannon projectile.png */,
+				453B15A32091A01F00BFA00D /* explosion 0.png */,
+				453B15A42091A01F00BFA00D /* explosion 1.png */,
+				453B15A12091A01E00BFA00D /* explosion 2.png */,
+				453B15A22091A01E00BFA00D /* explosion 3.png */,
 				453B155B2090C57100BFA00D /* health 0.png */,
 				453B15602090C57300BFA00D /* health 1.png */,
 				453B15592090C57100BFA00D /* health 2.png */,
@@ -659,6 +671,17 @@
 				4538852B208C5CE5003EB260 /* map 1.png */,
 				45388528208C5CE4003EB260 /* map 2.png */,
 				45388529208C5CE4003EB260 /* map 3.png */,
+				4563D5922096BAC500DB2510 /* poison cannon 0.png */,
+				4563D5932096BAC500DB2510 /* poison cannon 1.png */,
+				4563D5952096BAC500DB2510 /* poison cannon 2.png */,
+				4563D58D2096BAC400DB2510 /* poison cannon 3.png */,
+				4563D58E2096BAC400DB2510 /* poison cannon 4.png */,
+				4563D58F2096BAC400DB2510 /* poison cannon 5.png */,
+				4563D5942096BAC500DB2510 /* poison cannon 6.png */,
+				4563D5902096BAC400DB2510 /* poison cannon 7.png */,
+				4563D5912096BAC500DB2510 /* poison cannon 8.png */,
+				4563D5962096BAD700DB2510 /* poison cannon base.png */,
+				4563D5972096BAD700DB2510 /* poison cannon projectile.png */,
 				45388535208D73A5003EB260 /* robot 0 0.png */,
 				45388552208D73A9003EB260 /* robot 0 1.png */,
 				45388550208D73A9003EB260 /* robot 0 2.png */,
@@ -698,6 +721,7 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
 				453B15A82091A31A00BFA00D /* explosion.anim */,
 				453B15782090C7B200BFA00D /* armour.anim */,
 				45388570208DB3C2003EB260 /* blaster.anim */,
