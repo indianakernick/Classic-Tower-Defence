@@ -8,17 +8,16 @@
 
 #include "tower shoot system.hpp"
 
-#include "unit damage system.hpp"
-#include "tower stats component.hpp"
 #include "tower timing component.hpp"
 #include "tower target component.hpp"
 #include "tower firing anim component.hpp"
+#include "common tower stats component.hpp"
 
 void towerShootSystem(ECS::Registry &reg) {
-  auto view = reg.view<TowerStats, TowerTiming, TowerTarget, TowerFiringAnim>();
+  auto view = reg.view<CommonTowerStats, TowerTiming, TowerTarget, TowerFiringAnim>();
   
   for (const ECS::EntityID entity : view) {
-    const TowerStats &towerStats = view.get<TowerStats>(entity);
+    const CommonTowerStats &towerStats = view.get<CommonTowerStats>(entity);
     float &timeSinceLastShot = view.get<TowerTiming>(entity).timeSinceLastShot;
     if (timeSinceLastShot < 1.0f / towerStats.rof) {
       continue;
@@ -28,8 +27,6 @@ void towerShootSystem(ECS::Registry &reg) {
     if (target == ECS::NULL_ENTITY) {
       continue;
     }
-    
-    unitDamageSystem(reg, target, towerStats.damage, towerStats.armourPiercing);
     
     timeSinceLastShot = 0;
     
