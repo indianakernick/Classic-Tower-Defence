@@ -12,8 +12,6 @@
 #include "create level.hpp"
 #include "load level.hpp"
 #include "load towers.hpp"
-#include "map sprites component.hpp"
-#include "map info component.hpp"
 #include "create spawner.hpp"
 #include "create tower.hpp"
 #include "create base.hpp"

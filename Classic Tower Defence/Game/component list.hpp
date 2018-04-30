@@ -11,18 +11,13 @@
 
 #include <Simpleton/Utils/type list.hpp>
 
-#include "map component.hpp"
 #include "unit stats component.hpp"
 #include "unit dir component.hpp"
-#include "towers component.hpp"
-#include "map info component.hpp"
 #include "position component.hpp"
 #include "unit exit distance component.hpp"
-#include "map sprites component.hpp"
 #include "tower firing anim component.hpp"
 #include "tower effect component.hpp"
 #include "unit path component.hpp"
-#include "waves component.hpp"
 #include "spawner timing component.hpp"
 #include "base health component.hpp"
 #include "tower timing component.hpp"
@@ -41,18 +36,13 @@
 #include "sound component.hpp"
 
 using CompList = Utils::TypeList<
-  Map,
   UnitStats,
   UnitDir,
-  Towers,
-  MapInfo,
   Position,
   UnitExitDistance,
-  MapSprites,
   TowerFiringAnim,
   TowerEffect,
   UnitPath,
-  Waves,
   SpawnerTiming,
   BaseHealth,
   TowerTiming,

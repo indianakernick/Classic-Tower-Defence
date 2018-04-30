@@ -9,8 +9,8 @@
 #include "load towers.hpp"
 
 #include <fstream>
+#include "towers tag.hpp"
 #include "component list.hpp"
-#include "towers component.hpp"
 #include <Simpleton/SDL/paths.hpp>
 
 namespace {

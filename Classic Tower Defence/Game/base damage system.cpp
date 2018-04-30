@@ -8,7 +8,7 @@
 
 #include "base damage system.hpp"
 
-#include "map info component.hpp"
+#include "map info tag.hpp"
 #include "unit path component.hpp"
 #include "base health component.hpp"
 

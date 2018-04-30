@@ -8,7 +8,7 @@
 
 #include "init map info.hpp"
 
-#include "map info component.hpp"
+#include "map info tag.hpp"
 #include <Simpleton/Math/dir.hpp>
 
 namespace {

@@ -8,7 +8,7 @@
 
 #include "upgrade tower.hpp"
 
-#include "towers component.hpp"
+#include "towers tag.hpp"
 #include "tower upgrades component.hpp"
 
 namespace {

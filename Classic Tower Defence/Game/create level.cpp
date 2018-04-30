@@ -8,10 +8,10 @@
 
 #include "create level.hpp"
 
-#include "map component.hpp"
-#include "waves component.hpp"
-#include "map info component.hpp"
-#include "map sprites component.hpp"
+#include "map tag.hpp"
+#include "waves tag.hpp"
+#include "map info tag.hpp"
+#include "map sprites tag.hpp"
 
 void createLevel(ECS::Registry &reg) {
   const ECS::EntityID id = reg.create();

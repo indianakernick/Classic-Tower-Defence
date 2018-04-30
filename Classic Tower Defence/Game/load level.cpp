@@ -9,12 +9,12 @@
 #include "load level.hpp"
 
 #include <fstream>
+#include "map tag.hpp"
+#include "waves tag.hpp"
 #include "init map info.hpp"
-#include "map component.hpp"
-#include "waves component.hpp"
+#include "map sprites tag.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
-#include "map sprites component.hpp"
 
 namespace {
   TileType tileChar(const char c) {

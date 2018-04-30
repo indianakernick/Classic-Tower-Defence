@@ -8,7 +8,7 @@
 
 #include "create tower.hpp"
 
-#include "towers component.hpp"
+#include "towers tag.hpp"
 #include "sound component.hpp"
 #include "position component.hpp"
 #include "tower timing component.hpp"

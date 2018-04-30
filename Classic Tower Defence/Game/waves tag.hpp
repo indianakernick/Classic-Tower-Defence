@@ -1,13 +1,13 @@
 //
-//  waves component.hpp
+//  waves tag.hpp
 //  Classic Tower Defence
 //
 //  Created by Indi Kernick on 25/4/18.
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#ifndef waves_component_hpp
-#define waves_component_hpp
+#ifndef waves_tag_hpp
+#define waves_tag_hpp
 
 #include <vector>
 #include "sound component.hpp"

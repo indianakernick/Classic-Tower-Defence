@@ -9,7 +9,7 @@
 #ifndef tower_upgrades_component_hpp
 #define tower_upgrades_component_hpp
 
-#include "towers component.hpp"
+#include "towers tag.hpp"
 
 struct TowerUpgrades {
   TowerProto *self;
