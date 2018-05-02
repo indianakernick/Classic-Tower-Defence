@@ -29,19 +29,19 @@ void GameView::init(G2D::Renderer &renderer) {
   GL::TexParams2D texParams;
   texParams.setWrap(GL_CLAMP_TO_EDGE);
   texParams.setFilter(GL_NEAREST);
-  tex = renderer.addTexture(SDL::getResDir() + "sprites.png", texParams);
-  sheet = Sprite::makeSheet(SDL::getResDir() + "sprites.atlas");
+  tex = renderer.addTexture(SDL::res("sprites.png"), texParams);
+  sheet = Sprite::makeSheet(SDL::res("sprites.atlas"));
   
-  radiusTex = renderer.addTexture(SDL::getResDir() + "radius.png", texParams);
-  radiusSheet = Sprite::makeSheet(SDL::getResDir() + "radius.atlas");
-  
+  radiusTex = renderer.addTexture(SDL::res("radius.png"), texParams);
+  radiusSheet = Sprite::makeSheet(SDL::res("radius.atlas"));
+
   sounds.load();
 }
 
 void GameView::playSounds(ECS::Registry &reg) {
   towerSoundSystem(reg, sounds);
   unitDeathSoundSystem(reg, sounds);
-  //sounds.play(DupSound::PLAY_LATER);
+  sounds.play(DupSound::PLAY_LATER);
 }
 
 void GameView::updateCam(const float aspect, const float delta) {
