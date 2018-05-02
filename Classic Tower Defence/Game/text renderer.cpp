@@ -8,8 +8,12 @@
 
 #include "text renderer.hpp"
 
-void TextRenderer::setInfo(const GlyphInfo newInfo) {
-  info = newInfo;
+void TextRenderer::setGlyphSize(const glm::vec2 newSize) {
+  size = newSize;
+}
+
+void TextRenderer::setAdvance(const glm::vec2 newAdvance) {
+  advance = newAdvance;
 }
 
 void TextRenderer::setCursor(const glm::vec2 newPos) {
@@ -35,11 +39,11 @@ void TextRenderer::startLine() {
 }
 
 void TextRenderer::nextLine() {
-  pos.y += info.advance.y;
+  pos.y += advance.y * scale;
 }
 
 void TextRenderer::nextChar() {
-  pos.x += info.advance.x;
+  pos.x += advance.x * scale;
 }
 
 void TextRenderer::firstChar() {
@@ -63,7 +67,7 @@ void TextRenderer::pushChar(
   
   writer.quad();
   writer.depth(depth);
-  writer.tilePos(pos, scale * info.size);
+  writer.tilePos(pos, scale * size);
   // the spritesheet is expected to hold all of the printable ascii characters.
   // std::isprint considers space a printable character but there's no point
   // in storing a blank space in a sprite sheet. So sheet.getSprite(0) should

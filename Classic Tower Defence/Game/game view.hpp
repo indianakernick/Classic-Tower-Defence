@@ -10,11 +10,11 @@
 #define game_view_hpp
 
 #include "sound queue.hpp"
-#include <Simpleton/Sprite/sheet.hpp>
+#include "text renderer.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
-#include <Simpleton/Graphics 2D/renderer.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
+#include <Simpleton/Graphics 2D/sheet tex.hpp>
 #include <Simpleton/Graphics 2D/quad writer.hpp>
 
 class GameView {
@@ -27,15 +27,17 @@ public:
   void render(ECS::Registry &, G2D::QuadWriter &);
 
 private:
-  Sprite::Sheet sheet;
-  G2D::TextureID tex;
+  G2D::SheetTex sheetTex;
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoomToFit;
   SoundQueue sounds;
   
-  // might put this in a separate class
-  Sprite::Sheet radiusSheet;
-  G2D::TextureID radiusTex;
+  // might put these in a separate class
+  G2D::SheetTex radiusSheetTex;
+  G2D::SheetTex textSheetTex;
+  Cam2D::Camera textCam;
+  Cam2D::ZoomToFit textZoom;
+  TextRenderer textRenderer;
 };
 
 #endif

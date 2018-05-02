@@ -67,6 +67,8 @@
 		4563D601209710CE00DB2510 /* radius.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5FF209710CE00DB2510 /* radius.atlas */; };
 		4563D604209712B100DB2510 /* tower range rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D602209712B100DB2510 /* tower range rendering system.cpp */; };
 		456826532099720E00BA6AE8 /* text renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 456826512099720E00BA6AE8 /* text renderer.cpp */; };
+		456826592099C52B00BA6AE8 /* 5x8 ascii.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 456826572099C52B00BA6AE8 /* 5x8 ascii.atlas */; };
+		4568265A2099C52B00BA6AE8 /* 5x8 ascii.png in Resources */ = {isa = PBXBuildFile; fileRef = 456826582099C52B00BA6AE8 /* 5x8 ascii.png */; };
 		45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7F72092AA190081CDE1 /* unit effect system.cpp */; };
 		45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */; };
 		45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */; };
@@ -401,6 +403,8 @@
 		4563D603209712B100DB2510 /* tower range rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower range rendering system.hpp"; sourceTree = "<group>"; };
 		456826512099720E00BA6AE8 /* text renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "text renderer.cpp"; sourceTree = "<group>"; };
 		456826522099720E00BA6AE8 /* text renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "text renderer.hpp"; sourceTree = "<group>"; };
+		456826572099C52B00BA6AE8 /* 5x8 ascii.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "5x8 ascii.atlas"; sourceTree = "<group>"; };
+		456826582099C52B00BA6AE8 /* 5x8 ascii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5x8 ascii.png"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -475,6 +479,7 @@
 		453884B2208ABD2A003EB260 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				456826562099C50700BA6AE8 /* Fonts */,
 				453B150F20903A9D00BFA00D /* Levels */,
 				45388590208ECBD0003EB260 /* Maps */,
 				4538857E208DF799003EB260 /* Sounds */,
@@ -990,6 +995,15 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		456826562099C50700BA6AE8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				456826572099C52B00BA6AE8 /* 5x8 ascii.atlas */,
+				456826582099C52B00BA6AE8 /* 5x8 ascii.png */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		45DBB7F52092A9CA0081CDE1 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
@@ -1089,9 +1103,11 @@
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
 				453B158620917FF700BFA00D /* upgrade failed.wav in Resources */,
 				453B153320906E3200BFA00D /* cannon.wav in Resources */,
+				4568265A2099C52B00BA6AE8 /* 5x8 ascii.png in Resources */,
 				4563D5B92097034F00DB2510 /* generate radius.js in Resources */,
 				45388527208C5858003EB260 /* sprites.png in Resources */,
 				453B158F2091851200BFA00D /* exploding projectile.wav in Resources */,
+				456826592099C52B00BA6AE8 /* 5x8 ascii.atlas in Resources */,
 				453B15892091800500BFA00D /* fire ball shooting.wav in Resources */,
 				453B158B2091801600BFA00D /* blaster 1.wav in Resources */,
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,

@@ -12,16 +12,12 @@
 #include <Simpleton/Sprite/sheet.hpp>
 #include <Simpleton/Graphics 2D/quad writer.hpp>
 
-struct GlyphInfo {
-  glm::vec2 size;
-  glm::vec2 advance;
-};
-
 class TextRenderer {
 public:
   TextRenderer() = default;
   
-  void setInfo(GlyphInfo);
+  void setGlyphSize(glm::vec2);
+  void setAdvance(glm::vec2);
   
   /// Change the position of the cursor. The x-coordinate of this position
   /// becomes the start of the line.
@@ -53,7 +49,8 @@ private:
   glm::vec2 beginning {0.0f};
   // the position where the next character will be drawn
   glm::vec2 pos {0.0f};
-  GlyphInfo info {{1.0f, 1.0f}, {1.0f, 1.0f}};
+  glm::vec2 size {1.0f, 1.0f};
+  glm::vec2 advance {1.0f, 1.0f};
   // a scale of one will mean that one pixel on the texture will coorespond
   // to one pixel on the monitor
   float scale = 1.0f;
