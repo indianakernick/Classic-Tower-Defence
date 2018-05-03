@@ -1,13 +1,13 @@
 //
-//  spawner state component.hpp
+//  spawner state tag.hpp
 //  Classic Tower Defence
 //
 //  Created by Indi Kernick on 21/4/18.
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#ifndef spawner_state_component_hpp
-#define spawner_state_component_hpp
+#ifndef spawner_state_tag_hpp
+#define spawner_state_tag_hpp
 
 struct SpawnerState {
   enum State {

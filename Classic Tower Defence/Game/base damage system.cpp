@@ -9,8 +9,8 @@
 #include "base damage system.hpp"
 
 #include "map info tag.hpp"
+#include "base health tag.hpp"
 #include "unit path component.hpp"
-#include "base health component.hpp"
 
 void baseDamageSystem(ECS::Registry &reg) {
   const MapInfo &map = reg.get<MapInfo>();

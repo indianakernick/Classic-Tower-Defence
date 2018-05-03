@@ -8,8 +8,8 @@
 
 #include "create spawner.hpp"
 
-#include "spawner timing component.hpp"
-#include "spawner state component.hpp"
+#include "spawner timing tag.hpp"
+#include "spawner state tag.hpp"
 
 void createSpawner(ECS::Registry &reg, const float timeBetween) {
   const ECS::EntityID id = reg.create();

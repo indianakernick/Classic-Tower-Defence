@@ -9,7 +9,7 @@
 #include "next wave.hpp"
 
 #include "waves tag.hpp"
-#include "spawner state component.hpp"
+#include "spawner state tag.hpp"
 
 WaveStatus nextWave(ECS::Registry &reg) {
   SpawnerState &state = reg.get<SpawnerState>();

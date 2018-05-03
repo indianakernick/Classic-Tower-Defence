@@ -11,7 +11,6 @@
 #include "unit path component.hpp"
 #include "unit stats component.hpp"
 #include "tower shoot component.hpp"
-#include "base health component.hpp"
 #include "slow effect component.hpp"
 #include "unit sprite component.hpp"
 #include "tower effect component.hpp"
@@ -19,10 +18,8 @@
 #include "tower target component.hpp"
 #include "turret tower component.hpp"
 #include "splash tower component.hpp"
-#include "spawner state component.hpp"
 #include "tower sprites component.hpp"
 #include "poison effect component.hpp"
-#include "spawner timing component.hpp"
 #include "tower upgrades component.hpp"
 #include "unit walk anim component.hpp"
 #include "unit death anim component.hpp"
@@ -37,7 +34,6 @@ using CompList = Utils::TypeList<
   UnitPath,
   UnitStats,
   TowerShoot,
-  BaseHealth,
   SlowEffect,
   UnitSprite,
   TowerEffect,
@@ -45,10 +41,8 @@ using CompList = Utils::TypeList<
   TowerTarget,
   TurretTower,
   SplashTower,
-  SpawnerState,
   TowerSprites,
   PoisonEffect,
-  SpawnerTiming,
   TowerUpgrades,
   UnitWalkAnim,
   UnitDeathAnim,

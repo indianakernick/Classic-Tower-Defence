@@ -13,8 +13,8 @@
 #include "unit dir component.hpp"
 #include "position component.hpp"
 #include "unit path component.hpp"
-#include "spawner state component.hpp"
-#include "spawner timing component.hpp"
+#include "spawner state tag.hpp"
+#include "spawner timing tag.hpp"
 #include "unit walk anim component.hpp"
 #include "unit exit distance component.hpp"
 

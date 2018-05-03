@@ -8,7 +8,7 @@
 
 #include "spawner timing system.hpp"
 
-#include "spawner timing component.hpp"
+#include "spawner timing tag.hpp"
 
 void spawnerTimingSystem(ECS::Registry &reg, const float delta) {
   reg.get<SpawnerTiming>().timeSinceLastSpawn += delta;
