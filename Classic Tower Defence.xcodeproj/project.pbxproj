@@ -1407,7 +1407,10 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_PROFILER;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					ENABLE_PROFILER,
+				);
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/nlohmann_json/3.1.0/include,

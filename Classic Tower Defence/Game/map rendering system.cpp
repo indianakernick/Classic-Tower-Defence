@@ -33,8 +33,3 @@ void mapRenderingSystem(
     writer.tileTex(rect.min, rect.max);
   }
 }
-
-//              DEBUG          RELEASE
-//old writer    0.2099         0.01044
-//fast writer   0.04633
-//faster writer 0.04351        0.006055

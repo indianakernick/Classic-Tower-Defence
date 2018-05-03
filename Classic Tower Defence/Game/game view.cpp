@@ -17,6 +17,7 @@
 #include "tower rendering system.hpp"
 #include "unit death sound system.hpp"
 #include "tower firing anim system.hpp"
+#include <Simpleton/Utils/profiler.hpp>
 #include "unit death rendering system.hpp"
 #include "unit health rendering system.hpp"
 #include "tower range rendering system.hpp"
@@ -53,6 +54,8 @@ void GameView::updateCam(const float aspect, const float delta) {
 }
 
 void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
+  PROFILE(GameView::render);
+
   unitWalkAnimSystem(reg);
   unitDeathAnimSystem(reg);
   towerFiringAnimSystem(reg);

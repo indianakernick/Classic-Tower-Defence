@@ -72,6 +72,7 @@ void loadTowers(ECS::Registry &reg) {
   
   for (const json &towerNode : towersNode) {
     TowerProto tower;
+    [[maybe_unused]]
     const size_t unreadCount = readEntity(tower, towerNode);
     assert(unreadCount == 1);
     towers.emplace_back(std::move(tower));
