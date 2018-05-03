@@ -12,7 +12,6 @@
 #include "towers tag.hpp"
 
 struct TowerUpgrades {
-  TowerProto *self;
   TowerProto *first;
   TowerProto *second;
 };
