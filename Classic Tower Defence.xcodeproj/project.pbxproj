@@ -69,6 +69,7 @@
 		456826532099720E00BA6AE8 /* text renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 456826512099720E00BA6AE8 /* text renderer.cpp */; };
 		4568265F209AA2F600BA6AE8 /* 5x8 ascii.png in Resources */ = {isa = PBXBuildFile; fileRef = 4568265D209AA2F500BA6AE8 /* 5x8 ascii.png */; };
 		45682660209AA2F600BA6AE8 /* 5x8 ascii.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4568265E209AA2F600BA6AE8 /* 5x8 ascii.atlas */; };
+		45682663209AA52400BA6AE8 /* next wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682661209AA52400BA6AE8 /* next wave.cpp */; };
 		45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7F72092AA190081CDE1 /* unit effect system.cpp */; };
 		45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */; };
 		45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */; };
@@ -405,6 +406,8 @@
 		456826522099720E00BA6AE8 /* text renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "text renderer.hpp"; sourceTree = "<group>"; };
 		4568265D209AA2F500BA6AE8 /* 5x8 ascii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5x8 ascii.png"; sourceTree = "<group>"; };
 		4568265E209AA2F600BA6AE8 /* 5x8 ascii.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "5x8 ascii.atlas"; sourceTree = "<group>"; };
+		45682661209AA52400BA6AE8 /* next wave.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "next wave.cpp"; sourceTree = "<group>"; };
+		45682662209AA52400BA6AE8 /* next wave.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "next wave.hpp"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -668,6 +671,8 @@
 				45388568208D9C72003EB260 /* create spawner.hpp */,
 				4538856A208DA038003EB260 /* create base.cpp */,
 				4538856B208DA038003EB260 /* create base.hpp */,
+				45682661209AA52400BA6AE8 /* next wave.cpp */,
+				45682662209AA52400BA6AE8 /* next wave.hpp */,
 			);
 			name = Editor;
 			sourceTree = "<group>";
@@ -1202,6 +1207,7 @@
 				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
 				45388569208D9C72003EB260 /* create spawner.cpp in Sources */,
 				45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */,
+				45682663209AA52400BA6AE8 /* next wave.cpp in Sources */,
 				453B15212090508800BFA00D /* unit damage system.cpp in Sources */,
 				4563D58A20969AA100DB2510 /* splash tower shoot system.cpp in Sources */,
 				456826532099720E00BA6AE8 /* text renderer.cpp in Sources */,

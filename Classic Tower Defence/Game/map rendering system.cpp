@@ -10,12 +10,14 @@
 
 #include "map tag.hpp"
 #include "map sprites tag.hpp"
+#include <Simpleton/Utils/profiler.hpp>
 
 void mapRenderingSystem(
   ECS::Registry &reg,
   G2D::QuadWriter &writer,
   const Sprite::Sheet &sheet
 ) {
+  PROFILE(mapRenderingSystem);
   const Map &map = reg.get<Map>();
   const MapSprites &sprites = reg.get<MapSprites>();
 
@@ -31,3 +33,8 @@ void mapRenderingSystem(
     writer.tileTex(rect.min, rect.max);
   }
 }
+
+//              DEBUG          RELEASE
+//old writer    0.2099         0.01044
+//fast writer   0.04633
+//faster writer 0.04351        0.006055
