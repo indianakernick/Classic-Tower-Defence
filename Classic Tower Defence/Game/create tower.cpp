@@ -9,8 +9,10 @@
 #include "create tower.hpp"
 
 #include "towers tag.hpp"
+#include "base gold tag.hpp"
 #include "sound component.hpp"
 #include "position component.hpp"
+#include "tower gold component.hpp"
 #include "tower shoot component.hpp"
 #include "tower timing component.hpp"
 #include "tower target component.hpp"
@@ -23,6 +25,10 @@ ECS::EntityID createTower(
 ) {
   const Towers &towers = reg.get<Towers>();
   const TowerProto &tower = towers.at(index);
+  
+  if (tower.get<TowerGold>().buy > reg.get<BaseGold>().gold) {
+    return ECS::NULL_ENTITY;
+  }
   
   const ECS::EntityID entity = tower(reg);
   reg.assign<Position>(entity, pos);

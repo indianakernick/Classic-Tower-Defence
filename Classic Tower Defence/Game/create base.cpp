@@ -11,8 +11,8 @@
 #include "base gold tag.hpp"
 #include "base health tag.hpp"
 
-void createBase(ECS::Registry &reg, const int32_t health) {
+void createBase(ECS::Registry &reg, const int32_t health, const uint32_t gold) {
   const ECS::EntityID id = reg.create();
   reg.attach<BaseHealth>(id, health);
-  reg.attach<BaseGold>(id, uint32_t(0));
+  reg.attach<BaseGold>(id, gold);
 }

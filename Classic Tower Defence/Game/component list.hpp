@@ -10,6 +10,7 @@
 #include "position component.hpp"
 #include "unit path component.hpp"
 #include "unit stats component.hpp"
+#include "tower gold component.hpp"
 #include "tower shoot component.hpp"
 #include "slow effect component.hpp"
 #include "unit sprite component.hpp"
@@ -33,6 +34,7 @@ using CompList = Utils::TypeList<
   Position,
   UnitPath,
   UnitStats,
+  TowerGold,
   TowerShoot,
   SlowEffect,
   UnitSprite,

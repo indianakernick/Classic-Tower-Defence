@@ -35,7 +35,7 @@ void GameLogic::init(ECS::Registry &reg) {
   loadTowers(reg);
   loadLevel(reg, 0);
   createSpawner(reg, 1.5f);
-  createBase(reg, 1000);
+  createBase(reg, 1000, 1000);
   
   createTower(reg, 0, {11, 4});
   createTower(reg, 1, {11, 7});

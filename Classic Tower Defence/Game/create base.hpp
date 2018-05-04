@@ -11,6 +11,6 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
-void createBase(ECS::Registry &, int32_t);
+void createBase(ECS::Registry &, int32_t, uint32_t);
 
 #endif

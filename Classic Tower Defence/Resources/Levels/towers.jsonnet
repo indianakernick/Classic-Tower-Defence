@@ -16,6 +16,10 @@ local towerSprites(sprite) = {
       rof: 3,
       armourPiercing: 0.1
     },
+    TowerGold: {
+      buy: 100,
+      sell: 50
+    },
     TurretTower: {},
     TowerSprites: towerSprites("blaster"),
     upgrades: {},
@@ -29,6 +33,10 @@ local towerSprites(sprite) = {
       damage: 50,
       rof: 1/2,
       armourPiercing: 0.6
+    },
+    TowerGold: {
+      buy: 100,
+      sell: 50
     },
     SplashTower: {
       aoe: 10
@@ -52,6 +60,10 @@ local towerSprites(sprite) = {
       rof: 1/2,
       armourPiercing: 0.4
     },
+    TowerGold: {
+      buy: 100,
+      sell: 50
+    },
     SplashTower: {
       aoe: 3
     },
@@ -73,6 +85,10 @@ local towerSprites(sprite) = {
       damage: 5,
       rof: 1/4,
       armourPiercing: 0.4
+    },
+    TowerGold: {
+      buy: 100,
+      sell: 50
     },
     SplashTower: {
       aoe: 3
