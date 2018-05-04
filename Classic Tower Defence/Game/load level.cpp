@@ -12,7 +12,11 @@
 #include "map tag.hpp"
 #include "waves tag.hpp"
 #include "init map info.hpp"
+#include "base gold tag.hpp"
 #include "map sprites tag.hpp"
+#include "base health tag.hpp"
+#include "spawner state tag.hpp"
+#include "spawner timing tag.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
 
@@ -55,8 +59,17 @@ void loadLevel(ECS::Registry &reg, const int level) {
   json levelNode;
   file >> levelNode;
   Data::get(reg.get<MapSprites>().sprite, levelNode, "sprite");
-  reg.get<Waves>() = levelNode.at("waves").get<Waves>();
   
   loadMap(reg, levelNode.at("map").get<int>());
   initMapInfo(reg);
+  
+  reg.get<Waves>() = levelNode.at("waves").get<Waves>();
+  
+  Data::get(reg.get<BaseHealth>().health, levelNode, "health");
+  Data::get(reg.get<BaseGold>().gold, levelNode, "gold");
+  
+  SpawnerTiming &timing = reg.get<SpawnerTiming>();
+  Data::get(timing.minTimeBetweenSpawns, levelNode, "spawntime");
+  timing.timeSinceLastSpawn = timing.minTimeBetweenSpawns + 1.0f;
+  reg.get<SpawnerState>() = {};
 }

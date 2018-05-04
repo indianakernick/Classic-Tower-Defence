@@ -4,6 +4,9 @@ local getSound = import "getsound.libsonnet";
 {
   map: 0,
   sprite: getSprite("map 0"),
+  gold: 1000,
+  health: 1000,
+  spawntime: 1.5,
   waves: [
     {
       quantity: 20,

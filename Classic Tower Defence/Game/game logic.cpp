@@ -14,7 +14,6 @@
 #include "load towers.hpp"
 #include "create spawner.hpp"
 #include "create tower.hpp"
-#include "create base.hpp"
 #include "unit motion system.hpp"
 #include "unit death system.hpp"
 #include "spawner system.hpp"
@@ -34,8 +33,6 @@ void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
   loadTowers(reg);
   loadLevel(reg, 0);
-  createSpawner(reg, 1.5f);
-  createBase(reg, 1000, 1000);
   
   createTower(reg, 0, {11, 4});
   createTower(reg, 1, {11, 7});

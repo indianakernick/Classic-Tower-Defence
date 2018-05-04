@@ -37,7 +37,6 @@
 		45388563208D8F50003EB260 /* game view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388561208D8F50003EB260 /* game view.cpp */; };
 		45388566208D99EF003EB260 /* game logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388564208D99EF003EB260 /* game logic.cpp */; };
 		45388569208D9C72003EB260 /* create spawner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388567208D9C72003EB260 /* create spawner.cpp */; };
-		4538856C208DA038003EB260 /* create base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538856A208DA038003EB260 /* create base.cpp */; };
 		4538857C208DF511003EB260 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4538857B208DF510003EB260 /* SDL2_mixer.framework */; };
 		4538857D208DF51A003EB260 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4538857B208DF510003EB260 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45388580208DF7AA003EB260 /* blaster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4538857F208DF7AA003EB260 /* blaster.wav */; };
@@ -218,8 +217,6 @@
 		45388565208D99EF003EB260 /* game logic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game logic.hpp"; sourceTree = "<group>"; };
 		45388567208D9C72003EB260 /* create spawner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create spawner.cpp"; sourceTree = "<group>"; };
 		45388568208D9C72003EB260 /* create spawner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create spawner.hpp"; sourceTree = "<group>"; };
-		4538856A208DA038003EB260 /* create base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create base.cpp"; sourceTree = "<group>"; };
-		4538856B208DA038003EB260 /* create base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create base.hpp"; sourceTree = "<group>"; };
 		45388570208DB3C2003EB260 /* blaster.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = blaster.anim; sourceTree = "<group>"; };
 		45388572208DC45B003EB260 /* map.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = map.anim; sourceTree = "<group>"; };
 		4538857B208DF510003EB260 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
@@ -676,8 +673,6 @@
 				45388502208C18B8003EB260 /* upgrade tower.hpp */,
 				45388567208D9C72003EB260 /* create spawner.cpp */,
 				45388568208D9C72003EB260 /* create spawner.hpp */,
-				4538856A208DA038003EB260 /* create base.cpp */,
-				4538856B208DA038003EB260 /* create base.hpp */,
 				45682661209AA52400BA6AE8 /* next wave.cpp */,
 				45682662209AA52400BA6AE8 /* next wave.hpp */,
 				45682666209BFF9400BA6AE8 /* afford tower.cpp */,
@@ -1235,7 +1230,6 @@
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				4563D58720969A8800DB2510 /* turret tower shoot system.cpp in Sources */,
 				45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */,
-				4538856C208DA038003EB260 /* create base.cpp in Sources */,
 				45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */,
 				4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
