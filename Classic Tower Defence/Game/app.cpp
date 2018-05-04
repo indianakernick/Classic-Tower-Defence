@@ -71,7 +71,7 @@ bool App::input() {
 void App::update(const float delta) {
   PROFILE(App::update);
   
-  logic.update(reg, delta);
+  logic.update(reg, 0.05f);
   view.playSounds(reg);
 }
 

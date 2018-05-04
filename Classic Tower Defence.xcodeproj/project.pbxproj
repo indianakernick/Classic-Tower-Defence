@@ -410,6 +410,39 @@
 		45682665209BFE6B00BA6AE8 /* tower gold component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower gold component.hpp"; sourceTree = "<group>"; };
 		45682666209BFF9400BA6AE8 /* afford tower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "afford tower.cpp"; sourceTree = "<group>"; };
 		45682667209BFF9400BA6AE8 /* afford tower.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "afford tower.hpp"; sourceTree = "<group>"; };
+		45682669209C44ED00BA6AE8 /* big robot.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "big robot.anim"; sourceTree = "<group>"; };
+		4568266A209C450400BA6AE8 /* big robot 2 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 3.png"; sourceTree = "<group>"; };
+		4568266B209C450400BA6AE8 /* big robot 2 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 7.png"; sourceTree = "<group>"; };
+		4568266C209C450500BA6AE8 /* big robot 3 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 3 5.png"; sourceTree = "<group>"; };
+		4568266D209C450500BA6AE8 /* big robot 1 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 1 0.png"; sourceTree = "<group>"; };
+		4568266E209C450500BA6AE8 /* big robot 2 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 4.png"; sourceTree = "<group>"; };
+		4568266F209C450500BA6AE8 /* big robot 3 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 3 3.png"; sourceTree = "<group>"; };
+		45682670209C450600BA6AE8 /* big robot 0 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 5.png"; sourceTree = "<group>"; };
+		45682671209C450600BA6AE8 /* big robot 3 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 3 2.png"; sourceTree = "<group>"; };
+		45682672209C450600BA6AE8 /* big robot 0 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 2.png"; sourceTree = "<group>"; };
+		45682673209C450600BA6AE8 /* big robot 0 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 3.png"; sourceTree = "<group>"; };
+		45682674209C450600BA6AE8 /* big robot 1 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 1 1.png"; sourceTree = "<group>"; };
+		45682675209C450700BA6AE8 /* big robot 2 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 1.png"; sourceTree = "<group>"; };
+		45682676209C450900BA6AE8 /* big robot 1 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 1 3.png"; sourceTree = "<group>"; };
+		45682677209C450A00BA6AE8 /* big robot 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 1 2.png"; sourceTree = "<group>"; };
+		45682678209C450B00BA6AE8 /* big robot 0 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 0.png"; sourceTree = "<group>"; };
+		45682679209C450B00BA6AE8 /* big robot 2 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 5.png"; sourceTree = "<group>"; };
+		4568267A209C450C00BA6AE8 /* big robot 1 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 1 4.png"; sourceTree = "<group>"; };
+		4568267B209C450D00BA6AE8 /* big robot 2 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 0.png"; sourceTree = "<group>"; };
+		4568267C209C450D00BA6AE8 /* big robot 0 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 1.png"; sourceTree = "<group>"; };
+		4568267D209C450E00BA6AE8 /* big robot 2 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 6.png"; sourceTree = "<group>"; };
+		4568267E209C450E00BA6AE8 /* big robot 0 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 6.png"; sourceTree = "<group>"; };
+		4568267F209C450E00BA6AE8 /* big robot 3 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 3 6.png"; sourceTree = "<group>"; };
+		45682680209C450F00BA6AE8 /* big robot 3 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 3 4.png"; sourceTree = "<group>"; };
+		45682681209C450F00BA6AE8 /* big robot 3 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 3 7.png"; sourceTree = "<group>"; };
+		45682682209C450F00BA6AE8 /* big robot 1 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 1 6.png"; sourceTree = "<group>"; };
+		45682683209C451000BA6AE8 /* big robot 1 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 1 5.png"; sourceTree = "<group>"; };
+		45682684209C451100BA6AE8 /* big robot 1 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 1 7.png"; sourceTree = "<group>"; };
+		45682685209C451100BA6AE8 /* big robot 3 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 3 1.png"; sourceTree = "<group>"; };
+		45682686209C451100BA6AE8 /* big robot 3 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 3 0.png"; sourceTree = "<group>"; };
+		45682687209C451200BA6AE8 /* big robot 0 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 4.png"; sourceTree = "<group>"; };
+		45682688209C451200BA6AE8 /* big robot 0 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 7.png"; sourceTree = "<group>"; };
+		45682689209C451200BA6AE8 /* big robot 2 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 2.png"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -714,6 +747,38 @@
 		45388513208C5723003EB260 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				45682678209C450B00BA6AE8 /* big robot 0 0.png */,
+				4568267C209C450D00BA6AE8 /* big robot 0 1.png */,
+				45682672209C450600BA6AE8 /* big robot 0 2.png */,
+				45682673209C450600BA6AE8 /* big robot 0 3.png */,
+				45682687209C451200BA6AE8 /* big robot 0 4.png */,
+				45682670209C450600BA6AE8 /* big robot 0 5.png */,
+				4568267E209C450E00BA6AE8 /* big robot 0 6.png */,
+				45682688209C451200BA6AE8 /* big robot 0 7.png */,
+				4568266D209C450500BA6AE8 /* big robot 1 0.png */,
+				45682674209C450600BA6AE8 /* big robot 1 1.png */,
+				45682677209C450A00BA6AE8 /* big robot 1 2.png */,
+				45682676209C450900BA6AE8 /* big robot 1 3.png */,
+				4568267A209C450C00BA6AE8 /* big robot 1 4.png */,
+				45682683209C451000BA6AE8 /* big robot 1 5.png */,
+				45682682209C450F00BA6AE8 /* big robot 1 6.png */,
+				45682684209C451100BA6AE8 /* big robot 1 7.png */,
+				4568267B209C450D00BA6AE8 /* big robot 2 0.png */,
+				45682675209C450700BA6AE8 /* big robot 2 1.png */,
+				45682689209C451200BA6AE8 /* big robot 2 2.png */,
+				4568266A209C450400BA6AE8 /* big robot 2 3.png */,
+				4568266E209C450500BA6AE8 /* big robot 2 4.png */,
+				45682679209C450B00BA6AE8 /* big robot 2 5.png */,
+				4568267D209C450E00BA6AE8 /* big robot 2 6.png */,
+				4568266B209C450400BA6AE8 /* big robot 2 7.png */,
+				45682686209C451100BA6AE8 /* big robot 3 0.png */,
+				45682685209C451100BA6AE8 /* big robot 3 1.png */,
+				45682671209C450600BA6AE8 /* big robot 3 2.png */,
+				4568266F209C450500BA6AE8 /* big robot 3 3.png */,
+				45682680209C450F00BA6AE8 /* big robot 3 4.png */,
+				4568266C209C450500BA6AE8 /* big robot 3 5.png */,
+				4568267F209C450E00BA6AE8 /* big robot 3 6.png */,
+				45682681209C450F00BA6AE8 /* big robot 3 7.png */,
 				453B156B2090C58A00BFA00D /* armour 0.png */,
 				453B15762090C58E00BFA00D /* armour 1.png */,
 				453B15702090C58C00BFA00D /* armour 2.png */,
@@ -849,20 +914,21 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				4563D5BA20970E8800DB2510 /* radius.anim */,
-				4563D5B32096D4AD00DB2510 /* iceball.anim */,
-				4563D5AB2096CF7D00DB2510 /* snowball.anim */,
-				4563D5982096BCAC00DB2510 /* explosive cannon.anim */,
-				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
-				453B15A82091A31A00BFA00D /* explosion.anim */,
 				453B15782090C7B200BFA00D /* armour.anim */,
+				45682669209C44ED00BA6AE8 /* big robot.anim */,
 				45388570208DB3C2003EB260 /* blaster.anim */,
 				453B1551209081D700BFA00D /* cannon.anim */,
-				453B15772090C7B200BFA00D /* health.anim */,
-				45388572208DC45B003EB260 /* map.anim */,
-				45388531208D7345003EB260 /* robot.anim */,
-				45388533208D7356003EB260 /* ui plan.anim */,
+				453B15A82091A31A00BFA00D /* explosion.anim */,
+				4563D5982096BCAC00DB2510 /* explosive cannon.anim */,
 				4563D5B82097034F00DB2510 /* generate radius.js */,
+				453B15772090C7B200BFA00D /* health.anim */,
+				4563D5B32096D4AD00DB2510 /* iceball.anim */,
+				45388572208DC45B003EB260 /* map.anim */,
+				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
+				4563D5BA20970E8800DB2510 /* radius.anim */,
+				45388531208D7345003EB260 /* robot.anim */,
+				4563D5AB2096CF7D00DB2510 /* snowball.anim */,
+				45388533208D7356003EB260 /* ui plan.anim */,
 			);
 			path = Animations;
 			sourceTree = "<group>";

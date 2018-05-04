@@ -72,6 +72,4 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   writer.section({textCam.transform.toPixels(), textSheetTex.tex()});
   textRenderer.resetCursor();
   textRenderer.pushText(writer, textSheetTex.sheet(), "I created a text renderer!\nIsn't it cool!");
-  textRenderer.startLine();
-  textRenderer.pushText(writer, textSheetTex.sheet(), "Some text that renders over the game");
 }
