@@ -18,6 +18,7 @@ struct UnitStatsBase {
   float armourRegen;
   float dodge;
   float moveSpeed;
+  uint32_t gold;
 };
 
 struct UnitStats : UnitStatsBase {
@@ -31,6 +32,7 @@ inline void from_json(const json &j, UnitStatsBase &comp) {
   DATA_GET(comp, armourRegen);
   DATA_GET(comp, dodge);
   DATA_GET(comp, moveSpeed);
+  DATA_GET(comp, gold);
 }
 
 #endif

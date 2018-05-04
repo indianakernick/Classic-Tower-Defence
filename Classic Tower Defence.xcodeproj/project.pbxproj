@@ -408,6 +408,7 @@
 		4568265E209AA2F600BA6AE8 /* 5x8 ascii.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "5x8 ascii.atlas"; sourceTree = "<group>"; };
 		45682661209AA52400BA6AE8 /* next wave.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "next wave.cpp"; sourceTree = "<group>"; };
 		45682662209AA52400BA6AE8 /* next wave.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "next wave.hpp"; sourceTree = "<group>"; };
+		45682664209BFBFC00BA6AE8 /* base gold tag.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "base gold tag.hpp"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -636,6 +637,7 @@
 			isa = PBXGroup;
 			children = (
 				453884D0208AE8DA003EB260 /* base health tag.hpp */,
+				45682664209BFBFC00BA6AE8 /* base gold tag.hpp */,
 			);
 			name = Base;
 			sourceTree = "<group>";
