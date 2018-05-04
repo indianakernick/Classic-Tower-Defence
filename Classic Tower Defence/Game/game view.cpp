@@ -34,10 +34,10 @@ void GameView::init(G2D::Renderer &renderer) {
   radiusSheetTex.load(renderer, "radius");
   textSheetTex.load(renderer, "5x8 ascii");
   
-  textRenderer.setGlyphSize({5.0f, 8.0f});
-  textRenderer.setAdvance({6.0f, -9.0f});
-  textRenderer.setCursor({0.0f, 338.0f});
-  textRenderer.setScale(2.0f);
+  text.setGlyphSize({5.0f, 8.0f});
+  text.setAdvance({6.0f, -9.0f});
+  text.setCursor({0.0f, 338.0f});
+  text.setScale(2.0f);
 
   sounds.load();
 }
@@ -70,6 +70,11 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   //writer.section({camera.transform.toPixels(), sheetTex.tex()});
   
   writer.section({textCam.transform.toPixels(), textSheetTex.tex()});
-  textRenderer.resetCursor();
-  textRenderer.pushText(writer, textSheetTex.sheet(), "I created a text renderer!\nIsn't it cool!");
+  text.resetCursor();
+  text.pushText(writer, textSheetTex.sheet(), "I created a text renderer!\nIsn't it cool!");
+  text.newline();
+  text.pushText(writer, textSheetTex.sheet(), "Test\tTab\tYeah\n");
+  text.pushText(writer, textSheetTex.sheet(), "Tab\t\vseems\t\vto\t\v\rwork\n");
+  text.pushText(writer, textSheetTex.sheet(), "Deadpal\b\bool");
+  
 }

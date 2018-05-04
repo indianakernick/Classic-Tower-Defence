@@ -30,16 +30,25 @@ public:
   void setDepth(float);
   
   /// Move the cursor down to the next line and to the start of the line
-  void startLine();
-  /// Move the cursor down to the next line without moving horizontally
-  void nextLine();
+  void newline();
   /// Move the cursor right to the next character
-  void nextChar();
+  void space();
+  /// Move the cursor left to the previous character.
+  void backspace();
+  /// Move the cursor to the next position that is an integer multiple of 8
+  /// times the horizontal advance
+  void tab();
+  /// Move the cursor down to the next line without moving horizontally
+  void vertTab();
   /// Move the cursor to the first character of the current line
-  void firstChar();
+  void carriageReturn();
+  
+  /// Take a whitespace character ('\n' ' ' '\b' '\t' '\v' '\r') and move the
+  /// cursor appropriately. Return true if the character was handled.
+  bool whitespace(char);
   
   /// Render a single character. Only renders printable characters.
-  /// Non-printable characters (except for '\n' and ' ') are ignored.
+  /// Whitespace characters ('\n' ' ' '\t' '\v' '\r') are handled appropriately
   void pushChar(G2D::QuadWriter &, const Sprite::Sheet &, char);
   /// Render a string of characters. Calls pushChar for each character.
   void pushText(G2D::QuadWriter &, const Sprite::Sheet &, std::string_view);

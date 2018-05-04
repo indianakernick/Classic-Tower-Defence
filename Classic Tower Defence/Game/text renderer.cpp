@@ -33,21 +33,55 @@ void TextRenderer::setDepth(const float newDepth) {
   depth = newDepth;
 }
 
-void TextRenderer::startLine() {
-  firstChar();
-  nextLine();
+void TextRenderer::newline() {
+  carriageReturn();
+  vertTab();
 }
 
-void TextRenderer::nextLine() {
-  pos.y += advance.y * scale;
-}
-
-void TextRenderer::nextChar() {
+void TextRenderer::space() {
   pos.x += advance.x * scale;
 }
 
-void TextRenderer::firstChar() {
+void TextRenderer::backspace() {
+  pos.x = std::max(beginning.x, pos.x - advance.x * scale);
+}
+
+void TextRenderer::tab() {
+  const float scaledAdvance = scale * advance.x;
+  const int chars = std::nearbyint(pos.x / scaledAdvance);
+  pos.x += scaledAdvance * (8 - chars % 8);
+}
+
+void TextRenderer::vertTab() {
+  pos.y += advance.y * scale;
+}
+
+void TextRenderer::carriageReturn() {
   pos.x = beginning.x;
+}
+
+bool TextRenderer::whitespace(const char c) {
+  switch (c) {
+    case '\n':
+      newline();
+      return true;
+    case ' ':
+      space();
+      return true;
+    case '\b':
+      backspace();
+      return true;
+    case '\t':
+      tab();
+      return true;
+    case '\v':
+      vertTab();
+      return true;
+    case '\r':
+      carriageReturn();
+      return true;
+  }
+  return false;
 }
 
 void TextRenderer::pushChar(
@@ -55,13 +89,7 @@ void TextRenderer::pushChar(
   const Sprite::Sheet &sheet,
   const char c
 ) {
-  if (c == ' ') {
-    return nextChar();
-  }
-  if (c == '\n') {
-    return startLine();
-  }
-  if (!std::isprint(c)) {
+  if (whitespace(c) || !std::isprint(c)) {
     return;
   }
   
@@ -74,7 +102,7 @@ void TextRenderer::pushChar(
   // return the rectangle for '!' (the character after space)
   writer.tileTex(sheet.getSprite(c - '!'));
   
-  nextChar();
+  space();
 }
 
 void TextRenderer::pushText(

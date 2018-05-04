@@ -37,7 +37,7 @@ private:
   G2D::SheetTex textSheetTex;
   Cam2D::Camera textCam;
   Cam2D::ZoomToFit textZoom;
-  TextRenderer textRenderer;
+  TextRenderer text;
 };
 
 #endif
