@@ -443,6 +443,17 @@
 		45682687209C451200BA6AE8 /* big robot 0 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 4.png"; sourceTree = "<group>"; };
 		45682688209C451200BA6AE8 /* big robot 0 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 7.png"; sourceTree = "<group>"; };
 		45682689209C451200BA6AE8 /* big robot 2 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 2.png"; sourceTree = "<group>"; };
+		4568268A209D378700BA6AE8 /* laser.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.anim; sourceTree = "<group>"; };
+		4568268B209D37AE00BA6AE8 /* laser base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser base.png"; sourceTree = "<group>"; };
+		4568268C209D37AF00BA6AE8 /* laser beam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser beam.png"; sourceTree = "<group>"; };
+		4568268D209D37BF00BA6AE8 /* laser 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 2.png"; sourceTree = "<group>"; };
+		4568268E209D37BF00BA6AE8 /* laser 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 1.png"; sourceTree = "<group>"; };
+		4568268F209D37C000BA6AE8 /* laser 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 3.png"; sourceTree = "<group>"; };
+		45682690209D37C000BA6AE8 /* laser 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 0.png"; sourceTree = "<group>"; };
+		45682691209D37C000BA6AE8 /* laser 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 5.png"; sourceTree = "<group>"; };
+		45682692209D37C000BA6AE8 /* laser 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 4.png"; sourceTree = "<group>"; };
+		45682693209D385200BA6AE8 /* projectile tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "projectile tower component.hpp"; sourceTree = "<group>"; };
+		45682694209D386A00BA6AE8 /* beam tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "beam tower component.hpp"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -613,6 +624,8 @@
 				4563D58B2096A16800DB2510 /* tower effect component.hpp */,
 				4563D5B72096F4E200DB2510 /* tower shoot component.hpp */,
 				45682665209BFE6B00BA6AE8 /* tower gold component.hpp */,
+				45682693209D385200BA6AE8 /* projectile tower component.hpp */,
+				45682694209D386A00BA6AE8 /* beam tower component.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -747,6 +760,23 @@
 		45388513208C5723003EB260 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				453B156B2090C58A00BFA00D /* armour 0.png */,
+				453B15762090C58E00BFA00D /* armour 1.png */,
+				453B15702090C58C00BFA00D /* armour 2.png */,
+				453B156D2090C58B00BFA00D /* armour 3.png */,
+				453B15742090C58D00BFA00D /* armour 4.png */,
+				453B15732090C58D00BFA00D /* armour 5.png */,
+				453B15752090C58D00BFA00D /* armour 6.png */,
+				453B156A2090C58900BFA00D /* armour 7.png */,
+				453B15682090C58800BFA00D /* armour 8.png */,
+				453B156F2090C58C00BFA00D /* armour 9.png */,
+				453B156C2090C58A00BFA00D /* armour 10.png */,
+				453B15672090C58800BFA00D /* armour 11.png */,
+				453B15712090C58C00BFA00D /* armour 12.png */,
+				453B156E2090C58B00BFA00D /* armour 13.png */,
+				453B15722090C58D00BFA00D /* armour 14.png */,
+				453B15662090C58800BFA00D /* armour 15.png */,
+				453B15692090C58900BFA00D /* armour 16.png */,
 				45682678209C450B00BA6AE8 /* big robot 0 0.png */,
 				4568267C209C450D00BA6AE8 /* big robot 0 1.png */,
 				45682672209C450600BA6AE8 /* big robot 0 2.png */,
@@ -779,23 +809,6 @@
 				4568266C209C450500BA6AE8 /* big robot 3 5.png */,
 				4568267F209C450E00BA6AE8 /* big robot 3 6.png */,
 				45682681209C450F00BA6AE8 /* big robot 3 7.png */,
-				453B156B2090C58A00BFA00D /* armour 0.png */,
-				453B15762090C58E00BFA00D /* armour 1.png */,
-				453B15702090C58C00BFA00D /* armour 2.png */,
-				453B156D2090C58B00BFA00D /* armour 3.png */,
-				453B15742090C58D00BFA00D /* armour 4.png */,
-				453B15732090C58D00BFA00D /* armour 5.png */,
-				453B15752090C58D00BFA00D /* armour 6.png */,
-				453B156A2090C58900BFA00D /* armour 7.png */,
-				453B15682090C58800BFA00D /* armour 8.png */,
-				453B156F2090C58C00BFA00D /* armour 9.png */,
-				453B156C2090C58A00BFA00D /* armour 10.png */,
-				453B15672090C58800BFA00D /* armour 11.png */,
-				453B15712090C58C00BFA00D /* armour 12.png */,
-				453B156E2090C58B00BFA00D /* armour 13.png */,
-				453B15722090C58D00BFA00D /* armour 14.png */,
-				453B15662090C58800BFA00D /* armour 15.png */,
-				453B15692090C58900BFA00D /* armour 16.png */,
 				45388559208D76E9003EB260 /* blaster 0.png */,
 				45388558208D76E8003EB260 /* blaster 1.png */,
 				45388555208D76E8003EB260 /* blaster 2.png */,
@@ -853,6 +866,14 @@
 				4563D5AF2096D49100DB2510 /* iceball 4.png */,
 				4563D5B12096D49B00DB2510 /* iceball base.png */,
 				4563D5B22096D49C00DB2510 /* iceball projectile.png */,
+				45682690209D37C000BA6AE8 /* laser 0.png */,
+				4568268E209D37BF00BA6AE8 /* laser 1.png */,
+				4568268D209D37BF00BA6AE8 /* laser 2.png */,
+				4568268F209D37C000BA6AE8 /* laser 3.png */,
+				45682692209D37C000BA6AE8 /* laser 4.png */,
+				45682691209D37C000BA6AE8 /* laser 5.png */,
+				4568268B209D37AE00BA6AE8 /* laser base.png */,
+				4568268C209D37AF00BA6AE8 /* laser beam.png */,
 				4538852A208C5CE5003EB260 /* map 0.png */,
 				4538852B208C5CE5003EB260 /* map 1.png */,
 				45388528208C5CE4003EB260 /* map 2.png */,
@@ -923,6 +944,7 @@
 				4563D5B82097034F00DB2510 /* generate radius.js */,
 				453B15772090C7B200BFA00D /* health.anim */,
 				4563D5B32096D4AD00DB2510 /* iceball.anim */,
+				4568268A209D378700BA6AE8 /* laser.anim */,
 				45388572208DC45B003EB260 /* map.anim */,
 				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
 				4563D5BA20970E8800DB2510 /* radius.anim */,
