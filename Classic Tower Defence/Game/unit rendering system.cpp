@@ -26,7 +26,7 @@ void unitRenderingSystem(
     id += view.get<UnitWalkAnim>(entity).frame;
     
     writer.quad();
-    writer.depth(0.5f);
+    writer.depth(0.6f);
     writer.tilePos(view.get<Position>(entity).pos);
     writer.tileTex(sheet.getSprite(id));
   }
