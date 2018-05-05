@@ -24,10 +24,10 @@ void towerBeamRenderingSystem(
     Position, TowerTarget, TowerFiringAnim, TowerSprites, BeamTower
   >();
   for (const ECS::EntityID entity : view) {
-    if (view.get<TowerFiringAnim>(entity).frame == 0) {
+    const TowerSprites sprites = view.get<TowerSprites>(entity);
+    if (view.get<TowerFiringAnim>(entity).frame != sprites.firingFrames - 1) {
       continue;
     }
-    const Sprite::ID sprite = view.get<TowerSprites>(entity).projectile;
     const glm::vec2 pos = view.get<Position>(entity).pos + glm::vec2(0.5f);
     const TowerTarget target = view.get<TowerTarget>(entity);
     const float dist = glm::length(target.vec);
@@ -35,6 +35,6 @@ void towerBeamRenderingSystem(
     writer.quad();
     writer.depth(Depth::TOWER_BEAM);
     writer.rotTilePos<G2D::Origin::MID_LEFT>(-target.angle, pos, {dist, 1.0f});
-    writer.tileTex(sheet.getSprite(sprite));
+    writer.tileTex(sheet.getSprite(sprites.projectile));
   }
 }

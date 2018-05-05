@@ -1,18 +1,19 @@
 //
-//  tower firing anim system.cpp
+//  tower projectile anim system.cpp
 //  Classic Tower Defence
 //
 //  Created by Indi Kernick on 21/4/18.
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#include "tower firing anim system.hpp"
+#include "tower projectile anim system.hpp"
 
 #include "tower sprites component.hpp"
+#include "projectile tower component.hpp"
 #include "tower firing anim component.hpp"
 
-void towerFiringAnimSystem(ECS::Registry &reg) {
-  auto view = reg.view<TowerSprites, TowerFiringAnim>();
+void towerProjectileAnimSystem(ECS::Registry &reg) {
+  auto view = reg.view<TowerSprites, TowerFiringAnim, ProjectileTower>();
   for (const ECS::EntityID entity : view) {
     TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);
     if (!anim.firing) {
