@@ -10,6 +10,7 @@
 #include "position component.hpp"
 #include "unit path component.hpp"
 #include "unit stats component.hpp"
+#include "beam tower component.hpp"
 #include "tower gold component.hpp"
 #include "tower shoot component.hpp"
 #include "slow effect component.hpp"
@@ -24,6 +25,7 @@
 #include "tower upgrades component.hpp"
 #include "unit walk anim component.hpp"
 #include "unit death anim component.hpp"
+#include "projectile tower component.hpp"
 #include "tower firing anim component.hpp"
 #include "unit exit distance component.hpp"
 #include "common tower stats component.hpp"
@@ -34,6 +36,7 @@ using CompList = Utils::TypeList<
   Position,
   UnitPath,
   UnitStats,
+  BeamTower,
   TowerGold,
   TowerShoot,
   SlowEffect,
@@ -48,6 +51,7 @@ using CompList = Utils::TypeList<
   TowerUpgrades,
   UnitWalkAnim,
   UnitDeathAnim,
+  ProjectileTower,
   TowerFiringAnim,
   UnitExitDistance,
   CommonTowerStats

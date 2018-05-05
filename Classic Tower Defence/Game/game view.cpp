@@ -21,6 +21,7 @@
 #include "unit death rendering system.hpp"
 #include "unit health rendering system.hpp"
 #include "tower range rendering system.hpp"
+#include "tower projectile rendering system.hpp"
 
 void GameView::init(G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
@@ -66,6 +67,7 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   towerRenderingSystem(reg, writer, sheetTex.sheet());
   unitDeathRenderingSystem(reg, writer, sheetTex.sheet());
   unitHealthRenderingSystem(reg, writer, sheetTex.sheet());
+  towerProjectileRenderingSystem(reg, writer, sheetTex.sheet());
   
   //writer.section({camera.transform.toPixels(), sheetTex.tex()});
   

@@ -27,7 +27,7 @@ void towerRenderingSystem(
     const TowerTarget target = view.get<TowerTarget>(entity);
     
     writer.quad();
-    writer.depth(0.5f);
+    writer.depth(0.6f);
     writer.tilePos(pos);
     writer.tileTex(sheet.getSprite(sprites.base));
     
@@ -35,13 +35,5 @@ void towerRenderingSystem(
     writer.depth(0.4f);
     writer.rotTilePos(target.angle, pos);
     writer.tileTex(sheet.getSprite(gun));
-    
-    if (frame != 0) {
-      const float progress = static_cast<float>(frame) / sprites.firingFrames;
-      writer.quad();
-      writer.depth(0.45f);
-      writer.rotTilePos(target.angle, pos + target.vec * progress);
-      writer.tileTex(sheet.getSprite(sprites.projectile));
-    }
   }
 }

@@ -46,6 +46,11 @@ namespace {
           proto.template assign<Comp>(component.get<Comp>());
           read = true;
         }
+      } else if constexpr (std::is_empty_v<Comp>) {
+        if (Utils::typeName<Comp>() == name) {
+          proto.template assign<Comp>();
+          read = true;
+        }
       }
     });
     return read;

@@ -10,6 +10,7 @@ local towerSprites(sprite) = {
 
 [
   {
+    ProjectileTower: {},
     CommonTowerStats: {
       range: 6,
       damage: 10,
@@ -28,6 +29,7 @@ local towerSprites(sprite) = {
     }
   },
   {
+    ProjectileTower: {},
     CommonTowerStats: {
       range: 4,
       damage: 50,
@@ -54,6 +56,7 @@ local towerSprites(sprite) = {
     }
   },
   {
+    ProjectileTower: {},
     CommonTowerStats: {
       range: 4,
       damage: 5,
@@ -80,6 +83,7 @@ local towerSprites(sprite) = {
     }
   },
   {
+    ProjectileTower: {},
     CommonTowerStats: {
       range: 4,
       damage: 5,
