@@ -8,6 +8,7 @@
 
 #include "tower beam rendering system.hpp"
 
+#include "depth.hpp"
 #include "position component.hpp"
 #include "beam tower component.hpp"
 #include "tower target component.hpp"
@@ -32,7 +33,7 @@ void towerBeamRenderingSystem(
     const float dist = glm::length(target.vec);
     
     writer.quad();
-    writer.depth(0.5f);
+    writer.depth(Depth::TOWER_BEAM);
     writer.rotTilePos<G2D::Origin::MID_LEFT>(-target.angle, pos, {dist, 1.0f});
     writer.tileTex(sheet.getSprite(sprite));
   }

@@ -8,6 +8,7 @@
 
 #include "tower projectile rendering system.hpp"
 
+#include "depth.hpp"
 #include "position component.hpp"
 #include "tower target component.hpp"
 #include "tower sprites component.hpp"
@@ -33,7 +34,7 @@ void towerProjectileRenderingSystem(
     
     const float progress = static_cast<float>(frame) / sprites.firingFrames;
     writer.quad();
-    writer.depth(0.5f);
+    writer.depth(Depth::TOWER_PROJ);
     writer.rotTilePos(target.angle, pos + target.vec * progress);
     writer.tileTex(sheet.getSprite(sprites.projectile));
   }

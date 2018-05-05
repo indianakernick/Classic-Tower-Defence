@@ -8,6 +8,7 @@
 
 #include "unit death rendering system.hpp"
 
+#include "depth.hpp"
 #include "position component.hpp"
 #include "unit sprite component.hpp"
 #include "unit death anim component.hpp"
@@ -23,7 +24,7 @@ void unitDeathRenderingSystem(
     sprite += view.get<UnitDeathAnim>(entity).frame;
   
     writer.quad();
-    writer.depth(0.0f);
+    writer.depth(Depth::UNIT_DEATH);
     writer.tilePos(view.get<Position>(entity).pos);
     writer.tileTex(sheet.getSprite(sprite));
   }

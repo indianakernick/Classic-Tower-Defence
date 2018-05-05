@@ -8,6 +8,7 @@
 
 #include "unit health rendering system.hpp"
 
+#include "depth.hpp"
 #include "position component.hpp"
 #include "unit stats component.hpp"
 
@@ -27,7 +28,7 @@ void unitHealthRenderingSystem(
     
     if (maxHealth - stats.health > 1.0f) {
       writer.quad();
-      writer.depth(0.0f);
+      writer.depth(Depth::UNIT_HEALTH);
       writer.tilePos(pos);
       writer.tileTex(sheet.getSprite(
         healthID + std::round(stats.health / maxHealth * 16)
@@ -36,7 +37,7 @@ void unitHealthRenderingSystem(
     
     if (maxArmour - stats.armour > 1.0f) {
       writer.quad();
-      writer.depth(0.0f);
+      writer.depth(Depth::UNIT_HEALTH);
       writer.tilePos(pos);
       writer.tileTex(sheet.getSprite(
         armourID + std::round(stats.armour / maxArmour * 16)

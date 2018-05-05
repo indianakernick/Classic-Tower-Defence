@@ -8,6 +8,7 @@
 
 #include "unit rendering system.hpp"
 
+#include "depth.hpp"
 #include "position component.hpp"
 #include "unit dir component.hpp"
 #include "unit sprite component.hpp"
@@ -26,7 +27,7 @@ void unitRenderingSystem(
     id += view.get<UnitWalkAnim>(entity).frame;
     
     writer.quad();
-    writer.depth(0.6f);
+    writer.depth(Depth::UNIT);
     writer.tilePos(view.get<Position>(entity).pos);
     writer.tileTex(sheet.getSprite(id));
   }

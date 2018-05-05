@@ -8,6 +8,7 @@
 
 #include "map rendering system.hpp"
 
+#include "depth.hpp"
 #include "map tag.hpp"
 #include "map sprites tag.hpp"
 #include <Simpleton/Utils/profiler.hpp>
@@ -28,7 +29,7 @@ void mapRenderingSystem(
     const Sprite::Rect rect = sheet.getSprite(id);
     
     writer.quad();
-    writer.depth(0.99f);
+    writer.depth(Depth::MAP);
     writer.tilePos(map.toPos(t));
     writer.tileTex(rect.min, rect.max);
   }

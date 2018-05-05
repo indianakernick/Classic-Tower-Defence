@@ -8,6 +8,7 @@
 
 #include "tower rendering system.hpp"
 
+#include "depth.hpp"
 #include "position component.hpp"
 #include "tower target component.hpp"
 #include "tower sprites component.hpp"
@@ -27,12 +28,12 @@ void towerRenderingSystem(
     const TowerTarget target = view.get<TowerTarget>(entity);
     
     writer.quad();
-    writer.depth(0.6f);
+    writer.depth(Depth::TOWER_BASE);
     writer.tilePos(pos);
     writer.tileTex(sheet.getSprite(sprites.base));
     
     writer.quad();
-    writer.depth(0.4f);
+    writer.depth(Depth::TOWER_GUN);
     writer.rotTilePos(target.angle, pos);
     writer.tileTex(sheet.getSprite(gun));
   }
