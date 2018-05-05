@@ -9,10 +9,6 @@
 #ifndef turret_tower_component_hpp
 #define turret_tower_component_hpp
 
-#include <Simpleton/Data/json.hpp>
-
 struct TurretTower {};
-
-inline void from_json(const json &, TurretTower &) {}
 
 #endif

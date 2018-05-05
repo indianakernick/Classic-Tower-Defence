@@ -109,4 +109,23 @@ local towerSprites(sprite) = {
       id: getSound("cannon")
     }
   },
+  {
+    BeamTower: {},
+    TurretTower: {},
+    CommonTowerStats: {
+      range: 10,
+      damage: 5,
+      rof: 10,
+      armourPiercing: 0.2
+    },
+    TowerGold: {
+      buy: 150,
+      sell: 100
+    },
+    TowerSprites: towerSprites("laser"),
+    upgrades: {},
+    Sound: {
+      id: getSound("blaster 1")
+    }
+  }
 ]

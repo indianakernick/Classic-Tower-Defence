@@ -1,5 +1,5 @@
 local soundNames = [
-  "blaster", "cannon", "robot destroyed"
+  "blaster", "blaster 1", "cannon", "robot destroyed"
 ];
 
 {
