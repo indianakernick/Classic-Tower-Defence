@@ -26,6 +26,13 @@ inline void from_json(const json &node, TowerEffect &comp) {
     Data::get(effect.duration, *effectNode, "duration");
     comp.apply = [effect] (ECS::Registry &reg, const ECS::EntityID entity) {
       reg.accommodate<SlowEffect>(entity, effect);
+      /*if (reg.has<SlowEffect>(entity)) {
+        SlowEffect &other = reg.get<SlowEffect>(entity);
+        other.speedFactor = std::min(effect.speedFactor, other.speedFactor);
+        other.duration = effect.duration;
+      } else {
+        reg.assign<SlowEffect>(entity, effect);
+      }*/
     };
   } else if (JSON_OPTIONAL(effectNode, node, "PoisonEffect")) {
     PoisonEffect effect;
