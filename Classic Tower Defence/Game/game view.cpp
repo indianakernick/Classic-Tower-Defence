@@ -48,7 +48,7 @@ void GameView::init(G2D::Renderer &renderer) {
 void GameView::playSounds(ECS::Registry &reg) {
   towerSoundSystem(reg, sounds);
   unitDeathSoundSystem(reg, sounds);
-  //sounds.play(DupSound::PLAY_LATER);
+  sounds.play(DupSound::PLAY_LATER);
 }
 
 void GameView::updateCam(const float aspect, const float delta) {
@@ -75,6 +75,7 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   
   //writer.section({camera.transform.toPixels(), sheetTex.tex()});
   
+  /*
   writer.section({textCam.transform.toPixels(), textSheetTex.tex()});
   text.resetCursor();
   text.pushText(writer, textSheetTex.sheet(), "I created a text renderer!\nIsn't it cool!");
@@ -82,5 +83,5 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   text.pushText(writer, textSheetTex.sheet(), "Test\tTab\tYeah\n");
   text.pushText(writer, textSheetTex.sheet(), "Tab\t\vseems\t\vto\t\v\rwork\n");
   text.pushText(writer, textSheetTex.sheet(), "Deadpal\b\bool");
-  
+  */
 }

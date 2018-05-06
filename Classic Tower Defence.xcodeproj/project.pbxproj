@@ -474,6 +474,16 @@
 		45DBB8012092B0500081CDE1 /* poison effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect component.hpp"; sourceTree = "<group>"; };
 		45DBB8022092EC710081CDE1 /* prototype.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = prototype.hpp; sourceTree = "<group>"; };
 		45DBB805209303660081CDE1 /* component list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component list.hpp"; sourceTree = "<group>"; };
+		45F24DF5209E871700EAE60D /* plasma.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = plasma.anim; sourceTree = "<group>"; };
+		45F24DF6209E872C00EAE60D /* plasma base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma base.png"; sourceTree = "<group>"; };
+		45F24DF7209E872C00EAE60D /* plasma projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma projectile.png"; sourceTree = "<group>"; };
+		45F24DF8209E873F00EAE60D /* plasma 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 0.png"; sourceTree = "<group>"; };
+		45F24DF9209E873F00EAE60D /* plasma 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 2.png"; sourceTree = "<group>"; };
+		45F24DFA209E873F00EAE60D /* plasma 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 1.png"; sourceTree = "<group>"; };
+		45F24DFB209E873F00EAE60D /* plasma 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 4.png"; sourceTree = "<group>"; };
+		45F24DFC209E874000EAE60D /* plasma 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 6.png"; sourceTree = "<group>"; };
+		45F24DFD209E874000EAE60D /* plasma 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 5.png"; sourceTree = "<group>"; };
+		45F24DFE209E874000EAE60D /* plasma 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 3.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -895,6 +905,15 @@
 				4538852B208C5CE5003EB260 /* map 1.png */,
 				45388528208C5CE4003EB260 /* map 2.png */,
 				45388529208C5CE4003EB260 /* map 3.png */,
+				45F24DF8209E873F00EAE60D /* plasma 0.png */,
+				45F24DFA209E873F00EAE60D /* plasma 1.png */,
+				45F24DF9209E873F00EAE60D /* plasma 2.png */,
+				45F24DFE209E874000EAE60D /* plasma 3.png */,
+				45F24DFB209E873F00EAE60D /* plasma 4.png */,
+				45F24DFD209E874000EAE60D /* plasma 5.png */,
+				45F24DFC209E874000EAE60D /* plasma 6.png */,
+				45F24DF6209E872C00EAE60D /* plasma base.png */,
+				45F24DF7209E872C00EAE60D /* plasma projectile.png */,
 				4563D5922096BAC500DB2510 /* poison cannon 0.png */,
 				4563D5932096BAC500DB2510 /* poison cannon 1.png */,
 				4563D5952096BAC500DB2510 /* poison cannon 2.png */,
@@ -963,6 +982,7 @@
 				4563D5B32096D4AD00DB2510 /* iceball.anim */,
 				4568268A209D378700BA6AE8 /* laser.anim */,
 				45388572208DC45B003EB260 /* map.anim */,
+				45F24DF5209E871700EAE60D /* plasma.anim */,
 				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
 				4563D5BA20970E8800DB2510 /* radius.anim */,
 				45388531208D7345003EB260 /* robot.anim */,
