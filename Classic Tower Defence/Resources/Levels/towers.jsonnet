@@ -52,7 +52,7 @@ local towerSprites(sprite) = {
     CommonTowerStats: {
       range: 6,
       damage: 50,
-      rof: 1/2,
+      rof: 1/3,
       armourPiercing: 0.6
     },
     TowerGold: {
@@ -63,7 +63,7 @@ local towerSprites(sprite) = {
     TowerSprites: towerSprites("plasma"),
     upgrades: {},
     Sound: {
-      id: getSound("blaster 1")
+      id: getSound("plasma")
     }
   },
   {
