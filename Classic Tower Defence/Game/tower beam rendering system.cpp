@@ -33,7 +33,7 @@ void towerBeamRenderingSystem(
     writer.quad();
     writer.depth(Depth::TOWER_BEAM);
     writer.rotTilePos<G2D::Origin::MID_LEFT>(
-      -target.angle, pos, {target.dist, 1.0f}
+      target.angle, pos, {target.dist, 1.0f}
     );
     writer.tileTex(sheet.getSprite(sprites.projectile));
   }
