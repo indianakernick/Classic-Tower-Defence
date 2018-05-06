@@ -20,13 +20,12 @@
 		453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884CD208AE83A003EB260 /* unit motion system.cpp */; };
 		453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D2208AFE1C003EB260 /* base damage system.cpp */; };
 		453884D7208B0283003EB260 /* tower aim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D5208B0283003EB260 /* tower aim system.cpp */; };
-		453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D8208B0765003EB260 /* tower shoot system.cpp */; };
+		453884DA208B0765003EB260 /* start proj firing anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884D8208B0765003EB260 /* start proj firing anim system.cpp */; };
 		453884DF208B0D66003EB260 /* unit death system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884DD208B0D66003EB260 /* unit death system.cpp */; };
 		453884E2208B10F9003EB260 /* tower timing system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884E0208B10F9003EB260 /* tower timing system.cpp */; };
 		453884EB208B1477003EB260 /* spawner timing system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884E9208B1477003EB260 /* spawner timing system.cpp */; };
 		453884EE208B1607003EB260 /* spawner system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884EC208B1607003EB260 /* spawner system.cpp */; };
 		453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884F3208B2534003EB260 /* unit walk anim system.cpp */; };
-		453884FA208B28CC003EB260 /* tower projectile anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884F8208B28CC003EB260 /* tower projectile anim system.cpp */; };
 		453884FF208C15B5003EB260 /* create tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884FD208C15B5003EB260 /* create tower.cpp */; };
 		45388503208C18B8003EB260 /* upgrade tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388501208C18B8003EB260 /* upgrade tower.cpp */; };
 		4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538850A208C2C56003EB260 /* unit rendering system.cpp */; };
@@ -58,8 +57,8 @@
 		453B159A2091922E00BFA00D /* unit death anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15982091922E00BFA00D /* unit death anim system.cpp */; };
 		453B15A020919CB100BFA00D /* unit death sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B159E20919CB100BFA00D /* unit death sound system.cpp */; };
 		453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15A52091A09100BFA00D /* unit death rendering system.cpp */; };
-		4563D58720969A8800DB2510 /* turret tower shoot system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58520969A8800DB2510 /* turret tower shoot system.cpp */; };
-		4563D58A20969AA100DB2510 /* splash tower shoot system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58820969AA100DB2510 /* splash tower shoot system.cpp */; };
+		4563D58720969A8800DB2510 /* turret damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58520969A8800DB2510 /* turret damage system.cpp */; };
+		4563D58A20969AA100DB2510 /* splash damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58820969AA100DB2510 /* splash damage system.cpp */; };
 		4563D5B52096E16700DB2510 /* sound queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D5B42096E16700DB2510 /* sound queue.cpp */; };
 		4563D5B92097034F00DB2510 /* generate radius.js in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5B82097034F00DB2510 /* generate radius.js */; };
 		4563D600209710CE00DB2510 /* radius.png in Resources */ = {isa = PBXBuildFile; fileRef = 4563D5FE209710CE00DB2510 /* radius.png */; };
@@ -72,11 +71,14 @@
 		45682668209BFF9400BA6AE8 /* afford tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682666209BFF9400BA6AE8 /* afford tower.cpp */; };
 		45682697209D3AD800BA6AE8 /* tower projectile rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682695209D3AD800BA6AE8 /* tower projectile rendering system.cpp */; };
 		4568269A209D4FE400BA6AE8 /* tower beam rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */; };
-		4568269E209D582700BA6AE8 /* tower beam anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4568269C209D582700BA6AE8 /* tower beam anim system.cpp */; };
 		45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7F72092AA190081CDE1 /* unit effect system.cpp */; };
 		45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */; };
 		45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */; };
 		45F24E02209E905E00EAE60D /* plasma.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45F24E01209E905E00EAE60D /* plasma.wav */; };
+		45F24E05209EA0E400EAE60D /* tower rof system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F24E03209EA0E400EAE60D /* tower rof system.cpp */; };
+		45F24E08209EAD8F00EAE60D /* proj firing anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F24E06209EAD8F00EAE60D /* proj firing anim system.cpp */; };
+		45F24E0B209EADA000EAE60D /* beam firing anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F24E09209EADA000EAE60D /* beam firing anim system.cpp */; };
+		45F24E0E209EBA7900EAE60D /* start beam firing anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F24E0C209EBA7900EAE60D /* start beam firing anim system.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -136,8 +138,8 @@
 		453884D3208AFE1C003EB260 /* base damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "base damage system.hpp"; sourceTree = "<group>"; };
 		453884D5208B0283003EB260 /* tower aim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower aim system.cpp"; sourceTree = "<group>"; };
 		453884D6208B0283003EB260 /* tower aim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower aim system.hpp"; sourceTree = "<group>"; };
-		453884D8208B0765003EB260 /* tower shoot system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower shoot system.cpp"; sourceTree = "<group>"; };
-		453884D9208B0765003EB260 /* tower shoot system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower shoot system.hpp"; sourceTree = "<group>"; };
+		453884D8208B0765003EB260 /* start proj firing anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "start proj firing anim system.cpp"; sourceTree = "<group>"; };
+		453884D9208B0765003EB260 /* start proj firing anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "start proj firing anim system.hpp"; sourceTree = "<group>"; };
 		453884DD208B0D66003EB260 /* unit death system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death system.cpp"; sourceTree = "<group>"; };
 		453884DE208B0D66003EB260 /* unit death system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death system.hpp"; sourceTree = "<group>"; };
 		453884E0208B10F9003EB260 /* tower timing system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower timing system.cpp"; sourceTree = "<group>"; };
@@ -154,8 +156,6 @@
 		453884F4208B2534003EB260 /* unit walk anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit walk anim system.hpp"; sourceTree = "<group>"; };
 		453884F6208B2785003EB260 /* tower firing anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower firing anim component.hpp"; sourceTree = "<group>"; };
 		453884F7208B2883003EB260 /* tower sprites component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sprites component.hpp"; sourceTree = "<group>"; };
-		453884F8208B28CC003EB260 /* tower projectile anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower projectile anim system.cpp"; sourceTree = "<group>"; };
-		453884F9208B28CC003EB260 /* tower projectile anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower projectile anim system.hpp"; sourceTree = "<group>"; };
 		453884FB208B2A07003EB260 /* towers tag.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "towers tag.hpp"; sourceTree = "<group>"; };
 		453884FD208C15B5003EB260 /* create tower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create tower.cpp"; sourceTree = "<group>"; };
 		453884FE208C15B5003EB260 /* create tower.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create tower.hpp"; sourceTree = "<group>"; };
@@ -318,10 +318,10 @@
 		453B15A82091A31A00BFA00D /* explosion.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.anim; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
-		4563D58520969A8800DB2510 /* turret tower shoot system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "turret tower shoot system.cpp"; sourceTree = "<group>"; };
-		4563D58620969A8800DB2510 /* turret tower shoot system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower shoot system.hpp"; sourceTree = "<group>"; };
-		4563D58820969AA100DB2510 /* splash tower shoot system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "splash tower shoot system.cpp"; sourceTree = "<group>"; };
-		4563D58920969AA100DB2510 /* splash tower shoot system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower shoot system.hpp"; sourceTree = "<group>"; };
+		4563D58520969A8800DB2510 /* turret damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "turret damage system.cpp"; sourceTree = "<group>"; };
+		4563D58620969A8800DB2510 /* turret damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret damage system.hpp"; sourceTree = "<group>"; };
+		4563D58820969AA100DB2510 /* splash damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "splash damage system.cpp"; sourceTree = "<group>"; };
+		4563D58920969AA100DB2510 /* splash damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash damage system.hpp"; sourceTree = "<group>"; };
 		4563D58B2096A16800DB2510 /* tower effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower effect component.hpp"; sourceTree = "<group>"; };
 		4563D58C2096BAAA00DB2510 /* poison cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poison cannon.anim"; sourceTree = "<group>"; };
 		4563D58D2096BAC400DB2510 /* poison cannon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 3.png"; sourceTree = "<group>"; };
@@ -463,8 +463,6 @@
 		45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower beam rendering system.cpp"; sourceTree = "<group>"; };
 		45682699209D4FE400BA6AE8 /* tower beam rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam rendering system.hpp"; sourceTree = "<group>"; };
 		4568269B209D536B00BA6AE8 /* depth.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = depth.hpp; sourceTree = "<group>"; };
-		4568269C209D582700BA6AE8 /* tower beam anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower beam anim system.cpp"; sourceTree = "<group>"; };
-		4568269D209D582700BA6AE8 /* tower beam anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam anim system.hpp"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -486,6 +484,14 @@
 		45F24DFD209E874000EAE60D /* plasma 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 5.png"; sourceTree = "<group>"; };
 		45F24DFE209E874000EAE60D /* plasma 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma 3.png"; sourceTree = "<group>"; };
 		45F24E01209E905E00EAE60D /* plasma.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = plasma.wav; sourceTree = "<group>"; };
+		45F24E03209EA0E400EAE60D /* tower rof system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower rof system.cpp"; sourceTree = "<group>"; };
+		45F24E04209EA0E400EAE60D /* tower rof system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower rof system.hpp"; sourceTree = "<group>"; };
+		45F24E06209EAD8F00EAE60D /* proj firing anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "proj firing anim system.cpp"; sourceTree = "<group>"; };
+		45F24E07209EAD8F00EAE60D /* proj firing anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "proj firing anim system.hpp"; sourceTree = "<group>"; };
+		45F24E09209EADA000EAE60D /* beam firing anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "beam firing anim system.cpp"; sourceTree = "<group>"; };
+		45F24E0A209EADA000EAE60D /* beam firing anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "beam firing anim system.hpp"; sourceTree = "<group>"; };
+		45F24E0C209EBA7900EAE60D /* start beam firing anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "start beam firing anim system.cpp"; sourceTree = "<group>"; };
+		45F24E0D209EBA7900EAE60D /* start beam firing anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "start beam firing anim system.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -679,20 +685,24 @@
 			children = (
 				453884D5208B0283003EB260 /* tower aim system.cpp */,
 				453884D6208B0283003EB260 /* tower aim system.hpp */,
-				453884D8208B0765003EB260 /* tower shoot system.cpp */,
-				453884D9208B0765003EB260 /* tower shoot system.hpp */,
-				4563D58520969A8800DB2510 /* turret tower shoot system.cpp */,
-				4563D58620969A8800DB2510 /* turret tower shoot system.hpp */,
-				4563D58820969AA100DB2510 /* splash tower shoot system.cpp */,
-				4563D58920969AA100DB2510 /* splash tower shoot system.hpp */,
+				45F24E03209EA0E400EAE60D /* tower rof system.cpp */,
+				45F24E04209EA0E400EAE60D /* tower rof system.hpp */,
+				453884D8208B0765003EB260 /* start proj firing anim system.cpp */,
+				453884D9208B0765003EB260 /* start proj firing anim system.hpp */,
+				45F24E0C209EBA7900EAE60D /* start beam firing anim system.cpp */,
+				45F24E0D209EBA7900EAE60D /* start beam firing anim system.hpp */,
+				45F24E06209EAD8F00EAE60D /* proj firing anim system.cpp */,
+				45F24E07209EAD8F00EAE60D /* proj firing anim system.hpp */,
+				45F24E09209EADA000EAE60D /* beam firing anim system.cpp */,
+				45F24E0A209EADA000EAE60D /* beam firing anim system.hpp */,
+				4563D58520969A8800DB2510 /* turret damage system.cpp */,
+				4563D58620969A8800DB2510 /* turret damage system.hpp */,
+				4563D58820969AA100DB2510 /* splash damage system.cpp */,
+				4563D58920969AA100DB2510 /* splash damage system.hpp */,
 				453884E0208B10F9003EB260 /* tower timing system.cpp */,
 				453884E1208B10F9003EB260 /* tower timing system.hpp */,
-				453884F8208B28CC003EB260 /* tower projectile anim system.cpp */,
-				453884F9208B28CC003EB260 /* tower projectile anim system.hpp */,
 				4538858B208EC736003EB260 /* tower sound system.cpp */,
 				4538858C208EC736003EB260 /* tower sound system.hpp */,
-				4568269C209D582700BA6AE8 /* tower beam anim system.cpp */,
-				4568269D209D582700BA6AE8 /* tower beam anim system.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -1338,16 +1348,17 @@
 				4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */,
-				453884DA208B0765003EB260 /* tower shoot system.cpp in Sources */,
+				453884DA208B0765003EB260 /* start proj firing anim system.cpp in Sources */,
 				45388569208D9C72003EB260 /* create spawner.cpp in Sources */,
 				45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */,
 				45682663209AA52400BA6AE8 /* next wave.cpp in Sources */,
+				45F24E05209EA0E400EAE60D /* tower rof system.cpp in Sources */,
 				453B15212090508800BFA00D /* unit damage system.cpp in Sources */,
 				45682668209BFF9400BA6AE8 /* afford tower.cpp in Sources */,
-				4563D58A20969AA100DB2510 /* splash tower shoot system.cpp in Sources */,
+				4563D58A20969AA100DB2510 /* splash damage system.cpp in Sources */,
+				45F24E0E209EBA7900EAE60D /* start beam firing anim system.cpp in Sources */,
 				456826532099720E00BA6AE8 /* text renderer.cpp in Sources */,
 				4538858D208EC736003EB260 /* tower sound system.cpp in Sources */,
-				453884FA208B28CC003EB260 /* tower projectile anim system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
 				45388598208EE402003EB260 /* create level.cpp in Sources */,
@@ -1358,18 +1369,19 @@
 				453B151D2090461E00BFA00D /* load level.cpp in Sources */,
 				45388563208D8F50003EB260 /* game view.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
-				4563D58720969A8800DB2510 /* turret tower shoot system.cpp in Sources */,
+				4563D58720969A8800DB2510 /* turret damage system.cpp in Sources */,
 				45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */,
+				45F24E0B209EADA000EAE60D /* beam firing anim system.cpp in Sources */,
 				4568269A209D4FE400BA6AE8 /* tower beam rendering system.cpp in Sources */,
 				45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */,
 				4538852E208C5DC7003EB260 /* map rendering system.cpp in Sources */,
-				4568269E209D582700BA6AE8 /* tower beam anim system.cpp in Sources */,
 				453884CF208AE83A003EB260 /* unit motion system.cpp in Sources */,
 				453B15542090C12400BFA00D /* unit health rendering system.cpp in Sources */,
 				453B159A2091922E00BFA00D /* unit death anim system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
 				4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */,
 				45388503208C18B8003EB260 /* upgrade tower.cpp in Sources */,
+				45F24E08209EAD8F00EAE60D /* proj firing anim system.cpp in Sources */,
 				4563D5B52096E16700DB2510 /* sound queue.cpp in Sources */,
 				453884EB208B1477003EB260 /* spawner timing system.cpp in Sources */,
 			);

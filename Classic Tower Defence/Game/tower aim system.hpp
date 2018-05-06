@@ -11,6 +11,7 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
+// Point TowerTarget to the unit that is closest to the exit
 void towerAimSystem(ECS::Registry &);
 
 #endif

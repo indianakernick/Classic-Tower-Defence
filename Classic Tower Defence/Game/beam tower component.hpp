@@ -9,6 +9,12 @@
 #ifndef beam_tower_component_hpp
 #define beam_tower_component_hpp
 
-struct BeamTower {};
+#include <Simpleton/Data/json.hpp>
+
+struct BeamTower {
+  bool firing = false;
+};
+
+inline void from_json(const json &, BeamTower &) {}
 
 #endif

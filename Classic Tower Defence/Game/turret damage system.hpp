@@ -11,6 +11,7 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
-void turretTowerShootSystem(ECS::Registry &);
+// apply turret damage to targeted unit if tower can shoot
+void turretDamageSystem(ECS::Registry &);
 
 #endif

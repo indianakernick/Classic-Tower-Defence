@@ -24,11 +24,13 @@ void towerAimSystem(ECS::Registry &reg) {
     
     float targetExitDist = std::numeric_limits<float>::max();
     glm::vec2 targetPos;
+    float targetDist = 0.0f;
     ECS::EntityID targetUnit = ECS::NULL_ENTITY;
     
     for (const ECS::EntityID unit : units) {
       const glm::vec2 unitPos = units.get<Position>(unit).pos;
-      if (glm::distance(towerPos, unitPos) > range) {
+      const float unitDist = glm::distance(towerPos, unitPos);
+      if (unitDist > range) {
         continue;
       }
     
@@ -37,6 +39,7 @@ void towerAimSystem(ECS::Registry &reg) {
         targetExitDist = exitDist;
         targetUnit = unit;
         targetPos = unitPos;
+        targetDist = unitDist;
       }
     }
     
@@ -44,6 +47,8 @@ void towerAimSystem(ECS::Registry &reg) {
     target.id = targetUnit;
     if (targetUnit != ECS::NULL_ENTITY) {
       target.vec = targetPos - towerPos;
+      target.pos = targetPos;
+      target.dist = targetDist;
       target.angle = std::atan2(target.vec.y, target.vec.x);
     }
   }

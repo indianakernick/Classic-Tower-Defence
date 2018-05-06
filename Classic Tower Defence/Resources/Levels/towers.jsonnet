@@ -10,6 +10,7 @@ local towerSprites(sprite) = {
 
 [
   {
+    local tower = self,
     ProjectileTower: {},
     CommonTowerStats: {
       range: 6,
@@ -26,15 +27,19 @@ local towerSprites(sprite) = {
     upgrades: {},
     Sound: {
       id: getSound("blaster")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
     }
   },
   {
+    local tower = self,
     BeamTower: {},
     TurretTower: {},
     CommonTowerStats: {
       range: 10,
       damage: 5,
-      rof: 10,
+      rof: 20,
       armourPiercing: 0.2
     },
     TowerGold: {
@@ -45,9 +50,13 @@ local towerSprites(sprite) = {
     upgrades: {},
     Sound: {
       id: getSound("blaster 1")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
     }
   },
   {
+    local tower = self,
     ProjectileTower: {},
     CommonTowerStats: {
       range: 6,
@@ -64,9 +73,13 @@ local towerSprites(sprite) = {
     upgrades: {},
     Sound: {
       id: getSound("plasma")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
     }
   },
   {
+    local tower = self,
     ProjectileTower: {},
     CommonTowerStats: {
       range: 4,
@@ -91,9 +104,13 @@ local towerSprites(sprite) = {
     upgrades: {},
     Sound: {
       id: getSound("cannon")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
     }
   },
   {
+    local tower = self,
     ProjectileTower: {},
     CommonTowerStats: {
       range: 4,
@@ -118,9 +135,13 @@ local towerSprites(sprite) = {
     upgrades: {},
     Sound: {
       id: getSound("cannon")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
     }
   },
   {
+    local tower = self,
     ProjectileTower: {},
     CommonTowerStats: {
       range: 4,
@@ -145,6 +166,9 @@ local towerSprites(sprite) = {
     upgrades: {},
     Sound: {
       id: getSound("cannon")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
     }
   }
 ]

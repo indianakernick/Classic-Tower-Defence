@@ -11,6 +11,7 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
-void splashTowerShootSystem(ECS::Registry &);
+// apply splash damage to targeted unit if tower can shoot
+void splashDamageSystem(ECS::Registry &);
 
 #endif

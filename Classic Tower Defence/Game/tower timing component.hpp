@@ -10,7 +10,7 @@
 #define tower_timing_component_hpp
 
 struct TowerTiming {
-  float timeSinceLastShot;
+  float timeSinceLastShot = 0.0f;
 };
 
 #endif

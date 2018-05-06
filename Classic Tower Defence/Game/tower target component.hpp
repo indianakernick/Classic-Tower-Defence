@@ -13,9 +13,11 @@
 #include <Simpleton/ECS/registry.hpp>
 
 struct TowerTarget {
-  glm::vec2 vec;
-  float angle;
-  ECS::EntityID id;
+  glm::vec2 vec {0.0f};
+  glm::vec2 pos {0.0f};
+  float angle = 0.0f;
+  float dist = 0.0f;
+  ECS::EntityID id = ECS::NULL_ENTITY;
 };
 
 #endif

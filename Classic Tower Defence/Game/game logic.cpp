@@ -20,14 +20,18 @@
 #include "spawner timing system.hpp"
 #include "base damage system.hpp"
 #include "tower aim system.hpp"
-#include "tower shoot system.hpp"
-#include "turret tower shoot system.hpp"
-#include "splash tower shoot system.hpp"
 #include "tower timing system.hpp"
 #include "unit regen system.hpp"
 #include "unit effect system.hpp"
 #include "slow effect system.hpp"
 #include "poison effect system.hpp"
+#include "tower rof system.hpp"
+#include "proj firing anim system.hpp"
+#include "beam firing anim system.hpp"
+#include "start proj firing anim system.hpp"
+#include "start beam firing anim system.hpp"
+#include "turret damage system.hpp"
+#include "splash damage system.hpp"
 
 void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
@@ -56,9 +60,14 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   poisonEffectSystem(reg, delta);
   
   towerAimSystem(reg);
-  towerShootSystem(reg);
-  turretTowerShootSystem(reg);
-  splashTowerShootSystem(reg);
+  towerTimingSystem(reg, delta);
+  towerRofSystem(reg);
+  projFiringAnimSystem(reg);
+  beamFiringAnimSystem(reg);
+  startProjFiringAnimSystem(reg);
+  startBeamFiringAnimSystem(reg);
+  turretDamageSystem(reg);
+  splashDamageSystem(reg);
   
   unitMotionSystem(reg, delta);
   unitDeathSystem(reg);

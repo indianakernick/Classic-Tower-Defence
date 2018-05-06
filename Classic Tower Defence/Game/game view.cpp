@@ -15,12 +15,10 @@
 #include "unit walk anim system.hpp"
 #include "unit death anim system.hpp"
 #include "tower rendering system.hpp"
-#include "tower beam anim system.hpp"
 #include "unit death sound system.hpp"
 #include <Simpleton/Utils/profiler.hpp>
 #include "tower beam rendering system.hpp"
 #include "unit death rendering system.hpp"
-#include "tower projectile anim system.hpp"
 #include "unit health rendering system.hpp"
 #include "tower range rendering system.hpp"
 #include "tower projectile rendering system.hpp"
@@ -48,7 +46,7 @@ void GameView::init(G2D::Renderer &renderer) {
 void GameView::playSounds(ECS::Registry &reg) {
   towerSoundSystem(reg, sounds);
   unitDeathSoundSystem(reg, sounds);
-  sounds.play(DupSound::PLAY_LATER);
+  //sounds.play(DupSound::PLAY_LATER);
 }
 
 void GameView::updateCam(const float aspect, const float delta) {
@@ -61,8 +59,6 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
 
   unitWalkAnimSystem(reg);
   unitDeathAnimSystem(reg);
-  towerProjectileAnimSystem(reg);
-  towerBeamAnimSystem(reg);
   
   writer.section({camera.transform.toPixels(), sheetTex.tex()});
   mapRenderingSystem(reg, writer, sheetTex.sheet());

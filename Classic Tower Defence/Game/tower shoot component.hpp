@@ -10,7 +10,7 @@
 #define tower_shoot_component_hpp
 
 struct TowerShoot {
-  bool shoot = false;
+  bool canShoot = false;
 };
 
 #endif
