@@ -29,11 +29,15 @@ void towerBeamRenderingSystem(
     const TowerSprites sprites = view.get<TowerSprites>(entity);
     const glm::vec2 pos = view.get<Position>(entity).pos + glm::vec2(0.5f);
     const TowerTarget target = view.get<TowerTarget>(entity);
-    
+    const glm::vec2 offset = {
+      std::cos(target.angle) * 0.5f,
+      std::sin(target.angle) * 0.5f
+    };
+   
     writer.quad();
     writer.depth(Depth::TOWER_BEAM);
     writer.rotTilePos<G2D::Origin::MID_LEFT>(
-      target.angle, pos, {target.dist, 1.0f}
+      target.angle, pos + offset, {target.dist - 0.5f, 1.0f}
     );
     writer.tileTex(sheet.getSprite(sprites.projectile));
   }
