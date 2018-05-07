@@ -32,7 +32,7 @@ namespace {
     reg.assign<UnitPath>(id, size_t(0));
     reg.assign<UnitExitDistance>(id, map.pathDist);
     reg.assign<Position>(id, map.entry);
-    reg.assign<UnitWalkAnim>(id, uint32_t(0));
+    reg.assign<UnitWalkAnim>(id, uint32_t(0), wave.sprite.frames, uint32_t(0), uint32_t(1));
     reg.assign<Sound>(id, wave.sound);
   }
 }

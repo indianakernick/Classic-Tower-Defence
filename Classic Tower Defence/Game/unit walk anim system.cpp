@@ -8,17 +8,19 @@
 
 #include "unit walk anim system.hpp"
 
-#include "unit sprite component.hpp"
 #include "unit walk anim component.hpp"
 
 void unitWalkAnimSystem(ECS::Registry &reg) {
-  auto view = reg.view<UnitSprite, UnitWalkAnim>();
+  auto view = reg.view<UnitWalkAnim>();
   for (const ECS::EntityID entity : view) {
-    const uint32_t frames = view.get<UnitSprite>(entity).frames;
-    uint32_t &frame = view.get<UnitWalkAnim>(entity).frame;
-    ++frame;
-    if (frame == frames) {
-      frame = 0;
+    UnitWalkAnim &anim = view.get(entity);
+    ++anim.subframe;
+    if (anim.subframe >= anim.subframes) {
+      anim.subframe = 0;
+      ++anim.frame;
+      if (anim.frame == anim.frames) {
+        anim.frame = 0;
+      }
     }
   }
 }

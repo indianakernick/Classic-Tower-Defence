@@ -146,7 +146,7 @@ local towerSprites(sprite) = {
     CommonTowerStats: {
       range: 4,
       damage: 5,
-      rof: 1/4,
+      rof: 1/8,
       armourPiercing: 0.4
     },
     TowerGold: {

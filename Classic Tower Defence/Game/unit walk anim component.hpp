@@ -13,6 +13,9 @@
 
 struct UnitWalkAnim {
   uint32_t frame;
+  uint32_t frames;
+  uint32_t subframe;
+  uint32_t subframes;
 };
 
 #endif
