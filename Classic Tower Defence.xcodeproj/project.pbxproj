@@ -125,7 +125,7 @@
 		453884BF208ACE9D003EB260 /* common tower stats component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "common tower stats component.hpp"; sourceTree = "<group>"; };
 		453884C0208ACF12003EB260 /* position component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "position component.hpp"; sourceTree = "<group>"; };
 		453884C1208ACFCA003EB260 /* unit dir component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit dir component.hpp"; sourceTree = "<group>"; };
-		453884C5208AD10F003EB260 /* unit exit distance component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit exit distance component.hpp"; sourceTree = "<group>"; };
+		453884C5208AD10F003EB260 /* unit move distance component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit move distance component.hpp"; sourceTree = "<group>"; };
 		453884C6208AD145003EB260 /* tower timing component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower timing component.hpp"; sourceTree = "<group>"; };
 		453884C7208AD289003EB260 /* tower target component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower target component.hpp"; sourceTree = "<group>"; };
 		453884C8208AD3A1003EB260 /* map info tag.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "map info tag.hpp"; sourceTree = "<group>"; };
@@ -634,7 +634,7 @@
 				453884F2208B245A003EB260 /* unit walk anim component.hpp */,
 				453884BB208ACB87003EB260 /* unit stats component.hpp */,
 				453884C1208ACFCA003EB260 /* unit dir component.hpp */,
-				453884C5208AD10F003EB260 /* unit exit distance component.hpp */,
+				453884C5208AD10F003EB260 /* unit move distance component.hpp */,
 				453884D1208AF9BD003EB260 /* unit path component.hpp */,
 				453884EF208B2325003EB260 /* unit sprite component.hpp */,
 				453B15972091912C00BFA00D /* unit death anim component.hpp */,

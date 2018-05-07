@@ -24,7 +24,6 @@
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
 #include "unit stats component.hpp"
-#include "unit exit distance component.hpp"
 
 namespace {
   TileType tileChar(const char c) {
@@ -69,7 +68,6 @@ namespace {
       const int unreadCount = loadProto(wave.proto, node.at("proto"));
       assert(unreadCount == 0);
       wave.proto.assign<UnitDir>(map.entryDir);
-      wave.proto.assign<UnitExitDistance>(map.pathDist);
       wave.proto.assign<Position>(map.entry);
     }
     

@@ -14,7 +14,7 @@
 #include "unit dir component.hpp"
 #include "unit path component.hpp"
 #include "unit stats component.hpp"
-#include "unit exit distance component.hpp"
+#include "unit move distance component.hpp"
 
 namespace {
   float orthoDist(const glm::vec2 a, const glm::vec2 b) {
@@ -24,10 +24,10 @@ namespace {
 
 void unitMotionSystem(ECS::Registry &reg, const float delta) {
   const MapInfo &map = reg.get<MapInfo>();
-  auto view = reg.view<Position, UnitDir, UnitPath, UnitStats, UnitExitDistance>();
+  auto view = reg.view<Position, UnitDir, UnitPath, UnitStats, UnitMoveDistance>();
   for (const ECS::EntityID entity : view) {
     float moveDist = view.get<UnitStats>(entity).moveSpeed * delta;
-    view.get<UnitExitDistance>(entity).dist -= moveDist;
+    view.get<UnitMoveDistance>(entity).dist += moveDist;
     Math::Dir &dir = view.get<UnitDir>(entity).dir;
     glm::vec2 &pos = view.get<Position>(entity).pos;
     size_t &pathIndex = view.get<UnitPath>(entity).index;

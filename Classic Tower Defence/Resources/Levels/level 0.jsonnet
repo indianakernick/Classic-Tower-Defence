@@ -40,7 +40,8 @@ local getSound = import "getsound.libsonnet";
         Sound: {
           id: getSound("robot destroyed")
         },
-        UnitPath: {}
+        UnitPath: {},
+        UnitMoveDistance: {}
       }
     }
   ]

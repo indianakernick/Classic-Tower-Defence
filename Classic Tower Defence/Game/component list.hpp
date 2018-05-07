@@ -27,8 +27,8 @@
 #include "unit death anim component.hpp"
 #include "projectile tower component.hpp"
 #include "tower firing anim component.hpp"
-#include "unit exit distance component.hpp"
 #include "common tower stats component.hpp"
+#include "unit move distance component.hpp"
 
 using CompList = Utils::TypeList<
   Sound,
@@ -53,8 +53,8 @@ using CompList = Utils::TypeList<
   UnitDeathAnim,
   ProjectileTower,
   TowerFiringAnim,
-  UnitExitDistance,
-  CommonTowerStats
+  CommonTowerStats,
+  UnitMoveDistance
 >;
 
 #endif
