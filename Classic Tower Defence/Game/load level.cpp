@@ -11,14 +11,20 @@
 #include <fstream>
 #include "map tag.hpp"
 #include "waves tag.hpp"
+#include "map info tag.hpp"
 #include "init map info.hpp"
 #include "base gold tag.hpp"
+#include "load prototype.hpp"
 #include "map sprites tag.hpp"
 #include "base health tag.hpp"
 #include "spawner state tag.hpp"
 #include "spawner timing tag.hpp"
+#include "unit dir component.hpp"
+#include "position component.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
+#include "unit stats component.hpp"
+#include "unit exit distance component.hpp"
 
 namespace {
   TileType tileChar(const char c) {
@@ -52,6 +58,25 @@ namespace {
       }
     }
   }
+  
+  void loadWaves(ECS::Registry &reg, const json &wavesNode) {
+    const MapInfo &map = reg.get<MapInfo>();
+    Waves &waves = reg.get<Waves>();
+    const json::array_t &array = wavesNode.get_ref<const json::array_t &>();
+    for (const auto &node : array) {
+      Wave &wave = waves.emplace_back();
+      Data::get(wave.quantity, node, "quantity");
+      const int unreadCount = loadProto(wave.proto, node.at("proto"));
+      assert(unreadCount == 0);
+      wave.proto.assign<UnitDir>(map.entryDir);
+      wave.proto.assign<UnitExitDistance>(map.pathDist);
+      wave.proto.assign<Position>(map.entry);
+    }
+    
+    for (Wave &wave : waves) {
+      wave.proto.get<UnitStats>().proto = &wave.proto;
+    }
+  }
 }
 
 void loadLevel(ECS::Registry &reg, const int level) {
@@ -63,7 +88,7 @@ void loadLevel(ECS::Registry &reg, const int level) {
   loadMap(reg, levelNode.at("map").get<int>());
   initMapInfo(reg);
   
-  reg.get<Waves>() = levelNode.at("waves").get<Waves>();
+  loadWaves(reg, levelNode.at("waves"));
   
   Data::get(reg.get<BaseHealth>().health, levelNode, "health");
   Data::get(reg.get<BaseGold>().gold, levelNode, "gold");

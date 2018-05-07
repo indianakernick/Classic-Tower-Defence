@@ -16,6 +16,8 @@ namespace {
   // in some loops but not others. Does not find the shortest path.
   // Returns true if a path was found.
 
+  //@SIMPLETON
+
   bool findPath(MapInfo &info, const Map &map, const Math::Dir prevDir, const Map::Pos pos) {
     info.path.push_back(pos);
     

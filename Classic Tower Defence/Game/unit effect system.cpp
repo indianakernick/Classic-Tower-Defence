@@ -16,7 +16,7 @@ void unitEffectSystem(ECS::Registry &reg) {
     UnitStats &stats = view.get(entity);
     const float health = stats.health;
     const float armour = stats.armour;
-    *static_cast<UnitStatsBase *>(&stats) = *stats.proto;
+    stats = stats.proto->get<UnitStats>();
     stats.health = health;
     stats.armour = armour;
   }

@@ -10,8 +10,9 @@
 
 #include <fstream>
 #include "towers tag.hpp"
-#include "component list.hpp"
+#include "load prototype.hpp"
 #include <Simpleton/SDL/paths.hpp>
+#include "tower upgrades component.hpp"
 
 namespace {
   TowerProto *getUpgrade(
@@ -24,46 +25,6 @@ namespace {
     } else {
       return nullptr;
     }
-  }
-  
-  template <typename Comp>
-  constexpr auto hasFromjson(int) -> decltype(from_json(json{}, std::declval<Comp &>()), bool()) {
-    return true;
-  }
-  
-  template <typename Comp>
-  constexpr bool hasFromjson(long) {
-    return false;
-  }
-  
-  template <typename Proto>
-  bool readComponent(Proto &proto, const std::string_view name, const json &component) {
-    bool read = false;
-    Utils::forEach<CompList>([&proto, name, &component, &read] (auto t) {
-      using Comp = UTILS_TYPE(t);
-      if constexpr (hasFromjson<Comp>(0)) {
-        if (Utils::typeName<Comp>() == name) {
-          proto.template assign<Comp>(component.get<Comp>());
-          read = true;
-        }
-      } else if constexpr (std::is_empty_v<Comp>) {
-        if (Utils::typeName<Comp>() == name) {
-          proto.template assign<Comp>();
-          read = true;
-        }
-      }
-    });
-    return read;
-  }
-  
-  template <typename Proto>
-  size_t readEntity(Proto &proto, const json &entity) {
-    const json::object_t &object = entity.get_ref<const json::object_t &>();
-    size_t unreadCount = 0;
-    for (auto pair : object) {
-      unreadCount += !readComponent(proto, pair.first, pair.second);
-    }
-    return unreadCount;
   }
 }
 
@@ -78,7 +39,7 @@ void loadTowers(ECS::Registry &reg) {
   for (const json &towerNode : towersNode) {
     TowerProto tower;
     [[maybe_unused]]
-    const size_t unreadCount = readEntity(tower, towerNode);
+    const int unreadCount = loadProto(tower, towerNode);
     assert(unreadCount == 1);
     towers.emplace_back(std::move(tower));
   }

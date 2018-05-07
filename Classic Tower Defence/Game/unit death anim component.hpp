@@ -12,7 +12,7 @@
 #include <cstdint>
 
 struct UnitDeathAnim {
-  uint32_t frame;
+  uint32_t frame = 0;
 };
 
 #endif

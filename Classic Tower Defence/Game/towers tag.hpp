@@ -12,7 +12,7 @@
 #include "prototype.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
-using TowerProto = Prototype<ECS::EntityID>;
+using TowerProto = DefaultPrototype;
 using Towers = std::vector<TowerProto>;
 
 #endif

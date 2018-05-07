@@ -13,7 +13,7 @@
 
 struct UnitPath {
   // index of position in MapInfo::path
-  size_t index;
+  size_t index = 0;
 };
 
 #endif

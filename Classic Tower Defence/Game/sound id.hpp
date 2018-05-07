@@ -11,6 +11,8 @@
 
 #include <cstdint>
 
+//@SIMPLETON
+
 using SoundID = uint16_t;
 
 enum class DupSound : uint8_t {

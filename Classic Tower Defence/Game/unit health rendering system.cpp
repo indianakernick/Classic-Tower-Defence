@@ -22,8 +22,8 @@ void unitHealthRenderingSystem(
   const auto view = reg.view<Position, UnitStats>();
   for (const ECS::EntityID entity : view) {
     const UnitStats &stats = view.get<UnitStats>(entity);
-    const float maxHealth = stats.proto->health;
-    const float maxArmour = stats.proto->armour;
+    const float maxHealth = stats.proto->get<UnitStats>().health;
+    const float maxArmour = stats.proto->get<UnitStats>().armour;
     const glm::vec2 pos = view.get<Position>(entity).pos;
     
     if (maxHealth - stats.health > 1.0f) {

@@ -10,6 +10,7 @@
 #define unit_walk_anim_component_hpp
 
 #include <cstdint>
+#include <Simpleton/Data/json.hpp>
 
 struct UnitWalkAnim {
   uint32_t frame;
@@ -17,5 +18,13 @@ struct UnitWalkAnim {
   uint32_t subframe;
   uint32_t subframes;
 };
+
+inline void from_json(const json &j, UnitWalkAnim &anim) {
+  anim.frame = 0;
+  anim.subframe = 0;
+  Data::get(anim.frames, j, "frames");
+  anim.subframes = 1;
+  Data::getOptional(anim.subframes, j, "subframes");
+}
 
 #endif

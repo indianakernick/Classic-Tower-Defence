@@ -9,9 +9,10 @@
 #ifndef unit_stats_component_hpp
 #define unit_stats_component_hpp
 
+#include "prototype.hpp"
 #include <Simpleton/Data/json.hpp>
 
-struct UnitStatsBase {
+struct UnitStats {
   float health;
   float armour;
   float healthRegen;
@@ -19,13 +20,10 @@ struct UnitStatsBase {
   float dodge;
   float moveSpeed;
   uint32_t gold;
+  DefaultPrototype *proto;
 };
 
-struct UnitStats : UnitStatsBase {
-  const UnitStatsBase *proto;
-};
-
-inline void from_json(const json &j, UnitStatsBase &comp) {
+inline void from_json(const json &j, UnitStats &comp) {
   DATA_GET(comp, health);
   DATA_GET(comp, armour);
   DATA_GET(comp, healthRegen);

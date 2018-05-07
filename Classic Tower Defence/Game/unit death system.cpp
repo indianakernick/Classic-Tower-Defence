@@ -28,7 +28,7 @@ void unitDeathSystem(ECS::Registry &reg) {
       
       const ECS::EntityID deadUnit = reg.create();
       reg.assign<Position>(deadUnit, pos);
-      reg.assign<UnitDeathAnim>(deadUnit, uint32_t(0));
+      reg.assign<UnitDeathAnim>(deadUnit);
       reg.assign<UnitSprite>(deadUnit, sprite);
       reg.assign<Sound>(deadUnit, sound);
     }
