@@ -256,7 +256,7 @@ local towerSprites(sprite) = {
       frames: tower.TowerSprites.firingFrames
     },
     TowerBeamAnim: {
-      frames: 2,
+      frames: 4,
       scaleBeam: false
     },
   },

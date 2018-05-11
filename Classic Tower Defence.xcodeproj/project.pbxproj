@@ -453,8 +453,6 @@
 		45C6DD8620A01A3B002A133F /* load spawner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load spawner.cpp"; sourceTree = "<group>"; };
 		45C6DD8720A01A3B002A133F /* load spawner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load spawner.hpp"; sourceTree = "<group>"; };
 		45C6DD8920A45651002A133F /* fire.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire.anim; sourceTree = "<group>"; };
-		45C6DD8A20A45668002A133F /* fire 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire 0.png"; sourceTree = "<group>"; };
-		45C6DD8B20A45668002A133F /* fire 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire 1.png"; sourceTree = "<group>"; };
 		45C6DD8C20A458AC002A133F /* flamethrower 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flamethrower 0.png"; sourceTree = "<group>"; };
 		45C6DD8D20A458AC002A133F /* flamethrower 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flamethrower 1.png"; sourceTree = "<group>"; };
 		45C6DD8E20A458AD002A133F /* flamethrower 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flamethrower 3.png"; sourceTree = "<group>"; };
@@ -500,6 +498,10 @@
 		45C6DDCA20A599F1002A133F /* explosive cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon base.png"; sourceTree = "<group>"; };
 		45C6DDCB20A599F1002A133F /* poison cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon base.png"; sourceTree = "<group>"; };
 		45C6DDCC20A599F1002A133F /* cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon base.png"; sourceTree = "<group>"; };
+		45C6DDCD20A59FBA002A133F /* fire 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire 2.png"; sourceTree = "<group>"; };
+		45C6DDCE20A59FBB002A133F /* fire 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire 1.png"; sourceTree = "<group>"; };
+		45C6DDCF20A59FBC002A133F /* fire 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire 0.png"; sourceTree = "<group>"; };
+		45C6DDD020A59FBC002A133F /* fire 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire 3.png"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -921,8 +923,10 @@
 				4563D5A12096BCC000DB2510 /* explosive cannon 8.png */,
 				45C6DDCA20A599F1002A133F /* explosive cannon base.png */,
 				4563D5A32096BCCD00DB2510 /* explosive cannon projectile.png */,
-				45C6DD8A20A45668002A133F /* fire 0.png */,
-				45C6DD8B20A45668002A133F /* fire 1.png */,
+				45C6DDCF20A59FBC002A133F /* fire 0.png */,
+				45C6DDCE20A59FBB002A133F /* fire 1.png */,
+				45C6DDCD20A59FBA002A133F /* fire 2.png */,
+				45C6DDD020A59FBC002A133F /* fire 3.png */,
 				45C6DD8C20A458AC002A133F /* flamethrower 0.png */,
 				45C6DD8D20A458AC002A133F /* flamethrower 1.png */,
 				45C6DD9020A458AE002A133F /* flamethrower 2.png */,
