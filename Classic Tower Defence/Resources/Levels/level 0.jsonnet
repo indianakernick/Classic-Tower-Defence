@@ -9,14 +9,14 @@ local getSound = import "getsound.libsonnet";
   spawntime: 1.5,
   waves: [
     {
-      quantity: 20,
+      quantity: 100,
       proto: {
         UnitStats: {
-          health: 200,
-          armour: 100,
-          healthRegen: 0.1,
-          armourRegen: 0,
-          dodge: 0.2,
+          health: 1000,
+          armour: 500,
+          healthRegen: 0.2,
+          armourRegen: 0.2,
+          dodge: 0.1,
 
           // frames per tile = pixels per tile / pixels per frame
           // tiles per second = frames per second / frames per tile

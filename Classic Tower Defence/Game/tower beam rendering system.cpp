@@ -13,6 +13,7 @@
 #include "beam tower component.hpp"
 #include "tower target component.hpp"
 #include "tower sprites component.hpp"
+#include "tower beam anim component.hpp"
 
 void towerBeamRenderingSystem(
   ECS::Registry &reg,
@@ -20,7 +21,7 @@ void towerBeamRenderingSystem(
   const Sprite::Sheet &sheet
 ) {
   const auto view = reg.view<
-    Position, TowerTarget, TowerSprites, BeamTower
+    Position, TowerTarget, TowerSprites, BeamTower, TowerBeamAnim
   >();
   for (const ECS::EntityID entity : view) {
     if (!view.get<BeamTower>(entity).firing) {
@@ -33,12 +34,13 @@ void towerBeamRenderingSystem(
       std::cos(target.angle) * 0.5f,
       std::sin(target.angle) * 0.5f
     };
+    const uint32_t frame = view.get<TowerBeamAnim>(entity).frame;
    
     writer.quad();
     writer.depth(Depth::TOWER_BEAM);
     writer.rotTilePos<G2D::Origin::MID_LEFT>(
       target.angle, pos + offset, {target.dist - 0.5f, 1.0f}
     );
-    writer.tileTex(sheet.getSprite(sprites.projectile));
+    writer.tileTex(sheet.getSprite(sprites.projectile + frame));
   }
 }

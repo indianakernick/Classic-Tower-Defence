@@ -32,7 +32,7 @@ void towerProjectileRenderingSystem(
     const glm::vec2 pos = view.get<Position>(entity).pos;
     const TowerTarget target = view.get<TowerTarget>(entity);
     
-    const float progress = static_cast<float>(frame) / sprites.firingFrames;
+    const float progress = static_cast<float>(frame) / (sprites.firingFrames - 1);
     writer.quad();
     writer.depth(Depth::TOWER_PROJ);
     writer.rotTilePos(target.angle, pos + target.vec * progress);

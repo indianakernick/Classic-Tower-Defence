@@ -24,6 +24,7 @@
 #include "poison effect component.hpp"
 #include "tower upgrades component.hpp"
 #include "unit walk anim component.hpp"
+#include "tower beam anim component.hpp"
 #include "unit death anim component.hpp"
 #include "projectile tower component.hpp"
 #include "tower firing anim component.hpp"
@@ -50,6 +51,7 @@ using CompList = Utils::TypeList<
   PoisonEffect,
   TowerUpgrades,
   UnitWalkAnim,
+  TowerBeamAnim,
   UnitDeathAnim,
   ProjectileTower,
   TowerFiringAnim,

@@ -53,7 +53,8 @@ local towerSprites(sprite) = {
     },
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
-    }
+    },
+    TowerBeamAnim: {},
   },
   {
     local tower = self,
@@ -82,6 +83,28 @@ local towerSprites(sprite) = {
     local tower = self,
     ProjectileTower: {},
     CommonTowerStats: {
+      range: 6,
+      damage: 60,
+      rof: 1/2,
+      armourPiercing: 0.5
+    },
+    TowerGold: {
+      buy: 100,
+      sell: 50
+    },
+    TowerSprites: towerSprites("cannon"),
+    upgrades: {},
+    Sound: {
+      id: getSound("cannon")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
+    }
+  },
+  {
+    local tower = self,
+    ProjectileTower: {},
+    CommonTowerStats: {
       range: 4,
       damage: 50,
       rof: 1/2,
@@ -95,12 +118,44 @@ local towerSprites(sprite) = {
       aoe: 10
     },
     TowerEffect: {
+      # is this necessary?
       PoisonEffect: {
         damageFactor: 0.0,
-        duration: 5
+        duration: 0
       }
     },
     TowerSprites: towerSprites("explosive cannon"),
+    upgrades: {},
+    Sound: {
+      id: getSound("cannon")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
+    }
+  },
+  {
+    local tower = self,
+    ProjectileTower: {},
+    CommonTowerStats: {
+      range: 4,
+      damage: 20,
+      rof: 1/4,
+      armourPiercing: 0.6
+    },
+    TowerGold: {
+      buy: 100,
+      sell: 50
+    },
+    SplashTower: {
+      aoe: 10
+    },
+    TowerEffect: {
+      PoisonEffect: {
+        damageFactor: 0.2,
+        duration: 2
+      }
+    },
+    TowerSprites: towerSprites("poison cannon"),
     upgrades: {},
     Sound: {
       id: getSound("cannon")
@@ -170,5 +225,38 @@ local towerSprites(sprite) = {
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
     }
-  }
+  },
+  {
+    local tower = self,
+    BeamTower: {},
+    TurretTower: {},
+    CommonTowerStats: {
+      range: 2,
+      damage: 10,
+      rof: 20,
+      armourPiercing: 0.1
+    },
+    TowerGold: {
+      buy: 150,
+      sell: 100
+    },
+    TowerSprites: {
+      local sprite = "flamethrower",
+
+      gun: getSprite(sprite + " 0"),
+      base: getSprite(sprite + " base"),
+      firingFrames: self.base - self.gun,
+      projectile: getSprite("fire 0")
+    },
+    upgrades: {},
+    Sound: {
+      id: getSound("blaster 1")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
+    },
+    TowerBeamAnim: {
+      frames: 2
+    },
+  },
 ]

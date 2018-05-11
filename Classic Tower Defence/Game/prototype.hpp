@@ -29,7 +29,7 @@ private:
   template <typename Component>
   struct Storage : StorageBase {
     void accommodate(registry_t &reg, const entity_t entity) const ENTT_NOEXCEPT override {
-      reg.template accommodate<Component>(entity, comp);
+      reg.template assign<Component>(entity, static_cast<const Component &>(comp));
     }
     
     Component comp;
@@ -62,7 +62,7 @@ public:
     }
   }
   /**
-   * @brief Create an new entity assign copies of the components to it
+   * @brief Create an new entity and assign copies of the components to it
    *
    * @return Newly created entity
    */

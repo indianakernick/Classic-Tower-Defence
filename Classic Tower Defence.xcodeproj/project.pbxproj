@@ -76,6 +76,7 @@
 		45C6DD8220A0197C002A133F /* load map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C6DD8020A0197C002A133F /* load map.cpp */; };
 		45C6DD8520A01A2B002A133F /* load base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C6DD8320A01A2B002A133F /* load base.cpp */; };
 		45C6DD8820A01A3B002A133F /* load spawner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C6DD8620A01A3B002A133F /* load spawner.cpp */; };
+		45C6DD9620A45C15002A133F /* tower beam anim system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C6DD9420A45C15002A133F /* tower beam anim system.cpp */; };
 		45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7F72092AA190081CDE1 /* unit effect system.cpp */; };
 		45DBB7FD2092AC350081CDE1 /* slow effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FB2092AC350081CDE1 /* slow effect system.cpp */; };
 		45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */; };
@@ -488,6 +489,9 @@
 		45C6DD9020A458AE002A133F /* flamethrower 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flamethrower 2.png"; sourceTree = "<group>"; };
 		45C6DD9120A458AE002A133F /* flamethrower base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flamethrower base.png"; sourceTree = "<group>"; };
 		45C6DD9220A458BE002A133F /* flamethrower.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = flamethrower.anim; sourceTree = "<group>"; };
+		45C6DD9320A45BAE002A133F /* tower beam anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam anim component.hpp"; sourceTree = "<group>"; };
+		45C6DD9420A45C15002A133F /* tower beam anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower beam anim system.cpp"; sourceTree = "<group>"; };
+		45C6DD9520A45C15002A133F /* tower beam anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam anim system.hpp"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -680,6 +684,7 @@
 				45682665209BFE6B00BA6AE8 /* tower gold component.hpp */,
 				45682693209D385200BA6AE8 /* projectile tower component.hpp */,
 				45682694209D386A00BA6AE8 /* beam tower component.hpp */,
+				45C6DD9320A45BAE002A133F /* tower beam anim component.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -728,6 +733,8 @@
 				4563D58920969AA100DB2510 /* splash damage system.hpp */,
 				4538858B208EC736003EB260 /* tower sound system.cpp */,
 				4538858C208EC736003EB260 /* tower sound system.hpp */,
+				45C6DD9420A45C15002A133F /* tower beam anim system.cpp */,
+				45C6DD9520A45C15002A133F /* tower beam anim system.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -1226,13 +1233,13 @@
 			buildConfigurationList = 4538849E208AB718003EB260 /* Build configuration list for PBXNativeTarget "Classic Tower Defence" */;
 			buildPhases = (
 				453884AE208ABB24003EB260 /* CopyFiles */,
+				452B93A3209346DE00B33561 /* Update Component List */,
 				4538848C208AB717003EB260 /* Sources */,
 				4538848D208AB717003EB260 /* Frameworks */,
 				45388511208C570A003EB260 /* Pack Sprites */,
 				4563D5FC20970FA200DB2510 /* Pack Radius */,
 				4538848E208AB717003EB260 /* Resources */,
 				453884B5208ABE9F003EB260 /* Compile Levels */,
-				452B93A3209346DE00B33561 /* Update Component List */,
 			);
 			buildRules = (
 				4563D5FD2097102C00DB2510 /* PBXBuildRule */,
@@ -1394,6 +1401,7 @@
 				4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */,
+				45C6DD9620A45C15002A133F /* tower beam anim system.cpp in Sources */,
 				453884DA208B0765003EB260 /* start proj firing anim system.cpp in Sources */,
 				45388569208D9C72003EB260 /* create spawner.cpp in Sources */,
 				45C6DD7C20A00BF9002A133F /* load prototype.cpp in Sources */,

@@ -32,17 +32,22 @@
 #include "start beam firing anim system.hpp"
 #include "turret damage system.hpp"
 #include "splash damage system.hpp"
+#include "tower beam anim system.hpp"
 
 void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
   loadTowers(reg);
   loadLevel(reg, 0);
   
-  //createTower(reg, 0, {11, 4});
-  createTower(reg, 5, {11, 7});
-  //createTower(reg, 2, {6, 5});
+  createTower(reg, 0, {11, 4});
+  createTower(reg, 1, {3, 5});
+  createTower(reg, 2, {6, 5});
+  createTower(reg, 3, {6, 2});
   createTower(reg, 4, {8, 8});
-  //createTower(reg, 5, {4, 8});
+  createTower(reg, 5, {11, 7});
+  createTower(reg, 6, {3, 2});
+  createTower(reg, 7, {15, 9});
+  createTower(reg, 8, {4, 8});
 }
 
 bool GameLogic::input(const SDL_Event &) {
@@ -68,6 +73,8 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   startBeamFiringAnimSystem(reg);
   turretDamageSystem(reg);
   splashDamageSystem(reg);
+  
+  towerBeamAnimSystem(reg);
   
   unitMotionSystem(reg, delta);
   unitDeathSystem(reg);
