@@ -34,13 +34,14 @@ void towerBeamRenderingSystem(
       std::cos(target.angle) * 0.5f,
       std::sin(target.angle) * 0.5f
     };
-    const uint32_t frame = view.get<TowerBeamAnim>(entity).frame;
+    const TowerBeamAnim anim = view.get<TowerBeamAnim>(entity);
+    const Sprite::Rect rect = sheet.getSprite(sprites.projectile + anim.frame);
+    const glm::vec2 size = anim.scaleBeam ? glm::vec2(target.dist - 0.5f, 1.0f)
+                                          : rect.size() * (sheet.getLength() / 16.0f);
    
     writer.quad();
     writer.depth(Depth::TOWER_BEAM);
-    writer.rotTilePos<G2D::Origin::MID_LEFT>(
-      target.angle, pos + offset, {target.dist - 0.5f, 1.0f}
-    );
-    writer.tileTex(sheet.getSprite(sprites.projectile + frame));
+    writer.rotTilePos<G2D::Origin::MID_LEFT>(target.angle, pos + offset, size);
+    writer.tileTex(rect);
   }
 }

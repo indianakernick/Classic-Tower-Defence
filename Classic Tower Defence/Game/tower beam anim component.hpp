@@ -14,10 +14,12 @@
 struct TowerBeamAnim {
   uint32_t frame = 0;
   uint32_t frames = 1;
+  bool scaleBeam = true;
 };
 
 inline void from_json(const json &j, TowerBeamAnim &comp) {
   Data::getOptional(comp.frames, j, "frames");
+  Data::getOptional(comp.scaleBeam, j, "scaleBeam");
 }
 
 #endif
