@@ -252,8 +252,6 @@
 		453B15352090700500BFA00D /* load towers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load towers.hpp"; sourceTree = "<group>"; };
 		453B15372090760900BFA00D /* towers.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = towers.jsonnet; sourceTree = "<group>"; };
 		453B154B20907CDD00BFA00D /* getsound.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = getsound.libsonnet; sourceTree = "<group>"; };
-		453B15502090818900BFA00D /* cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon base.png"; sourceTree = "<group>"; };
-		453B1551209081D700BFA00D /* cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = cannon.anim; sourceTree = "<group>"; };
 		453B15522090C12400BFA00D /* unit health rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit health rendering system.cpp"; sourceTree = "<group>"; };
 		453B15532090C12400BFA00D /* unit health rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit health rendering system.hpp"; sourceTree = "<group>"; };
 		453B15552090C57000BFA00D /* health 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health 4.png"; sourceTree = "<group>"; };
@@ -329,7 +327,6 @@
 		4563D58820969AA100DB2510 /* splash damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "splash damage system.cpp"; sourceTree = "<group>"; };
 		4563D58920969AA100DB2510 /* splash damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash damage system.hpp"; sourceTree = "<group>"; };
 		4563D58B2096A16800DB2510 /* tower effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower effect component.hpp"; sourceTree = "<group>"; };
-		4563D58C2096BAAA00DB2510 /* poison cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poison cannon.anim"; sourceTree = "<group>"; };
 		4563D58D2096BAC400DB2510 /* poison cannon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 3.png"; sourceTree = "<group>"; };
 		4563D58E2096BAC400DB2510 /* poison cannon 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 4.png"; sourceTree = "<group>"; };
 		4563D58F2096BAC400DB2510 /* poison cannon 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 5.png"; sourceTree = "<group>"; };
@@ -339,9 +336,7 @@
 		4563D5932096BAC500DB2510 /* poison cannon 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 1.png"; sourceTree = "<group>"; };
 		4563D5942096BAC500DB2510 /* poison cannon 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 6.png"; sourceTree = "<group>"; };
 		4563D5952096BAC500DB2510 /* poison cannon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon 2.png"; sourceTree = "<group>"; };
-		4563D5962096BAD700DB2510 /* poison cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon base.png"; sourceTree = "<group>"; };
 		4563D5972096BAD700DB2510 /* poison cannon projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon projectile.png"; sourceTree = "<group>"; };
-		4563D5982096BCAC00DB2510 /* explosive cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "explosive cannon.anim"; sourceTree = "<group>"; };
 		4563D5992096BCBF00DB2510 /* explosive cannon 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 7.png"; sourceTree = "<group>"; };
 		4563D59A2096BCBF00DB2510 /* explosive cannon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 3.png"; sourceTree = "<group>"; };
 		4563D59B2096BCBF00DB2510 /* explosive cannon 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 5.png"; sourceTree = "<group>"; };
@@ -351,24 +346,9 @@
 		4563D59F2096BCBF00DB2510 /* explosive cannon 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 0.png"; sourceTree = "<group>"; };
 		4563D5A02096BCC000DB2510 /* explosive cannon 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 6.png"; sourceTree = "<group>"; };
 		4563D5A12096BCC000DB2510 /* explosive cannon 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon 8.png"; sourceTree = "<group>"; };
-		4563D5A22096BCCD00DB2510 /* explosive cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon base.png"; sourceTree = "<group>"; };
 		4563D5A32096BCCD00DB2510 /* explosive cannon projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon projectile.png"; sourceTree = "<group>"; };
-		4563D5A42096CF3A00DB2510 /* snowball 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 1.png"; sourceTree = "<group>"; };
-		4563D5A52096CF3A00DB2510 /* snowball 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 4.png"; sourceTree = "<group>"; };
-		4563D5A62096CF3B00DB2510 /* snowball 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 3.png"; sourceTree = "<group>"; };
-		4563D5A72096CF3B00DB2510 /* snowball 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 0.png"; sourceTree = "<group>"; };
-		4563D5A82096CF3B00DB2510 /* snowball 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 2.png"; sourceTree = "<group>"; };
 		4563D5A92096CF6B00DB2510 /* snowball projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball projectile.png"; sourceTree = "<group>"; };
-		4563D5AA2096CF6B00DB2510 /* snowball base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball base.png"; sourceTree = "<group>"; };
-		4563D5AB2096CF7D00DB2510 /* snowball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowball.anim; sourceTree = "<group>"; };
-		4563D5AC2096D49000DB2510 /* iceball 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 0.png"; sourceTree = "<group>"; };
-		4563D5AD2096D49000DB2510 /* iceball 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 3.png"; sourceTree = "<group>"; };
-		4563D5AE2096D49100DB2510 /* iceball 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 1.png"; sourceTree = "<group>"; };
-		4563D5AF2096D49100DB2510 /* iceball 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 4.png"; sourceTree = "<group>"; };
-		4563D5B02096D49100DB2510 /* iceball 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 2.png"; sourceTree = "<group>"; };
-		4563D5B12096D49B00DB2510 /* iceball base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball base.png"; sourceTree = "<group>"; };
 		4563D5B22096D49C00DB2510 /* iceball projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball projectile.png"; sourceTree = "<group>"; };
-		4563D5B32096D4AD00DB2510 /* iceball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = iceball.anim; sourceTree = "<group>"; };
 		4563D5B42096E16700DB2510 /* sound queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sound queue.cpp"; sourceTree = "<group>"; };
 		4563D5B62096EBA600DB2510 /* sound id.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sound id.hpp"; sourceTree = "<group>"; };
 		4563D5B72096F4E200DB2510 /* tower shoot component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower shoot component.hpp"; sourceTree = "<group>"; };
@@ -453,15 +433,8 @@
 		45682687209C451200BA6AE8 /* big robot 0 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 4.png"; sourceTree = "<group>"; };
 		45682688209C451200BA6AE8 /* big robot 0 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 0 7.png"; sourceTree = "<group>"; };
 		45682689209C451200BA6AE8 /* big robot 2 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 2.png"; sourceTree = "<group>"; };
-		4568268A209D378700BA6AE8 /* laser.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.anim; sourceTree = "<group>"; };
 		4568268B209D37AE00BA6AE8 /* laser base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser base.png"; sourceTree = "<group>"; };
 		4568268C209D37AF00BA6AE8 /* laser projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser projectile.png"; sourceTree = "<group>"; };
-		4568268D209D37BF00BA6AE8 /* laser 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 2.png"; sourceTree = "<group>"; };
-		4568268E209D37BF00BA6AE8 /* laser 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 1.png"; sourceTree = "<group>"; };
-		4568268F209D37C000BA6AE8 /* laser 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 3.png"; sourceTree = "<group>"; };
-		45682690209D37C000BA6AE8 /* laser 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 0.png"; sourceTree = "<group>"; };
-		45682691209D37C000BA6AE8 /* laser 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 5.png"; sourceTree = "<group>"; };
-		45682692209D37C000BA6AE8 /* laser 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 4.png"; sourceTree = "<group>"; };
 		45682693209D385200BA6AE8 /* projectile tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "projectile tower component.hpp"; sourceTree = "<group>"; };
 		45682694209D386A00BA6AE8 /* beam tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "beam tower component.hpp"; sourceTree = "<group>"; };
 		45682695209D3AD800BA6AE8 /* tower projectile rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower projectile rendering system.cpp"; sourceTree = "<group>"; };
@@ -492,6 +465,41 @@
 		45C6DD9320A45BAE002A133F /* tower beam anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam anim component.hpp"; sourceTree = "<group>"; };
 		45C6DD9420A45C15002A133F /* tower beam anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower beam anim system.cpp"; sourceTree = "<group>"; };
 		45C6DD9520A45C15002A133F /* tower beam anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam anim system.hpp"; sourceTree = "<group>"; };
+		45C6DD9720A58F96002A133F /* laser.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.anim; sourceTree = "<group>"; };
+		45C6DD9820A58FBB002A133F /* laser 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 2.png"; sourceTree = "<group>"; };
+		45C6DD9920A58FBB002A133F /* laser 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 1.png"; sourceTree = "<group>"; };
+		45C6DD9A20A58FBC002A133F /* laser 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 3.png"; sourceTree = "<group>"; };
+		45C6DD9B20A58FBC002A133F /* laser 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 0.png"; sourceTree = "<group>"; };
+		45C6DD9C20A58FBC002A133F /* laser 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 5.png"; sourceTree = "<group>"; };
+		45C6DD9D20A58FBD002A133F /* laser 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laser 4.png"; sourceTree = "<group>"; };
+		45C6DDB020A594A2002A133F /* snowball 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 4.png"; sourceTree = "<group>"; };
+		45C6DDB120A594A3002A133F /* snowball 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 3.png"; sourceTree = "<group>"; };
+		45C6DDB220A594A4002A133F /* snowball 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 6.png"; sourceTree = "<group>"; };
+		45C6DDB320A594A5002A133F /* snowball 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 5.png"; sourceTree = "<group>"; };
+		45C6DDB420A594A5002A133F /* snowball 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 1.png"; sourceTree = "<group>"; };
+		45C6DDB520A594A6002A133F /* snowball 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 2.png"; sourceTree = "<group>"; };
+		45C6DDB620A594A6002A133F /* snowball 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 8.png"; sourceTree = "<group>"; };
+		45C6DDB720A594A6002A133F /* snowball 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 0.png"; sourceTree = "<group>"; };
+		45C6DDB820A594A7002A133F /* snowball 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball 7.png"; sourceTree = "<group>"; };
+		45C6DDBA20A597CC002A133F /* iceball 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 0.png"; sourceTree = "<group>"; };
+		45C6DDBB20A597CD002A133F /* iceball 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 3.png"; sourceTree = "<group>"; };
+		45C6DDBC20A597CD002A133F /* iceball 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 5.png"; sourceTree = "<group>"; };
+		45C6DDBD20A597CE002A133F /* iceball 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 4.png"; sourceTree = "<group>"; };
+		45C6DDBE20A597CF002A133F /* iceball 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 6.png"; sourceTree = "<group>"; };
+		45C6DDBF20A597CF002A133F /* iceball 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 7.png"; sourceTree = "<group>"; };
+		45C6DDC020A597D0002A133F /* iceball 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 8.png"; sourceTree = "<group>"; };
+		45C6DDC120A597D0002A133F /* iceball 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 1.png"; sourceTree = "<group>"; };
+		45C6DDC220A597D1002A133F /* iceball 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball 2.png"; sourceTree = "<group>"; };
+		45C6DDC320A597E3002A133F /* iceball base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iceball base.png"; sourceTree = "<group>"; };
+		45C6DDC420A59813002A133F /* iceball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = iceball.anim; sourceTree = "<group>"; };
+		45C6DDC520A5985B002A133F /* snowball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowball.anim; sourceTree = "<group>"; };
+		45C6DDC620A59876002A133F /* snowball base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowball base.png"; sourceTree = "<group>"; };
+		45C6DDC720A599D3002A133F /* cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = cannon.anim; sourceTree = "<group>"; };
+		45C6DDC820A599D4002A133F /* explosive cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "explosive cannon.anim"; sourceTree = "<group>"; };
+		45C6DDC920A599D5002A133F /* poison cannon.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poison cannon.anim"; sourceTree = "<group>"; };
+		45C6DDCA20A599F1002A133F /* explosive cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosive cannon base.png"; sourceTree = "<group>"; };
+		45C6DDCB20A599F1002A133F /* poison cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poison cannon base.png"; sourceTree = "<group>"; };
+		45C6DDCC20A599F1002A133F /* cannon base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cannon base.png"; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -896,7 +904,7 @@
 				453B157F20917D9D00BFA00D /* cannon 6.png */,
 				453B158020917D9D00BFA00D /* cannon 7.png */,
 				453B157E20917D9C00BFA00D /* cannon 8.png */,
-				453B15502090818900BFA00D /* cannon base.png */,
+				45C6DDCC20A599F1002A133F /* cannon base.png */,
 				453B157A2091781300BFA00D /* cannon projectile.png */,
 				453B15A32091A01F00BFA00D /* explosion 0.png */,
 				453B15A42091A01F00BFA00D /* explosion 1.png */,
@@ -911,7 +919,7 @@
 				4563D5A02096BCC000DB2510 /* explosive cannon 6.png */,
 				4563D5992096BCBF00DB2510 /* explosive cannon 7.png */,
 				4563D5A12096BCC000DB2510 /* explosive cannon 8.png */,
-				4563D5A22096BCCD00DB2510 /* explosive cannon base.png */,
+				45C6DDCA20A599F1002A133F /* explosive cannon base.png */,
 				4563D5A32096BCCD00DB2510 /* explosive cannon projectile.png */,
 				45C6DD8A20A45668002A133F /* fire 0.png */,
 				45C6DD8B20A45668002A133F /* fire 1.png */,
@@ -938,19 +946,23 @@
 				453B155D2090C57200BFA00D /* health 14.png */,
 				453B155E2090C57300BFA00D /* health 15.png */,
 				453B155F2090C57300BFA00D /* health 16.png */,
-				4563D5AC2096D49000DB2510 /* iceball 0.png */,
-				4563D5AE2096D49100DB2510 /* iceball 1.png */,
-				4563D5B02096D49100DB2510 /* iceball 2.png */,
-				4563D5AD2096D49000DB2510 /* iceball 3.png */,
-				4563D5AF2096D49100DB2510 /* iceball 4.png */,
-				4563D5B12096D49B00DB2510 /* iceball base.png */,
+				45C6DDBA20A597CC002A133F /* iceball 0.png */,
+				45C6DDC120A597D0002A133F /* iceball 1.png */,
+				45C6DDC220A597D1002A133F /* iceball 2.png */,
+				45C6DDBB20A597CD002A133F /* iceball 3.png */,
+				45C6DDBD20A597CE002A133F /* iceball 4.png */,
+				45C6DDBC20A597CD002A133F /* iceball 5.png */,
+				45C6DDBE20A597CF002A133F /* iceball 6.png */,
+				45C6DDBF20A597CF002A133F /* iceball 7.png */,
+				45C6DDC020A597D0002A133F /* iceball 8.png */,
+				45C6DDC320A597E3002A133F /* iceball base.png */,
 				4563D5B22096D49C00DB2510 /* iceball projectile.png */,
-				45682690209D37C000BA6AE8 /* laser 0.png */,
-				4568268E209D37BF00BA6AE8 /* laser 1.png */,
-				4568268D209D37BF00BA6AE8 /* laser 2.png */,
-				4568268F209D37C000BA6AE8 /* laser 3.png */,
-				45682692209D37C000BA6AE8 /* laser 4.png */,
-				45682691209D37C000BA6AE8 /* laser 5.png */,
+				45C6DD9B20A58FBC002A133F /* laser 0.png */,
+				45C6DD9920A58FBB002A133F /* laser 1.png */,
+				45C6DD9820A58FBB002A133F /* laser 2.png */,
+				45C6DD9A20A58FBC002A133F /* laser 3.png */,
+				45C6DD9D20A58FBD002A133F /* laser 4.png */,
+				45C6DD9C20A58FBC002A133F /* laser 5.png */,
 				4568268B209D37AE00BA6AE8 /* laser base.png */,
 				4568268C209D37AF00BA6AE8 /* laser projectile.png */,
 				4538852A208C5CE5003EB260 /* map 0.png */,
@@ -975,7 +987,7 @@
 				4563D5942096BAC500DB2510 /* poison cannon 6.png */,
 				4563D5902096BAC400DB2510 /* poison cannon 7.png */,
 				4563D5912096BAC500DB2510 /* poison cannon 8.png */,
-				4563D5962096BAD700DB2510 /* poison cannon base.png */,
+				45C6DDCB20A599F1002A133F /* poison cannon base.png */,
 				4563D5972096BAD700DB2510 /* poison cannon projectile.png */,
 				45388535208D73A5003EB260 /* robot 0 0.png */,
 				45388552208D73A9003EB260 /* robot 0 1.png */,
@@ -1009,12 +1021,16 @@
 				4538853B208D73A5003EB260 /* robot 3 5.png */,
 				45388540208D73A6003EB260 /* robot 3 6.png */,
 				45388541208D73A6003EB260 /* robot 3 7.png */,
-				4563D5A72096CF3B00DB2510 /* snowball 0.png */,
-				4563D5A42096CF3A00DB2510 /* snowball 1.png */,
-				4563D5A82096CF3B00DB2510 /* snowball 2.png */,
-				4563D5A62096CF3B00DB2510 /* snowball 3.png */,
-				4563D5A52096CF3A00DB2510 /* snowball 4.png */,
-				4563D5AA2096CF6B00DB2510 /* snowball base.png */,
+				45C6DDB720A594A6002A133F /* snowball 0.png */,
+				45C6DDB420A594A5002A133F /* snowball 1.png */,
+				45C6DDB520A594A6002A133F /* snowball 2.png */,
+				45C6DDB120A594A3002A133F /* snowball 3.png */,
+				45C6DDB020A594A2002A133F /* snowball 4.png */,
+				45C6DDB320A594A5002A133F /* snowball 5.png */,
+				45C6DDB220A594A4002A133F /* snowball 6.png */,
+				45C6DDB820A594A7002A133F /* snowball 7.png */,
+				45C6DDB620A594A6002A133F /* snowball 8.png */,
+				45C6DDC620A59876002A133F /* snowball base.png */,
 				4563D5A92096CF6B00DB2510 /* snowball projectile.png */,
 			);
 			path = Sprites;
@@ -1026,21 +1042,21 @@
 				453B15782090C7B200BFA00D /* armour.anim */,
 				45682669209C44ED00BA6AE8 /* big robot.anim */,
 				45388570208DB3C2003EB260 /* blaster.anim */,
-				453B1551209081D700BFA00D /* cannon.anim */,
+				45C6DDC720A599D3002A133F /* cannon.anim */,
 				453B15A82091A31A00BFA00D /* explosion.anim */,
-				4563D5982096BCAC00DB2510 /* explosive cannon.anim */,
+				45C6DDC820A599D4002A133F /* explosive cannon.anim */,
 				45C6DD8920A45651002A133F /* fire.anim */,
 				45C6DD9220A458BE002A133F /* flamethrower.anim */,
 				4563D5B82097034F00DB2510 /* generate radius.js */,
 				453B15772090C7B200BFA00D /* health.anim */,
-				4563D5B32096D4AD00DB2510 /* iceball.anim */,
-				4568268A209D378700BA6AE8 /* laser.anim */,
+				45C6DDC420A59813002A133F /* iceball.anim */,
+				45C6DD9720A58F96002A133F /* laser.anim */,
 				45388572208DC45B003EB260 /* map.anim */,
 				45F24DF5209E871700EAE60D /* plasma.anim */,
-				4563D58C2096BAAA00DB2510 /* poison cannon.anim */,
+				45C6DDC920A599D5002A133F /* poison cannon.anim */,
 				4563D5BA20970E8800DB2510 /* radius.anim */,
 				45388531208D7345003EB260 /* robot.anim */,
-				4563D5AB2096CF7D00DB2510 /* snowball.anim */,
+				45C6DDC520A5985B002A133F /* snowball.anim */,
 				45388533208D7356003EB260 /* ui plan.anim */,
 			);
 			path = Animations;
