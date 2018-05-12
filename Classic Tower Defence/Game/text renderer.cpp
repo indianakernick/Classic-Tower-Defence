@@ -8,6 +8,16 @@
 
 #include "text renderer.hpp"
 
+void TextRenderer::centerAlign(const std::string_view text) {
+  beginning = pos;
+  pos.x -= (width(text) - (advance.x - size.x) * scale) / 2.0f;
+}
+
+void TextRenderer::rightAlign(const std::string_view text) {
+  beginning = pos;
+  pos.x -= width(text);
+}
+
 void TextRenderer::setGlyphSize(const glm::vec2 newSize) {
   size = newSize;
 }
@@ -47,9 +57,7 @@ void TextRenderer::backspace() {
 }
 
 void TextRenderer::tab() {
-  const float scaledAdvance = scale * advance.x;
-  const int chars = std::nearbyint(pos.x / scaledAdvance);
-  pos.x += scaledAdvance * (8 - chars % 8);
+  pos.x += tabSize(pos.x - beginning.x);
 }
 
 void TextRenderer::vertTab() {
@@ -114,4 +122,70 @@ void TextRenderer::pushText(
   for (const char c : text) {
     pushChar(writer, sheet, c);
   }
+}
+
+float TextRenderer::tabSize(const float posx) const {
+  const float scaledAdvance = scale * advance.x;
+  const int chars = std::nearbyint(posx / scaledAdvance);
+  return scaledAdvance * (8 - chars % 8);
+}
+
+namespace {
+  inline void maxReset(float &max, float &curr) {
+    if (max < curr) {
+      max = curr;
+    }
+    curr = 0.0f;
+  }
+}
+
+float TextRenderer::width(const std::string_view text) const {
+  const float advanceX = advance.x * scale;
+  float maxWidth = 0.0f;
+  float currWidth = 0.0f;
+  
+  for (const char c : text) {
+    switch (c) {
+      case '\n':
+        maxReset(maxWidth, currWidth);
+        break;
+      case ' ':
+        currWidth += advanceX;
+        break;
+      case '\b':
+        currWidth -= advanceX;
+        break;
+      case '\t': {
+        currWidth += tabSize(currWidth);
+        break;
+      }
+      case '\r':
+        maxReset(maxWidth, currWidth);
+        break;
+      default:
+        if (std::isprint(c)) {
+          currWidth += advanceX;
+        }
+    }
+  }
+  
+  maxReset(maxWidth, currWidth);
+  
+  return maxWidth;
+}
+
+float TextRenderer::height(const std::string_view text) const {
+  if (text.empty()) {
+    return 0.0f;
+  }
+  const float advanceY = advance.y * scale;
+  float maxHeight = advanceY;
+  
+  for (const char c : text) {
+    if (c == '\n' || c == '\v') {
+      maxHeight += advanceY;
+    }
+  }
+  
+  return maxHeight;
 }

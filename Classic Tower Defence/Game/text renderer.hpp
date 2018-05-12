@@ -26,6 +26,13 @@ public:
   void setCursor(glm::vec2);
   /// Return the cursor to the last place that it was set
   void resetCursor();
+  /// Shifts the cursor so that the given text is center aligned about the
+  /// current cursor position
+  void centerAlign(std::string_view);
+  /// Shifts the cursor so that the given text is right aligned about the
+  /// current cursor position
+  void rightAlign(std::string_view);
+  
   /// Set the glyph scale (screen_size = glyph_scale * tex_size)
   void setScale(float);
   /// Set the depth of the quads
@@ -66,6 +73,10 @@ private:
   // to one pixel on the monitor
   float scale = 1.0f;
   float depth = 0.0f;
+  
+  float tabSize(float) const;
+  float width(std::string_view) const;
+  float height(std::string_view) const;
 };
 
 #endif

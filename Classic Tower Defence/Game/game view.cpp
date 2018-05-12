@@ -37,7 +37,7 @@ void GameView::init(G2D::Renderer &renderer) {
   
   text.setGlyphSize({5.0f, 8.0f});
   text.setAdvance({6.0f, -9.0f});
-  text.setCursor({0.0f, 338.0f});
+  text.setCursor({50.0f, 338.0f});
   text.setScale(2.0f);
 
   sounds.load();
@@ -70,6 +70,12 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   towerProjectileRenderingSystem(reg, writer, sheetTex.sheet());
   
   //writer.section({camera.transform.toPixels(), sheetTex.tex()});
+  
+  writer.section({textCam.transform.toPixels(), textSheetTex.tex()});
+  text.setCursor({100.0f, 338.0f});
+  text.pushText(writer, textSheetTex.sheet(), "01234567890123456789\n");
+  text.centerAlign("center");
+  text.pushText(writer, textSheetTex.sheet(), "center");
   
   /*
   writer.section({textCam.transform.toPixels(), textSheetTex.tex()});
