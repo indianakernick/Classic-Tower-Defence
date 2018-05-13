@@ -10,7 +10,7 @@
 #define map_tag_hpp
 
 #include <cstdint>
-#include <Simpleton/Utils/grid.hpp>
+#include <Simpleton/Grid/grid.hpp>
 
 enum class TileType : uint8_t {
   ENTRY,
@@ -19,6 +19,6 @@ enum class TileType : uint8_t {
   PLATFORM
 };
 
-using Map = Utils::Grid<TileType>;
+using Map = Grid::Grid<TileType>;
 
 #endif
