@@ -13,7 +13,7 @@
 #include <Simpleton/Math/dir.hpp>
 
 struct MapInfo {
-  using Pos = Map::Pos;
+  using Pos = Grid::Pos;
 
   Pos entry;
   Pos exit;

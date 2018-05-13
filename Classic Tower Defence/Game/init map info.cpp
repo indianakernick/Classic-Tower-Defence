@@ -18,14 +18,14 @@ namespace {
 
   //@SIMPLETON
 
-  bool findPath(MapInfo &info, const Map &map, const Math::Dir prevDir, const Map::Pos pos) {
+  bool findPath(MapInfo &info, const Map &map, const Math::Dir prevDir, const Grid::Pos pos) {
     info.path.push_back(pos);
     
     for (const Math::Dir dir : Math::DIR_RANGE) {
       if (dir == Math::opposite(prevDir)) {
         continue;
       }
-      const Map::Pos newPos = pos + Math::ToVec<Map::Pos::value_type>::conv(dir);
+      const Grid::Pos newPos = pos + Math::ToVec<Grid::Pos::value_type>::conv(dir);
       
       if (map.outOfRange(newPos)) {
         continue;

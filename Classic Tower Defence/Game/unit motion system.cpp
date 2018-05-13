@@ -34,7 +34,7 @@ void unitMotionSystem(ECS::Registry &reg, const float delta) {
     
     do {
       const glm::vec2 dirVec = Math::ToVec<float>::conv(dir);
-      const Map::Pos nextTile = map.path[pathIndex + 1];
+      const Grid::Pos nextTile = map.path[pathIndex + 1];
       const float distToNext = orthoDist(pos, nextTile);
       
       if (distToNext > moveDist) {
