@@ -502,6 +502,23 @@
 		45C6DDCF20A59FBC002A133F /* fire 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire 0.png"; sourceTree = "<group>"; };
 		45C6DDD020A59FBC002A133F /* fire 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire 3.png"; sourceTree = "<group>"; };
 		45C6DDD120A5A0BF002A133F /* fire.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire.anim; sourceTree = "<group>"; };
+		45C6DDD220A7F14F002A133F /* tank 1 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 1 1.png"; sourceTree = "<group>"; };
+		45C6DDD320A7F150002A133F /* tank 3 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 3 3.png"; sourceTree = "<group>"; };
+		45C6DDD420A7F151002A133F /* tank 1 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 1 3.png"; sourceTree = "<group>"; };
+		45C6DDD520A7F151002A133F /* tank 0 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 0 2.png"; sourceTree = "<group>"; };
+		45C6DDD620A7F152002A133F /* tank 0 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 0 1.png"; sourceTree = "<group>"; };
+		45C6DDD720A7F152002A133F /* tank 3 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 3 1.png"; sourceTree = "<group>"; };
+		45C6DDD820A7F153002A133F /* tank 2 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 2 1.png"; sourceTree = "<group>"; };
+		45C6DDD920A7F153002A133F /* tank 2 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 2 2.png"; sourceTree = "<group>"; };
+		45C6DDDA20A7F153002A133F /* tank 1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 1 2.png"; sourceTree = "<group>"; };
+		45C6DDDB20A7F153002A133F /* tank 2 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 2 0.png"; sourceTree = "<group>"; };
+		45C6DDDC20A7F154002A133F /* tank 0 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 0 0.png"; sourceTree = "<group>"; };
+		45C6DDDD20A7F154002A133F /* tank 2 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 2 3.png"; sourceTree = "<group>"; };
+		45C6DDDE20A7F154002A133F /* tank 3 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 3 0.png"; sourceTree = "<group>"; };
+		45C6DDDF20A7F154002A133F /* tank 0 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 0 3.png"; sourceTree = "<group>"; };
+		45C6DDE020A7F155002A133F /* tank 1 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 1 0.png"; sourceTree = "<group>"; };
+		45C6DDE120A7F155002A133F /* tank 3 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tank 3 2.png"; sourceTree = "<group>"; };
+		45C6DDE220A7F203002A133F /* tank.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = tank.anim; sourceTree = "<group>"; };
 		45DBB7F72092AA190081CDE1 /* unit effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7F82092AA190081CDE1 /* unit effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit effect system.hpp"; sourceTree = "<group>"; };
 		45DBB7FA2092AC020081CDE1 /* slow effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "slow effect component.hpp"; sourceTree = "<group>"; };
@@ -1036,6 +1053,22 @@
 				45C6DDB620A594A6002A133F /* snowball 8.png */,
 				45C6DDC620A59876002A133F /* snowball base.png */,
 				4563D5A92096CF6B00DB2510 /* snowball projectile.png */,
+				45C6DDDC20A7F154002A133F /* tank 0 0.png */,
+				45C6DDD620A7F152002A133F /* tank 0 1.png */,
+				45C6DDD520A7F151002A133F /* tank 0 2.png */,
+				45C6DDDF20A7F154002A133F /* tank 0 3.png */,
+				45C6DDE020A7F155002A133F /* tank 1 0.png */,
+				45C6DDD220A7F14F002A133F /* tank 1 1.png */,
+				45C6DDDA20A7F153002A133F /* tank 1 2.png */,
+				45C6DDD420A7F151002A133F /* tank 1 3.png */,
+				45C6DDDB20A7F153002A133F /* tank 2 0.png */,
+				45C6DDD820A7F153002A133F /* tank 2 1.png */,
+				45C6DDD920A7F153002A133F /* tank 2 2.png */,
+				45C6DDDD20A7F154002A133F /* tank 2 3.png */,
+				45C6DDDE20A7F154002A133F /* tank 3 0.png */,
+				45C6DDD720A7F152002A133F /* tank 3 1.png */,
+				45C6DDE120A7F155002A133F /* tank 3 2.png */,
+				45C6DDD320A7F150002A133F /* tank 3 3.png */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -1061,6 +1094,7 @@
 				4563D5BA20970E8800DB2510 /* radius.anim */,
 				45388531208D7345003EB260 /* robot.anim */,
 				45C6DDC520A5985B002A133F /* snowball.anim */,
+				45C6DDE220A7F203002A133F /* tank.anim */,
 				45388533208D7356003EB260 /* ui plan.anim */,
 			);
 			path = Animations;

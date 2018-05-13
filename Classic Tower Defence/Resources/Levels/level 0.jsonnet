@@ -12,10 +12,10 @@ local getSound = import "getsound.libsonnet";
       quantity: 100,
       proto: {
         UnitStats: {
-          health: 1000,
-          armour: 500,
-          healthRegen: 0.2,
-          armourRegen: 0.2,
+          health: 2000,
+          armour: 2000,
+          healthRegen: 50,
+          armourRegen: 50,
           dodge: 0.1,
 
           // frames per tile = pixels per tile / pixels per frame
@@ -27,8 +27,8 @@ local getSound = import "getsound.libsonnet";
           gold: 10
         },
         UnitSprite: {
-          sprite: getSprite("big robot 0 0"),
-          frames: getSprite("big robot 1 0") - getSprite("big robot 0 0"),
+          sprite: getSprite("tank 0 0"),
+          frames: getSprite("tank 1 0") - getSprite("tank 0 0"),
           death: getSprite("explosion 0"),
           deathFrames: 4
         },
