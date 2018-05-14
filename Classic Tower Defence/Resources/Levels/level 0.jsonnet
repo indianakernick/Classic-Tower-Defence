@@ -14,8 +14,8 @@ local getSound = import "getsound.libsonnet";
         UnitStats: {
           health: 2000,
           armour: 2000,
-          healthRegen: 50,
-          armourRegen: 50,
+          healthRegen: 100,
+          armourRegen: 100,
           dodge: 0.1,
 
           // frames per tile = pixels per tile / pixels per frame

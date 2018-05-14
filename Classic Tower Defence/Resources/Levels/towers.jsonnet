@@ -115,7 +115,7 @@ local towerSprites(sprite) = {
       sell: 50
     },
     SplashTower: {
-      aoe: 10
+      aoe: 3
     },
     TowerEffect: {
       # is this necessary?
@@ -147,7 +147,7 @@ local towerSprites(sprite) = {
       sell: 50
     },
     SplashTower: {
-      aoe: 10
+      aoe: 3
     },
     TowerEffect: {
       PoisonEffect: {
@@ -229,7 +229,6 @@ local towerSprites(sprite) = {
   {
     local tower = self,
     BeamTower: {},
-    TurretTower: {},
     CommonTowerStats: {
       range: 2,
       damage: 10,
@@ -239,6 +238,15 @@ local towerSprites(sprite) = {
     TowerGold: {
       buy: 150,
       sell: 100
+    },
+    SplashTower: {
+      aoe: 2
+    },
+    TowerEffect: {
+      PoisonEffect: {
+        damageFactor: 0,
+        duration: 2
+      }
     },
     TowerSprites: {
       local sprite = "flamethrower",

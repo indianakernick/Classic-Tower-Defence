@@ -9,44 +9,7 @@
 #include "init map info.hpp"
 
 #include "map info tag.hpp"
-#include <Simpleton/Math/dir.hpp>
-
-namespace {
-  // Finds any path between points if one exists. Handles dead ends. Gets stuck
-  // in some loops but not others. Does not find the shortest path.
-  // Returns true if a path was found.
-
-  //@SIMPLETON
-
-  bool findPath(MapInfo &info, const Map &map, const Math::Dir prevDir, const Grid::Pos pos) {
-    info.path.push_back(pos);
-    
-    for (const Math::Dir dir : Math::DIR_RANGE) {
-      if (dir == Math::opposite(prevDir)) {
-        continue;
-      }
-      const Grid::Pos newPos = pos + Math::ToVec<Grid::Pos::value_type>::conv(dir);
-      
-      if (map.outOfRange(newPos)) {
-        continue;
-      }
-      if (newPos == info.exit) {
-        info.path.push_back(info.exit);
-        return true;
-      }
-      
-      if (map[newPos] == TileType::PATH) {
-        if (findPath(info, map, dir, newPos)) {
-          return true;
-        } else {
-          info.path.pop_back();
-        }
-      }
-    }
-    
-    return false;
-  }
-}
+#include <Simpleton/Grid/one path.hpp>
 
 void initMapInfo(ECS::Registry &reg) {
   MapInfo &info = reg.get<MapInfo>();
@@ -59,10 +22,15 @@ void initMapInfo(ECS::Registry &reg) {
     }
   }
   
-  if (!findPath(info, map, Math::Dir::NONE, info.entry)) {
+  const auto notPath = [] (const TileType type) {
+    return type == TileType::PLATFORM;
+  };
+  info.path = Grid::onePath(map, notPath, info.entry, info.exit);
+  
+  if (info.path.empty()) {
     throw std::runtime_error("Could not find path from entry to exit");
   }
   
   info.pathDist = info.path.size() - 1;
-  info.entryDir = Math::FromVec<unsigned>::conv(info.path[1] - info.path[0]);
+  info.entryDir = Math::FromVec<Grid::Coord>::conv(info.path[1] - info.path[0]);
 }

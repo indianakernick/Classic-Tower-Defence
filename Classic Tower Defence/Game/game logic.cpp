@@ -46,7 +46,7 @@ void GameLogic::init(ECS::Registry &reg) {
   createTower(reg, 4, {8, 8});
   createTower(reg, 5, {11, 7});
   createTower(reg, 6, {3, 2});
-  createTower(reg, 7, {15, 9});
+  //createTower(reg, 7, {15, 9});
   createTower(reg, 8, {4, 8});
 }
 
