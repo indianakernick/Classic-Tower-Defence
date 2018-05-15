@@ -9,30 +9,27 @@
 #include "game logic.hpp"
 
 #include <string>
-#include "create level.hpp"
 #include "load level.hpp"
 #include "load towers.hpp"
-#include "create spawner.hpp"
+#include "create level.hpp"
 #include "create tower.hpp"
-#include "unit motion system.hpp"
-#include "unit death system.hpp"
+#include "create spawner.hpp"
 #include "spawner system.hpp"
-#include "spawner timing system.hpp"
-#include "base damage system.hpp"
+#include "tower rof system.hpp"
 #include "tower aim system.hpp"
-#include "tower timing system.hpp"
+#include "unit death system.hpp"
 #include "unit regen system.hpp"
+#include "unit motion system.hpp"
+#include "base damage system.hpp"
+#include "firing anim system.hpp"
 #include "unit effect system.hpp"
 #include "slow effect system.hpp"
 #include "poison effect system.hpp"
-#include "tower rof system.hpp"
-#include "proj firing anim system.hpp"
-#include "beam firing anim system.hpp"
-#include "start proj firing anim system.hpp"
-#include "start beam firing anim system.hpp"
 #include "turret damage system.hpp"
 #include "splash damage system.hpp"
+#include "spawner timing system.hpp"
 #include "tower beam anim system.hpp"
+#include "tower reset rof system.hpp"
 
 void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
@@ -46,7 +43,7 @@ void GameLogic::init(ECS::Registry &reg) {
   createTower(reg, 4, {8, 8});
   createTower(reg, 5, {11, 7});
   createTower(reg, 6, {3, 2});
-  //createTower(reg, 7, {15, 9});
+  createTower(reg, 7, {15, 9});
   createTower(reg, 8, {4, 8});
 }
 
@@ -55,7 +52,6 @@ bool GameLogic::input(const SDL_Event &) {
 }
 
 void GameLogic::update(ECS::Registry &reg, const float delta) {
-  towerTimingSystem(reg, delta);
   spawnerTimingSystem(reg, delta);
   spawnerSystem(reg);
   
@@ -65,14 +61,11 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   poisonEffectSystem(reg, delta);
   
   towerAimSystem(reg);
-  towerTimingSystem(reg, delta);
-  towerRofSystem(reg);
-  projFiringAnimSystem(reg);
-  beamFiringAnimSystem(reg);
-  startProjFiringAnimSystem(reg);
-  startBeamFiringAnimSystem(reg);
+  towerRofSystem(reg, delta);
+  firingAnimSystem(reg);
   turretDamageSystem(reg);
   splashDamageSystem(reg);
+  towerResetRofSystem(reg);
   
   towerBeamAnimSystem(reg);
   

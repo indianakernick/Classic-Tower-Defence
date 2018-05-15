@@ -12,11 +12,9 @@
 #include "unit stats component.hpp"
 #include "beam tower component.hpp"
 #include "tower gold component.hpp"
-#include "tower shoot component.hpp"
 #include "slow effect component.hpp"
 #include "unit sprite component.hpp"
 #include "tower effect component.hpp"
-#include "tower timing component.hpp"
 #include "tower target component.hpp"
 #include "turret tower component.hpp"
 #include "splash tower component.hpp"
@@ -27,6 +25,7 @@
 #include "tower beam anim component.hpp"
 #include "unit death anim component.hpp"
 #include "projectile tower component.hpp"
+#include "tower shoot time component.hpp"
 #include "tower firing anim component.hpp"
 #include "common tower stats component.hpp"
 #include "unit move distance component.hpp"
@@ -39,11 +38,9 @@ using CompList = Utils::TypeList<
   UnitStats,
   BeamTower,
   TowerGold,
-  TowerShoot,
   SlowEffect,
   UnitSprite,
   TowerEffect,
-  TowerTiming,
   TowerTarget,
   TurretTower,
   SplashTower,
@@ -54,6 +51,7 @@ using CompList = Utils::TypeList<
   TowerBeamAnim,
   UnitDeathAnim,
   ProjectileTower,
+  TowerShootTime,
   TowerFiringAnim,
   CommonTowerStats,
   UnitMoveDistance

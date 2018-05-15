@@ -12,6 +12,6 @@
 #include <Simpleton/ECS/registry.hpp>
 
 // Determines (based on the ROF) whether a tower can fire or not
-void towerRofSystem(ECS::Registry &);
+void towerRofSystem(ECS::Registry &, float);
 
 #endif

@@ -14,6 +14,7 @@
 #include "tower target component.hpp"
 #include "tower sprites component.hpp"
 #include "tower beam anim component.hpp"
+#include "tower firing anim component.hpp"
 
 void towerBeamRenderingSystem(
   ECS::Registry &reg,
@@ -21,12 +22,14 @@ void towerBeamRenderingSystem(
   const Sprite::Sheet &sheet
 ) {
   const auto view = reg.view<
-    Position, TowerTarget, TowerSprites, BeamTower, TowerBeamAnim
+    Position, TowerTarget, TowerSprites, BeamTower, TowerBeamAnim, TowerFiringAnim
   >();
   for (const ECS::EntityID entity : view) {
-    if (!view.get<BeamTower>(entity).firing) {
+    const TowerFiringAnim firingAnim = view.get<TowerFiringAnim>(entity);
+    if (!firingAnim.started || firingAnim.frame != firingAnim.frames - 1) {
       continue;
     }
+    
     const TowerSprites sprites = view.get<TowerSprites>(entity);
     const glm::vec2 pos = view.get<Position>(entity).pos + glm::vec2(0.5f);
     const TowerTarget target = view.get<TowerTarget>(entity);

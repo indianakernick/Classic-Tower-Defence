@@ -15,13 +15,13 @@
 struct TowerFiringAnim {
   uint32_t frame;
   uint32_t frames;
-  bool running;
+  bool started;
 };
 
 inline void from_json(const json &j, TowerFiringAnim &anim) {
   DATA_GET(anim, frames);
   anim.frame = 0;
-  anim.running = false;
+  anim.started = false;
 }
 
 #endif

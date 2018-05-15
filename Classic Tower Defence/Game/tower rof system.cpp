@@ -8,27 +8,18 @@
 
 #include "tower rof system.hpp"
 
-#include "tower shoot component.hpp"
-#include "tower timing component.hpp"
 #include "tower target component.hpp"
-#include "common tower stats component.hpp"
+#include "tower shoot time component.hpp"
 
-void towerRofSystem(ECS::Registry &reg) {
-  auto view = reg.view<TowerShoot, TowerTiming, TowerTarget, CommonTowerStats>();
+void towerRofSystem(ECS::Registry &reg, const float delta) {
+  auto view = reg.view<TowerTarget, TowerShootTime>();
   for (const ECS::EntityID entity : view) {
-    bool &canShoot = view.get<TowerShoot>(entity).canShoot;
-    canShoot = true;
+    TowerShootTime &shoot = view.get<TowerShootTime>(entity);
     
-    if (view.get<TowerTarget>(entity).id == ECS::NULL_ENTITY) {
-      canShoot = false;
-      continue;
-    }
-    
-    const float lastShot = view.get<TowerTiming>(entity).timeSinceLastShot;
-    const float minTime = 1.0f / view.get<CommonTowerStats>(entity).rof;
-    
-    if (lastShot < minTime) {
-      canShoot = false;
+    shoot.target = view.get<TowerTarget>(entity).id != ECS::NULL_ENTITY;
+    shoot.elapsed += delta;
+    if (!shoot.target && shoot.elapsed > shoot.startTime) {
+      shoot.elapsed = shoot.startTime;
     }
   }
 }

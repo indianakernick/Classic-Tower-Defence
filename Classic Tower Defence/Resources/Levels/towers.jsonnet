@@ -30,6 +30,10 @@ local towerSprites(sprite) = {
     },
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     }
   },
   {
@@ -55,6 +59,10 @@ local towerSprites(sprite) = {
       frames: tower.TowerSprites.firingFrames
     },
     TowerBeamAnim: {},
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+    }
   },
   {
     local tower = self,
@@ -77,6 +85,10 @@ local towerSprites(sprite) = {
     },
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     }
   },
   {
@@ -99,6 +111,10 @@ local towerSprites(sprite) = {
     },
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     }
   },
   {
@@ -131,6 +147,10 @@ local towerSprites(sprite) = {
     },
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     }
   },
   {
@@ -162,6 +182,10 @@ local towerSprites(sprite) = {
     },
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     }
   },
   {
@@ -193,6 +217,10 @@ local towerSprites(sprite) = {
     },
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     }
   },
   {
@@ -224,6 +252,10 @@ local towerSprites(sprite) = {
     },
     TowerFiringAnim: {
       frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     }
   },
   {
@@ -267,5 +299,9 @@ local towerSprites(sprite) = {
       frames: 4,
       scaleBeam: false
     },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+    }
   },
 ]

@@ -16,17 +16,17 @@
 #include "tower effect component.hpp"
 #include "tower target component.hpp"
 #include "splash tower component.hpp"
-#include "tower firing anim component.hpp"
+#include "tower shoot time component.hpp"
 #include "common tower stats component.hpp"
 
 void splashDamageSystem(ECS::Registry &reg) {
   auto view = reg.view<
-    TowerTarget, SplashTower, TowerFiringAnim, CommonTowerStats, TowerEffect
+    TowerTarget, SplashTower, TowerShootTime, CommonTowerStats, TowerEffect
   >();
   auto unitView = reg.view<UnitStats, Position>();
   for (const ECS::EntityID entity : view) {
-    const TowerFiringAnim anim = view.get<TowerFiringAnim>(entity);
-    if (!anim.running || anim.frame != anim.frames - 1) {
+    const TowerShootTime shoot = view.get<TowerShootTime>(entity);
+    if (shoot.elapsed < shoot.fireTime) {
       continue;
     }
     

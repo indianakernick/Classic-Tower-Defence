@@ -15,7 +15,7 @@ void towerSoundSystem(ECS::Registry &reg, SoundQueue &queue) {
   auto view = reg.view<Sound, TowerFiringAnim>();
   for (const ECS::EntityID entity : view) {
     const TowerFiringAnim anim = view.get<TowerFiringAnim>(entity);
-    if (anim.running && anim.frame == 0) {
+    if (anim.started && anim.frame == 0) {
       queue.push(view.get<Sound>(entity).id);
     }
   }
