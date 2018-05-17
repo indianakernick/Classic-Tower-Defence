@@ -70,6 +70,8 @@
 		45682668209BFF9400BA6AE8 /* afford tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682666209BFF9400BA6AE8 /* afford tower.cpp */; };
 		45682697209D3AD800BA6AE8 /* tower projectile rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682695209D3AD800BA6AE8 /* tower projectile rendering system.cpp */; };
 		4568269A209D4FE400BA6AE8 /* tower beam rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */; };
+		45BB379920AC4699003C31F8 /* aura damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BB379720AC4699003C31F8 /* aura damage system.cpp */; };
+		45BB37A820AC4A14003C31F8 /* tower aura rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BB37A620AC4A14003C31F8 /* tower aura rendering system.cpp */; };
 		45C6DD7C20A00BF9002A133F /* load prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C6DD7A20A00BF9002A133F /* load prototype.cpp */; };
 		45C6DD7F20A018E2002A133F /* load waves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C6DD7D20A018E2002A133F /* load waves.cpp */; };
 		45C6DD8220A0197C002A133F /* load map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C6DD8020A0197C002A133F /* load map.cpp */; };
@@ -314,6 +316,7 @@
 		453B15A52091A09100BFA00D /* unit death rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death rendering system.cpp"; sourceTree = "<group>"; };
 		453B15A62091A09100BFA00D /* unit death rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death rendering system.hpp"; sourceTree = "<group>"; };
 		453B15A82091A31A00BFA00D /* explosion.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.anim; sourceTree = "<group>"; };
+		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
 		4563D58520969A8800DB2510 /* turret damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "turret damage system.cpp"; sourceTree = "<group>"; };
@@ -436,6 +439,23 @@
 		45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower beam rendering system.cpp"; sourceTree = "<group>"; };
 		45682699209D4FE400BA6AE8 /* tower beam rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam rendering system.hpp"; sourceTree = "<group>"; };
 		4568269B209D536B00BA6AE8 /* depth.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = depth.hpp; sourceTree = "<group>"; };
+		45BB379620AC4652003C31F8 /* aura tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aura tower component.hpp"; sourceTree = "<group>"; };
+		45BB379720AC4699003C31F8 /* aura damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "aura damage system.cpp"; sourceTree = "<group>"; };
+		45BB379820AC4699003C31F8 /* aura damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aura damage system.hpp"; sourceTree = "<group>"; };
+		45BB379B20AC46FF003C31F8 /* ice aura.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ice aura.anim"; sourceTree = "<group>"; };
+		45BB379C20AC471B003C31F8 /* ice aura 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura 0.png"; sourceTree = "<group>"; };
+		45BB379D20AC471B003C31F8 /* ice aura 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura 2.png"; sourceTree = "<group>"; };
+		45BB379E20AC471B003C31F8 /* ice aura 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura 1.png"; sourceTree = "<group>"; };
+		45BB379F20AC471C003C31F8 /* ice aura 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura 3.png"; sourceTree = "<group>"; };
+		45BB37A020AC471C003C31F8 /* ice aura 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura 4.png"; sourceTree = "<group>"; };
+		45BB37A120AC4728003C31F8 /* ice aura base 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura base 0.png"; sourceTree = "<group>"; };
+		45BB37A220AC4729003C31F8 /* ice aura base 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura base 4.png"; sourceTree = "<group>"; };
+		45BB37A320AC4729003C31F8 /* ice aura base 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura base 1.png"; sourceTree = "<group>"; };
+		45BB37A420AC4729003C31F8 /* ice aura base 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura base 3.png"; sourceTree = "<group>"; };
+		45BB37A520AC472A003C31F8 /* ice aura base 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ice aura base 2.png"; sourceTree = "<group>"; };
+		45BB37A620AC4A14003C31F8 /* tower aura rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower aura rendering system.cpp"; sourceTree = "<group>"; };
+		45BB37A720AC4A14003C31F8 /* tower aura rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower aura rendering system.hpp"; sourceTree = "<group>"; };
+		45BB37B020AC4CEB003C31F8 /* ice aura base.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ice aura base.anim"; sourceTree = "<group>"; };
 		45C6DD7A20A00BF9002A133F /* load prototype.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load prototype.cpp"; sourceTree = "<group>"; };
 		45C6DD7B20A00BF9002A133F /* load prototype.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load prototype.hpp"; sourceTree = "<group>"; };
 		45C6DD7D20A018E2002A133F /* load waves.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load waves.cpp"; sourceTree = "<group>"; };
@@ -701,6 +721,8 @@
 				45682693209D385200BA6AE8 /* projectile tower component.hpp */,
 				45682694209D386A00BA6AE8 /* beam tower component.hpp */,
 				45C6DD9320A45BAE002A133F /* tower beam anim component.hpp */,
+				45BB379620AC4652003C31F8 /* aura tower component.hpp */,
+				4549076620AD3D2100BBC358 /* aim tower component.hpp */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -739,6 +761,8 @@
 				4563D58620969A8800DB2510 /* turret damage system.hpp */,
 				4563D58820969AA100DB2510 /* splash damage system.cpp */,
 				4563D58920969AA100DB2510 /* splash damage system.hpp */,
+				45BB379720AC4699003C31F8 /* aura damage system.cpp */,
+				45BB379820AC4699003C31F8 /* aura damage system.hpp */,
 				4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */,
 				4526A34D20AAEACF00E4F542 /* tower reset rof system.hpp */,
 				4538858B208EC736003EB260 /* tower sound system.cpp */,
@@ -823,6 +847,8 @@
 				45682696209D3AD800BA6AE8 /* tower projectile rendering system.hpp */,
 				45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */,
 				45682699209D4FE400BA6AE8 /* tower beam rendering system.hpp */,
+				45BB37A620AC4A14003C31F8 /* tower aura rendering system.cpp */,
+				45BB37A720AC4A14003C31F8 /* tower aura rendering system.hpp */,
 			);
 			name = Rendering;
 			sourceTree = "<group>";
@@ -950,6 +976,16 @@
 				453B155D2090C57200BFA00D /* health 14.png */,
 				453B155E2090C57300BFA00D /* health 15.png */,
 				453B155F2090C57300BFA00D /* health 16.png */,
+				45BB379C20AC471B003C31F8 /* ice aura 0.png */,
+				45BB379E20AC471B003C31F8 /* ice aura 1.png */,
+				45BB379D20AC471B003C31F8 /* ice aura 2.png */,
+				45BB379F20AC471C003C31F8 /* ice aura 3.png */,
+				45BB37A020AC471C003C31F8 /* ice aura 4.png */,
+				45BB37A120AC4728003C31F8 /* ice aura base 0.png */,
+				45BB37A320AC4729003C31F8 /* ice aura base 1.png */,
+				45BB37A520AC472A003C31F8 /* ice aura base 2.png */,
+				45BB37A420AC4729003C31F8 /* ice aura base 3.png */,
+				45BB37A220AC4729003C31F8 /* ice aura base 4.png */,
 				45C6DDBA20A597CC002A133F /* iceball 0.png */,
 				45C6DDC120A597D0002A133F /* iceball 1.png */,
 				45C6DDC220A597D1002A133F /* iceball 2.png */,
@@ -1069,6 +1105,8 @@
 				45C6DD9220A458BE002A133F /* flamethrower.anim */,
 				4563D5B82097034F00DB2510 /* generate radius.js */,
 				453B15772090C7B200BFA00D /* health.anim */,
+				45BB37B020AC4CEB003C31F8 /* ice aura base.anim */,
+				45BB379B20AC46FF003C31F8 /* ice aura.anim */,
 				45C6DDC420A59813002A133F /* iceball.anim */,
 				45C6DD9720A58F96002A133F /* laser.anim */,
 				45388572208DC45B003EB260 /* map.anim */,
@@ -1435,6 +1473,7 @@
 				45C6DD8220A0197C002A133F /* load map.cpp in Sources */,
 				453B15362090700500BFA00D /* load towers.cpp in Sources */,
 				4538855C208D7742003EB260 /* tower rendering system.cpp in Sources */,
+				45BB379920AC4699003C31F8 /* aura damage system.cpp in Sources */,
 				453884DF208B0D66003EB260 /* unit death system.cpp in Sources */,
 				453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */,
 				45C6DD9620A45C15002A133F /* tower beam anim system.cpp in Sources */,
@@ -1461,6 +1500,7 @@
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,
 				4563D58720969A8800DB2510 /* turret damage system.cpp in Sources */,
 				45DBB7F92092AA190081CDE1 /* unit effect system.cpp in Sources */,
+				45BB37A820AC4A14003C31F8 /* tower aura rendering system.cpp in Sources */,
 				4526A34E20AAEACF00E4F542 /* tower reset rof system.cpp in Sources */,
 				4568269A209D4FE400BA6AE8 /* tower beam rendering system.cpp in Sources */,
 				45DBB8002092B03A0081CDE1 /* poison effect system.cpp in Sources */,

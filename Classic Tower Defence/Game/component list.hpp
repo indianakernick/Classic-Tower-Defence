@@ -8,8 +8,10 @@
 #include "sound component.hpp"
 #include "unit dir component.hpp"
 #include "position component.hpp"
+#include "aim tower component.hpp"
 #include "unit path component.hpp"
 #include "unit stats component.hpp"
+#include "aura tower component.hpp"
 #include "beam tower component.hpp"
 #include "tower gold component.hpp"
 #include "slow effect component.hpp"
@@ -34,8 +36,10 @@ using CompList = Utils::TypeList<
   Sound,
   UnitDir,
   Position,
+  AimTower,
   UnitPath,
   UnitStats,
+  AuraTower,
   BeamTower,
   TowerGold,
   SlowEffect,

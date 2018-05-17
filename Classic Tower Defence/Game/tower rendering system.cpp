@@ -10,6 +10,7 @@
 
 #include "depth.hpp"
 #include "position component.hpp"
+#include "aim tower component.hpp"
 #include "tower target component.hpp"
 #include "tower sprites component.hpp"
 #include "tower firing anim component.hpp"
@@ -19,7 +20,9 @@ void towerRenderingSystem(
   G2D::QuadWriter &writer,
   const Sprite::Sheet &sheet
 ) {
-  const auto view = reg.view<Position, TowerTarget, TowerFiringAnim, TowerSprites>();
+  const auto view = reg.view<
+    Position, AimTower, TowerTarget, TowerFiringAnim, TowerSprites
+  >();
   for (const ECS::EntityID entity : view) {
     const TowerSprites sprites = view.get<TowerSprites>(entity);
     const Sprite::ID frame = view.get<TowerFiringAnim>(entity).frame;

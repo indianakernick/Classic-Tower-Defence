@@ -24,6 +24,7 @@
 #include "firing anim system.hpp"
 #include "unit effect system.hpp"
 #include "slow effect system.hpp"
+#include "aura damage system.hpp"
 #include "poison effect system.hpp"
 #include "turret damage system.hpp"
 #include "splash damage system.hpp"
@@ -44,7 +45,8 @@ void GameLogic::init(ECS::Registry &reg) {
   createTower(reg, 5, {11, 7});
   createTower(reg, 6, {3, 2});
   createTower(reg, 7, {15, 9});
-  createTower(reg, 8, {4, 8});
+  createTower(reg, 8, {3, 8});
+  createTower(reg, 9, {5, 8});
 }
 
 bool GameLogic::input(const SDL_Event &) {
@@ -65,6 +67,7 @@ void GameLogic::update(ECS::Registry &reg, const float delta) {
   firingAnimSystem(reg);
   turretDamageSystem(reg);
   splashDamageSystem(reg);
+  auraDamageSystem(reg);
   towerResetRofSystem(reg);
   
   towerBeamAnimSystem(reg);

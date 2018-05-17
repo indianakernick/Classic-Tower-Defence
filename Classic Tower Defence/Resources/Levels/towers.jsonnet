@@ -34,7 +34,9 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
   },
   {
     local tower = self,
@@ -62,7 +64,9 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
   },
   {
     local tower = self,
@@ -89,7 +93,9 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
   },
   {
     local tower = self,
@@ -115,7 +121,9 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
   },
   {
     local tower = self,
@@ -151,7 +159,9 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
   },
   {
     local tower = self,
@@ -186,7 +196,9 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
   },
   {
     local tower = self,
@@ -221,7 +233,9 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
   },
   {
     local tower = self,
@@ -256,7 +270,48 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
+  },
+  {
+    local tower = self,
+    ProjectileTower: {},
+    CommonTowerStats: {
+      range: 4,
+      damage: 5,
+      rof: 1/4,
+      armourPiercing: 0.4
+    },
+    TowerGold: {
+      buy: 100,
+      sell: 50
+    },
+    TowerEffect: {
+      SlowEffect: {
+        speedFactor: 0,
+        duration: 2
+      }
+    },
+    TowerSprites: {
+      gun: getSprite("ice aura base 0"),
+      base: getSprite("map 3"),
+      firingFrames: 5,
+      projectile: getSprite("ice aura 0")
+    },
+    upgrades: {},
+    Sound: {
+      id: getSound("cannon")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+    },
+    TowerTarget: {},
+    AuraTower: {}
   },
   {
     local tower = self,
@@ -302,6 +357,8 @@ local towerSprites(sprite) = {
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
-    }
+    },
+    TowerTarget: {},
+    AimTower: {}
   },
 ]

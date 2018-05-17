@@ -12,6 +12,7 @@
 enum class Depth {
   UNIT_HEALTH,
   UNIT_DEATH,
+  TOWER_AURA,
   TOWER_PROJ,
   TOWER_BEAM,
   UNIT,

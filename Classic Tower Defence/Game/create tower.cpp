@@ -13,7 +13,6 @@
 #include "sound component.hpp"
 #include "position component.hpp"
 #include "tower gold component.hpp"
-#include "tower target component.hpp"
 
 ECS::EntityID createTower(
   ECS::Registry &reg,
@@ -29,6 +28,5 @@ ECS::EntityID createTower(
   
   const ECS::EntityID entity = tower(reg);
   reg.assign<Position>(entity, pos);
-  reg.assign<TowerTarget>(entity);
   return entity;
 }

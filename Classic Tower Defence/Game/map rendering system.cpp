@@ -24,13 +24,11 @@ void mapRenderingSystem(
 
   const size_t numTiles = map.scalarSize();
   for (size_t t = 0; t != numTiles; ++t) {
-    Sprite::ID id = sprites.sprite;
-    id += static_cast<Sprite::ID>(map[t]);
-    const Sprite::Rect rect = sheet.getSprite(id);
+    const Sprite::ID id = sprites.sprite + static_cast<Sprite::ID>(map[t]);
     
     writer.quad();
     writer.depth(Depth::MAP);
     writer.tilePos(map.toPos(t));
-    writer.tileTex(rect.min, rect.max);
+    writer.tileTex(sheet.getSprite(id));
   }
 }

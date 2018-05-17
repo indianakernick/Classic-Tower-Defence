@@ -21,9 +21,9 @@
 
 void splashDamageSystem(ECS::Registry &reg) {
   auto view = reg.view<
-    TowerTarget, SplashTower, TowerShootTime, CommonTowerStats, TowerEffect
+    TowerTarget, TowerEffect, SplashTower, TowerShootTime, CommonTowerStats
   >();
-  auto unitView = reg.view<UnitStats, Position>();
+  auto unitView = reg.view<Position, UnitStats>();
   for (const ECS::EntityID entity : view) {
     const TowerShootTime shoot = view.get<TowerShootTime>(entity);
     if (shoot.elapsed < shoot.fireTime) {

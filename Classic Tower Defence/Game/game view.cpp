@@ -17,6 +17,7 @@
 #include "tower rendering system.hpp"
 #include "unit death sound system.hpp"
 #include <Simpleton/Utils/profiler.hpp>
+#include "tower aura rendering system.hpp"
 #include "tower beam rendering system.hpp"
 #include "unit death rendering system.hpp"
 #include "unit health rendering system.hpp"
@@ -66,12 +67,13 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   towerRenderingSystem(reg, writer, sheetTex.sheet());
   towerBeamRenderingSystem(reg, writer, sheetTex.sheet());
   unitDeathRenderingSystem(reg, writer, sheetTex.sheet());
+  towerAuraRenderingSystem(reg, writer, sheetTex.sheet());
   unitHealthRenderingSystem(reg, writer, sheetTex.sheet());
   towerProjectileRenderingSystem(reg, writer, sheetTex.sheet());
   
-  writer.section({textCam.transform.toPixels(), textSheetTex.tex()});
+  /*writer.section({textCam.transform.toPixels(), textSheetTex.tex()});
   text.setCursor({100.0f, 338.0f});
   text.pushText(writer, textSheetTex.sheet(), "01234567890123456789\n");
   text.centerAlign("center");
-  text.pushText(writer, textSheetTex.sheet(), "center");
+  text.pushText(writer, textSheetTex.sheet(), "center");*/
 }
