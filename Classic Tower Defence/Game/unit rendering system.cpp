@@ -23,7 +23,7 @@ void unitRenderingSystem(
   for (const ECS::EntityID entity : view) {
     const UnitSprite &sprite = view.get<UnitSprite>(entity);
     Sprite::ID id = sprite.sprite;
-    id += Math::toNum(view.get<UnitDir>(entity).dir, sprite.frames);
+    id += Grid::toNum(view.get<UnitDir>(entity).dir, sprite.frames);
     id += view.get<UnitWalkAnim>(entity).frame;
     
     writer.quad();

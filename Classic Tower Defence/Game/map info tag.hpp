@@ -10,14 +10,14 @@
 #define map_info_tag_hpp
 
 #include "map tag.hpp"
-#include <Simpleton/Math/dir.hpp>
+#include <Simpleton/Grid/dir.hpp>
 
 struct MapInfo {
   using Pos = Grid::Pos;
 
   Pos entry;
   Pos exit;
-  Math::Dir entryDir;
+  Grid::Dir entryDir;
   float pathDist;
   std::vector<Pos> path;
 };

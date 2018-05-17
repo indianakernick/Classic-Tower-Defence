@@ -32,5 +32,5 @@ void initMapInfo(ECS::Registry &reg) {
   }
   
   info.pathDist = info.path.size() - 1;
-  info.entryDir = Math::FromVec<Grid::Coord>::conv(info.path[1] - info.path[0]);
+  info.entryDir = Grid::FromVec<Grid::Coord>::conv(info.path[1] - info.path[0]);
 }

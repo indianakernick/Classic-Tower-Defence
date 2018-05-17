@@ -9,10 +9,10 @@
 #ifndef unit_dir_component_hpp
 #define unit_dir_component_hpp
 
-#include <Simpleton/Math/dir.hpp>
+#include <Simpleton/Grid/dir.hpp>
 
 struct UnitDir {
-  Math::Dir dir;
+  Grid::Dir dir;
 };
 
 #endif

@@ -28,12 +28,12 @@ void unitMotionSystem(ECS::Registry &reg, const float delta) {
   for (const ECS::EntityID entity : view) {
     float moveDist = view.get<UnitStats>(entity).moveSpeed * delta;
     view.get<UnitMoveDistance>(entity).dist += moveDist;
-    Math::Dir &dir = view.get<UnitDir>(entity).dir;
+    Grid::Dir &dir = view.get<UnitDir>(entity).dir;
     glm::vec2 &pos = view.get<Position>(entity).pos;
     size_t &pathIndex = view.get<UnitPath>(entity).index;
     
     do {
-      const glm::vec2 dirVec = Math::ToVec<float>::conv(dir);
+      const glm::vec2 dirVec = Grid::ToVec<float>::conv(dir);
       const Grid::Pos nextTile = map.path[pathIndex + 1];
       const float distToNext = orthoDist(pos, nextTile);
       
@@ -49,7 +49,7 @@ void unitMotionSystem(ECS::Registry &reg, const float delta) {
         // we've arrived at the exit
         break;
       }
-      dir = Math::FromVec<unsigned>::conv(map.path[pathIndex + 1] - nextTile);
+      dir = Grid::FromVec<Grid::Coord>::conv(map.path[pathIndex + 1] - nextTile);
     } while (moveDist > 0.01f);
   }
 }
