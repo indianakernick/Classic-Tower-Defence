@@ -331,7 +331,7 @@ local towerSprites(sprite) = {
     },
     TowerEffect: {
       PoisonEffect: {
-        damageFactor: 0,
+        damageFactor: 0.1,
         duration: 2
       }
     },
@@ -353,6 +353,43 @@ local towerSprites(sprite) = {
     TowerBeamAnim: {
       frames: 4,
       scaleBeam: false
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+    },
+    TowerTarget: {},
+    AimTower: {}
+  },
+  {
+    local tower = self,
+    ProjectileTower: {},
+    CommonTowerStats: {
+      range: 6,
+      damage: 50,
+      rof: 1,
+      armourPiercing: 0.2
+    },
+    TowerGold: {
+      buy: 150,
+      sell: 100
+    },
+    SplashTower: {
+      aoe: 2
+    },
+    TowerEffect: {
+      PoisonEffect: {
+        damageFactor: 0.1,
+        duration: 1
+      }
+    },
+    TowerSprites: towerSprites("fireball"),
+    upgrades: {},
+    Sound: {
+      id: getSound("fire ball shooting")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
     },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,

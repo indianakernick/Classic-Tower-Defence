@@ -33,7 +33,7 @@ void unitMotionSystem(ECS::Registry &reg, const float delta) {
     size_t &pathIndex = view.get<UnitPath>(entity).index;
     
     do {
-      const glm::vec2 dirVec = Grid::ToVec<float>::conv(dir);
+      const glm::vec2 dirVec = Grid::toVec<float>(dir);
       const Grid::Pos nextTile = map.path[pathIndex + 1];
       const float distToNext = orthoDist(pos, nextTile);
       
@@ -49,7 +49,7 @@ void unitMotionSystem(ECS::Registry &reg, const float delta) {
         // we've arrived at the exit
         break;
       }
-      dir = Grid::FromVec<Grid::Coord>::conv(map.path[pathIndex + 1] - nextTile);
+      dir = Grid::fromVec(map.path[pathIndex + 1] - nextTile);
     } while (moveDist > 0.01f);
   }
 }

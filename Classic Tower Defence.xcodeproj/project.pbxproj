@@ -316,6 +316,15 @@
 		453B15A52091A09100BFA00D /* unit death rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit death rendering system.cpp"; sourceTree = "<group>"; };
 		453B15A62091A09100BFA00D /* unit death rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit death rendering system.hpp"; sourceTree = "<group>"; };
 		453B15A82091A31A00BFA00D /* explosion.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.anim; sourceTree = "<group>"; };
+		453B286620AEBB0F00F6E9E6 /* fireball.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = fireball.anim; sourceTree = "<group>"; };
+		453B286720AEBB1C00F6E9E6 /* fireball projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball projectile.png"; sourceTree = "<group>"; };
+		453B286820AEBB1C00F6E9E6 /* fireball base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball base.png"; sourceTree = "<group>"; };
+		453B286920AEBB3100F6E9E6 /* fireball 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 3.png"; sourceTree = "<group>"; };
+		453B286A20AEBB3200F6E9E6 /* fireball 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 2.png"; sourceTree = "<group>"; };
+		453B286B20AEBB3200F6E9E6 /* fireball 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 4.png"; sourceTree = "<group>"; };
+		453B286C20AEBB3200F6E9E6 /* fireball 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 1.png"; sourceTree = "<group>"; };
+		453B286D20AEBB3200F6E9E6 /* fireball 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 0.png"; sourceTree = "<group>"; };
+		453B286E20AEBB3200F6E9E6 /* fireball 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 5.png"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
@@ -953,6 +962,14 @@
 				45C6DDCE20A59FBB002A133F /* fire 1.png */,
 				45C6DDCD20A59FBA002A133F /* fire 2.png */,
 				45C6DDD020A59FBC002A133F /* fire 3.png */,
+				453B286D20AEBB3200F6E9E6 /* fireball 0.png */,
+				453B286C20AEBB3200F6E9E6 /* fireball 1.png */,
+				453B286A20AEBB3200F6E9E6 /* fireball 2.png */,
+				453B286920AEBB3100F6E9E6 /* fireball 3.png */,
+				453B286B20AEBB3200F6E9E6 /* fireball 4.png */,
+				453B286E20AEBB3200F6E9E6 /* fireball 5.png */,
+				453B286820AEBB1C00F6E9E6 /* fireball base.png */,
+				453B286720AEBB1C00F6E9E6 /* fireball projectile.png */,
 				45C6DD8C20A458AC002A133F /* flamethrower 0.png */,
 				45C6DD8D20A458AC002A133F /* flamethrower 1.png */,
 				45C6DD9020A458AE002A133F /* flamethrower 2.png */,
@@ -1095,6 +1112,7 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				453B286620AEBB0F00F6E9E6 /* fireball.anim */,
 				453B15782090C7B200BFA00D /* armour.anim */,
 				45682669209C44ED00BA6AE8 /* big robot.anim */,
 				45388570208DB3C2003EB260 /* blaster.anim */,
