@@ -325,6 +325,20 @@
 		453B286C20AEBB3200F6E9E6 /* fireball 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 1.png"; sourceTree = "<group>"; };
 		453B286D20AEBB3200F6E9E6 /* fireball 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 0.png"; sourceTree = "<group>"; };
 		453B286E20AEBB3200F6E9E6 /* fireball 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireball 5.png"; sourceTree = "<group>"; };
+		453B286F20AEDABC00F6E9E6 /* fire aura.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fire aura.anim"; sourceTree = "<group>"; };
+		453B287020AEDABD00F6E9E6 /* fire aura base.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fire aura base.anim"; sourceTree = "<group>"; };
+		453B287120AEDACF00F6E9E6 /* fire aura base 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura base 5.png"; sourceTree = "<group>"; };
+		453B287220AEDACF00F6E9E6 /* fire aura base 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura base 0.png"; sourceTree = "<group>"; };
+		453B287320AEDACF00F6E9E6 /* fire aura base 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura base 2.png"; sourceTree = "<group>"; };
+		453B287420AEDAD000F6E9E6 /* fire aura base 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura base 1.png"; sourceTree = "<group>"; };
+		453B287520AEDAD000F6E9E6 /* fire aura base 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura base 4.png"; sourceTree = "<group>"; };
+		453B287620AEDAD000F6E9E6 /* fire aura base 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura base 3.png"; sourceTree = "<group>"; };
+		453B287720AEDAE400F6E9E6 /* fire aura 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura 1.png"; sourceTree = "<group>"; };
+		453B287820AEDAE400F6E9E6 /* fire aura 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura 3.png"; sourceTree = "<group>"; };
+		453B287920AEDAE400F6E9E6 /* fire aura 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura 5.png"; sourceTree = "<group>"; };
+		453B287A20AEDAE500F6E9E6 /* fire aura 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura 2.png"; sourceTree = "<group>"; };
+		453B287B20AEDAE500F6E9E6 /* fire aura 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura 4.png"; sourceTree = "<group>"; };
+		453B287C20AEDAE500F6E9E6 /* fire aura 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire aura 0.png"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
@@ -962,6 +976,18 @@
 				45C6DDCE20A59FBB002A133F /* fire 1.png */,
 				45C6DDCD20A59FBA002A133F /* fire 2.png */,
 				45C6DDD020A59FBC002A133F /* fire 3.png */,
+				453B287C20AEDAE500F6E9E6 /* fire aura 0.png */,
+				453B287720AEDAE400F6E9E6 /* fire aura 1.png */,
+				453B287A20AEDAE500F6E9E6 /* fire aura 2.png */,
+				453B287820AEDAE400F6E9E6 /* fire aura 3.png */,
+				453B287B20AEDAE500F6E9E6 /* fire aura 4.png */,
+				453B287920AEDAE400F6E9E6 /* fire aura 5.png */,
+				453B287220AEDACF00F6E9E6 /* fire aura base 0.png */,
+				453B287420AEDAD000F6E9E6 /* fire aura base 1.png */,
+				453B287320AEDACF00F6E9E6 /* fire aura base 2.png */,
+				453B287620AEDAD000F6E9E6 /* fire aura base 3.png */,
+				453B287520AEDAD000F6E9E6 /* fire aura base 4.png */,
+				453B287120AEDACF00F6E9E6 /* fire aura base 5.png */,
 				453B286D20AEBB3200F6E9E6 /* fireball 0.png */,
 				453B286C20AEBB3200F6E9E6 /* fireball 1.png */,
 				453B286A20AEBB3200F6E9E6 /* fireball 2.png */,
@@ -1112,14 +1138,16 @@
 		45388530208D7324003EB260 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				453B286620AEBB0F00F6E9E6 /* fireball.anim */,
 				453B15782090C7B200BFA00D /* armour.anim */,
 				45682669209C44ED00BA6AE8 /* big robot.anim */,
 				45388570208DB3C2003EB260 /* blaster.anim */,
 				45C6DDC720A599D3002A133F /* cannon.anim */,
 				453B15A82091A31A00BFA00D /* explosion.anim */,
 				45C6DDC820A599D4002A133F /* explosive cannon.anim */,
+				453B287020AEDABD00F6E9E6 /* fire aura base.anim */,
+				453B286F20AEDABC00F6E9E6 /* fire aura.anim */,
 				45C6DDD120A5A0BF002A133F /* fire.anim */,
+				453B286620AEBB0F00F6E9E6 /* fireball.anim */,
 				45C6DD9220A458BE002A133F /* flamethrower.anim */,
 				4563D5B82097034F00DB2510 /* generate radius.js */,
 				453B15772090C7B200BFA00D /* health.anim */,

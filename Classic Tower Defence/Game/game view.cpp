@@ -47,7 +47,7 @@ void GameView::init(G2D::Renderer &renderer) {
 void GameView::playSounds(ECS::Registry &reg) {
   towerSoundSystem(reg, sounds);
   unitDeathSoundSystem(reg, sounds);
-  //sounds.play(DupSound::PLAY_LATER);
+  sounds.play(DupSound::PLAY_LATER);
 }
 
 void GameView::updateCam(const float aspect, const float delta) {

@@ -37,17 +37,18 @@ void GameLogic::init(ECS::Registry &reg) {
   loadTowers(reg);
   loadLevel(reg, 0);
   
-  createTower(reg, 0, {11, 4});
+  createTower(reg, 0, {10, 4});
   createTower(reg, 1, {3, 5});
   createTower(reg, 2, {6, 5});
   createTower(reg, 3, {6, 2});
   createTower(reg, 4, {8, 8});
-  createTower(reg, 5, {11, 7});
+  createTower(reg, 5, {10, 7});
   createTower(reg, 6, {3, 2});
   createTower(reg, 7, {15, 9});
   createTower(reg, 8, {3, 8});
   createTower(reg, 9, {5, 8});
-  createTower(reg, 10, {13, 8});
+  createTower(reg, 10, {12, 7});
+  createTower(reg, 11, {13, 3});
 }
 
 bool GameLogic::input(const SDL_Event &) {

@@ -295,7 +295,7 @@ local towerSprites(sprite) = {
     },
     TowerSprites: {
       gun: getSprite("ice aura base 0"),
-      base: getSprite("map 3"),
+      base: 0,
       firingFrames: 5,
       projectile: getSprite("ice aura 0")
     },
@@ -397,5 +397,44 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {}
+  },
+  {
+    local tower = self,
+    ProjectileTower: {},
+    CommonTowerStats: {
+      range: 2,
+      damage: 100,
+      rof: 1/3,
+      armourPiercing: 0.6
+    },
+    TowerGold: {
+      buy: 100,
+      sell: 50
+    },
+    TowerEffect: {
+      PoisonEffect: {
+        damageFactor: 0.2,
+        duration: 1
+      }
+    },
+    TowerSprites: {
+      gun: getSprite("fire aura base 0"),
+      base: 0,
+      firingFrames: 5,
+      projectile: getSprite("fire aura 0")
+    },
+    upgrades: {},
+    Sound: {
+      id: getSound("cannon")
+    },
+    TowerFiringAnim: {
+      frames: tower.TowerSprites.firingFrames
+    },
+    TowerShootTime: {
+      fireTime: 1 / tower.CommonTowerStats.rof,
+      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+    },
+    TowerTarget: {},
+    AuraTower: {}
   },
 ]
