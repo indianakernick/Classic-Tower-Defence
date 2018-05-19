@@ -51,16 +51,24 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), base);
   
   const LevelInfo levelInfo = reg.get<LevelInfo>();
+  
   const std::string level = std::to_string(levelInfo.level);
   text.rightAlign({235.0f, 2.0f}, level);
   text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), level);
+  
   const std::string map = std::to_string(levelInfo.map);
   text.rightAlign({235.0f, 22.0f}, map);
   text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), map);
   
-  const size_t wave = reg.get<SpawnerState>().currentWave + 1;
+  const SpawnerState spawnerState = reg.get<SpawnerState>();
+  
+  const size_t wave = spawnerState.currentWave + 1;
   const size_t waves = reg.get<Waves>().size();
   const std::string waveText = std::to_string(wave) + "/" + std::to_string(waves);
   text.rightAlign({372.0f, 12.0f}, waveText);
   text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), waveText);
+  
+  const std::string num = std::to_string(spawnerState.numUnitsLeft);
+  text.rightAlign({599.0f, 12.0f}, num);
+  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), num);
 }
