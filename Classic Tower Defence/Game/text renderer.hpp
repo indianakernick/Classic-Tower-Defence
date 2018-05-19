@@ -58,9 +58,39 @@ public:
   
   /// Render a single character. Only renders printable characters.
   /// Whitespace characters ('\n' ' ' '\t' '\v' '\r') are handled appropriately
-  void pushChar(G2D::QuadWriter &, const Sprite::Sheet &, char);
+  template <G2D::PlusXY PLUS_XY = G2D::PlusXY::RIGHT_UP>
+  void pushChar(
+    G2D::QuadWriter &writer,
+    const Sprite::Sheet &sheet,
+    const char c
+  ) {
+    if (whitespace(c) || !std::isprint(c)) {
+      return;
+    }
+    
+    writer.quad();
+    writer.depth(depth);
+    writer.tilePos(pos, scale * size);
+    // the spritesheet is expected to hold all of the printable ascii characters.
+    // std::isprint considers space a printable character but there's no point
+    // in storing a blank space in a sprite sheet. So sheet.getSprite(0) should
+    // return the rectangle for '!' (the character after space)
+    writer.tileTex<PLUS_XY>(sheet.getSprite(c - '!'));
+    
+    space();
+  }
   /// Render a string of characters. Calls pushChar for each character.
-  void pushText(G2D::QuadWriter &, const Sprite::Sheet &, std::string_view);
+  template <G2D::PlusXY PLUS_XY = G2D::PlusXY::RIGHT_UP>
+  void pushText(
+    G2D::QuadWriter &writer,
+    const Sprite::Sheet &sheet,
+    const std::string_view text
+  ) {
+    writer.sectionSize(text.size());
+    for (const char c : text) {
+      pushChar<PLUS_XY>(writer, sheet, c);
+    }
+  }
   
 private:
   // the last position that was set with a call to setCursor

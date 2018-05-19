@@ -92,38 +92,6 @@ bool TextRenderer::whitespace(const char c) {
   return false;
 }
 
-void TextRenderer::pushChar(
-  G2D::QuadWriter &writer,
-  const Sprite::Sheet &sheet,
-  const char c
-) {
-  if (whitespace(c) || !std::isprint(c)) {
-    return;
-  }
-  
-  writer.quad();
-  writer.depth(depth);
-  writer.tilePos(pos, scale * size);
-  // the spritesheet is expected to hold all of the printable ascii characters.
-  // std::isprint considers space a printable character but there's no point
-  // in storing a blank space in a sprite sheet. So sheet.getSprite(0) should
-  // return the rectangle for '!' (the character after space)
-  writer.tileTex(sheet.getSprite(c - '!'));
-  
-  space();
-}
-
-void TextRenderer::pushText(
-  G2D::QuadWriter &writer,
-  const Sprite::Sheet &sheet,
-  const std::string_view text
-) {
-  writer.sectionSize(text.size());
-  for (const char c : text) {
-    pushChar(writer, sheet, c);
-  }
-}
-
 float TextRenderer::tabSize(const float posx) const {
   const float scaledAdvance = scale * advance.x;
   const int chars = std::nearbyint(posx / scaledAdvance);

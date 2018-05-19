@@ -11,7 +11,8 @@
 #include "depth.hpp"
 
 void UIView::init(G2D::Renderer &renderer) {
-  camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
+  camera.transform.setOrigin(Cam2D::Origin::TOP_LEFT);
+  camera.transform.setInvertY(true);
   zoom.setSize({640.0f, 360.0f});
   
   uiSheetTex.load(renderer, "ui");
@@ -34,5 +35,5 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   writer.quad();
   writer.depth(Depth::UI_BASE);
   writer.tilePos({0.0f, 0.0f}, {640.0f, 360.0f});
-  writer.tileTex(uiSheetTex.sheet().getSprite(0));
+  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite(0));
 }
