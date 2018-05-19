@@ -10,6 +10,7 @@
 
 #include "depth.hpp"
 #include "base gold tag.hpp"
+#include "level info tag.hpp"
 #include "base health tag.hpp"
 
 void UIView::init(G2D::Renderer &renderer) {
@@ -46,4 +47,14 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   const std::string base = std::to_string(reg.get<BaseHealth>().health);
   text.rightAlign({124.0f, 22.0f}, base);
   text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), base);
+  
+  const LevelInfo levelInfo = reg.get<LevelInfo>();
+  const std::string level = std::to_string(levelInfo.level);
+  text.rightAlign({235.0f, 2.0f}, level);
+  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), level);
+  const std::string map = std::to_string(levelInfo.map);
+  text.rightAlign({235.0f, 22.0f}, map);
+  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), map);
+  
+  
 }

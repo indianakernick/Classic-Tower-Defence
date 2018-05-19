@@ -12,6 +12,7 @@
 #include "waves tag.hpp"
 #include "map info tag.hpp"
 #include "base gold tag.hpp"
+#include "level info tag.hpp"
 #include "map sprites tag.hpp"
 #include "base health tag.hpp"
 #include "spawner state tag.hpp"
@@ -19,7 +20,7 @@
 
 void createLevel(ECS::Registry &reg) {
   const ECS::EntityID id = reg.create();
-  reg.attach<Map>(id, glm::ivec2(16, 10), TileType::PLATFORM);
+  reg.attach<Map>(id, glm::ivec2(16, 10));
   reg.attach<MapInfo>(id);
   reg.attach<MapSprites>(id);
   reg.attach<Waves>(id);
@@ -27,4 +28,5 @@ void createLevel(ECS::Registry &reg) {
   reg.attach<BaseGold>(id);
   reg.attach<SpawnerState>(id);
   reg.attach<SpawnerTiming>(id);
+  reg.attach<LevelInfo>(id);
 }

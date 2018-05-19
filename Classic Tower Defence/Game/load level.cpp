@@ -14,6 +14,7 @@
 #include "load waves.hpp"
 #include "load spawner.hpp"
 #include "init map info.hpp"
+#include "level info tag.hpp"
 #include "map sprites tag.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
@@ -23,8 +24,12 @@ void loadLevel(ECS::Registry &reg, const int level) {
   json levelNode;
   file >> levelNode;
   
+  LevelInfo &levelInfo = reg.get<LevelInfo>();
+  levelInfo.level = level;
+  levelInfo.map = levelNode.at("map").get<int>();
+  
   Data::get(reg.get<MapSprites>().sprite, levelNode, "sprite");
-  loadMap(reg, levelNode.at("map").get<int>());
+  loadMap(reg, levelInfo.map);
   initMapInfo(reg);
   
   loadWaves(reg, levelNode.at("waves"));

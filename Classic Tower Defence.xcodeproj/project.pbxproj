@@ -349,6 +349,7 @@
 		453B288520AFD4B600F6E9E6 /* ui view.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "ui view.hpp"; sourceTree = "<group>"; };
 		453B288820AFE39B00F6E9E6 /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
 		453B288A20AFE7EB00F6E9E6 /* input consumed.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "input consumed.hpp"; sourceTree = "<group>"; };
+		453B288B20AFFABE00F6E9E6 /* level info tag.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level info tag.hpp"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
@@ -1225,6 +1226,7 @@
 				4538852F208C5F32003EB260 /* map sprites tag.hpp */,
 				453B151E2090495400BFA00D /* waves tag.hpp */,
 				453884FB208B2A07003EB260 /* towers tag.hpp */,
+				453B288B20AFFABE00F6E9E6 /* level info tag.hpp */,
 			);
 			name = Level;
 			sourceTree = "<group>";
