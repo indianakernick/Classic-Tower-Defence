@@ -10,6 +10,9 @@
 #define depth_hpp
 
 enum class Depth {
+  UI_TEXT,
+  UI_BASE,
+
   UNIT_HEALTH,
   UNIT_DEATH,
   TOWER_AURA,
