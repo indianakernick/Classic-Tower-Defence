@@ -348,6 +348,7 @@
 		453B288420AFD4B600F6E9E6 /* ui view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ui view.cpp"; sourceTree = "<group>"; };
 		453B288520AFD4B600F6E9E6 /* ui view.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "ui view.hpp"; sourceTree = "<group>"; };
 		453B288820AFE39B00F6E9E6 /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
+		453B288A20AFE7EB00F6E9E6 /* input consumed.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "input consumed.hpp"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
@@ -1186,6 +1187,7 @@
 				45388562208D8F50003EB260 /* game view.hpp */,
 				45388564208D99EF003EB260 /* game logic.cpp */,
 				45388565208D99EF003EB260 /* game logic.hpp */,
+				453B288A20AFE7EB00F6E9E6 /* input consumed.hpp */,
 			);
 			name = Management;
 			sourceTree = "<group>";

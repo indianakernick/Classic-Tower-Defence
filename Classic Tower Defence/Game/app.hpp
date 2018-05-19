@@ -12,6 +12,7 @@
 #include "ui view.hpp"
 #include "game view.hpp"
 #include "game logic.hpp"
+#include "sound queue.hpp"
 #include <Simpleton/SDL/library.hpp>
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/OpenGL/context.hpp>
@@ -36,6 +37,7 @@ private:
   G2D::Renderer renderer;
   ECS::Registry reg;
   G2D::QuadWriter writer;
+  SoundQueue sounds;
   
   GameView view;
   GameLogic logic;

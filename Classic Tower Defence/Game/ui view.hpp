@@ -21,7 +21,7 @@ public:
   UIView() = default;
   
   void init(G2D::Renderer &);
-  void updateCam(float, float);
+  void updateCam(Cam2D::Params);
   void render(ECS::Registry &, G2D::QuadWriter &);
 
 private:

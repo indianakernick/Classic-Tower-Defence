@@ -37,6 +37,7 @@ void App::init() {
   }
   
   audioLib = SDL::makeAudioLibrary({});
+  sounds.load();
   
   SDL_PumpEvents();
   
@@ -72,16 +73,20 @@ bool App::input() {
 void App::update(float) {
   PROFILE(App::update);
   logic.update(reg, 0.05f);
-  view.playSounds(reg);
 }
 
 void App::render(const float delta) {
   PROFILE(App::render);
   
+  view.pushSounds(reg, sounds);
+  //sounds.play(DupSound::PLAY_LATER);
+  
   renderingContext.preRender();
   
-  view.updateCam(window.aspect(), delta);
-  uiView.updateCam(window.aspect(), delta);
+  const Cam2D::Params params = {window.aspect(), delta};
+  view.updateCam(params);
+  uiView.updateCam(params);
+  
   writer.clear();
   view.render(reg, writer);
   uiView.render(reg, writer);

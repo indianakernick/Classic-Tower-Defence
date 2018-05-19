@@ -21,15 +21,14 @@ public:
   GameView() = default;
 
   void init(G2D::Renderer &);
-  void playSounds(ECS::Registry &);
-  void updateCam(float, float);
+  void pushSounds(ECS::Registry &, SoundQueue &);
+  void updateCam(Cam2D::Params);
   void render(ECS::Registry &, G2D::QuadWriter &);
 
 private:
   G2D::SheetTex sheetTex;
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoomToFit;
-  SoundQueue sounds;
 };
 
 #endif

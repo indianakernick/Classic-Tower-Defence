@@ -30,18 +30,15 @@ void GameView::init(G2D::Renderer &renderer) {
   camera.setPos({-4.0f, 0.0f});
   
   sheetTex.load(renderer, "sprites");
-
-  sounds.load();
 }
 
-void GameView::playSounds(ECS::Registry &reg) {
+void GameView::pushSounds(ECS::Registry &reg, SoundQueue &sounds) {
   towerSoundSystem(reg, sounds);
   unitDeathSoundSystem(reg, sounds);
-  sounds.play(DupSound::PLAY_LATER);
 }
 
-void GameView::updateCam(const float aspect, const float delta) {
-  camera.update({aspect, delta}, zoomToFit);
+void GameView::updateCam(const Cam2D::Params params) {
+  camera.update(params, zoomToFit);
 }
 
 void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {

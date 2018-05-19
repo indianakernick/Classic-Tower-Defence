@@ -24,8 +24,8 @@ void UIView::init(G2D::Renderer &renderer) {
   text.setScale(2.0f);
 }
 
-void UIView::updateCam(const float aspect, const float delta) {
-  camera.update({aspect, delta}, zoom);
+void UIView::updateCam(const Cam2D::Params params) {
+  camera.update(params, zoom);
 }
 
 void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {

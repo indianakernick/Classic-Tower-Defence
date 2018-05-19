@@ -51,8 +51,8 @@ void GameLogic::init(ECS::Registry &reg) {
   createTower(reg, 11, {13, 3});
 }
 
-bool GameLogic::input(const SDL_Event &) {
-  return false;
+InputConsumed GameLogic::input(const SDL_Event &) {
+  return InputConsumed::NO;
 }
 
 void GameLogic::update(ECS::Registry &reg, const float delta) {

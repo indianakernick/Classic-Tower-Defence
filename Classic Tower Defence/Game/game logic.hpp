@@ -11,6 +11,7 @@
 
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_events.h>
+#include "input consumed.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
 class GameLogic {
@@ -18,7 +19,7 @@ public:
   GameLogic() = default;
   
   void init(ECS::Registry &);
-  bool input(const SDL_Event &);
+  InputConsumed input(const SDL_Event &);
   void update(ECS::Registry &, float);
 };
 
