@@ -52,6 +52,8 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   
   writer.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
   
+  text.setDepth(G2D::depth(Depth::UI_TEXT));
+  
   rightNum(writer, {124.0f, 2.0f}, reg.get<BaseGold>().gold);
   rightNum(writer, {124.0f, 22.0f}, reg.get<BaseHealth>().health);
   
