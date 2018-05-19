@@ -31,6 +31,9 @@ private:
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoom;
   TextRenderer text;
+  
+  void rightText(G2D::QuadWriter &, glm::vec2, std::string_view);
+  void rightNum(G2D::QuadWriter &, glm::vec2, uint64_t);
 };
 
 #endif
