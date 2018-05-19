@@ -27,6 +27,14 @@ void UIView::init(G2D::Renderer &renderer) {
   text.setGlyphSize({5.0f, 8.0f});
   text.setAdvance({6.0f, 9.0f});
   text.setScale(2.0f);
+  
+  cursor.init();
+  cursor.mark({8.0f, 49.0f, 57.0f, 98.0f}, SDL_SYSTEM_CURSOR_HAND);
+  cursor.mark({70.0f, 49.0f, 119.0f, 98.0f}, SDL_SYSTEM_CURSOR_HAND);
+  cursor.mark({8.0f, 123.0f, 57.0f, 172.0f}, SDL_SYSTEM_CURSOR_HAND);
+  cursor.mark({70.0f, 123.0f, 119, 172.0f}, SDL_SYSTEM_CURSOR_HAND);
+  cursor.mark({381.0f, 8.0f, 494.0f, 31.0f}, SDL_SYSTEM_CURSOR_HAND);
+  cursor.mark({603.0f, 3.0f, 636.0f, 36.0f}, SDL_SYSTEM_CURSOR_HAND);
 }
 
 void UIView::updateCam(const Cam2D::Params params) {
@@ -34,6 +42,8 @@ void UIView::updateCam(const Cam2D::Params params) {
 }
 
 void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
+  cursor.update(camera.transform.toMeters());
+
   writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
   writer.quad();
   writer.depth(Depth::UI_BASE);

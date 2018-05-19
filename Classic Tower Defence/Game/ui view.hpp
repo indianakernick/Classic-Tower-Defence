@@ -9,6 +9,7 @@
 #ifndef ui_view_hpp
 #define ui_view_hpp
 
+#include "cursor area.hpp"
 #include "text renderer.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
@@ -31,6 +32,7 @@ private:
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoom;
   TextRenderer text;
+  CursorArea cursor;
   
   void rightText(G2D::QuadWriter &, glm::vec2, std::string_view);
   void rightNum(G2D::QuadWriter &, glm::vec2, uint64_t);
