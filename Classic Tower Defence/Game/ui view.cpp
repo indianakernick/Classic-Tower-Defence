@@ -9,9 +9,11 @@
 #include "ui view.hpp"
 
 #include "depth.hpp"
+#include "waves tag.hpp"
 #include "base gold tag.hpp"
 #include "level info tag.hpp"
 #include "base health tag.hpp"
+#include "spawner state tag.hpp"
 
 void UIView::init(G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::TOP_LEFT);
@@ -56,5 +58,9 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   text.rightAlign({235.0f, 22.0f}, map);
   text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), map);
   
-  
+  const size_t wave = reg.get<SpawnerState>().currentWave + 1;
+  const size_t waves = reg.get<Waves>().size();
+  const std::string waveText = std::to_string(wave) + "/" + std::to_string(waves);
+  text.rightAlign({372.0f, 12.0f}, waveText);
+  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), waveText);
 }
