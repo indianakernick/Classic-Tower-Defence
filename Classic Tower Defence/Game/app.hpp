@@ -9,6 +9,7 @@
 #ifndef app_hpp
 #define app_hpp
 
+#include "ui view.hpp"
 #include "game view.hpp"
 #include "game logic.hpp"
 #include <Simpleton/SDL/library.hpp>
@@ -38,6 +39,7 @@ private:
   
   GameView view;
   GameLogic logic;
+  UIView uiView;
 
   bool input();
   void update(float);

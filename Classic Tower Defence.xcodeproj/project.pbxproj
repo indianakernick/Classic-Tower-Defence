@@ -58,6 +58,7 @@
 		453B15A72091A09100BFA00D /* unit death rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B15A52091A09100BFA00D /* unit death rendering system.cpp */; };
 		453B288220AFC29C00F6E9E6 /* ui.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 453B288020AFC29C00F6E9E6 /* ui.atlas */; };
 		453B288320AFC29D00F6E9E6 /* ui.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B288120AFC29C00F6E9E6 /* ui.png */; };
+		453B288620AFD4B600F6E9E6 /* ui view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B288420AFD4B600F6E9E6 /* ui view.cpp */; };
 		4563D58720969A8800DB2510 /* turret damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58520969A8800DB2510 /* turret damage system.cpp */; };
 		4563D58A20969AA100DB2510 /* splash damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58820969AA100DB2510 /* splash damage system.cpp */; };
 		4563D5B52096E16700DB2510 /* sound queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D5B42096E16700DB2510 /* sound queue.cpp */; };
@@ -344,6 +345,8 @@
 		453B287E20AFBE4100F6E9E6 /* ui base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui base.png"; sourceTree = "<group>"; };
 		453B288020AFC29C00F6E9E6 /* ui.atlas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ui.atlas; sourceTree = "<group>"; };
 		453B288120AFC29C00F6E9E6 /* ui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui.png; sourceTree = "<group>"; };
+		453B288420AFD4B600F6E9E6 /* ui view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ui view.cpp"; sourceTree = "<group>"; };
+		453B288520AFD4B600F6E9E6 /* ui view.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "ui view.hpp"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
@@ -1327,6 +1330,8 @@
 			children = (
 				456826512099720E00BA6AE8 /* text renderer.cpp */,
 				456826522099720E00BA6AE8 /* text renderer.hpp */,
+				453B288420AFD4B600F6E9E6 /* ui view.cpp */,
+				453B288520AFD4B600F6E9E6 /* ui view.hpp */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1572,6 +1577,7 @@
 				4538858D208EC736003EB260 /* tower sound system.cpp in Sources */,
 				453884A2208AB815003EB260 /* main.cpp in Sources */,
 				453884B8208ABF79003EB260 /* app.cpp in Sources */,
+				453B288620AFD4B600F6E9E6 /* ui view.cpp in Sources */,
 				45388598208EE402003EB260 /* create level.cpp in Sources */,
 				453884FF208C15B5003EB260 /* create tower.cpp in Sources */,
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,

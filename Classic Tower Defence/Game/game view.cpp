@@ -29,17 +29,7 @@ void GameView::init(G2D::Renderer &renderer) {
   zoomToFit.setSize({20.0f, 11.25f});
   camera.setPos({-4.0f, 0.0f});
   
-  textCam.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
-  textZoom.setSize({640.0f, 360.0f});
-  
   sheetTex.load(renderer, "sprites");
-  radiusSheetTex.load(renderer, "radius");
-  textSheetTex.load(renderer, "5x8 ascii");
-  
-  text.setGlyphSize({5.0f, 8.0f});
-  text.setAdvance({6.0f, -9.0f});
-  text.setCursor({50.0f, 338.0f});
-  text.setScale(2.0f);
 
   sounds.load();
 }
@@ -52,7 +42,6 @@ void GameView::playSounds(ECS::Registry &reg) {
 
 void GameView::updateCam(const float aspect, const float delta) {
   camera.update({aspect, delta}, zoomToFit);
-  textCam.update({aspect, delta}, textZoom);
 }
 
 void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {

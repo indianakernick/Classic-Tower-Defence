@@ -42,6 +42,7 @@ void App::init() {
   
   logic.init(reg);
   view.init(renderer);
+  uiView.init(renderer);
 }
 
 void App::quit() {
@@ -80,8 +81,10 @@ void App::render(const float delta) {
   renderingContext.preRender();
   
   view.updateCam(window.aspect(), delta);
+  uiView.updateCam(window.aspect(), delta);
   writer.clear();
   view.render(reg, writer);
+  uiView.render(reg, writer);
   writer.render(renderer);
   
   renderingContext.postRender();
