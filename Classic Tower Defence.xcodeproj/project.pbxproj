@@ -59,6 +59,7 @@
 		453B288220AFC29C00F6E9E6 /* ui.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 453B288020AFC29C00F6E9E6 /* ui.atlas */; };
 		453B288320AFC29D00F6E9E6 /* ui.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B288120AFC29C00F6E9E6 /* ui.png */; };
 		453B288620AFD4B600F6E9E6 /* ui view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B288420AFD4B600F6E9E6 /* ui view.cpp */; };
+		453B288920AFE39B00F6E9E6 /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 453B288820AFE39B00F6E9E6 /* sounds.json */; };
 		4563D58720969A8800DB2510 /* turret damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58520969A8800DB2510 /* turret damage system.cpp */; };
 		4563D58A20969AA100DB2510 /* splash damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58820969AA100DB2510 /* splash damage system.cpp */; };
 		4563D5B52096E16700DB2510 /* sound queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D5B42096E16700DB2510 /* sound queue.cpp */; };
@@ -245,7 +246,6 @@
 		453B15202090508800BFA00D /* unit damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit damage system.hpp"; sourceTree = "<group>"; };
 		453B15222090522F00BFA00D /* unit regen system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit regen system.cpp"; sourceTree = "<group>"; };
 		453B15232090522F00BFA00D /* unit regen system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit regen system.hpp"; sourceTree = "<group>"; };
-		453B153020905DF300BFA00D /* sounds.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = sounds.jsonnet; sourceTree = "<group>"; };
 		453B153220906E3200BFA00D /* cannon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cannon.wav; sourceTree = "<group>"; };
 		453B15342090700500BFA00D /* load towers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load towers.cpp"; sourceTree = "<group>"; };
 		453B15352090700500BFA00D /* load towers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load towers.hpp"; sourceTree = "<group>"; };
@@ -347,6 +347,7 @@
 		453B288120AFC29C00F6E9E6 /* ui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui.png; sourceTree = "<group>"; };
 		453B288420AFD4B600F6E9E6 /* ui view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ui view.cpp"; sourceTree = "<group>"; };
 		453B288520AFD4B600F6E9E6 /* ui view.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "ui view.hpp"; sourceTree = "<group>"; };
+		453B288820AFE39B00F6E9E6 /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
@@ -1271,9 +1272,9 @@
 			children = (
 				453B151A2090453D00BFA00D /* getsprite.libsonnet */,
 				453B154B20907CDD00BFA00D /* getsound.libsonnet */,
-				453B153020905DF300BFA00D /* sounds.jsonnet */,
 				453B15372090760900BFA00D /* towers.jsonnet */,
 				453B151520903F5100BFA00D /* level 0.jsonnet */,
+				453B288820AFE39B00F6E9E6 /* sounds.json */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -1376,6 +1377,7 @@
 			buildPhases = (
 				453884AE208ABB24003EB260 /* CopyFiles */,
 				452B93A3209346DE00B33561 /* Update Component List */,
+				453B288720AFDF4700F6E9E6 /* Update Sound List */,
 				4538848C208AB717003EB260 /* Sources */,
 				4538848D208AB717003EB260 /* Frameworks */,
 				45388511208C570A003EB260 /* Pack Sprites */,
@@ -1443,6 +1445,7 @@
 				453B288220AFC29C00F6E9E6 /* ui.atlas in Resources */,
 				4563D601209710CE00DB2510 /* radius.atlas in Resources */,
 				45F24E02209E905E00EAE60D /* plasma.wav in Resources */,
+				453B288920AFE39B00F6E9E6 /* sounds.json in Resources */,
 				45388580208DF7AA003EB260 /* blaster.wav in Resources */,
 				453B158E2091851200BFA00D /* robot destroyed.wav in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
@@ -1478,7 +1481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /usr/local/bin/python;
-			shellScript = "import os\nimport time\nimport glob\n\nsrc = os.getenv(\"PROJECT_DIR\") + \"/\" + os.getenv(\"PROJECT\") + \"/Game/\";\nout = \"component list.hpp\";\nos.chdir(src);\nfile = open(out, \"w\");\n\nfile.write(\"// This file was generated by a python script\\n\");\nfile.write(\"\"\"\n#ifndef component_list_hpp\n#define component_list_hpp\n\n#include <Simpleton/Utils/type list.hpp>\n\n\"\"\");\n\nsuffix = \" component.hpp\";\nfilenames = glob.glob(\"*\" + suffix);\nfilenames.sort(lambda a,b : len(a) - len(b));\n\nfor filename in filenames:\n  file.write(\"#include \\\"\" + filename + \"\\\"\\n\");\nfile.write(\"\\n\");\nfile.write(\"using CompList = Utils::TypeList<\\n\");\n\ndef pathToName(path):\n  trimmed = path[:-len(suffix)];\n  name = path[0].upper();\n  nextUpper = 0;\n  for i in range(1, len(trimmed)):\n    if nextUpper:\n      name = name + path[i].upper();\n      nextUpper = 0;\n    elif path[i] == \" \":\n      nextUpper = 1;\n    else:\n      name = name + path[i];\n  return name;\n\nclassnames = [pathToName(name) for name in filenames];\nfor classname in classnames[:-1]:\n  file.write(\"  \" + classname + \",\\n\");\nfile.write(\"  \" + classnames[-1] + \"\\n\");\n\nfile.write(\">;\\n\");\nfile.write(\"\\n\");\nfile.write(\"#endif\");\n\nfile.flush();\nfile.close();\n";
+			shellScript = "import os\nimport glob\n\nsrc = os.getenv(\"PROJECT_DIR\") + \"/\" + os.getenv(\"PROJECT\") + \"/Game/\";\nout = \"component list.hpp\";\nos.chdir(src);\nfile = open(out, \"w\");\n\nfile.write(\"// This file was generated by a python script\\n\");\nfile.write(\"\"\"\n#ifndef component_list_hpp\n#define component_list_hpp\n\n#include <Simpleton/Utils/type list.hpp>\n\n\"\"\");\n\nsuffix = \" component.hpp\";\nfilenames = glob.glob(\"*\" + suffix);\nfilenames.sort(lambda a,b : len(a) - len(b));\n\nfor filename in filenames:\n  file.write(\"#include \\\"\" + filename + \"\\\"\\n\");\nfile.write(\"\\n\");\nfile.write(\"using CompList = Utils::TypeList<\\n\");\n\ndef pathToName(path):\n  trimmed = path[:-len(suffix)];\n  name = path[0].upper();\n  nextUpper = 0;\n  for i in range(1, len(trimmed)):\n    if nextUpper:\n      name = name + path[i].upper();\n      nextUpper = 0;\n    elif path[i] == \" \":\n      nextUpper = 1;\n    else:\n      name = name + path[i];\n  return name;\n\nclassnames = [pathToName(name) for name in filenames];\nfor classname in classnames[:-1]:\n  file.write(\"  \" + classname + \",\\n\");\nfile.write(\"  \" + classnames[-1] + \"\\n\");\n\nfile.write(\">;\\n\");\nfile.write(\"\\n\");\nfile.write(\"#endif\");\n\nfile.flush();\nfile.close();\n";
 		};
 		453884B5208ABE9F003EB260 /* Compile Levels */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1492,7 +1495,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\ncompile() {\n  if [ $# -eq 1 ]\n  then\n    finalName=\"$1\"\n  else\n    finalName=\"$2\"\n  fi\n  echo \"Compiling $finalName\"\n  time jsonnet \"$PROJECT_RES/$1.jsonnet\" |         # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$finalName.json\"         # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$finalName.json\" ]]; then\n    exit 1\n  fi\n}\n\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  compile \"$name\"\ndone\n\ncompile \"sounds\"\ncompile \"towers\"";
+			shellScript = "# \"*\" means all levels\n# \"5\" means only level 5\nLEVEL=\"*\"\n\nPROJECT_RES=\"$PROJECT_DIR/$PROJECT/Resources/Levels\"\nPRODUCT_RES=\"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n\ncompile() {\n  if [ $# -eq 1 ]\n  then\n    finalName=\"$1\"\n  else\n    finalName=\"$2\"\n  fi\n  echo \"Compiling $finalName\"\n  time jsonnet \"$PROJECT_RES/$1.jsonnet\" |         # compile jsonnet\n  jq -c . > \"$PRODUCT_RES/$finalName.json\"         # minify json\n  # failed if output file is empty\n  if [[ ! -s \"$PRODUCT_RES/$finalName.json\" ]]; then\n    exit 1\n  fi\n}\n\n\nfind \"$PROJECT_RES\" -name \"level $LEVEL.jsonnet\" | # find\negrep --only-matching \"level (\\d+|final)\" |        # trim path and extension\nwhile read name; do\n  compile \"$name\"\ndone\n\ncompile \"towers\"";
 		};
 		45388511208C570A003EB260 /* Pack Sprites */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1527,6 +1530,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "cd \"$PROJECT_DIR/$PROJECT/Resources/Spritesheets\"\npack in=../UI out=ui 1> /dev/null";
+		};
+		453B288720AFDF4700F6E9E6 /* Update Sound List */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/$(PROJECT).xcodeproj/project.pbxproj",
+			);
+			name = "Update Sound List";
+			outputPaths = (
+				"$(PROJECT_DIR)/$(PROJECT)/Game/component list.hpp",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/local/bin/python;
+			shellScript = "import os\nimport glob\n\nos.chdir(os.getenv(\"PROJECT_DIR\") + \"/\" + os.getenv(\"PROJECT\") + \"/Resources/\");\nfile = open(\"Levels/sounds.json\", \"w\");\nos.chdir(\"Sounds\");\n\nfile.write('{\"files\":[');\nfilenames = glob.glob(\"*.wav\");\n\nfor filename in filenames[:-1]:\n  file.write('\"' + filename + '\",');\nfile.write('\"' + filenames[-1] + '\"');\n\nfile.write('],\"names\":{');\n\nfor i in range(len(filenames) - 1):\n  file.write('\"' + filenames[i][:-4] + '\":' + str(i) + ',');\nfile.write('\"' + filenames[-1][:-4] + '\":' + str(len(filenames) - 1));\n\nfile.write(\"}}\\n\");\nfile.flush();\nfile.close();";
 		};
 		4563D5FC20970FA200DB2510 /* Pack Radius */ = {
 			isa = PBXShellScriptBuildPhase;
