@@ -14,7 +14,7 @@
 void initMapInfo(ECS::Registry &reg) {
   MapInfo &info = reg.get<MapInfo>();
   const Map &map = reg.get<Map>();
-  for (size_t i = 0; i != map.scalarSize(); ++i) {
+  for (size_t i = 0; i != map.area(); ++i) {
     if (map[i] == TileType::ENTRY) {
       info.entry = map.toPos(i);
     } else if (map[i] == TileType::EXIT) {

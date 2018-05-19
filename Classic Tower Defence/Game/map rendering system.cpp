@@ -22,8 +22,7 @@ void mapRenderingSystem(
   const Map &map = reg.get<Map>();
   const MapSprites &sprites = reg.get<MapSprites>();
 
-  const size_t numTiles = map.scalarSize();
-  for (size_t t = 0; t != numTiles; ++t) {
+  for (size_t t = 0; t != map.area(); ++t) {
     const Sprite::ID id = sprites.sprite + static_cast<Sprite::ID>(map[t]);
     
     writer.quad();

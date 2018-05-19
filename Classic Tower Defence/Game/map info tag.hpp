@@ -13,13 +13,11 @@
 #include <Simpleton/Grid/dir.hpp>
 
 struct MapInfo {
-  using Pos = Grid::Pos;
-
-  Pos entry;
-  Pos exit;
+  Grid::Pos entry;
+  Grid::Pos exit;
   Grid::Dir entryDir;
   float pathDist;
-  std::vector<Pos> path;
+  std::vector<Grid::Pos> path;
 };
 
 #endif
