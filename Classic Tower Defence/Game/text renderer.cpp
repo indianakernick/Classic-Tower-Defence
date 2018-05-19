@@ -10,7 +10,7 @@
 
 void TextRenderer::centerAlign(const std::string_view text) {
   beginning = pos;
-  pos.x -= (width(text) - (advance.x - size.x) * scale) / 2.0f;
+  pos.x -= width(text) / 2.0f;
 }
 
 void TextRenderer::rightAlign(const std::string_view text) {
@@ -138,6 +138,8 @@ float TextRenderer::width(const std::string_view text) const {
   }
   
   maxReset(maxWidth, currWidth);
+  
+  maxWidth += scale * (size.x - advance.x);
   
   return maxWidth;
 }

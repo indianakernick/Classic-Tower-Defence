@@ -21,9 +21,13 @@ ECS::EntityID createTower(
 ) {
   const Towers &towers = reg.get<Towers>();
   const TowerProto &tower = towers.at(index);
+  auto &gold = reg.get<BaseGold>().gold;
+  const auto cost = tower.get<TowerGold>().buy;
   
-  if (tower.get<TowerGold>().buy > reg.get<BaseGold>().gold) {
+  if (cost > gold) {
     return ECS::NULL_ENTITY;
+  } else {
+    gold -= cost;
   }
   
   const ECS::EntityID entity = tower(reg);

@@ -9,6 +9,7 @@
 #include "ui view.hpp"
 
 #include "depth.hpp"
+#include "base gold tag.hpp"
 
 void UIView::init(G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::TOP_LEFT);
@@ -20,8 +21,7 @@ void UIView::init(G2D::Renderer &renderer) {
   radiusSheetTex.load(renderer, "radius");
   
   text.setGlyphSize({5.0f, 8.0f});
-  text.setAdvance({6.0f, -9.0f});
-  text.setCursor({50.0f, 338.0f});
+  text.setAdvance({6.0f, 9.0f});
   text.setScale(2.0f);
 }
 
@@ -31,9 +31,15 @@ void UIView::updateCam(const Cam2D::Params params) {
 
 void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
-  
   writer.quad();
   writer.depth(Depth::UI_BASE);
   writer.tilePos({0.0f, 0.0f}, {640.0f, 360.0f});
   writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite(0));
+  
+  writer.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
+  
+  const std::string gold = std::to_string(reg.get<BaseGold>().gold);
+  text.setCursor({124.0f, 2.0f});
+  text.rightAlign(gold);
+  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), gold);
 }
