@@ -9,7 +9,7 @@ local getSound = import "getsound.libsonnet";
   spawntime: 1.5,
   waves: [
     {
-      quantity: 100,
+      quantity: 10,
       proto: {
         UnitStats: {
           health: 2000,

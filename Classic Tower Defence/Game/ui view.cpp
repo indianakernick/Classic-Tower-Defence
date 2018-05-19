@@ -10,6 +10,7 @@
 
 #include "depth.hpp"
 #include "base gold tag.hpp"
+#include "base health tag.hpp"
 
 void UIView::init(G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::TOP_LEFT);
@@ -39,7 +40,10 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   writer.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
   
   const std::string gold = std::to_string(reg.get<BaseGold>().gold);
-  text.setCursor({124.0f, 2.0f});
-  text.rightAlign(gold);
+  text.rightAlign({124.0f, 2.0f}, gold);
   text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), gold);
+  
+  const std::string base = std::to_string(reg.get<BaseHealth>().health);
+  text.rightAlign({124.0f, 22.0f}, base);
+  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), base);
 }

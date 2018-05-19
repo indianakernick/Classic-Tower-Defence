@@ -10,6 +10,7 @@
 
 #include "aura tower component.hpp"
 #include "beam tower component.hpp"
+#include "tower target component.hpp"
 #include "projectile tower component.hpp"
 #include "tower shoot time component.hpp"
 #include "tower firing anim component.hpp"
@@ -17,7 +18,12 @@
 namespace {
   void handleAnimEnd(TowerFiringAnim &anim, ECS::Registry &reg, const ECS::EntityID entity) {
     if (reg.has<BeamTower>(entity)) {
-      anim.frame = anim.frames - 1;
+      if (reg.get<TowerTarget>(entity).id == ECS::NULL_ENTITY) {
+        anim.frame = 0;
+        anim.started = false;
+      } else {
+        anim.frame = anim.frames - 1;
+      }
     } else if (reg.has<ProjectileTower>(entity) || reg.has<AuraTower>(entity)) {
       anim.frame = 0;
       anim.started = false;

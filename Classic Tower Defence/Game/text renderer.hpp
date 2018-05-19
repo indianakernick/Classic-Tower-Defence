@@ -26,12 +26,12 @@ public:
   void setCursor(glm::vec2);
   /// Return the cursor to the last place that it was set
   void resetCursor();
-  /// Shifts the cursor so that the given text is center aligned about the
-  /// current cursor position
-  void centerAlign(std::string_view);
-  /// Shifts the cursor so that the given text is right aligned about the
-  /// current cursor position
-  void rightAlign(std::string_view);
+  /// Set the cursor such that the given text is center aligned about the given
+  /// position
+  void centerAlign(glm::vec2, std::string_view);
+  /// Set the cursor such that the given text is right aligned about the given
+  /// position
+  void rightAlign(glm::vec2, std::string_view);
   
   /// Set the glyph scale (screen_size = glyph_scale * tex_size)
   void setScale(float);

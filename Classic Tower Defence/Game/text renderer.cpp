@@ -8,14 +8,12 @@
 
 #include "text renderer.hpp"
 
-void TextRenderer::centerAlign(const std::string_view text) {
-  beginning = pos;
-  pos.x -= width(text) / 2.0f;
+void TextRenderer::centerAlign(const glm::vec2 pos, const std::string_view text) {
+  setCursor({pos.x - width(text) / 2.0f, pos.y});
 }
 
-void TextRenderer::rightAlign(const std::string_view text) {
-  beginning = pos;
-  pos.x -= width(text);
+void TextRenderer::rightAlign(const glm::vec2 pos, const std::string_view text) {
+  setCursor({pos.x - width(text), pos.y});
 }
 
 void TextRenderer::setGlyphSize(const glm::vec2 newSize) {
