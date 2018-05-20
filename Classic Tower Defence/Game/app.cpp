@@ -21,6 +21,18 @@ bool App::mainloop(const uint64_t deltaNano) {
   return ok;
 }
 
+namespace {
+  int resizeEventWatch(void *app, SDL_Event *event) {
+    if (event->type == SDL_WINDOWEVENT) {
+      if (event->window.event == SDL_WINDOWEVENT_SIZE_CHANGED) {
+        reinterpret_cast<App *>(app)->mainloop(0);
+        return 0;
+      }
+    }
+    return 1;
+  }
+}
+
 void App::init() {
   PROFILE(App::init);
 
@@ -44,6 +56,8 @@ void App::init() {
   logic.init(reg);
   view.init(renderer);
   uiView.init(reg, renderer);
+  
+  SDL_AddEventWatch(resizeEventWatch, this);
 }
 
 void App::quit() {
@@ -70,16 +84,20 @@ bool App::input() {
   return true;
 }
 
-void App::update(float) {
+void App::update(const float delta) {
   PROFILE(App::update);
-  logic.update(reg, 0.05f);
+  if (delta != 0.0f) {
+    logic.update(reg, delta);
+  }
 }
 
 void App::render(const float delta) {
   PROFILE(App::render);
   
-  view.pushSounds(reg, sounds);
-  //sounds.play(DupSound::PLAY_LATER);
+  if (delta != 0.0f) {
+    view.pushSounds(reg, sounds);
+    //sounds.play(DupSound::PLAY_LATER);
+  }
   
   renderingContext.preRender();
   
@@ -87,10 +105,15 @@ void App::render(const float delta) {
   view.updateCam(params);
   uiView.updateCam(params);
   
+  if (delta != 0.0f) {
+    view.updateAnim(reg, delta);
+    uiView.updateAnim(reg, delta);
+  }
+  
   writer.clear();
   view.render(reg, writer);
   uiView.render(reg, writer);
   writer.render(renderer);
   
-  renderingContext.postRender();
+  renderingContext.postRender(delta == 0.0f);
 }

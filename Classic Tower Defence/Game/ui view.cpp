@@ -77,6 +77,8 @@ InputConsumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
   return InputConsumed::YES;
 }
 
+void UIView::updateAnim(ECS::Registry &, float) {}
+
 void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   cursor.update(camera.transform.toMeters());
 

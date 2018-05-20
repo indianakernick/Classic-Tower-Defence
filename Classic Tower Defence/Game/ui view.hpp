@@ -25,6 +25,7 @@ public:
   void init(ECS::Registry &, G2D::Renderer &);
   void updateCam(Cam2D::Params);
   InputConsumed input(ECS::Registry &, const SDL_Event &);
+  void updateAnim(ECS::Registry &, float);
   void render(ECS::Registry &, G2D::QuadWriter &);
 
 private:

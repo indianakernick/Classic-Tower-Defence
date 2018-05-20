@@ -23,6 +23,7 @@ public:
   void init(G2D::Renderer &);
   void pushSounds(ECS::Registry &, SoundQueue &);
   void updateCam(Cam2D::Params);
+  void updateAnim(ECS::Registry &, float);
   void render(ECS::Registry &, G2D::QuadWriter &);
 
 private:

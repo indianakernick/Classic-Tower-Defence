@@ -51,7 +51,9 @@ void GameLogic::init(ECS::Registry &reg) {
   createTower(reg, 11, {13, 3});
 }
 
-void GameLogic::update(ECS::Registry &reg, const float delta) {
+void GameLogic::update(ECS::Registry &reg, float delta) {
+  delta = 0.05f;
+
   spawnerTimingSystem(reg, delta);
   spawnerSystem(reg);
   

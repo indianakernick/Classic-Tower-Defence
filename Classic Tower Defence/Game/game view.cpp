@@ -42,11 +42,13 @@ void GameView::updateCam(const Cam2D::Params params) {
   camera.update(params, zoomToFit);
 }
 
-void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
-  PROFILE(GameView::render);
-
+void GameView::updateAnim(ECS::Registry &reg, float) {
   unitWalkAnimSystem(reg);
   unitDeathAnimSystem(reg);
+}
+
+void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
+  PROFILE(GameView::render);
   
   writer.section({camera.transform.toPixels(), sheetTex.tex()});
   mapRenderingSystem(reg, writer, sheetTex.sheet());
@@ -57,10 +59,4 @@ void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   towerAuraRenderingSystem(reg, writer, sheetTex.sheet());
   unitHealthRenderingSystem(reg, writer, sheetTex.sheet());
   towerProjectileRenderingSystem(reg, writer, sheetTex.sheet());
-  
-  /*writer.section({textCam.transform.toPixels(), textSheetTex.tex()});
-  text.setCursor({100.0f, 338.0f});
-  text.pushText(writer, textSheetTex.sheet(), "01234567890123456789\n");
-  text.centerAlign("center");
-  text.pushText(writer, textSheetTex.sheet(), "center");*/
 }
