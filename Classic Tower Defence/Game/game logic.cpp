@@ -51,10 +51,6 @@ void GameLogic::init(ECS::Registry &reg) {
   createTower(reg, 11, {13, 3});
 }
 
-InputConsumed GameLogic::input(const SDL_Event &) {
-  return InputConsumed::NO;
-}
-
 void GameLogic::update(ECS::Registry &reg, const float delta) {
   spawnerTimingSystem(reg, delta);
   spawnerSystem(reg);

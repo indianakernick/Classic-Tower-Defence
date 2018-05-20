@@ -64,7 +64,7 @@ bool App::input() {
     if (e.type == SDL_QUIT) {
       return false;
     } else {
-      logic.input(e);
+      uiView.input(reg, e);
     }
   }
   return true;

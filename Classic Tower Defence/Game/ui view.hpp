@@ -11,6 +11,7 @@
 
 #include "cursor area.hpp"
 #include "text renderer.hpp"
+#include "input consumed.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
@@ -23,6 +24,7 @@ public:
   
   void init(G2D::Renderer &);
   void updateCam(Cam2D::Params);
+  InputConsumed input(ECS::Registry &, const SDL_Event &);
   void render(ECS::Registry &, G2D::QuadWriter &);
 
 private:

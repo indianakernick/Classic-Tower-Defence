@@ -8,6 +8,8 @@
 
 #include "mouse pos.hpp"
 
+#include <SDL2/SDL_mouse.h>
+
 namespace {
   glm::vec2 mousePos(
     const glm::mat3 &toMeters,
