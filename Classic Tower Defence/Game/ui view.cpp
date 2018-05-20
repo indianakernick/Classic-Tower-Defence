@@ -33,6 +33,7 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::TOP_LEFT);
   camera.transform.setInvertY(true);
   zoom.setSize({640.0f, 360.0f});
+  camera.transform.setSize({640.0f, 360.0f});
   
   uiSheetTex.load(renderer, "ui");
   textSheetTex.load(renderer, "5x8 ascii");

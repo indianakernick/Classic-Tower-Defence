@@ -26,8 +26,9 @@
 
 void GameView::init(G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
-  zoomToFit.setSize({20.0f, 11.25f});
   camera.setPos({-4.0f, 0.0f});
+  zoomToFit.setSize({20.0f, 11.25f});
+  camera.transform.setSize({20.0f, 11.25f});
   
   sheetTex.load(renderer, "sprites");
 }
