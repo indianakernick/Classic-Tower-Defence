@@ -1,6 +1,13 @@
 local getSprite = import "getsprite.libsonnet";
 local getSound = import "getsound.libsonnet";
 
+local unitSprites(name) = {
+  sprite: getSprite(name + " 0 0"),
+  frames: getSprite(name + " 1 0") - self.sprite,
+  death: getSprite("explosion 0"),
+  deathFrames: 4
+};
+
 {
   map: 0,
   sprite: getSprite("map 0"),
@@ -26,12 +33,7 @@ local getSound = import "getsound.libsonnet";
           moveSpeed: 1.25,
           gold: 10
         },
-        UnitSprite: {
-          sprite: getSprite("tank 0 0"),
-          frames: getSprite("tank 1 0") - getSprite("tank 0 0"),
-          death: getSprite("explosion 0"),
-          deathFrames: 4
-        },
+        UnitSprite: unitSprites("tank"),
         local sprite = self.UnitSprite,
         UnitWalkAnim: {
           frames: sprite.frames,

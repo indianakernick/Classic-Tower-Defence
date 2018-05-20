@@ -33,6 +33,9 @@ private:
   Cam2D::ZoomToFit zoom;
   TextRenderer text;
   CursorArea cursor;
+  ECS::EntityID previewEntity = ECS::NULL_ENTITY;
+  Sprite::ID base;
+  Sprite::ID previewBack;
   
   void rightText(G2D::QuadWriter &, glm::vec2, std::string_view);
   void rightNum(G2D::QuadWriter &, glm::vec2, uint64_t);

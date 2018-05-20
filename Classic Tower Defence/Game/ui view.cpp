@@ -14,6 +14,10 @@
 #include "level info tag.hpp"
 #include "base health tag.hpp"
 #include "spawner state tag.hpp"
+#include "position component.hpp"
+#include "unit dir component.hpp"
+#include "unit sprite component.hpp"
+#include "unit walk anim component.hpp"
 
 void UIView::init(G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::TOP_LEFT);
@@ -35,6 +39,9 @@ void UIView::init(G2D::Renderer &renderer) {
   cursor.mark({70.0f, 123.0f, 119, 172.0f}, SDL_SYSTEM_CURSOR_HAND);
   cursor.mark({381.0f, 8.0f, 494.0f, 31.0f}, SDL_SYSTEM_CURSOR_HAND);
   cursor.mark({603.0f, 3.0f, 636.0f, 36.0f}, SDL_SYSTEM_CURSOR_HAND);
+  
+  base = uiSheetTex.sheet().getIDfromName("base");
+  previewBack = uiSheetTex.sheet().getIDfromName("preview back");
 }
 
 void UIView::updateCam(const Cam2D::Params params) {
@@ -45,10 +52,16 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   cursor.update(camera.transform.toMeters());
 
   writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
+  
   writer.quad();
   writer.depth(Depth::UI_BASE);
   writer.tilePos({0.0f, 0.0f}, {640.0f, 360.0f});
-  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite(0));
+  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite(base));
+  
+  writer.quad();
+  writer.depth(Depth::MAP);
+  writer.tilePos({604.0f, 4.0f}, {32.0f, 32.0f});
+  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite(previewBack));
   
   writer.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
   
@@ -69,6 +82,15 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   rightText(writer, {372.0f, 12.0f}, waveText);
   
   rightNum(writer, {599.0f, 12.0f}, spawnerState.numUnitsLeft);
+  
+  if (previewEntity == ECS::NULL_ENTITY) {
+    previewEntity = reg.create();
+    reg.assign<Position>(previewEntity, glm::vec2(14.875f, 10.125f));
+    reg.assign<UnitDir>(previewEntity, Grid::Dir::RIGHT);
+    const auto &proto = reg.get<Waves>()[spawnerState.currentWave].proto;
+    reg.assign<UnitSprite>(previewEntity, proto.get<UnitSprite>());
+    reg.assign<UnitWalkAnim>(previewEntity, proto.get<UnitWalkAnim>());
+  }
 }
 
 void UIView::rightText(
