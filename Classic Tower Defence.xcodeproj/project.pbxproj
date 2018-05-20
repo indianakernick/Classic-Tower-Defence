@@ -64,6 +64,7 @@
 		453B289520B0FEE400F6E9E6 /* mouse pos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289320B0FEE400F6E9E6 /* mouse pos.cpp */; };
 		453B289820B113E900F6E9E6 /* get wave info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289620B113E900F6E9E6 /* get wave info.cpp */; };
 		453B289B20B1166E00F6E9E6 /* preview entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289920B1166E00F6E9E6 /* preview entity.cpp */; };
+		453B289F20B1287000F6E9E6 /* count live units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289D20B1287000F6E9E6 /* count live units.cpp */; };
 		4563D58720969A8800DB2510 /* turret damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58520969A8800DB2510 /* turret damage system.cpp */; };
 		4563D58A20969AA100DB2510 /* splash damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D58820969AA100DB2510 /* splash damage system.cpp */; };
 		4563D5B52096E16700DB2510 /* sound queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4563D5B42096E16700DB2510 /* sound queue.cpp */; };
@@ -363,6 +364,9 @@
 		453B289720B113E900F6E9E6 /* get wave info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "get wave info.hpp"; sourceTree = "<group>"; };
 		453B289920B1166E00F6E9E6 /* preview entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "preview entity.cpp"; sourceTree = "<group>"; };
 		453B289A20B1166E00F6E9E6 /* preview entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "preview entity.hpp"; sourceTree = "<group>"; };
+		453B289C20B1274A00F6E9E6 /* level 1.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 1.jsonnet"; sourceTree = "<group>"; };
+		453B289D20B1287000F6E9E6 /* count live units.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "count live units.cpp"; sourceTree = "<group>"; };
+		453B289E20B1287000F6E9E6 /* count live units.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "count live units.hpp"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
@@ -1231,6 +1235,8 @@
 				45C6DD8420A01A2B002A133F /* load base.hpp */,
 				45C6DD8620A01A3B002A133F /* load spawner.cpp */,
 				45C6DD8720A01A3B002A133F /* load spawner.hpp */,
+				453B289D20B1287000F6E9E6 /* count live units.cpp */,
+				453B289E20B1287000F6E9E6 /* count live units.hpp */,
 			);
 			name = Level;
 			sourceTree = "<group>";
@@ -1295,6 +1301,7 @@
 				453B154B20907CDD00BFA00D /* getsound.libsonnet */,
 				453B15372090760900BFA00D /* towers.jsonnet */,
 				453B151520903F5100BFA00D /* level 0.jsonnet */,
+				453B289C20B1274A00F6E9E6 /* level 1.jsonnet */,
 				453B288820AFE39B00F6E9E6 /* sounds.json */,
 			);
 			path = Levels;
@@ -1648,6 +1655,7 @@
 				453B159A2091922E00BFA00D /* unit death anim system.cpp in Sources */,
 				453884CC208AD499003EB260 /* init map info.cpp in Sources */,
 				4538850C208C2C56003EB260 /* unit rendering system.cpp in Sources */,
+				453B289F20B1287000F6E9E6 /* count live units.cpp in Sources */,
 				45388503208C18B8003EB260 /* upgrade tower.cpp in Sources */,
 				45F24E08209EAD8F00EAE60D /* firing anim system.cpp in Sources */,
 				4563D5B52096E16700DB2510 /* sound queue.cpp in Sources */,

@@ -16,11 +16,16 @@
 #include "init map info.hpp"
 #include "level info tag.hpp"
 #include "map sprites tag.hpp"
+#include "count live units.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
 
-void loadLevel(ECS::Registry &reg, const int level) {
+bool loadLevel(ECS::Registry &reg, const int level) {
   std::ifstream file(SDL::getResDir() + "level " + std::to_string(level) + ".json");
+  if (!file.is_open()) {
+    return false;
+  }
+  
   json levelNode;
   file >> levelNode;
   
@@ -35,4 +40,17 @@ void loadLevel(ECS::Registry &reg, const int level) {
   loadWaves(reg, levelNode.at("waves"));
   loadBase(reg, levelNode);
   loadSpawner(reg, levelNode);
+  
+  return true;
+}
+
+void loadNextLevel(ECS::Registry &reg) {
+  if (countLiveUnits(reg) != 0) {
+    return;
+  }
+
+  const int current = reg.get<LevelInfo>().level;
+  if (!loadLevel(reg, current + 1)) {
+    // @TODO player has finished the game
+  }
 }

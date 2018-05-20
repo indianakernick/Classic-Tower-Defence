@@ -11,6 +11,7 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
-void loadLevel(ECS::Registry &, int);
+bool loadLevel(ECS::Registry &, int);
+void loadNextLevel(ECS::Registry &);
 
 #endif

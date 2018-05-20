@@ -11,6 +11,7 @@
 #include "depth.hpp"
 #include "mouse pos.hpp"
 #include "next wave.hpp"
+#include "load level.hpp"
 #include "get wave info.hpp"
 #include "base gold tag.hpp"
 #include "level info tag.hpp"
@@ -68,9 +69,8 @@ InputConsumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
     return InputConsumed::NO;
   }
   
-  const WaveStatus status = nextWave(reg);
-  if (status == WaveStatus::FINISHED_LEVEL) {
-    // start next level
+  if (nextWave(reg) == WaveStatus::FINISHED_LEVEL) {
+    loadNextLevel(reg);
   }
   
   return InputConsumed::YES;
@@ -99,8 +99,8 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   rightNum(writer, {124.0f, 22.0f}, reg.get<BaseHealth>().health);
   
   const LevelInfo levelInfo = reg.get<LevelInfo>();
-  rightNum(writer, {235.0f, 2.0f}, levelInfo.level);
-  rightNum(writer, {235.0f, 22.0f}, levelInfo.map);
+  rightNum(writer, {235.0f, 2.0f}, levelInfo.level + 1);
+  rightNum(writer, {235.0f, 22.0f}, levelInfo.map + 1);
   
   rightText(writer, {372.0f, 12.0f}, getWaveStr(reg));
   rightNum(writer, {599.0f, 12.0f}, getNumUnits(reg));
