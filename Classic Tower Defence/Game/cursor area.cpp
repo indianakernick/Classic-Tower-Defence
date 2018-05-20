@@ -8,6 +8,8 @@
 
 #include "cursor area.hpp"
 
+#include "mouse pos.hpp"
+
 void CursorArea::init() {
   for (int i = 0; i != SDL_NUM_SYSTEM_CURSORS; ++i) {
     const auto id = static_cast<SDL_SystemCursor>(i);
@@ -20,20 +22,7 @@ void CursorArea::set(const SDL_SystemCursor cursor) {
 }
 
 void CursorArea::update(const glm::mat3 toMeters) {
-  glm::ivec2 mousePos;
-  SDL_GetMouseState(&mousePos.x, &mousePos.y);
-  SDL_Window *const window = SDL_GetMouseFocus();
-  glm::ivec2 windowSize;
-  SDL_GetWindowSize(window, &windowSize.x, &windowSize.y);
-  
-  // converting from pixels to normalized device coordinates to meters
-  glm::vec2 pos = mousePos;
-  pos /= glm::vec2(windowSize);
-  pos *= 2.0f;
-  pos -= 1.0f;
-  pos.y = -pos.y;
-  pos = toMeters * glm::vec3(pos.x, pos.y, 1.0f);
-  
+  const glm::vec2 pos = mousePos(toMeters);
   for (const Pair &pair : pairs) {
     if (pair.rect.encloses(pos)) {
       return set(pair.cursor);
