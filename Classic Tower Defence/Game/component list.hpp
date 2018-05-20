@@ -5,62 +5,62 @@
 
 #include <Simpleton/Utils/type list.hpp>
 
-#include "name component.hpp"
-#include "sound component.hpp"
-#include "unit dir component.hpp"
-#include "position component.hpp"
 #include "aim tower component.hpp"
-#include "unit path component.hpp"
-#include "unit stats component.hpp"
 #include "aura tower component.hpp"
 #include "beam tower component.hpp"
-#include "tower gold component.hpp"
-#include "slow effect component.hpp"
-#include "unit sprite component.hpp"
-#include "tower effect component.hpp"
-#include "tower target component.hpp"
-#include "turret tower component.hpp"
-#include "splash tower component.hpp"
-#include "tower sprites component.hpp"
-#include "poison effect component.hpp"
-#include "tower upgrades component.hpp"
-#include "unit walk anim component.hpp"
-#include "tower beam anim component.hpp"
-#include "unit death anim component.hpp"
-#include "projectile tower component.hpp"
-#include "tower shoot time component.hpp"
-#include "tower firing anim component.hpp"
 #include "common tower stats component.hpp"
+#include "name component.hpp"
+#include "poison effect component.hpp"
+#include "position component.hpp"
+#include "projectile tower component.hpp"
+#include "slow effect component.hpp"
+#include "sound component.hpp"
+#include "splash tower component.hpp"
+#include "tower beam anim component.hpp"
+#include "tower effect component.hpp"
+#include "tower firing anim component.hpp"
+#include "tower gold component.hpp"
+#include "tower shoot time component.hpp"
+#include "tower sprites component.hpp"
+#include "tower target component.hpp"
+#include "tower upgrades component.hpp"
+#include "turret tower component.hpp"
+#include "unit death anim component.hpp"
+#include "unit dir component.hpp"
 #include "unit move distance component.hpp"
+#include "unit path component.hpp"
+#include "unit sprite component.hpp"
+#include "unit stats component.hpp"
+#include "unit walk anim component.hpp"
 
 using CompList = Utils::TypeList<
-  Name,
-  Sound,
-  UnitDir,
-  Position,
   AimTower,
-  UnitPath,
-  UnitStats,
   AuraTower,
   BeamTower,
-  TowerGold,
-  SlowEffect,
-  UnitSprite,
-  TowerEffect,
-  TowerTarget,
-  TurretTower,
-  SplashTower,
-  TowerSprites,
-  PoisonEffect,
-  TowerUpgrades,
-  UnitWalkAnim,
-  TowerBeamAnim,
-  UnitDeathAnim,
-  ProjectileTower,
-  TowerShootTime,
-  TowerFiringAnim,
   CommonTowerStats,
-  UnitMoveDistance
+  Name,
+  PoisonEffect,
+  Position,
+  ProjectileTower,
+  SlowEffect,
+  Sound,
+  SplashTower,
+  TowerBeamAnim,
+  TowerEffect,
+  TowerFiringAnim,
+  TowerGold,
+  TowerShootTime,
+  TowerSprites,
+  TowerTarget,
+  TowerUpgrades,
+  TurretTower,
+  UnitDeathAnim,
+  UnitDir,
+  UnitMoveDistance,
+  UnitPath,
+  UnitSprite,
+  UnitStats,
+  UnitWalkAnim
 >;
 
 #endif
