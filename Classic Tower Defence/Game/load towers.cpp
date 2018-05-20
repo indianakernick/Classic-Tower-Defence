@@ -14,20 +14,6 @@
 #include <Simpleton/SDL/paths.hpp>
 #include "tower upgrades component.hpp"
 
-namespace {
-  TowerProto *getUpgrade(
-    const json &j,
-    Towers &towers,
-    const char *name
-  ) {
-    if (JSON_OPTIONAL(index, j, name)) {
-      return &towers.at(index->get<size_t>());
-    } else {
-      return nullptr;
-    }
-  }
-}
-
 void loadTowers(ECS::Registry &reg) {
   std::fstream file(SDL::getResDir() + "towers.json");
   json towersNode;
@@ -49,7 +35,10 @@ void loadTowers(ECS::Registry &reg) {
     // upgrades on the game object are pointers onto the array of towers
     const json &j = towersNode[i].at("upgrades");
     TowerUpgrades &upgrades = towers[i].assign<TowerUpgrades>();
-    upgrades.first = getUpgrade(j, towers, "first");
-    upgrades.second = getUpgrade(j, towers, "second");
+    if (JSON_OPTIONAL(index, j, "next")) {
+      upgrades.next = &towers.at(index->get<size_t>());
+    } else {
+      upgrades.next = nullptr;
+    }
   }
 }

@@ -18,14 +18,7 @@ bool affordTower(ECS::Registry &reg, const size_t index) {
   return tower.get<TowerGold>().buy <= reg.get<BaseGold>().gold;
 }
 
-bool affordUpgrade(ECS::Registry &reg, const TowerProto *tower) {
-  return tower && tower->get<TowerGold>().buy <= reg.get<BaseGold>().gold;
-}
-
-bool affordFirstUpgrade(ECS::Registry &reg, const ECS::EntityID entity) {
-  return affordUpgrade(reg, reg.get<TowerUpgrades>(entity).first);
-}
-
-bool affordSecondUpgrade(ECS::Registry &reg, const ECS::EntityID entity) {
-  return affordUpgrade(reg, reg.get<TowerUpgrades>(entity).second);
+bool affordUpgrade(ECS::Registry &reg, const ECS::EntityID entity) {
+  const TowerProto *next = reg.get<TowerUpgrades>(entity).next;
+  return next && next->get<TowerGold>().buy <= reg.get<BaseGold>().gold;
 }

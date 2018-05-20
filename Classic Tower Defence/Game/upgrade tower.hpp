@@ -11,7 +11,6 @@
 
 #include <Simpleton/ECS/registry.hpp>
 
-void upgradeTowerFirst(ECS::Registry &, ECS::EntityID);
-void upgradeTowerSecond(ECS::Registry &, ECS::EntityID);
+void upgradeTower(ECS::Registry &, ECS::EntityID);
 
 #endif

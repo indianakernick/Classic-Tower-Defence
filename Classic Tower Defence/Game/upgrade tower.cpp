@@ -11,19 +11,10 @@
 #include "towers tag.hpp"
 #include "tower upgrades component.hpp"
 
-namespace {
-  void upgradeTower(ECS::Registry &reg, const ECS::EntityID entity, const TowerProto *tower) {
-    // other code should check whether the tower can be upgraded before calling
-    // this function
-    assert(tower);
-    (*tower)(reg, entity);
-  }
-}
-
-void upgradeTowerFirst(ECS::Registry &reg, const ECS::EntityID entity) {
-  upgradeTower(reg, entity, reg.get<TowerUpgrades>(entity).first);
-}
-
-void upgradeTowerSecond(ECS::Registry &reg, const ECS::EntityID entity) {
-  upgradeTower(reg, entity, reg.get<TowerUpgrades>(entity).second);
+void upgradeTower(ECS::Registry &reg, const ECS::EntityID entity) {
+  const TowerProto *next = reg.get<TowerUpgrades>(entity).next;
+  // other code should check whether the tower can be upgraded before calling
+  // this function
+  assert(next);
+  (*next)(reg, entity);
 }

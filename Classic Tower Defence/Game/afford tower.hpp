@@ -12,7 +12,6 @@
 #include <Simpleton/ECS/registry.hpp>
 
 bool affordTower(ECS::Registry &, size_t);
-bool affordFirstUpgrade(ECS::Registry &, ECS::EntityID);
-bool affordSecondUpgrade(ECS::Registry &, ECS::EntityID);
+bool affordUpgrade(ECS::Registry &, ECS::EntityID);
 
 #endif
