@@ -18,7 +18,7 @@ void unitWalkAnimSystem(ECS::Registry &reg) {
     if (anim.subframe >= anim.subframes) {
       anim.subframe = 0;
       ++anim.frame;
-      if (anim.frame == anim.frames) {
+      if (anim.frame >= anim.frames) {
         anim.frame = 0;
       }
     }

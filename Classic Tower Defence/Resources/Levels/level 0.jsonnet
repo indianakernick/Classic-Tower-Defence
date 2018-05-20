@@ -36,8 +36,7 @@ local unitSprites(name) = {
         UnitSprite: unitSprites("robot"),
         local sprite = self.UnitSprite,
         UnitWalkAnim: {
-          frames: sprite.frames,
-          subframes: 1
+          frames: sprite.frames
         },
         Sound: {
           id: getSound("robot destroyed")
@@ -67,8 +66,7 @@ local unitSprites(name) = {
         UnitSprite: unitSprites("big robot"),
         local sprite = self.UnitSprite,
         UnitWalkAnim: {
-          frames: sprite.frames,
-          subframes: 1
+          frames: sprite.frames
         },
         Sound: {
           id: getSound("robot destroyed")
@@ -98,8 +96,7 @@ local unitSprites(name) = {
         UnitSprite: unitSprites("tank"),
         local sprite = self.UnitSprite,
         UnitWalkAnim: {
-          frames: sprite.frames,
-          subframes: 1
+          frames: sprite.frames
         },
         Sound: {
           id: getSound("robot destroyed")

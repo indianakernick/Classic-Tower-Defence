@@ -31,7 +31,7 @@ namespace {
   const Rect PREVIEW = {603.0f, 3.0f, 636.0f, 36.0f};
 }
 
-void UIView::init(G2D::Renderer &renderer) {
+void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   camera.transform.setOrigin(Cam2D::Origin::TOP_LEFT);
   camera.transform.setInvertY(true);
   zoom.setSize({640.0f, 360.0f});
@@ -54,6 +54,12 @@ void UIView::init(G2D::Renderer &renderer) {
   
   base = uiSheetTex.sheet().getIDfromName("base");
   previewBack = uiSheetTex.sheet().getIDfromName("preview back");
+  
+  previewEntity = reg.create();
+  reg.assign<Position>(previewEntity, glm::vec2(14.875f, 10.125f));
+  reg.assign<UnitDir>(previewEntity, Grid::Dir::RIGHT);
+  reg.assign<UnitSprite>(previewEntity);
+  reg.assign<UnitWalkAnim>(previewEntity);
 }
 
 void UIView::updateCam(const Cam2D::Params params) {
@@ -76,8 +82,6 @@ InputConsumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
     if (state.currentWave + 1 < waves.size()) {
       ++state.currentWave;
       state.state = SpawnerState::STARTING;
-      reg.destroy(previewEntity);
-      previewEntity = ECS::NULL_ENTITY;
     } else {
       // go to next level
     }
@@ -138,18 +142,16 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   }
   rightNum(writer, {599.0f, 12.0f}, num);
   
-  if (previewEntity == ECS::NULL_ENTITY) {
-    const size_t currentWave = spawnerState.state == SpawnerState::FINISHED
-                             ? spawnerState.currentWave + 1
-                             : spawnerState.currentWave;
-    if (currentWave < waves.size()) {
-      previewEntity = reg.create();
-      reg.assign<Position>(previewEntity, glm::vec2(14.875f, 10.125f));
-      reg.assign<UnitDir>(previewEntity, Grid::Dir::RIGHT);
-      const auto &proto = waves[currentWave].proto;
-      reg.assign<UnitSprite>(previewEntity, proto.get<UnitSprite>());
-      reg.assign<UnitWalkAnim>(previewEntity, proto.get<UnitWalkAnim>());
-    }
+  const size_t currentWave = spawnerState.state == SpawnerState::FINISHED
+                           ? spawnerState.currentWave + 1
+                           : spawnerState.currentWave;
+  if (currentWave < waves.size()) {
+    const auto &proto = waves[currentWave].proto;
+    reg.replace<UnitSprite>(previewEntity, proto.get<UnitSprite>());
+    UnitWalkAnim &anim = reg.get<UnitWalkAnim>(previewEntity);
+    const UnitWalkAnim &newAnim = proto.get<UnitWalkAnim>();
+    anim.frames = newAnim.frames;
+    anim.subframes = newAnim.subframes;
   }
 }
 

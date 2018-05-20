@@ -43,7 +43,7 @@ void App::init() {
   
   logic.init(reg);
   view.init(renderer);
-  uiView.init(renderer);
+  uiView.init(reg, renderer);
 }
 
 void App::quit() {
