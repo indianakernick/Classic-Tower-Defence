@@ -36,7 +36,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Blaster",
   },
   {
     local tower = self,
@@ -66,7 +67,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Laser"
   },
   {
     local tower = self,
@@ -95,7 +97,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Plasma"
   },
   {
     local tower = self,
@@ -123,7 +126,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Cannon"
   },
   {
     local tower = self,
@@ -161,7 +165,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Explosive Cannon"
   },
   {
     local tower = self,
@@ -198,7 +203,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Poison Cannon"
   },
   {
     local tower = self,
@@ -235,7 +241,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Snowball Shooter"
   },
   {
     local tower = self,
@@ -272,7 +279,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Iceball shooter"
   },
   {
     local tower = self,
@@ -311,7 +319,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AuraTower: {}
+    AuraTower: {},
+    Name: "Ice Aura"
   },
   {
     local tower = self,
@@ -359,7 +368,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Flamethrower"
   },
   {
     local tower = self,
@@ -396,7 +406,8 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AimTower: {}
+    AimTower: {},
+    Name: "Fireball shooter"
   },
   {
     local tower = self,
@@ -435,6 +446,7 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
     },
     TowerTarget: {},
-    AuraTower: {}
+    AuraTower: {},
+    Name: "Fire Aura"
   },
 ]

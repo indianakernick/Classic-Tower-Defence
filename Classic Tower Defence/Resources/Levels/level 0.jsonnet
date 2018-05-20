@@ -42,7 +42,8 @@ local unitSprites(name) = {
           id: getSound("robot destroyed")
         },
         UnitPath: {},
-        UnitMoveDistance: {}
+        UnitMoveDistance: {},
+        Name: "Lil Bot"
       }
     },
     {
@@ -72,7 +73,8 @@ local unitSprites(name) = {
           id: getSound("robot destroyed")
         },
         UnitPath: {},
-        UnitMoveDistance: {}
+        UnitMoveDistance: {},
+        Name: "Big Bot"
       }
     },
     {
@@ -102,7 +104,8 @@ local unitSprites(name) = {
           id: getSound("robot destroyed")
         },
         UnitPath: {},
-        UnitMoveDistance: {}
+        UnitMoveDistance: {},
+        Name: "Fat Bot"
       }
     }
   ]

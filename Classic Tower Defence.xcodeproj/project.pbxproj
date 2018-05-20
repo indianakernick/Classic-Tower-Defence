@@ -367,6 +367,7 @@
 		453B289C20B1274A00F6E9E6 /* level 1.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 1.jsonnet"; sourceTree = "<group>"; };
 		453B289D20B1287000F6E9E6 /* count live units.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "count live units.cpp"; sourceTree = "<group>"; };
 		453B289E20B1287000F6E9E6 /* count live units.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "count live units.hpp"; sourceTree = "<group>"; };
+		453B28A220B2396C00F6E9E6 /* name component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "name component.hpp"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
@@ -1258,6 +1259,7 @@
 			isa = PBXGroup;
 			children = (
 				453884C0208ACF12003EB260 /* position component.hpp */,
+				453B28A220B2396C00F6E9E6 /* name component.hpp */,
 			);
 			name = Common;
 			sourceTree = "<group>";

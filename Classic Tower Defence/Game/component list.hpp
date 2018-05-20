@@ -5,6 +5,7 @@
 
 #include <Simpleton/Utils/type list.hpp>
 
+#include "name component.hpp"
 #include "sound component.hpp"
 #include "unit dir component.hpp"
 #include "position component.hpp"
@@ -33,6 +34,7 @@
 #include "unit move distance component.hpp"
 
 using CompList = Utils::TypeList<
+  Name,
   Sound,
   UnitDir,
   Position,
