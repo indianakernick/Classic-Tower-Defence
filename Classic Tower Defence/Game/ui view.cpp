@@ -9,16 +9,13 @@
 #include "ui view.hpp"
 
 #include "depth.hpp"
-#include "waves tag.hpp"
 #include "mouse pos.hpp"
+#include "next wave.hpp"
+#include "get wave info.hpp"
 #include "base gold tag.hpp"
 #include "level info tag.hpp"
+#include "preview entity.hpp"
 #include "base health tag.hpp"
-#include "spawner state tag.hpp"
-#include "position component.hpp"
-#include "unit dir component.hpp"
-#include "unit sprite component.hpp"
-#include "unit walk anim component.hpp"
 
 namespace {
   using Rect = Math::RectPP<float>;
@@ -55,11 +52,7 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   base = uiSheetTex.sheet().getIDfromName("base");
   previewBack = uiSheetTex.sheet().getIDfromName("preview back");
   
-  previewEntity = reg.create();
-  reg.assign<Position>(previewEntity, glm::vec2(14.875f, 10.125f));
-  reg.assign<UnitDir>(previewEntity, Grid::Dir::RIGHT);
-  reg.assign<UnitSprite>(previewEntity);
-  reg.assign<UnitWalkAnim>(previewEntity);
+  previewEntity = makePreviewEntity(reg);
 }
 
 void UIView::updateCam(const Cam2D::Params params) {
@@ -71,20 +64,13 @@ InputConsumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
     return InputConsumed::NO;
   }
   
-  const glm::vec2 pos = mousePos(camera.transform.toMeters(), e.button);
-  if (!NEXT_WAVE.encloses(pos)) {
+  if (!NEXT_WAVE.encloses(mousePos(camera.transform.toMeters(), e.button))) {
     return InputConsumed::NO;
   }
   
-  SpawnerState &state = reg.get<SpawnerState>();
-  Waves &waves = reg.get<Waves>();
-  if (state.state == SpawnerState::FINISHED) {
-    if (state.currentWave + 1 < waves.size()) {
-      ++state.currentWave;
-      state.state = SpawnerState::STARTING;
-    } else {
-      // go to next level
-    }
+  const WaveStatus status = nextWave(reg);
+  if (status == WaveStatus::FINISHED_LEVEL) {
+    // start next level
   }
   
   return InputConsumed::YES;
@@ -116,43 +102,10 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   rightNum(writer, {235.0f, 2.0f}, levelInfo.level);
   rightNum(writer, {235.0f, 22.0f}, levelInfo.map);
   
-  const SpawnerState spawnerState = reg.get<SpawnerState>();
+  rightText(writer, {372.0f, 12.0f}, getWaveStr(reg));
+  rightNum(writer, {599.0f, 12.0f}, getNumUnits(reg));
   
-  const size_t wave = spawnerState.currentWave + 1;
-  const Waves &waves = reg.get<Waves>();
-  const size_t numWaves = waves.size();
-  const std::string waveText = std::to_string(wave) + "/" + std::to_string(numWaves);
-  rightText(writer, {372.0f, 12.0f}, waveText);
-  
-  size_t num;
-  switch (spawnerState.state) {
-    case SpawnerState::STARTING:
-      num = waves[spawnerState.currentWave].quantity;
-      break;
-    case SpawnerState::SPAWNING:
-      num = spawnerState.numUnitsLeft;
-      break;
-    case SpawnerState::FINISHED:
-      if (spawnerState.currentWave + 1 < waves.size()) {
-        num = waves[spawnerState.currentWave + 1].quantity;
-      } else {
-        num = 0;
-      }
-      break;
-  }
-  rightNum(writer, {599.0f, 12.0f}, num);
-  
-  const size_t currentWave = spawnerState.state == SpawnerState::FINISHED
-                           ? spawnerState.currentWave + 1
-                           : spawnerState.currentWave;
-  if (currentWave < waves.size()) {
-    const auto &proto = waves[currentWave].proto;
-    reg.replace<UnitSprite>(previewEntity, proto.get<UnitSprite>());
-    UnitWalkAnim &anim = reg.get<UnitWalkAnim>(previewEntity);
-    const UnitWalkAnim &newAnim = proto.get<UnitWalkAnim>();
-    anim.frames = newAnim.frames;
-    anim.subframes = newAnim.subframes;
-  }
+  updatePreviewEntity(reg, previewEntity);
 }
 
 void UIView::rightText(

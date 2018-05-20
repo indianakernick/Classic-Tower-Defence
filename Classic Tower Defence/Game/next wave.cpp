@@ -14,12 +14,13 @@
 WaveStatus nextWave(ECS::Registry &reg) {
   SpawnerState &state = reg.get<SpawnerState>();
   if (state.state == SpawnerState::FINISHED) {
-    ++state.currentWave;
-    if (state.currentWave == reg.get<Waves>().size()) {
-      state.currentWave = 0;
+    if (state.currentWave + 1 == reg.get<Waves>().size()) {
       return WaveStatus::FINISHED_LEVEL;
+    } else {
+      ++state.currentWave;
+      state.state = SpawnerState::STARTING;
+      return WaveStatus::STARTING_NEXT;
     }
-    return WaveStatus::STARTING_NEXT;
   }
   return WaveStatus::RUNNING;
 }
