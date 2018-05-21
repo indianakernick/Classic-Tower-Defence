@@ -163,6 +163,14 @@ void UIView::renderProto(G2D::QuadWriter &writer) {
   }
 }
 
+namespace {
+  std::string_view niceFloat(const float f) {
+    static char chars[64];
+    std::snprintf(chars, 64, "%g", f);
+    return chars;
+  }
+}
+
 void UIView::renderUnitStats(G2D::QuadWriter &writer) {
   assert(statsProto);
   const UnitStats stats = statsProto->get<UnitStats>();
@@ -174,7 +182,7 @@ void UIView::renderUnitStats(G2D::QuadWriter &writer) {
   
   #define FIELD(UPPER, LOWER)                                                   \
     leftText(writer, {left, top}, UPPER ":");                                   \
-    rightNum(writer, {right, top}, stats.LOWER);                                \
+    rightText(writer, {right, top}, niceFloat(stats.LOWER));                    \
     top += vertAdv
   
   FIELD("HEALTH", health);
