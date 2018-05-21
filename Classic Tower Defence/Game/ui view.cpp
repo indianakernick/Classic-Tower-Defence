@@ -18,6 +18,7 @@
 #include "level info tag.hpp"
 #include "preview entity.hpp"
 #include "base health tag.hpp"
+#include "unit stats component.hpp"
 
 namespace {
   using Rect = Math::RectPP<float>;
@@ -41,7 +42,7 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   radiusSheetTex.load(renderer, "radius");
   
   text.setGlyphSize({5.0f, 8.0f});
-  text.setAdvance({6.0f, 9.0f});
+  text.setAdvance({6.0f, 12.0f});
   
   cursor.init();
   cursor.mark(TOWER_0, SDL_SYSTEM_CURSOR_HAND);
@@ -156,4 +157,33 @@ void UIView::renderProto(G2D::QuadWriter &writer) {
   text.setScale(1.0f);
   
   leftText(writer, {4.0f, 204.0f}, statsProto->get<Name>().name);
+  
+  if (statsProto->has<UnitStats>()) {
+    renderUnitStats(writer);
+  }
+}
+
+void UIView::renderUnitStats(G2D::QuadWriter &writer) {
+  assert(statsProto);
+  const UnitStats stats = statsProto->get<UnitStats>();
+  
+  float top = 221.0f;
+  const float left = 4.0f;
+  const float right = 124.0f;
+  const float vertAdv = 12.0f;
+  
+  #define FIELD(UPPER, LOWER)                                                   \
+    leftText(writer, {left, top}, UPPER ":");                                   \
+    rightNum(writer, {right, top}, stats.LOWER);                                \
+    top += vertAdv
+  
+  FIELD("HEALTH", health);
+  FIELD("ARMOUR", armour);
+  FIELD("HEALTH REGEN", healthRegen);
+  FIELD("ARMOUR REGEN", armourRegen);
+  FIELD("DODGE", dodge * 100);
+  FIELD("MOVE SPEED", moveSpeed);
+  FIELD("GOLD", gold);
+  
+  #undef FIELD
 }

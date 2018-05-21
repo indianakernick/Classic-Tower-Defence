@@ -13,6 +13,10 @@
 #include <Simpleton/Graphics 2D/quad writer.hpp>
 
 //@SIMPLETON
+// need a better way of managing the state (perhaps a stack of states?)
+// need a better way of managing the position of the cursor
+// maybe a stream-like interface that leverages the number-to-string capbility
+// of standard streams?
 
 class TextRenderer {
 public:
