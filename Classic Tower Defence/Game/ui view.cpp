@@ -20,6 +20,8 @@
 #include "preview entity.hpp"
 #include "base health tag.hpp"
 #include "unit stats component.hpp"
+#include "splash tower component.hpp"
+#include "common tower stats component.hpp"
 
 namespace {
   using Rect = Math::RectPP<float>;
@@ -169,6 +171,8 @@ void UIView::renderProto(G2D::QuadWriter &writer) {
   
   if (statsProto->has<UnitStats>()) {
     renderUnitStats(writer);
+  } else if (statsProto->has<CommonTowerStats>()) {
+    renderTowerStats(writer);
   }
 }
 
@@ -200,9 +204,30 @@ void UIView::renderUnitStats(G2D::QuadWriter &writer) {
   FIELD("ARMOUR", armour);
   FIELD("HEALTH REGEN", healthRegen);
   FIELD("ARMOUR REGEN", armourRegen);
-  FIELD("DODGE", dodge * 100.0f);
+  FIELD("DODGE", dodge);
   FIELD("MOVE SPEED", moveSpeed);
   FIELD("GOLD", gold);
+}
+
+void UIView::renderTowerStats(G2D::QuadWriter &writer) {
+  assert(statsProto);
+  const CommonTowerStats stats = statsProto->get<CommonTowerStats>();
+  
+  float top = 221.0f;
+  const float left = 4.0f;
+  const float right = 124.0f;
+  const float vertAdv = 12.0f;
+  
+  FIELD("DAMAGE", damage);
+  FIELD("DAMAGE RATE", damage * stats.rof);
+  FIELD("ARMOUR PIERCING", armourPiercing);
+  FIELD("FIRE RATE", rof);
+  FIELD("RANGE", range);
+  
+  if (statsProto->has<SplashTower>()) {
+    const SplashTower stats = statsProto->get<SplashTower>();
+    FIELD("AREA OF EFFECT", aoe);
+  }
   
   #undef FIELD
 }

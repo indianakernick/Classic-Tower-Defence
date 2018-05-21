@@ -48,6 +48,7 @@ private:
   void renderProto(G2D::QuadWriter &);
   
   void renderUnitStats(G2D::QuadWriter &);
+  void renderTowerStats(G2D::QuadWriter &);
 };
 
 #endif
