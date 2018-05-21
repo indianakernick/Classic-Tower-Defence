@@ -43,7 +43,7 @@ local unitSprites(name) = {
         },
         UnitPath: {},
         UnitMoveDistance: {},
-        Name: "Lil Bot"
+        Name: "LIL BOT"
       }
     },
     {
@@ -74,7 +74,7 @@ local unitSprites(name) = {
         },
         UnitPath: {},
         UnitMoveDistance: {},
-        Name: "Big Bot"
+        Name: "BIG BOT"
       }
     },
     {
@@ -105,7 +105,7 @@ local unitSprites(name) = {
         },
         UnitPath: {},
         UnitMoveDistance: {},
-        Name: "Fat Bot"
+        Name: "FAT BOT"
       }
     }
   ]

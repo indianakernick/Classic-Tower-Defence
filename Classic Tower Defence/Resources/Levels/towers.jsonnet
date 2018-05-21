@@ -37,7 +37,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Blaster",
+    Name: "BLASTER",
   },
   {
     local tower = self,
@@ -68,7 +68,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Laser"
+    Name: "LASER"
   },
   {
     local tower = self,
@@ -98,7 +98,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Plasma"
+    Name: "PLASMA CANNON"
   },
   {
     local tower = self,
@@ -127,7 +127,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Cannon"
+    Name: "CANNON"
   },
   {
     local tower = self,
@@ -166,7 +166,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Explosive Cannon"
+    Name: "EXPLOSIVE CANNON"
   },
   {
     local tower = self,
@@ -204,7 +204,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Poison Cannon"
+    Name: "POISON CANNON"
   },
   {
     local tower = self,
@@ -242,7 +242,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Snowball Shooter"
+    Name: "SNOWBALL SHOOTER"
   },
   {
     local tower = self,
@@ -280,7 +280,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Iceball shooter"
+    Name: "ICEBALL SHOOTER"
   },
   {
     local tower = self,
@@ -320,7 +320,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AuraTower: {},
-    Name: "Ice Aura"
+    Name: "ICE AURA"
   },
   {
     local tower = self,
@@ -369,7 +369,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Flamethrower"
+    Name: "FLAMETHROWER"
   },
   {
     local tower = self,
@@ -407,7 +407,7 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "Fireball shooter"
+    Name: "FIREBALL SHOOTER"
   },
   {
     local tower = self,
@@ -447,6 +447,6 @@ local towerSprites(sprite) = {
     },
     TowerTarget: {},
     AuraTower: {},
-    Name: "Fire Aura"
+    Name: "FIRE AURA"
   },
 ]

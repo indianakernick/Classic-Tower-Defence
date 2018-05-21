@@ -9,6 +9,7 @@
 #ifndef ui_view_hpp
 #define ui_view_hpp
 
+#include "prototype.hpp"
 #include "cursor area.hpp"
 #include "text renderer.hpp"
 #include "input consumed.hpp"
@@ -39,9 +40,12 @@ private:
   ECS::EntityID previewEntity;
   Sprite::ID base;
   Sprite::ID previewBack;
+  const DefaultPrototype *statsProto = nullptr;
   
+  void leftText(G2D::QuadWriter &, glm::vec2, std::string_view);
   void rightText(G2D::QuadWriter &, glm::vec2, std::string_view);
   void rightNum(G2D::QuadWriter &, glm::vec2, uint64_t);
+  void renderProto(G2D::QuadWriter &);
 };
 
 #endif

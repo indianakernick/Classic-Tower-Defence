@@ -14,6 +14,7 @@
 #include "load level.hpp"
 #include "get wave info.hpp"
 #include "base gold tag.hpp"
+#include "name component.hpp"
 #include "level info tag.hpp"
 #include "preview entity.hpp"
 #include "base health tag.hpp"
@@ -41,7 +42,6 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   
   text.setGlyphSize({5.0f, 8.0f});
   text.setAdvance({6.0f, 9.0f});
-  text.setScale(2.0f);
   
   cursor.init();
   cursor.mark(TOWER_0, SDL_SYSTEM_CURSOR_HAND);
@@ -66,12 +66,20 @@ InputConsumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
     return InputConsumed::NO;
   }
   
-  if (!NEXT_WAVE.encloses(mousePos(camera.transform.toMeters(), e.button))) {
-    return InputConsumed::NO;
-  }
+  const glm::vec2 pos = mousePos(camera.transform.toMeters(), e.button);
   
-  if (nextWave(reg) == WaveStatus::FINISHED_LEVEL) {
-    loadNextLevel(reg);
+  if (NEXT_WAVE.encloses(pos)) {
+    if (nextWave(reg) == WaveStatus::FINISHED_LEVEL) {
+      // preview proto either points to a prototype in the Waves tag which
+      // will be replace by loading the level or
+      // points to the towers tag which is only loaded once.
+      statsProto = nullptr;
+      loadNextLevel(reg);
+    }
+  } else if (PREVIEW.encloses(pos)) {
+    statsProto = getPreviewProto(reg);
+  } else {
+    return InputConsumed::NO;
   }
   
   return InputConsumed::YES;
@@ -97,6 +105,7 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   writer.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
   
   text.setDepth(G2D::depth(Depth::UI_TEXT));
+  text.setScale(2.0f);
   
   rightNum(writer, {124.0f, 2.0f}, reg.get<BaseGold>().gold);
   rightNum(writer, {124.0f, 22.0f}, reg.get<BaseHealth>().health);
@@ -109,6 +118,17 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   rightNum(writer, {599.0f, 12.0f}, getNumUnits(reg));
   
   updatePreviewEntity(reg, previewEntity);
+  
+  renderProto(writer);
+}
+
+void UIView::leftText(
+  G2D::QuadWriter &writer,
+  const glm::vec2 pos,
+  const std::string_view string
+) {
+  text.setCursor(pos);
+  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), string);
 }
 
 void UIView::rightText(
@@ -126,4 +146,14 @@ void UIView::rightNum(
   const uint64_t num
 ) {
   rightText(writer, pos, std::to_string(num));
+}
+
+void UIView::renderProto(G2D::QuadWriter &writer) {
+  if (statsProto == nullptr) {
+    return;
+  }
+  
+  text.setScale(1.0f);
+  
+  leftText(writer, {4.0f, 204.0f}, statsProto->get<Name>().name);
 }
