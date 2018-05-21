@@ -12,6 +12,7 @@
 #include "mouse pos.hpp"
 #include "next wave.hpp"
 #include "load level.hpp"
+#include "create tower.hpp"
 #include "get wave info.hpp"
 #include "base gold tag.hpp"
 #include "name component.hpp"
@@ -69,7 +70,15 @@ InputConsumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
   
   const glm::vec2 pos = mousePos(camera.transform.toMeters(), e.button);
   
-  if (NEXT_WAVE.encloses(pos)) {
+  if (TOWER_0.encloses(pos)) {
+    statsProto = getTowerProto(reg, 0);
+  } else if (TOWER_1.encloses(pos)) {
+    statsProto = getTowerProto(reg, 3);
+  } else if (TOWER_2.encloses(pos)) {
+    statsProto = getTowerProto(reg, 6);
+  } else if (TOWER_3.encloses(pos)) {
+    statsProto = getTowerProto(reg, 9);
+  } else if (NEXT_WAVE.encloses(pos)) {
     if (nextWave(reg) == WaveStatus::FINISHED_LEVEL) {
       // preview proto either points to a prototype in the Waves tag which
       // will be replace by loading the level or
@@ -165,9 +174,11 @@ void UIView::renderProto(G2D::QuadWriter &writer) {
 
 namespace {
   std::string_view niceFloat(const float f) {
-    static char chars[64];
-    std::snprintf(chars, 64, "%g", f);
-    return chars;
+    constexpr size_t size = 64;
+    static char chars[size];
+    const int ret = std::snprintf(chars, size, "%g", f);
+    assert(0 < ret && ret < static_cast<int>(size));
+    return {chars, static_cast<size_t>(ret)};
   }
 }
 
@@ -189,7 +200,7 @@ void UIView::renderUnitStats(G2D::QuadWriter &writer) {
   FIELD("ARMOUR", armour);
   FIELD("HEALTH REGEN", healthRegen);
   FIELD("ARMOUR REGEN", armourRegen);
-  FIELD("DODGE", dodge * 100);
+  FIELD("DODGE", dodge * 100.0f);
   FIELD("MOVE SPEED", moveSpeed);
   FIELD("GOLD", gold);
   

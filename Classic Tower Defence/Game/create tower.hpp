@@ -10,8 +10,10 @@
 #define create_tower_hpp
 
 #include <glm/vec2.hpp>
+#include "prototype.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
 ECS::EntityID createTower(ECS::Registry &, size_t, glm::ivec2);
+const DefaultPrototype *getTowerProto(ECS::Registry &, size_t);
 
 #endif
