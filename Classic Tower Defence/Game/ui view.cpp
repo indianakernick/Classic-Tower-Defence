@@ -153,47 +153,53 @@ void UIView::renderProto() {
   }
 }
 
+class TableText {
+public:
+  TableText(const float top, const float left, const float right, const float vertAdv)
+    : top(top), left(left), right(right), vertAdv(vertAdv) {}
+  
+  template <typename T>
+  void field(TextRenderer &text, const std::string_view key, const T &val) {
+    const glm::vec2 pos = text.write({left, top}, key);
+    text.write(pos, ":");
+    text.write<Align::RIGHT>({right, top}, val);
+    top += vertAdv;
+  }
+  
+private:
+  float top, left, right, vertAdv;
+};
+
 void UIView::renderUnitStats() {
   assert(statsProto);
   const UnitStats stats = statsProto->get<UnitStats>();
   
-  float top = 221.0f;
-  const float left = 4.0f;
-  const float right = 124.0f;
-  const float vertAdv = 12.0f;
+  TableText table(221.0f, 4.0f, 124.0f, 12.0f);
   
-  #define FIELD(UPPER, LOWER)                                                   \
-    text.write({left, top}, UPPER ":");                                         \
-    text.write<Align::RIGHT>({right, top}, stats.LOWER);                        \
-    top += vertAdv
-  
-  FIELD("HEALTH", health);
-  FIELD("ARMOUR", armour);
-  FIELD("HEALTH REGEN", healthRegen);
-  FIELD("ARMOUR REGEN", armourRegen);
-  FIELD("DODGE", dodge);
-  FIELD("MOVE SPEED", moveSpeed);
-  FIELD("GOLD", gold);
+  table.field(text, "HEALTH", stats.health);
+  table.field(text, "ARMOUR", stats.armour);
+  table.field(text, "HEALTH REGEN", stats.healthRegen);
+  table.field(text, "ARMOUR REGEN", stats.armourRegen);
+  table.field(text, "DODGE", stats.dodge);
+  table.field(text, "MOVE SPEED", stats.moveSpeed);
+  table.field(text, "GOLD", stats.gold);
 }
 
 void UIView::renderTowerStats() {
   assert(statsProto);
   const CommonTowerStats stats = statsProto->get<CommonTowerStats>();
   
-  float top = 221.0f;
-  const float left = 4.0f;
-  const float right = 124.0f;
-  const float vertAdv = 12.0f;
+  TableText table(221.0f, 4.0f, 124.0f, 12.0f);
   
-  FIELD("DAMAGE", damage);
-  FIELD("DAMAGE RATE", damage * stats.rof);
-  FIELD("ARMOUR PIERCING", armourPiercing);
-  FIELD("FIRE RATE", rof);
-  FIELD("RANGE", range);
+  table.field(text, "DAMAGE", stats.damage);
+  table.field(text, "DAMAGE RATE", stats.damage * stats.rof);
+  table.field(text, "ARMOUR PIERCING", stats.armourPiercing);
+  table.field(text, "FIRE RATE", stats.rof);
+  table.field(text, "RANGE", stats.range);
   
   if (statsProto->has<SplashTower>()) {
-    const SplashTower stats = statsProto->get<SplashTower>();
-    FIELD("AREA OF EFFECT", aoe);
+    const SplashTower splash = statsProto->get<SplashTower>();
+    table.field(text, "AREA OF EFFECT", splash.aoe);
   }
   
   #undef FIELD
