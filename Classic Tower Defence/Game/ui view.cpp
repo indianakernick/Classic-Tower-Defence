@@ -9,7 +9,6 @@
 #include "ui view.hpp"
 
 #include "depth.hpp"
-#include "mouse pos.hpp"
 #include "next wave.hpp"
 #include "load level.hpp"
 #include "create tower.hpp"
@@ -21,6 +20,7 @@
 #include "base health tag.hpp"
 #include "unit stats component.hpp"
 #include "splash tower component.hpp"
+#include <Simpleton/SDL/mouse pos.hpp>
 #include "common tower stats component.hpp"
 
 namespace {
@@ -70,7 +70,7 @@ InputConsumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
     return InputConsumed::NO;
   }
   
-  const glm::vec2 pos = mousePos(camera.transform.toMeters(), e.button);
+  const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters(), e.button);
   
   if (TOWER_0.encloses(pos)) {
     statsProto = getTowerProto(reg, 0);

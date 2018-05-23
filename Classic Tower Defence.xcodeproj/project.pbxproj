@@ -61,7 +61,6 @@
 		453B288620AFD4B600F6E9E6 /* ui view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B288420AFD4B600F6E9E6 /* ui view.cpp */; };
 		453B288920AFE39B00F6E9E6 /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 453B288820AFE39B00F6E9E6 /* sounds.json */; };
 		453B288E20B0030700F6E9E6 /* cursor area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B288C20B0030700F6E9E6 /* cursor area.cpp */; };
-		453B289520B0FEE400F6E9E6 /* mouse pos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289320B0FEE400F6E9E6 /* mouse pos.cpp */; };
 		453B289820B113E900F6E9E6 /* get wave info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289620B113E900F6E9E6 /* get wave info.cpp */; };
 		453B289B20B1166E00F6E9E6 /* preview entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289920B1166E00F6E9E6 /* preview entity.cpp */; };
 		453B289F20B1287000F6E9E6 /* count live units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289D20B1287000F6E9E6 /* count live units.cpp */; };
@@ -357,8 +356,6 @@
 		453B289020B0F78300F6E9E6 /* preview back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preview back.png"; sourceTree = "<group>"; };
 		453B289120B0F78300F6E9E6 /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
 		453B289220B0F79900F6E9E6 /* ui plan.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ui plan.anim"; sourceTree = "<group>"; };
-		453B289320B0FEE400F6E9E6 /* mouse pos.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "mouse pos.cpp"; sourceTree = "<group>"; };
-		453B289420B0FEE400F6E9E6 /* mouse pos.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "mouse pos.hpp"; sourceTree = "<group>"; };
 		453B289620B113E900F6E9E6 /* get wave info.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "get wave info.cpp"; sourceTree = "<group>"; };
 		453B289720B113E900F6E9E6 /* get wave info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "get wave info.hpp"; sourceTree = "<group>"; };
 		453B289920B1166E00F6E9E6 /* preview entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "preview entity.cpp"; sourceTree = "<group>"; };
@@ -1363,8 +1360,6 @@
 				453B288520AFD4B600F6E9E6 /* ui view.hpp */,
 				453B288C20B0030700F6E9E6 /* cursor area.cpp */,
 				453B288D20B0030700F6E9E6 /* cursor area.hpp */,
-				453B289320B0FEE400F6E9E6 /* mouse pos.cpp */,
-				453B289420B0FEE400F6E9E6 /* mouse pos.hpp */,
 				453B28A720B27D5300F6E9E6 /* text renderer.inl */,
 				453B28A620B27D5300F6E9E6 /* text renderer.hpp */,
 			);
@@ -1660,7 +1655,6 @@
 				45F24E08209EAD8F00EAE60D /* firing anim system.cpp in Sources */,
 				4563D5B52096E16700DB2510 /* sound queue.cpp in Sources */,
 				453884EB208B1477003EB260 /* spawner timing system.cpp in Sources */,
-				453B289520B0FEE400F6E9E6 /* mouse pos.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

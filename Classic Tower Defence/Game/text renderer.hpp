@@ -12,6 +12,8 @@
 #include <Simpleton/Sprite/sheet.hpp>
 #include <Simpleton/Graphics 2D/quad writer.hpp>
 
+//@SIMPLETON
+
 enum class Align {
   LEFT,
   CENTER,
