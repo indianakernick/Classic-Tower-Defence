@@ -161,7 +161,7 @@ public:
   template <typename T>
   void field(TextRenderer &text, const std::string_view key, const T &val) {
     const glm::vec2 pos = text.write({left, top}, key);
-    text.write(pos, ":");
+    text.write(pos, ':');
     text.write<Align::RIGHT>({right, top}, val);
     top += vertAdv;
   }

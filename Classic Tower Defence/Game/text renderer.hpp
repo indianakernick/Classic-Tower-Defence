@@ -35,6 +35,8 @@ public:
   glm::vec2 write(glm::vec2, const std::string &);
   template <Align ALIGN = Align::LEFT, G2D::PlusXY PLUS_XY = G2D::PlusXY::RIGHT_DOWN, size_t SIZE>
   glm::vec2 write(glm::vec2, const char (&)[SIZE]);
+  template <Align ALIGN = Align::LEFT, G2D::PlusXY PLUS_XY = G2D::PlusXY::RIGHT_DOWN>
+  glm::vec2 write(glm::vec2, char);
   template <Align ALIGN = Align::LEFT, G2D::PlusXY PLUS_XY = G2D::PlusXY::RIGHT_DOWN, typename T>
   glm::vec2 write(glm::vec2, const T &);
   
