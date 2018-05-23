@@ -42,13 +42,9 @@ private:
   Sprite::ID previewBack;
   const DefaultPrototype *statsProto = nullptr;
   
-  void leftText(G2D::QuadWriter &, glm::vec2, std::string_view);
-  void rightText(G2D::QuadWriter &, glm::vec2, std::string_view);
-  void rightNum(G2D::QuadWriter &, glm::vec2, uint64_t);
-  void renderProto(G2D::QuadWriter &);
-  
-  void renderUnitStats(G2D::QuadWriter &);
-  void renderTowerStats(G2D::QuadWriter &);
+  void renderProto();
+  void renderUnitStats();
+  void renderTowerStats();
 };
 
 #endif

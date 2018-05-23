@@ -44,8 +44,8 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   textSheetTex.load(renderer, "5x8 ascii");
   radiusSheetTex.load(renderer, "radius");
   
-  text.setGlyphSize({5.0f, 8.0f});
-  text.setAdvance({6.0f, 12.0f});
+  text.glyphSize({5.0f, 8.0f});
+  text.advance({6.0f, 12.0f});
   
   cursor.init();
   cursor.mark(TOWER_0, SDL_SYSTEM_CURSOR_HAND);
@@ -116,77 +116,44 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   
   writer.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
   
-  text.setDepth(G2D::depth(Depth::UI_TEXT));
-  text.setScale(2.0f);
+  text.writer(writer);
+  text.sheet(textSheetTex.sheet());
+  text.depth(G2D::depth(Depth::UI_TEXT));
   
-  rightNum(writer, {124.0f, 2.0f}, reg.get<BaseGold>().gold);
-  rightNum(writer, {124.0f, 22.0f}, reg.get<BaseHealth>().health);
+  text.scale(2.0f);
+  
+  text.write<Align::RIGHT>({124.0f, 2.0f}, reg.get<BaseGold>().gold);
+  text.write<Align::RIGHT>({124.0f, 22.0f}, reg.get<BaseHealth>().health);
   
   const LevelInfo levelInfo = reg.get<LevelInfo>();
-  rightNum(writer, {235.0f, 2.0f}, levelInfo.level + 1);
-  rightNum(writer, {235.0f, 22.0f}, levelInfo.map + 1);
+  text.write<Align::RIGHT>({235.0f, 2.0f}, levelInfo.level + 1);
+  text.write<Align::RIGHT>({235.0f, 22.0f}, levelInfo.map + 1);
   
-  rightText(writer, {372.0f, 12.0f}, getWaveStr(reg));
-  rightNum(writer, {599.0f, 12.0f}, getNumUnits(reg));
+  text.write<Align::RIGHT>({372.0f, 12.0f}, getWaveStr(reg));
+  text.write<Align::RIGHT>({599.0f, 12.0f}, getNumUnits(reg));
   
   updatePreviewEntity(reg, previewEntity);
   
-  renderProto(writer);
+  renderProto();
 }
 
-void UIView::leftText(
-  G2D::QuadWriter &writer,
-  const glm::vec2 pos,
-  const std::string_view string
-) {
-  text.setCursor(pos);
-  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), string);
-}
-
-void UIView::rightText(
-  G2D::QuadWriter &writer,
-  const glm::vec2 pos,
-  const std::string_view string
-) {
-  text.rightAlign(pos, string);
-  text.pushText<G2D::PlusXY::RIGHT_DOWN>(writer, textSheetTex.sheet(), string);
-}
-
-void UIView::rightNum(
-  G2D::QuadWriter &writer,
-  const glm::vec2 pos,
-  const uint64_t num
-) {
-  rightText(writer, pos, std::to_string(num));
-}
-
-void UIView::renderProto(G2D::QuadWriter &writer) {
+void UIView::renderProto() {
   if (statsProto == nullptr) {
     return;
   }
   
-  text.setScale(1.0f);
+  text.scale(1.0f);
   
-  leftText(writer, {4.0f, 204.0f}, statsProto->get<Name>().name);
+  text.write({4.0f, 204.0f}, statsProto->get<Name>().name);
   
   if (statsProto->has<UnitStats>()) {
-    renderUnitStats(writer);
+    renderUnitStats();
   } else if (statsProto->has<CommonTowerStats>()) {
-    renderTowerStats(writer);
+    renderTowerStats();
   }
 }
 
-namespace {
-  std::string_view niceFloat(const float f) {
-    constexpr size_t size = 64;
-    static char chars[size];
-    const int ret = std::snprintf(chars, size, "%g", f);
-    assert(0 < ret && ret < static_cast<int>(size));
-    return {chars, static_cast<size_t>(ret)};
-  }
-}
-
-void UIView::renderUnitStats(G2D::QuadWriter &writer) {
+void UIView::renderUnitStats() {
   assert(statsProto);
   const UnitStats stats = statsProto->get<UnitStats>();
   
@@ -196,8 +163,8 @@ void UIView::renderUnitStats(G2D::QuadWriter &writer) {
   const float vertAdv = 12.0f;
   
   #define FIELD(UPPER, LOWER)                                                   \
-    leftText(writer, {left, top}, UPPER ":");                                   \
-    rightText(writer, {right, top}, niceFloat(stats.LOWER));                    \
+    text.write({left, top}, UPPER ":");                                         \
+    text.write<Align::RIGHT>({right, top}, stats.LOWER);                        \
     top += vertAdv
   
   FIELD("HEALTH", health);
@@ -209,7 +176,7 @@ void UIView::renderUnitStats(G2D::QuadWriter &writer) {
   FIELD("GOLD", gold);
 }
 
-void UIView::renderTowerStats(G2D::QuadWriter &writer) {
+void UIView::renderTowerStats() {
   assert(statsProto);
   const CommonTowerStats stats = statsProto->get<CommonTowerStats>();
   
