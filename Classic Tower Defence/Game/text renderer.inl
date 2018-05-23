@@ -86,6 +86,7 @@ glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string_view 
   
   glm::vec2 beginPos = {0.0f, 0.0f};
   glm::vec2 endPos = beginPos;
+  glm::vec2 alignedStartPos;
   const glm::vec2 scaledSize = scale_ * glyphSize_;
   const glm::vec2 scaledAdv = scale_ * advance_;
   const char *const endChar = str.data() + str.size();
@@ -98,7 +99,7 @@ glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string_view 
       continue;
     }
       
-    const glm::vec2 alignedStartPos = {
+    alignedStartPos = {
       originPos.x - (width - scaledAdv.x + scaledSize.x) * detail::getAlign<ALIGN>(),
       originPos.y
     };
@@ -119,12 +120,17 @@ glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string_view 
     beginPos = endPos;
   }
   
-  return originPos + endPos;
+  return alignedStartPos + endPos;
 }
 
 template <Align ALIGN, G2D::PlusXY PLUS_XY>
 glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string &str) {
   return write<ALIGN, PLUS_XY>(originPos, std::string_view(str));
+}
+
+template <Align ALIGN, G2D::PlusXY PLUS_XY, size_t SIZE>
+glm::vec2 TextRenderer::write(const glm::vec2 originPos, const char (&str)[SIZE]) {
+  return write<ALIGN, PLUS_XY>(originPos, std::string_view(str, SIZE));
 }
 
 template <Align ALIGN, G2D::PlusXY PLUS_XY, typename T>
