@@ -13,5 +13,6 @@
 
 bool affordTower(ECS::Registry &, size_t);
 bool affordUpgrade(ECS::Registry &, ECS::EntityID);
+uint32_t upgradeCost(ECS::Registry &, ECS::EntityID);
 
 #endif

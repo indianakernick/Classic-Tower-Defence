@@ -24,7 +24,9 @@ local towerSprites(sprite) = {
     },
     TurretTower: {},
     TowerSprites: towerSprites("blaster"),
-    upgrades: {},
+    upgrades: {
+      next: 1
+    },
     Sound: {
       id: getSound("blaster")
     },
@@ -54,7 +56,9 @@ local towerSprites(sprite) = {
       sell: 100
     },
     TowerSprites: towerSprites("laser"),
-    upgrades: {},
+    upgrades: {
+      next: 2
+    },
     Sound: {
       id: getSound("blaster 1")
     },
@@ -114,7 +118,9 @@ local towerSprites(sprite) = {
       sell: 50
     },
     TowerSprites: towerSprites("cannon"),
-    upgrades: {},
+    upgrades: {
+      next: 4
+    },
     Sound: {
       id: getSound("cannon")
     },
@@ -153,7 +159,9 @@ local towerSprites(sprite) = {
       }
     },
     TowerSprites: towerSprites("explosive cannon"),
-    upgrades: {},
+    upgrades: {
+      next: 5
+    },
     Sound: {
       id: getSound("cannon")
     },
@@ -229,7 +237,9 @@ local towerSprites(sprite) = {
       }
     },
     TowerSprites: towerSprites("snowball"),
-    upgrades: {},
+    upgrades: {
+      next: 7
+    },
     Sound: {
       id: getSound("cannon")
     },
@@ -267,7 +277,9 @@ local towerSprites(sprite) = {
       }
     },
     TowerSprites: towerSprites("iceball"),
-    upgrades: {},
+    upgrades: {
+      next: 8
+    },
     Sound: {
       id: getSound("cannon")
     },
@@ -352,7 +364,9 @@ local towerSprites(sprite) = {
       firingFrames: self.base - self.gun,
       projectile: getSprite("fire 0")
     },
-    upgrades: {},
+    upgrades: {
+      next: 10
+    },
     Sound: {
       id: getSound("blaster 1")
     },
@@ -394,7 +408,9 @@ local towerSprites(sprite) = {
       }
     },
     TowerSprites: towerSprites("fireball"),
-    upgrades: {},
+    upgrades: {
+      next: 11
+    },
     Sound: {
       id: getSound("fire ball shooting")
     },

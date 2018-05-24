@@ -120,6 +120,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4512454A20B581540025A651 /* ui plan.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ui plan.anim"; sourceTree = "<group>"; };
+		4512454B20B652170025A651 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		4512454C20B652170025A651 /* upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upgrade.png; sourceTree = "<group>"; };
+		4512454D20B652180025A651 /* sell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sell.png; sourceTree = "<group>"; };
+		4512454E20B652190025A651 /* upgrade dis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upgrade dis.png"; sourceTree = "<group>"; };
 		4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower reset rof system.cpp"; sourceTree = "<group>"; };
 		4526A34D20AAEACF00E4F542 /* tower reset rof system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower reset rof system.hpp"; sourceTree = "<group>"; };
 		45388490208AB717003EB260 /* Classic Tower Defence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Tower Defence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -355,7 +360,6 @@
 		453B288D20B0030700F6E9E6 /* cursor area.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cursor area.hpp"; sourceTree = "<group>"; };
 		453B289020B0F78300F6E9E6 /* preview back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preview back.png"; sourceTree = "<group>"; };
 		453B289120B0F78300F6E9E6 /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
-		453B289220B0F79900F6E9E6 /* ui plan.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ui plan.anim"; sourceTree = "<group>"; };
 		453B289620B113E900F6E9E6 /* get wave info.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "get wave info.cpp"; sourceTree = "<group>"; };
 		453B289720B113E900F6E9E6 /* get wave info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "get wave info.hpp"; sourceTree = "<group>"; };
 		453B289920B1166E00F6E9E6 /* preview entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "preview entity.cpp"; sourceTree = "<group>"; };
@@ -1194,7 +1198,7 @@
 				45388531208D7345003EB260 /* robot.anim */,
 				45C6DDC520A5985B002A133F /* snowball.anim */,
 				45C6DDE220A7F203002A133F /* tank.anim */,
-				453B289220B0F79900F6E9E6 /* ui plan.anim */,
+				4512454A20B581540025A651 /* ui plan.anim */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -1309,7 +1313,11 @@
 			isa = PBXGroup;
 			children = (
 				453B289120B0F78300F6E9E6 /* base.png */,
+				4512454B20B652170025A651 /* line.png */,
 				453B289020B0F78300F6E9E6 /* preview back.png */,
+				4512454D20B652180025A651 /* sell.png */,
+				4512454E20B652190025A651 /* upgrade dis.png */,
+				4512454C20B652170025A651 /* upgrade.png */,
 			);
 			path = UI;
 			sourceTree = "<group>";

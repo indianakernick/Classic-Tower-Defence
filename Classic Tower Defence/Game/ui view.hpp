@@ -42,9 +42,9 @@ private:
   Sprite::ID previewBack;
   const DefaultPrototype *statsProto = nullptr;
   
-  void renderProto();
-  void renderUnitStats();
-  void renderTowerStats();
+  void renderProto(ECS::Registry &, G2D::QuadWriter &);
+  void renderUnitStats(G2D::QuadWriter &);
+  void renderTowerStats(ECS::Registry &, G2D::QuadWriter &);
 };
 
 #endif

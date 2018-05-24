@@ -11,6 +11,7 @@
 #include "depth.hpp"
 #include "next wave.hpp"
 #include "load level.hpp"
+#include "afford tower.hpp"
 #include "create tower.hpp"
 #include "get wave info.hpp"
 #include "base gold tag.hpp"
@@ -18,9 +19,11 @@
 #include "level info tag.hpp"
 #include "preview entity.hpp"
 #include "base health tag.hpp"
+#include "tower gold component.hpp"
 #include "unit stats component.hpp"
 #include "splash tower component.hpp"
 #include <Simpleton/SDL/mouse pos.hpp>
+#include "tower upgrades component.hpp"
 #include "common tower stats component.hpp"
 
 namespace {
@@ -134,10 +137,10 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   
   updatePreviewEntity(reg, previewEntity);
   
-  renderProto();
+  renderProto(reg, writer);
 }
 
-void UIView::renderProto() {
+void UIView::renderProto(ECS::Registry &reg, G2D::QuadWriter &writer) {
   if (statsProto == nullptr) {
     return;
   }
@@ -147,9 +150,9 @@ void UIView::renderProto() {
   text.write({4.0f, 204.0f}, statsProto->get<Name>().name);
   
   if (statsProto->has<UnitStats>()) {
-    renderUnitStats();
+    renderUnitStats(writer);
   } else if (statsProto->has<CommonTowerStats>()) {
-    renderTowerStats();
+    renderTowerStats(reg, writer);
   }
 }
 
@@ -166,11 +169,15 @@ public:
     top += vertAdv;
   }
   
+  float getTop() const {
+    return top;
+  }
+  
 private:
   float top, left, right, vertAdv;
 };
 
-void UIView::renderUnitStats() {
+void UIView::renderUnitStats(G2D::QuadWriter &) {
   assert(statsProto);
   const UnitStats stats = statsProto->get<UnitStats>();
   
@@ -185,7 +192,7 @@ void UIView::renderUnitStats() {
   table.field(text, "GOLD", stats.gold);
 }
 
-void UIView::renderTowerStats() {
+void UIView::renderTowerStats(ECS::Registry &reg, G2D::QuadWriter &writer) {
   assert(statsProto);
   const CommonTowerStats stats = statsProto->get<CommonTowerStats>();
   
@@ -202,5 +209,54 @@ void UIView::renderTowerStats() {
     table.field(text, "AREA OF EFFECT", splash.aoe);
   }
   
-  #undef FIELD
+  float top = table.getTop();
+  
+  writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
+  
+  writer.quad();
+  writer.depth(Depth::UI_ELEM);
+  writer.tilePos({0.0f, top}, {128.0f, 1.0f});
+  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("line"));
+  
+  top += 5.0f;
+  
+  const TowerProto *next = statsProto->get<TowerUpgrades>().next;
+  const bool afford = next && next->get<TowerGold>().buy <= reg.get<BaseGold>().gold;
+  
+  writer.quad();
+  writer.depth(Depth::UI_ELEM);
+  writer.tilePos({4.0f, top}, {120.0f, 16.0f});
+  if (afford) {
+    writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("upgrade"));
+  } else {
+    writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("upgrade dis"));
+  }
+  
+  const float upgradeTextTop = top + 4.0f;
+  
+  top += 20.0f;
+  
+  writer.quad();
+  writer.depth(Depth::UI_ELEM);
+  writer.tilePos({4.0f, top}, {120.0f, 16.0f});
+  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("sell"));
+  
+  top += 20.0f;
+  
+  writer.quad();
+  writer.depth(Depth::UI_ELEM);
+  writer.tilePos({0.0f, top}, {128.0f, 1.0f});
+  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("line"));
+  
+  top = upgradeTextTop;
+  
+  writer.section({camera.transform.toPixels(), textSheetTex.tex()});
+  
+  if (next) {
+    text.write<Align::RIGHT>({120.0f, top}, next->get<TowerGold>().buy);
+  }
+  
+  top += 20.0f;
+  
+  text.write<Align::RIGHT>({120.0f, top}, statsProto->get<TowerGold>().sell);
 }

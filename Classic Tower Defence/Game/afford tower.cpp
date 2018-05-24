@@ -22,3 +22,8 @@ bool affordUpgrade(ECS::Registry &reg, const ECS::EntityID entity) {
   const TowerProto *next = reg.get<TowerUpgrades>(entity).next;
   return next && next->get<TowerGold>().buy <= reg.get<BaseGold>().gold;
 }
+
+uint32_t upgradeCost(ECS::Registry &reg, const ECS::EntityID entity) {
+  const TowerProto *next = reg.get<TowerUpgrades>(entity).next;
+  return next ? next->get<TowerGold>().buy : 0;
+}
