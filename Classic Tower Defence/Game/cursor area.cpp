@@ -11,24 +11,17 @@
 #include <Simpleton/SDL/mouse pos.hpp>
 
 void CursorArea::init() {
-  for (int i = 0; i != SDL_NUM_SYSTEM_CURSORS; ++i) {
-    const auto id = static_cast<SDL_SystemCursor>(i);
-    cursors.emplace_back(SDL_CreateSystemCursor(id));
-  }
-}
-
-void CursorArea::set(const SDL_SystemCursor cursor) {
-  SDL_SetCursor(cursors.at(cursor).c);
+  cursors.load();
 }
 
 void CursorArea::update(const glm::mat3 toMeters) {
   const glm::vec2 pos = SDL::mousePos(toMeters);
   for (const Pair &pair : pairs) {
     if (pair.rect.encloses(pos)) {
-      return set(pair.cursor);
+      return cursors.set(pair.cursor);
     }
   }
-  SDL_SetCursor(SDL_GetDefaultCursor());
+  cursors.setDefault();
 }
 
 size_t CursorArea::mark(const Rect rect, const SDL_SystemCursor cursor) {
