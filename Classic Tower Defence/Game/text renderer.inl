@@ -124,22 +124,12 @@ glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string_view 
 }
 
 template <Align ALIGN, G2D::PlusXY PLUS_XY>
-glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string &str) {
-  return write<ALIGN, PLUS_XY>(originPos, std::string_view(str));
-}
-
-template <Align ALIGN, G2D::PlusXY PLUS_XY, size_t SIZE>
-glm::vec2 TextRenderer::write(const glm::vec2 originPos, const char (&str)[SIZE]) {
-  return write<ALIGN, PLUS_XY>(originPos, std::string_view(str, SIZE - 1));
-}
-
-template <Align ALIGN, G2D::PlusXY PLUS_XY>
 glm::vec2 TextRenderer::write(const glm::vec2 originPos, const char c) {
   return write<ALIGN, PLUS_XY>(originPos, std::string_view(&c, 1));
 }
 
 template <Align ALIGN, G2D::PlusXY PLUS_XY, typename T>
-glm::vec2 TextRenderer::write(
+TextRenderer::EnableNotStr<T, glm::vec2> TextRenderer::write(
   const glm::vec2 pos,
   const T &thing
 ) {
