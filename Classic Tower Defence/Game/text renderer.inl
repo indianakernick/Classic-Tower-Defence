@@ -33,8 +33,8 @@ inline void TextRenderer::depth(const float newDepth) {
 }
 
 namespace detail {
-  /// Advances the position by the character. Returns true if the given character
-  /// is printable
+  /// Advances the position by the character. Returns true if a new line
+  /// be started
   inline bool advanceChar(glm::vec2 &pos, const glm::vec2 advance, const char c) {
     switch (c) {
       case '\n':
@@ -68,25 +68,25 @@ namespace detail {
 
   template <Align ALIGN>
   constexpr float getAlign() {
-    if constexpr (ALIGN == Align::CENTER) {
+    if constexpr (ALIGN == Align::LEFT) {
+      return 0.0f;
+    } else if constexpr (ALIGN == Align::CENTER) {
       return 0.5f;
     } else if constexpr (ALIGN == Align::RIGHT) {
       return 1.0f;
-    } else {
-      assert(false);
     }
   }
 }
 
 template <Align ALIGN, G2D::PlusXY PLUS_XY>
-glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string_view str) {
+glm::vec2 TextRenderer::write(const glm::vec2 origin, const std::string_view str) {
   if constexpr (ALIGN == Align::LEFT) {
-    return writeLeft<PLUS_XY>(originPos, str);
+    return writeLeft<PLUS_XY>(origin, str);
   }
   
   glm::vec2 beginPos = {0.0f, 0.0f};
   glm::vec2 endPos = beginPos;
-  glm::vec2 alignedStartPos;
+  glm::vec2 alignedOrigin;
   const glm::vec2 scaledSize = scale_ * glyphSize_;
   const glm::vec2 scaledAdv = scale_ * advance_;
   const char *const endChar = str.data() + str.size();
@@ -99,9 +99,9 @@ glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string_view 
       continue;
     }
       
-    alignedStartPos = {
-      originPos.x - (width - scaledAdv.x + scaledSize.x) * detail::getAlign<ALIGN>(),
-      originPos.y
+    alignedOrigin = {
+      origin.x - (width - scaledAdv.x + scaledSize.x) * detail::getAlign<ALIGN>(),
+      origin.y
     };
 
     for (; rowBegin != rowEnd; ++rowBegin) {
@@ -110,7 +110,7 @@ glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string_view 
       if (std::isprint(c) && c != ' ') {
         writer_->quad();
         writer_->depth(depth_);
-        writer_->tilePos(alignedStartPos + beginPos, scaledSize);
+        writer_->tilePos(alignedOrigin + beginPos, scaledSize);
         writer_->tileTex<PLUS_XY>(sheet_->getSprite(c - '!'));
       }
       
@@ -120,31 +120,46 @@ glm::vec2 TextRenderer::write(const glm::vec2 originPos, const std::string_view 
     beginPos = endPos;
   }
   
-  return alignedStartPos + endPos;
+  return alignedOrigin + endPos;
 }
 
 template <Align ALIGN, G2D::PlusXY PLUS_XY>
-glm::vec2 TextRenderer::write(const glm::vec2 originPos, const char c) {
-  return write<ALIGN, PLUS_XY>(originPos, std::string_view(&c, 1));
+glm::vec2 TextRenderer::write(const glm::vec2 origin, const char c) {
+  const glm::vec2 scaledSize = scale_ * glyphSize_;
+  const glm::vec2 alignedOrigin = {
+    origin.x - scaledSize.x * detail::getAlign<ALIGN>(),
+    origin.y
+  };
+  
+  if (std::isprint(c) && c != ' ') {
+    writer_->quad();
+    writer_->depth(depth_);
+    writer_->tilePos(alignedOrigin, scaledSize);
+    writer_->tileTex<PLUS_XY>(sheet_->getSprite(c - '!'));
+  }
+  
+  glm::vec2 pos = {0.0f, 0.0f};
+  detail::advanceChar(pos, scale_ * advance_, c);
+  return alignedOrigin + pos;
 }
 
 template <Align ALIGN, G2D::PlusXY PLUS_XY, typename T>
 TextRenderer::EnableNotStr<T, glm::vec2> TextRenderer::write(
-  const glm::vec2 pos,
+  const glm::vec2 origin,
   const T &thing
 ) {
   // @TODO maybe a custom stream_buf?
   std::stringstream stream;
   stream << thing;
   if (stream.good()) {
-    return write<ALIGN, PLUS_XY>(pos, stream.str());
+    return write<ALIGN, PLUS_XY>(origin, stream.str());
   } else {
-    return pos;
+    return origin;
   }
 }
 
 template <G2D::PlusXY PLUS_XY>
-glm::vec2 TextRenderer::writeLeft(const glm::vec2 originPos, const std::string_view str) {
+glm::vec2 TextRenderer::writeLeft(const glm::vec2 origin, const std::string_view str) {
   glm::vec2 pos = {0.0f, 0.0f};
   const glm::vec2 scaledSize = scale_ * glyphSize_;
   const glm::vec2 scaleAdv = scale_ * advance_;
@@ -153,12 +168,12 @@ glm::vec2 TextRenderer::writeLeft(const glm::vec2 originPos, const std::string_v
     if (std::isprint(c) && c != ' ') {
       writer_->quad();
       writer_->depth(depth_);
-      writer_->tilePos(originPos + pos, scaledSize);
+      writer_->tilePos(origin + pos, scaledSize);
       writer_->tileTex<PLUS_XY>(sheet_->getSprite(c - '!'));
     }
 
     detail::advanceChar(pos, scaleAdv, c);
   }
 
-  return originPos + pos;
+  return origin + pos;
 }
