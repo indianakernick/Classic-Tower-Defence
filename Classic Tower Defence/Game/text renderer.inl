@@ -106,14 +106,7 @@ glm::vec2 TextRenderer::write(const glm::vec2 origin, const std::string_view str
 
     for (; rowBegin != rowEnd; ++rowBegin) {
       const char c = *rowBegin;
-      
-      if (std::isprint(c) && c != ' ') {
-        writer_->quad();
-        writer_->depth(depth_);
-        writer_->tilePos(alignedOrigin + beginPos, scaledSize);
-        writer_->tileTex<PLUS_XY>(sheet_->getSprite(c - '!'));
-      }
-      
+      writeChar<PLUS_XY>(alignedOrigin + beginPos, scaledSize, c);
       detail::advanceChar(beginPos, scaledAdv, c);
     }
     ++rowBegin;
@@ -130,14 +123,7 @@ glm::vec2 TextRenderer::write(const glm::vec2 origin, const char c) {
     origin.x - scaledSize.x * detail::getAlign<ALIGN>(),
     origin.y
   };
-  
-  if (std::isprint(c) && c != ' ') {
-    writer_->quad();
-    writer_->depth(depth_);
-    writer_->tilePos(alignedOrigin, scaledSize);
-    writer_->tileTex<PLUS_XY>(sheet_->getSprite(c - '!'));
-  }
-  
+  writeChar<PLUS_XY>(alignedOrigin, scaledSize, c);
   glm::vec2 pos = {0.0f, 0.0f};
   detail::advanceChar(pos, scale_ * advance_, c);
   return alignedOrigin + pos;
@@ -165,15 +151,19 @@ glm::vec2 TextRenderer::writeLeft(const glm::vec2 origin, const std::string_view
   const glm::vec2 scaleAdv = scale_ * advance_;
   
   for (const char c : str) {
-    if (std::isprint(c) && c != ' ') {
-      writer_->quad();
-      writer_->depth(depth_);
-      writer_->tilePos(origin + pos, scaledSize);
-      writer_->tileTex<PLUS_XY>(sheet_->getSprite(c - '!'));
-    }
-
+    writeChar<PLUS_XY>(origin + pos, scaledSize, c);
     detail::advanceChar(pos, scaleAdv, c);
   }
 
   return origin + pos;
+}
+
+template <G2D::PlusXY PLUS_XY>
+void TextRenderer::writeChar(const glm::vec2 pos, const glm::vec2 size, const char c) {
+  if (std::isprint(c) && c != ' ') {
+    writer_->quad();
+    writer_->depth(depth_);
+    writer_->tilePos(pos, size);
+    writer_->tileTex<PLUS_XY>(sheet_->getSprite(c - '!'));
+  }
 }

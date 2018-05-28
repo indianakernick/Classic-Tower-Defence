@@ -55,6 +55,8 @@ private:
 
   template <G2D::PlusXY PLUS_XY>
   glm::vec2 writeLeft(glm::vec2, std::string_view);
+  template <G2D::PlusXY PLUS_XY>
+  void writeChar(glm::vec2, glm::vec2, char);
 };
 
 #include "text renderer.inl"
