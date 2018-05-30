@@ -33,8 +33,8 @@ inline void TextRenderer::depth(const float newDepth) {
 }
 
 namespace detail {
-  /// Advances the position by the character. Returns true if a new line
-  /// be started
+  /// Advances the position by the character. Returns true if a new section
+  /// should be started (only useful when ALIGN != Align::LEFT)
   inline bool advanceChar(glm::vec2 &pos, const glm::vec2 advance, const char c) {
     switch (c) {
       case '\n':
@@ -59,7 +59,7 @@ namespace detail {
         pos.x = 0.0f;
         return true;
       default:
-        if (std::isprint(c)) {
+        if (' ' <= c && c <= '~') {
           pos.x += advance.x;
         }
     }
@@ -160,7 +160,7 @@ glm::vec2 TextRenderer::writeLeft(const glm::vec2 origin, const std::string_view
 
 template <G2D::PlusXY PLUS_XY>
 void TextRenderer::writeChar(const glm::vec2 pos, const glm::vec2 size, const char c) {
-  if (std::isprint(c) && c != ' ') {
+  if ('!' <= c && c <= '~') {
     writer_->quad();
     writer_->depth(depth_);
     writer_->tilePos(pos, size);
