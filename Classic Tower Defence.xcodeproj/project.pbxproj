@@ -77,6 +77,7 @@
 		45682668209BFF9400BA6AE8 /* afford tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682666209BFF9400BA6AE8 /* afford tower.cpp */; };
 		45682697209D3AD800BA6AE8 /* tower projectile rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682695209D3AD800BA6AE8 /* tower projectile rendering system.cpp */; };
 		4568269A209D4FE400BA6AE8 /* tower beam rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */; };
+		459BED5C20BE59E3001BDA25 /* stats model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459BED5A20BE59E3001BDA25 /* stats model.cpp */; };
 		45BB379920AC4699003C31F8 /* aura damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BB379720AC4699003C31F8 /* aura damage system.cpp */; };
 		45BB37A820AC4A14003C31F8 /* tower aura rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BB37A620AC4A14003C31F8 /* tower aura rendering system.cpp */; };
 		45C6DD7C20A00BF9002A133F /* load prototype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45C6DD7A20A00BF9002A133F /* load prototype.cpp */; };
@@ -491,6 +492,8 @@
 		45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower beam rendering system.cpp"; sourceTree = "<group>"; };
 		45682699209D4FE400BA6AE8 /* tower beam rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam rendering system.hpp"; sourceTree = "<group>"; };
 		4568269B209D536B00BA6AE8 /* depth.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = depth.hpp; sourceTree = "<group>"; };
+		459BED5A20BE59E3001BDA25 /* stats model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "stats model.cpp"; sourceTree = "<group>"; };
+		459BED5B20BE59E3001BDA25 /* stats model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "stats model.hpp"; sourceTree = "<group>"; };
 		45BB379620AC4652003C31F8 /* aura tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aura tower component.hpp"; sourceTree = "<group>"; };
 		45BB379720AC4699003C31F8 /* aura damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "aura damage system.cpp"; sourceTree = "<group>"; };
 		45BB379820AC4699003C31F8 /* aura damage system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aura damage system.hpp"; sourceTree = "<group>"; };
@@ -1370,6 +1373,8 @@
 				453B288D20B0030700F6E9E6 /* cursor area.hpp */,
 				453B28A720B27D5300F6E9E6 /* text renderer.inl */,
 				453B28A620B27D5300F6E9E6 /* text renderer.hpp */,
+				459BED5A20BE59E3001BDA25 /* stats model.cpp */,
+				459BED5B20BE59E3001BDA25 /* stats model.hpp */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1608,6 +1613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459BED5C20BE59E3001BDA25 /* stats model.cpp in Sources */,
 				4563D604209712B100DB2510 /* tower range rendering system.cpp in Sources */,
 				453B288E20B0030700F6E9E6 /* cursor area.cpp in Sources */,
 				453884EE208B1607003EB260 /* spawner system.cpp in Sources */,
