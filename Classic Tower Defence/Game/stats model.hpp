@@ -9,23 +9,22 @@
 #ifndef stats_model_hpp
 #define stats_model_hpp
 
-#include <string_view>
 #include "prototype.hpp"
+#include "stats table.hpp"
 #include <Simpleton/ECS/registry.hpp>
 
 class StatsModel {
 public:
-  
-  using TableRow = std::pair<std::string_view, float>;
-  using Table = std::vector<TableRow>;
-  
   void selectTower(ECS::Registry &, int);
   void selectPreview(ECS::Registry &);
   void unselect();
   
   bool hasTable() const;
   std::string getName(ECS::Registry &) const;
-  Table getTable(ECS::Registry &) const;
+  StatsTable getTable(ECS::Registry &) const;
+  
+  bool hasButtons(ECS::Registry &) const;
+  TowerButtons getButtons(ECS::Registry &) const;
   
 private:
   // @TODO use varient when available

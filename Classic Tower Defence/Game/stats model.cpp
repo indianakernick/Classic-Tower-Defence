@@ -9,11 +9,14 @@
 #include "stats model.hpp"
 
 #include "create tower.hpp"
+#include "base gold tag.hpp"
 #include "preview entity.hpp"
 #include "name component.hpp"
 #include <experimental/optional>
+#include "tower gold component.hpp"
 #include "unit stats component.hpp"
 #include "splash tower component.hpp"
+#include "tower upgrades component.hpp"
 #include "common tower stats component.hpp"
 
 void StatsModel::selectTower(ECS::Registry &reg, const int i) {
@@ -36,20 +39,21 @@ bool StatsModel::hasTable() const {
 }
 
 std::string StatsModel::getName(ECS::Registry &reg) const {
+  // should check hasTable before calling this function
+  assert(hasTable());
+  
   if (entity != ECS::NULL_ENTITY) {
     return reg.get<Name>(entity).name;
   } else if (proto != nullptr) {
     return proto->get<Name>().name;
   } else {
-    // should check hasTable before calling this function
-    assert(false);
     return {};
   }
 }
 
 namespace {
-  StatsModel::Table getUnitTable(const UnitStats &stats) {
-    StatsModel::Table table;
+  StatsTable getUnitTable(const UnitStats &stats) {
+    StatsTable table;
     
     table.push_back({"HEALTH", stats.health});
     table.push_back({"ARMOUR", stats.armour});
@@ -64,8 +68,8 @@ namespace {
   
   using OptionalSplash = std::experimental::optional<SplashTower>;
   
-  StatsModel::Table getTowerTable(const CommonTowerStats &stats) {
-    StatsModel::Table table;
+  StatsTable getTowerTable(const CommonTowerStats &stats) {
+    StatsTable table;
     
     table.push_back({"DAMAGE", stats.damage});
     table.push_back({"DAMAGE RATE", stats.damage * stats.rof});
@@ -76,17 +80,20 @@ namespace {
     return table;
   }
   
-  StatsModel::Table getTowerTable(
+  StatsTable getTowerTable(
     const CommonTowerStats &stats,
     const SplashTower &splash
   ) {
-    StatsModel::Table table = getTowerTable(stats);
+    StatsTable table = getTowerTable(stats);
     table.push_back({"AREA OF EFFECT", splash.aoe});
     return table;
   }
 }
 
-StatsModel::Table StatsModel::getTable(ECS::Registry &reg) const {
+StatsTable StatsModel::getTable(ECS::Registry &reg) const {
+  // should check hasTable before calling this function
+  assert(hasTable());
+  
   if (proto != nullptr) {
     if (proto->has<UnitStats>()) {
       return getUnitTable(proto->get<UnitStats>());
@@ -109,7 +116,45 @@ StatsModel::Table StatsModel::getTable(ECS::Registry &reg) const {
     }
   }
   
-  // should check hasTable before calling this function
-  assert(false);
   return {};
 }
+
+bool StatsModel::hasButtons(ECS::Registry &reg) const {
+  if (proto != nullptr) {
+    return proto->has<CommonTowerStats>();
+  } else if (entity != ECS::NULL_ENTITY) {
+    return reg.has<CommonTowerStats>(entity);
+  } else {
+    return false;
+  }
+}
+
+TowerButtons StatsModel::getButtons(ECS::Registry &reg) const {
+  // should check hasButtons before calling this function
+  assert(hasButtons(reg));
+  
+  TowerButtons buttons;
+  
+  if (proto != nullptr) {
+    buttons.upgrade = 0;
+    buttons.sell = 0;
+    buttons.buy = proto->get<TowerGold>().buy;
+  } else if (entity != ECS::NULL_ENTITY) {
+    const TowerProto *const next = reg.get<TowerUpgrades>(entity).next;
+    if (next) {
+      buttons.upgrade = next->get<TowerGold>().buy;
+    } else {
+      buttons.upgrade = 0;
+    }
+    buttons.sell = reg.get<TowerGold>().sell;
+    buttons.buy = 0;
+  }
+  
+  const uint32_t gold = reg.get<BaseGold>().gold;
+  
+  buttons.affordUpgrade = (buttons.upgrade <= gold);
+  buttons.affordBuy = (buttons.buy <= gold);
+  
+  return buttons;
+}
+
