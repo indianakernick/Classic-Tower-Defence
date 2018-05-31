@@ -134,26 +134,25 @@ TowerButtons StatsModel::getButtons(ECS::Registry &reg) const {
   assert(hasButtons(reg));
   
   TowerButtons buttons;
+  buttons.afford = false;
+  const uint32_t gold = reg.get<BaseGold>().gold;
   
   if (proto != nullptr) {
     buttons.upgrade = 0;
     buttons.sell = 0;
     buttons.buy = proto->get<TowerGold>().buy;
+    buttons.afford = buttons.buy <= gold;
   } else if (entity != ECS::NULL_ENTITY) {
     const TowerProto *const next = reg.get<TowerUpgrades>(entity).next;
     if (next) {
       buttons.upgrade = next->get<TowerGold>().buy;
+      buttons.afford = buttons.upgrade <= gold;
     } else {
       buttons.upgrade = 0;
     }
     buttons.sell = reg.get<TowerGold>().sell;
     buttons.buy = 0;
   }
-  
-  const uint32_t gold = reg.get<BaseGold>().gold;
-  
-  buttons.affordUpgrade = (buttons.upgrade <= gold);
-  buttons.affordBuy = (buttons.buy <= gold);
   
   return buttons;
 }

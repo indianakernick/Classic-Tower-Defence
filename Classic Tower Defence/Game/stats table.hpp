@@ -19,8 +19,7 @@ struct TowerButtons {
   uint32_t upgrade;   // 0 means cannot upgrade
   uint32_t sell;      // 0 means cannot sell
   uint32_t buy;       // 0 means cannot buy
-  bool affordUpgrade; // has enough gold to upgrade
-  bool affordBuy;     // has enough gold to buy
+  bool afford;        // has enough gold to upgrade or buy
 };
 
 #endif
