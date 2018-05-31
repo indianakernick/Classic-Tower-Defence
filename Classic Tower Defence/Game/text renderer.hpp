@@ -38,6 +38,9 @@ public:
   void scale(float);
   void depth(float);
   
+  G2D::QuadWriter &writer() const;
+  const Sprite::Sheet &sheet() const;
+  
   template <Align ALIGN = Align::LEFT, G2D::PlusXY PLUS_XY = G2D::PlusXY::RIGHT_DOWN>
   glm::vec2 write(glm::vec2, std::string_view);
   template <Align ALIGN = Align::LEFT, G2D::PlusXY PLUS_XY = G2D::PlusXY::RIGHT_DOWN>

@@ -11,7 +11,7 @@ local unitSprites(name) = {
 {
   map: 0,
   sprite: getSprite("map 0"),
-  gold: 2000,
+  gold: 1400,
   health: 100,
   spawntime: 1.5,
   waves: [

@@ -11,6 +11,7 @@
 
 enum class Depth {
   UI_TEXT,
+  UI_ELEM_1,
   UI_ELEM,
   UI_BASE,
 

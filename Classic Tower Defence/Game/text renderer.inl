@@ -32,6 +32,14 @@ inline void TextRenderer::depth(const float newDepth) {
   depth_ = newDepth;
 }
 
+inline G2D::QuadWriter &TextRenderer::writer() const {
+  return *writer_;
+}
+
+inline const Sprite::Sheet &TextRenderer::sheet() const {
+  return *sheet_;
+}
+
 namespace detail {
   /// Advances the position by the character. Returns true if a new section
   /// should be started (only useful when ALIGN != Align::LEFT)

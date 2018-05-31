@@ -77,6 +77,7 @@
 		45682668209BFF9400BA6AE8 /* afford tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682666209BFF9400BA6AE8 /* afford tower.cpp */; };
 		45682697209D3AD800BA6AE8 /* tower projectile rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682695209D3AD800BA6AE8 /* tower projectile rendering system.cpp */; };
 		4568269A209D4FE400BA6AE8 /* tower beam rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */; };
+		457EB34120BF94310054E16F /* stats view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 457EB33F20BF94310054E16F /* stats view.cpp */; };
 		459BED5C20BE59E3001BDA25 /* stats model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459BED5A20BE59E3001BDA25 /* stats model.cpp */; };
 		45BB379920AC4699003C31F8 /* aura damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BB379720AC4699003C31F8 /* aura damage system.cpp */; };
 		45BB37A820AC4A14003C31F8 /* tower aura rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45BB37A620AC4A14003C31F8 /* tower aura rendering system.cpp */; };
@@ -125,7 +126,6 @@
 		4512454B20B652170025A651 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		4512454C20B652170025A651 /* upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upgrade.png; sourceTree = "<group>"; };
 		4512454D20B652180025A651 /* sell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sell.png; sourceTree = "<group>"; };
-		4512454E20B652190025A651 /* upgrade dis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upgrade dis.png"; sourceTree = "<group>"; };
 		4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower reset rof system.cpp"; sourceTree = "<group>"; };
 		4526A34D20AAEACF00E4F542 /* tower reset rof system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower reset rof system.hpp"; sourceTree = "<group>"; };
 		45388490208AB717003EB260 /* Classic Tower Defence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Tower Defence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -493,6 +493,10 @@
 		45682699209D4FE400BA6AE8 /* tower beam rendering system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower beam rendering system.hpp"; sourceTree = "<group>"; };
 		4568269B209D536B00BA6AE8 /* depth.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = depth.hpp; sourceTree = "<group>"; };
 		457EB33E20BF88C70054E16F /* stats table.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "stats table.hpp"; sourceTree = "<group>"; };
+		457EB33F20BF94310054E16F /* stats view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "stats view.cpp"; sourceTree = "<group>"; };
+		457EB34020BF94310054E16F /* stats view.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "stats view.hpp"; sourceTree = "<group>"; };
+		457EB34220BF99D50054E16F /* disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disable.png; sourceTree = "<group>"; };
+		457EB34320BF99D50054E16F /* buy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buy.png; sourceTree = "<group>"; };
 		459BED5A20BE59E3001BDA25 /* stats model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "stats model.cpp"; sourceTree = "<group>"; };
 		459BED5B20BE59E3001BDA25 /* stats model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "stats model.hpp"; sourceTree = "<group>"; };
 		45BB379620AC4652003C31F8 /* aura tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aura tower component.hpp"; sourceTree = "<group>"; };
@@ -1320,8 +1324,9 @@
 				4512454B20B652170025A651 /* line.png */,
 				453B289020B0F78300F6E9E6 /* preview back.png */,
 				4512454D20B652180025A651 /* sell.png */,
-				4512454E20B652190025A651 /* upgrade dis.png */,
 				4512454C20B652170025A651 /* upgrade.png */,
+				457EB34320BF99D50054E16F /* buy.png */,
+				457EB34220BF99D50054E16F /* disable.png */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1377,6 +1382,8 @@
 				459BED5A20BE59E3001BDA25 /* stats model.cpp */,
 				459BED5B20BE59E3001BDA25 /* stats model.hpp */,
 				457EB33E20BF88C70054E16F /* stats table.hpp */,
+				457EB33F20BF94310054E16F /* stats view.cpp */,
+				457EB34020BF94310054E16F /* stats view.hpp */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1649,6 +1656,7 @@
 				453884F5208B2534003EB260 /* unit walk anim system.cpp in Sources */,
 				453B15A020919CB100BFA00D /* unit death sound system.cpp in Sources */,
 				45388566208D99EF003EB260 /* game logic.cpp in Sources */,
+				457EB34120BF94310054E16F /* stats view.cpp in Sources */,
 				453B151D2090461E00BFA00D /* load level.cpp in Sources */,
 				45388563208D8F50003EB260 /* game view.cpp in Sources */,
 				453884D4208AFE1C003EB260 /* base damage system.cpp in Sources */,

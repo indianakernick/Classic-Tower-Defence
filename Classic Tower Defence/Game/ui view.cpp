@@ -226,10 +226,13 @@ void UIView::renderTowerStats(ECS::Registry &reg, G2D::QuadWriter &writer) {
   writer.quad();
   writer.depth(Depth::UI_ELEM);
   writer.tilePos({4.0f, top}, {120.0f, 16.0f});
-  if (afford) {
-    writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("upgrade"));
-  } else {
-    writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("upgrade dis"));
+  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("upgrade"));
+  
+  if (!afford) {
+    writer.quad();
+    writer.depth(Depth::UI_ELEM_1);
+    writer.dupPos();
+    writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("disable"));
   }
   
   const float upgradeTextTop = top + 4.0f;
