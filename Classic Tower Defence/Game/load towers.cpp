@@ -20,7 +20,7 @@ void loadTowers(ECS::Registry &reg) {
   file >> towersNode;
   
   const ECS::EntityID entity = reg.create();
-  Towers &towers = reg.attach<Towers>(entity);
+  Towers &towers = reg.assign<Towers>(entt::tag_t{}, entity);
   
   for (const json &towerNode : towersNode) {
     TowerProto tower;

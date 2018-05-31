@@ -14,11 +14,11 @@
 void createSpawner(ECS::Registry &reg, const float timeBetween) {
   const ECS::EntityID id = reg.create();
   
-  auto &timing = reg.attach<SpawnerTiming>(id);
+  auto &timing = reg.assign<SpawnerTiming>(entt::tag_t{}, id);
   timing.minTimeBetweenSpawns = timeBetween;
   timing.timeSinceLastSpawn = 0.0f;
   
-  auto &state = reg.attach<SpawnerState>(id);
+  auto &state = reg.assign<SpawnerState>(entt::tag_t{}, id);
   state.numUnitsLeft = 0;
   state.state = SpawnerState::STARTING;
 }

@@ -20,13 +20,13 @@
 
 void createLevel(ECS::Registry &reg) {
   const ECS::EntityID id = reg.create();
-  reg.attach<Map>(id, glm::ivec2(16, 10));
-  reg.attach<MapInfo>(id);
-  reg.attach<MapSprites>(id);
-  reg.attach<Waves>(id);
-  reg.attach<BaseHealth>(id);
-  reg.attach<BaseGold>(id);
-  reg.attach<SpawnerState>(id);
-  reg.attach<SpawnerTiming>(id);
-  reg.attach<LevelInfo>(id);
+  reg.assign<Map>(entt::tag_t{}, id, glm::ivec2(16, 10));
+  reg.assign<MapInfo>(entt::tag_t{}, id);
+  reg.assign<MapSprites>(entt::tag_t{}, id);
+  reg.assign<Waves>(entt::tag_t{}, id);
+  reg.assign<BaseHealth>(entt::tag_t{}, id);
+  reg.assign<BaseGold>(entt::tag_t{}, id);
+  reg.assign<SpawnerState>(entt::tag_t{}, id);
+  reg.assign<SpawnerTiming>(entt::tag_t{}, id);
+  reg.assign<LevelInfo>(entt::tag_t{}, id);
 }
