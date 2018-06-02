@@ -10,10 +10,6 @@
 
 #include "depth.hpp"
 
-void StatsView::setSheetTex(const G2D::SheetTex &sheetTex) {
-  uiSheetTex = &sheetTex;
-}
-
 void StatsView::renderTable(TextRenderer &text, const StatsTable &table) {
   assert(tableBottom == NO_TABLE);
   
@@ -32,53 +28,60 @@ void StatsView::renderTable(TextRenderer &text, const StatsTable &table) {
   tableBottom = top;
 }
 
-void StatsView::renderButtons(TextRenderer &text, const TowerButtons &buttons) {
-  assert(uiSheetTex);
+void StatsView::renderButtons(
+  G2D::SheetWriter sw,
+  TextRenderer &text,
+  const TowerButtons &buttons
+) {
   assert(tableBottom != NO_TABLE);
   
-  G2D::QuadWriter &writer = text.writer();
-  const Sprite::Sheet &sheet = uiSheetTex->sheet();
   float top = tableBottom;
   
-  writer.quad();
-  writer.depth(Depth::UI_ELEM);
-  writer.tilePos({0.0f, top}, {128.0f, 1.0f});
-  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sheet.getSprite("line"));
+  sw.writer.quad();
+  sw.writer.depth(Depth::UI_ELEM);
+  sw.writer.tilePos({0.0f, top}, {128.0f, 1.0f});
+  sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("line"));
 
-  const Sprite::Rect button = buttons.upgrade
-                            ? sheet.getSprite("upgrade")
-                            : sheet.getSprite("buy");
-  
+  Sprite::Rect button;
+  uint32_t price;
+  if (buttons.upgrade) {
+    button = sw.sheet.getSprite("upgrade");
+    price = buttons.upgrade;
+  } else if (buttons.buy) {
+    button = sw.sheet.getSprite("buy");
+    price = buttons.buy;
+  } else {
+    assert(false);
+  }
+
   top += 5.0f;
-  writer.quad();
-  writer.depth(Depth::UI_ELEM);
-  writer.tilePos({4.0f, top}, {128.0f, 16.0f});
-  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(button);
+  sw.writer.quad();
+  sw.writer.depth(Depth::UI_ELEM);
+  sw.writer.tilePos({4.0f, top}, {128.0f, 16.0f});
+  sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(button);
   
   if (!buttons.afford) {
-    writer.quad();
-    writer.depth(Depth::UI_ELEM_1);
-    writer.dupPos();
-    writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sheet.getSprite("disable"));
+    sw.writer.quad();
+    sw.writer.depth(Depth::UI_ELEM_1);
+    sw.writer.dupPos();
+    sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("disable"));
+    text.write<Align::RIGHT>({120.0f, top + 4.0f}, price);
   }
-  
-  const float upgradeTextTop = top + 4.0f;
   
   if (buttons.sell) {
     top += 20.0f;
-    writer.quad();
-    writer.depth(Depth::UI_ELEM);
-    writer.tilePos({4.0f, top}, {120.0f, 16.0f});
-    writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sheet.getSprite("sell"));
+    sw.writer.quad();
+    sw.writer.depth(Depth::UI_ELEM);
+    sw.writer.tilePos({4.0f, top}, {120.0f, 16.0f});
+    sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("sell"));
+    text.write<Align::RIGHT>({120.0f, top + 4.0f}, buttons.sell);
   }
   
   top += 20.0f;
-  writer.quad();
-  writer.depth(Depth::UI_ELEM);
-  writer.tilePos({0.0f, top}, {128.0f, 1.0f});
-  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sheet.getSprite("line"));
-  
-  top = upgradeTextTop;
+  sw.writer.quad();
+  sw.writer.depth(Depth::UI_ELEM);
+  sw.writer.tilePos({0.0f, top}, {128.0f, 1.0f});
+  sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("line"));
   
   tableBottom = NO_TABLE;
 }
