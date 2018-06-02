@@ -9,8 +9,8 @@
 #ifndef unit_stats_component_hpp
 #define unit_stats_component_hpp
 
-#include "prototype.hpp"
 #include <Simpleton/Data/json.hpp>
+#include <Simpleton/ECS/prototype.hpp>
 
 struct UnitStats {
   float health;
@@ -20,7 +20,7 @@ struct UnitStats {
   float dodge;
   float moveSpeed;
   uint32_t gold;
-  DefaultPrototype *proto;
+  ECS::Prototype *proto;
 };
 
 inline void from_json(const json &j, UnitStats &comp) {

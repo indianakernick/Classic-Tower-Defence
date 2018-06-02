@@ -9,9 +9,9 @@
 #ifndef stats_model_hpp
 #define stats_model_hpp
 
-#include "prototype.hpp"
 #include "stats table.hpp"
 #include <Simpleton/ECS/registry.hpp>
+#include <Simpleton/ECS/prototype.hpp>
 
 class StatsModel {
 public:
@@ -29,7 +29,7 @@ public:
 private:
   // @TODO use varient when available
   ECS::EntityID entity = ECS::NULL_ENTITY;
-  const DefaultPrototype *proto = nullptr;
+  const ECS::Prototype *proto = nullptr;
 };
 
 #endif

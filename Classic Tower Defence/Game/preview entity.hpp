@@ -9,11 +9,11 @@
 #ifndef preview_entity_hpp
 #define preview_entity_hpp
 
-#include "prototype.hpp"
 #include <Simpleton/ECS/registry.hpp>
+#include <Simpleton/ECS/prototype.hpp>
 
 ECS::EntityID makePreviewEntity(ECS::Registry &);
 void updatePreviewEntity(ECS::Registry &, ECS::EntityID);
-const DefaultPrototype *getPreviewProto(ECS::Registry &);
+const ECS::Prototype *getPreviewProto(ECS::Registry &);
 
 #endif

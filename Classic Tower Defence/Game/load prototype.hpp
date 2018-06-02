@@ -9,12 +9,12 @@
 #ifndef load_prototype_hpp
 #define load_prototype_hpp
 
-#include "prototype.hpp"
 #include <Simpleton/Data/json.hpp>
+#include <Simpleton/ECS/prototype.hpp>
 
 //@SIMPLETON
 
-bool loadComponent(DefaultPrototype &, std::string_view, const json &);
-int loadProto(DefaultPrototype &, const json &);
+bool loadComponent(ECS::Prototype &, std::string_view, const json &);
+int loadProto(ECS::Prototype &, const json &);
 
 #endif

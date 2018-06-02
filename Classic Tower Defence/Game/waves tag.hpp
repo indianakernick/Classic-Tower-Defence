@@ -10,11 +10,11 @@
 #define waves_tag_hpp
 
 #include <vector>
-#include "prototype.hpp"
+#include <Simpleton/ECS/prototype.hpp>
 
 struct Wave {
   size_t quantity;
-  DefaultPrototype proto;
+  ECS::Prototype proto;
 };
 
 using Waves = std::vector<Wave>;

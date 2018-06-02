@@ -9,11 +9,11 @@
 #ifndef ui_view_hpp
 #define ui_view_hpp
 
-#include "prototype.hpp"
 #include "cursor area.hpp"
 #include "text renderer.hpp"
 #include "input consumed.hpp"
 #include <Simpleton/ECS/registry.hpp>
+#include <Simpleton/ECS/prototype.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 #include <Simpleton/Graphics 2D/sheet tex.hpp>
@@ -41,7 +41,7 @@ private:
   ECS::EntityID previewEntity;
   Sprite::ID base;
   Sprite::ID previewBack;
-  const DefaultPrototype *statsProto = nullptr;
+  const ECS::Prototype *statsProto = nullptr;
   
   void renderProto(ECS::Registry &, G2D::QuadWriter &);
   void renderUnitStats(G2D::QuadWriter &);

@@ -35,7 +35,7 @@ ECS::EntityID createTower(
   return entity;
 }
 
-const DefaultPrototype *getTowerProto(ECS::Registry &reg, const size_t index) {
+const ECS::Prototype *getTowerProto(ECS::Registry &reg, const size_t index) {
   const Towers &towers = reg.get<Towers>();
   if (index < towers.size()) {
     return &towers[index];

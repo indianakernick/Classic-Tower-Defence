@@ -9,10 +9,10 @@
 #ifndef towers_tag_hpp
 #define towers_tag_hpp
 
-#include "prototype.hpp"
 #include <Simpleton/ECS/registry.hpp>
+#include <Simpleton/ECS/prototype.hpp>
 
-using TowerProto = DefaultPrototype;
+using TowerProto = ECS::Prototype;
 using Towers = std::vector<TowerProto>;
 
 #endif

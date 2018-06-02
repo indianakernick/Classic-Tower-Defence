@@ -25,7 +25,7 @@ namespace {
 }
 
 bool loadComponent(
-  DefaultPrototype &proto,
+  ECS::Prototype &proto,
   const std::string_view name,
   const json &component
 ) {
@@ -34,9 +34,9 @@ bool loadComponent(
     using Comp = LIST_TYPE(t);
     if (Utils::typeName<Comp>() == name) {
       if constexpr (hasFromjson<Comp>(0)) {
-        proto.assign<Comp>(component.get<Comp>());
+        proto.set<Comp>(component.get<Comp>());
       } else {
-        proto.assign<Comp>();
+        proto.set<Comp>();
       }
       read = true;
     }
@@ -44,7 +44,7 @@ bool loadComponent(
   return read;
 }
 
-int loadProto(DefaultPrototype &proto, const json &entity) {
+int loadProto(ECS::Prototype &proto, const json &entity) {
   const json::object_t &object = entity.get_ref<const json::object_t &>();
   int unreadCount = 0;
   for (auto pair : object) {

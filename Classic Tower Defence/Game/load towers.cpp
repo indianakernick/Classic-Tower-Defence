@@ -34,7 +34,7 @@ void loadTowers(ECS::Registry &reg) {
     // upgrades on the json object are indicies onto the array of towers
     // upgrades on the game object are pointers onto the array of towers
     const json &j = towersNode[i].at("upgrades");
-    TowerUpgrades &upgrades = towers[i].assign<TowerUpgrades>();
+    TowerUpgrades &upgrades = towers[i].set<TowerUpgrades>();
     if (JSON_OPTIONAL(index, j, "next")) {
       upgrades.next = &towers.at(index->get<size_t>());
     } else {

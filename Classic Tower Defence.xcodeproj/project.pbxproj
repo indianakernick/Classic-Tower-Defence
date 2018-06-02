@@ -601,7 +601,6 @@
 		45DBB7FE2092B03A0081CDE1 /* poison effect system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "poison effect system.cpp"; sourceTree = "<group>"; };
 		45DBB7FF2092B03A0081CDE1 /* poison effect system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect system.hpp"; sourceTree = "<group>"; };
 		45DBB8012092B0500081CDE1 /* poison effect component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "poison effect component.hpp"; sourceTree = "<group>"; };
-		45DBB8022092EC710081CDE1 /* prototype.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = prototype.hpp; sourceTree = "<group>"; };
 		45DBB805209303660081CDE1 /* component list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "component list.hpp"; sourceTree = "<group>"; };
 		45F24DF5209E871700EAE60D /* plasma.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = plasma.anim; sourceTree = "<group>"; };
 		45F24DF6209E872C00EAE60D /* plasma base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plasma base.png"; sourceTree = "<group>"; };
@@ -746,7 +745,6 @@
 				4563D5B62096EBA600DB2510 /* sound id.hpp */,
 				4563D5B42096E16700DB2510 /* sound queue.cpp */,
 				453B159C2091978800BFA00D /* sound queue.hpp */,
-				45DBB8022092EC710081CDE1 /* prototype.hpp */,
 				4568269B209D536B00BA6AE8 /* depth.hpp */,
 			);
 			name = "Game Data";

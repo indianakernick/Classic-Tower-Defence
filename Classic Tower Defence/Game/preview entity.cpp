@@ -44,7 +44,7 @@ void updatePreviewEntity(ECS::Registry &reg, const ECS::EntityID entity) {
   }
 }
 
-const DefaultPrototype *getPreviewProto(ECS::Registry &reg) {
+const ECS::Prototype *getPreviewProto(ECS::Registry &reg) {
   const Waves &waves = reg.get<Waves>();
   const size_t currentWave = getCurrentWave(reg);
   if (currentWave < waves.size()) {
