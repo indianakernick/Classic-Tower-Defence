@@ -3,7 +3,7 @@
 #ifndef component_list_hpp
 #define component_list_hpp
 
-#include <Simpleton/Utils/type list.hpp>
+#include <Simpleton/Type List/type.hpp>
 
 #include "aim tower component.hpp"
 #include "aura tower component.hpp"
@@ -33,7 +33,7 @@
 #include "unit stats component.hpp"
 #include "unit walk anim component.hpp"
 
-using CompList = Utils::TypeList<
+using CompList = List::Type<
   AimTower,
   AuraTower,
   BeamTower,

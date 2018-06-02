@@ -9,6 +9,8 @@
 #include "load prototype.hpp"
 
 #include "component list.hpp"
+#include <Simpleton/Utils/type name.hpp>
+#include <Simpleton/Type List/foreach.hpp>
 
 namespace {
   template <typename Comp>
@@ -28,8 +30,8 @@ bool loadComponent(
   const json &component
 ) {
   bool read = false;
-  Utils::forEach<CompList>([&proto, name, &component, &read] (auto t) {
-    using Comp = UTILS_TYPE(t);
+  List::forEach<CompList>([&proto, name, &component, &read] (auto t) {
+    using Comp = LIST_TYPE(t);
     if (Utils::typeName<Comp>() == name) {
       if constexpr (hasFromjson<Comp>(0)) {
         proto.assign<Comp>(component.get<Comp>());
