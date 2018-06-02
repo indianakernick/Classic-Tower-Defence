@@ -12,12 +12,9 @@
 #include "next wave.hpp"
 #include "load level.hpp"
 #include "cursor area.hpp"
-#include "get wave info.hpp"
-#include "base gold tag.hpp"
-#include "level info tag.hpp"
 #include "preview entity.hpp"
-#include "base health tag.hpp"
-#include "tower gold component.hpp"
+#include "game info view.hpp"
+#include "game info model.hpp"
 #include <Simpleton/SDL/mouse pos.hpp>
 
 namespace {
@@ -104,29 +101,10 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   );
 
   writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
-  
-  writer.quad();
-  writer.depth(Depth::UI_BASE);
-  writer.tilePos({0.0f, 0.0f}, {640.0f, 360.0f});
-  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("base"));
-  
-  writer.quad();
-  writer.depth(Depth::MAP);
-  writer.tilePos({604.0f, 4.0f}, {32.0f, 32.0f});
-  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("preview back"));
-  
   textWriter.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
   text.scale(2.0f);
   
-  text.write<Align::RIGHT>({124.0f, 2.0f}, reg.get<BaseGold>().gold);
-  text.write<Align::RIGHT>({124.0f, 22.0f}, reg.get<BaseHealth>().health);
-  
-  const LevelInfo levelInfo = reg.get<LevelInfo>();
-  text.write<Align::RIGHT>({235.0f, 2.0f}, levelInfo.level + 1);
-  text.write<Align::RIGHT>({235.0f, 22.0f}, levelInfo.map + 1);
-  
-  text.write<Align::RIGHT>({372.0f, 12.0f}, getWaveStr(reg));
-  text.write<Align::RIGHT>({599.0f, 12.0f}, getNumUnits(reg));
+  renderGameInfo({uiSheetTex.sheet(), writer}, text, getGameInfo(reg));
   
   updatePreviewEntity(reg, previewEntity);
   
