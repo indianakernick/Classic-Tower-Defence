@@ -36,6 +36,7 @@ private:
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoom;
   TextRenderer text;
+  G2D::QuadWriter textWriter;
   CursorArea cursor;
   ECS::EntityID previewEntity;
   Sprite::ID base;

@@ -49,6 +49,9 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   
   text.glyphSize({5.0f, 8.0f});
   text.advance({6.0f, 12.0f});
+  text.writer(textWriter);
+  text.sheet(textSheetTex.sheet());
+  text.depth(G2D::depth(Depth::UI_TEXT));
   
   cursor.init();
   cursor.mark(TOWER_0, SDL_SYSTEM_CURSOR_HAND);
@@ -117,11 +120,7 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   writer.tilePos({604.0f, 4.0f}, {32.0f, 32.0f});
   writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite(previewBack));
   
-  writer.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
-  
-  text.writer(writer);
-  text.sheet(textSheetTex.sheet());
-  text.depth(G2D::depth(Depth::UI_TEXT));
+  textWriter.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
   
   text.scale(2.0f);
   
@@ -138,6 +137,9 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   updatePreviewEntity(reg, previewEntity);
   
   renderProto(reg, writer);
+  
+  writer.append(textWriter);
+  textWriter.clear();
 }
 
 void UIView::renderProto(ECS::Registry &reg, G2D::QuadWriter &writer) {
@@ -212,54 +214,41 @@ void UIView::renderTowerStats(ECS::Registry &reg, G2D::QuadWriter &writer) {
   float top = table.getTop();
   
   writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
+  textWriter.section({camera.transform.toPixels(), textSheetTex.tex()});
   
   writer.quad();
   writer.depth(Depth::UI_ELEM);
   writer.tilePos({0.0f, top}, {128.0f, 1.0f});
   writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("line"));
   
-  top += 5.0f;
-  
   const TowerProto *next = statsProto->get<TowerUpgrades>().next;
   const bool afford = next && next->get<TowerGold>().buy <= reg.get<BaseGold>().gold;
   
+  top += 5.0f;
   writer.quad();
   writer.depth(Depth::UI_ELEM);
   writer.tilePos({4.0f, top}, {120.0f, 16.0f});
   writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("upgrade"));
-  
   if (!afford) {
     writer.quad();
     writer.depth(Depth::UI_ELEM_1);
     writer.dupPos();
     writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("disable"));
   }
-  
-  const float upgradeTextTop = top + 4.0f;
+  if (next) {
+    text.write<Align::RIGHT>({120.0f, top + 4.0f}, next->get<TowerGold>().buy);
+  }
   
   top += 20.0f;
-  
   writer.quad();
   writer.depth(Depth::UI_ELEM);
   writer.tilePos({4.0f, top}, {120.0f, 16.0f});
   writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("sell"));
+  text.write<Align::RIGHT>({120.0f, top + 4.0f}, statsProto->get<TowerGold>().sell);
   
   top += 20.0f;
-  
   writer.quad();
   writer.depth(Depth::UI_ELEM);
   writer.tilePos({0.0f, top}, {128.0f, 1.0f});
   writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(uiSheetTex.sheet().getSprite("line"));
-  
-  top = upgradeTextTop;
-  
-  writer.section({camera.transform.toPixels(), textSheetTex.tex()});
-  
-  if (next) {
-    text.write<Align::RIGHT>({120.0f, top}, next->get<TowerGold>().buy);
-  }
-  
-  top += 20.0f;
-  
-  text.write<Align::RIGHT>({120.0f, top}, statsProto->get<TowerGold>().sell);
 }

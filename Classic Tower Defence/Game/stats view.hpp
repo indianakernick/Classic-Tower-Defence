@@ -15,7 +15,6 @@
 
 class StatsView {
 public:
-
   void setSheetTex(const G2D::SheetTex &);
   void renderTable(TextRenderer &, const StatsTable &);
   void renderButtons(TextRenderer &, const TowerButtons &);

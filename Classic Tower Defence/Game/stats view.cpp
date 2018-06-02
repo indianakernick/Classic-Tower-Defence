@@ -44,13 +44,12 @@ void StatsView::renderButtons(TextRenderer &text, const TowerButtons &buttons) {
   writer.depth(Depth::UI_ELEM);
   writer.tilePos({0.0f, top}, {128.0f, 1.0f});
   writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sheet.getSprite("line"));
-  
-  top += 5.0f;
-  
+
   const Sprite::Rect button = buttons.upgrade
                             ? sheet.getSprite("upgrade")
                             : sheet.getSprite("buy");
   
+  top += 5.0f;
   writer.quad();
   writer.depth(Depth::UI_ELEM);
   writer.tilePos({4.0f, top}, {128.0f, 16.0f});
@@ -62,6 +61,24 @@ void StatsView::renderButtons(TextRenderer &text, const TowerButtons &buttons) {
     writer.dupPos();
     writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sheet.getSprite("disable"));
   }
+  
+  const float upgradeTextTop = top + 4.0f;
+  
+  if (buttons.sell) {
+    top += 20.0f;
+    writer.quad();
+    writer.depth(Depth::UI_ELEM);
+    writer.tilePos({4.0f, top}, {120.0f, 16.0f});
+    writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sheet.getSprite("sell"));
+  }
+  
+  top += 20.0f;
+  writer.quad();
+  writer.depth(Depth::UI_ELEM);
+  writer.tilePos({0.0f, top}, {128.0f, 1.0f});
+  writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sheet.getSprite("line"));
+  
+  top = upgradeTextTop;
   
   tableBottom = NO_TABLE;
 }
