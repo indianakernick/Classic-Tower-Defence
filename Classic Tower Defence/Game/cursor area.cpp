@@ -8,32 +8,36 @@
 
 #include "cursor area.hpp"
 
+#include <Simpleton/Math/rect.hpp>
 #include <Simpleton/SDL/mouse pos.hpp>
 
-void CursorArea::init() {
-  cursors.load();
-}
-
-void CursorArea::update(const glm::mat3 toMeters) {
-  const glm::vec2 pos = SDL::mousePos(toMeters);
-  for (const Pair &pair : pairs) {
-    if (pair.rect.encloses(pos)) {
-      return cursors.set(pair.cursor);
+ECS::EntityID getObjAtPos(ECS::Registry &reg, const glm::vec2 pos) {
+  const auto view = reg.view<Math::RectPP<float>>();
+  for (const ECS::EntityID entity : view) {
+    if (view.get(entity).encloses(pos)) {
+      return entity;
     }
   }
-  cursors.setDefault();
+  return ECS::NULL_ENTITY;
 }
 
-size_t CursorArea::mark(const Rect rect, const SDL_SystemCursor cursor) {
-  const size_t id = pairs.size();
-  pairs.push_back({rect, cursor});
-  return id;
+void updateCursor(
+  ECS::Registry &reg,
+  SDL::SystemCursors &cursors,
+  const ECS::EntityID entity
+) {
+  if (entity == ECS::NULL_ENTITY) {
+    cursors.setDefault();
+  } else {
+    cursors.set(reg.get<SDL_SystemCursor>(entity));
+  }
 }
 
-CursorArea::Pair &CursorArea::get(const size_t id) {
-  return pairs.at(id);
-}
-
-void CursorArea::remove(const size_t id) {
-  pairs.at(id).rect = {};
+InputConsumed handleClick(ECS::Registry &reg, const ECS::EntityID entity) {
+  if (entity != ECS::NULL_ENTITY) {
+    reg.get<ClickHandler>(entity)();
+    return InputConsumed::YES;
+  } else {
+    return InputConsumed::NO;
+  }
 }

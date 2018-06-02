@@ -9,28 +9,15 @@
 #ifndef cursor_area_hpp
 #define cursor_area_hpp
 
-#include <glm/mat3x3.hpp>
-#include <Simpleton/Math/rect.hpp>
+#include <glm/vec2.hpp>
+#include "input consumed.hpp"
+#include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/SDL/system cursors.hpp>
 
-class CursorArea {
-public:
-  using Rect = Math::RectPP<float>;
-  struct Pair {
-    Rect rect;
-    SDL_SystemCursor cursor;
-  };
+using ClickHandler = std::function<void ()>;
 
-  void init();
-  void update(glm::mat3);
-  
-  size_t mark(Rect, SDL_SystemCursor);
-  Pair &get(size_t);
-  void remove(size_t);
-  
-private:
-  SDL::SystemCursors cursors;
-  std::vector<Pair> pairs;
-};
+ECS::EntityID getObjAtPos(ECS::Registry &, glm::vec2);
+void updateCursor(ECS::Registry &, SDL::SystemCursors &, ECS::EntityID);
+InputConsumed handleClick(ECS::Registry &, ECS::EntityID);
 
 #endif

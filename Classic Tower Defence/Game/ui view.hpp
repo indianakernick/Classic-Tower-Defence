@@ -11,10 +11,10 @@
 
 #include "stats view.hpp"
 #include "stats model.hpp"
-#include "cursor area.hpp"
 #include "text renderer.hpp"
 #include "input consumed.hpp"
 #include <Simpleton/Camera 2D/camera.hpp>
+#include <Simpleton/SDL/system cursors.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 #include <Simpleton/Graphics 2D/sheet tex.hpp>
 
@@ -36,10 +36,11 @@ private:
   Cam2D::ZoomToFit zoom;
   TextRenderer text;
   G2D::QuadWriter textWriter;
-  CursorArea cursor;
+  ECS::Registry uiReg;
   ECS::EntityID previewEntity;
   StatsModel statsModel;
   StatsView statsView;
+  SDL::SystemCursors cursors;
 };
 
 #endif

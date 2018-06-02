@@ -11,6 +11,7 @@
 #include "depth.hpp"
 #include "next wave.hpp"
 #include "load level.hpp"
+#include "cursor area.hpp"
 #include "get wave info.hpp"
 #include "base gold tag.hpp"
 #include "level info tag.hpp"
@@ -30,6 +31,18 @@ namespace {
   };
   const Rect NEXT_WAVE = {381.0f, 8.0f, 494.0f, 31.0f};
   const Rect PREVIEW = {603.0f, 3.0f, 636.0f, 36.0f};
+  
+  template <typename Function>
+  void createButton(
+    ECS::Registry &reg,
+    const Rect rect,
+    Function &&function
+  ) {
+    const ECS::EntityID entity = reg.create();
+    reg.assign<Rect>(entity, rect);
+    reg.assign<SDL_SystemCursor>(entity, SDL_SYSTEM_CURSOR_HAND);
+    reg.assign<ClickHandler>(entity, std::forward<Function>(function));
+  }
 }
 
 void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
@@ -48,12 +61,22 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   text.sheet(textSheetTex.sheet());
   text.depth(G2D::depth(Depth::UI_TEXT));
   
-  cursor.init();
-  for (const Rect &tower : TOWERS) {
-    cursor.mark(tower, SDL_SYSTEM_CURSOR_HAND);
+  cursors.load();
+  
+  for (size_t i = 0; i != 4; ++i) {
+    createButton(uiReg, TOWERS[i], [i, this, &reg] {
+      statsModel.selectTower(reg, i);
+    });
   }
-  cursor.mark(NEXT_WAVE, SDL_SYSTEM_CURSOR_HAND);
-  cursor.mark(PREVIEW, SDL_SYSTEM_CURSOR_HAND);
+  createButton(uiReg, NEXT_WAVE, [this, &reg] {
+    if (nextWave(reg) == WaveStatus::FINISHED_LEVEL) {
+      statsModel.unselect();
+      loadNextLevel(reg);
+    }
+  });
+  createButton(uiReg, PREVIEW, [this, &reg] {
+    statsModel.selectPreview(reg);
+  });
   
   previewEntity = makePreviewEntity(reg);
 }
@@ -62,38 +85,23 @@ void UIView::updateCam(const Cam2D::Params params) {
   camera.update(params, zoom);
 }
 
-InputConsumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
-  if (e.type != SDL_MOUSEBUTTONDOWN) {
-    return InputConsumed::NO;
-  }
-  
-  const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters(), e.button);
-  
-  for (size_t i = 0; i != 4; ++i) {
-    if (TOWERS[i].encloses(pos)) {
-      statsModel.selectTower(reg, i);
-      break;
-    }
-  }
-  
-  if (NEXT_WAVE.encloses(pos)) {
-    if (nextWave(reg) == WaveStatus::FINISHED_LEVEL) {
-      statsModel.unselect();
-      loadNextLevel(reg);
-    }
-  } else if (PREVIEW.encloses(pos)) {
-    statsModel.selectPreview(reg);
+InputConsumed UIView::input(ECS::Registry &, const SDL_Event &e) {
+  if (e.type == SDL_MOUSEBUTTONDOWN) {
+    const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters(), e.button);
+    return handleClick(uiReg, getObjAtPos(uiReg, pos));
   } else {
     return InputConsumed::NO;
   }
-  
-  return InputConsumed::YES;
 }
 
 void UIView::updateAnim(ECS::Registry &, float) {}
 
 void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
-  cursor.update(camera.transform.toMeters());
+  updateCursor(
+    uiReg,
+    cursors,
+    getObjAtPos(uiReg, SDL::mousePos(camera.transform.toMeters()))
+  );
 
   writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
   
