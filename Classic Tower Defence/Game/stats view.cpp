@@ -10,9 +10,11 @@
 
 #include "depth.hpp"
 
+void StatsView::renderName(TextRenderer &text, const std::string &name) {
+  text.write({4.0f, 204.0f}, name);
+}
+
 void StatsView::renderTable(TextRenderer &text, const StatsTable &table) {
-  assert(tableBottom == NO_TABLE);
-  
   const float left = 4.0f;
   const float right = 124.0f;
   const float vertAdv = 12.0f;
@@ -57,7 +59,7 @@ void StatsView::renderButtons(
   top += 5.0f;
   sw.writer.quad();
   sw.writer.depth(Depth::UI_ELEM);
-  sw.writer.tilePos({4.0f, top}, {128.0f, 16.0f});
+  sw.writer.tilePos({4.0f, top}, {120.0f, 16.0f});
   sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(button);
   
   if (!buttons.afford) {
@@ -65,8 +67,9 @@ void StatsView::renderButtons(
     sw.writer.depth(Depth::UI_ELEM_1);
     sw.writer.dupPos();
     sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("disable"));
-    text.write<Align::RIGHT>({120.0f, top + 4.0f}, price);
   }
+  
+  text.write<Align::RIGHT>({120.0f, top + 4.0f}, price);
   
   if (buttons.sell) {
     top += 20.0f;

@@ -15,6 +15,7 @@
 
 class StatsView {
 public:
+  void renderName(TextRenderer &, const std::string &);
   void renderTable(TextRenderer &, const StatsTable &);
   void renderButtons(G2D::SheetWriter, TextRenderer &, const TowerButtons &);
   

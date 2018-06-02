@@ -9,15 +9,14 @@
 #ifndef ui_view_hpp
 #define ui_view_hpp
 
+#include "stats view.hpp"
+#include "stats model.hpp"
 #include "cursor area.hpp"
 #include "text renderer.hpp"
 #include "input consumed.hpp"
-#include <Simpleton/ECS/registry.hpp>
-#include <Simpleton/ECS/prototype.hpp>
 #include <Simpleton/Camera 2D/camera.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
 #include <Simpleton/Graphics 2D/sheet tex.hpp>
-#include <Simpleton/Graphics 2D/quad writer.hpp>
 
 class UIView {
 public:
@@ -39,13 +38,8 @@ private:
   G2D::QuadWriter textWriter;
   CursorArea cursor;
   ECS::EntityID previewEntity;
-  Sprite::ID base;
-  Sprite::ID previewBack;
-  const ECS::Prototype *statsProto = nullptr;
-  
-  void renderProto(ECS::Registry &, G2D::QuadWriter &);
-  void renderUnitStats(G2D::QuadWriter &);
-  void renderTowerStats(ECS::Registry &, G2D::QuadWriter &);
+  StatsModel statsModel;
+  StatsView statsView;
 };
 
 #endif

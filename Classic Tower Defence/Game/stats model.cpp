@@ -19,7 +19,7 @@
 #include "tower upgrades component.hpp"
 #include "common tower stats component.hpp"
 
-void StatsModel::selectTower(ECS::Registry &reg, const int i) {
+void StatsModel::selectTower(ECS::Registry &reg, const size_t i) {
   entity = ECS::NULL_ENTITY;
   proto = getTowerProto(reg, i * 3);
 }

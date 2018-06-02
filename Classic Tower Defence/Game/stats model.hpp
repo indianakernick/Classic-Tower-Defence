@@ -15,7 +15,7 @@
 
 class StatsModel {
 public:
-  void selectTower(ECS::Registry &, int);
+  void selectTower(ECS::Registry &, size_t);
   void selectPreview(ECS::Registry &);
   void unselect();
   
