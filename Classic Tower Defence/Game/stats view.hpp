@@ -11,18 +11,30 @@
 
 #include "stats table.hpp"
 #include "text renderer.hpp"
+#include <experimental/optional>
 #include <Simpleton/Graphics 2D/sheet writer.hpp>
 
 class StatsView {
 public:
-  static void renderName(TextRenderer &, const std::string &);
-  static float renderTable(TextRenderer &, const StatsTable &);
-  static void renderButtons(float, G2D::SheetWriter, TextRenderer &, const TowerButtons &);
+  void setName(const std::string &);
+  void setTable(const StatsTable &);
+  void setButtons(const TowerButtons &);
+  void setNoButtons();
+
+  void render(G2D::SheetWriter, TextRenderer &) const;
   
 private:
-  static void renderLine(G2D::SheetWriter, float);
+  std::string name;
+  StatsTable table;
+  std::experimental::optional<TowerButtons> buttons;
+
+  void renderName(TextRenderer &) const;
+  float renderTable(TextRenderer &) const;
+  void renderButtons(float, G2D::SheetWriter, TextRenderer &) const;
+  
+  static void renderLine(float, G2D::SheetWriter);
   static void renderDisable(G2D::SheetWriter);
-  static void renderButton(G2D::SheetWriter, float, Sprite::ID);
+  static void renderButton(float, G2D::SheetWriter, Sprite::ID);
 };
 
 #endif

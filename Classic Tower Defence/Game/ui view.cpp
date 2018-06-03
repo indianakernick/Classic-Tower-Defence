@@ -110,17 +110,14 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   
   text.scale(1.0f);
   if (statsModel.hasTable()) {
-    statsView.renderName(text, statsModel.getName(reg));
-    const float bottom = statsView.renderTable(text, statsModel.getTable(reg));
+    statsView.setName(statsModel.getName(reg));
+    statsView.setTable(statsModel.getTable(reg));
     if (statsModel.hasButtons(reg)) {
-      textWriter.section({camera.transform.toPixels(), textSheetTex.tex()});
-      statsView.renderButtons(
-        bottom,
-        {uiSheetTex.sheet(), writer},
-        text,
-        statsModel.getButtons(reg)
-      );
+      statsView.setButtons(statsModel.getButtons(reg));
+    } else {
+      statsView.setNoButtons();
     }
+    statsView.render({uiSheetTex.sheet(), writer}, text);
   }
   
   writer.append(textWriter);
