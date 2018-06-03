@@ -74,7 +74,6 @@
 		4568265F209AA2F600BA6AE8 /* 5x8 ascii.png in Resources */ = {isa = PBXBuildFile; fileRef = 4568265D209AA2F500BA6AE8 /* 5x8 ascii.png */; };
 		45682660209AA2F600BA6AE8 /* 5x8 ascii.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4568265E209AA2F600BA6AE8 /* 5x8 ascii.atlas */; };
 		45682663209AA52400BA6AE8 /* next wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682661209AA52400BA6AE8 /* next wave.cpp */; };
-		45682668209BFF9400BA6AE8 /* afford tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682666209BFF9400BA6AE8 /* afford tower.cpp */; };
 		45682697209D3AD800BA6AE8 /* tower projectile rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682695209D3AD800BA6AE8 /* tower projectile rendering system.cpp */; };
 		4568269A209D4FE400BA6AE8 /* tower beam rendering system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45682698209D4FE400BA6AE8 /* tower beam rendering system.cpp */; };
 		457EB34120BF94310054E16F /* stats view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 457EB33F20BF94310054E16F /* stats view.cpp */; };
@@ -450,8 +449,6 @@
 		45682662209AA52400BA6AE8 /* next wave.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "next wave.hpp"; sourceTree = "<group>"; };
 		45682664209BFBFC00BA6AE8 /* base gold tag.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "base gold tag.hpp"; sourceTree = "<group>"; };
 		45682665209BFE6B00BA6AE8 /* tower gold component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower gold component.hpp"; sourceTree = "<group>"; };
-		45682666209BFF9400BA6AE8 /* afford tower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "afford tower.cpp"; sourceTree = "<group>"; };
-		45682667209BFF9400BA6AE8 /* afford tower.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "afford tower.hpp"; sourceTree = "<group>"; };
 		45682669209C44ED00BA6AE8 /* big robot.anim */ = {isa = PBXFileReference; lastKnownFileType = file; path = "big robot.anim"; sourceTree = "<group>"; };
 		4568266A209C450400BA6AE8 /* big robot 2 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 3.png"; sourceTree = "<group>"; };
 		4568266B209C450400BA6AE8 /* big robot 2 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big robot 2 7.png"; sourceTree = "<group>"; };
@@ -889,8 +886,6 @@
 				45388568208D9C72003EB260 /* create spawner.hpp */,
 				45682661209AA52400BA6AE8 /* next wave.cpp */,
 				45682662209AA52400BA6AE8 /* next wave.hpp */,
-				45682666209BFF9400BA6AE8 /* afford tower.cpp */,
-				45682667209BFF9400BA6AE8 /* afford tower.hpp */,
 				453B289620B113E900F6E9E6 /* get wave info.cpp */,
 				453B289720B113E900F6E9E6 /* get wave info.hpp */,
 				453B289920B1166E00F6E9E6 /* preview entity.cpp */,
@@ -1671,7 +1666,6 @@
 				45682663209AA52400BA6AE8 /* next wave.cpp in Sources */,
 				45F24E05209EA0E400EAE60D /* tower rof system.cpp in Sources */,
 				453B15212090508800BFA00D /* unit damage system.cpp in Sources */,
-				45682668209BFF9400BA6AE8 /* afford tower.cpp in Sources */,
 				4563D58A20969AA100DB2510 /* splash damage system.cpp in Sources */,
 				45C6DD7F20A018E2002A133F /* load waves.cpp in Sources */,
 				4538858D208EC736003EB260 /* tower sound system.cpp in Sources */,

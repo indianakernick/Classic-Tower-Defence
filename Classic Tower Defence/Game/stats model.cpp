@@ -8,11 +8,13 @@
 
 #include "stats model.hpp"
 
+#include "map tag.hpp"
 #include "create tower.hpp"
+#include "upgrade tower.hpp"
 #include "base gold tag.hpp"
 #include "preview entity.hpp"
 #include "name component.hpp"
-#include <experimental/optional>
+#include "position component.hpp"
 #include "tower gold component.hpp"
 #include "unit stats component.hpp"
 #include "splash tower component.hpp"
@@ -29,9 +31,74 @@ void StatsModel::selectPreview(ECS::Registry &reg) {
   proto = getPreviewProto(reg);
 }
 
+void StatsModel::selectEntity(const ECS::EntityID ent) {
+  entity = ent;
+  proto = nullptr;
+}
+
 void StatsModel::unselect() {
   entity = ECS::NULL_ENTITY;
   proto = nullptr;
+}
+
+bool StatsModel::canBuy(ECS::Registry &reg, const glm::ivec2 pos) {
+  if (entity != ECS::NULL_ENTITY || proto == nullptr) {
+    return false;
+  }
+  
+  if (proto->get<TowerGold>().buy > reg.get<BaseGold>().gold) {
+    return false;
+  }
+  
+  const Map &map = reg.get<Map>();
+  if (map.outOfRange(pos)) {
+    return false;
+  }
+  
+  if (map[pos] != TileType::PLATFORM) {
+    return false;
+  }
+  
+  const auto towers = reg.view<CommonTowerStats, Position>();
+  for (const ECS::EntityID entity : towers) {
+    if (glm::vec2(pos) == towers.get<Position>(entity).pos) {
+      return false;
+    }
+  }
+  
+  return true;
+}
+
+void StatsModel::buy(ECS::Registry &reg, const glm::ivec2 pos) {
+  assert(canBuy(reg, pos));
+  
+  reg.get<BaseGold>().gold -= proto->get<TowerGold>().buy;
+  const ECS::EntityID tower = (*proto)(reg);
+  reg.assign<Position>(tower, pos);
+}
+
+void StatsModel::sell(ECS::Registry &reg) {
+  if (entity == ECS::NULL_ENTITY || proto != nullptr) {
+    return;
+  }
+  
+  reg.get<BaseGold>().gold += reg.get<TowerGold>(entity).sell;
+  reg.destroy(entity);
+  entity = ECS::NULL_ENTITY;
+}
+
+void StatsModel::upgrade(ECS::Registry &reg) {
+  if (entity == ECS::NULL_ENTITY || proto != nullptr) {
+    return;
+  }
+  
+  uint32_t &gold = reg.get<BaseGold>().gold;
+  const TowerProto *const next = reg.get<TowerUpgrades>(entity).next;
+  const uint32_t cost = next ? next->get<TowerGold>().buy : uint32_t(-1);
+  if (cost <= gold) {
+    gold -= cost;
+    upgradeTower(reg, entity);
+  }
 }
 
 bool StatsModel::hasTable() const {
@@ -65,9 +132,7 @@ namespace {
     
     return table;
   }
-  
-  using OptionalSplash = std::experimental::optional<SplashTower>;
-  
+
   StatsTable getTowerTable(const CommonTowerStats &stats) {
     StatsTable table;
     

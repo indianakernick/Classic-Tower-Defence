@@ -9,6 +9,7 @@
 #ifndef stats_model_hpp
 #define stats_model_hpp
 
+#include <glm/vec2.hpp>
 #include "stats table.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/ECS/prototype.hpp>
@@ -17,7 +18,13 @@ class StatsModel {
 public:
   void selectTower(ECS::Registry &, size_t);
   void selectPreview(ECS::Registry &);
+  void selectEntity(ECS::EntityID);
   void unselect();
+  
+  bool canBuy(ECS::Registry &, glm::ivec2);
+  void buy(ECS::Registry &, glm::ivec2);
+  void sell(ECS::Registry &);
+  void upgrade(ECS::Registry &);
   
   bool hasTable() const;
   std::string getName(ECS::Registry &) const;

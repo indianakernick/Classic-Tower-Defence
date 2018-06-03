@@ -8,7 +8,6 @@
 
 #include "upgrade tower.hpp"
 
-#include "towers tag.hpp"
 #include "tower upgrades component.hpp"
 
 void upgradeTower(ECS::Registry &reg, const ECS::EntityID entity) {
