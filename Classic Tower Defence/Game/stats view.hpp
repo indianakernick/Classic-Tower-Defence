@@ -15,14 +15,14 @@
 
 class StatsView {
 public:
-  void renderName(TextRenderer &, const std::string &);
-  void renderTable(TextRenderer &, const StatsTable &);
-  void renderButtons(G2D::SheetWriter, TextRenderer &, const TowerButtons &);
+  static void renderName(TextRenderer &, const std::string &);
+  static float renderTable(TextRenderer &, const StatsTable &);
+  static void renderButtons(float, G2D::SheetWriter, TextRenderer &, const TowerButtons &);
   
 private:
-  static constexpr float NO_TABLE = -1.0f;
-
-  float tableBottom = NO_TABLE;
+  static void renderLine(G2D::SheetWriter, float);
+  static void renderDisable(G2D::SheetWriter);
+  static void renderButton(G2D::SheetWriter, float, Sprite::ID);
 };
 
 #endif

@@ -1384,16 +1384,8 @@
 				453B288D20B0030700F6E9E6 /* cursor area.hpp */,
 				453B28A720B27D5300F6E9E6 /* text renderer.inl */,
 				453B28A620B27D5300F6E9E6 /* text renderer.hpp */,
-				459BED5A20BE59E3001BDA25 /* stats model.cpp */,
-				459BED5B20BE59E3001BDA25 /* stats model.hpp */,
-				457EB33E20BF88C70054E16F /* stats table.hpp */,
-				457EB33F20BF94310054E16F /* stats view.cpp */,
-				457EB34020BF94310054E16F /* stats view.hpp */,
-				457EB35320C2B2430054E16F /* game info model.cpp */,
-				457EB35420C2B2430054E16F /* game info model.hpp */,
-				457EB35720C2B24E0054E16F /* game info.hpp */,
-				457EB35920C2B2590054E16F /* game info view.cpp */,
-				457EB35A20C2B25A0054E16F /* game info view.hpp */,
+				457EB35E20C378170054E16F /* Stats */,
+				457EB35F20C3781E0054E16F /* Game Info */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1405,6 +1397,30 @@
 				4568265D209AA2F500BA6AE8 /* 5x8 ascii.png */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		457EB35E20C378170054E16F /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				459BED5A20BE59E3001BDA25 /* stats model.cpp */,
+				459BED5B20BE59E3001BDA25 /* stats model.hpp */,
+				457EB33E20BF88C70054E16F /* stats table.hpp */,
+				457EB33F20BF94310054E16F /* stats view.cpp */,
+				457EB34020BF94310054E16F /* stats view.hpp */,
+			);
+			name = Stats;
+			sourceTree = "<group>";
+		};
+		457EB35F20C3781E0054E16F /* Game Info */ = {
+			isa = PBXGroup;
+			children = (
+				457EB35320C2B2430054E16F /* game info model.cpp */,
+				457EB35420C2B2430054E16F /* game info model.hpp */,
+				457EB35720C2B24E0054E16F /* game info.hpp */,
+				457EB35920C2B2590054E16F /* game info view.cpp */,
+				457EB35A20C2B25A0054E16F /* game info view.hpp */,
+			);
+			name = "Game Info";
 			sourceTree = "<group>";
 		};
 		45DBB7F52092A9CA0081CDE1 /* Effects */ = {
