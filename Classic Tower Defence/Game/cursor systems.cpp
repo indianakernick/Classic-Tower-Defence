@@ -1,18 +1,18 @@
 //
-//  cursor area.cpp
+//  cursor systems.cpp
 //  Classic Tower Defence
 //
 //  Created by Indi Kernick on 19/5/18.
 //  Copyright © 2018 Indi Kernick. All rights reserved.
 //
 
-#include "cursor area.hpp"
+#include "cursor systems.hpp"
 
-#include <Simpleton/Math/rect.hpp>
+#include "basic components.hpp"
 #include <Simpleton/SDL/mouse pos.hpp>
 
 ECS::EntityID getObjAtPos(ECS::Registry &reg, const glm::vec2 pos) {
-  const auto view = reg.view<Math::RectPP<float>>();
+  const auto view = reg.view<Bounds>();
   for (const ECS::EntityID entity : view) {
     if (view.get(entity).encloses(pos)) {
       return entity;

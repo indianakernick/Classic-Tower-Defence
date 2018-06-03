@@ -60,7 +60,7 @@
 		453B288320AFC29D00F6E9E6 /* ui.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B288120AFC29C00F6E9E6 /* ui.png */; };
 		453B288620AFD4B600F6E9E6 /* ui view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B288420AFD4B600F6E9E6 /* ui view.cpp */; };
 		453B288920AFE39B00F6E9E6 /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 453B288820AFE39B00F6E9E6 /* sounds.json */; };
-		453B288E20B0030700F6E9E6 /* cursor area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B288C20B0030700F6E9E6 /* cursor area.cpp */; };
+		453B288E20B0030700F6E9E6 /* cursor systems.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B288C20B0030700F6E9E6 /* cursor systems.cpp */; };
 		453B289820B113E900F6E9E6 /* get wave info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289620B113E900F6E9E6 /* get wave info.cpp */; };
 		453B289B20B1166E00F6E9E6 /* preview entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289920B1166E00F6E9E6 /* preview entity.cpp */; };
 		453B289F20B1287000F6E9E6 /* count live units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B289D20B1287000F6E9E6 /* count live units.cpp */; };
@@ -359,8 +359,8 @@
 		453B288820AFE39B00F6E9E6 /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
 		453B288A20AFE7EB00F6E9E6 /* input consumed.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "input consumed.hpp"; sourceTree = "<group>"; };
 		453B288B20AFFABE00F6E9E6 /* level info tag.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "level info tag.hpp"; sourceTree = "<group>"; };
-		453B288C20B0030700F6E9E6 /* cursor area.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "cursor area.cpp"; sourceTree = "<group>"; };
-		453B288D20B0030700F6E9E6 /* cursor area.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cursor area.hpp"; sourceTree = "<group>"; };
+		453B288C20B0030700F6E9E6 /* cursor systems.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "cursor systems.cpp"; sourceTree = "<group>"; };
+		453B288D20B0030700F6E9E6 /* cursor systems.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "cursor systems.hpp"; sourceTree = "<group>"; };
 		453B289020B0F78300F6E9E6 /* preview back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preview back.png"; sourceTree = "<group>"; };
 		453B289120B0F78300F6E9E6 /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
 		453B289620B113E900F6E9E6 /* get wave info.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "get wave info.cpp"; sourceTree = "<group>"; };
@@ -504,6 +504,7 @@
 		457EB35720C2B24E0054E16F /* game info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game info.hpp"; sourceTree = "<group>"; };
 		457EB35920C2B2590054E16F /* game info view.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "game info view.cpp"; sourceTree = "<group>"; };
 		457EB35A20C2B25A0054E16F /* game info view.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "game info view.hpp"; sourceTree = "<group>"; };
+		457EB36020C38BE40054E16F /* basic components.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "basic components.hpp"; sourceTree = "<group>"; };
 		459BED5A20BE59E3001BDA25 /* stats model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "stats model.cpp"; sourceTree = "<group>"; };
 		459BED5B20BE59E3001BDA25 /* stats model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "stats model.hpp"; sourceTree = "<group>"; };
 		45BB379620AC4652003C31F8 /* aura tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aura tower component.hpp"; sourceTree = "<group>"; };
@@ -1380,10 +1381,11 @@
 			children = (
 				453B288420AFD4B600F6E9E6 /* ui view.cpp */,
 				453B288520AFD4B600F6E9E6 /* ui view.hpp */,
-				453B288C20B0030700F6E9E6 /* cursor area.cpp */,
-				453B288D20B0030700F6E9E6 /* cursor area.hpp */,
+				453B288C20B0030700F6E9E6 /* cursor systems.cpp */,
+				453B288D20B0030700F6E9E6 /* cursor systems.hpp */,
 				453B28A720B27D5300F6E9E6 /* text renderer.inl */,
 				453B28A620B27D5300F6E9E6 /* text renderer.hpp */,
+				457EB36020C38BE40054E16F /* basic components.hpp */,
 				457EB35E20C378170054E16F /* Stats */,
 				457EB35F20C3781E0054E16F /* Game Info */,
 			);
@@ -1650,7 +1652,7 @@
 			files = (
 				459BED5C20BE59E3001BDA25 /* stats model.cpp in Sources */,
 				4563D604209712B100DB2510 /* tower range rendering system.cpp in Sources */,
-				453B288E20B0030700F6E9E6 /* cursor area.cpp in Sources */,
+				453B288E20B0030700F6E9E6 /* cursor systems.cpp in Sources */,
 				453884EE208B1607003EB260 /* spawner system.cpp in Sources */,
 				45682697209D3AD800BA6AE8 /* tower projectile rendering system.cpp in Sources */,
 				453B15242090522F00BFA00D /* unit regen system.cpp in Sources */,

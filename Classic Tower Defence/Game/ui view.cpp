@@ -11,32 +11,31 @@
 #include "depth.hpp"
 #include "next wave.hpp"
 #include "load level.hpp"
-#include "cursor area.hpp"
+#include "cursor systems.hpp"
 #include "preview entity.hpp"
 #include "game info view.hpp"
 #include "game info model.hpp"
+#include "basic components.hpp"
 #include <Simpleton/SDL/mouse pos.hpp>
 
 namespace {
-  using Rect = Math::RectPP<float>;
-  
-  const Rect TOWERS[4] {
+  const Bounds TOWERS[4] {
     {8.0f, 49.0f, 57.0f, 98.0f},
     {70.0f, 49.0f, 119.0f, 98.0f},
     {8.0f, 123.0f, 57.0f, 172.0f},
     {70.0f, 123.0f, 119, 172.0f}
   };
-  const Rect NEXT_WAVE = {381.0f, 8.0f, 494.0f, 31.0f};
-  const Rect PREVIEW = {603.0f, 3.0f, 636.0f, 36.0f};
+  const Bounds NEXT_WAVE = {381.0f, 8.0f, 494.0f, 31.0f};
+  const Bounds PREVIEW = {603.0f, 3.0f, 636.0f, 36.0f};
   
   template <typename Function>
   void createButton(
     ECS::Registry &reg,
-    const Rect rect,
+    const Bounds rect,
     Function &&function
   ) {
     const ECS::EntityID entity = reg.create();
-    reg.assign<Rect>(entity, rect);
+    reg.assign<Bounds>(entity, rect);
     reg.assign<SDL_SystemCursor>(entity, SDL_SYSTEM_CURSOR_HAND);
     reg.assign<ClickHandler>(entity, std::forward<Function>(function));
   }
