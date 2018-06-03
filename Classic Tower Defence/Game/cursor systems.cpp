@@ -33,11 +33,11 @@ void updateCursor(
   }
 }
 
-InputConsumed handleClick(ECS::Registry &reg, const ECS::EntityID entity) {
+Consumed handleClick(ECS::Registry &reg, const ECS::EntityID entity) {
   if (entity != ECS::NULL_ENTITY) {
     reg.get<ClickHandler>(entity)();
-    return InputConsumed::YES;
+    return Consumed::YES;
   } else {
-    return InputConsumed::NO;
+    return Consumed::NO;
   }
 }

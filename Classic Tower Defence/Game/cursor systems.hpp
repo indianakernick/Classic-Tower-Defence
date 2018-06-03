@@ -16,6 +16,6 @@
 
 ECS::EntityID getObjAtPos(ECS::Registry &, glm::vec2);
 void updateCursor(ECS::Registry &, SDL::SystemCursors &, ECS::EntityID);
-InputConsumed handleClick(ECS::Registry &, ECS::EntityID);
+Consumed handleClick(ECS::Registry &, ECS::EntityID);
 
 #endif

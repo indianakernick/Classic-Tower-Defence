@@ -26,6 +26,35 @@ void StatsView::setNoButtons() {
   buttons = std::experimental::nullopt;
 }
 
+void StatsView::clearState() {
+  name = std::experimental::nullopt;
+  table = std::experimental::nullopt;
+  buttons = std::experimental::nullopt;
+}
+
+Bounds StatsView::sellBounds() const {
+  if (!buttons || buttons->sell == 0) {
+    return {};
+  }
+  
+  float top = 221.0f;
+  top += 12.0f * table->size();
+  top += 5.0f;
+  top += 20.0f;
+  return {4.0f, top, 124.0f, top + 16.0f};
+}
+
+Bounds StatsView::upgradeBounds() const {
+  if (!buttons || buttons->upgrade == 0 || !buttons->afford) {
+    return {};
+  }
+  
+  float top = 221.0f;
+  top += 12.0f * table->size();
+  top += 5.0f;
+  return {4.0f, top, 124.0f, top + 16.0f};
+}
+
 void StatsView::render(const G2D::SheetWriter sw, TextRenderer &text) const {
   renderName(text);
   const float top = renderTable(text);
@@ -35,15 +64,17 @@ void StatsView::render(const G2D::SheetWriter sw, TextRenderer &text) const {
   currentParams.color = glm::vec4{1.0f};
   text.writer().section(currentParams);
   
-  renderLine(top, sw);
-  
-  if (buttons) {
-    renderButtons(top, sw, text);
+  if (table) {
+    renderLine(top, sw);
+    renderLine(216.0f, sw);
   }
+  renderButtons(top, sw, text);
 }
 
 void StatsView::renderName(TextRenderer &text) const {
-  text.write({4.0f, 204.0f}, name);
+  if (name) {
+    text.write({4.0f, 204.0f}, *name);
+  }
 }
 
 float StatsView::renderTable(TextRenderer &text) const {
@@ -52,7 +83,11 @@ float StatsView::renderTable(TextRenderer &text) const {
   const float vertAdv = 12.0f;
   float top = 221.0f;
   
-  for (const StatsTableRow &row : table) {
+  if (!table) {
+    return top;
+  }
+  
+  for (const StatsTableRow &row : *table) {
     const glm::vec2 pos = text.write({left, top}, row.first);
     text.write(pos, ':');
     text.write<Align::RIGHT>({right, top}, row.second);
@@ -67,11 +102,15 @@ void StatsView::renderButtons(
   const G2D::SheetWriter sw,
   TextRenderer &text
 ) const {
+  if (!buttons) {
+    return;
+  }
+
   // buy/upgrade button
   const Sprite::ID button = sw.sheet.getIDfromName(
-    buttons->upgrade ? "upgrade" : "buy"
+    buttons->buy ? "buy" : "upgrade"
   );
-  const uint32_t price = buttons->upgrade ? buttons->upgrade : buttons->buy;
+  const uint32_t price = buttons->buy ? buttons->buy : buttons->upgrade;
   top += 5.0f;
   renderButton(top, sw, button);
   if (!buttons->afford) {

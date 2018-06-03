@@ -11,7 +11,9 @@
 
 #include "stats table.hpp"
 #include "text renderer.hpp"
+#include "basic components.hpp"
 #include <experimental/optional>
+#include <Simpleton/Math/rect.hpp>
 #include <Simpleton/Graphics 2D/sheet writer.hpp>
 
 class StatsView {
@@ -19,13 +21,18 @@ public:
   void setName(const std::string &);
   void setTable(const StatsTable &);
   void setButtons(const TowerButtons &);
+  
   void setNoButtons();
+  void clearState();
+  
+  Bounds sellBounds() const;
+  Bounds upgradeBounds() const;
 
   void render(G2D::SheetWriter, TextRenderer &) const;
   
 private:
-  std::string name;
-  StatsTable table;
+  std::experimental::optional<std::string> name;
+  std::experimental::optional<StatsTable> table;
   std::experimental::optional<TowerButtons> buttons;
 
   void renderName(TextRenderer &) const;

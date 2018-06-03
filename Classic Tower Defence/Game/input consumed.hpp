@@ -11,13 +11,13 @@
 
 #include <cstdint>
 
-enum class InputConsumed : uint8_t {
+enum class Consumed : uint8_t {
   NO,
   YES
 };
 
-constexpr bool operator!(const InputConsumed input) {
-  return !static_cast<bool>(input);
+constexpr bool operator!(const Consumed input) {
+  return input == Consumed::NO;
 }
 
 #endif

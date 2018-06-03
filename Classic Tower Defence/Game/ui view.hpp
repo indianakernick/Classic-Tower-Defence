@@ -9,10 +9,7 @@
 #ifndef ui_view_hpp
 #define ui_view_hpp
 
-#include "stats view.hpp"
-#include "stats model.hpp"
-#include "text renderer.hpp"
-#include "input consumed.hpp"
+#include "stats controller.hpp"
 #include <Simpleton/Camera 2D/camera.hpp>
 #include <Simpleton/SDL/system cursors.hpp>
 #include <Simpleton/Camera 2D/zoom to fit.hpp>
@@ -24,7 +21,7 @@ public:
   
   void init(ECS::Registry &, G2D::Renderer &);
   void updateCam(Cam2D::Params);
-  InputConsumed input(ECS::Registry &, const SDL_Event &);
+  Consumed input(ECS::Registry &, const SDL_Event &);
   void updateAnim(ECS::Registry &, float);
   void render(ECS::Registry &, G2D::QuadWriter &);
 
@@ -38,9 +35,11 @@ private:
   G2D::QuadWriter textWriter;
   ECS::Registry uiReg;
   ECS::EntityID previewEntity;
-  StatsModel statsModel;
-  StatsView statsView;
+  StatsController stats;
   SDL::SystemCursors cursors;
+  
+  Cam2D::Camera gameCam;
+  Cam2D::ZoomToFit gameZoom;
 };
 
 #endif

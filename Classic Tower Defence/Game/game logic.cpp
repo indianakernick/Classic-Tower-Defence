@@ -8,11 +8,9 @@
 
 #include "game logic.hpp"
 
-#include <string>
 #include "load level.hpp"
 #include "load towers.hpp"
 #include "create level.hpp"
-#include "create tower.hpp"
 #include "create spawner.hpp"
 #include "spawner system.hpp"
 #include "tower rof system.hpp"
@@ -36,19 +34,6 @@ void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
   loadTowers(reg);
   loadLevel(reg, 0);
-  
-  createTower(reg, 0, {10, 4});
-  createTower(reg, 1, {3, 5});
-  createTower(reg, 2, {6, 5});
-  createTower(reg, 3, {6, 2});
-  createTower(reg, 4, {8, 8});
-  createTower(reg, 5, {10, 7});
-  createTower(reg, 6, {3, 2});
-  createTower(reg, 7, {15, 9});
-  createTower(reg, 8, {3, 8});
-  createTower(reg, 9, {5, 8});
-  createTower(reg, 10, {12, 7});
-  createTower(reg, 11, {13, 3});
 }
 
 void GameLogic::update(ECS::Registry &reg, float delta) {

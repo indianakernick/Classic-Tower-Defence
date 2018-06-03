@@ -47,6 +47,11 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   zoom.setSize({640.0f, 360.0f});
   camera.transform.setSize({640.0f, 360.0f});
   
+  gameCam.transform.setOrigin(Cam2D::Origin::BOTTOM_LEFT);
+  gameCam.setPos({-4.0f, 0.0f});
+  gameZoom.setSize({20.0f, 11.25f});
+  gameCam.transform.setSize({20.0f, 11.25f});
+  
   uiSheetTex.load(renderer, "ui");
   textSheetTex.load(renderer, "5x8 ascii");
   radiusSheetTex.load(renderer, "radius");
@@ -61,17 +66,17 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   
   for (size_t i = 0; i != 4; ++i) {
     createButton(uiReg, TOWERS[i], [i, this, &reg] {
-      statsModel.selectTower(reg, i);
+      stats.model.selectTower(reg, i);
     });
   }
   createButton(uiReg, NEXT_WAVE, [this, &reg] {
     if (nextWave(reg) == WaveStatus::FINISHED_LEVEL) {
-      statsModel.unselect();
+      stats.model.unselect();
       loadNextLevel(reg);
     }
   });
   createButton(uiReg, PREVIEW, [this, &reg] {
-    statsModel.selectPreview(reg);
+    stats.model.selectPreview(reg);
   });
   
   previewEntity = makePreviewEntity(reg);
@@ -79,25 +84,37 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
 
 void UIView::updateCam(const Cam2D::Params params) {
   camera.update(params, zoom);
+  gameCam.update(params, gameZoom);
 }
 
-InputConsumed UIView::input(ECS::Registry &, const SDL_Event &e) {
+Consumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
+  Consumed consumed = Consumed::NO;
+  
+  const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters());
+  
   if (e.type == SDL_MOUSEBUTTONDOWN) {
-    const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters(), e.button);
-    return handleClick(uiReg, getObjAtPos(uiReg, pos));
-  } else {
-    return InputConsumed::NO;
+    consumed = handleClick(uiReg, getObjAtPos(uiReg, pos));
   }
+  
+  if (!consumed && e.type == SDL_MOUSEBUTTONDOWN) {
+    consumed = stats.click(pos, reg);
+  }
+  
+  if (!consumed && e.type == SDL_MOUSEBUTTONDOWN) {
+    const glm::vec2 pos = SDL::mousePos(gameCam.transform.toMeters(), e.button);
+    stats.model.selectTower(reg, pos);
+    consumed = Consumed::YES;
+  }
+  
+  return consumed;
 }
 
 void UIView::updateAnim(ECS::Registry &, float) {}
 
 void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
-  updateCursor(
-    uiReg,
-    cursors,
-    getObjAtPos(uiReg, SDL::mousePos(camera.transform.toMeters()))
-  );
+  const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters());
+  updateCursor(uiReg, cursors, getObjAtPos(uiReg, pos));
+  stats.hover(pos, cursors);
 
   writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
   textWriter.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
@@ -108,16 +125,8 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   updatePreviewEntity(reg, previewEntity);
   
   text.scale(1.0f);
-  if (statsModel.hasTable()) {
-    statsView.setName(statsModel.getName(reg));
-    statsView.setTable(statsModel.getTable(reg));
-    if (statsModel.hasButtons(reg)) {
-      statsView.setButtons(statsModel.getButtons(reg));
-    } else {
-      statsView.setNoButtons();
-    }
-    statsView.render({uiSheetTex.sheet(), writer}, text);
-  }
+  stats.setRenderState(reg);
+  stats.render({uiSheetTex.sheet(), writer}, text);
   
   writer.append(textWriter);
   textWriter.clear();

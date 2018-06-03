@@ -18,7 +18,7 @@ class StatsModel {
 public:
   void selectTower(ECS::Registry &, size_t);
   void selectPreview(ECS::Registry &);
-  void selectEntity(ECS::EntityID);
+  void selectTower(ECS::Registry &, glm::vec2);
   void unselect();
   
   bool canBuy(ECS::Registry &, glm::ivec2);

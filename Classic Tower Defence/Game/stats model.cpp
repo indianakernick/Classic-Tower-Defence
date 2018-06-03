@@ -10,7 +10,6 @@
 
 #include "map tag.hpp"
 #include "create tower.hpp"
-#include "upgrade tower.hpp"
 #include "base gold tag.hpp"
 #include "preview entity.hpp"
 #include "name component.hpp"
@@ -31,9 +30,23 @@ void StatsModel::selectPreview(ECS::Registry &reg) {
   proto = getPreviewProto(reg);
 }
 
-void StatsModel::selectEntity(const ECS::EntityID ent) {
-  entity = ent;
-  proto = nullptr;
+void StatsModel::selectTower(ECS::Registry &reg, glm::vec2 pos) {
+  pos = {std::floor(pos.x), std::floor(pos.y)};
+  
+  const auto towers = reg.view<CommonTowerStats, Position>();
+  for (const ECS::EntityID ent : towers) {
+    if (pos == towers.get<Position>(ent).pos) {
+      entity = ent;
+      proto = nullptr;
+      return;
+    }
+  }
+  
+  if (canBuy(reg, glm::ivec2(pos))) {
+    buy(reg, glm::ivec2(pos));
+  } else {
+    unselect();
+  }
 }
 
 void StatsModel::unselect() {
@@ -97,7 +110,10 @@ void StatsModel::upgrade(ECS::Registry &reg) {
   const uint32_t cost = next ? next->get<TowerGold>().buy : uint32_t(-1);
   if (cost <= gold) {
     gold -= cost;
-    upgradeTower(reg, entity);
+    const Position pos = reg.get<Position>(entity);
+    reg.destroy(entity);
+    entity = next->create(reg);
+    reg.assign<Position>(entity, pos);
   }
 }
 
@@ -215,7 +231,7 @@ TowerButtons StatsModel::getButtons(ECS::Registry &reg) const {
     } else {
       buttons.upgrade = 0;
     }
-    buttons.sell = reg.get<TowerGold>().sell;
+    buttons.sell = reg.get<TowerGold>(entity).sell;
     buttons.buy = 0;
   }
   
