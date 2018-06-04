@@ -21,7 +21,7 @@ void loadWaves(ECS::Registry &reg, const json &wavesNode) {
   waves.clear();
   const json::array_t &array = wavesNode.get_ref<const json::array_t &>();
   for (const auto &node : array) {
-    Wave &wave = waves.emplace_back();
+    Wave &wave = waves.emplace_back(Wave{0, reg});
     Data::get(wave.quantity, node, "quantity");
     const int unreadCount = loadProto(wave.proto, node.at("proto"));
     assert(unreadCount == 0);

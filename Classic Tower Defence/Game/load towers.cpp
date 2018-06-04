@@ -23,7 +23,7 @@ void loadTowers(ECS::Registry &reg) {
   Towers &towers = reg.assign<Towers>(entt::tag_t{}, entity);
   
   for (const json &towerNode : towersNode) {
-    TowerProto tower;
+    TowerProto tower{reg};
     [[maybe_unused]]
     const int unreadCount = loadProto(tower, towerNode);
     assert(unreadCount == 1);

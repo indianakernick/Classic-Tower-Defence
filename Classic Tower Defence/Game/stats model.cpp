@@ -86,7 +86,7 @@ void StatsModel::buy(ECS::Registry &reg, const glm::ivec2 pos) {
   assert(canBuy(reg, pos));
   
   reg.get<BaseGold>().gold -= proto->get<TowerGold>().buy;
-  const ECS::EntityID tower = (*proto)(reg);
+  const ECS::EntityID tower = proto->create();
   reg.assign<Position>(tower, pos);
 }
 

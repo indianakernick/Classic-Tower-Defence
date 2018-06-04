@@ -8,6 +8,7 @@
 
 #include "splash damage system.hpp"
 
+#define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/norm.hpp>
 #include "position component.hpp"
 #include "unit damage system.hpp"

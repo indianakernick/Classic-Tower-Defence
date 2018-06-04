@@ -32,7 +32,7 @@ void spawnerSystem(ECS::Registry &reg) {
   if (state.numUnitsLeft == 0) {
     state.state = SpawnerState::FINISHED;
   } else {
-    wave.proto(reg);
+    wave.proto();
     --state.numUnitsLeft;
   }
 }
