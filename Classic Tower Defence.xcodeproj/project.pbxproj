@@ -6,6 +6,21 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4554A1F020C699DA0051A8F2 /* Web */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4554A1F120C699DA0051A8F2 /* Build configuration list for PBXAggregateTarget "Web" */;
+			buildPhases = (
+				4554A1F420C699E50051A8F2 /* ShellScript */,
+			);
+			dependencies = (
+				4554A1F820C69C1D0051A8F2 /* PBXTargetDependency */,
+			);
+			name = Web;
+			productName = Web;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4526A34E20AAEACF00E4F542 /* tower reset rof system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */; };
 		45388496208AB717003EB260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45388495208AB717003EB260 /* Assets.xcassets */; };
@@ -107,6 +122,16 @@
 			script = "";
 		};
 /* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		4554A1F720C69C1D0051A8F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45388488208AB717003EB260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4538848F208AB717003EB260;
+			remoteInfo = "Classic Tower Defence";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		453884AE208ABB24003EB260 /* CopyFiles */ = {
@@ -371,6 +396,9 @@
 		453B28A620B27D5300F6E9E6 /* text renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "text renderer.hpp"; sourceTree = "<group>"; };
 		453B28A720B27D5300F6E9E6 /* text renderer.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "text renderer.inl"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
+		4554A1EB20C63B050051A8F2 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		4554A1EC20C684730051A8F2 /* init.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = init.js; sourceTree = "<group>"; };
+		4554A1ED20C684730051A8F2 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
 		4563D58520969A8800DB2510 /* turret damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "turret damage system.cpp"; sourceTree = "<group>"; };
@@ -644,6 +672,10 @@
 		45388487208AB717003EB260 = {
 			isa = PBXGroup;
 			children = (
+				4554A1EF20C699560051A8F2 /* Release */,
+				4554A1EE20C699500051A8F2 /* Debug */,
+				4554A1EB20C63B050051A8F2 /* CMakeLists.txt */,
+				4554A1EA20C63AE20051A8F2 /* Webpage */,
 				45388492208AB717003EB260 /* Classic Tower Defence */,
 				45388491208AB717003EB260 /* Products */,
 				453884A3208ABACA003EB260 /* Frameworks */,
@@ -1330,6 +1362,29 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		4554A1EA20C63AE20051A8F2 /* Webpage */ = {
+			isa = PBXGroup;
+			children = (
+				4554A1ED20C684730051A8F2 /* index.html */,
+				4554A1EC20C684730051A8F2 /* init.js */,
+			);
+			path = Webpage;
+			sourceTree = "<group>";
+		};
+		4554A1EE20C699500051A8F2 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		4554A1EF20C699560051A8F2 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
 		4563D5DB20970F5800DB2510 /* Radius */ = {
 			isa = PBXGroup;
 			children = (
@@ -1489,6 +1544,10 @@
 							};
 						};
 					};
+					4554A1F020C699DA0051A8F2 = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 4538848B208AB717003EB260 /* Build configuration list for PBXProject "Classic Tower Defence" */;
@@ -1505,6 +1564,7 @@
 			projectRoot = "";
 			targets = (
 				4538848F208AB717003EB260 /* Classic Tower Defence */,
+				4554A1F020C699DA0051A8F2 /* Web */,
 			);
 		};
 /* End PBXProject section */
@@ -1621,6 +1681,19 @@
 			shellPath = /usr/local/bin/python;
 			shellScript = "import os\nimport glob\n\nos.chdir(os.getenv(\"PROJECT_DIR\") + \"/\" + os.getenv(\"PROJECT\") + \"/Resources/\");\nfile = open(\"Levels/sounds.json\", \"w\");\nos.chdir(\"Sounds\");\n\nfile.write('{\"files\":[');\nfilenames = glob.glob(\"*.wav\");\n\nfor filename in filenames[:-1]:\n  file.write('\"' + filename + '\",');\nfile.write('\"' + filenames[-1] + '\"');\n\nfile.write('],\"names\":{');\n\nfor i in range(len(filenames) - 1):\n  file.write('\"' + filenames[i][:-4] + '\":' + str(i) + ',');\nfile.write('\"' + filenames[-1][:-4] + '\":' + str(len(filenames) - 1));\n\nfile.write(\"}}\\n\");\nfile.flush();\nfile.close();";
 		};
+		4554A1F420C699E50051A8F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd ${CONFIGURATION}\ncmake ./.. -DCMAKE_BUILD_TYPE=${CONFIGURATION}\nmake";
+		};
 		4563D5FC20970FA200DB2510 /* Pack Radius */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1707,6 +1780,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4554A1F820C69C1D0051A8F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4538848F208AB717003EB260 /* Classic Tower Defence */;
+			targetProxy = 4554A1F720C69C1D0051A8F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4538849C208AB718003EB260 /* Debug */ = {
@@ -1901,6 +1982,24 @@
 			};
 			name = Release;
 		};
+		4554A1F220C699DA0051A8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QY44MADGVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4554A1F320C699DA0051A8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QY44MADGVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1918,6 +2017,15 @@
 			buildConfigurations = (
 				4538849F208AB718003EB260 /* Debug */,
 				453884A0208AB718003EB260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4554A1F120C699DA0051A8F2 /* Build configuration list for PBXAggregateTarget "Web" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4554A1F220C699DA0051A8F2 /* Debug */,
+				4554A1F320C699DA0051A8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
