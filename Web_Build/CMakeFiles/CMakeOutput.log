@@ -1,0 +1,664 @@
+The target system is: Generic -  - 
+The host system is: Darwin - 17.5.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/3.11.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is AppleClang, found in "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/3.11.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_3c5db/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3c5db.dir/build.make CMakeFiles/cmTC_3c5db.dir/build
+Building C object CMakeFiles/cmTC_3c5db.dir/testCCompiler.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_3c5db.dir/testCCompiler.c.obj   -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_3c5db
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c5db.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc      CMakeFiles/cmTC_3c5db.dir/testCCompiler.c.obj  -o cmTC_3c5db 
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_cc2b0/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cc2b0.dir/build.make CMakeFiles/cmTC_cc2b0.dir/build
+Building C object CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj   -c /usr/local/Cellar/cmake/3.11.3/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_cc2b0
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc2b0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -v CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj  -o cmTC_cc2b0 
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o cmTC_cc2b0 CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_cc2b0/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cc2b0.dir/build.make CMakeFiles/cmTC_cc2b0.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj   -c /usr/local/Cellar/cmake/3.11.3/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_cc2b0]
+  ignore line: [/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc2b0.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -v CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj  -o cmTC_cc2b0 ]
+  ignore line: [Apple LLVM version 9.1.0 (clang-902.0.39.2)]
+  ignore line: [Target: x86_64-apple-darwin17.5.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o cmTC_cc2b0 CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_cc2b0] ==> ignore
+    arg [CMakeFiles/cmTC_cc2b0.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_6fc2c/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6fc2c.dir/build.make CMakeFiles/cmTC_6fc2c.dir/build
+Building C object CMakeFiles/cmTC_6fc2c.dir/feature_tests.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_6fc2c.dir/feature_tests.c.obj   -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_6fc2c
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fc2c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc      CMakeFiles/cmTC_6fc2c.dir/feature_tests.c.obj  -o cmTC_6fc2c 
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_f3002/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f3002.dir/build.make CMakeFiles/cmTC_f3002.dir/build
+Building C object CMakeFiles/cmTC_f3002.dir/feature_tests.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_f3002.dir/feature_tests.c.obj   -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_f3002
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3002.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc      CMakeFiles/cmTC_f3002.dir/feature_tests.c.obj  -o cmTC_f3002 
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_6d3e0/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6d3e0.dir/build.make CMakeFiles/cmTC_6d3e0.dir/build
+Building C object CMakeFiles/cmTC_6d3e0.dir/feature_tests.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_6d3e0.dir/feature_tests.c.obj   -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_6d3e0
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d3e0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc      CMakeFiles/cmTC_6d3e0.dir/feature_tests.c.obj  -o cmTC_6d3e0 
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_a7993/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a7993.dir/build.make CMakeFiles/cmTC_a7993.dir/build
+Building CXX object CMakeFiles/cmTC_a7993.dir/testCXXCompiler.cxx.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC     -o CMakeFiles/cmTC_a7993.dir/testCXXCompiler.cxx.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_a7993
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7993.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC       CMakeFiles/cmTC_a7993.dir/testCXXCompiler.cxx.obj  -o cmTC_a7993 
+
+
+The target system is: Generic -  - 
+The host system is: Darwin - 17.5.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/3.11.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is AppleClang, found in "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/3.11.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_aa441/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_aa441.dir/build.make CMakeFiles/cmTC_aa441.dir/build
+Building C object CMakeFiles/cmTC_aa441.dir/testCCompiler.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_aa441.dir/testCCompiler.c.obj   -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_aa441
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa441.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc      CMakeFiles/cmTC_aa441.dir/testCCompiler.c.obj  -o cmTC_aa441 
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_f8e28/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f8e28.dir/build.make CMakeFiles/cmTC_f8e28.dir/build
+Building C object CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj   -c /usr/local/Cellar/cmake/3.11.3/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_f8e28
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8e28.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -v CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj  -o cmTC_f8e28 
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o cmTC_f8e28 CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_f8e28/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f8e28.dir/build.make CMakeFiles/cmTC_f8e28.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj   -c /usr/local/Cellar/cmake/3.11.3/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_f8e28]
+  ignore line: [/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8e28.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -v CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj  -o cmTC_f8e28 ]
+  ignore line: [Apple LLVM version 9.1.0 (clang-902.0.39.2)]
+  ignore line: [Target: x86_64-apple-darwin17.5.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o cmTC_f8e28 CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f8e28] ==> ignore
+    arg [CMakeFiles/cmTC_f8e28.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_a2ad5/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a2ad5.dir/build.make CMakeFiles/cmTC_a2ad5.dir/build
+Building C object CMakeFiles/cmTC_a2ad5.dir/feature_tests.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_a2ad5.dir/feature_tests.c.obj   -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_a2ad5
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2ad5.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc      CMakeFiles/cmTC_a2ad5.dir/feature_tests.c.obj  -o cmTC_a2ad5 
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_cb16e/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cb16e.dir/build.make CMakeFiles/cmTC_cb16e.dir/build
+Building C object CMakeFiles/cmTC_cb16e.dir/feature_tests.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_cb16e.dir/feature_tests.c.obj   -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_cb16e
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb16e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc      CMakeFiles/cmTC_cb16e.dir/feature_tests.c.obj  -o cmTC_cb16e 
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_59fdf/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_59fdf.dir/build.make CMakeFiles/cmTC_59fdf.dir/build
+Building C object CMakeFiles/cmTC_59fdf.dir/feature_tests.c.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_59fdf.dir/feature_tests.c.obj   -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_59fdf
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59fdf.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc      CMakeFiles/cmTC_59fdf.dir/feature_tests.c.obj  -o cmTC_59fdf 
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_8b502/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_8b502.dir/build.make CMakeFiles/cmTC_8b502.dir/build
+Building CXX object CMakeFiles/cmTC_8b502.dir/testCXXCompiler.cxx.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC     -o CMakeFiles/cmTC_8b502.dir/testCXXCompiler.cxx.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_8b502
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b502.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC       CMakeFiles/cmTC_8b502.dir/testCXXCompiler.cxx.obj  -o cmTC_8b502 
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_07cde/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_07cde.dir/build.make CMakeFiles/cmTC_07cde.dir/build
+Building CXX object CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC     -o CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/local/Cellar/cmake/3.11.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_07cde
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07cde.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC      -v CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_07cde 
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o cmTC_07cde CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_07cde/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_07cde.dir/build.make CMakeFiles/cmTC_07cde.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC     -o CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/local/Cellar/cmake/3.11.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_07cde]
+  ignore line: [/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07cde.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC      -v CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_07cde ]
+  ignore line: [Apple LLVM version 9.1.0 (clang-902.0.39.2)]
+  ignore line: [Target: x86_64-apple-darwin17.5.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -o cmTC_07cde CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_07cde] ==> ignore
+    arg [CMakeFiles/cmTC_07cde.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/lib/darwin/libclang_rt.osx.a]
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_eeafd/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_eeafd.dir/build.make CMakeFiles/cmTC_eeafd.dir/build
+Building CXX object CMakeFiles/cmTC_eeafd.dir/feature_tests.cxx.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC    -std=c++1z -o CMakeFiles/cmTC_eeafd.dir/feature_tests.cxx.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_eeafd
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eeafd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC       CMakeFiles/cmTC_eeafd.dir/feature_tests.cxx.obj  -o cmTC_eeafd 
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_5956e/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5956e.dir/build.make CMakeFiles/cmTC_5956e.dir/build
+Building CXX object CMakeFiles/cmTC_5956e.dir/feature_tests.cxx.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC    -std=c++14 -o CMakeFiles/cmTC_5956e.dir/feature_tests.cxx.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_5956e
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5956e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC       CMakeFiles/cmTC_5956e.dir/feature_tests.cxx.obj  -o cmTC_5956e 
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_92423/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_92423.dir/build.make CMakeFiles/cmTC_92423.dir/build
+Building CXX object CMakeFiles/cmTC_92423.dir/feature_tests.cxx.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC    -std=c++11 -o CMakeFiles/cmTC_92423.dir/feature_tests.cxx.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_92423
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92423.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC       CMakeFiles/cmTC_92423.dir/feature_tests.cxx.obj  -o cmTC_92423 
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Applications/Xcode.app/Contents/Developer/usr/bin/make" "cmTC_46991/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_46991.dir/build.make CMakeFiles/cmTC_46991.dir/build
+Building CXX object CMakeFiles/cmTC_46991.dir/feature_tests.cxx.obj
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC    -std=c++98 -o CMakeFiles/cmTC_46991.dir/feature_tests.cxx.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_46991
+/usr/local/Cellar/cmake/3.11.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46991.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/CC       CMakeFiles/cmTC_46991.dir/feature_tests.cxx.obj  -o cmTC_46991 
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates

@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-project(Classic_Tower_Defence)
+project(Game)
 
 option(EMBUILD "Build with emscripten, mingw otherwise" YES)
 
-set(EMSCRIPTEN_CC /usr/local/Cellar/emscripten/1.37.37/libexec/emcc)
+set(EMSCRIPTEN_CC /usr/local/Cellar/emscripten/1.38.5/libexec/emcc)
 set(MINGW_CC /usr/local/Cellar/mingw-w64/5.0.3_3/toolchain-x86_64/bin/x86_64-w64-mingw32-g++)
 if(EMBUILD)
     set(CC ${EMSCRIPTEN_CC})
@@ -14,12 +14,11 @@ endif()
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_COMPILER ${CC})
 set(CMAKE_C_COMPILER ${CC})
+#set(RES_PATH "${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}")
 set(RES_PATH /Users/indikernick/Library/Developer/Xcode/DerivedData/Classic_Tower_Defence-dcezwdbogljnithjukklclgyblij/Build/Products/Debug/Classic\ Tower\ Defence.app/Contents/Resources)
 
 if (EMBUILD)
-    set(EXTRA_FLAGS "-O3 --closure 1")
     set(LINKER_FLAGS " \
-      ${EXTRA_FLAGS} \
       -s WASM=1 \
       -s USE_WEBGL2=1 \
       -s USE_SDL=2 \
@@ -28,11 +27,11 @@ if (EMBUILD)
       --pre-js '${PROJECT_SOURCE_DIR}/Webpage/init.js' \
       --shell-file '${PROJECT_SOURCE_DIR}/Webpage/index.html' \
       --preload-file '${RES_PATH}@/' \
+      -O3 \
     ")
-    set(CMAKE_CXX_FLAGS "${EXTRA_FLAGS} -msse3 -DDISABLE_OPENGL_ERROR_CHECKING")
-
+    set(CMAKE_CXX_FLAGS "-O3 -msse3 -DDISABLE_OPENGL_ERROR_CHECKING")
 else()
-    set(LINKER_FLAGS "-static-libstdc++ -static-libgc -L./ -Wl,-rpath,./")
+    set(LINKER_FLAGS "-static-libstdc++ -static-libgcc -L./ -Wl,-rpath,./")
     set(CMAKE_CXX_FLAGS "-O3 -DGLM_FORCE_CTOR_INIT -DDISABLE_OPENGL_ERROR_CHECKING")
 endif()
 
@@ -99,11 +98,11 @@ set(SOURCE_FILES
 
 include_directories(/usr/local/include/)
 
-add_executable(Classic_Tower_Defence ${SOURCE_FILES})
+add_executable(GameExec ${SOURCE_FILES})
 if (EMBUILD)
-    set_target_properties(Classic_Tower_Defence PROPERTIES OUTPUT_NAME index.html)
+    set_target_properties(GameExec PROPERTIES OUTPUT_NAME index.html)
 else()
-    set_target_properties(Classic_Tower_Defence PROPERTIES OUTPUT_NAME main.exe)
-    target_link_libraries(Classic_Tower_Defence "opengl32" "glew32" "SDL2" "SDL2_Mixer")
+    set_target_properties(GameExec PROPERTIES OUTPUT_NAME main.exe)
+    target_link_libraries(GameExec "opengl32" "glew32" "SDL2" "SDL2_Mixer")
 endif()
-set_target_properties(Classic_Tower_Defence PROPERTIES LINK_FLAGS "${LINKER_FLAGS}")
+set_target_properties(GameExec PROPERTIES LINK_FLAGS "${LINKER_FLAGS}")
