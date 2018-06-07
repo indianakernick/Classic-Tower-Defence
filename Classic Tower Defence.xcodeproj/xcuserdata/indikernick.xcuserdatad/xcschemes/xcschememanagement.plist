@@ -12,6 +12,11 @@
 		<key>Web.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Windows.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
 	</dict>

@@ -1,37 +1,42 @@
 cmake_minimum_required(VERSION 3.10)
 project(Classic_Tower_Defence)
 
-set(CMAKE_CXX_STANDARD 17)
-set(EMSCRIPTEN_CC /usr/local/Cellar/emscripten/1.37.37/libexec/emcc)
-set(CMAKE_CXX_COMPILER ${EMSCRIPTEN_CC})
-set(CMAKE_C_COMPILER ${EMSCRIPTEN_CC})
-set(RES_PATH /Users/indikernick/Library/Developer/Xcode/DerivedData/Classic_Tower_Defence-dcezwdbogljnithjukklclgyblij/Build/Products/Debug/Classic\ Tower\ Defence.app/Contents/Resources)
+option(EMBUILD "Build with emscripten, mingw otherwise" YES)
 
-if (CMAKE_BUILD_TYPE MATCHES RELEASE)
-    set(EXTRA_FLAGS "-O3 --closure 1")
+set(EMSCRIPTEN_CC /usr/local/Cellar/emscripten/1.37.37/libexec/emcc)
+set(MINGW_CC /usr/local/Cellar/mingw-w64/5.0.3_3/toolchain-x86_64/bin/x86_64-w64-mingw32-g++)
+if(EMBUILD)
+    set(CC ${EMSCRIPTEN_CC})
 else()
-    set(EXTRA_FLAGS "-s DEMANGLE_SUPPORT=1")
+    set(CC ${MINGW_CC})
 endif()
 
-set(LINKER_FLAGS " \
-  ${EXTRA_FLAGS} \
-  -s WASM=1 \
-  -s USE_WEBGL2=1 \
-  -s USE_SDL=2 \
-  -s TOTAL_MEMORY=805306368 \
-  -s DISABLE_EXCEPTION_CATCHING=0 \
-  --pre-js '${PROJECT_SOURCE_DIR}/Webpage/init.js' \
-  --shell-file '${PROJECT_SOURCE_DIR}/Webpage/index.html' \
-  --preload-file '${RES_PATH}@/' \
-")
-set(CMAKE_CXX_FLAGS " \
-  ${EXTRA_FLAGS} \
-  -msse3 \
-")
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_COMPILER ${CC})
+set(CMAKE_C_COMPILER ${CC})
+set(RES_PATH /Users/indikernick/Library/Developer/Xcode/DerivedData/Classic_Tower_Defence-dcezwdbogljnithjukklclgyblij/Build/Products/Debug/Classic\ Tower\ Defence.app/Contents/Resources)
 
-include_directories(/usr/local/include/)
+if (EMBUILD)
+    set(EXTRA_FLAGS "-O3 --closure 1")
+    set(LINKER_FLAGS " \
+      ${EXTRA_FLAGS} \
+      -s WASM=1 \
+      -s USE_WEBGL2=1 \
+      -s USE_SDL=2 \
+      -s TOTAL_MEMORY=805306368 \
+      -s DISABLE_EXCEPTION_CATCHING=0 \
+      --pre-js '${PROJECT_SOURCE_DIR}/Webpage/init.js' \
+      --shell-file '${PROJECT_SOURCE_DIR}/Webpage/index.html' \
+      --preload-file '${RES_PATH}@/' \
+    ")
+    set(CMAKE_CXX_FLAGS "${EXTRA_FLAGS} -msse3 -DDISABLE_OPENGL_ERROR_CHECKING")
 
-set(SOURCE_FILES 
+else()
+    set(LINKER_FLAGS "-static-libstdc++ -static-libgc -L./ -Wl,-rpath,./")
+    set(CMAKE_CXX_FLAGS "-O3 -DGLM_FORCE_CTOR_INIT -DDISABLE_OPENGL_ERROR_CHECKING")
+endif()
+
+set(SOURCE_FILES
         "Classic Tower Defence/Game/create spawner.cpp"
         "Classic Tower Defence/Game/unit death system.cpp"
         "Classic Tower Defence/Game/game info model.cpp"
@@ -92,6 +97,13 @@ set(SOURCE_FILES
         "Classic Tower Defence/main.cpp"
 )
 
+include_directories(/usr/local/include/)
+
 add_executable(Classic_Tower_Defence ${SOURCE_FILES})
-set_target_properties(Classic_Tower_Defence PROPERTIES OUTPUT_NAME index.html)
+if (EMBUILD)
+    set_target_properties(Classic_Tower_Defence PROPERTIES OUTPUT_NAME index.html)
+else()
+    set_target_properties(Classic_Tower_Defence PROPERTIES OUTPUT_NAME main.exe)
+    target_link_libraries(Classic_Tower_Defence "opengl32" "glew32" "SDL2" "SDL2_Mixer")
+endif()
 set_target_properties(Classic_Tower_Defence PROPERTIES LINK_FLAGS "${LINKER_FLAGS}")

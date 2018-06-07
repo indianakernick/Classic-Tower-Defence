@@ -19,6 +19,17 @@
 			name = Web;
 			productName = Web;
 		};
+		4554A26520C796460051A8F2 /* Windows */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4554A26620C796460051A8F2 /* Build configuration list for PBXAggregateTarget "Windows" */;
+			buildPhases = (
+				4554A26B20C796510051A8F2 /* Run Script */,
+			);
+			dependencies = (
+			);
+			name = Windows;
+			productName = Windows;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -399,6 +410,100 @@
 		4554A1EB20C63B050051A8F2 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		4554A1EC20C684730051A8F2 /* init.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = init.js; sourceTree = "<group>"; };
 		4554A1ED20C684730051A8F2 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		4554A1FD20C796030051A8F2 /* index.wasm */ = {isa = PBXFileReference; lastKnownFileType = file; path = index.wasm; sourceTree = "<group>"; };
+		4554A1FE20C796030051A8F2 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		4554A20020C796030051A8F2 /* cmake.check_cache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake.check_cache; sourceTree = "<group>"; };
+		4554A20220C796030051A8F2 /* CMakeDetermineCompilerABI_CXX.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = CMakeDetermineCompilerABI_CXX.bin; sourceTree = "<group>"; };
+		4554A20320C796030051A8F2 /* CMakeDetermineCompilerABI_C.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = CMakeDetermineCompilerABI_C.bin; sourceTree = "<group>"; };
+		4554A20520C796030051A8F2 /* CMakeCCompilerId.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CMakeCCompilerId.c; sourceTree = "<group>"; };
+		4554A20620C796030051A8F2 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
+		4554A20920C796030051A8F2 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
+		4554A20A20C796030051A8F2 /* CMakeCXXCompilerId.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMakeCXXCompilerId.cpp; sourceTree = "<group>"; };
+		4554A20C20C796030051A8F2 /* CMakeCXXCompiler.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeCXXCompiler.cmake; sourceTree = "<group>"; };
+		4554A20D20C796030051A8F2 /* CMakeCCompiler.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeCCompiler.cmake; sourceTree = "<group>"; };
+		4554A20E20C796030051A8F2 /* CMakeSystem.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeSystem.cmake; sourceTree = "<group>"; };
+		4554A20F20C796030051A8F2 /* CMakeOutput.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeOutput.log; sourceTree = "<group>"; };
+		4554A21020C796030051A8F2 /* feature_tests.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = feature_tests.bin; sourceTree = "<group>"; };
+		4554A21120C796030051A8F2 /* feature_tests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = feature_tests.c; sourceTree = "<group>"; };
+		4554A21220C796030051A8F2 /* Makefile.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.cmake; sourceTree = "<group>"; };
+		4554A21520C796030051A8F2 /* DependInfo.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DependInfo.cmake; sourceTree = "<group>"; };
+		4554A21620C796030051A8F2 /* depend.internal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = depend.internal; sourceTree = "<group>"; };
+		4554A21720C796030051A8F2 /* depend.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = depend.make; sourceTree = "<group>"; };
+		4554A21820C796030051A8F2 /* cmake_clean.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake_clean.cmake; sourceTree = "<group>"; };
+		4554A21920C796030051A8F2 /* link.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.txt; sourceTree = "<group>"; };
+		4554A21A20C796030051A8F2 /* progress.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = progress.make; sourceTree = "<group>"; };
+		4554A21C20C796030051A8F2 /* main.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.cpp.o; sourceTree = "<group>"; };
+		4554A21E20C796030051A8F2 /* tower_projectile_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_projectile_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A21F20C796030051A8F2 /* stats_view.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = stats_view.cpp.o; sourceTree = "<group>"; };
+		4554A22020C796030051A8F2 /* app.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = app.cpp.o; sourceTree = "<group>"; };
+		4554A22120C796030051A8F2 /* tower_reset_rof_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_reset_rof_system.cpp.o; sourceTree = "<group>"; };
+		4554A22220C796030051A8F2 /* unit_death_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_death_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A22320C796030051A8F2 /* cursor_systems.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = cursor_systems.cpp.o; sourceTree = "<group>"; };
+		4554A22420C796030051A8F2 /* game_view.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = game_view.cpp.o; sourceTree = "<group>"; };
+		4554A22520C796030051A8F2 /* load_base.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = load_base.cpp.o; sourceTree = "<group>"; };
+		4554A22620C796030051A8F2 /* ui_view.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = ui_view.cpp.o; sourceTree = "<group>"; };
+		4554A22720C796030051A8F2 /* tower_aim_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_aim_system.cpp.o; sourceTree = "<group>"; };
+		4554A22820C796030051A8F2 /* firing_anim_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = firing_anim_system.cpp.o; sourceTree = "<group>"; };
+		4554A22920C796030051A8F2 /* game_logic.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = game_logic.cpp.o; sourceTree = "<group>"; };
+		4554A22A20C796030051A8F2 /* tower_sound_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_sound_system.cpp.o; sourceTree = "<group>"; };
+		4554A22B20C796030051A8F2 /* unit_death_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_death_system.cpp.o; sourceTree = "<group>"; };
+		4554A22C20C796030051A8F2 /* create_tower.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = create_tower.cpp.o; sourceTree = "<group>"; };
+		4554A22D20C796030051A8F2 /* splash_damage_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = splash_damage_system.cpp.o; sourceTree = "<group>"; };
+		4554A22E20C796030051A8F2 /* unit_death_sound_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_death_sound_system.cpp.o; sourceTree = "<group>"; };
+		4554A22F20C796030051A8F2 /* spawner_timing_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = spawner_timing_system.cpp.o; sourceTree = "<group>"; };
+		4554A23020C796030051A8F2 /* map_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = map_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A23120C796030051A8F2 /* tower_beam_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_beam_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A23220C796030051A8F2 /* unit_walk_anim_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_walk_anim_system.cpp.o; sourceTree = "<group>"; };
+		4554A23320C796030051A8F2 /* tower_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A23420C796030051A8F2 /* unit_damage_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_damage_system.cpp.o; sourceTree = "<group>"; };
+		4554A23520C796030051A8F2 /* create_level.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = create_level.cpp.o; sourceTree = "<group>"; };
+		4554A23620C796030051A8F2 /* tower_aura_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_aura_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A23720C796030051A8F2 /* stats_model.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = stats_model.cpp.o; sourceTree = "<group>"; };
+		4554A23820C796030051A8F2 /* base_damage_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = base_damage_system.cpp.o; sourceTree = "<group>"; };
+		4554A23920C796030051A8F2 /* stats_controller.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = stats_controller.cpp.o; sourceTree = "<group>"; };
+		4554A23A20C796030051A8F2 /* init_map_info.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = init_map_info.cpp.o; sourceTree = "<group>"; };
+		4554A23B20C796030051A8F2 /* slow_effect_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = slow_effect_system.cpp.o; sourceTree = "<group>"; };
+		4554A23C20C796030051A8F2 /* turret_damage_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = turret_damage_system.cpp.o; sourceTree = "<group>"; };
+		4554A23D20C796030051A8F2 /* tower_rof_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_rof_system.cpp.o; sourceTree = "<group>"; };
+		4554A23E20C796030051A8F2 /* unit_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A23F20C796030051A8F2 /* preview_entity.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = preview_entity.cpp.o; sourceTree = "<group>"; };
+		4554A24020C796030051A8F2 /* unit_death_anim_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_death_anim_system.cpp.o; sourceTree = "<group>"; };
+		4554A24120C796030051A8F2 /* load_level.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = load_level.cpp.o; sourceTree = "<group>"; };
+		4554A24220C796030051A8F2 /* tower_beam_anim_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_beam_anim_system.cpp.o; sourceTree = "<group>"; };
+		4554A24320C796030051A8F2 /* create_spawner.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = create_spawner.cpp.o; sourceTree = "<group>"; };
+		4554A24420C796030051A8F2 /* get_wave_info.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = get_wave_info.cpp.o; sourceTree = "<group>"; };
+		4554A24520C796030051A8F2 /* load_towers.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = load_towers.cpp.o; sourceTree = "<group>"; };
+		4554A24620C796030051A8F2 /* count_live_units.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = count_live_units.cpp.o; sourceTree = "<group>"; };
+		4554A24720C796030051A8F2 /* load_waves.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = load_waves.cpp.o; sourceTree = "<group>"; };
+		4554A24820C796030051A8F2 /* sound_queue.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = sound_queue.cpp.o; sourceTree = "<group>"; };
+		4554A24920C796030051A8F2 /* load_map.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = load_map.cpp.o; sourceTree = "<group>"; };
+		4554A24A20C796030051A8F2 /* load_prototype.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = load_prototype.cpp.o; sourceTree = "<group>"; };
+		4554A24B20C796030051A8F2 /* unit_regen_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_regen_system.cpp.o; sourceTree = "<group>"; };
+		4554A24C20C796030051A8F2 /* unit_motion_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_motion_system.cpp.o; sourceTree = "<group>"; };
+		4554A24D20C796030051A8F2 /* unit_health_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_health_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A24E20C796030051A8F2 /* game_info_view.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = game_info_view.cpp.o; sourceTree = "<group>"; };
+		4554A24F20C796030051A8F2 /* tower_range_rendering_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tower_range_rendering_system.cpp.o; sourceTree = "<group>"; };
+		4554A25020C796030051A8F2 /* load_spawner.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = load_spawner.cpp.o; sourceTree = "<group>"; };
+		4554A25120C796030051A8F2 /* next_wave.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = next_wave.cpp.o; sourceTree = "<group>"; };
+		4554A25220C796030051A8F2 /* poison_effect_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = poison_effect_system.cpp.o; sourceTree = "<group>"; };
+		4554A25320C796030051A8F2 /* unit_effect_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = unit_effect_system.cpp.o; sourceTree = "<group>"; };
+		4554A25420C796030051A8F2 /* game_info_model.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = game_info_model.cpp.o; sourceTree = "<group>"; };
+		4554A25520C796030051A8F2 /* spawner_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = spawner_system.cpp.o; sourceTree = "<group>"; };
+		4554A25620C796030051A8F2 /* aura_damage_system.cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = aura_damage_system.cpp.o; sourceTree = "<group>"; };
+		4554A25720C796030051A8F2 /* CXX.includecache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CXX.includecache; sourceTree = "<group>"; };
+		4554A25820C796030051A8F2 /* build.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build.make; sourceTree = "<group>"; };
+		4554A25920C796030051A8F2 /* flags.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flags.make; sourceTree = "<group>"; };
+		4554A25A20C796030051A8F2 /* progress.marks */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = progress.marks; sourceTree = "<group>"; };
+		4554A25B20C796030051A8F2 /* TargetDirectories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TargetDirectories.txt; sourceTree = "<group>"; };
+		4554A25C20C796030051A8F2 /* CMakeDirectoryInformation.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeDirectoryInformation.cmake; sourceTree = "<group>"; };
+		4554A25D20C796030051A8F2 /* feature_tests.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = feature_tests.cxx; sourceTree = "<group>"; };
+		4554A25E20C796030051A8F2 /* Makefile2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile2; sourceTree = "<group>"; };
+		4554A25F20C796030051A8F2 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4554A26020C796030051A8F2 /* cmake_install.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake_install.cmake; sourceTree = "<group>"; };
+		4554A26120C796030051A8F2 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		4554A26220C796030051A8F2 /* index.wast */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.wast; sourceTree = "<group>"; };
+		4554A26320C796030051A8F2 /* index.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = index.data; sourceTree = "<group>"; };
+		4554A26420C796030051A8F2 /* CMakeCache.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeCache.txt; sourceTree = "<group>"; };
 		4563D583209696E500DB2510 /* turret tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "turret tower component.hpp"; sourceTree = "<group>"; };
 		4563D5842096974400DB2510 /* splash tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "splash tower component.hpp"; sourceTree = "<group>"; };
 		4563D58520969A8800DB2510 /* turret damage system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "turret damage system.cpp"; sourceTree = "<group>"; };
@@ -672,8 +777,10 @@
 		45388487208AB717003EB260 = {
 			isa = PBXGroup;
 			children = (
-				4554A1EF20C699560051A8F2 /* Release */,
-				4554A1EE20C699500051A8F2 /* Debug */,
+				4554A1FC20C796030051A8F2 /* Debug_WEB */,
+				4554A1FB20C796020051A8F2 /* Release_WEB */,
+				4554A1FA20C795D60051A8F2 /* Debug_WIN */,
+				4554A1F920C795C60051A8F2 /* Release_WIN */,
 				4554A1EB20C63B050051A8F2 /* CMakeLists.txt */,
 				4554A1EA20C63AE20051A8F2 /* Webpage */,
 				45388492208AB717003EB260 /* Classic Tower Defence */,
@@ -1371,18 +1478,206 @@
 			path = Webpage;
 			sourceTree = "<group>";
 		};
-		4554A1EE20C699500051A8F2 /* Debug */ = {
+		4554A1F920C795C60051A8F2 /* Release_WIN */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Debug;
+			path = Release_WIN;
 			sourceTree = "<group>";
 		};
-		4554A1EF20C699560051A8F2 /* Release */ = {
+		4554A1FA20C795D60051A8F2 /* Debug_WIN */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Release;
+			path = Debug_WIN;
+			sourceTree = "<group>";
+		};
+		4554A1FB20C796020051A8F2 /* Release_WEB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Release_WEB;
+			sourceTree = "<group>";
+		};
+		4554A1FC20C796030051A8F2 /* Debug_WEB */ = {
+			isa = PBXGroup;
+			children = (
+				4554A1FD20C796030051A8F2 /* index.wasm */,
+				4554A1FE20C796030051A8F2 /* index.html */,
+				4554A1FF20C796030051A8F2 /* CMakeFiles */,
+				4554A25F20C796030051A8F2 /* Makefile */,
+				4554A26020C796030051A8F2 /* cmake_install.cmake */,
+				4554A26120C796030051A8F2 /* index.js */,
+				4554A26220C796030051A8F2 /* index.wast */,
+				4554A26320C796030051A8F2 /* index.data */,
+				4554A26420C796030051A8F2 /* CMakeCache.txt */,
+			);
+			path = Debug_WEB;
+			sourceTree = "<group>";
+		};
+		4554A1FF20C796030051A8F2 /* CMakeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4554A20020C796030051A8F2 /* cmake.check_cache */,
+				4554A20120C796030051A8F2 /* 3.11.3 */,
+				4554A20F20C796030051A8F2 /* CMakeOutput.log */,
+				4554A21020C796030051A8F2 /* feature_tests.bin */,
+				4554A21120C796030051A8F2 /* feature_tests.c */,
+				4554A21220C796030051A8F2 /* Makefile.cmake */,
+				4554A21320C796030051A8F2 /* CMakeTmp */,
+				4554A21420C796030051A8F2 /* Classic_Tower_Defence.dir */,
+				4554A25A20C796030051A8F2 /* progress.marks */,
+				4554A25B20C796030051A8F2 /* TargetDirectories.txt */,
+				4554A25C20C796030051A8F2 /* CMakeDirectoryInformation.cmake */,
+				4554A25D20C796030051A8F2 /* feature_tests.cxx */,
+				4554A25E20C796030051A8F2 /* Makefile2 */,
+			);
+			path = CMakeFiles;
+			sourceTree = "<group>";
+		};
+		4554A20120C796030051A8F2 /* 3.11.3 */ = {
+			isa = PBXGroup;
+			children = (
+				4554A20220C796030051A8F2 /* CMakeDetermineCompilerABI_CXX.bin */,
+				4554A20320C796030051A8F2 /* CMakeDetermineCompilerABI_C.bin */,
+				4554A20420C796030051A8F2 /* CompilerIdC */,
+				4554A20820C796030051A8F2 /* CompilerIdCXX */,
+				4554A20C20C796030051A8F2 /* CMakeCXXCompiler.cmake */,
+				4554A20D20C796030051A8F2 /* CMakeCCompiler.cmake */,
+				4554A20E20C796030051A8F2 /* CMakeSystem.cmake */,
+			);
+			path = 3.11.3;
+			sourceTree = "<group>";
+		};
+		4554A20420C796030051A8F2 /* CompilerIdC */ = {
+			isa = PBXGroup;
+			children = (
+				4554A20520C796030051A8F2 /* CMakeCCompilerId.c */,
+				4554A20620C796030051A8F2 /* a.out */,
+				4554A20720C796030051A8F2 /* tmp */,
+			);
+			path = CompilerIdC;
+			sourceTree = "<group>";
+		};
+		4554A20720C796030051A8F2 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+		4554A20820C796030051A8F2 /* CompilerIdCXX */ = {
+			isa = PBXGroup;
+			children = (
+				4554A20920C796030051A8F2 /* a.out */,
+				4554A20A20C796030051A8F2 /* CMakeCXXCompilerId.cpp */,
+				4554A20B20C796030051A8F2 /* tmp */,
+			);
+			path = CompilerIdCXX;
+			sourceTree = "<group>";
+		};
+		4554A20B20C796030051A8F2 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+		4554A21320C796030051A8F2 /* CMakeTmp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CMakeTmp;
+			sourceTree = "<group>";
+		};
+		4554A21420C796030051A8F2 /* Classic_Tower_Defence.dir */ = {
+			isa = PBXGroup;
+			children = (
+				4554A21520C796030051A8F2 /* DependInfo.cmake */,
+				4554A21620C796030051A8F2 /* depend.internal */,
+				4554A21720C796030051A8F2 /* depend.make */,
+				4554A21820C796030051A8F2 /* cmake_clean.cmake */,
+				4554A21920C796030051A8F2 /* link.txt */,
+				4554A21A20C796030051A8F2 /* progress.make */,
+				4554A21B20C796030051A8F2 /* Classic_Tower_Defence */,
+				4554A25720C796030051A8F2 /* CXX.includecache */,
+				4554A25820C796030051A8F2 /* build.make */,
+				4554A25920C796030051A8F2 /* flags.make */,
+			);
+			path = Classic_Tower_Defence.dir;
+			sourceTree = "<group>";
+		};
+		4554A21B20C796030051A8F2 /* Classic_Tower_Defence */ = {
+			isa = PBXGroup;
+			children = (
+				4554A21C20C796030051A8F2 /* main.cpp.o */,
+				4554A21D20C796030051A8F2 /* Game */,
+			);
+			path = Classic_Tower_Defence;
+			sourceTree = "<group>";
+		};
+		4554A21D20C796030051A8F2 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				4554A21E20C796030051A8F2 /* tower_projectile_rendering_system.cpp.o */,
+				4554A21F20C796030051A8F2 /* stats_view.cpp.o */,
+				4554A22020C796030051A8F2 /* app.cpp.o */,
+				4554A22120C796030051A8F2 /* tower_reset_rof_system.cpp.o */,
+				4554A22220C796030051A8F2 /* unit_death_rendering_system.cpp.o */,
+				4554A22320C796030051A8F2 /* cursor_systems.cpp.o */,
+				4554A22420C796030051A8F2 /* game_view.cpp.o */,
+				4554A22520C796030051A8F2 /* load_base.cpp.o */,
+				4554A22620C796030051A8F2 /* ui_view.cpp.o */,
+				4554A22720C796030051A8F2 /* tower_aim_system.cpp.o */,
+				4554A22820C796030051A8F2 /* firing_anim_system.cpp.o */,
+				4554A22920C796030051A8F2 /* game_logic.cpp.o */,
+				4554A22A20C796030051A8F2 /* tower_sound_system.cpp.o */,
+				4554A22B20C796030051A8F2 /* unit_death_system.cpp.o */,
+				4554A22C20C796030051A8F2 /* create_tower.cpp.o */,
+				4554A22D20C796030051A8F2 /* splash_damage_system.cpp.o */,
+				4554A22E20C796030051A8F2 /* unit_death_sound_system.cpp.o */,
+				4554A22F20C796030051A8F2 /* spawner_timing_system.cpp.o */,
+				4554A23020C796030051A8F2 /* map_rendering_system.cpp.o */,
+				4554A23120C796030051A8F2 /* tower_beam_rendering_system.cpp.o */,
+				4554A23220C796030051A8F2 /* unit_walk_anim_system.cpp.o */,
+				4554A23320C796030051A8F2 /* tower_rendering_system.cpp.o */,
+				4554A23420C796030051A8F2 /* unit_damage_system.cpp.o */,
+				4554A23520C796030051A8F2 /* create_level.cpp.o */,
+				4554A23620C796030051A8F2 /* tower_aura_rendering_system.cpp.o */,
+				4554A23720C796030051A8F2 /* stats_model.cpp.o */,
+				4554A23820C796030051A8F2 /* base_damage_system.cpp.o */,
+				4554A23920C796030051A8F2 /* stats_controller.cpp.o */,
+				4554A23A20C796030051A8F2 /* init_map_info.cpp.o */,
+				4554A23B20C796030051A8F2 /* slow_effect_system.cpp.o */,
+				4554A23C20C796030051A8F2 /* turret_damage_system.cpp.o */,
+				4554A23D20C796030051A8F2 /* tower_rof_system.cpp.o */,
+				4554A23E20C796030051A8F2 /* unit_rendering_system.cpp.o */,
+				4554A23F20C796030051A8F2 /* preview_entity.cpp.o */,
+				4554A24020C796030051A8F2 /* unit_death_anim_system.cpp.o */,
+				4554A24120C796030051A8F2 /* load_level.cpp.o */,
+				4554A24220C796030051A8F2 /* tower_beam_anim_system.cpp.o */,
+				4554A24320C796030051A8F2 /* create_spawner.cpp.o */,
+				4554A24420C796030051A8F2 /* get_wave_info.cpp.o */,
+				4554A24520C796030051A8F2 /* load_towers.cpp.o */,
+				4554A24620C796030051A8F2 /* count_live_units.cpp.o */,
+				4554A24720C796030051A8F2 /* load_waves.cpp.o */,
+				4554A24820C796030051A8F2 /* sound_queue.cpp.o */,
+				4554A24920C796030051A8F2 /* load_map.cpp.o */,
+				4554A24A20C796030051A8F2 /* load_prototype.cpp.o */,
+				4554A24B20C796030051A8F2 /* unit_regen_system.cpp.o */,
+				4554A24C20C796030051A8F2 /* unit_motion_system.cpp.o */,
+				4554A24D20C796030051A8F2 /* unit_health_rendering_system.cpp.o */,
+				4554A24E20C796030051A8F2 /* game_info_view.cpp.o */,
+				4554A24F20C796030051A8F2 /* tower_range_rendering_system.cpp.o */,
+				4554A25020C796030051A8F2 /* load_spawner.cpp.o */,
+				4554A25120C796030051A8F2 /* next_wave.cpp.o */,
+				4554A25220C796030051A8F2 /* poison_effect_system.cpp.o */,
+				4554A25320C796030051A8F2 /* unit_effect_system.cpp.o */,
+				4554A25420C796030051A8F2 /* game_info_model.cpp.o */,
+				4554A25520C796030051A8F2 /* spawner_system.cpp.o */,
+				4554A25620C796030051A8F2 /* aura_damage_system.cpp.o */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		4563D5DB20970F5800DB2510 /* Radius */ = {
@@ -1548,6 +1843,10 @@
 						CreatedOnToolsVersion = 9.4;
 						ProvisioningStyle = Automatic;
 					};
+					4554A26520C796460051A8F2 = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 4538848B208AB717003EB260 /* Build configuration list for PBXProject "Classic Tower Defence" */;
@@ -1565,6 +1864,7 @@
 			targets = (
 				4538848F208AB717003EB260 /* Classic Tower Defence */,
 				4554A1F020C699DA0051A8F2 /* Web */,
+				4554A26520C796460051A8F2 /* Windows */,
 			);
 		};
 /* End PBXProject section */
@@ -1692,7 +1992,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "cd ${CONFIGURATION}\ncmake ./.. -DCMAKE_BUILD_TYPE=${CONFIGURATION}\nmake";
+			shellScript = "cd ${CONFIGURATION}_WEB\ncmake ./.. -DCMAKE_BUILD_TYPE=${CONFIGURATION} -DEMBUILD=YES\nmake";
+		};
+		4554A26B20C796510051A8F2 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd Windows_Build\ncmake -DCMAKE_SYSTEM_NAME=Generic -DEMBUILD=NO -DCMAKE_VERBOSE_MAKEFILE=YES ..\nmake";
 		};
 		4563D5FC20970FA200DB2510 /* Pack Radius */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2000,6 +2314,24 @@
 			};
 			name = Release;
 		};
+		4554A26720C796460051A8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QY44MADGVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4554A26820C796460051A8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QY44MADGVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2026,6 +2358,15 @@
 			buildConfigurations = (
 				4554A1F220C699DA0051A8F2 /* Debug */,
 				4554A1F320C699DA0051A8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4554A26620C796460051A8F2 /* Build configuration list for PBXAggregateTarget "Windows" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4554A26720C796460051A8F2 /* Debug */,
+				4554A26820C796460051A8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
