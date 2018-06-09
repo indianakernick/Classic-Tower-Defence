@@ -15,11 +15,7 @@
 #include "projectile tower component.hpp"
 #include "tower firing anim component.hpp"
 
-void towerProjectileRenderingSystem(
-  ECS::Registry &reg,
-  G2D::QuadWriter &writer,
-  const Sprite::Sheet &sheet
-) {
+void towerProjectileRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   const auto view = reg.view<
     Position, TowerTarget, TowerFiringAnim, TowerSprites, ProjectileTower
   >();
@@ -34,9 +30,9 @@ void towerProjectileRenderingSystem(
     const TowerTarget target = view.get<TowerTarget>(entity);
     const float progress = static_cast<float>(anim.frame) / (anim.frames - 1);
     
-    writer.quad();
-    writer.depth(Depth::TOWER_PROJ);
-    writer.rotTilePos(target.angle, pos + target.vec * progress);
-    writer.tileTex(sheet.getSprite(sprites.projectile));
+    sec.quad();
+    sec.depth(Depth::TOWER_PROJ);
+    sec.rotTilePos(target.angle, pos + target.vec * progress);
+    sec.tileTex(sprites.projectile);
   }
 }

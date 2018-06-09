@@ -16,11 +16,7 @@
 #include "tower beam anim component.hpp"
 #include "tower firing anim component.hpp"
 
-void towerBeamRenderingSystem(
-  ECS::Registry &reg,
-  G2D::QuadWriter &writer,
-  const Sprite::Sheet &sheet
-) {
+void towerBeamRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   const auto view = reg.view<
     Position, TowerTarget, TowerSprites, BeamTower, TowerBeamAnim, TowerFiringAnim
   >();
@@ -38,13 +34,14 @@ void towerBeamRenderingSystem(
       std::sin(target.angle) * 0.5f
     };
     const TowerBeamAnim anim = view.get<TowerBeamAnim>(entity);
+    const Sprite::Sheet &sheet = sec.sheet();
     const Sprite::Rect rect = sheet.getSprite(sprites.projectile + anim.frame);
     const glm::vec2 size = anim.scaleBeam ? glm::vec2(target.dist - 0.5f, 1.0f)
                                           : rect.size() * (sheet.getLength() / 16.0f);
    
-    writer.quad();
-    writer.depth(Depth::TOWER_BEAM);
-    writer.rotTilePos<G2D::Origin::MID_LEFT>(target.angle, pos + offset, size);
-    writer.tileTex(rect);
+    sec.quad();
+    sec.depth(Depth::TOWER_BEAM);
+    sec.rotTilePos<G2D::Origin::MID_LEFT>(target.angle, pos + offset, size);
+    sec.tileTex(rect);
   }
 }

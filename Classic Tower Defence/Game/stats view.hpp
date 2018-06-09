@@ -14,7 +14,7 @@
 #include "basic components.hpp"
 #include <experimental/optional>
 #include <Simpleton/Math/rect.hpp>
-#include <Simpleton/Graphics 2D/sheet writer.hpp>
+#include <Simpleton/Graphics 2D/quad writer.hpp>
 
 class StatsView {
 public:
@@ -28,7 +28,7 @@ public:
   Bounds sellBounds() const;
   Bounds upgradeBounds() const;
 
-  void render(G2D::SheetWriter, TextRenderer &) const;
+  void render(G2D::Section &, TextRenderer &, G2D::Section &) const;
   
 private:
   std::experimental::optional<std::string> name;
@@ -37,11 +37,11 @@ private:
 
   void renderName(TextRenderer &) const;
   float renderTable(TextRenderer &) const;
-  void renderButtons(float, G2D::SheetWriter, TextRenderer &) const;
+  void renderButtons(float, G2D::Section &, TextRenderer &) const;
   
-  static void renderLine(float, G2D::SheetWriter);
-  static void renderDisable(G2D::SheetWriter);
-  static void renderButton(float, G2D::SheetWriter, Sprite::ID);
+  static void renderLine(float, G2D::Section &);
+  static void renderDisable(G2D::Section &);
+  static void renderButton(float, G2D::Section &, Sprite::ID);
 };
 
 #endif

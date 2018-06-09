@@ -58,8 +58,6 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   
   text.glyphSize({5.0f, 8.0f});
   text.advance({6.0f, 12.0f});
-  text.writer(textWriter);
-  text.sheet(textSheetTex.sheet());
   text.depth(G2D::depth(Depth::UI_TEXT));
   
   cursors.load();
@@ -116,18 +114,16 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   updateCursor(uiReg, cursors, getObjAtPos(uiReg, pos));
   stats.hover(pos, cursors);
 
-  writer.section({camera.transform.toPixels(), uiSheetTex.tex()});
-  textWriter.section({camera.transform.toPixels(), textSheetTex.tex(), {0.0f, 0.0f, 0.0f, 1.0f}});
+  const glm::mat3 &cam = camera.transform.toPixels();
+  G2D::Section &uiSec = writer.section(cam, uiSheetTex);
+  text.section(writer.section(cam, textSheetTex, {0.0f, 0.0f, 0.0f, 1.0f}));
   text.scale(2.0f);
   
-  renderGameInfo({uiSheetTex.sheet(), writer}, text, getGameInfo(reg));
+  renderGameInfo(uiSec, text, getGameInfo(reg));
   
   updatePreviewEntity(reg, previewEntity);
   
   text.scale(1.0f);
   stats.setRenderState(reg);
-  stats.render({uiSheetTex.sheet(), writer}, text);
-  
-  writer.append(textWriter);
-  textWriter.clear();
+  stats.render(uiSec, text, writer.section(cam, textSheetTex));
 }

@@ -8,12 +8,12 @@
 
 #include <sstream>
 
-inline void TextRenderer::writer(G2D::QuadWriter &newWriter) {
-  writer_ = &newWriter;
+inline void TextRenderer::section(G2D::Section &section) {
+  section_ = &section;
 }
 
-inline void TextRenderer::sheet(const Sprite::Sheet &newSheet) {
-  sheet_ = &newSheet;
+inline G2D::Section &TextRenderer::section() const {
+  return *section_;
 }
 
 inline void TextRenderer::glyphSize(const glm::vec2 newSize) {
@@ -30,14 +30,6 @@ inline void TextRenderer::scale(const float newScale) {
 
 inline void TextRenderer::depth(const float newDepth) {
   depth_ = newDepth;
-}
-
-inline G2D::QuadWriter &TextRenderer::writer() const {
-  return *writer_;
-}
-
-inline const Sprite::Sheet &TextRenderer::sheet() const {
-  return *sheet_;
 }
 
 namespace detail {
@@ -169,9 +161,9 @@ glm::vec2 TextRenderer::writeLeft(const glm::vec2 origin, const std::string_view
 template <G2D::PlusXY PLUS_XY>
 void TextRenderer::writeChar(const glm::vec2 pos, const glm::vec2 size, const char c) {
   if ('!' <= c && c <= '~') {
-    writer_->quad();
-    writer_->depth(depth_);
-    writer_->tilePos(pos, size);
-    writer_->tileTex<PLUS_XY>(sheet_->getSprite(c - '!'));
+    section_->quad();
+    section_->depth(depth_);
+    section_->tilePos(pos, size);
+    section_->tileTex<PLUS_XY>(Sprite::ID(c - '!'));
   }
 }

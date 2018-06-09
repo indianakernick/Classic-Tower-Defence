@@ -11,8 +11,8 @@
 
 #include "game info.hpp"
 #include "text renderer.hpp"
-#include <Simpleton/Graphics 2D/sheet writer.hpp>
+#include <Simpleton/Graphics 2D/quad writer.hpp>
 
-void renderGameInfo(G2D::SheetWriter, TextRenderer &, const GameInfo &);
+void renderGameInfo(G2D::Section &, TextRenderer &, const GameInfo &);
 
 #endif

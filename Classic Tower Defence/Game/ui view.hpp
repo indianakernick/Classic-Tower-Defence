@@ -32,7 +32,6 @@ private:
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoom;
   TextRenderer text;
-  G2D::QuadWriter textWriter;
   ECS::Registry uiReg;
   ECS::EntityID previewEntity;
   StatsController stats;

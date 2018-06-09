@@ -14,11 +14,7 @@
 #include "tower sprites component.hpp"
 #include "tower firing anim component.hpp"
 
-void towerAuraRenderingSystem(
-  ECS::Registry &reg,
-  G2D::QuadWriter &writer,
-  const Sprite::Sheet &sheet
-) {
+void towerAuraRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   const auto view = reg.view<
     Position, AuraTower, TowerSprites, TowerFiringAnim
   >();
@@ -30,21 +26,22 @@ void towerAuraRenderingSystem(
     // towerRenderingSystem doesn't render the base and the gun because
     // aura towers don't have TowerTarget components
     
-    writer.quad();
-    writer.depth(Depth::TOWER_GUN);
-    writer.tilePos(pos);
-    writer.tileTex(sheet.getSprite(sprites.gun + anim.frame));
+    sec.quad();
+    sec.depth(Depth::TOWER_GUN);
+    sec.tilePos(pos);
+    sec.tileTex(sprites.gun + anim.frame);
     
+    const Sprite::Sheet &sheet = sec.sheet();
     const Sprite::Rect rect = sheet.getSprite(sprites.projectile + anim.frame);
     
     if (!anim.started || anim.frame == 0) {
       continue;
     }
     
-    writer.quad();
-    writer.depth(Depth::TOWER_AURA);
+    sec.quad();
+    sec.depth(Depth::TOWER_AURA);
     const glm::vec2 meterSize = rect.size() * (sheet.getLength() / 16.0f);
-    writer.tilePos(pos - (meterSize - 1.0f) / 2.0f, meterSize);
-    writer.tileTex(rect);
+    sec.tilePos(pos - (meterSize - 1.0f) / 2.0f, meterSize);
+    sec.tileTex(rect);
   }
 }

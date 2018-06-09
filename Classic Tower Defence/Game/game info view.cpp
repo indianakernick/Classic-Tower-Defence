@@ -11,19 +11,19 @@
 #include "depth.hpp"
 
 void renderGameInfo(
-  const G2D::SheetWriter sw,
+  G2D::Section &sec,
   TextRenderer &text,
   const GameInfo &info
 ) {
-  sw.writer.quad();
-  sw.writer.depth(Depth::UI_BASE);
-  sw.writer.tilePos({0.0f, 0.0f}, {640.0f, 360.0f});
-  sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("base"));
+  sec.quad();
+  sec.depth(Depth::UI_BASE);
+  sec.tilePos({0.0f, 0.0f}, {640.0f, 360.0f});
+  sec.tileTex<G2D::PlusXY::RIGHT_DOWN>("base");
   
-  sw.writer.quad();
-  sw.writer.depth(Depth::MAP);
-  sw.writer.tilePos({604.0f, 4.0f}, {32.0f, 32.0f});
-  sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("preview back"));
+  sec.quad();
+  sec.depth(Depth::MAP);
+  sec.tilePos({604.0f, 4.0f}, {32.0f, 32.0f});
+  sec.tileTex<G2D::PlusXY::RIGHT_DOWN>("preview back");
   
   text.write<Align::RIGHT>({124.0f, 2.0f}, info.gold);
   text.write<Align::RIGHT>({124.0f, 22.0f}, info.base);

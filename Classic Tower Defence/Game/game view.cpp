@@ -50,13 +50,13 @@ void GameView::updateAnim(ECS::Registry &reg, float) {
 void GameView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   PROFILE(GameView::render);
   
-  writer.section({camera.transform.toPixels(), sheetTex.tex()});
-  mapRenderingSystem(reg, writer, sheetTex.sheet());
-  unitRenderingSystem(reg, writer, sheetTex.sheet());
-  towerRenderingSystem(reg, writer, sheetTex.sheet());
-  towerBeamRenderingSystem(reg, writer, sheetTex.sheet());
-  unitDeathRenderingSystem(reg, writer, sheetTex.sheet());
-  towerAuraRenderingSystem(reg, writer, sheetTex.sheet());
-  unitHealthRenderingSystem(reg, writer, sheetTex.sheet());
-  towerProjectileRenderingSystem(reg, writer, sheetTex.sheet());
+  G2D::Section &sec = writer.section(camera.transform.toPixels(), sheetTex);
+  mapRenderingSystem(reg, sec);
+  unitRenderingSystem(reg, sec);
+  towerRenderingSystem(reg, sec);
+  towerBeamRenderingSystem(reg, sec);
+  unitDeathRenderingSystem(reg, sec);
+  towerAuraRenderingSystem(reg, sec);
+  unitHealthRenderingSystem(reg, sec);
+  towerProjectileRenderingSystem(reg, sec);
 }

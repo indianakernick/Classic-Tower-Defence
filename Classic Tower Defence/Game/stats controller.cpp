@@ -50,6 +50,6 @@ void StatsController::setRenderState(ECS::Registry &reg) {
   }
 }
 
-void StatsController::render(const G2D::SheetWriter sw, TextRenderer &text) {
-  view.render(sw, text);
+void StatsController::render(G2D::Section &sec, TextRenderer &text, G2D::Section &white) {
+  view.render(sec, text, white);
 }

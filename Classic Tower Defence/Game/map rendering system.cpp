@@ -13,11 +13,7 @@
 #include "map sprites tag.hpp"
 #include <Simpleton/Utils/profiler.hpp>
 
-void mapRenderingSystem(
-  ECS::Registry &reg,
-  G2D::QuadWriter &writer,
-  const Sprite::Sheet &sheet
-) {
+void mapRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   PROFILE(mapRenderingSystem);
   const Map &map = reg.get<Map>();
   const MapSprites &sprites = reg.get<MapSprites>();
@@ -25,9 +21,9 @@ void mapRenderingSystem(
   for (size_t t = 0; t != map.area(); ++t) {
     const Sprite::ID id = sprites.sprite + static_cast<Sprite::ID>(map[t]);
     
-    writer.quad();
-    writer.depth(Depth::MAP);
-    writer.tilePos(map.toPos(t));
-    writer.tileTex(sheet.getSprite(id));
+    sec.quad();
+    sec.depth(Depth::MAP);
+    sec.tilePos(map.toPos(t));
+    sec.tileTex(id);
   }
 }

@@ -15,11 +15,7 @@
 #include "tower sprites component.hpp"
 #include "tower firing anim component.hpp"
 
-void towerRenderingSystem(
-  ECS::Registry &reg,
-  G2D::QuadWriter &writer,
-  const Sprite::Sheet &sheet
-) {
+void towerRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   const auto view = reg.view<
     Position, AimTower, TowerTarget, TowerFiringAnim, TowerSprites
   >();
@@ -30,14 +26,14 @@ void towerRenderingSystem(
     const glm::vec2 pos = view.get<Position>(entity).pos;
     const TowerTarget target = view.get<TowerTarget>(entity);
     
-    writer.quad();
-    writer.depth(Depth::TOWER_BASE);
-    writer.tilePos(pos);
-    writer.tileTex(sheet.getSprite(sprites.base));
+    sec.quad();
+    sec.depth(Depth::TOWER_BASE);
+    sec.tilePos(pos);
+    sec.tileTex(sprites.base);
     
-    writer.quad();
-    writer.depth(Depth::TOWER_GUN);
-    writer.rotTilePos(target.angle, pos);
-    writer.tileTex(sheet.getSprite(gun));
+    sec.quad();
+    sec.depth(Depth::TOWER_GUN);
+    sec.rotTilePos(target.angle, pos);
+    sec.tileTex(gun);
   }
 }

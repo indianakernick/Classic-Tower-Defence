@@ -55,20 +55,17 @@ Bounds StatsView::upgradeBounds() const {
   return {4.0f, top, 124.0f, top + 16.0f};
 }
 
-void StatsView::render(const G2D::SheetWriter sw, TextRenderer &text) const {
+void StatsView::render(G2D::Section &sec, TextRenderer &text, G2D::Section &white) const {
   renderName(text);
   const float top = renderTable(text);
   
-  // Change text color to white
-  G2D::RenderParams currentParams = text.writer().sectionInfo();
-  currentParams.color = glm::vec4{1.0f};
-  text.writer().section(currentParams);
+  text.section(white);
   
   if (table) {
-    renderLine(top, sw);
-    renderLine(216.0f, sw);
+    renderLine(top, sec);
+    renderLine(216.0f, sec);
   }
-  renderButtons(top, sw, text);
+  renderButtons(top, sec, text);
 }
 
 void StatsView::renderName(TextRenderer &text) const {
@@ -99,7 +96,7 @@ float StatsView::renderTable(TextRenderer &text) const {
 
 void StatsView::renderButtons(
   float top,
-  const G2D::SheetWriter sw,
+  G2D::Section &sec,
   TextRenderer &text
 ) const {
   if (!buttons) {
@@ -107,49 +104,49 @@ void StatsView::renderButtons(
   }
 
   // buy/upgrade button
-  const Sprite::ID button = sw.sheet.getIDfromName(
+  const Sprite::ID button = sec.sheet().getIDfromName(
     buttons->buy ? "buy" : "upgrade"
   );
   const uint32_t price = buttons->buy ? buttons->buy : buttons->upgrade;
   top += 5.0f;
-  renderButton(top, sw, button);
+  renderButton(top, sec, button);
   if (!buttons->afford) {
-    renderDisable(sw);
+    renderDisable(sec);
   }
   text.write<Align::RIGHT>({120.0f, top + 4.0f}, price);
   
   // sell button
   if (buttons->sell) {
     top += 20.0f;
-    renderButton(top, sw, sw.sheet.getIDfromName("sell"));
+    renderButton(top, sec, sec.sheet().getIDfromName("sell"));
     text.write<Align::RIGHT>({120.0f, top + 4.0f}, buttons->sell);
   }
   
   top += 20.0f;
-  renderLine(top, sw);
+  renderLine(top, sec);
 }
 
-void StatsView::renderLine(const float top, const G2D::SheetWriter sw) {
-  sw.writer.quad();
-  sw.writer.depth(Depth::UI_ELEM);
-  sw.writer.tilePos({0.0f, top}, {128.0f, 1.0f});
-  sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("line"));
+void StatsView::renderLine(const float top, G2D::Section &sec) {
+  sec.quad();
+  sec.depth(Depth::UI_ELEM);
+  sec.tilePos({0.0f, top}, {128.0f, 1.0f});
+  sec.tileTex<G2D::PlusXY::RIGHT_DOWN>("line");
 }
 
-void StatsView::renderDisable(const G2D::SheetWriter sw) {
-  sw.writer.quad();
-  sw.writer.depth(Depth::UI_ELEM_1);
-  sw.writer.dupPos();
-  sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite("disable"));
+void StatsView::renderDisable(G2D::Section &sec) {
+  sec.quad();
+  sec.depth(Depth::UI_ELEM_1);
+  sec.dupPos();
+  sec.tileTex<G2D::PlusXY::RIGHT_DOWN>("disable");
 }
 
 void StatsView::renderButton(
   const float top,
-  const G2D::SheetWriter sw,
+  G2D::Section &sec,
   const Sprite::ID sprite
 ) {
-  sw.writer.quad();
-  sw.writer.depth(Depth::UI_ELEM);
-  sw.writer.tilePos({4.0f, top}, {120.0f, 16.0f});
-  sw.writer.tileTex<G2D::PlusXY::RIGHT_DOWN>(sw.sheet.getSprite(sprite));
+  sec.quad();
+  sec.depth(Depth::UI_ELEM);
+  sec.tilePos({4.0f, top}, {120.0f, 16.0f});
+  sec.tileTex<G2D::PlusXY::RIGHT_DOWN>(sprite);
 }

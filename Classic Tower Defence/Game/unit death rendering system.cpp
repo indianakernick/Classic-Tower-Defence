@@ -13,19 +13,15 @@
 #include "unit sprite component.hpp"
 #include "unit death anim component.hpp"
 
-void unitDeathRenderingSystem(
-  ECS::Registry &reg,
-  G2D::QuadWriter &writer,
-  const Sprite::Sheet &sheet
-) {
+void unitDeathRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   auto view = reg.view<Position, UnitSprite, UnitDeathAnim>();
   for (const ECS::EntityID entity : view) {
     Sprite::ID sprite = view.get<UnitSprite>(entity).death;
     sprite += view.get<UnitDeathAnim>(entity).frame;
   
-    writer.quad();
-    writer.depth(Depth::UNIT_DEATH);
-    writer.tilePos(view.get<Position>(entity).pos);
-    writer.tileTex(sheet.getSprite(sprite));
+    sec.quad();
+    sec.depth(Depth::UNIT_DEATH);
+    sec.tilePos(view.get<Position>(entity).pos);
+    sec.tileTex(sprite);
   }
 }

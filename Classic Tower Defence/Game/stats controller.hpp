@@ -15,14 +15,14 @@
 #include "input consumed.hpp"
 #include <Simpleton/ECS/registry.hpp>
 #include <Simpleton/SDL/system cursors.hpp>
-#include <Simpleton/Graphics 2D/sheet writer.hpp>
+#include <Simpleton/Graphics 2D/quad writer.hpp>
 
 class StatsController {
 public:
   Consumed click(glm::vec2, ECS::Registry &);
   Consumed hover(glm::vec2, SDL::SystemCursors &);
   void setRenderState(ECS::Registry &);
-  void render(G2D::SheetWriter, TextRenderer &);
+  void render(G2D::Section &, TextRenderer &, G2D::Section &);
   
   StatsView view;
   StatsModel model;
