@@ -8,6 +8,9 @@
 
 #include <sstream>
 
+inline TextRenderer::TextRenderer(G2D::Section &section)
+  : section_{&section} {}
+
 inline void TextRenderer::section(G2D::Section &section) {
   section_ = &section;
 }

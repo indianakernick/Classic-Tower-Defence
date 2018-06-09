@@ -29,8 +29,9 @@ class TextRenderer {
   >;
 
 public:
+  TextRenderer() = default;
+  explicit TextRenderer(G2D::Section &);
   
-  // a pointer to the section is stored internally so watch your lifetimes!
   void section(G2D::Section &);
   G2D::Section &section() const;
   
@@ -48,10 +49,10 @@ public:
   
 private:
   G2D::Section *section_ = nullptr;
-  glm::vec2 glyphSize_;
-  glm::vec2 advance_;
-  float scale_;
-  float depth_;
+  glm::vec2 glyphSize_ {1.0f};
+  glm::vec2 advance_ {1.0f};
+  float scale_ = 1.0f;
+  float depth_ = 0.0f;
 
   template <G2D::PlusXY PLUS_XY>
   glm::vec2 writeLeft(glm::vec2, std::string_view);
