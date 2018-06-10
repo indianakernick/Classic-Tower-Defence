@@ -17,6 +17,7 @@
 #include "game info model.hpp"
 #include "basic components.hpp"
 #include <Simpleton/SDL/mouse pos.hpp>
+#include "tower range rendering system.hpp"
 
 namespace {
   const Bounds TOWERS[4] {
@@ -118,6 +119,13 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   G2D::Section &uiSec = writer.section(cam, uiSheetTex);
   text.section(writer.section(cam, textSheetTex, {0.0f, 0.0f, 0.0f, 1.0f}));
   text.scale(2.0f);
+  
+  if (stats.model.hasButtons(reg)) {
+    const ECS::EntityID tower = stats.model.selected();
+    if (tower != ECS::NULL_ENTITY) {
+      towerRangeRenderingSystem(reg, writer.section(gameCam.transform.toPixels(), radiusSheetTex), tower);
+    }
+  }
   
   renderGameInfo(uiSec, text, getGameInfo(reg));
   

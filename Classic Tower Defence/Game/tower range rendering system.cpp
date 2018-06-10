@@ -8,6 +8,7 @@
 
 #include "tower range rendering system.hpp"
 
+#include "depth.hpp"
 #include "position component.hpp"
 #include "common tower stats component.hpp"
 
@@ -21,10 +22,7 @@ void towerRangeRenderingSystem(
   const glm::vec2 pos = reg.get<Position>(tower).pos;
   
   sec.quad();
-  sec.depth(0.0f);
-  sec.tilePos(
-    pos - glm::vec2(range),
-    glm::vec2(1 + range * 2)
-  );
+  sec.depth(Depth::TOWER_RANGE);
+  sec.tilePos(pos - glm::vec2(range), glm::vec2(1 + range * 2));
   sec.tileTex(range - 1);
 }

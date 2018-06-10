@@ -21,6 +21,8 @@ public:
   void selectTower(ECS::Registry &, glm::vec2);
   void unselect();
   
+  ECS::EntityID selected() const;
+  
   bool canBuy(ECS::Registry &, glm::ivec2);
   void buy(ECS::Registry &, glm::ivec2);
   void sell(ECS::Registry &);

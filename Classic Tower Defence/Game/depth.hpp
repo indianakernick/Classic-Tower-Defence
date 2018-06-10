@@ -15,6 +15,7 @@ enum class Depth {
   UI_ELEM,
   UI_BASE,
 
+  TOWER_RANGE,
   UNIT_HEALTH,
   UNIT_DEATH,
   TOWER_AURA,

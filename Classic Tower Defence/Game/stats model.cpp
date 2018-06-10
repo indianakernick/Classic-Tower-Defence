@@ -54,6 +54,10 @@ void StatsModel::unselect() {
   proto = nullptr;
 }
 
+ECS::EntityID StatsModel::selected() const {
+  return entity;
+}
+
 bool StatsModel::canBuy(ECS::Registry &reg, const glm::ivec2 pos) {
   if (entity != ECS::NULL_ENTITY || proto == nullptr) {
     return false;
