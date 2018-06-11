@@ -14,19 +14,17 @@
 #include "tower target component.hpp"
 #include "tower sprites component.hpp"
 #include "tower beam anim component.hpp"
-#include "tower firing anim component.hpp"
 
 void towerBeamRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   const auto view = reg.view<
-    Position, TowerTarget, TowerSprites, BeamTower, TowerBeamAnim, TowerFiringAnim
+    Position, TowerTarget, TowerSprites, BeamTower, TowerBeamAnim
   >();
   for (const ECS::EntityID entity : view) {
-    const TowerFiringAnim firingAnim = view.get<TowerFiringAnim>(entity);
-    if (!firingAnim.started || firingAnim.frame != firingAnim.frames - 1) {
+    const TowerSprites sprites = view.get<TowerSprites>(entity);
+    if (!sprites.gun.lastFrame()) {
       continue;
     }
     
-    const TowerSprites sprites = view.get<TowerSprites>(entity);
     const glm::vec2 pos = view.get<Position>(entity).pos + glm::vec2(0.5f);
     const TowerTarget target = view.get<TowerTarget>(entity);
     const glm::vec2 offset = {

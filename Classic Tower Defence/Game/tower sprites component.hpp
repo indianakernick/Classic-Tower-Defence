@@ -9,19 +9,16 @@
 #ifndef tower_sprites_component_hpp
 #define tower_sprites_component_hpp
 
-#include <Simpleton/Data/json.hpp>
-#include <Simpleton/Sprite/types.hpp>
+#include <Simpleton/Sprite/json.hpp>
 
 struct TowerSprites {
-  Sprite::ID gun;
-  Sprite::ID firingFrames;
+  Sprite::ToggleAnim gun;
   Sprite::ID base;
   Sprite::ID projectile;
 };
 
 inline void from_json(const json &j, TowerSprites &sprites) {
   DATA_GET(sprites, gun);
-  DATA_GET(sprites, firingFrames);
   DATA_GET(sprites, base);
   DATA_GET(sprites, projectile);
 }

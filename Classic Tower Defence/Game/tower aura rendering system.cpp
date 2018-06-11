@@ -12,14 +12,12 @@
 #include "position component.hpp"
 #include "aura tower component.hpp"
 #include "tower sprites component.hpp"
-#include "tower firing anim component.hpp"
 
 void towerAuraRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   const auto view = reg.view<
-    Position, AuraTower, TowerSprites, TowerFiringAnim
+    Position, AuraTower, TowerSprites
   >();
   for (const ECS::EntityID entity : view) {
-    const TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);
     const glm::vec2 pos = view.get<Position>(entity).pos;
     const TowerSprites sprites = view.get<TowerSprites>(entity);
     
@@ -29,14 +27,16 @@ void towerAuraRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
     sec.quad();
     sec.depth(Depth::TOWER_GUN);
     sec.tilePos(pos);
-    sec.tileTex(sprites.gun + anim.frame);
+    sec.tileTex(sprites.gun.sprite());
     
-    const Sprite::Sheet &sheet = sec.sheet();
-    const Sprite::Rect rect = sheet.getSprite(sprites.projectile + anim.frame);
-    
-    if (!anim.started || anim.frame == 0) {
+    if (sprites.gun.disabled()) {
       continue;
     }
+    
+    const Sprite::Sheet &sheet = sec.sheet();
+    const Sprite::Rect rect = sheet.getSprite(
+      sprites.projectile + sprites.gun.frame()
+    );
     
     sec.quad();
     sec.depth(Depth::TOWER_AURA);

@@ -213,7 +213,6 @@
 		453884EF208B2325003EB260 /* unit sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit sprite component.hpp"; sourceTree = "<group>"; };
 		453884F3208B2534003EB260 /* unit walk anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit walk anim system.cpp"; sourceTree = "<group>"; };
 		453884F4208B2534003EB260 /* unit walk anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit walk anim system.hpp"; sourceTree = "<group>"; };
-		453884F6208B2785003EB260 /* tower firing anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower firing anim component.hpp"; sourceTree = "<group>"; };
 		453884F7208B2883003EB260 /* tower sprites component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sprites component.hpp"; sourceTree = "<group>"; };
 		453884FB208B2A07003EB260 /* towers tag.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "towers tag.hpp"; sourceTree = "<group>"; };
 		453884FD208C15B5003EB260 /* create tower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create tower.cpp"; sourceTree = "<group>"; };
@@ -826,7 +825,6 @@
 			children = (
 				453884BF208ACE9D003EB260 /* common tower stats component.hpp */,
 				453884C7208AD289003EB260 /* tower target component.hpp */,
-				453884F6208B2785003EB260 /* tower firing anim component.hpp */,
 				453884F7208B2883003EB260 /* tower sprites component.hpp */,
 				45388500208C16D3003EB260 /* tower upgrades component.hpp */,
 				4563D583209696E500DB2510 /* turret tower component.hpp */,

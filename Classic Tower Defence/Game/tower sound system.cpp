@@ -9,13 +9,12 @@
 #include "tower sound system.hpp"
 
 #include "sound component.hpp"
-#include "tower firing anim component.hpp"
+#include "tower sprites component.hpp"
 
 void towerSoundSystem(ECS::Registry &reg, SoundQueue &queue) {
-  auto view = reg.view<Sound, TowerFiringAnim>();
+  auto view = reg.view<Sound, TowerSprites>();
   for (const ECS::EntityID entity : view) {
-    const TowerFiringAnim anim = view.get<TowerFiringAnim>(entity);
-    if (anim.started && anim.frame == 0) {
+    if (view.get<TowerSprites>(entity).gun.firstFrame()) {
       queue.push(view.get<Sound>(entity).id);
     }
   }

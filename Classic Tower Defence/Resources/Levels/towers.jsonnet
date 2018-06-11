@@ -2,10 +2,12 @@ local getSprite = import "getsprite.libsonnet";
 local getSound = import "getsound.libsonnet";
 
 local towerSprites(sprite) = {
-  gun: getSprite(sprite + " 0"),
   base: getSprite(sprite + " base"),
-  firingFrames: $.base - $.gun,
-  projectile: getSprite(sprite + " projectile")
+  projectile: getSprite(sprite + " projectile"),
+  gun: {
+    sprite: getSprite(sprite + " 0"),
+    frames: $.base - self.sprite
+  }
 };
 
 [
@@ -30,12 +32,9 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("blaster")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -62,13 +61,10 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("blaster 1")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerBeamAnim: {},
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -93,12 +89,9 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("plasma")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -124,12 +117,9 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("cannon")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -165,12 +155,9 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("cannon")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -203,12 +190,9 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("cannon")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -243,12 +227,9 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("cannon")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -283,12 +264,9 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("cannon")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -296,7 +274,6 @@ local towerSprites(sprite) = {
   },
   {
     local tower = self,
-    ProjectileTower: {},
     CommonTowerStats: {
       range: 4,
       damage: 5,
@@ -314,21 +291,20 @@ local towerSprites(sprite) = {
       }
     },
     TowerSprites: {
-      gun: getSprite("ice aura base 0"),
+      gun: {
+        sprite: getSprite("ice aura base 0"),
+        frames: 5
+      },
       base: 0,
-      firingFrames: 5,
       projectile: getSprite("ice aura 0")
     },
     upgrades: {},
     Sound: {
       id: getSound("cannon")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AuraTower: {},
@@ -358,10 +334,13 @@ local towerSprites(sprite) = {
     },
     TowerSprites: {
       local sprite = "flamethrower",
+      local this = self,
 
-      gun: getSprite(sprite + " 0"),
+      gun: {
+        sprite: getSprite(sprite + " 0"),
+        frames: this.base - self.sprite
+      },
       base: getSprite(sprite + " base"),
-      firingFrames: self.base - self.gun,
       projectile: getSprite("fire 0")
     },
     upgrades: {
@@ -370,16 +349,13 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("blaster 1")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerBeamAnim: {
       frames: 4,
       scaleBeam: false
     },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -414,12 +390,9 @@ local towerSprites(sprite) = {
     Sound: {
       id: getSound("fire ball shooting")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AimTower: {},
@@ -427,7 +400,6 @@ local towerSprites(sprite) = {
   },
   {
     local tower = self,
-    ProjectileTower: {},
     CommonTowerStats: {
       range: 2,
       damage: 100,
@@ -445,21 +417,20 @@ local towerSprites(sprite) = {
       }
     },
     TowerSprites: {
-      gun: getSprite("fire aura base 0"),
+      gun: {
+        sprite: getSprite("fire aura base 0"),
+        frames: 5
+      },
       base: 0,
-      firingFrames: 5,
       projectile: getSprite("fire aura 0")
     },
     upgrades: {},
     Sound: {
       id: getSound("cannon")
     },
-    TowerFiringAnim: {
-      frames: tower.TowerSprites.firingFrames
-    },
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.firingFrames / 20
+      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
     AuraTower: {},

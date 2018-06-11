@@ -11,44 +11,39 @@
 #include "aura tower component.hpp"
 #include "beam tower component.hpp"
 #include "tower target component.hpp"
+#include "tower sprites component.hpp"
 #include "projectile tower component.hpp"
 #include "tower shoot time component.hpp"
-#include "tower firing anim component.hpp"
 
 namespace {
-  void handleAnimEnd(TowerFiringAnim &anim, ECS::Registry &reg, const ECS::EntityID entity) {
-    if (reg.has<BeamTower>(entity)) {
-      if (reg.get<TowerTarget>(entity).id == ECS::NULL_ENTITY) {
-        anim.frame = 0;
-        anim.started = false;
-      } else {
-        anim.frame = anim.frames - 1;
-      }
-    } else if (reg.has<ProjectileTower>(entity) || reg.has<AuraTower>(entity)) {
-      anim.frame = 0;
-      anim.started = false;
+  void handleAnimEnd(Sprite::ToggleAnim &anim, ECS::Registry &reg, const ECS::EntityID entity) {
+    if (
+      reg.has<ProjectileTower>(entity) ||
+      reg.has<AuraTower>(entity) || (
+        reg.has<BeamTower>(entity) &&
+        reg.get<TowerTarget>(entity).id == ECS::NULL_ENTITY
+      )
+    ) {
+      anim.stop();
     }
   }
 }
 
 void firingAnimSystem(ECS::Registry &reg) {
-  auto view = reg.view<TowerFiringAnim, TowerShootTime>();
+  auto view = reg.view<TowerSprites, TowerShootTime>();
   
   for (const ECS::EntityID entity : view) {
     TowerShootTime &shoot = view.get<TowerShootTime>(entity);
-    TowerFiringAnim &anim = view.get<TowerFiringAnim>(entity);
+    TowerSprites &sprites = view.get<TowerSprites>(entity);
     
     if (shoot.elapsed < shoot.startTime) {
-      anim.started = false;
-      anim.frame = 0;
-    } else if (anim.started) {
-      ++anim.frame;
-      if (anim.frame == anim.frames) {
-        handleAnimEnd(anim, reg, entity);
+      sprites.gun.stop();
+    } else if (sprites.gun.enabled()) {
+      if (sprites.gun.incrStop()) {
+        handleAnimEnd(sprites.gun, reg, entity);
       }
     } else if (shoot.target) {
-      anim.started = true;
-      anim.frame = 0;
+      sprites.gun.start();
     }
   }
 }

@@ -18,7 +18,6 @@
 #include "splash tower component.hpp"
 #include "tower beam anim component.hpp"
 #include "tower effect component.hpp"
-#include "tower firing anim component.hpp"
 #include "tower gold component.hpp"
 #include "tower shoot time component.hpp"
 #include "tower sprites component.hpp"
@@ -46,7 +45,6 @@ using CompList = List::Type<
   SplashTower,
   TowerBeamAnim,
   TowerEffect,
-  TowerFiringAnim,
   TowerGold,
   TowerShootTime,
   TowerSprites,
