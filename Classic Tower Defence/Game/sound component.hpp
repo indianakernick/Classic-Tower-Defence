@@ -17,7 +17,7 @@ struct Sound {
 };
 
 inline void from_json(const json &j, Sound &comp) {
-  DATA_GET(comp, id);
+  comp.id = j.get<SoundID>();
 }
 
 #endif

@@ -1,5 +1,5 @@
-local getSprite = import "getsprite.libsonnet";
-local getSound = import "getsound.libsonnet";
+local getSprite = import "get sprite.libsonnet";
+local getSound = import "get sound.libsonnet";
 
 local towerSprites(sprite) = {
   base: getSprite(sprite + " base"),
@@ -29,9 +29,7 @@ local towerSprites(sprite) = {
     upgrades: {
       next: 1
     },
-    Sound: {
-      id: getSound("blaster")
-    },
+    Sound: getSound("blaster"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -58,9 +56,7 @@ local towerSprites(sprite) = {
     upgrades: {
       next: 2
     },
-    Sound: {
-      id: getSound("blaster 1")
-    },
+    Sound: getSound("blaster 1"),
     TowerBeamAnim: {},
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
@@ -86,9 +82,7 @@ local towerSprites(sprite) = {
     TurretTower: {},
     TowerSprites: towerSprites("plasma"),
     upgrades: {},
-    Sound: {
-      id: getSound("plasma")
-    },
+    Sound: getSound("plasma"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -114,9 +108,7 @@ local towerSprites(sprite) = {
     upgrades: {
       next: 4
     },
-    Sound: {
-      id: getSound("cannon")
-    },
+    Sound: getSound("cannon"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -152,9 +144,7 @@ local towerSprites(sprite) = {
     upgrades: {
       next: 5
     },
-    Sound: {
-      id: getSound("cannon")
-    },
+    Sound: getSound("cannon"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -187,9 +177,7 @@ local towerSprites(sprite) = {
     },
     TowerSprites: towerSprites("poison cannon"),
     upgrades: {},
-    Sound: {
-      id: getSound("cannon")
-    },
+    Sound: getSound("cannon"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -224,9 +212,7 @@ local towerSprites(sprite) = {
     upgrades: {
       next: 7
     },
-    Sound: {
-      id: getSound("cannon")
-    },
+    Sound: getSound("cannon"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -261,9 +247,7 @@ local towerSprites(sprite) = {
     upgrades: {
       next: 8
     },
-    Sound: {
-      id: getSound("cannon")
-    },
+    Sound: getSound("cannon"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -299,9 +283,7 @@ local towerSprites(sprite) = {
       projectile: getSprite("ice aura 0")
     },
     upgrades: {},
-    Sound: {
-      id: getSound("cannon")
-    },
+    Sound: getSound("cannon"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -346,9 +328,7 @@ local towerSprites(sprite) = {
     upgrades: {
       next: 10
     },
-    Sound: {
-      id: getSound("blaster 1")
-    },
+    Sound: getSound("blaster 1"),
     TowerBeamAnim: {
       frames: 4,
       scaleBeam: false
@@ -387,9 +367,7 @@ local towerSprites(sprite) = {
     upgrades: {
       next: 11
     },
-    Sound: {
-      id: getSound("fire ball shooting")
-    },
+    Sound: getSound("fire ball shooting"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
@@ -425,9 +403,7 @@ local towerSprites(sprite) = {
       projectile: getSprite("fire aura 0")
     },
     upgrades: {},
-    Sound: {
-      id: getSound("cannon")
-    },
+    Sound: getSound("cannon"),
     TowerShootTime: {
       fireTime: 1 / tower.CommonTowerStats.rof,
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
