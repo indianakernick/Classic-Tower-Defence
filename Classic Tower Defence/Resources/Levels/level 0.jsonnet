@@ -13,7 +13,7 @@ local unitSprites(name) = {
 };
 
 {
-  map: 0,
+  map: 2,
   sprite: getSprite("map 0"),
   gold: 1400,
   health: 100,

@@ -19,6 +19,7 @@
 #include "count live units.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
+#include "common tower stats component.hpp"
 
 bool loadLevel(ECS::Registry &reg, const int level) {
   std::ifstream file(SDL::getResDir() + "level " + std::to_string(level) + ".json");
@@ -47,6 +48,10 @@ bool loadLevel(ECS::Registry &reg, const int level) {
 void loadNextLevel(ECS::Registry &reg) {
   if (countLiveUnits(reg) != 0) {
     return;
+  }
+  
+  for (const ECS::EntityID entity : reg.view<CommonTowerStats>()) {
+    reg.destroy(entity);
   }
 
   const int current = reg.get<LevelInfo>().level;
