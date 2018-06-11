@@ -79,6 +79,7 @@ void UIView::init(ECS::Registry &reg, G2D::Renderer &renderer) {
   });
   
   previewEntity = makePreviewEntity(reg);
+  updatePreviewEntity(reg, previewEntity);
 }
 
 void UIView::updateCam(const Cam2D::Params params) {

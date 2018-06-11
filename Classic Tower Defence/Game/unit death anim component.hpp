@@ -11,8 +11,6 @@
 
 #include <cstdint>
 
-struct UnitDeathAnim {
-  uint32_t frame = 0;
-};
+struct UnitDeathAnim {};
 
 #endif

@@ -31,7 +31,6 @@
 #include "unit path component.hpp"
 #include "unit sprite component.hpp"
 #include "unit stats component.hpp"
-#include "unit walk anim component.hpp"
 
 using CompList = List::Type<
   AimTower,
@@ -59,8 +58,7 @@ using CompList = List::Type<
   UnitMoveDistance,
   UnitPath,
   UnitSprite,
-  UnitStats,
-  UnitWalkAnim
+  UnitStats
 >;
 
 #endif

@@ -10,10 +10,10 @@
 
 #include "unit stats component.hpp"
 #include "slow effect component.hpp"
-#include "unit walk anim component.hpp"
+#include "unit sprite component.hpp"
 
 void slowEffectSystem(ECS::Registry &reg, const float delta) {
-  auto view = reg.view<UnitStats, SlowEffect, UnitWalkAnim>();
+  auto view = reg.view<UnitStats, SlowEffect, UnitSprite>();
   for (const ECS::EntityID entity : view) {
     SlowEffect &effect = view.get<SlowEffect>(entity);
     UnitStats &stats = view.get<UnitStats>(entity);
@@ -22,14 +22,13 @@ void slowEffectSystem(ECS::Registry &reg, const float delta) {
     
     effect.duration -= delta;
     if (effect.duration < 0.0f) {
-      view.get<UnitWalkAnim>(entity).subframes = 1;
+      view.get<UnitSprite>(entity).walk.noDelay();
       reg.remove<SlowEffect>(entity);
     } else {
-      uint32_t &subframes = view.get<UnitWalkAnim>(entity).subframes;
       if (effect.speedFactor == 0.0f) {
-        subframes = std::numeric_limits<uint32_t>::max();
+        view.get<UnitSprite>(entity).walk.maxDelay();
       } else {
-        subframes = std::nearbyint(1.0f / effect.speedFactor) + 0.001f;
+        view.get<UnitSprite>(entity).walk.speed(effect.speedFactor);
       }
     }
   }

@@ -8,19 +8,11 @@
 
 #include "unit walk anim system.hpp"
 
-#include "unit walk anim component.hpp"
+#include "unit sprite component.hpp"
 
 void unitWalkAnimSystem(ECS::Registry &reg) {
-  auto view = reg.view<UnitWalkAnim>();
+  auto view = reg.view<UnitSprite>();
   for (const ECS::EntityID entity : view) {
-    UnitWalkAnim &anim = view.get(entity);
-    ++anim.subframe;
-    if (anim.subframe >= anim.subframes) {
-      anim.subframe = 0;
-      ++anim.frame;
-      if (anim.frame >= anim.frames) {
-        anim.frame = 0;
-      }
-    }
+    view.get(entity).walk.incrRepeat();
   }
 }

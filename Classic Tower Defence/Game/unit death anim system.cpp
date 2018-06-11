@@ -14,10 +14,7 @@
 void unitDeathAnimSystem(ECS::Registry &reg) {
   auto view = reg.view<UnitSprite, UnitDeathAnim>();
   for (const ECS::EntityID entity : view) {
-    const uint32_t frames = view.get<UnitSprite>(entity).deathFrames;
-    uint32_t &frame = view.get<UnitDeathAnim>(entity).frame;
-    ++frame;
-    if (frame == frames) {
+    if (view.get<UnitSprite>(entity).death.incrStop()) {
       reg.destroy(entity);
     }
   }

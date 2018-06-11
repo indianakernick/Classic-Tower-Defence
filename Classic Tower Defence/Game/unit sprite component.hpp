@@ -9,21 +9,16 @@
 #ifndef unit_sprite_component_hpp
 #define unit_sprite_component_hpp
 
-#include <Simpleton/Data/json.hpp>
-#include <Simpleton/Sprite/types.hpp>
+#include <Simpleton/Sprite/json.hpp>
 
 struct UnitSprite {
-  Sprite::ID sprite;
-  Sprite::ID frames;
-  Sprite::ID death;
-  Sprite::ID deathFrames;
+  Sprite::DelayAnim walk;
+  Sprite::Anim death;
 };
 
 inline void from_json(const json &j, UnitSprite &comp) {
-  DATA_GET(comp, sprite);
-  DATA_GET(comp, frames);
+  DATA_GET(comp, walk);
   DATA_GET(comp, death);
-  DATA_GET(comp, deathFrames);
 }
 
 #endif

@@ -211,7 +211,6 @@
 		453884EC208B1607003EB260 /* spawner system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "spawner system.cpp"; sourceTree = "<group>"; };
 		453884ED208B1607003EB260 /* spawner system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "spawner system.hpp"; sourceTree = "<group>"; };
 		453884EF208B2325003EB260 /* unit sprite component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit sprite component.hpp"; sourceTree = "<group>"; };
-		453884F2208B245A003EB260 /* unit walk anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit walk anim component.hpp"; sourceTree = "<group>"; };
 		453884F3208B2534003EB260 /* unit walk anim system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unit walk anim system.cpp"; sourceTree = "<group>"; };
 		453884F4208B2534003EB260 /* unit walk anim system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "unit walk anim system.hpp"; sourceTree = "<group>"; };
 		453884F6208B2785003EB260 /* tower firing anim component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower firing anim component.hpp"; sourceTree = "<group>"; };
@@ -812,7 +811,6 @@
 		453884C2208ACFEC003EB260 /* Units */ = {
 			isa = PBXGroup;
 			children = (
-				453884F2208B245A003EB260 /* unit walk anim component.hpp */,
 				453884BB208ACB87003EB260 /* unit stats component.hpp */,
 				453884C1208ACFCA003EB260 /* unit dir component.hpp */,
 				453884C5208AD10F003EB260 /* unit move distance component.hpp */,

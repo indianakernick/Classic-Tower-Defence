@@ -16,12 +16,9 @@
 void unitDeathRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   auto view = reg.view<Position, UnitSprite, UnitDeathAnim>();
   for (const ECS::EntityID entity : view) {
-    Sprite::ID sprite = view.get<UnitSprite>(entity).death;
-    sprite += view.get<UnitDeathAnim>(entity).frame;
-  
     sec.quad();
     sec.depth(Depth::UNIT_DEATH);
     sec.tilePos(view.get<Position>(entity).pos);
-    sec.tileTex(sprite);
+    sec.tileTex(view.get<UnitSprite>(entity).death.sprite());
   }
 }
