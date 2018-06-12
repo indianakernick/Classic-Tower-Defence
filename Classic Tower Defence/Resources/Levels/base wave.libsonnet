@@ -15,7 +15,7 @@ local BaseUnitStats = {
 };
 
 local BaseUnit(name) = {
-  Name: name,
+  Name: std.asciiUpper(name),
   UnitPath: {},
   UnitMoveDistance: {},
   Sound: getSound("robot destroyed")

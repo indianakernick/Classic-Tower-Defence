@@ -37,6 +37,8 @@
 		4515869420CE66AB00DD4F2E /* map 1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4515869320CE66AB00DD4F2E /* map 1.txt */; };
 		4515869620CE6A3800DD4F2E /* map 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4515869520CE6A3800DD4F2E /* map 2.txt */; };
 		451586A120CE86F800DD4F2E /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 451586A020CE86F800DD4F2E /* sounds.json */; };
+		451586A320CF590D00DD4F2E /* map 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 451586A220CF590D00DD4F2E /* map 3.txt */; };
+		451586A520CF830A00DD4F2E /* map 4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 451586A420CF830A00DD4F2E /* map 4.txt */; };
 		4526A34E20AAEACF00E4F542 /* tower reset rof system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */; };
 		45388496208AB717003EB260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45388495208AB717003EB260 /* Assets.xcassets */; };
 		453884A2208AB815003EB260 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884A1208AB815003EB260 /* main.cpp */; };
@@ -176,6 +178,8 @@
 		4515869520CE6A3800DD4F2E /* map 2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 2.txt"; sourceTree = "<group>"; };
 		4515869F20CE843B00DD4F2E /* base wave.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "base wave.libsonnet"; sourceTree = "<group>"; };
 		451586A020CE86F800DD4F2E /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
+		451586A220CF590D00DD4F2E /* map 3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 3.txt"; sourceTree = "<group>"; };
+		451586A420CF830A00DD4F2E /* map 4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 4.txt"; sourceTree = "<group>"; };
 		4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower reset rof system.cpp"; sourceTree = "<group>"; };
 		4526A34D20AAEACF00E4F542 /* tower reset rof system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower reset rof system.hpp"; sourceTree = "<group>"; };
 		45388490208AB717003EB260 /* Classic Tower Defence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Tower Defence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1356,6 +1360,8 @@
 				45388591208ECC3C003EB260 /* map 0.txt */,
 				4515869320CE66AB00DD4F2E /* map 1.txt */,
 				4515869520CE6A3800DD4F2E /* map 2.txt */,
+				451586A220CF590D00DD4F2E /* map 3.txt */,
+				451586A420CF830A00DD4F2E /* map 4.txt */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -1608,6 +1614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
+				451586A320CF590D00DD4F2E /* map 3.txt in Resources */,
 				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				4515869420CE66AB00DD4F2E /* map 1.txt in Resources */,
 				4515869620CE6A3800DD4F2E /* map 2.txt in Resources */,
@@ -1615,6 +1622,7 @@
 				4568265F209AA2F600BA6AE8 /* 5x8 ascii.png in Resources */,
 				453B288220AFC29C00F6E9E6 /* ui.atlas in Resources */,
 				453B288320AFC29D00F6E9E6 /* ui.png in Resources */,
+				451586A520CF830A00DD4F2E /* map 4.txt in Resources */,
 				4563D601209710CE00DB2510 /* radius.atlas in Resources */,
 				4563D600209710CE00DB2510 /* radius.png in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,

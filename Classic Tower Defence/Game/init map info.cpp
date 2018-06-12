@@ -9,7 +9,7 @@
 #include "init map info.hpp"
 
 #include "map info tag.hpp"
-#include <Simpleton/Grid/one path.hpp>
+#include <Simpleton/Grid/a star.hpp>
 
 void initMapInfo(ECS::Registry &reg) {
   MapInfo &info = reg.get<MapInfo>();
@@ -25,7 +25,7 @@ void initMapInfo(ECS::Registry &reg) {
   const auto notPath = [] (const TileType type) {
     return type == TileType::PLATFORM;
   };
-  info.path = Grid::onePath(map, notPath, info.entry, info.exit);
+  info.path = Grid::astar(map, notPath, info.entry, info.exit);
   
   if (info.path.empty()) {
     throw std::runtime_error("Could not find path from entry to exit");

@@ -26,9 +26,23 @@ local BaseTower(index, name, sprite, sound, stats) = {
   }
 };
 
+/*
+
+must have ONE from ALL three groups
+
+------------+-----------------------
+ damage     |  turret   splash
+------------+-----------------------
+ animation  |  beam     projectile
+------------+-----------------------
+ gun        |  aim      aura
+------------+-----------------------
+
+*/
+
 [
   BaseTower(0, "blaster", "blaster", "blaster", {
-    range: 5,
+    range: 3,
     damage: 10,
     rof: 3,
     armourPiercing: 0.1
@@ -43,13 +57,13 @@ local BaseTower(index, name, sprite, sound, stats) = {
     ProjectileTower: {},
   },
   BaseTower(1, "laser", "laser", "blaster 1", {
-    range: 10,
-    damage: 5,
+    range: 7,
+    damage: 3,
     rof: 20,
-    armourPiercing: 0.2
+    armourPiercing: 0.1
   }) + {
     TowerGold: {
-      buy: 150,
+      buy: 50,
       sell: 100
     },
     TowerTarget: {},
@@ -59,14 +73,14 @@ local BaseTower(index, name, sprite, sound, stats) = {
     TurretTower: {},
   },
   BaseTower(2, "plasma cannon", "plasma", "plasma", {
-    range: 6,
-    damage: 50,
-    rof: 1/3,
+    range: 5,
+    damage: 150,
+    rof: 1/2,
     armourPiercing: 0.6
   }) + {
     TowerGold: {
       buy: 150,
-      sell: 100
+      sell: 200
     },
     ProjectileTower: {},
     TurretTower: {},
@@ -74,7 +88,7 @@ local BaseTower(index, name, sprite, sound, stats) = {
     AimTower: {},
   },
   BaseTower(3, "cannon", "cannon", "cannon", {
-    range: 6,
+    range: 4,
     damage: 60,
     rof: 1/2,
     armourPiercing: 0.5
@@ -86,24 +100,25 @@ local BaseTower(index, name, sprite, sound, stats) = {
     ProjectileTower: {},
     TowerTarget: {},
     AimTower: {},
+    TurretTower: {}
   },
   BaseTower(4, "explosive cannon", "explosive cannon", "cannon", {
     range: 4,
-    damage: 50,
+    damage: 40,
     rof: 1/2,
-    armourPiercing: 0.6
+    armourPiercing: 0.4
   }) + {
     SplashTower: {
-      aoe: 3
+      aoe: 1
     },
     TowerGold: {
       buy: 100,
-      sell: 50
+      sell: 100
     },
     ProjectileTower: {},
     TowerEffect: {},
     TowerTarget: {},
-    AimTower: {},
+    AimTower: {}
   },
   BaseTower(5, "poison cannon", "poison cannon", "cannon", {
     range: 4,
@@ -112,17 +127,17 @@ local BaseTower(index, name, sprite, sound, stats) = {
     armourPiercing: 0.6
   }) + {
     SplashTower: {
-      aoe: 3
+      aoe: 1
     },
     TowerEffect: {
       PoisonEffect: {
-        damageFactor: 0.2,
+        damageFactor: 0.1,
         duration: 2
       }
     },
     TowerGold: {
-      buy: 100,
-      sell: 50
+      buy: 200,
+      sell: 150
     },
     ProjectileTower: {},
     TowerTarget: {},
