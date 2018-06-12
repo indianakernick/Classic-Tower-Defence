@@ -16,7 +16,8 @@ enum class TileType : uint8_t {
   ENTRY,
   EXIT,
   PATH,
-  PLATFORM
+  PLATFORM,
+  TREE
 };
 
 using Map = Grid::Grid<TileType>;

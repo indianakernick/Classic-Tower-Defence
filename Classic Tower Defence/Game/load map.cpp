@@ -23,6 +23,8 @@ namespace {
         return TileType::PATH;
       case '#':
         return TileType::PLATFORM;
+      case 'x':
+        return TileType::TREE;
       case EOF:
         throw std::runtime_error("Unexpected end of map file");
       default:

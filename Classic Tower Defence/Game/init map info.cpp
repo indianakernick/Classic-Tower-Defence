@@ -23,7 +23,7 @@ void initMapInfo(ECS::Registry &reg) {
   }
   
   const auto notPath = [] (const TileType type) {
-    return type == TileType::PLATFORM;
+    return type == TileType::PLATFORM || type == TileType::TREE;
   };
   info.path = Grid::astar(map, notPath, info.entry, info.exit);
   

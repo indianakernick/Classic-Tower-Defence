@@ -180,6 +180,7 @@
 		451586A020CE86F800DD4F2E /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
 		451586A220CF590D00DD4F2E /* map 3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 3.txt"; sourceTree = "<group>"; };
 		451586A420CF830A00DD4F2E /* map 4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 4.txt"; sourceTree = "<group>"; };
+		451586A620CF876300DD4F2E /* map 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map 4.png"; sourceTree = "<group>"; };
 		4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower reset rof system.cpp"; sourceTree = "<group>"; };
 		4526A34D20AAEACF00E4F542 /* tower reset rof system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower reset rof system.hpp"; sourceTree = "<group>"; };
 		45388490208AB717003EB260 /* Classic Tower Defence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Tower Defence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1153,6 +1154,7 @@
 				4538852B208C5CE5003EB260 /* map 1.png */,
 				45388528208C5CE4003EB260 /* map 2.png */,
 				45388529208C5CE4003EB260 /* map 3.png */,
+				451586A620CF876300DD4F2E /* map 4.png */,
 				45F24DF8209E873F00EAE60D /* plasma 0.png */,
 				45F24DFA209E873F00EAE60D /* plasma 1.png */,
 				45F24DF9209E873F00EAE60D /* plasma 2.png */,
