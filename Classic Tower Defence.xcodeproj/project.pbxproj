@@ -1373,10 +1373,10 @@
 			children = (
 				453B151A2090453D00BFA00D /* get sprite.libsonnet */,
 				453B154B20907CDD00BFA00D /* get sound.libsonnet */,
+				453B15372090760900BFA00D /* towers.jsonnet */,
 				4515869F20CE843B00DD4F2E /* base wave.libsonnet */,
 				453B151520903F5100BFA00D /* level 0.jsonnet */,
 				453B289C20B1274A00F6E9E6 /* level 1.jsonnet */,
-				453B15372090760900BFA00D /* towers.jsonnet */,
 			);
 			path = Levels;
 			sourceTree = "<group>";

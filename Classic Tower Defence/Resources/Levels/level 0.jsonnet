@@ -41,8 +41,8 @@ local BaseWave = import "base wave.libsonnet";
       gold: 10
     }),
     BaseWave(3, "sick lad", "tank", {
-      health: 1000,
-      armour: 1000,
+      health: 750,
+      armour: 750,
       healthRegen: 20,
       armourRegen: 20,
       gold: 15
