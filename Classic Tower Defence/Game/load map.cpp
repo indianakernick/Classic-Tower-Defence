@@ -36,8 +36,8 @@ namespace {
 void loadMap(ECS::Registry &reg, const int mapID) {
   std::ifstream file(SDL::getResDir() + "map " + std::to_string(mapID) + ".txt");
   Map &map = reg.get<Map>();
-  for (Grid::Coord y = map.height() - 1; y != Grid::Coord(-1); --y) {
-    for (Grid::Coord x = 0; x != map.width(); ++x) {
+  for (const Grid::Coord y : map.vertRev()) {
+    for (const Grid::Coord x : map.hori()) {
       map[{x, y}] = tileChar(file.get());
     }
     if (file.get() != '\n') {
