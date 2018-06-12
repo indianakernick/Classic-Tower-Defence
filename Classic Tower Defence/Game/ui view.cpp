@@ -90,13 +90,13 @@ void UIView::updateCam(const Cam2D::Params params) {
 Consumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
   Consumed consumed = Consumed::NO;
   
-  const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters());
-  
   if (e.type == SDL_MOUSEBUTTONDOWN) {
+    const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters(), e.button);
     consumed = handleClick(uiReg, getObjAtPos(uiReg, pos));
   }
   
   if (!consumed && e.type == SDL_MOUSEBUTTONDOWN) {
+    const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters(), e.button);
     consumed = stats.click(pos, reg);
   }
   
