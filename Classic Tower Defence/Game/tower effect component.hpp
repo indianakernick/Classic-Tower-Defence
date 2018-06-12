@@ -41,6 +41,8 @@ inline void from_json(const json &node, TowerEffect &comp) {
     comp.apply = [effect] (ECS::Registry &reg, const ECS::EntityID entity) {
       reg.accommodate<PoisonEffect>(entity, effect);
     };
+  } else {
+    comp.apply = [] (ECS::Registry &, ECS::EntityID) {};
   }
 }
 

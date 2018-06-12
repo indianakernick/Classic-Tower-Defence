@@ -10,162 +10,107 @@ local towerSprites(sprite) = {
   }
 };
 
+local BaseTower(index, name, sprite, sound, stats) = {
+  local tower = self,
+
+  Name: std.asciiUpper(name),
+  CommonTowerStats: stats,
+  TowerSprites: towerSprites(sprite),
+  Sound: getSound(sound),
+  TowerShootTime: {
+    fireTime: 1 / tower.CommonTowerStats.rof,
+    startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
+  },
+  upgrades: {
+    [if index % 3 != 2 then "next"]: index + 1
+  }
+};
+
 [
-  {
-    local tower = self,
-    ProjectileTower: {},
-    CommonTowerStats: {
-      range: 6,
-      damage: 10,
-      rof: 3,
-      armourPiercing: 0.1
-    },
+  BaseTower(0, "blaster", "blaster", "blaster", {
+    range: 5,
+    damage: 10,
+    rof: 3,
+    armourPiercing: 0.1
+  }) + {
     TowerGold: {
       buy: 100,
       sell: 50
     },
+    AimTower: {},
+    TowerTarget: {},
     TurretTower: {},
-    TowerSprites: towerSprites("blaster"),
-    upgrades: {
-      next: 1
-    },
-    Sound: getSound("blaster"),
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
+    ProjectileTower: {},
+  },
+  BaseTower(1, "laser", "laser", "blaster 1", {
+    range: 10,
+    damage: 5,
+    rof: 20,
+    armourPiercing: 0.2
+  }) + {
+    TowerGold: {
+      buy: 150,
+      sell: 100
     },
     TowerTarget: {},
     AimTower: {},
-    Name: "BLASTER",
-  },
-  {
-    local tower = self,
+    TowerBeamAnim: {},
     BeamTower: {},
     TurretTower: {},
-    CommonTowerStats: {
-      range: 10,
-      damage: 5,
-      rof: 20,
-      armourPiercing: 0.2
-    },
-    TowerGold: {
-      buy: 150,
-      sell: 100
-    },
-    TowerSprites: towerSprites("laser"),
-    upgrades: {
-      next: 2
-    },
-    Sound: getSound("blaster 1"),
-    TowerBeamAnim: {},
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
-    },
-    TowerTarget: {},
-    AimTower: {},
-    Name: "LASER"
   },
-  {
-    local tower = self,
-    ProjectileTower: {},
-    CommonTowerStats: {
-      range: 6,
-      damage: 50,
-      rof: 1/3,
-      armourPiercing: 0.6
-    },
+  BaseTower(2, "plasma cannon", "plasma", "plasma", {
+    range: 6,
+    damage: 50,
+    rof: 1/3,
+    armourPiercing: 0.6
+  }) + {
     TowerGold: {
       buy: 150,
       sell: 100
     },
+    ProjectileTower: {},
     TurretTower: {},
-    TowerSprites: towerSprites("plasma"),
-    upgrades: {},
-    Sound: getSound("plasma"),
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
-    },
     TowerTarget: {},
     AimTower: {},
-    Name: "PLASMA CANNON"
   },
-  {
-    local tower = self,
-    ProjectileTower: {},
-    CommonTowerStats: {
-      range: 6,
-      damage: 60,
-      rof: 1/2,
-      armourPiercing: 0.5
-    },
+  BaseTower(3, "cannon", "cannon", "cannon", {
+    range: 6,
+    damage: 60,
+    rof: 1/2,
+    armourPiercing: 0.5
+  }) + {
     TowerGold: {
       buy: 100,
       sell: 50
     },
-    TowerSprites: towerSprites("cannon"),
-    upgrades: {
-      next: 4
-    },
-    Sound: getSound("cannon"),
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
-    },
+    ProjectileTower: {},
     TowerTarget: {},
     AimTower: {},
-    Name: "CANNON"
   },
-  {
-    local tower = self,
-    ProjectileTower: {},
-    CommonTowerStats: {
-      range: 4,
-      damage: 50,
-      rof: 1/2,
-      armourPiercing: 0.6
-    },
-    TowerGold: {
-      buy: 100,
-      sell: 50
-    },
+  BaseTower(4, "explosive cannon", "explosive cannon", "cannon", {
+    range: 4,
+    damage: 50,
+    rof: 1/2,
+    armourPiercing: 0.6
+  }) + {
     SplashTower: {
       aoe: 3
     },
-    TowerEffect: {
-      # is this necessary?
-      PoisonEffect: {
-        damageFactor: 0.0,
-        duration: 0
-      }
-    },
-    TowerSprites: towerSprites("explosive cannon"),
-    upgrades: {
-      next: 5
-    },
-    Sound: getSound("cannon"),
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
-    },
-    TowerTarget: {},
-    AimTower: {},
-    Name: "EXPLOSIVE CANNON"
-  },
-  {
-    local tower = self,
-    ProjectileTower: {},
-    CommonTowerStats: {
-      range: 4,
-      damage: 20,
-      rof: 1/4,
-      armourPiercing: 0.6
-    },
     TowerGold: {
       buy: 100,
       sell: 50
     },
+    ProjectileTower: {},
+    TowerEffect: {},
+    TowerTarget: {},
+    AimTower: {},
+  },
+  BaseTower(5, "poison cannon", "poison cannon", "cannon", {
+    range: 4,
+    damage: 20,
+    rof: 1/4,
+    armourPiercing: 0.6
+  }) + {
     SplashTower: {
       aoe: 3
     },
@@ -175,30 +120,20 @@ local towerSprites(sprite) = {
         duration: 2
       }
     },
-    TowerSprites: towerSprites("poison cannon"),
-    upgrades: {},
-    Sound: getSound("cannon"),
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
-    },
-    TowerTarget: {},
-    AimTower: {},
-    Name: "POISON CANNON"
-  },
-  {
-    local tower = self,
-    ProjectileTower: {},
-    CommonTowerStats: {
-      range: 4,
-      damage: 5,
-      rof: 1/2,
-      armourPiercing: 0.4
-    },
     TowerGold: {
       buy: 100,
       sell: 50
     },
+    ProjectileTower: {},
+    TowerTarget: {},
+    AimTower: {},
+  },
+  BaseTower(6, "snowball shooter", "snowball", "cannon", {
+    range: 4,
+    damage: 5,
+    rof: 1/2,
+    armourPiercing: 0.4
+  }) + {
     SplashTower: {
       aoe: 3
     },
@@ -208,32 +143,20 @@ local towerSprites(sprite) = {
         duration: 4
       }
     },
-    TowerSprites: towerSprites("snowball"),
-    upgrades: {
-      next: 7
-    },
-    Sound: getSound("cannon"),
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
-    },
-    TowerTarget: {},
-    AimTower: {},
-    Name: "SNOWBALL SHOOTER"
-  },
-  {
-    local tower = self,
-    ProjectileTower: {},
-    CommonTowerStats: {
-      range: 4,
-      damage: 5,
-      rof: 1/8,
-      armourPiercing: 0.4
-    },
     TowerGold: {
       buy: 100,
       sell: 50
     },
+    ProjectileTower: {},
+    TowerTarget: {},
+    AimTower: {},
+  },
+  BaseTower(7, "iceball shooter", "iceball", "cannon", {
+    range: 4,
+    damage: 5,
+    rof: 1/8,
+    armourPiercing: 0.4
+  }) + {
     SplashTower: {
       aoe: 3
     },
@@ -243,20 +166,18 @@ local towerSprites(sprite) = {
         duration: 2
       }
     },
-    TowerSprites: towerSprites("iceball"),
-    upgrades: {
-      next: 8
+    TowerGold: {
+      buy: 100,
+      sell: 50
     },
-    Sound: getSound("cannon"),
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
-    },
+    ProjectileTower: {},
     TowerTarget: {},
     AimTower: {},
-    Name: "ICEBALL SHOOTER"
   },
   {
+    # doesn't really work with the BaseTower because of custom TowerSprites
+    Name: "ICE AURA",
+
     local tower = self,
     CommonTowerStats: {
       range: 4,
@@ -289,10 +210,12 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
-    AuraTower: {},
-    Name: "ICE AURA"
+    AuraTower: {}
   },
   {
+    # doesn't really work with the BaseTower because of custom TowerSprites
+    Name: "FLAMETHROWER",
+
     local tower = self,
     BeamTower: {},
     CommonTowerStats: {
@@ -338,22 +261,14 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
-    AimTower: {},
-    Name: "FLAMETHROWER"
+    AimTower: {}
   },
-  {
-    local tower = self,
-    ProjectileTower: {},
-    CommonTowerStats: {
-      range: 6,
-      damage: 50,
-      rof: 1,
-      armourPiercing: 0.2
-    },
-    TowerGold: {
-      buy: 150,
-      sell: 100
-    },
+  BaseTower(10, "fireball shooter", "fireball", "fire ball shooting", {
+    range: 6,
+    damage: 50,
+    rof: 1,
+    armourPiercing: 0.2
+  }) + {
     SplashTower: {
       aoe: 2
     },
@@ -363,20 +278,18 @@ local towerSprites(sprite) = {
         duration: 1
       }
     },
-    TowerSprites: towerSprites("fireball"),
-    upgrades: {
-      next: 11
+    TowerGold: {
+      buy: 150,
+      sell: 100
     },
-    Sound: getSound("fire ball shooting"),
-    TowerShootTime: {
-      fireTime: 1 / tower.CommonTowerStats.rof,
-      startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
-    },
+    ProjectileTower: {},
     TowerTarget: {},
     AimTower: {},
-    Name: "FIREBALL SHOOTER"
   },
   {
+    # doesn't really work with the BaseTower because of custom TowerSprites
+    Name: "FIRE AURA",
+
     local tower = self,
     CommonTowerStats: {
       range: 2,
@@ -409,7 +322,6 @@ local towerSprites(sprite) = {
       startTime: self.fireTime - tower.TowerSprites.gun.frames / 20
     },
     TowerTarget: {},
-    AuraTower: {},
-    Name: "FIRE AURA"
+    AuraTower: {}
   },
 ]
