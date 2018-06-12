@@ -23,6 +23,7 @@ void loadWaves(ECS::Registry &reg, const json &wavesNode) {
   for (const auto &node : array) {
     Wave &wave = waves.emplace_back(Wave{0, reg});
     Data::get(wave.quantity, node, "quantity");
+    [[maybe_unused]]
     const int unreadCount = loadProto(wave.proto, node.at("proto"));
     assert(unreadCount == 0);
     wave.proto.set<UnitDir>(map.entryDir);
