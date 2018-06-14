@@ -106,7 +106,7 @@ must have ONE from ALL three groups
     range: 4,
     damage: 80,
     rof: 1/4,
-    armourPiercing: 0.4
+    armourPiercing: 0.5
   }) + {
     SplashTower: {
       aoe: 2
@@ -122,7 +122,7 @@ must have ONE from ALL three groups
   },
   BaseTower(5, "poison cannon", "poison cannon", "cannon", {
     range: 4,
-    damage: 40,
+    damage: 20,
     rof: 1/2,
     armourPiercing: 0.6
   }) + {
@@ -131,12 +131,12 @@ must have ONE from ALL three groups
     },
     TowerEffect: {
       PoisonEffect: {
-        damageFactor: 0.1,
+        damageFactor: 0.05,
         duration: 2
       }
     },
     TowerGold: {
-      buy: 200,
+      buy: 150,
       sell: 150
     },
     ProjectileTower: {},
@@ -144,7 +144,7 @@ must have ONE from ALL three groups
     AimTower: {},
   },
   BaseTower(6, "snowball shooter", "snowball", "cannon", {
-    range: 3,
+    range: 2,
     damage: 10,
     rof: 1,
     armourPiercing: 0.2
@@ -167,7 +167,7 @@ must have ONE from ALL three groups
     AimTower: {},
   },
   BaseTower(7, "iceball shooter", "iceball", "cannon", {
-    range: 4,
+    range: 3,
     damage: 30,
     rof: 1/8,
     armourPiercing: 0.4

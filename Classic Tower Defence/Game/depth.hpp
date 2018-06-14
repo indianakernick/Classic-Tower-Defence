@@ -19,10 +19,10 @@ enum class Depth {
   UNIT_HEALTH,
   UNIT_DEATH,
   TOWER_AURA,
+  TOWER_GUN,
   TOWER_PROJ,
   TOWER_BEAM,
   UNIT,
-  TOWER_GUN,
   TOWER_BASE,
   MAP,
   
