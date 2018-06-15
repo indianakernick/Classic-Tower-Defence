@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.11.3/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.11.4/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.11.3/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/3.11.4/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -60,756 +60,756 @@ include CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.obj: ../Classic\ Tower\ Defence/Game/create\ spawner.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create spawner.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create spawner.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create spawner.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create spawner.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create spawner.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create spawner.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_spawner.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ death\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.obj: ../Classic\ Tower\ Defence/Game/game\ info\ model.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info model.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info model.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info model.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info model.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info model.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info model.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_model.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: ../Classic\ Tower\ Defence/Game/game\ info\ view.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info view.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info view.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info view.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info view.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info view.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info view.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.obj: ../Classic\ Tower\ Defence/Game/splash\ damage\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/splash damage system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/splash damage system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/splash damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/splash damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/splash damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/splash damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/splash_damage_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ beam\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.obj: ../Classic\ Tower\ Defence/Game/aura\ damage\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/aura damage system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/aura damage system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/aura damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/aura damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/aura damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/aura damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/aura_damage_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.obj: ../Classic\ Tower\ Defence/Game/load\ map.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load map.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load map.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load map.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load map.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load map.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load map.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_map.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.obj: ../Classic\ Tower\ Defence/Game/cursor\ systems.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/cursor systems.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/cursor systems.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/cursor systems.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/cursor systems.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/cursor systems.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/cursor systems.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/cursor_systems.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ reset\ rof\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower reset rof system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower reset rof system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower reset rof system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower reset rof system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower reset rof system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower reset rof system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_reset_rof_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.obj: ../Classic\ Tower\ Defence/Game/base\ damage\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ death\ sound\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death sound system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death sound system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death sound system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death sound system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death sound system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death sound system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_sound_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ motion\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit motion system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit motion system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit motion system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit motion system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit motion system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit motion system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_motion_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.obj: ../Classic\ Tower\ Defence/Game/count\ live\ units.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/count live units.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/count live units.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/count live units.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/count live units.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/count live units.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/count live units.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/count_live_units.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ beam\ anim\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam anim system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam anim system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam anim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam anim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam anim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam anim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_anim_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.obj: ../Classic\ Tower\ Defence/Game/load\ towers.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load towers.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load towers.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load towers.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load towers.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load towers.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load towers.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_towers.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.obj: ../Classic\ Tower\ Defence/Game/turret\ damage\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/turret damage system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/turret damage system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/turret damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/turret damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/turret damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/turret damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/turret_damage_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ sound\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sound system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sound system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sound system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sound system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sound system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sound system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_sound_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.obj: ../Classic\ Tower\ Defence/Game/load\ prototype.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load prototype.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load prototype.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load prototype.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load prototype.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load prototype.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load prototype.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_prototype.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.obj: ../Classic\ Tower\ Defence/Game/stats\ controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats controller.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats controller.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats controller.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats controller.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats controller.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats controller.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ death\ anim\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death anim system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death anim system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death anim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death anim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death anim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death anim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_anim_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ aura\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aura rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aura rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aura rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aura rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aura rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aura rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ aim\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aim system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aim system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aim_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ damage\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit damage system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit damage system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit damage system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit damage system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_damage_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.obj: ../Classic\ Tower\ Defence/Game/slow\ effect\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/slow effect system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/slow effect system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/slow effect system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/slow effect system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/slow effect system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/slow effect system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/slow_effect_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.obj: ../Classic\ Tower\ Defence/Game/game\ logic.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game logic.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game logic.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game logic.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game logic.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game logic.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game logic.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_logic.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.obj: ../Classic\ Tower\ Defence/Game/next\ wave.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/next wave.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/next wave.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/next wave.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/next wave.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/next wave.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/next wave.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/next_wave.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ regen\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit regen system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit regen system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit regen system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit regen system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit regen system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit regen system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_regen_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ effect\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit effect system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit effect system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit effect system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit effect system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit effect system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit effect system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_effect_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.obj: ../Classic\ Tower\ Defence/Game/poison\ effect\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/poison effect system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/poison effect system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/poison effect system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/poison effect system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/poison effect system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/poison effect system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/poison_effect_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.obj: ../Classic\ Tower\ Defence/Game/load\ waves.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load waves.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load waves.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load waves.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load waves.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load waves.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load waves.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_waves.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ projectile\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower projectile rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower projectile rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower projectile rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower projectile rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower projectile rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower projectile rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ health\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit health rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit health rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit health rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit health rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit health rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit health rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ walk\ anim\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_walk_anim_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.obj: ../Classic\ Tower\ Defence/Game/init\ map\ info.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/init map info.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/init map info.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/init map info.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/init map info.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/init map info.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/init map info.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/init_map_info.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.obj: ../Classic\ Tower\ Defence/Game/load\ level.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.obj: ../Classic\ Tower\ Defence/Game/sound\ queue.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/sound queue.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/sound queue.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/sound queue.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/sound queue.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/sound queue.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/sound queue.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/sound_queue.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/unit\ death\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ rof\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rof system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rof system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rof system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rof system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rof system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rof system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rof_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.obj: ../Classic\ Tower\ Defence/Game/stats\ view.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats view.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats view.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats view.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats view.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats view.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats view.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.obj: ../Classic\ Tower\ Defence/Game/spawner\ timing\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner timing system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner timing system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner timing system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner timing system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner timing system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner timing system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_timing_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.obj: ../Classic\ Tower\ Defence/Game/load\ base.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load base.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load base.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load base.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load base.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load base.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load base.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_base.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.obj: ../Classic\ Tower\ Defence/Game/stats\ model.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats model.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats model.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats model.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats model.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats model.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats model.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_model.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.obj: ../Classic\ Tower\ Defence/Game/spawner\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/spawner system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/spawner_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.obj: ../Classic\ Tower\ Defence/Game/preview\ entity.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/preview entity.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/preview entity.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/preview entity.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/preview entity.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/preview entity.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/preview entity.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/preview_entity.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.obj: ../Classic\ Tower\ Defence/Game/game\ view.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game view.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game view.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game view.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game view.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game view.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game view.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.obj: ../Classic\ Tower\ Defence/Game/create\ tower.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create tower.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create tower.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create tower.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create tower.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create tower.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create tower.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_tower.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.obj: ../Classic\ Tower\ Defence/Game/ui\ view.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/ui view.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/ui view.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/ui view.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/ui view.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/ui view.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/ui view.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.obj: ../Classic\ Tower\ Defence/Game/get\ wave\ info.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/get wave info.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/get wave info.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/get wave info.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/get wave info.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/get wave info.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/get wave info.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/get_wave_info.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.obj: ../Classic\ Tower\ Defence/Game/firing\ anim\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/firing anim system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/firing anim system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/firing anim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/firing anim system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/firing anim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/firing anim system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/firing_anim_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.obj: ../Classic\ Tower\ Defence/Game/create\ level.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create level.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create level.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create level.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create level.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create level.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/create level.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/create_level.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/tower\ range\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.obj: ../Classic\ Tower\ Defence/Game/load\ spawner.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load spawner.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load spawner.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load spawner.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load spawner.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load spawner.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load spawner.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_spawner.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.obj: ../Classic\ Tower\ Defence/Game/map\ rendering\ system.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map rendering system.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map rendering system.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map rendering system.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map rendering system.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.obj: ../Classic\ Tower\ Defence/Game/app.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/app.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/app.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/app.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/app.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/app.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/app.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.s
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.obj: CMakeFiles/GameExec.dir/flags.make
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.obj: ../Classic\ Tower\ Defence/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Web_Build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.obj"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/main.cpp"
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.obj -c "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/main.cpp"
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.i"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/main.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.i
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/main.cpp" > CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.i
 
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.s"
-	/usr/local/Cellar/emscripten/1.38.5/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/main.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.s
+	/usr/local/Cellar/emscripten/1.38.6/libexec/emcc $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/main.cpp" -o CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.s
 
 # Object files for target GameExec
 GameExec_OBJECTS = \

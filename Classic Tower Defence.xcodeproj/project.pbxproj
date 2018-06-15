@@ -421,9 +421,6 @@
 		453B28A220B2396C00F6E9E6 /* name component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "name component.hpp"; sourceTree = "<group>"; };
 		453B28A620B27D5300F6E9E6 /* text renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "text renderer.hpp"; sourceTree = "<group>"; };
 		453B28A720B27D5300F6E9E6 /* text renderer.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "text renderer.inl"; sourceTree = "<group>"; };
-		4546E90320C9103D00F4DCCD /* glew32.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = glew32.dll; sourceTree = "<group>"; };
-		4546E90420C9103D00F4DCCD /* SDL2_mixer.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDL2_mixer.dll; sourceTree = "<group>"; };
-		4546E90520C9103D00F4DCCD /* SDL2.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDL2.dll; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4554A1EB20C63B050051A8F2 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		4554A1EC20C684730051A8F2 /* init.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = init.js; sourceTree = "<group>"; };
@@ -1405,9 +1402,6 @@
 		4546E90220C9103D00F4DCCD /* Windows_Build */ = {
 			isa = PBXGroup;
 			children = (
-				4546E90320C9103D00F4DCCD /* glew32.dll */,
-				4546E90420C9103D00F4DCCD /* SDL2_mixer.dll */,
-				4546E90520C9103D00F4DCCD /* SDL2.dll */,
 			);
 			path = Windows_Build;
 			sourceTree = "<group>";
