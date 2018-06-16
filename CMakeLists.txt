@@ -4,7 +4,7 @@ project(Game)
 option(EMBUILD "Build with emscripten, mingw otherwise" YES)
 
 set(EMSCRIPTEN_CC /usr/local/Cellar/emscripten/1.38.6/libexec/emcc)
-set(MINGW_CC /usr/local/Cellar/mingw-w64/5.0.4/toolchain-x86_64/bin/x86_64-w64-mingw32-g++)
+set(MINGW_CC /usr/local/Cellar/mingw-w64/5.0.3_3/toolchain-x86_64/bin/x86_64-w64-mingw32-g++)
 if(EMBUILD)
     set(CC ${EMSCRIPTEN_CC})
 else()
@@ -29,10 +29,10 @@ if (EMBUILD)
       --preload-file '${RES_PATH}@/' \
       -O3 \
     ")
-    set(CMAKE_CXX_FLAGS "-O3 -msse3 -DDISABLE_OPENGL_ERROR_CHECKING")
+    set(CMAKE_CXX_FLAGS "-O3 -DNDEBUG -msse3 -DDISABLE_OPENGL_ERROR_CHECKING")
 else()
     set(LINKER_FLAGS "-static-libstdc++ -static-libgcc -L./ -Wl,-rpath,./")
-    set(CMAKE_CXX_FLAGS "-O3 -DGLM_FORCE_CTOR_INIT -DDISABLE_OPENGL_ERROR_CHECKING")
+    set(CMAKE_CXX_FLAGS "-O3 -DNDEBUG -DGLM_FORCE_CTOR_INIT -DDISABLE_OPENGL_ERROR_CHECKING")
 endif()
 
 set(SOURCE_FILES

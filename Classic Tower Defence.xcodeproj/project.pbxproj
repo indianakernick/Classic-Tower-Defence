@@ -699,8 +699,6 @@
 			isa = PBXGroup;
 			children = (
 				4554A1EB20C63B050051A8F2 /* CMakeLists.txt */,
-				4546E90220C9103D00F4DCCD /* Windows_Build */,
-				4546E90120C9102D00F4DCCD /* Web_Build */,
 				4554A1EA20C63AE20051A8F2 /* Webpage */,
 				45388492208AB717003EB260 /* Classic Tower Defence */,
 				45388491208AB717003EB260 /* Products */,
@@ -1391,20 +1389,6 @@
 				457EB34220BF99D50054E16F /* disable.png */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		4546E90120C9102D00F4DCCD /* Web_Build */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Web_Build;
-			sourceTree = "<group>";
-		};
-		4546E90220C9103D00F4DCCD /* Windows_Build */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Windows_Build;
 			sourceTree = "<group>";
 		};
 		4554A1EA20C63AE20051A8F2 /* Webpage */ = {

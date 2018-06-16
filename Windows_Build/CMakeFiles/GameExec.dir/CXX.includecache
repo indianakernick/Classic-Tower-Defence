@@ -65,6 +65,8 @@ Simpleton/ECS/registry.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.cpp
 base damage system.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.hpp
+load level.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.hpp
 map info tag.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map info tag.hpp
 base health tag.hpp
@@ -125,8 +127,6 @@ tower beam anim component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam anim component.hpp
 tower effect component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower effect component.hpp
-tower firing anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower firing anim component.hpp
 tower gold component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower gold component.hpp
 tower shoot time component.hpp
@@ -151,8 +151,6 @@ unit sprite component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit sprite component.hpp
 unit stats component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit stats component.hpp
-unit walk anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/count live units.cpp
 count live units.hpp
@@ -243,12 +241,12 @@ beam tower component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/beam tower component.hpp
 tower target component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower target component.hpp
+tower sprites component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sprites component.hpp
 projectile tower component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/projectile tower component.hpp
 tower shoot time component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower shoot time component.hpp
-tower firing anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower firing anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/firing anim system.hpp
 Simpleton/ECS/registry.hpp
@@ -283,7 +281,7 @@ game info.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info.hpp
 text renderer.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/text renderer.hpp
-Simpleton/Graphics 2D/sheet writer.hpp
+Simpleton/Graphics 2D/quad writer.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info.hpp
@@ -413,7 +411,7 @@ init map info.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/init map info.hpp
 map info tag.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map info tag.hpp
-Simpleton/Grid/one path.hpp
+Simpleton/Grid/a star.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/init map info.hpp
@@ -465,6 +463,10 @@ Simpleton/SDL/paths.hpp
 -
 Simpleton/Data/json.hpp
 -
+unit stats component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit stats component.hpp
+common tower stats component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/common tower stats component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.hpp
 Simpleton/ECS/registry.hpp
@@ -575,8 +577,6 @@ Simpleton/Utils/profiler.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map rendering system.hpp
 Simpleton/ECS/registry.hpp
 -
-Simpleton/Sprite/sheet.hpp
--
 Simpleton/Graphics 2D/quad writer.hpp
 -
 
@@ -639,8 +639,6 @@ unit dir component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit dir component.hpp
 unit sprite component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit sprite component.hpp
-unit walk anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/preview entity.hpp
 Simpleton/ECS/registry.hpp
@@ -659,8 +657,8 @@ unit stats component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit stats component.hpp
 slow effect component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/slow effect component.hpp
-unit walk anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim component.hpp
+unit sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit sprite component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/slow effect system.hpp
 Simpleton/ECS/registry.hpp
@@ -771,7 +769,7 @@ Simpleton/ECS/registry.hpp
 -
 Simpleton/SDL/system cursors.hpp
 -
-Simpleton/Graphics 2D/sheet writer.hpp
+Simpleton/Graphics 2D/quad writer.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/stats model.cpp
@@ -833,7 +831,7 @@ experimental/optional
 -
 Simpleton/Math/rect.hpp
 -
-Simpleton/Graphics 2D/sheet writer.hpp
+Simpleton/Graphics 2D/quad writer.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/text renderer.hpp
@@ -877,13 +875,9 @@ aura tower component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/aura tower component.hpp
 tower sprites component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sprites component.hpp
-tower firing anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower firing anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower aura rendering system.hpp
 Simpleton/ECS/registry.hpp
--
-Simpleton/Sprite/sheet.hpp
 -
 Simpleton/Graphics 2D/quad writer.hpp
 -
@@ -917,13 +911,9 @@ tower sprites component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sprites component.hpp
 tower beam anim component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam anim component.hpp
-tower firing anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower firing anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower beam rendering system.hpp
 Simpleton/ECS/registry.hpp
--
-Simpleton/Sprite/sheet.hpp
 -
 Simpleton/Graphics 2D/quad writer.hpp
 -
@@ -939,12 +929,6 @@ Simpleton/ECS/registry.hpp
 -
 poison effect component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/poison effect component.hpp
-
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower firing anim component.hpp
-cstdint
--
-Simpleton/Data/json.hpp
--
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower gold component.hpp
 Simpleton/Data/json.hpp
@@ -963,13 +947,9 @@ tower sprites component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sprites component.hpp
 projectile tower component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/projectile tower component.hpp
-tower firing anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower firing anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower projectile rendering system.hpp
 Simpleton/ECS/registry.hpp
--
-Simpleton/Sprite/sheet.hpp
 -
 Simpleton/Graphics 2D/quad writer.hpp
 -
@@ -977,6 +957,8 @@ Simpleton/Graphics 2D/quad writer.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.cpp
 tower range rendering system.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.hpp
+depth.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/depth.hpp
 position component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/position component.hpp
 common tower stats component.hpp
@@ -984,8 +966,6 @@ common tower stats component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.hpp
 Simpleton/ECS/registry.hpp
--
-Simpleton/Sprite/sheet.hpp
 -
 Simpleton/Graphics 2D/quad writer.hpp
 -
@@ -1003,13 +983,9 @@ tower target component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower target component.hpp
 tower sprites component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sprites component.hpp
-tower firing anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower firing anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower rendering system.hpp
 Simpleton/ECS/registry.hpp
--
-Simpleton/Sprite/sheet.hpp
 -
 Simpleton/Graphics 2D/quad writer.hpp
 -
@@ -1045,8 +1021,8 @@ tower sound system.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sound system.hpp
 sound component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/sound component.hpp
-tower firing anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower firing anim component.hpp
+tower sprites component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sprites component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sound system.hpp
 sound queue.hpp
@@ -1055,9 +1031,7 @@ Simpleton/ECS/registry.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower sprites component.hpp
-Simpleton/Data/json.hpp
--
-Simpleton/Sprite/types.hpp
+Simpleton/Sprite/json.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower target component.hpp
@@ -1115,8 +1089,12 @@ game info model.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/game info model.hpp
 basic components.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/basic components.hpp
+Simpleton/SDL/events.hpp
+-
 Simpleton/SDL/mouse pos.hpp
 -
+tower range rendering system.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/tower range rendering system.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/ui view.hpp
 stats controller.hpp
@@ -1172,8 +1150,6 @@ unit death anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit death rendering system.hpp
 Simpleton/ECS/registry.hpp
--
-Simpleton/Sprite/sheet.hpp
 -
 Simpleton/Graphics 2D/quad writer.hpp
 -
@@ -1241,8 +1217,6 @@ unit stats component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit health rendering system.hpp
 Simpleton/ECS/registry.hpp
 -
-Simpleton/Sprite/sheet.hpp
--
 Simpleton/Graphics 2D/quad writer.hpp
 -
 
@@ -1295,21 +1269,15 @@ unit dir component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit dir component.hpp
 unit sprite component.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit sprite component.hpp
-unit walk anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit rendering system.hpp
 Simpleton/ECS/registry.hpp
--
-Simpleton/Sprite/sheet.hpp
 -
 Simpleton/Graphics 2D/quad writer.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit sprite component.hpp
-Simpleton/Data/json.hpp
--
-Simpleton/Sprite/types.hpp
+Simpleton/Sprite/json.hpp
 -
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit stats component.hpp
@@ -1318,17 +1286,11 @@ Simpleton/Data/json.hpp
 Simpleton/ECS/prototype.hpp
 -
 
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim component.hpp
-cstdint
--
-Simpleton/Data/json.hpp
--
-
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.cpp
 unit walk anim system.hpp
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.hpp
-unit walk anim component.hpp
-/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim component.hpp
+unit sprite component.hpp
+/Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit sprite component.hpp
 
 /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit walk anim system.hpp
 Simpleton/ECS/registry.hpp
@@ -2035,6 +1997,8 @@ transform.inl
 /usr/local/include/Simpleton/Camera 2D/transform.inl
 
 /usr/local/include/Simpleton/Camera 2D/transform.inl
+cassert
+-
 props.hpp
 /usr/local/include/Simpleton/Camera 2D/props.hpp
 glm/gtx/matrix_transform_2d.hpp
@@ -2066,15 +2030,21 @@ limits
 entt/entity/registry.hpp
 -
 
+/usr/local/include/Simpleton/Graphics 2D/depth.hpp
+depth.inl
+/usr/local/include/Simpleton/Graphics 2D/depth.inl
+
+/usr/local/include/Simpleton/Graphics 2D/depth.inl
+
 /usr/local/include/Simpleton/Graphics 2D/geom types.hpp
 array
--
-tuple
 -
 glm/vec2.hpp
 -
 glm/vec3.hpp
 -
+../Type List/type.hpp
+/usr/local/include/Simpleton/Type List/type.hpp
 
 /usr/local/include/Simpleton/Graphics 2D/load surface.hpp
 stdexcept
@@ -2097,8 +2067,12 @@ stb_image.h
 /usr/local/include/Simpleton/Graphics 2D/stb_image.h
 
 /usr/local/include/Simpleton/Graphics 2D/quad writer.hpp
+depth.hpp
+/usr/local/include/Simpleton/Graphics 2D/depth.hpp
 renderer.hpp
 /usr/local/include/Simpleton/Graphics 2D/renderer.hpp
+sheet tex.hpp
+/usr/local/include/Simpleton/Graphics 2D/sheet tex.hpp
 ../Math/rect.hpp
 /usr/local/include/Simpleton/Math/rect.hpp
 quad writer.inl
@@ -2164,12 +2138,6 @@ sheet tex.inl
 ../SDL/paths.hpp
 /usr/local/include/Simpleton/SDL/paths.hpp
 
-/usr/local/include/Simpleton/Graphics 2D/sheet writer.hpp
-quad writer.hpp
-/usr/local/include/Simpleton/Graphics 2D/quad writer.hpp
-../Sprite/sheet.hpp
-/usr/local/include/Simpleton/Sprite/sheet.hpp
-
 /usr/local/include/Simpleton/Graphics 2D/stb_image.h
 stb_image.h
 /usr/local/include/Simpleton/Graphics 2D/stb_image.h
@@ -2216,6 +2184,18 @@ geom types.hpp
 render types.hpp
 /usr/local/include/Simpleton/Graphics 2D/render types.hpp
 
+/usr/local/include/Simpleton/Grid/a star.hpp
+grid.hpp
+/usr/local/include/Simpleton/Grid/grid.hpp
+a star.inl
+/usr/local/include/Simpleton/Grid/a star.inl
+
+/usr/local/include/Simpleton/Grid/a star.inl
+cmath
+-
+dir.hpp
+/usr/local/include/Simpleton/Grid/dir.hpp
+
 /usr/local/include/Simpleton/Grid/dir.hpp
 cctype
 -
@@ -2227,20 +2207,16 @@ glm/vec2.hpp
 -
 
 /usr/local/include/Simpleton/Grid/grid.hpp
-vector
+pos.hpp
+/usr/local/include/Simpleton/Grid/pos.hpp
+../Utils/numeric iterators.hpp
+/usr/local/include/Simpleton/Utils/numeric iterators.hpp
+
+/usr/local/include/Simpleton/Grid/pos.hpp
+cstdint
 -
 glm/vec2.hpp
 -
-
-/usr/local/include/Simpleton/Grid/one path.hpp
-grid.hpp
-/usr/local/include/Simpleton/Grid/grid.hpp
-one path.inl
-/usr/local/include/Simpleton/Grid/one path.inl
-
-/usr/local/include/Simpleton/Grid/one path.inl
-dir.hpp
-/usr/local/include/Simpleton/Grid/dir.hpp
 
 /usr/local/include/Simpleton/Math/int float.hpp
 cmath
@@ -2313,10 +2289,8 @@ file io.inl
 /usr/local/include/Simpleton/OpenGL/attrib pointer.hpp
 type enum.hpp
 /usr/local/include/Simpleton/OpenGL/type enum.hpp
-../Utils/tuple.hpp
-/usr/local/include/Simpleton/Utils/tuple.hpp
-../Utils/meta glm.hpp
-/usr/local/include/Simpleton/Utils/meta glm.hpp
+../Type List/foreach.hpp
+/usr/local/include/Simpleton/Type List/foreach.hpp
 
 /usr/local/include/Simpleton/OpenGL/buffer.hpp
 opengl.hpp
@@ -2458,6 +2432,16 @@ chunk.inl
 stdexcept
 -
 
+/usr/local/include/Simpleton/SDL/events.hpp
+SDL2/SDL_events.h
+-
+SDL2/SDL_scancode.h
+-
+events.inl
+/usr/local/include/Simpleton/SDL/events.inl
+
+/usr/local/include/Simpleton/SDL/events.inl
+
 /usr/local/include/Simpleton/SDL/library.hpp
 error.hpp
 /usr/local/include/Simpleton/SDL/error.hpp
@@ -2552,6 +2536,26 @@ window.inl
 error.hpp
 /usr/local/include/Simpleton/SDL/error.hpp
 
+/usr/local/include/Simpleton/Sprite/anim.hpp
+id.hpp
+/usr/local/include/Simpleton/Sprite/id.hpp
+anim.inl
+/usr/local/include/Simpleton/Sprite/anim.inl
+
+/usr/local/include/Simpleton/Sprite/anim.inl
+cassert
+-
+
+/usr/local/include/Simpleton/Sprite/id.hpp
+cstdint
+-
+
+/usr/local/include/Simpleton/Sprite/json.hpp
+anim.hpp
+/usr/local/include/Simpleton/Sprite/anim.hpp
+../Data/json.hpp
+/usr/local/include/Simpleton/Data/json.hpp
+
 /usr/local/include/Simpleton/Sprite/sheet.hpp
 string
 -
@@ -2573,6 +2577,8 @@ sheet.inl
 /usr/local/include/Simpleton/Utils/parse string.hpp
 
 /usr/local/include/Simpleton/Sprite/types.hpp
+id.hpp
+/usr/local/include/Simpleton/Sprite/id.hpp
 ../Math/rect.hpp
 /usr/local/include/Simpleton/Math/rect.hpp
 types.inl
@@ -2612,6 +2618,10 @@ cassert
 type.hpp
 /usr/local/include/Simpleton/Type List/type.hpp
 
+/usr/local/include/Simpleton/Type List/index.hpp
+type.hpp
+/usr/local/include/Simpleton/Type List/type.hpp
+
 /usr/local/include/Simpleton/Type List/type.hpp
 cstddef
 -
@@ -2628,21 +2638,15 @@ type_traits
 int least.hpp
 /usr/local/include/Simpleton/Utils/int least.hpp
 
-/usr/local/include/Simpleton/Utils/endian.hpp
-int least.hpp
-/usr/local/include/Simpleton/Utils/int least.hpp
-SDL2/SDL_endian.h
--
-
 /usr/local/include/Simpleton/Utils/function alias.hpp
 utility
 -
 
 /usr/local/include/Simpleton/Utils/function traits.hpp
-tuple
--
 functional
 -
+../Type List/index.hpp
+/usr/local/include/Simpleton/Type List/index.hpp
 
 /usr/local/include/Simpleton/Utils/generic raii.hpp
 utility
@@ -2675,11 +2679,15 @@ null check.hpp
 /usr/local/include/Simpleton/Utils/null check.hpp
 
 /usr/local/include/Simpleton/Utils/meta glm.hpp
-glm/glm.hpp
+glm/gtx/type_trait.hpp
 -
 
 /usr/local/include/Simpleton/Utils/null check.hpp
-stdexcept
+exception
+-
+
+/usr/local/include/Simpleton/Utils/numeric iterators.hpp
+iterator
 -
 
 /usr/local/include/Simpleton/Utils/parse string.hpp
@@ -2695,8 +2703,6 @@ parse string.inl
 /usr/local/include/Simpleton/Utils/parse string.inl
 cerrno
 -
-endian.hpp
-/usr/local/include/Simpleton/Utils/endian.hpp
 functional
 -
 
@@ -2712,10 +2718,6 @@ profiler.inl
 
 /usr/local/include/Simpleton/Utils/profiler.inl
 vector
--
-
-/usr/local/include/Simpleton/Utils/tuple.hpp
-tuple
 -
 
 /usr/local/include/Simpleton/Utils/type name.hpp
@@ -2849,6 +2851,8 @@ entt_traits.hpp
 /usr/local/include/entt/entity/utility.hpp
 
 /usr/local/include/entt/entity/view.hpp
+iterator
+-
 cassert
 -
 array
@@ -3518,6 +3522,22 @@ vec1.inl
 
 /usr/local/include/glm/gtc/vec1.inl
 
+/usr/local/include/glm/gtx/dual_quaternion.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/constants.hpp
+/usr/local/include/glm/gtc/constants.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+dual_quaternion.inl
+/usr/local/include/glm/gtx/dual_quaternion.inl
+
+/usr/local/include/glm/gtx/dual_quaternion.inl
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+limits
+-
+
 /usr/local/include/glm/gtx/matrix_transform_2d.hpp
 ../mat3x3.hpp
 /usr/local/include/glm/mat3x3.hpp
@@ -3559,6 +3579,18 @@ limits
 -
 ../gtc/constants.hpp
 /usr/local/include/glm/gtc/constants.hpp
+
+/usr/local/include/glm/gtx/type_trait.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+../gtx/dual_quaternion.hpp
+/usr/local/include/glm/gtx/dual_quaternion.hpp
+type_trait.inl
+/usr/local/include/glm/gtx/type_trait.inl
+
+/usr/local/include/glm/gtx/type_trait.inl
 
 /usr/local/include/glm/integer.hpp
 detail/setup.hpp

@@ -140,7 +140,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/app.cpp.obj
  /usr/local/include/Simpleton/Type List/type.hpp
  /usr/local/include/Simpleton/Utils/bits.hpp
  /usr/local/include/Simpleton/Utils/bool enable.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
  /usr/local/include/Simpleton/Utils/instance limiter.hpp
@@ -391,6 +390,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/base_damage_system.cpp.obj
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.cpp
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base damage system.hpp
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/base health tag.hpp
+ /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load level.hpp
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map info tag.hpp
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map tag.hpp
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit path component.hpp
@@ -769,9 +769,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj
  /usr/local/include/Simpleton/Graphics 2D/surface.hpp
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -800,11 +798,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj
  /usr/local/include/Simpleton/Sprite/types.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -1077,9 +1072,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.obj
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -1108,11 +1101,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_view.cpp.obj
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -1325,6 +1315,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.obj
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load spawner.hpp
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/load waves.hpp
  /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/map sprites tag.hpp
+ /Users/indikernick/Dev/Projects/C++/Games/Classic Tower Defence/Classic Tower Defence/Game/unit stats component.hpp
  /usr/local/include/SDL2/SDL.h
  /usr/local/include/SDL2/SDL_assert.h
  /usr/local/include/SDL2/SDL_atomic.h
@@ -1370,6 +1361,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.obj
  /usr/local/include/SDL2/begin_code.h
  /usr/local/include/SDL2/close_code.h
  /usr/local/include/Simpleton/Data/json.hpp
+ /usr/local/include/Simpleton/ECS/prototype.hpp
  /usr/local/include/Simpleton/ECS/registry.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
@@ -1382,6 +1374,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/load_level.cpp.obj
  /usr/local/include/entt/core/algorithm.hpp
  /usr/local/include/entt/core/family.hpp
  /usr/local/include/entt/entity/entt_traits.hpp
+ /usr/local/include/entt/entity/prototype.hpp
  /usr/local/include/entt/entity/registry.hpp
  /usr/local/include/entt/entity/snapshot.hpp
  /usr/local/include/entt/entity/sparse_set.hpp
@@ -1760,9 +1753,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.obj
  /usr/local/include/Simpleton/Grid/dir.hpp
  /usr/local/include/Simpleton/Grid/grid.hpp
  /usr/local/include/Simpleton/Grid/pos.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -1791,11 +1782,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/map_rendering_system.cpp.obj
  /usr/local/include/Simpleton/Sprite/types.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -2339,9 +2327,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.obj
  /usr/local/include/Simpleton/Graphics 2D/surface.hpp
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -2373,11 +2359,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_controller.cpp.obj
  /usr/local/include/Simpleton/Sprite/types.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -2609,9 +2592,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.obj
  /usr/local/include/Simpleton/Graphics 2D/surface.hpp
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -2640,11 +2621,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/stats_view.cpp.obj
  /usr/local/include/Simpleton/Sprite/types.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -2930,9 +2908,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.c
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -2962,11 +2938,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.c
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -3187,9 +3160,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.c
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -3219,11 +3190,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.c
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -3415,9 +3383,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_sy
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -3447,11 +3413,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_sy
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -3641,9 +3604,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -3669,11 +3630,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -3865,9 +3823,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.ob
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -3897,11 +3853,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.ob
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -4257,9 +4210,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.obj
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -4280,6 +4231,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.obj
  /usr/local/include/Simpleton/OpenGL/vertex array.hpp
  /usr/local/include/Simpleton/OpenGL/vertex array.inl
  /usr/local/include/Simpleton/SDL/error.hpp
+ /usr/local/include/Simpleton/SDL/events.hpp
+ /usr/local/include/Simpleton/SDL/events.inl
  /usr/local/include/Simpleton/SDL/mouse pos.hpp
  /usr/local/include/Simpleton/SDL/mouse pos.inl
  /usr/local/include/Simpleton/SDL/paths.hpp
@@ -4290,11 +4243,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/ui_view.cpp.obj
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -4550,9 +4500,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.c
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -4582,11 +4530,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.c
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -4915,9 +4860,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -4943,11 +4886,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -5284,9 +5224,7 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
- /usr/local/include/Simpleton/Math/round.hpp
  /usr/local/include/Simpleton/Memory/buffer.hpp
  /usr/local/include/Simpleton/Memory/byteptr.hpp
  /usr/local/include/Simpleton/Memory/file io.hpp
@@ -5316,11 +5254,8 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj
  /usr/local/include/Simpleton/Sprite/sheet.inl
  /usr/local/include/Simpleton/Type List/foreach.hpp
  /usr/local/include/Simpleton/Type List/type.hpp
- /usr/local/include/Simpleton/Utils/bits.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
- /usr/local/include/Simpleton/Utils/int least.hpp
  /usr/local/include/Simpleton/Utils/line col.hpp
  /usr/local/include/Simpleton/Utils/meta glm.hpp
  /usr/local/include/Simpleton/Utils/null check.hpp
@@ -5615,7 +5550,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.obj
  /usr/local/include/Simpleton/Type List/type.hpp
  /usr/local/include/Simpleton/Utils/bits.hpp
  /usr/local/include/Simpleton/Utils/bool enable.hpp
- /usr/local/include/Simpleton/Utils/endian.hpp
  /usr/local/include/Simpleton/Utils/function alias.hpp
  /usr/local/include/Simpleton/Utils/function traits.hpp
  /usr/local/include/Simpleton/Utils/generic raii.hpp
