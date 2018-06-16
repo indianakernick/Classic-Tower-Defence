@@ -35,10 +35,10 @@
 
 /* Begin PBXBuildFile section */
 		4515869420CE66AB00DD4F2E /* map 1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4515869320CE66AB00DD4F2E /* map 1.txt */; };
-		4515869620CE6A3800DD4F2E /* map 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4515869520CE6A3800DD4F2E /* map 2.txt */; };
 		451586A120CE86F800DD4F2E /* sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 451586A020CE86F800DD4F2E /* sounds.json */; };
 		451586A320CF590D00DD4F2E /* map 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 451586A220CF590D00DD4F2E /* map 3.txt */; };
 		451586A520CF830A00DD4F2E /* map 4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 451586A420CF830A00DD4F2E /* map 4.txt */; };
+		451586B120D4C78E00DD4F2E /* map 5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 451586B020D4C78E00DD4F2E /* map 5.txt */; };
 		4526A34E20AAEACF00E4F542 /* tower reset rof system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */; };
 		45388496208AB717003EB260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45388495208AB717003EB260 /* Assets.xcassets */; };
 		453884A2208AB815003EB260 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453884A1208AB815003EB260 /* main.cpp */; };
@@ -70,7 +70,6 @@
 		4538857D208DF51A003EB260 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4538857B208DF510003EB260 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45388580208DF7AA003EB260 /* blaster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4538857F208DF7AA003EB260 /* blaster.wav */; };
 		4538858D208EC736003EB260 /* tower sound system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4538858B208EC736003EB260 /* tower sound system.cpp */; };
-		45388592208ECC3C003EB260 /* map 0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 45388591208ECC3C003EB260 /* map 0.txt */; };
 		45388598208EE402003EB260 /* create level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45388596208EE402003EB260 /* create level.cpp */; };
 		453B151D2090461E00BFA00D /* load level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B151B2090461E00BFA00D /* load level.cpp */; };
 		453B15212090508800BFA00D /* unit damage system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B151F2090508800BFA00D /* unit damage system.cpp */; };
@@ -175,12 +174,14 @@
 		4512454C20B652170025A651 /* upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upgrade.png; sourceTree = "<group>"; };
 		4512454D20B652180025A651 /* sell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sell.png; sourceTree = "<group>"; };
 		4515869320CE66AB00DD4F2E /* map 1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 1.txt"; sourceTree = "<group>"; };
-		4515869520CE6A3800DD4F2E /* map 2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 2.txt"; sourceTree = "<group>"; };
 		4515869F20CE843B00DD4F2E /* base wave.libsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "base wave.libsonnet"; sourceTree = "<group>"; };
 		451586A020CE86F800DD4F2E /* sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sounds.json; sourceTree = "<group>"; };
 		451586A220CF590D00DD4F2E /* map 3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 3.txt"; sourceTree = "<group>"; };
 		451586A420CF830A00DD4F2E /* map 4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 4.txt"; sourceTree = "<group>"; };
 		451586A620CF876300DD4F2E /* map 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map 4.png"; sourceTree = "<group>"; };
+		451586AE20D4C77300DD4F2E /* level 2.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 2.jsonnet"; sourceTree = "<group>"; };
+		451586AF20D4C78000DD4F2E /* level 3.jsonnet */ = {isa = PBXFileReference; lastKnownFileType = text; path = "level 3.jsonnet"; sourceTree = "<group>"; };
+		451586B020D4C78E00DD4F2E /* map 5.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 5.txt"; sourceTree = "<group>"; };
 		4526A34C20AAEACF00E4F542 /* tower reset rof system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower reset rof system.cpp"; sourceTree = "<group>"; };
 		4526A34D20AAEACF00E4F542 /* tower reset rof system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower reset rof system.hpp"; sourceTree = "<group>"; };
 		45388490208AB717003EB260 /* Classic Tower Defence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classic Tower Defence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,7 +294,6 @@
 		45388581208EBED9003EB260 /* sound component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "sound component.hpp"; sourceTree = "<group>"; };
 		4538858B208EC736003EB260 /* tower sound system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "tower sound system.cpp"; sourceTree = "<group>"; };
 		4538858C208EC736003EB260 /* tower sound system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "tower sound system.hpp"; sourceTree = "<group>"; };
-		45388591208ECC3C003EB260 /* map 0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "map 0.txt"; sourceTree = "<group>"; };
 		45388596208EE402003EB260 /* create level.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "create level.cpp"; sourceTree = "<group>"; };
 		45388597208EE402003EB260 /* create level.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "create level.hpp"; sourceTree = "<group>"; };
 		453B151520903F5100BFA00D /* level 0.jsonnet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "level 0.jsonnet"; path = "Classic Tower Defence/Resources/Levels/level 0.jsonnet"; sourceTree = SOURCE_ROOT; };
@@ -1356,11 +1356,10 @@
 		45388590208ECBD0003EB260 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				45388591208ECC3C003EB260 /* map 0.txt */,
 				4515869320CE66AB00DD4F2E /* map 1.txt */,
-				4515869520CE6A3800DD4F2E /* map 2.txt */,
 				451586A220CF590D00DD4F2E /* map 3.txt */,
 				451586A420CF830A00DD4F2E /* map 4.txt */,
+				451586B020D4C78E00DD4F2E /* map 5.txt */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -1374,6 +1373,8 @@
 				4515869F20CE843B00DD4F2E /* base wave.libsonnet */,
 				453B151520903F5100BFA00D /* level 0.jsonnet */,
 				453B289C20B1274A00F6E9E6 /* level 1.jsonnet */,
+				451586AE20D4C77300DD4F2E /* level 2.jsonnet */,
+				451586AF20D4C78000DD4F2E /* level 3.jsonnet */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -1610,15 +1611,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				45388496208AB717003EB260 /* Assets.xcassets in Resources */,
-				451586A320CF590D00DD4F2E /* map 3.txt in Resources */,
-				45388592208ECC3C003EB260 /* map 0.txt in Resources */,
 				4515869420CE66AB00DD4F2E /* map 1.txt in Resources */,
-				4515869620CE6A3800DD4F2E /* map 2.txt in Resources */,
+				451586A320CF590D00DD4F2E /* map 3.txt in Resources */,
+				451586A520CF830A00DD4F2E /* map 4.txt in Resources */,
+				451586B120D4C78E00DD4F2E /* map 5.txt in Resources */,
 				45682660209AA2F600BA6AE8 /* 5x8 ascii.atlas in Resources */,
 				4568265F209AA2F600BA6AE8 /* 5x8 ascii.png in Resources */,
 				453B288220AFC29C00F6E9E6 /* ui.atlas in Resources */,
 				453B288320AFC29D00F6E9E6 /* ui.png in Resources */,
-				451586A520CF830A00DD4F2E /* map 4.txt in Resources */,
 				4563D601209710CE00DB2510 /* radius.atlas in Resources */,
 				4563D600209710CE00DB2510 /* radius.png in Resources */,
 				45388526208C5858003EB260 /* sprites.atlas in Resources */,
