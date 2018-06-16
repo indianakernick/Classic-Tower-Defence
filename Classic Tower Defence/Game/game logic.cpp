@@ -33,7 +33,7 @@
 void GameLogic::init(ECS::Registry &reg) {
   createLevel(reg);
   loadTowers(reg);
-  loadLevel(reg, 2);
+  loadLevel(reg, 0);
 }
 
 void GameLogic::update(ECS::Registry &reg, float delta) {

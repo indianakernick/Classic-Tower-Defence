@@ -8,6 +8,7 @@
 
 #include "base damage system.hpp"
 
+#include "load level.hpp"
 #include "map info tag.hpp"
 #include "base health tag.hpp"
 #include "unit path component.hpp"
@@ -25,5 +26,10 @@ void baseDamageSystem(ECS::Registry &reg) {
     }
   }
   
-  reg.get<BaseHealth>().health -= damage;
+  auto &health = reg.get<BaseHealth>().health;
+  health -= damage;
+  
+  if (health == 0) {
+    reloadLevel(reg);
+  }
 }

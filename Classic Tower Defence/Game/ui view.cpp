@@ -16,6 +16,7 @@
 #include "game info view.hpp"
 #include "game info model.hpp"
 #include "basic components.hpp"
+#include <Simpleton/SDL/events.hpp>
 #include <Simpleton/SDL/mouse pos.hpp>
 #include "tower range rendering system.hpp"
 
@@ -90,7 +91,11 @@ void UIView::updateCam(const Cam2D::Params params) {
 Consumed UIView::input(ECS::Registry &reg, const SDL_Event &e) {
   Consumed consumed = Consumed::NO;
   
-  if (e.type == SDL_MOUSEBUTTONDOWN) {
+  if (SDL::keyDown(e, SDL_SCANCODE_R)) {
+    reloadLevel(reg);
+  }
+  
+  if (!consumed && e.type == SDL_MOUSEBUTTONDOWN) {
     const glm::vec2 pos = SDL::mousePos(camera.transform.toMeters(), e.button);
     consumed = handleClick(uiReg, getObjAtPos(uiReg, pos));
   }

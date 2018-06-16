@@ -19,6 +19,7 @@
 #include "count live units.hpp"
 #include <Simpleton/SDL/paths.hpp>
 #include <Simpleton/Data/json.hpp>
+#include "unit stats component.hpp"
 #include "common tower stats component.hpp"
 
 bool loadLevel(ECS::Registry &reg, const int level) {
@@ -46,16 +47,14 @@ bool loadLevel(ECS::Registry &reg, const int level) {
 }
 
 void loadNextLevel(ECS::Registry &reg) {
-  if (countLiveUnits(reg) != 0) {
-    return;
+  if (countLiveUnits(reg) == 0) {
+    reg.destroy<CommonTowerStats>();
+    loadLevel(reg, reg.get<LevelInfo>().level + 1);
   }
-  
-  for (const ECS::EntityID entity : reg.view<CommonTowerStats>()) {
-    reg.destroy(entity);
-  }
+}
 
-  const int current = reg.get<LevelInfo>().level;
-  if (!loadLevel(reg, current + 1)) {
-    // @TODO player has finished the game
-  }
+void reloadLevel(ECS::Registry &reg) {
+  reg.destroy<CommonTowerStats>();
+  reg.destroy<UnitStats>();
+  loadLevel(reg, reg.get<LevelInfo>().level);
 }

@@ -13,5 +13,6 @@
 
 bool loadLevel(ECS::Registry &, int);
 void loadNextLevel(ECS::Registry &);
+void reloadLevel(ECS::Registry &);
 
 #endif
