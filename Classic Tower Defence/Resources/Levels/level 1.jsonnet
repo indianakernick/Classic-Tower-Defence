@@ -2,31 +2,52 @@ local getSprite = import "get sprite.libsonnet";
 local BaseWave = import "base wave.libsonnet";
 
 {
-  map: 0,
+  map: 1,
   sprite: getSprite("map 0"),
-  gold: 100,
-  health: 100,
-  spawntime: 1.5,
+  gold: 250,
+  health: 10,
+  spawntime: 1,
   waves: [
-    BaseWave(5, "SCOUT", "robot", {
-      health: 100,
-      armour: 50,
-      gold: 10
+    BaseWave(25, "homie", "robot", {
+      health: 250,
+      armour: 100,
+      gold: 5
     }),
-    BaseWave(10, "", "big robot", {
-      health: 200,
-      armour: 200,
+    BaseWave(10, "bruh", "robot", {
+      health: 250,
+      armour: 250,
       healthRegen: 10,
       dodge: 0.1,
-      gold: 25
-    }),
-    BaseWave(10, "FAT BOT", "tank", {
-      health: 2000,
-      armour: 2000,
-      healthRegen: 100,
-      armourRegen: 100,
-      dodge: 0.1,
       gold: 10
+    }),
+    BaseWave(30, "sam", "tank", {
+      health: 100,
+      armour: 100,
+      healthRegen: 25,
+      armourRegen: 25,
+      dodge: 0.2,
+      gold: 10
+    }),
+    BaseWave(30, "meaningless name", "big robot", {
+      health: 200,
+      armour: 200,
+      healthRegen: 15,
+      dodge: 0.3,
+      gold: 10
+    }),
+    BaseWave(5, "~!@#$%^&*()_+", "robot", {
+      health: 100,
+      armour: 100,
+      dodge: 0.9,
+      healthRege: 5,
+      gold: 20
+    }),
+    BaseWave(50, "blue blazers", "tank", {
+      health: 1000,
+      armour: 500,
+      healthRegen: 10,
+      armourRegen: 10,
+      gold: 5
     })
   ]
 }

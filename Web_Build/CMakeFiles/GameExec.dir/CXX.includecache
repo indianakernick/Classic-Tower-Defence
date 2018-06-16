@@ -1303,10 +1303,6 @@ Simpleton/SDL/mainloop.hpp
 -
 Simpleton/Utils/profiler.hpp
 -
-Simpleton/Grid/morton.hpp
--
-Simpleton/Time/benchmark.hpp
--
 
 /usr/local/include/GL/glew.h
 stddef.h
@@ -2208,16 +2204,6 @@ pos.hpp
 ../Utils/numeric iterators.hpp
 /usr/local/include/Simpleton/Utils/numeric iterators.hpp
 
-/usr/local/include/Simpleton/Grid/morton.hpp
-pos.hpp
-/usr/local/include/Simpleton/Grid/pos.hpp
-morton.inl
-/usr/local/include/Simpleton/Grid/morton.inl
-
-/usr/local/include/Simpleton/Grid/morton.inl
-type_traits
--
-
 /usr/local/include/Simpleton/Grid/pos.hpp
 cstdint
 -
@@ -2581,12 +2567,6 @@ types.inl
 /usr/local/include/Simpleton/Sprite/types.inl
 
 /usr/local/include/Simpleton/Sprite/types.inl
-
-/usr/local/include/Simpleton/Time/benchmark.hpp
-chrono
--
-iostream
--
 
 /usr/local/include/Simpleton/Time/get.hpp
 chrono

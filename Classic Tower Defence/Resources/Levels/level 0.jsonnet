@@ -5,7 +5,7 @@ local BaseWave = import "base wave.libsonnet";
   map: 3,
   sprite: getSprite("map 0"),
   gold: 100,
-  health: 100,
+  health: 10,
   spawntime: 1.5,
   waves: [
     BaseWave(5, "quick cash", "robot", {

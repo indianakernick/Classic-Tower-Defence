@@ -57,7 +57,7 @@ must have ONE from ALL three groups
     ProjectileTower: {},
   },
   BaseTower(1, "laser", "laser", "blaster 1", {
-    range: 7,
+    range: 6,
     damage: 2.5,
     rof: 20,
     armourPiercing: 0.1
@@ -237,7 +237,7 @@ must have ONE from ALL three groups
       range: 2,
       damage: 3,
       rof: 20,
-      armourPiercing: 0.3
+      armourPiercing: 0.2
     },
     TowerGold: {
       buy: 150,
@@ -280,7 +280,7 @@ must have ONE from ALL three groups
   },
   BaseTower(10, "fireball shooter", "fireball", "fire ball shooting", {
     range: 5,
-    damage: 60,
+    damage: 90,
     rof: 1,
     armourPiercing: 0.6
   }) + {
@@ -308,7 +308,7 @@ must have ONE from ALL three groups
     local tower = self,
     CommonTowerStats: {
       range: 2,
-      damage: 200,
+      damage: 330,
       rof: 1/3,
       armourPiercing: 0.3
     },

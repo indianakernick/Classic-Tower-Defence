@@ -5565,9 +5565,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.obj
  /usr/local/include/Simpleton/Graphics 2D/surface.inl
  /usr/local/include/Simpleton/Graphics 2D/types.hpp
  /usr/local/include/Simpleton/Grid/dir.hpp
- /usr/local/include/Simpleton/Grid/morton.hpp
- /usr/local/include/Simpleton/Grid/morton.inl
- /usr/local/include/Simpleton/Grid/pos.hpp
  /usr/local/include/Simpleton/Math/int float.hpp
  /usr/local/include/Simpleton/Math/pow.hpp
  /usr/local/include/Simpleton/Math/rect.hpp
@@ -5610,7 +5607,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/main.cpp.obj
  /usr/local/include/Simpleton/SDL/window.inl
  /usr/local/include/Simpleton/Sprite/sheet.hpp
  /usr/local/include/Simpleton/Sprite/sheet.inl
- /usr/local/include/Simpleton/Time/benchmark.hpp
  /usr/local/include/Simpleton/Time/get.hpp
  /usr/local/include/Simpleton/Time/main loop.hpp
  /usr/local/include/Simpleton/Time/stopwatch.hpp
