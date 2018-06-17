@@ -10,9 +10,8 @@
 #define game_info_view_hpp
 
 #include "game info.hpp"
-#include "text renderer.hpp"
-#include <Simpleton/Graphics 2D/quad writer.hpp>
+#include <Simpleton/Graphics 2D/text.hpp>
 
-void renderGameInfo(G2D::Section &, TextRenderer &, const GameInfo &);
+void renderGameInfo(G2D::Section &, G2D::Text &, const GameInfo &);
 
 #endif

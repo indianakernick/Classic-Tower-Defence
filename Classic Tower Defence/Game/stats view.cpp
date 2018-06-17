@@ -55,7 +55,7 @@ Bounds StatsView::upgradeBounds() const {
   return {4.0f, top, 124.0f, top + 16.0f};
 }
 
-void StatsView::render(G2D::Section &sec, TextRenderer &text, G2D::Section &white) const {
+void StatsView::render(G2D::Section &sec, G2D::Text &text, G2D::Section &white) const {
   renderName(text);
   const float top = renderTable(text);
   
@@ -68,13 +68,13 @@ void StatsView::render(G2D::Section &sec, TextRenderer &text, G2D::Section &whit
   renderButtons(top, sec, text);
 }
 
-void StatsView::renderName(TextRenderer &text) const {
+void StatsView::renderName(G2D::Text &text) const {
   if (name) {
     text.write({4.0f, 204.0f}, *name);
   }
 }
 
-float StatsView::renderTable(TextRenderer &text) const {
+float StatsView::renderTable(G2D::Text &text) const {
   const float left = 4.0f;
   const float right = 124.0f;
   const float vertAdv = 12.0f;
@@ -87,7 +87,7 @@ float StatsView::renderTable(TextRenderer &text) const {
   for (const StatsTableRow &row : *table) {
     const glm::vec2 pos = text.write({left, top}, row.first);
     text.write(pos, ':');
-    text.write<Align::RIGHT>({right, top}, row.second);
+    text.write<G2D::Align::RIGHT>({right, top}, row.second);
     top += vertAdv;
   }
   
@@ -97,7 +97,7 @@ float StatsView::renderTable(TextRenderer &text) const {
 void StatsView::renderButtons(
   float top,
   G2D::Section &sec,
-  TextRenderer &text
+  G2D::Text &text
 ) const {
   if (!buttons) {
     return;
@@ -113,13 +113,13 @@ void StatsView::renderButtons(
   if (!buttons->afford) {
     renderDisable(sec);
   }
-  text.write<Align::RIGHT>({120.0f, top + 4.0f}, price);
+  text.write<G2D::Align::RIGHT>({120.0f, top + 4.0f}, price);
   
   // sell button
   if (buttons->sell) {
     top += 20.0f;
     renderButton(top, sec, sec.sheet().getIDfromName("sell"));
-    text.write<Align::RIGHT>({120.0f, top + 4.0f}, buttons->sell);
+    text.write<G2D::Align::RIGHT>({120.0f, top + 4.0f}, buttons->sell);
   }
   
   top += 20.0f;

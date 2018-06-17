@@ -419,8 +419,6 @@
 		453B289D20B1287000F6E9E6 /* count live units.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "count live units.cpp"; sourceTree = "<group>"; };
 		453B289E20B1287000F6E9E6 /* count live units.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "count live units.hpp"; sourceTree = "<group>"; };
 		453B28A220B2396C00F6E9E6 /* name component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "name component.hpp"; sourceTree = "<group>"; };
-		453B28A620B27D5300F6E9E6 /* text renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "text renderer.hpp"; sourceTree = "<group>"; };
-		453B28A720B27D5300F6E9E6 /* text renderer.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "text renderer.inl"; sourceTree = "<group>"; };
 		4549076620AD3D2100BBC358 /* aim tower component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "aim tower component.hpp"; sourceTree = "<group>"; };
 		4554A1EB20C63B050051A8F2 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		4554A1EC20C684730051A8F2 /* init.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = init.js; sourceTree = "<group>"; };
@@ -1446,8 +1444,6 @@
 				453B288520AFD4B600F6E9E6 /* ui view.hpp */,
 				453B288C20B0030700F6E9E6 /* cursor systems.cpp */,
 				453B288D20B0030700F6E9E6 /* cursor systems.hpp */,
-				453B28A720B27D5300F6E9E6 /* text renderer.inl */,
-				453B28A620B27D5300F6E9E6 /* text renderer.hpp */,
 				457EB36020C38BE40054E16F /* basic components.hpp */,
 				457EB35E20C378170054E16F /* Stats */,
 				457EB35F20C3781E0054E16F /* Game Info */,

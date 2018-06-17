@@ -31,7 +31,7 @@ private:
   G2D::SheetTex radiusSheetTex;
   Cam2D::Camera camera;
   Cam2D::ZoomToFit zoom;
-  TextRenderer text;
+  G2D::Text text;
   ECS::Registry uiReg;
   ECS::EntityID previewEntity;
   StatsController stats;
