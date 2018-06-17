@@ -12,7 +12,7 @@
 #include <Simpleton/Sprite/json.hpp>
 
 struct UnitSprite {
-  Sprite::DelayAnim walk;
+  Sprite::Anim walk;
   Sprite::Anim death;
 };
 

@@ -12,7 +12,7 @@
 #include <Simpleton/Sprite/json.hpp>
 
 struct TowerSprites {
-  Sprite::ToggleAnim gun;
+  Sprite::Anim gun;
   Sprite::ID base;
   Sprite::ID projectile;
 };

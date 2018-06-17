@@ -16,7 +16,7 @@
 #include "tower shoot time component.hpp"
 
 namespace {
-  void handleAnimEnd(Sprite::ToggleAnim &anim, ECS::Registry &reg, const ECS::EntityID entity) {
+  void handleAnimEnd(Sprite::Anim &anim, ECS::Registry &reg, const ECS::EntityID entity) {
     if (
       reg.has<ProjectileTower>(entity) ||
       reg.has<AuraTower>(entity) || (

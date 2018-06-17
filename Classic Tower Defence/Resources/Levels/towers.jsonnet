@@ -6,7 +6,8 @@ local towerSprites(sprite) = {
   projectile: getSprite(sprite + " projectile"),
   gun: {
     sprite: getSprite(sprite + " 0"),
-    frames: $.base - self.sprite
+    frames: $.base - self.sprite,
+    enabled: false
   }
 };
 
@@ -213,7 +214,8 @@ must have ONE from ALL three groups
     TowerSprites: {
       gun: {
         sprite: getSprite("ice aura base 0"),
-        frames: 5
+        frames: 5,
+        enabled: false
       },
       base: 0,
       projectile: getSprite("ice aura 0")
@@ -258,7 +260,8 @@ must have ONE from ALL three groups
 
       gun: {
         sprite: getSprite(sprite + " 0"),
-        frames: this.base - self.sprite
+        frames: this.base - self.sprite,
+        enabled: false
       },
       base: getSprite(sprite + " base"),
       projectile: getSprite("fire 0")
@@ -325,7 +328,8 @@ must have ONE from ALL three groups
     TowerSprites: {
       gun: {
         sprite: getSprite("fire aura base 0"),
-        frames: 5
+        frames: 5,
+        enabled: false
       },
       base: 0,
       projectile: getSprite("fire aura 0")
