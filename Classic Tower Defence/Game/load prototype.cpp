@@ -9,46 +9,8 @@
 #include "load prototype.hpp"
 
 #include "component list.hpp"
-#include <Simpleton/Utils/type name.hpp>
-#include <Simpleton/Type List/foreach.hpp>
+#include <Simpleton/ECS/load prototype.hpp>
 
-namespace {
-  template <typename Comp>
-  constexpr auto hasFromjson(int) -> decltype(from_json(json{}, std::declval<Comp &>()), bool()) {
-    return true;
-  }
-
-  template <typename Comp>
-  constexpr bool hasFromjson(long) {
-    return false;
-  }
-}
-
-bool loadComponent(
-  ECS::Prototype &proto,
-  const std::string_view name,
-  const json &component
-) {
-  bool read = false;
-  List::forEach<CompList>([&proto, name, &component, &read] (auto t) {
-    using Comp = LIST_TYPE(t);
-    if (Utils::typeName<Comp>() == name) {
-      if constexpr (hasFromjson<Comp>(0)) {
-        proto.set<Comp>(component.get<Comp>());
-      } else {
-        proto.set<Comp>();
-      }
-      read = true;
-    }
-  });
-  return read;
-}
-
-int loadProto(ECS::Prototype &proto, const json &entity) {
-  const json::object_t &object = entity.get_ref<const json::object_t &>();
-  int unreadCount = 0;
-  for (auto pair : object) {
-    unreadCount += !loadComponent(proto, pair.first, pair.second);
-  }
-  return unreadCount;
+int loadProto(ECS::Prototype &proto, const json &node) {
+  return ECS::loadProto<CompList>(proto, node);
 }

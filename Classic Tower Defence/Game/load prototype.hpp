@@ -12,9 +12,6 @@
 #include <Simpleton/Data/json.hpp>
 #include <Simpleton/ECS/prototype.hpp>
 
-//@SIMPLETON
-
-bool loadComponent(ECS::Prototype &, std::string_view, const json &);
 int loadProto(ECS::Prototype &, const json &);
 
 #endif
