@@ -3,8 +3,8 @@ project(Game)
 
 option(EMBUILD "Build with emscripten, mingw otherwise" YES)
 
-set(EMSCRIPTEN_CC /usr/local/Cellar/emscripten/1.38.6/libexec/emcc)
-set(MINGW_CC /usr/local/Cellar/mingw-w64/5.0.3_3/toolchain-x86_64/bin/x86_64-w64-mingw32-g++)
+set(EMSCRIPTEN_CC /usr/local/bin/emcc)
+set(MINGW_CC /usr/local/bin/x86_64-w64-mingw32-g++)
 if(EMBUILD)
     set(CC ${EMSCRIPTEN_CC})
 else()
