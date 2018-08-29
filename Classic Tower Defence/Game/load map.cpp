@@ -38,7 +38,7 @@ void loadMap(ECS::Registry &reg, const int mapID) {
   Map &map = reg.get<Map>();
   for (const Grid::Coord y : map.vertRev()) {
     for (const Grid::Coord x : map.hori()) {
-      map[{x, y}] = tileChar(file.get());
+      map(x, y) = tileChar(file.get());
     }
     if (file.get() != '\n') {
       file.unget();
