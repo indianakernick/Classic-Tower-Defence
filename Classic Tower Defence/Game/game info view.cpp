@@ -25,10 +25,10 @@ void renderGameInfo(
   sec.tilePos({604.0f, 4.0f}, {32.0f, 32.0f});
   sec.tileTex<G2D::PlusXY::RIGHT_DOWN>("preview back");
   
-  text.write<G2D::Align::RIGHT>({124.0f, 2.0f}, info.gold);
-  text.write<G2D::Align::RIGHT>({124.0f, 22.0f}, info.base);
-  text.write<G2D::Align::RIGHT>({235.0f, 2.0f}, info.level);
-  text.write<G2D::Align::RIGHT>({235.0f, 22.0f}, info.map);
-  text.write<G2D::Align::RIGHT>({372.0f, 12.0f}, info.wave);
-  text.write<G2D::Align::RIGHT>({599.0f, 12.0f}, info.units);
+  text.writeRight({124.0f, 2.0f}, info.gold);
+  text.writeRight({124.0f, 22.0f}, info.base);
+  text.writeRight({235.0f, 2.0f}, info.level);
+  text.writeRight({235.0f, 22.0f}, info.map);
+  text.writeRight({372.0f, 12.0f}, info.wave);
+  text.writeRight({599.0f, 12.0f}, info.units);
 }

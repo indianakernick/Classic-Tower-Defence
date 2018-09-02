@@ -70,7 +70,7 @@ void StatsView::render(G2D::Section &sec, G2D::Text &text, G2D::Section &white) 
 
 void StatsView::renderName(G2D::Text &text) const {
   if (name) {
-    text.write({4.0f, 204.0f}, *name);
+    text.writeLeft({4.0f, 204.0f}, *name);
   }
 }
 
@@ -85,9 +85,9 @@ float StatsView::renderTable(G2D::Text &text) const {
   }
   
   for (const StatsTableRow &row : *table) {
-    const glm::vec2 pos = text.write({left, top}, row.first);
-    text.write(pos, ':');
-    text.write<G2D::Align::RIGHT>({right, top}, row.second);
+    const glm::vec2 pos = text.writeLeft({left, top}, row.first);
+    text.writeLeft(pos, ':');
+    text.writeRight({right, top}, row.second);
     top += vertAdv;
   }
   
@@ -113,13 +113,13 @@ void StatsView::renderButtons(
   if (!buttons->afford) {
     renderDisable(sec);
   }
-  text.write<G2D::Align::RIGHT>({120.0f, top + 4.0f}, price);
+  text.writeRight({120.0f, top + 4.0f}, price);
   
   // sell button
   if (buttons->sell) {
     top += 20.0f;
     renderButton(top, sec, sec.sheet().getIDfromName("sell"));
-    text.write<G2D::Align::RIGHT>({120.0f, top + 4.0f}, buttons->sell);
+    text.writeRight({120.0f, top + 4.0f}, buttons->sell);
   }
   
   top += 20.0f;
