@@ -20,7 +20,7 @@ void turretDamageSystem(ECS::Registry &reg) {
     const TowerShootTime shoot = view.get<TowerShootTime>(entity);
     if (shoot.elapsed >= shoot.fireTime) {
       const ECS::EntityID target = view.get<TowerTarget>(entity).id;
-      if (target != ECS::NULL_ENTITY) {
+      if (target != entt::null) {
         const CommonTowerStats stats = view.get<CommonTowerStats>(entity);
         unitDamageSystem(reg, target, stats.damage, stats.armourPiercing);
       }

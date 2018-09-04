@@ -25,7 +25,7 @@ void towerAimSystem(ECS::Registry &reg) {
     float targetMoveDist = 0.0f;
     glm::vec2 targetPos;
     float targetDist = 0.0f;
-    ECS::EntityID targetUnit = ECS::NULL_ENTITY;
+    ECS::EntityID targetUnit = entt::null;
     
     for (const ECS::EntityID unit : units) {
       const glm::vec2 unitPos = units.get<Position>(unit).pos;
@@ -45,7 +45,7 @@ void towerAimSystem(ECS::Registry &reg) {
     
     TowerTarget &target = towers.get<TowerTarget>(tower);
     target.id = targetUnit;
-    if (targetUnit != ECS::NULL_ENTITY) {
+    if (targetUnit != entt::null) {
       target.vec = targetPos - towerPos;
       target.pos = targetPos;
       target.dist = targetDist;

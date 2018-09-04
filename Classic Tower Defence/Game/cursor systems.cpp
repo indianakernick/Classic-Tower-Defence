@@ -18,7 +18,7 @@ ECS::EntityID getObjAtPos(ECS::Registry &reg, const glm::vec2 pos) {
       return entity;
     }
   }
-  return ECS::NULL_ENTITY;
+  return entt::null;
 }
 
 void updateCursor(
@@ -26,7 +26,7 @@ void updateCursor(
   SDL::SystemCursors &cursors,
   const ECS::EntityID entity
 ) {
-  if (entity == ECS::NULL_ENTITY) {
+  if (entity == entt::null) {
     cursors.setDefault();
   } else {
     cursors.set(reg.get<SDL_SystemCursor>(entity));
@@ -34,7 +34,7 @@ void updateCursor(
 }
 
 Consumed handleClick(ECS::Registry &reg, const ECS::EntityID entity) {
-  if (entity != ECS::NULL_ENTITY) {
+  if (entity != entt::null) {
     reg.get<ClickHandler>(entity)();
     return Consumed::YES;
   } else {

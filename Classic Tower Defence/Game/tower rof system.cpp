@@ -16,7 +16,7 @@ void towerRofSystem(ECS::Registry &reg, const float delta) {
   for (const ECS::EntityID entity : view) {
     TowerShootTime &shoot = view.get<TowerShootTime>(entity);
     
-    shoot.target = view.get<TowerTarget>(entity).id != ECS::NULL_ENTITY;
+    shoot.target = view.get<TowerTarget>(entity).id != entt::null;
     shoot.elapsed += delta;
     if (!shoot.target && shoot.elapsed > shoot.startTime) {
       shoot.elapsed = shoot.startTime;

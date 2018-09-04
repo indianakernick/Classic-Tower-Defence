@@ -17,7 +17,7 @@ struct TowerTarget {
   glm::vec2 pos {0.0f};
   float angle = 0.0f;
   float dist = 0.0f;
-  ECS::EntityID id = ECS::NULL_ENTITY;
+  ECS::EntityID id = entt::null;
 };
 
 #endif

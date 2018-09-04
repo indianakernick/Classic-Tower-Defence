@@ -37,7 +37,7 @@ public:
   
 private:
   // @TODO use varient when available
-  ECS::EntityID entity = ECS::NULL_ENTITY;
+  ECS::EntityID entity = entt::null;
   const ECS::Prototype *proto = nullptr;
 };
 

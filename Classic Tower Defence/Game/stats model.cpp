@@ -21,12 +21,12 @@
 #include "common tower stats component.hpp"
 
 void StatsModel::selectTower(ECS::Registry &reg, const size_t i) {
-  entity = ECS::NULL_ENTITY;
+  entity = entt::null;
   proto = getTowerProto(reg, i * 3);
 }
 
 void StatsModel::selectPreview(ECS::Registry &reg) {
-  entity = ECS::NULL_ENTITY;
+  entity = entt::null;
   proto = getPreviewProto(reg);
 }
 
@@ -50,7 +50,7 @@ void StatsModel::selectTower(ECS::Registry &reg, glm::vec2 pos) {
 }
 
 void StatsModel::unselect() {
-  entity = ECS::NULL_ENTITY;
+  entity = entt::null;
   proto = nullptr;
 }
 
@@ -59,7 +59,7 @@ ECS::EntityID StatsModel::selected() const {
 }
 
 bool StatsModel::canBuy(ECS::Registry &reg, const glm::ivec2 pos) {
-  if (entity != ECS::NULL_ENTITY || proto == nullptr) {
+  if (entity != entt::null || proto == nullptr) {
     return false;
   }
   
@@ -95,17 +95,17 @@ void StatsModel::buy(ECS::Registry &reg, const glm::ivec2 pos) {
 }
 
 void StatsModel::sell(ECS::Registry &reg) {
-  if (entity == ECS::NULL_ENTITY || proto != nullptr) {
+  if (entity == entt::null || proto != nullptr) {
     return;
   }
   
   reg.get<BaseGold>().gold += reg.get<TowerGold>(entity).sell;
   reg.destroy(entity);
-  entity = ECS::NULL_ENTITY;
+  entity = entt::null;
 }
 
 void StatsModel::upgrade(ECS::Registry &reg) {
-  if (entity == ECS::NULL_ENTITY || proto != nullptr) {
+  if (entity == entt::null || proto != nullptr) {
     return;
   }
   
@@ -122,14 +122,14 @@ void StatsModel::upgrade(ECS::Registry &reg) {
 }
 
 bool StatsModel::hasTable() const {
-  return entity != ECS::NULL_ENTITY || proto != nullptr;
+  return entity != entt::null || proto != nullptr;
 }
 
 std::string StatsModel::getName(ECS::Registry &reg) const {
   // should check hasTable before calling this function
   assert(hasTable());
   
-  if (entity != ECS::NULL_ENTITY) {
+  if (entity != entt::null) {
     return reg.get<Name>(entity).name;
   } else if (proto != nullptr) {
     return proto->get<Name>().name;
@@ -189,7 +189,7 @@ StatsTable StatsModel::getTable(ECS::Registry &reg) const {
         return getTowerTable(proto->get<CommonTowerStats>());
       }
     }
-  } else if (entity != ECS::NULL_ENTITY) {
+  } else if (entity != entt::null) {
     if (reg.has<UnitStats>(entity)) {
       return getUnitTable(reg.get<UnitStats>(entity));
     } else if (reg.has<CommonTowerStats>(entity)) {
@@ -207,7 +207,7 @@ StatsTable StatsModel::getTable(ECS::Registry &reg) const {
 bool StatsModel::hasButtons(ECS::Registry &reg) const {
   if (proto != nullptr) {
     return proto->has<CommonTowerStats>();
-  } else if (entity != ECS::NULL_ENTITY) {
+  } else if (entity != entt::null) {
     return reg.has<CommonTowerStats>(entity);
   } else {
     return false;
@@ -227,7 +227,7 @@ TowerButtons StatsModel::getButtons(ECS::Registry &reg) const {
     buttons.sell = 0;
     buttons.buy = proto->get<TowerGold>().buy;
     buttons.afford = buttons.buy <= gold;
-  } else if (entity != ECS::NULL_ENTITY) {
+  } else if (entity != entt::null) {
     const TowerProto *const next = reg.get<TowerUpgrades>(entity).next;
     if (next) {
       buttons.upgrade = next->get<TowerGold>().buy;

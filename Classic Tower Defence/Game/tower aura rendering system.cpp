@@ -29,7 +29,7 @@ void towerAuraRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
     sec.tilePos(pos);
     sec.tileTex(sprites.gun.sprite());
     
-    if (sprites.gun.disabled()) {
+    if (sprites.gun.stopped()) {
       continue;
     }
     

@@ -35,7 +35,7 @@ void splashDamageSystem(ECS::Registry &reg) {
     const TowerTarget target = view.get<TowerTarget>(entity);
     const float aoe = Math::square(view.get<SplashTower>(entity).aoe);
     const TowerEffect effect = view.get<TowerEffect>(entity);
-    if (target.id != ECS::NULL_ENTITY) {
+    if (target.id != entt::null) {
       unitDamageSystem(reg, target.id, stats.damage, stats.armourPiercing);
       effect.apply(reg, target.id);
     }

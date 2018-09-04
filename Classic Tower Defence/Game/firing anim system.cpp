@@ -21,7 +21,7 @@ namespace {
       reg.has<ProjectileTower>(entity) ||
       reg.has<AuraTower>(entity) || (
         reg.has<BeamTower>(entity) &&
-        reg.get<TowerTarget>(entity).id == ECS::NULL_ENTITY
+        reg.get<TowerTarget>(entity).id == entt::null
       )
     ) {
       anim.stop();
@@ -38,8 +38,8 @@ void firingAnimSystem(ECS::Registry &reg) {
     
     if (shoot.elapsed < shoot.startTime) {
       sprites.gun.stop();
-    } else if (sprites.gun.enabled()) {
-      if (sprites.gun.incrStop()) {
+    } else if (sprites.gun.running()) {
+      if (sprites.gun.incrCheck()) {
         handleAnimEnd(sprites.gun, reg, entity);
       }
     } else if (shoot.target) {

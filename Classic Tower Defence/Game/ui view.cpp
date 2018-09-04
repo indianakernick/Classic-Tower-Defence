@@ -128,7 +128,7 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   
   if (stats.model.hasButtons(reg)) {
     const ECS::EntityID tower = stats.model.selected();
-    if (tower != ECS::NULL_ENTITY) {
+    if (tower != entt::null) {
       towerRangeRenderingSystem(reg, writer.section(gameCam.transform.toPixels(), radiusSheetTex), tower);
     }
   }

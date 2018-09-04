@@ -20,7 +20,7 @@ void towerProjectileRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
   >();
   for (const ECS::EntityID entity : view) {
     const TowerSprites sprites = view.get<TowerSprites>(entity);
-    if (sprites.gun.frameOrZero() == 0) {
+    if (sprites.gun.frame() == 0) {
       continue;
     }
     
@@ -29,7 +29,7 @@ void towerProjectileRenderingSystem(ECS::Registry &reg, G2D::Section &sec) {
     
     sec.quad();
     sec.depth(Depth::TOWER_PROJ);
-    sec.rotTilePos(target.angle, pos + target.vec * sprites.gun.progress());
+    sec.rotTilePos(target.angle, pos + target.vec * sprites.gun.progressLast());
     sec.tileTex(sprites.projectile);
   }
 }
