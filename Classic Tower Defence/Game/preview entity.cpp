@@ -17,7 +17,7 @@
 ECS::EntityID makePreviewEntity(ECS::Registry &reg) {
   const ECS::EntityID entity = reg.create();
   reg.assign<Position>(entity, glm::vec2(14.875f, 10.125f));
-  reg.assign<UnitDir>(entity, Grid::Dir::RIGHT);
+  reg.assign<UnitDir>(entity, Grid::Dir::right);
   reg.assign<UnitSprite>(entity);
   return entity;
 }
