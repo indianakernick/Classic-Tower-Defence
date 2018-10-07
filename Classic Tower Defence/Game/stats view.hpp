@@ -27,7 +27,7 @@ public:
   Bounds sellBounds() const;
   Bounds upgradeBounds() const;
 
-  void render(G2D::Section &, G2D::Text &, G2D::Section &) const;
+  void render(G2D::Section &, G2D::Text &) const;
   
 private:
   std::experimental::optional<std::string> name;

@@ -21,7 +21,7 @@ public:
   Consumed click(glm::vec2, ECS::Registry &);
   Consumed hover(glm::vec2, SDL::SystemCursors &);
   void setRenderState(ECS::Registry &);
-  void render(G2D::Section &, G2D::Text &, G2D::Section &);
+  void render(G2D::Section &, G2D::Text &);
   
   StatsView view;
   StatsModel model;

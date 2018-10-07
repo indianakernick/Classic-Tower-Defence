@@ -55,11 +55,11 @@ Bounds StatsView::upgradeBounds() const {
   return {4.0f, top, 124.0f, top + 16.0f};
 }
 
-void StatsView::render(G2D::Section &sec, G2D::Text &text, G2D::Section &white) const {
+void StatsView::render(G2D::Section &sec, G2D::Text &text) const {
   renderName(text);
   const float top = renderTable(text);
   
-  text.section(white);
+  text.color({1.0f, 1.0f, 1.0f, 1.0f});
   
   if (table) {
     renderLine(top, sec);

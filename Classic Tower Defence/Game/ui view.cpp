@@ -123,8 +123,9 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
 
   const glm::mat3 &cam = camera.transform.toPixels();
   G2D::Section &uiSec = writer.section(cam, uiSheetTex);
-  text.section(writer.section(cam, textSheetTex, {0.0f, 0.0f, 0.0f, 1.0f}));
+  text.section(writer.section(cam, textSheetTex));
   text.scale(2.0f);
+  text.color({0.0f, 0.0f, 0.0f, 1.0f});
   
   if (stats.model.hasButtons(reg)) {
     const ECS::EntityID tower = stats.model.selected();
@@ -139,5 +140,5 @@ void UIView::render(ECS::Registry &reg, G2D::QuadWriter &writer) {
   
   text.scale(1.0f);
   stats.setRenderState(reg);
-  stats.render(uiSec, text, writer.section(cam, textSheetTex));
+  stats.render(uiSec, text);
 }

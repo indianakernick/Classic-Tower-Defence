@@ -1092,8 +1092,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/text.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/text.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/game_info_view.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
@@ -4074,8 +4072,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.c
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_aura_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
@@ -4444,8 +4440,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.c
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_beam_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
@@ -4775,8 +4769,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_sy
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_projectile_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
@@ -5104,8 +5096,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_range_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
@@ -5431,8 +5421,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.ob
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/tower_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
@@ -6388,8 +6376,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.c
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_death_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
@@ -6886,8 +6872,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_health_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
@@ -7440,7 +7424,6 @@ CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/surface.inl
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: /usr/local/include/Simpleton/Graphics\ 2D/types.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: /usr/local/include/Simpleton/Grid/dir.hpp
-CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: /usr/local/include/Simpleton/Math/rect.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/alloc.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/buffer.hpp
 CMakeFiles/GameExec.dir/Classic_Tower_Defence/Game/unit_rendering_system.cpp.obj: /usr/local/include/Simpleton/Memory/file\ io.hpp
